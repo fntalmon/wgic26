@@ -15,6 +15,7 @@ const buttonBase = cva(
         yellow: "bg-canary text-black shadow-[inset_0px_0px_0px_2px_black]",
         purple: "bg-lavanda text-black shadow-[inset_0px_0px_0px_2px_black]",
         red: "bg-rose text-black shadow-[inset_0px_0px_0px_2px_black]",
+        disabled: "bg-mortar text-[#222] shadow-[inset_0px_0px_0px_2px_#222] cursor-not-allowed"
 
       },
       size: {
@@ -66,7 +67,8 @@ function Button({
           "group-hover:after:-bottom-3 group-hover:after:h-3 group-hover:after:left-1.5",
           "group-active:before:-right-1 group-active:before:-bottom-0.5 group-active:before:w-1 group-active:origin-bottom-right",
           "group-active:after:-bottom-1 group-active:after:h-1 group-active:after:left-0.5",
-          pseudoColor
+          pseudoColor,
+          variant === "disabled" && "before:bg-[#222] after:bg-[#222]"
         )}
       />
       <Comp

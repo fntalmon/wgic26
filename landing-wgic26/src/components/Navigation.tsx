@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import { ArrowRight, Menu, Ticket } from "lucide-react";
+import { ArrowRight, FileText, Menu, Ticket } from "lucide-react";
 import { AnimatedLogo } from "./AnimatedLogo";
 import Link from "next/link";
 import Image from "next/image";
@@ -49,13 +49,17 @@ interface NavigationProps {
       title: string;
       url: string;
     };
+    button2: {
+      title: string;
+      url: string;
+    };
   };
 }
 
 const Navigation = ({
   logo = {
     url: "/",
-    src: "/img/wgic26_logo.svg",
+    src: "/img/wgic26_logo/wgic26_logo.svg",
     alt: "logo",
     title: "WGIC26",
   },
@@ -65,9 +69,9 @@ const Navigation = ({
       url: "/program",
       items: [
         { title: "Topics", url: "/program/topics", description: "...", icon: <ArrowRight /> },
-        { title: "Agenda", url: "/program/agenda", description: "...", icon: <ArrowRight /> },
-        { title: "Activities", url: "/program/activities", description: "...", icon: <ArrowRight /> },
-        { title: "Awards", url: "/program/awards", description: "...", icon: <ArrowRight /> },
+        { title: "Agenda (Coming soon)", url: "/program/agenda", description: "...", icon: <ArrowRight /> },
+        { title: "Activities (Coming soon)", url: "/program/activities", description: "...", icon: <ArrowRight /> },
+        { title: "Awards (Coming soon)", url: "/program/awards", description: "...", icon: <ArrowRight /> },
       ],
     },
     {
@@ -76,7 +80,7 @@ const Navigation = ({
       items: [
         { title: "The Congress", url: "/about/congress", description: "...", icon: <ArrowRight /> },
         { title: "WGI Network", url: "/about/wgi-network", description: "...", icon: <ArrowRight /> },
-        { title: "Location & Stay", url: "/about/location", description: "...", icon: <ArrowRight /> },
+        { title: "Venue", url: "/about/venue", description: "...", icon: <ArrowRight /> },
       ],
     },
     { title: "Speakers", url: "/speakers" },
@@ -91,6 +95,7 @@ const Navigation = ({
   ],
   actions = {
     button: { title: "Tickets", url: "#" },
+    button2: { title: "Papers & Posters", url: "#" },
   },
 }: NavigationProps) => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -117,7 +122,7 @@ const Navigation = ({
 
         {/* Desktop */}
         <div className="hidden lg:flex justify-between items-center w-full">
-          <Link href={logo.url} className="flex items-center gap-2">
+          <Link href={logo.url} className="flex items-center gap-2 w-full">
             <AnimatedLogo scrolled={scrolled} visible={showNavbar} />
           </Link>
           <NavigationMenu>
@@ -125,9 +130,14 @@ const Navigation = ({
               {menu.map((item) => renderMenuItem(item))}
             </NavigationMenuList>
           </NavigationMenu>
-          <Button asChild variant={"default"}>
-            <a href={actions.button.url}><Ticket size={20} />{actions.button.title}</a>
-          </Button>
+          <div className="flex gap-4 w-full justify-end flex-wrap">
+            <Button asChild variant={"yellow"}>
+              <a href={actions.button2.url}><FileText size={20} />{actions.button2.title}</a>
+            </Button>
+            <Button asChild variant={"default"}>
+              <a href={actions.button.url}><Ticket size={20} />{actions.button.title}</a>
+            </Button>
+          </div>
         </div>
 
         {/* Mobile */}
@@ -141,13 +151,21 @@ const Navigation = ({
               className="max-h-16"
             />
           </Link>
-          <div className="flex gap-3 sm:gap-2">
-            <Button asChild variant={"default"} size="lg" className="hidden sm:flex">
-              <a href={actions.button.url}><Ticket size={24} />{actions.button.title}</a>
-            </Button>
-            <Button className="sm:hidden" variant="default" size="icon">
-              <Ticket />
-            </Button>
+          <div className="flex gap-3 sm:gap-1.5">
+            <div className="flex gap-1.5 sm:gap-2">
+              <Button asChild variant={"yellow"} size="lg" className="hidden sm:flex">
+                <a href={actions.button2.url}><FileText size={24} />{actions.button2.title}</a>
+              </Button>
+              <Button className="sm:hidden" variant="yellow" size="icon">
+                <a href={actions.button2.url}><FileText size={24} /></a>
+              </Button>
+              <Button asChild variant={"default"} size="lg" className="hidden sm:flex">
+                <a href={actions.button.url}><Ticket size={24} />{actions.button.title}</a>
+              </Button>
+              <Button className="sm:hidden" variant="default" size="icon">
+                <a href={actions.button.url}><Ticket size={24} /></a>
+              </Button>
+            </div>
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="secondary" size="icon">
@@ -163,7 +181,7 @@ const Navigation = ({
                     {menu.map((item) => renderMobileMenuItem(item))}
                   </Accordion>
                   <div className="flex flex-col gap-3 items-center">
-                    <Button asChild size={"lg"}>
+                    <Button asChild variant={"default"} size={"lg"}>
                       <a href={actions.button.url}><Ticket size={24} />{actions.button.title}</a>
                     </Button>
                   </div>

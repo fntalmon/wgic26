@@ -9,11 +9,11 @@ interface AnimatedLogoProps {
 }
 
 const logoFrames = [
-    "/img/logo/logo1.svg",
-    "/img/logo/logo2.svg",
-    "/img/logo/logo3.svg",
-    "/img/logo/logo4.svg",
-    "/img/logo/logo5.svg",
+    "/img/wgic26_logo/logo1.svg",
+    "/img/wgic26_logo/logo2.svg",
+    "/img/wgic26_logo/logo3.svg",
+    "/img/wgic26_logo/logo4.svg",
+    "/img/wgic26_logo/logo5.svg",
 ];
 
 const AnimatedLogo = ({ scrolled, visible }: AnimatedLogoProps) => {

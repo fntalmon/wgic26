@@ -18,7 +18,6 @@ const Footer = () => {
                             <div className="flex flex-col gap-6 text-xs">
                                 <a href="#" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">Privacy Policy</a>
                                 <a href="#" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">Terms & Conditions</a>
-                                <a href="#" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">Cookies</a>
                             </div>
                         </div>
                         <div className="flex flex-col gap-6 items-start">

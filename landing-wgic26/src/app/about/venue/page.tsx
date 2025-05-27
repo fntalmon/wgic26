@@ -1,10 +1,10 @@
 import PageHeader from "@/components/PageHeader";
 
-const LocationStay = () => {
+const Venue = () => {
     return (
         <div>
             <PageHeader
-                title="Location & Stay"
+                title="Venue"
                 description="Lorem fistrum fistro no puedor no puedor al ataquerl va usté muy cargadoo te voy a borrar el cerito ahorarr por la gloria de mi madre ese pedazo de pecador."
                 section="about"
             />
@@ -15,4 +15,4 @@ const LocationStay = () => {
     );
 };
 
-export default LocationStay;
+export default Venue;
