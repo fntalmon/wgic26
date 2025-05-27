@@ -59,7 +59,7 @@ export default function Home() {
               </div>
             </div>
             <Image
-              src="/img/logos/barcelona.svg"
+              src="/img/logos/Barcelona.svg"
               alt={"Barcelona"}
               width={320}
               height={240}
@@ -78,7 +78,7 @@ export default function Home() {
               </div>
             </div>
             <Image
-              src="/img/logos/lleida.svg"
+              src="/img/logos/Lleida.svg"
               alt={"Lleida"}
               width={320}
               height={240}
