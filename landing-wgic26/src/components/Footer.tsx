@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="flex flex-col lg:pt-3 lg:pb-1.5 lg:px-8 p-0 gap-0">
             <div className="flex flex-col gap-4 bg-cactus lg:rounded-xl text-cement w-full pl-8 pr-14 md:pl-12 pr-18 py-12 md:py-16">
                 <div className="flex flex-col sm:flex-row justify-between items-between gap-16 sm:gap-10">
-                    <div className="flex flex-col gap-8 w-1/2 md:w-1/4">
+                    <div className="flex flex-col gap-8 w-full md:w-1/4">
                         <div className="text-2xl sm:text-lg lg:text-xl xl:text-2xl uppercase">
                             World <strong>Green</strong><br />Infrastructure<br />Congress 2026<br /><strong>Barcelona</strong>
                         </div>

@@ -95,7 +95,7 @@ const Navigation = ({
   ],
   actions = {
     button: { title: "Tickets", url: "#" },
-    button2: { title: "Papers & Posters", url: "#" },
+    button2: { title: "Papers", url: "#" },
   },
 }: NavigationProps) => {
   const [showNavbar, setShowNavbar] = useState(true);
