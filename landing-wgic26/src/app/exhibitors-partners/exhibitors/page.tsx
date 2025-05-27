@@ -1,15 +1,21 @@
 import PageHeader from "@/components/PageHeader";
+import { HardHat } from "lucide-react";
 
 const Exhibitors = () => {
     return (
         <div>
             <PageHeader
                 title="Exhibitors"
-                description="Lorem fistrum fistro no puedor no puedor al ataquerl va usté muy cargadoo te voy a borrar el cerito ahorarr por la gloria de mi madre ese pedazo de pecador."
+                description="If you want to have a presence at the event, choose between the booth options to ensure your goals reach your audience."
                 section="exhibitors & partners"
             />
             <section className="w-full justify-start text-xs">
-                This is the rest of the page
+                <div className="flex w-full flex-col items-center gap-6 p-16 border-1 border-potus/40">
+                    <HardHat size={72} className="text-potus" />
+                    <div className="text-2xl uppercase">Coming soon</div>
+                    <div className="text-potus">hola@wgic26.barcelona</div>
+
+                </div>
             </section>
         </div>
     );
