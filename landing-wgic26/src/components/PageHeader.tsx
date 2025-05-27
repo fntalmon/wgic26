@@ -53,7 +53,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
                     </div>
                     <div className="flex flex-col sm:items-end gap-2 w-full sm:w-2/3">
                         {description && (
-                            <p className="text-xs text-white/70">{description}</p>
+                            <p className="text-xs text-white/70 leading-relaxed">{description}</p>
                         )}
                     </div>
                 </div>

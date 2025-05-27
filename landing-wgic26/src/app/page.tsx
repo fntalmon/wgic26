@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <section className="lg:pt-24">
         <div className="uppercase text-3xl xs:text-4xl pr-8 sm:text-5xl w-full md:text-6xl lg:text-5xl lg:w-3/5 xl:text-6xl leading-tight tracking-tight">
-          World <strong>Green</strong> Infrastructure Congress 2026 <strong>Barcelona</strong>
+          World <strong>Green</strong><br />Infrastructure<br />Congress 2026<br /><strong>Barcelona</strong>
         </div>
         <div className="flex flex-col h-auto content-between gap-10 w-full lg:w-2/5">
           <div className="flex w-full h-full justify-between pt-7 border-t-1 border-white/50">
@@ -98,10 +98,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row w-full items-center gap-20 lg:justify-between">
+          <div className="flex flex-col xl:flex-row w-full items-center gap-20 lg:justify-between">
             {/* Newsletter form */}
             <form
-              className="flex flex-col sm:flex-row gap-8 w-full lg:w-1/2"
+              className="flex flex-col xl:flex-row gap-8 w-full 2xl:w-1/2 xl:w-2/3"
               onSubmit={(e) => {
                 e.preventDefault()
                 const email = e.currentTarget.email.value
