@@ -180,7 +180,7 @@ const Navigation = ({
                   >
                     {menu.map((item) => renderMobileMenuItem(item))}
                   </Accordion>
-                  <div className="flex flex-col gap-3 items-center">
+                  <div className="flex flex-col gap-3 items-center pb-12">
                     <Button asChild variant={"default"} size={"lg"}>
                       <a href={actions.button.url}><Ticket size={24} />{actions.button.title}</a>
                     </Button>
