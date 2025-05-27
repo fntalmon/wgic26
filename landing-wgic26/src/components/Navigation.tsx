@@ -33,6 +33,7 @@ interface MenuItem {
   url: string;
   description?: string;
   icon?: React.ReactNode;
+  disabled?: boolean;
   items?: MenuItem[];
 }
 
@@ -69,9 +70,9 @@ const Navigation = ({
       url: "/program",
       items: [
         { title: "Topics", url: "/program/topics", description: "...", icon: <ArrowRight /> },
-        { title: "Agenda (Coming soon)", url: "/program/agenda", description: "...", icon: <ArrowRight /> },
-        { title: "Activities (Coming soon)", url: "/program/activities", description: "...", icon: <ArrowRight /> },
-        { title: "Awards (Coming soon)", url: "/program/awards", description: "...", icon: <ArrowRight /> },
+        { title: "Agenda", url: "/program/agenda", description: "...", icon: <ArrowRight />, disabled: true },
+        { title: "Activities", url: "/program/activities", description: "...", icon: <ArrowRight />, disabled: true },
+        { title: "Awards", url: "/program/awards", description: "...", icon: <ArrowRight />, disabled: true },
       ],
     },
     {
@@ -245,6 +246,20 @@ const renderMobileMenuItem = (item: MenuItem) => {
 };
 
 const SubMenuLink = ({ item }: { item: MenuItem }) => {
+  if (item.disabled) {
+    return (
+      <span
+        className="flex flex-row gap-4 justify-start text-muted-foreground opacity-60 cursor-not-allowed select-none"
+        aria-disabled="true"
+        title="Coming soon"
+      >
+        <div className="flex gap-2 lg:gap-2 py-2">
+          <div className="text-lg lg:text-xs lg:pl-0 pl-8">{item.title}</div>
+        </div>
+      </span>
+    );
+  }
+
   return (
     <a
       className="flex flex-row gap-4 justify-start rounded-none leading-none transition-none outline-none select-none normal-case lg:hover:underline lg:hover:underline-offset-8 lg:hover:decoration-2 lg:hover:decoration-potus"
@@ -256,5 +271,6 @@ const SubMenuLink = ({ item }: { item: MenuItem }) => {
     </a>
   );
 };
+
 
 export { Navigation };
