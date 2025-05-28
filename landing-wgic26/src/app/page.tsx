@@ -47,7 +47,7 @@ export default function Home() {
 
         <div className="flex flex-col lg:flex-row gap-8">
 
-          <div id="location-lleida" className="flex flex-col bg-cactus text-white uppercase text-4xl lg:text-5xl gap-0 lg:aspect-auto flex-1">
+          <div id="location-barcelona" className="flex flex-col bg-cactus text-white uppercase text-4xl lg:text-5xl gap-0 lg:aspect-auto flex-1">
             <div className="bg-[url(/img/ccib.jpg)] bg-no-repeat bg-cover bg-center w-full h-[320px]"></div>
             <div className="flex flex-col gap-2 px-10 pt-10">
               <div className="text-xs text-white/70 mb-2">Main activities:</div>
