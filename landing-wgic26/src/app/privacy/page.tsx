@@ -1,5 +1,5 @@
 import PageHeader from "@/components/PageHeader";
-import { FileText, HardHat } from "lucide-react";
+import { HardHat } from "lucide-react";
 
 const Privacy = () => {
     return (
