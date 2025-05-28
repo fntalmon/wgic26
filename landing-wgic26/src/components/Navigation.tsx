@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import { ArrowRight, FileText, Menu, Ticket } from "lucide-react";
+import { ArrowRight, FileUp, Menu, Ticket } from "lucide-react";
 import { AnimatedLogo } from "./AnimatedLogo";
 import Link from "next/link";
 import Image from "next/image";
@@ -133,7 +133,7 @@ const Navigation = ({
           </NavigationMenu>
           <div className="flex gap-4 w-full justify-end flex-wrap">
             <Button asChild variant={"yellow"}>
-              <a href={actions.button2.url}><FileText size={20} />{actions.button2.title}</a>
+              <a href={actions.button2.url}><FileUp size={20} />{actions.button2.title}</a>
             </Button>
             <Button asChild variant={"default"}>
               <a href={actions.button.url}><Ticket size={20} />{actions.button.title}</a>
@@ -155,10 +155,10 @@ const Navigation = ({
           <div className="flex gap-3 sm:gap-1.5">
             <div className="flex gap-1.5 sm:gap-2">
               <Button asChild variant={"yellow"} size="lg" className="hidden sm:flex">
-                <a href={actions.button2.url}><FileText size={24} />{actions.button2.title}</a>
+                <a href={actions.button2.url}><FileUp size={24} />{actions.button2.title}</a>
               </Button>
               <Button className="sm:hidden" variant="yellow" size="icon">
-                <a href={actions.button2.url}><FileText size={24} /></a>
+                <a href={actions.button2.url}><FileUp size={24} /></a>
               </Button>
               <Button asChild variant={"default"} size="lg" className="hidden sm:flex">
                 <a href={actions.button.url}><Ticket size={24} />{actions.button.title}</a>

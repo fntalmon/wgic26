@@ -1,4 +1,5 @@
 import { School } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -16,8 +17,8 @@ const Footer = () => {
                         <div className="flex flex-col gap-6 items-start">
                             <div className="uppercase text-xs text-white/40">legal</div>
                             <div className="flex flex-col gap-6 text-xs">
-                                <a href="#" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">Privacy Policy</a>
-                                <a href="#" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">Terms & Conditions</a>
+                                <Link href="/privacy" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">Privacy Policy</Link>
+                                <Link href="/terms" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">Terms & Conditions</Link>
                             </div>
                         </div>
                         <div className="flex flex-col gap-6 items-start">
