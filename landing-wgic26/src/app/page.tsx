@@ -90,7 +90,7 @@ export default function Home() {
       <section id="newsletter" className="flex flex-col lg:flex-row gap-0">
         <div className="bg-[url(/img/image.png)] bg-no-repeat bg-cover bg-center w-full xl:w-1/3"></div>
 
-        <div className="flex flex-col gap-20 bg-cement text-mortar w-full p-10 lg:p-18 flex flex-col justify-between items-end">
+        <div className="flex flex-col gap-20 bg-cement text-mortar w-full p-10 lg:p-18  justify-between items-end">
           <div className="flex flex-col gap-8 w-full">
             <div className="flex flex-col gap-8 uppercase text-3xl md:text-4xl">
               <div>Stay up to date</div>
