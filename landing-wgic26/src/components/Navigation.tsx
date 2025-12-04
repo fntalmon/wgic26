@@ -82,6 +82,12 @@ const Navigation = ({
           description: "...",
           icon: <ArrowRight />,
         },
+        {
+          title: "University of Lleida",
+          url: "/about/univeristy-of-lleida",
+          description: "...",
+          icon: <ArrowRight />,
+        },
         //{ title: "Venue", url: "/about/venue", description: "...", icon: <ArrowRight /> },
         {
           title: "Locations",
@@ -104,13 +110,7 @@ const Navigation = ({
           icon: <ArrowRight />,
           disabled: true,
         },
-        {
-          title: "University of Lleida",
-          url: "/about/univeristy-of-lleida",
-          description: "...",
-          icon: <ArrowRight />,
-          disabled: true,
-        },
+
       ],
     },
     {
