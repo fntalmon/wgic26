@@ -1,6 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Globe } from "lucide-react";
+import {Globe } from "lucide-react";
 
 const UniversityOfLleida = () => {
     return (
