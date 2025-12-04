@@ -222,15 +222,15 @@ const Navigation = ({
       >
         {/* Desktop */}
         <div className="hidden lg:flex justify-between items-center w-full">
-          <Link href={logo.url} className="flex items-center gap-2 w-full">
+          <Link href={logo.url} className="flex items-center gap-2 flex-shrink-0">
             <AnimatedLogo scrolled={scrolled} visible={showNavbar} />
           </Link>
-          <NavigationMenu>
-            <NavigationMenuList className="flex 2xl:gap-4 xl:gap-3 gap-0.5">
+          <NavigationMenu className="flex-1">
+            <NavigationMenuList className="flex 2xl:gap-2 xl:gap-1.5 gap-0.5 justify-center">
               {menu.map((item) => renderMenuItem(item))}
             </NavigationMenuList>
           </NavigationMenu>
-          <div className="flex gap-1.5 w-full justify-end flex-wrap">
+          <div className="flex gap-1.5 justify-end flex-wrap flex-shrink-0">
             <Button asChild variant={"yellow"}>
               <a href={actions.button2.url}>
                 <FileUp size={20} />
