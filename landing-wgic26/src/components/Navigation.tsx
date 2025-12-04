@@ -88,7 +88,7 @@ const Navigation = ({
           description: "...",
           icon: <ArrowRight />,
         },
-        //{ title: "Venue", url: "/about/venue", description: "...", icon: <ArrowRight /> },
+        //{ title: "Venue", url: "/about/venue", description: "...", icon: <ArrowRight /> },//
         {
           title: "Locations",
           url: "/about/locations",
