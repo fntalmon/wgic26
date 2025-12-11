@@ -94,7 +94,6 @@ const Navigation = ({
           url: "/about/locations",
           description: "...",
           icon: <ArrowRight />,
-          disabled: true,
         },
         {
           title: "Organisation commitee",
