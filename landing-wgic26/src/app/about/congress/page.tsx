@@ -78,12 +78,12 @@ const Congress = () => {
                     <div className="bg-cactus/20 border border-cactus/30 rounded-lg p-6 mb-6">
                         <p className="text-lg font-medium text-white mb-2">Motto</p>
                         <p className="text-xl lg:text-2xl font-semibold text-potus italic">
-                            "Green infrastructure for a healthier and safer urban future"
+                            &quot;Green infrastructure for a healthier and safer urban future&quot;
                         </p>
                     </div>
 
                     <p>
-                        Under the motto "Green infrastructure for a healthier and safer urban future" the twelfth edition of the WGIC wants to emphasize how green infrastructure contributes directly and indirectly to improving the quality of life and health of people.
+                        Under the motto &quot;Green infrastructure for a healthier and safer urban future&quot; the twelfth edition of the WGIC wants to emphasize how green infrastructure contributes directly and indirectly to improving the quality of life and health of people.
                     </p>
                     <p>
                         Green infrastructure contributes to climate change mitigation and adaptation. WGIC2026 seeks to align its objectives with the challenges posed by global climate change. These challenges involve not only understanding how urban green infrastructure can help mitigate climate impacts on society but also determining how such infrastructure must adapt to an increasingly changing environmental context in the coming years.
