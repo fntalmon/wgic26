@@ -1,5 +1,5 @@
 import PageHeader from "@/components/PageHeader";
-import { FileText, HardHat } from "lucide-react";
+import { FileText } from "lucide-react";
 
 const Speakers = () => {
   return (
