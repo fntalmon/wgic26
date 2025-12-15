@@ -1,11 +1,10 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import { ArrowRight, FileUp, Menu, Ticket } from "lucide-react";
 import { AnimatedLogo } from "./AnimatedLogo";
 import Link from "next/link";
 import Image from "next/image";
-
 
 import {
   Accordion,
@@ -25,6 +24,8 @@ import {
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -66,33 +67,124 @@ const Navigation = ({
   },
   menu = [
     {
-      title: "Program",
-      url: "/program",
-      items: [
-        { title: "Topics", url: "/program/topics", description: "...", icon: <ArrowRight /> },
-        { title: "Agenda", url: "/program/agenda", description: "...", icon: <ArrowRight />, disabled: true },
-        { title: "Activities", url: "/program/activities", description: "...", icon: <ArrowRight />, disabled: true },
-        { title: "Awards", url: "/program/awards", description: "...", icon: <ArrowRight />, disabled: true },
-      ],
-    },
-    {
       title: "About",
       url: "/about",
       items: [
-        { title: "The Congress", url: "/about/congress", description: "...", icon: <ArrowRight /> },
-        { title: "WGI Network", url: "/about/wgi-network", description: "...", icon: <ArrowRight /> },
-        { title: "Venue", url: "/about/venue", description: "...", icon: <ArrowRight /> },
+        {
+          title: "The Congress",
+          url: "/about/congress",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: "WGI Network",
+          url: "/about/wgi-network",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: "University of Lleida",
+          url: "/about/univeristy-of-lleida",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        //{ title: "Venue", url: "/about/venue", description: "...", icon: <ArrowRight /> },//
+        {
+          title: "Locations",
+          url: "/about/locations",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: "Organisation commitee",
+          url: "/about/organisation-commitee",
+          description: "...",
+          icon: <ArrowRight />,
+          disabled: true,
+        },
+        {
+          title: "Scientific commitee",
+          url: "/about/scientific-commitee",
+          description: "...",
+          icon: <ArrowRight />,
+          disabled: true,
+        },
+
+      ],
+    },
+    {
+      title: "Program",
+      url: "/program",
+      items: [
+        {
+          title: "Main Topics",
+          url: "/program/topics",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: "Workshops",
+          url: "/program/workshops",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+
+        {
+          title: "Gaudi Year 2026",
+          url: "/program/gaudi-year-2026",
+          description: "...",
+          icon: <ArrowRight />,
+          disabled: true,
+        },
+        {
+          title: "Key Note Speakers",
+          url: "/program/speakers",
+          description: "...",
+          icon: <ArrowRight />,
+          disabled: true,
+        },
+        {
+          title: "Program",
+          url: "/program/program",
+          description: "...",
+          icon: <ArrowRight />,
+          disabled: true,
+        },
+        {
+          title: "WGIN Awards",
+          url: "/program/wgin-awards",
+          description: "...",
+          icon: <ArrowRight />,
+          disabled: true,
+        },
+
+        //{ title: "Activities", url: "/program/activities", description: "...", icon: <ArrowRight />, disabled: true },
+        //{ title: "Agenda", url: "/program/agenda", description: "...", icon: <ArrowRight />, disabled: true },
+        //{ title: "Awards", url: "/program/awards", description: "...", icon: <ArrowRight />, disabled: true },
       ],
     },
     { title: "Speakers", url: "/speakers" },
+    { title: "Registration", url: "/registration", disabled: true },
     {
-      title: "Exhibitors & Partners",
+      title: "Partners & Exhibitors",
       url: "/exhibitors-partners",
       items: [
-        { title: "Exhibitors", url: "/exhibitors-partners/exhibitors", description: "...", icon: <ArrowRight /> },
-        { title: "Partners", url: "/exhibitors-partners/partners", description: "...", icon: <ArrowRight /> },
+        {
+          title: "Exhibitors",
+          url: "/exhibitors-partners/exhibitors",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: "Partners",
+          url: "/exhibitors-partners/partners",
+          description: "...",
+          icon: <ArrowRight />,
+        },
       ],
     },
+    { title: "Social Program", url: "/social-program" },
+    { title: "Travel", url: "/travel" },
   ],
   actions = {
     button: { title: "Tickets", url: "#" },
@@ -117,26 +209,38 @@ const Navigation = ({
   }, [lastScrollY]);
 
   return (
-    <div className="fixed px-0 lg:px-8 lg:pt-3 top-0 lg:left-0 w-full z-50 transition-all duration-350 ease-in-out transform">
-      <nav className={`w-full px-8 py-6 transition-all duration-350 ease-in-out transform border-0 border-white/0 ${showNavbar ? "translate-y-0" : "-translate-y-[160%]"
-        } ${scrolled ? "bg-cactus/50 backdrop-blur-xl pl-8 lg:pr-12 lg:py-2 py-8 lg:rounded-2xl border-b-1 lg:border-1 border-white/8" : "bg-transparent"}`}>
-
+    <div className="fixed px-0 lg:px-4 lg:pt-1 top-0 lg:left-0 w-full z-50 transition-all duration-350 ease-in-out transform">
+      <nav
+        className={`w-full px-4 py-3 transition-all duration-350 ease-in-out transform border-0 border-white/0 ${
+          showNavbar ? "translate-y-0" : "-translate-y-[160%]"
+        } ${
+          scrolled
+            ? "bg-cactus/50 backdrop-blur-xl pl-4 lg:pr-6 lg:py-1 py-4 lg:rounded-2xl border-b-1 lg:border-1 border-white/8"
+            : "bg-transparent"
+        }`}
+      >
         {/* Desktop */}
         <div className="hidden lg:flex justify-between items-center w-full">
-          <Link href={logo.url} className="flex items-center gap-2 w-full">
+          <Link href={logo.url} className="flex items-center gap-2 flex-shrink-0">
             <AnimatedLogo scrolled={scrolled} visible={showNavbar} />
           </Link>
-          <NavigationMenu>
-            <NavigationMenuList className="flex 2xl:gap-12 xl:gap-8 gap-2">
+          <NavigationMenu className="flex-1">
+            <NavigationMenuList className="flex 2xl:gap-2 xl:gap-1.5 gap-0.5 justify-center">
               {menu.map((item) => renderMenuItem(item))}
             </NavigationMenuList>
           </NavigationMenu>
-          <div className="flex gap-4 w-full justify-end flex-wrap">
+          <div className="flex gap-1.5 justify-end flex-wrap flex-shrink-0">
             <Button asChild variant={"yellow"}>
-              <a href={actions.button2.url}><FileUp size={20} />{actions.button2.title}</a>
+              <a href={actions.button2.url}>
+                <FileUp size={20} />
+                {actions.button2.title}
+              </a>
             </Button>
             <Button asChild variant={"default"}>
-              <a href={actions.button.url}><Ticket size={20} />{actions.button.title}</a>
+              <a href={actions.button.url}>
+                <Ticket size={20} />
+                {actions.button.title}
+              </a>
             </Button>
           </div>
         </div>
@@ -152,19 +256,49 @@ const Navigation = ({
               className="max-h-16"
             />
           </Link>
-          <div className="flex gap-3 sm:gap-1.5">
-            <div className="flex gap-1.5 sm:gap-2">
-              <Button asChild variant={"yellow"} size="lg" className="hidden sm:flex">
-                <a href={actions.button2.url}><FileUp size={24} />{actions.button2.title}</a>
+          <div className="flex gap-1 sm:gap-1.5">
+            <div className="flex gap-1 sm:gap-2">
+              <Button
+                asChild
+                variant={"yellow"}
+                size="lg"
+                className="hidden sm:flex"
+              >
+                <a href={actions.button2.url}>
+                  <FileUp size={24} />
+                  {actions.button2.title}
+                </a>
               </Button>
-              <Button className="sm:hidden" variant="yellow" size="icon">
-                <a href={actions.button2.url}><FileUp size={24} /></a>
+              <Button
+                asChild
+                className="sm:hidden"
+                variant="yellow"
+                size="icon"
+              >
+                <a href={actions.button2.url}>
+                  <FileUp size={24} />
+                </a>
               </Button>
-              <Button asChild variant={"default"} size="lg" className="hidden sm:flex">
-                <a href={actions.button.url}><Ticket size={24} />{actions.button.title}</a>
+              <Button
+                asChild
+                variant={"default"}
+                size="lg"
+                className="hidden sm:flex"
+              >
+                <a href={actions.button.url}>
+                  <Ticket size={24} />
+                  {actions.button.title}
+                </a>
               </Button>
-              <Button className="sm:hidden" variant="default" size="icon">
-                <a href={actions.button.url}><Ticket size={24} /></a>
+              <Button
+                asChild
+                className="sm:hidden"
+                variant="default"
+                size="icon"
+              >
+                <a href={actions.button.url}>
+                  <Ticket size={24} />
+                </a>
               </Button>
             </div>
             <Sheet>
@@ -174,16 +308,29 @@ const Navigation = ({
                 </Button>
               </SheetTrigger>
               <SheetContent className="overflow-y-auto bg-cactus/50 backdrop-blur-xl rounded-3xl text-white border-1 border-white/8 m-6 pt-32 pb-16 px-10 sm:px-20 md:px-40 w-[calc(100%-24px*2)] h-[calc(100%-24px*2)] sm:max-w-full">
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+                <SheetDescription className="sr-only">
+                  Mobile navigation menu for WGIC26
+                </SheetDescription>
                 <div className="flex flex-col gap-6 justify-between h-full">
                   <Accordion
                     type="multiple"
-                    className="flex w-full flex-col gap-12 text-regular"
+                    className="flex w-full flex-col gap-6 text-regular"
                   >
                     {menu.map((item) => renderMobileMenuItem(item))}
                   </Accordion>
                   <div className="flex flex-col gap-3 items-center pb-12">
+                    <Button asChild variant={"yellow"} size={"lg"}>
+                      <a href={actions.button2.url}>
+                        <FileUp size={24} />
+                        {actions.button2.title}
+                      </a>
+                    </Button>
                     <Button asChild variant={"default"} size={"lg"}>
-                      <a href={actions.button.url}><Ticket size={24} />{actions.button.title}</a>
+                      <a href={actions.button.url}>
+                        <Ticket size={24} />
+                        {actions.button.title}
+                      </a>
                     </Button>
                   </div>
                 </div>
@@ -206,7 +353,8 @@ const renderMenuItem = (item: MenuItem) => {
             <NavigationMenuLink
               asChild
               key={subItem.title}
-              className="w-max hover:bg-transparent hover:text-white normal-case">
+              className="w-max hover:bg-transparent hover:text-white normal-case"
+            >
               <SubMenuLink item={subItem} />
             </NavigationMenuLink>
           ))}
@@ -229,7 +377,7 @@ const renderMobileMenuItem = (item: MenuItem) => {
         <AccordionTrigger className="text-md py-0 font-light uppercase hover:no-underline">
           {item.title}
         </AccordionTrigger>
-        <AccordionContent className="flex flex-col my-6 gap-6">
+        <AccordionContent className="flex flex-col my-3 gap-3">
           {item.items.map((subItem) => (
             <SubMenuLink key={subItem.title} item={subItem} />
           ))}
@@ -239,7 +387,11 @@ const renderMobileMenuItem = (item: MenuItem) => {
   }
 
   return (
-    <a className="text-2xl font-light uppercase" key={item.title} href={item.url}>
+    <a
+      className="text-2xl font-light uppercase"
+      key={item.title}
+      href={item.url}
+    >
       {item.title}
     </a>
   );
@@ -271,6 +423,5 @@ const SubMenuLink = ({ item }: { item: MenuItem }) => {
     </a>
   );
 };
-
 
 export { Navigation };
