@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ArrowRight, FileUp, Menu, Ticket } from "lucide-react";
 import { AnimatedLogo } from "./AnimatedLogo";
 import Link from "next/link";
@@ -187,13 +187,15 @@ const Navigation = ({
     { title: "Travel", url: "/travel" },
   ],
   actions = {
-    button: { title: "Tickets", url: "#" },
-    button2: { title: "Papers", url: "#" },
+    button: { title: "Tickets", url: "/registration" },
+    button2: { title: "Papers", url: "/speakers" },
   },
 }: NavigationProps) => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [scrolled, setScrolled] = useState(false);
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -231,7 +233,7 @@ const Navigation = ({
           </NavigationMenu>
           <div className="flex gap-1.5 justify-end flex-wrap flex-shrink-0">
             <Button asChild variant={"yellow"}>
-              <a href={actions.button2.url}>
+              <a href="/speakers">
                 <FileUp size={20} />
                 {actions.button2.title}
               </a>
@@ -275,7 +277,7 @@ const Navigation = ({
                 variant="yellow"
                 size="icon"
               >
-                <a href={actions.button2.url}>
+                <a href="/speakers">
                   <FileUp size={24} />
                 </a>
               </Button>
@@ -321,7 +323,7 @@ const Navigation = ({
                   </Accordion>
                   <div className="flex flex-col gap-3 items-center pb-12">
                     <Button asChild variant={"yellow"} size={"lg"}>
-                      <a href={actions.button2.url}>
+                      <a href="/speakers">
                         <FileUp size={24} />
                         {actions.button2.title}
                       </a>
