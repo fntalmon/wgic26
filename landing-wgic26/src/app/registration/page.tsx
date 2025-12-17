@@ -36,7 +36,7 @@ const Speakers = () => {
 
           <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base">
             <div>
-              <h3 className="text-xl font-medium text-white uppercase mb-3">Registration fees (VAT included)</h3>
+              <h3 className="text-xl font-medium text-white uppercase mb-3">Registration fees</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse border border-white/20">
                   <thead>
@@ -92,6 +92,7 @@ const Speakers = () => {
                     </tr>
                   </tbody>
                 </table>
+                 <p className="mt-4 text-potus">Approximate rates. Final rates to be announced soon</p>
               </div>
             </div>
 

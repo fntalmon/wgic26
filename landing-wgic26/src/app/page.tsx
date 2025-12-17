@@ -211,8 +211,8 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/img/logos/SemperGreen.svg"
-              alt="Semper Green"
+              src="/img/logos/BIG4LIFE_horizontal.svg"
+              alt="BIG4LIFE"
               width={320}
               height={240}
               className="max-h-24 opacity-70 hover:opacity-90"
@@ -231,8 +231,8 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/img/logos/BIG4LIFE_horizontal.svg"
-              alt="BIG4LIFE"
+              src="/img/logos/SemperGreen.svg"
+              alt="Semper Green"
               width={320}
               height={240}
               className="max-h-20 opacity-70 hover:opacity-90"
