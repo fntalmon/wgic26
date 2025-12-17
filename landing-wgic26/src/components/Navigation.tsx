@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ArrowRight, FileUp, Menu, Ticket } from "lucide-react";
 import { AnimatedLogo } from "./AnimatedLogo";
 import Link from "next/link";
@@ -96,15 +96,15 @@ const Navigation = ({
           icon: <ArrowRight />,
         },
         {
-          title: "Organisation commitee",
-          url: "/about/organisation-commitee",
+          title: "Organisation committee",
+          url: "/about/organisation-committee",
           description: "...",
           icon: <ArrowRight />,
           disabled: true,
         },
         {
-          title: "Scientific commitee",
-          url: "/about/scientific-commitee",
+          title: "Scientific committee",
+          url: "/about/scientific-committee",
           description: "...",
           icon: <ArrowRight />,
           disabled: true,
@@ -167,33 +167,21 @@ const Navigation = ({
     { title: "Registration", url: "/registration", disabled: true },
     {
       title: "Partners & Exhibitors",
-      url: "/exhibitors-partners",
-      items: [
-        {
-          title: "Exhibitors",
-          url: "/exhibitors-partners/exhibitors",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: "Partners",
-          url: "/exhibitors-partners/partners",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-      ],
+      url: "/exhibitors",
     },
     { title: "Social Program", url: "/social-program" },
     { title: "Travel", url: "/travel" },
   ],
   actions = {
-    button: { title: "Tickets", url: "#" },
-    button2: { title: "Papers", url: "#" },
+    button: { title: "Tickets", url: "/registration" },
+    button2: { title: "Papers", url: "/speakers" },
   },
 }: NavigationProps) => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [scrolled, setScrolled] = useState(false);
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -231,7 +219,7 @@ const Navigation = ({
           </NavigationMenu>
           <div className="flex gap-1.5 justify-end flex-wrap flex-shrink-0">
             <Button asChild variant={"yellow"}>
-              <a href={actions.button2.url}>
+              <a href="/speakers">
                 <FileUp size={20} />
                 {actions.button2.title}
               </a>
@@ -275,7 +263,7 @@ const Navigation = ({
                 variant="yellow"
                 size="icon"
               >
-                <a href={actions.button2.url}>
+                <a href="/speakers">
                   <FileUp size={24} />
                 </a>
               </Button>
@@ -321,7 +309,7 @@ const Navigation = ({
                   </Accordion>
                   <div className="flex flex-col gap-3 items-center pb-12">
                     <Button asChild variant={"yellow"} size={"lg"}>
-                      <a href={actions.button2.url}>
+                      <a href="/speakers">
                         <FileUp size={24} />
                         {actions.button2.title}
                       </a>
