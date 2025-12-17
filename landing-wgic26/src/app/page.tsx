@@ -1,8 +1,6 @@
 "use client"
 
 import Countdown from "@/components/Countdown";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { MapPin } from "lucide-react";
 import Image from "next/image";
 
@@ -45,7 +43,7 @@ export default function Home() {
 
               <p>An important part of the congress will be dedicated to the impacts of green infrastructure, i.e. the benefits for society, with the following sections: Climate resilience; Water management; Natural and Climate Hazards; Green Space Management; Biodiversity; Air Quality; Place Regeneration; Knowledge and Social Capacity Building for Sustainable Urban Transformation; Participatory Planning and Governance; Social Justice and Social Cohesion; Health and Well-being; New Economic Opportunities and Green Jobs.</p>
 
-              <p>Three themes will be highlighted during WGIC26: improving people's health and well-being; recovering society and places after post-conflict or post-disaster situations; and building resilient, healthy and just cities in the Global South.</p>
+              <p>Three themes will be highlighted during WGIC26: improving people&apos;s health and well-being; recovering society and places after post-conflict or post-disaster situations; and building resilient, healthy and just cities in the Global South.</p>
 
               <p>The program will be structured in two days of parallel sessions and a third day of technical visits to examples of green infrastructure in Barcelona. In addition, an additional fourth day has been planned dedicated to innovation and research processes in the green infrastructure sector, which will be hosted by the University of Lleida.</p>
 

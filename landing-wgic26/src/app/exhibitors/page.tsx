@@ -1,5 +1,4 @@
 import PageHeader from "@/components/PageHeader";
-import { HardHat } from "lucide-react";
 import Carousel from "@/components/Carousel";
 
 const Exhibitors = () => {
