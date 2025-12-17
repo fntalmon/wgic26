@@ -22,7 +22,7 @@ const Speakers = () => {
                 Please click the link to register. To register for WGIC26, enter and fill in the data in the registration submission application at the link below.
               </p>
               <p className="mt-3 text-white/70">
-                The registration system will open on <strong>xxxxxx 2025</strong>. Registration fee covers the costs during the conference period, including lunch and coffee breaks. No travel and/or accommodation is covered. Tickets for the Congress Gala Dinner, Technical Visits (3rd Day) and Research & Innovation day (4th Day, Lleida) are sold separately.
+                The registration system will open soon. Registration fee covers the costs during the conference period, including lunch and coffee breaks. No travel and/or accommodation is covered. Tickets for the Congress Gala Dinner, Technical Visits (3rd Day) and Research & Innovation day (4th Day, Lleida) are sold separately.
               </p>
             </div>
             <div className="flex-shrink-0 flex flex-col gap-3">
@@ -99,16 +99,11 @@ const Speakers = () => {
               <p className="mb-3">A registered author is allowed to present one paper (including oral presentation). For the second paper, a fee of 200 € is required.</p>
               <p className="mb-3">Full time student (not including post doctor) must provide proof of full-time status (copy of valid student ID card or letter from affiliated institution head or program director).</p>
               <p className="mb-3">All participants will receive a certificate of attendance.</p>
-              <p className="mb-3">To include the paper in the conference program and the conference proceedings, at least one of the authors has to register before the registration deadline. If you need an invoice, please send an email to <strong>xxxxxxxxxxxxxx</strong>.</p>
+              <p className="mb-3">To include the paper in the conference program and the conference proceedings, at least one of the authors has to register before the registration deadline. If you need an invoice, please send an email to <strong>wgic26.economics@udl.cat</strong>.</p>
 
               <div className="mt-6 bg-white/5 border border-white/10 rounded-md p-4">
                 <h3 className="font-medium text-white">Cancellation and Refund</h3>
-                <p className="mt-3">Option A: After the bank deposit, no reimbursement is possible.</p>
-                <p className="mt-2">Option B: Cancellations received by secretariat in writing will be accepted. Refund with remittance charge deducted will be processed after the conference. The refund policy is as follows:</p>
-                <ul className="list-disc list-inside mt-3 text-white/80">
-                  <li>Before 15th September 2026 — &gt; 75% refund</li>
-                  <li>After 15th September 2026 — No refund</li>
-                </ul>
+                <p className="mt-3">After the bank deposit, no reimbursement is possible.</p>
               </div>
 
             </div>

@@ -1,6 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 
-const OrganisationCommitee = () => {
+const OrganisationCommittee = () => {
     return (
         <div>
             <PageHeader
@@ -17,4 +17,4 @@ const OrganisationCommitee = () => {
     );
 };
 
-export default OrganisationCommitee;
+export default OrganisationCommittee;

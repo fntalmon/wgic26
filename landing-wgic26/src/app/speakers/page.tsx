@@ -22,7 +22,7 @@ const Speakers = () => {
                 Thank you for your interest in participating in World Green Infrastructure Congress 2026 Barcelona – Lleida (WGIC 2026). To submit a paper, enter and fill in the data in the paper submission application at the link below.
               </p>
               <p className="mt-3 text-white/70">
-                The 12th World Green Infrastructure Congress will be held in Barcelona at the International Barcelona Convention Centre, from 27th to 30th October 2026. WGIC 2026 welcomes original research, case studies and innovative applications in short paper format (maximum 4 pages), in MS Word format.
+                The 12th World Green Infrastructure Congress will be held in Barcelona at the International Barcelona Convention Centre, from 27th to 30th October 2026. WGIC 2026 welcomes original research, case studies and innovative applications in short paper format (maximum 5 pages), in MS Word format.
               </p>
             </div>
             <div className="flex-shrink-0 flex flex-col gap-3">
@@ -33,7 +33,7 @@ const Speakers = () => {
 
           <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base">
             <p>
-              WGIC026 warmly welcomes submissions of original research, case studies, and innovative applications, in short paper format (maximum 4 pages), in MS Word format. The limitation to 4 pages helps reduce similarity for papers later recommended for publication in special issues of journals.
+              WGIC026 warmly welcomes submissions of original research, case studies, and innovative applications, in short paper format (maximum 5 pages), in MS Word format. The limitation to 5 pages helps reduce similarity for papers later recommended for publication in special issues of journals.
             </p>
             <p>
               All submitted papers undergo a rigorous peer-review process. The scientific committee decides acceptance and whether the presentation is oral or poster. Accepted papers will be published in the conference proceedings of WGIC2026.
@@ -45,7 +45,7 @@ const Speakers = () => {
                 <li><a href="https://docs.google.com/document/d/1nBiY7bukcqV-QS2cnsJVv3K8gvPwzIwa/export?format=docx" className="text-potus underline">Download</a> the paper template.</li>
                 <li>Read the instructions carefully.</li>
                 <li>Select a main topic where your work fits.</li>
-                <li>Prepare the paper (max 4 pages).</li>
+                <li>Prepare the paper (max 5 pages).</li>
                 <li>Submit your paper in .doc format before <strong>31 March 2026</strong> (<a href="#" className="text-potus underline">submission form</a>).</li>
                 <li>You will receive a decision and R1 revision before <strong>15 April 2026</strong>.</li>
                 <li>Return revised paper (R1) before <strong>31 May 2026</strong> and R2 before <strong>30 June 2026</strong>.</li>

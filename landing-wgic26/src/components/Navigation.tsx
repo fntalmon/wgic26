@@ -96,15 +96,15 @@ const Navigation = ({
           icon: <ArrowRight />,
         },
         {
-          title: "Organisation commitee",
-          url: "/about/organisation-commitee",
+          title: "Organisation committee",
+          url: "/about/organisation-committee",
           description: "...",
           icon: <ArrowRight />,
           disabled: true,
         },
         {
-          title: "Scientific commitee",
-          url: "/about/scientific-commitee",
+          title: "Scientific committee",
+          url: "/about/scientific-committee",
           description: "...",
           icon: <ArrowRight />,
           disabled: true,
@@ -167,21 +167,7 @@ const Navigation = ({
     { title: "Registration", url: "/registration", disabled: true },
     {
       title: "Partners & Exhibitors",
-      url: "/exhibitors-partners",
-      items: [
-        {
-          title: "Exhibitors",
-          url: "/exhibitors-partners/exhibitors",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: "Partners",
-          url: "/exhibitors-partners/partners",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-      ],
+      url: "/exhibitors",
     },
     { title: "Social Program", url: "/social-program" },
     { title: "Travel", url: "/travel" },

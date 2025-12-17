@@ -1,6 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 
-const ScientificCommitee = () => {
+const ScientificCommittee = () => {
     return (
         <div>
             <PageHeader
@@ -17,4 +17,4 @@ const ScientificCommitee = () => {
     );
 };
 
-export default ScientificCommitee;
+export default ScientificCommittee;
