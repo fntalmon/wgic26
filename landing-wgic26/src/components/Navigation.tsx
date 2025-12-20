@@ -134,7 +134,7 @@ const Navigation = ({
           url: "/program/gaudi-year-2026",
           description: "...",
           icon: <ArrowRight />,
-          disabled: true,
+       
         },
         {
           title: "Key Note Speakers",
