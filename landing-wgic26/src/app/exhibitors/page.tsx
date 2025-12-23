@@ -149,7 +149,7 @@ For more information and a detailed breakdown of packages and benefits, you can 
                   </tr>
                   <tr className="hover:bg-white/5">
                     <td className="border border-white/20 px-4 py-3 text-white/80">
-                      Speaking SlotB
+                      Speaking Slot
                     </td>
                     <td className="border border-white/20 px-4 py-3 text-white/80">
                       ✔
@@ -179,7 +179,7 @@ For more information and a detailed breakdown of packages and benefits, you can 
                   </tr>
                   <tr className="hover:bg-white/5">
                     <td className="border border-white/20 px-4 py-3 text-white/80">
-                      Wokrshops
+                      Workshops (15 min)
                     </td>
                     <td className="border border-white/20 px-4 py-3 text-white/80">
                       ✔
@@ -325,7 +325,7 @@ For more information and a detailed breakdown of packages and benefits, you can 
               </div>
               <div className="flex flex-wrap gap-3 mt-2">
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1c5kGtm05CIBM995n2r-YmIRkezdYC-AZ"
+                  href="https://drive.google.com/uc?export=download&id=1w62XZagr7RhDoR4fhyT8vfnhga0CWnHR"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium"

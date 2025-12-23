@@ -1,0 +1,417 @@
+[
+    {
+        "id": "day1",
+        "label": "Day 1",
+        "date": "Friday, November 27, 2026",
+        "title": "",
+        "rooms": [
+            "1. Main Room",
+            "2. Room 2",
+            "3. Room 3",
+            "4. Room 4",
+            "5. Room 5"
+        ],
+        "events": [
+            {
+                "time": "08:00-09:00",
+                "activity": "Registration",
+                "isFullWidth": true
+            },
+            {
+                "time": "09:00-09:30",
+                "activity": "Opening Ceremony & Welcome",
+                "roomIndex": 0
+            },
+            {
+                "time": "09:30-10:00",
+                "activity": "Keynote 1",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:00-10:30",
+                "activity": "Keynote 2",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:30-11:00",
+                "activity": "Coffee break",
+                "isFullWidth": true
+            },
+            {
+                "time": "11:00-12:00",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Strategies – Policies – Funding programs",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Technologies – Market – GI/NBS sector – Standards",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Projects – Design",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Execution – Maintenance – Quality",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Education - Training",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "12:00-13:00",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Strategies – Policies – Funding programs",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Technologies – Market – GI/NBS sector – Standards",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Projects – Design",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Execution – Maintenance – Quality",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Education - Training",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "13:00-14:30",
+                "activity": "Lunch break - Exhibition tour",
+                "isFullWidth": true
+            },
+            {
+                "time": "14:30-15:00",
+                "activity": "Poster sessions",
+                "isFullWidth": true
+            },
+            {
+                "time": "15:00-15:30",
+                "activity": "Keynote 3",
+                "roomIndex": 0
+            },
+            {
+                "time": "15:30-16:30",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Strategies – Policies – Funding programs",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Technologies – Market – GI/NBS sector – Standards",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Projects – Design",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Execution – Maintenance – Quality",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Education - Training",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "16:30-17:30",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Strategies – Policies – Funding programs",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Technologies – Market – GI/NBS sector – Standards",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Projects – Design",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Execution – Maintenance – Quality",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Education - Training",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "17:30",
+                "activity": "Closing 1 day",
+                "roomIndex": 0
+            },
+            {
+                "time": "20:00",
+                "activity": "Gala dinner - Key note - WGIN awards ceremony",
+                "isFullWidth": true
+            }
+        ]
+    },
+    {
+        "id": "day2",
+        "label": "Day 2",
+        "date": "Saturday, November 28, 2026",
+        "title": "",
+        "rooms": [
+            "1. Main Room",
+            "2. Room 2",
+            "3. Room 3",
+            "4. Room 4",
+            "5. Room 5"
+        ],
+        "events": [
+            {
+                "time": "08:00-09:00",
+                "activity": "Registration",
+                "isFullWidth": true
+            },
+            {
+                "time": "09:00-09:30",
+                "activity": "Opening",
+                "roomIndex": 0
+            },
+            {
+                "time": "09:30-10:00",
+                "activity": "Keynote 4",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:00-10:30",
+                "activity": "Keynote 5",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:30-11:00",
+                "activity": "Coffee break",
+                "isFullWidth": true
+            },
+            {
+                "time": "11:00-12:00",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Impacts: a) Climate resilience",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: b) Water management",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: c) Natural and Climate Hazards",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: d) Green Space Management",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: e) Biodiversity",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "12:00-13:00",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Impacts: f) Air Quality",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: g) Place Regeneration",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: h) Knowledge and Social Capacity Building for Sustainable Urban Transformation",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: i) Participatory Planning and Governance",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: j) Social Justice and Social Cohesion",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "13:00-14:30",
+                "activity": "Lunch break - Exhibition tour",
+                "isFullWidth": true
+            },
+            {
+                "time": "14:30-15:00",
+                "activity": "Poster sessions",
+                "isFullWidth": true
+            },
+            {
+                "time": "15:00-15:30",
+                "activity": "Keynote 6",
+                "roomIndex": 0
+            },
+            {
+                "time": "15:30-16:30",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Impacts: k) Health and Well-being",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: h) New Economic Oportunities and Green Jobs",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Post-Conflict Recovery",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: Global South",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: Miscellaneous",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "16:30-17:30",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Impacts: Miscellaneous",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: Miscellaneous",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Post-Conflict Recovery",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: Global South",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: Miscellaneous",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "17:30-18:00",
+                "activity": "Congress Conclusions",
+                "roomIndex": 0
+            },
+            {
+                "time": "18:00",
+                "activity": "Closing Day 2",
+                "roomIndex": 0
+            }
+        ]
+    },
+    {
+        "id": "day3",
+        "label": "Day 3",
+        "date": "Sunday, November 29, 2026",
+        "title": "Technical Visits",
+        "description": "The third day will be dedicated to technical visits, offering first-hand insights into exemplary green infrastructure projects in Barcelona, illustrating innovative approaches and practical applications in a real-world urban context. Detailed information on the visit options and how to sign up will be available soon.",
+        "events": []
+    },
+    {
+        "id": "day4",
+        "label": "Day 4",
+        "date": "Monday, November 30, 2026",
+        "title": "Innovation Workshops. Green Thinking",
+        "subtitle": "Networking Plan for Monitoring and Evaluation of BIG4LIFE systems Impacts. Parc Agrobiotech Lleida",
+        "headers": [
+            "",
+            "",
+            "",
+            "Typology"
+        ],
+        "events": [
+            {
+                "time": "09:00-09:30",
+                "typology": "Reception",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "09:30-11:00",
+                "typology": "Workshop 1",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "11:00-11:30",
+                "typology": "Rest",
+                "activity": "Visit to BIG1-PCiTAL",
+                "extra": "Semi-intensive green roof"
+            },
+            {
+                "time": "11:30-13:00",
+                "typology": "Workshop 2",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "13:00-14:30",
+                "typology": "Lunch",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "14:30-17:00",
+                "typology": "Technical Visits",
+                "activity": "Visit to  BIG2 - Ronda Mercè using drone",
+                "extra": "Extensive green roof"
+            },
+            {
+
+                "activity": "Visit to BIG9 - Coberta Cavallers",
+                "extra": "Biodiverse. Zero water"
+            },
+            {
+
+                "activity": "Cultural visit to La Seu Vella",
+                "extra": ""
+            }
+        ]
+    }
+]

@@ -50,49 +50,50 @@ const Speakers = () => {
                   <tbody>
                     <tr className="hover:bg-white/5">
                       <td className="border border-white/20 px-4 py-3 text-white/80">Registration 2 days (Attendants)</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">550 €</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">633 €</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">715 €</td>
-                    </tr>
-                    <tr className="hover:bg-white/5">
-                      <td className="border border-white/20 px-4 py-3 text-white/80">Register one day</td>
                       <td className="border border-white/20 px-4 py-3 text-white/80">400 €</td>
                       <td className="border border-white/20 px-4 py-3 text-white/80">460 €</td>
                       <td className="border border-white/20 px-4 py-3 text-white/80">520 €</td>
                     </tr>
                     <tr className="hover:bg-white/5">
-                      <td className="border border-white/20 px-4 py-3 text-white/80">Students</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">300 €</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">345 €</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">390 €</td>
-                    </tr>
-                    <tr className="hover:bg-white/5">
-                      <td className="border border-white/20 px-4 py-3 text-white/80">Authors (Oral presentations)</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">700 €</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">805 €</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">—</td>
-                    </tr>
-                    <tr className="hover:bg-white/5">
-                      <td className="border border-white/20 px-4 py-3 text-white/80">Authors (Poster presentation)</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">600 €</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">690 €</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">—</td>
-                    </tr>
-                    <tr className="hover:bg-white/5">
-                      <td className="border border-white/20 px-4 py-3 text-white/80">Companions</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">Register one day</td>
                       <td className="border border-white/20 px-4 py-3 text-white/80">200 €</td>
                       <td className="border border-white/20 px-4 py-3 text-white/80">230 €</td>
                       <td className="border border-white/20 px-4 py-3 text-white/80">260 €</td>
                     </tr>
                     <tr className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80">Authors (Oral presentations)</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">600 €</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">690 €</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80"></td>
+                    </tr>
+                    <tr className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80">Authors (Poster presentation)</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">500 €</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">575 €</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80"></td>
+                    </tr>
+                    
+                    <tr className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80">Students</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">150 €</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">173 €</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">195 €</td>
+                    </tr>
+                    <tr className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80">Companions</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">150 €</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">173 €</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">195 €</td>
+                    </tr>
+                    <tr className="hover:bg-white/5">
                       <td className="border border-white/20 px-4 py-3 text-white/80">Gala dinner</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">180 €</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">180 €</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">180 €</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80"> </td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">150 €</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80"></td>
                     </tr>
                   </tbody>
                 </table>
-                 <p className="mt-4 text-potus">Approximate rates. Final rates to be announced soon</p>
+
               </div>
             </div>
 
