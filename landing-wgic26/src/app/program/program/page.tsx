@@ -40,13 +40,13 @@ const Program = () => {
 
                     <Tabs defaultValue="day1" className="w-full">
                         <TabsList className="grid w-full grid-cols-4 mb-8">
-                            {days.map((day: any) => (
+                            {days.map((day: { id: string; label: string }) => (
                                 <TabsTrigger key={day.id} value={day.id} className="text-xs md:text-sm">
                                     {day.label}
                                 </TabsTrigger>
                             ))}
                         </TabsList>
-                        {days.map((day: any) => (
+                        {days.map((day: { id: string; label: string; date: string; title?: string; subtitle?: string; description?: string; rooms?: string[]; headers?: string[]; events: { time?: string; activity: string; isFullWidth?: boolean; isParallel?: boolean; sessions?: { topic: string; chair: string }[]; typology?: string; extra?: string; location?: string; roomIndex?: number }[] }) => (
                             <TabsContent key={day.id} value={day.id} className="border border-cactus rounded-lg overflow-hidden bg-cactus shadow-sm text-white">
                                 <div className="bg-monstera p-6 border-b border-white/10">
                                     <h3 className="text-xl font-semibold text-white mb-2">{day.date}</h3>
@@ -77,7 +77,7 @@ const Program = () => {
                                         </TableHeader>
                                         <TableBody>
                                             {day.events.length > 0 ? (
-                                                day.events.map((event: any, index: number) => (
+                                                day.events.map((event: { time?: string; activity: string; isFullWidth?: boolean; isParallel?: boolean; sessions?: { topic: string; chair: string }[]; typology?: string; extra?: string; location?: string; roomIndex?: number }, index: number) => (
                                                     <TableRow key={index} className="border-white/10 hover:bg-white/5">
                                                         <TableCell className="font-medium text-xs whitespace-nowrap align-top text-white/80 p-4">{event.time}</TableCell>
                                                         {event.isFullWidth ? (
@@ -88,7 +88,7 @@ const Program = () => {
                                                                 {event.activity}
                                                             </TableCell>
                                                         ) : event.isParallel ? (
-                                                            event.sessions.map((session: any, i: number) => (
+                                                            event.sessions?.map((session: { topic: string; chair: string }, i: number) => (
                                                                 <TableCell key={i} className="text-xs align-top border-l border-white/10 p-4">
                                                                     <div className="font-semibold text-white mb-1">{session.topic}</div>
                                                                     <div className="text-[10px] text-white/60">Chair: {session.chair}</div>
@@ -101,7 +101,7 @@ const Program = () => {
                                                                 <TableCell className="text-xs text-white/70 border-l border-white/10 p-4 whitespace-pre-line">{event.extra}</TableCell>
                                                             </>
                                                         ) : day.rooms ? (
-                                                            day.rooms.map((_: any, i: number) => (
+                                                            day.rooms.map((_: string, i: number) => (
                                                                 <TableCell key={i} className="text-xs font-semibold text-white border-l border-white/10 p-4">
                                                                     {i === (event.roomIndex ?? 0) ? event.activity : ""}
                                                                 </TableCell>
