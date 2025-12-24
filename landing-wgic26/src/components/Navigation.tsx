@@ -121,12 +121,6 @@ const Navigation = ({
           description: "...",
           icon: <ArrowRight />,
         },
-        {
-          title: "Workshops",
-          url: "/program/workshops",
-          description: "...",
-          icon: <ArrowRight />,
-        },
 
         {
           title: "Gaudi Year 2026",
