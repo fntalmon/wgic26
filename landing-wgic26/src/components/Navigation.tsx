@@ -116,15 +116,14 @@ const Navigation = ({
       url: "/program",
       items: [
         {
-          title: "Main Topics",
-          url: "/program/topics",
+          title: "Gaudi Year 2026",
+          url: "/program/gaudi-year-2026",
           description: "...",
           icon: <ArrowRight />,
         },
-
         {
-          title: "Gaudi Year 2026",
-          url: "/program/gaudi-year-2026",
+          title: "Main Topics",
+          url: "/program/topics",
           description: "...",
           icon: <ArrowRight />,
         },
