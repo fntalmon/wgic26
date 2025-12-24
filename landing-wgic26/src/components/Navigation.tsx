@@ -109,7 +109,6 @@ const Navigation = ({
           icon: <ArrowRight />,
           disabled: true,
         },
-
       ],
     },
     {
@@ -117,42 +116,32 @@ const Navigation = ({
       url: "/program",
       items: [
         {
+          title: "Gaudi Year 2026",
+          url: "/program/gaudi-year-2026",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
           title: "Main Topics",
           url: "/program/topics",
           description: "...",
           icon: <ArrowRight />,
         },
         {
-          title: "Workshops",
-          url: "/program/workshops",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-
-        {
-          title: "Gaudi Year 2026",
-          url: "/program/gaudi-year-2026",
-          description: "...",
-          icon: <ArrowRight />,
-          disabled: true,
-        },
-        {
-          title: "Key Note Speakers",
-          url: "/program/speakers",
-          description: "...",
-          icon: <ArrowRight />,
-          disabled: true,
-        },
-        {
           title: "Program",
           url: "/program/program",
           description: "...",
           icon: <ArrowRight />,
-          disabled: true,
         },
         {
           title: "WGIN Awards",
           url: "/program/wgin-awards",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: "Key Note Speakers",
+          url: "/program/speakers",
           description: "...",
           icon: <ArrowRight />,
           disabled: true,
@@ -181,8 +170,6 @@ const Navigation = ({
   const [lastScrollY, setLastScrollY] = useState(0);
   const [scrolled, setScrolled] = useState(false);
 
-
-
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -209,7 +196,10 @@ const Navigation = ({
       >
         {/* Desktop */}
         <div className="hidden lg:flex justify-between items-center w-full">
-          <Link href={logo.url} className="flex items-center gap-2 flex-shrink-0">
+          <Link
+            href={logo.url}
+            className="flex items-center gap-2 flex-shrink-0"
+          >
             <AnimatedLogo scrolled={scrolled} visible={showNavbar} />
           </Link>
           <NavigationMenu className="flex-1">

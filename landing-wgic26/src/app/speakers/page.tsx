@@ -27,7 +27,7 @@ const Speakers = () => {
             </div>
             <div className="flex-shrink-0 flex flex-col gap-3">
               <a href="#" className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium">Go to submission form</a>
-              <a href="https://docs.google.com/document/d/1nBiY7bukcqV-QS2cnsJVv3K8gvPwzIwa/export?format=docx" className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 text-white">Download paper template</a>
+              <a href="https://docs.google.com/document/d/1X_aNCsK5tu56rAlhRSx2sXcMt_8PgUze/export?format=docx" className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 text-white">Download paper template</a>
             </div>
           </div>
 
@@ -42,7 +42,7 @@ const Speakers = () => {
             <div className="bg-white/5 border border-white/10 rounded-md p-4">
               <h3 className="font-medium text-white">Steps for paper submission</h3>
               <ol className="mt-3 list-decimal list-inside text-white/80 space-y-2">
-                <li><a href="https://docs.google.com/document/d/1nBiY7bukcqV-QS2cnsJVv3K8gvPwzIwa/export?format=docx" className="text-potus underline">Download</a> the paper template.</li>
+                <li><a href="https://docs.google.com/document/d/1X_aNCsK5tu56rAlhRSx2sXcMt_8PgUze/export?format=docx" className="text-potus underline">Download</a> the paper template.</li>
                 <li>Read the instructions carefully.</li>
                 <li>Select a main topic where your work fits.</li>
                 <li>Prepare the paper (max 5 pages).</li>

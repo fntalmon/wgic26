@@ -1,10 +1,10 @@
 @import "tailwindcss";
-@import '@fontsource-variable/martian-mono';
 @import "tw-animate-css";
 
 :root {
   /* FONT FAMILY */
-  --font-primary: 'Martian Mono Variable', mono;
+  --font-primary: 'Century Gothic', sans-serif;
+
 
   /* FONT WEIGHTS */
   --thin: 100;
@@ -60,17 +60,17 @@
     }
 
     h1 {
-      font-size: var(--text-6xl);
+      font-size: calc(var(--text-6xl) * 1.2); /* Slightly larger */
       line-height: 1.2;
       letter-spacing: 2;
     }
 
     h2 {
-      font-size: var(--text-4xl);
+      font-size: calc(var(--text-4xl) * 1.2);
     }
 
     h3 {
-      font-size: var(--text-2xl);
+      font-size: calc(var(--text-2xl) * 1.2);
     }
 
     h4 {
@@ -87,7 +87,7 @@
     }
 
     p {
-      font-size: var(--text-xs);
+      font-size: calc(var(--text-xs) * 1.2);
     }
 
     strong {
@@ -100,6 +100,7 @@
   body {
     font-family: var(--font-primary);
     font-weight: 400;
+    font-size: 1.25rem; /* Increased slightly more */
   }
 
   section {
