@@ -168,76 +168,97 @@ export default function Home() {
         </div>
       </section>
      */}
-      <section id="logo-strip-img" className="flex flex-col gap-32 w-auto mt-8 items-center">
-        <div className="flex flex-col md:flex-row gap-8 sm:gap-16">
-          <a
-            href="https://worldgreeninfrastructurenetwork.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/img/logos/WGIN.svg"
-              alt="WGI Network"
-              width={320}
-              height={240}
-              className="max-h-28 opacity-70 hover:opacity-90"
-            />
-          </a>
-          <a
-            href="http://udl.cat"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/img/logos/UDL_horizontal.svg"
-              alt="Universitat de Lleida"
-              width={320}
-              height={240}
-              className="max-h-28 opacity-70 hover:opacity-90"
-            />
-          </a>
-        </div>
-        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-8 sm:gap-16">
-          <Image
-            src="/img/logos/Life.svg"
-            alt="Life EU"
-            width={320}
-            height={240}
-            className="max-h-20 opacity-70 hover:opacity-90"
-          />
-          <a
-            href="https://www.sempergreen.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/img/logos/BIG4LIFE_horizontal.svg"
-              alt="BIG4LIFE"
-              width={320}
-              height={240}
-              className="max-h-24 opacity-70 hover:opacity-90"
-            />
-          </a>
-          <Image
-            src="/img/logos/IT4S.svg"
-            alt="IT4S"
-            width={320}
-            height={240}
-            className="max-h-20 opacity-70 hover:opacity-90"
-          />
-          <a
-            href="http://big4life.eu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/img/logos/SemperGreen.svg"
-              alt="Semper Green"
-              width={320}
-              height={240}
-              className="max-h-20 opacity-70 hover:opacity-90"
-            />
-          </a>
+
+      <section id="sponsors" className="flex flex-col gap-6 mt-16 pb-24">
+        <div className="text-xs uppercase w-full border-b border-white/50 py-2 tracking-wider">Sponsors</div>
+        
+        <div className="bg-cactus text-white py-16 px-6 rounded-md">
+          <div className="flex flex-col gap-12 items-center">
+            {/* First Row: 2 logos */}
+            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+              <a
+                href="https://worldgreeninfrastructurenetwork.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/img/logos-color/WGIN-logo.png"
+                  alt="WGI Network"
+                  width={340}
+                  height={250}
+                  className="h-32 w-auto object-contain"
+                />
+              </a>
+
+              <a
+                href="http://udl.cat"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/img/logos-color/Logo-de-la-Universitat-de-Lleida.png"
+                  alt="Universitat de Lleida"
+                  width={340}
+                  height={250}
+                  className="h-32 w-auto object-contain"
+                />
+              </a>
+            </div>
+
+            {/* Second Row: 3 logos */}
+            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/img/logos-color/logo-life.jpg"
+                  alt="Life EU"
+                  width={300}
+                  height={220}
+                  className="h-28 w-auto object-contain"
+                />
+              </div>
+
+              <a
+                href="http://big4life.eu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/img/logos-color/Footer_logo_BIG4LIFE_144.png"
+                  alt="BIG4LIFE"
+                  width={300}
+                  height={220}
+                  className="h-28 w-auto object-contain"
+                />
+              </a>
+
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/img/logos-color/it4s.png"
+                  alt="IT4S"
+                  width={300}
+                  height={220}
+                  className="h-28 w-auto object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Third Row: 1 logo */}
+            <div className="flex justify-center items-center">
+              <a
+                href="https://www.sempergreen.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/img/logos-color/sempergreen_urban-grey_green_22112023164728.jpg"
+                  alt="Semper Green"
+                  width={300}
+                  height={220}
+                  className="h-28 w-auto object-contain"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

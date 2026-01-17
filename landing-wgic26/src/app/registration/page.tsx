@@ -1,5 +1,8 @@
+"use client"
+
 import PageHeader from "@/components/PageHeader";
 import { FileText } from "lucide-react";
+import Script from "next/script";
 
 const Speakers = () => {
   return (
@@ -32,6 +35,30 @@ const Speakers = () => {
               </a>
               <a href="#" className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 text-white">Registration Form (link)</a>
             </div>
+          </div>
+
+          {/* Embedded Registration Form */}
+          <div className="w-full bg-white rounded-lg overflow-hidden">
+            <iframe 
+              id="frame214760" 
+              style={{ width: '1px', minWidth: '100%', minHeight: '800px', border: '0px' }} 
+              sandbox="allow-scripts allow-forms allow-popups allow-modals allow-same-origin" 
+              src="https://panel.helice.app/w/wgic26/214760/registration?preview=1"
+            ></iframe>
+            <Script 
+              src="https://panel.helice.app/land/assets/plugins/iFrameResizer/js/iframeResizer.min.js" 
+              strategy="afterInteractive"
+              onLoad={() => {
+                const interval = setInterval(() => {
+                  // @ts-ignore
+                  if (window.iFrameResize) {
+                    // @ts-ignore
+                    window.iFrameResize({ log: false, checkOrigin: false }, "#frame214760");
+                    clearInterval(interval);
+                  }
+                }, 100);
+              }}
+            />
           </div>
 
           <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base">

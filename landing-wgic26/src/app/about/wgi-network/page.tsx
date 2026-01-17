@@ -19,13 +19,15 @@ const Network = () => {
                 <section className="flex flex-col lg:flex-row gap-12 items-start">
                     <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
                         <div className="flex flex-col lg:flex-row gap-8 items-start">
-                            <Image
-                                src="/img/logos/WGIN.svg"
-                                alt="WGI Network"
-                                width={240}
-                                height={180}
-                                className="max-h-20 lg:max-h-24"
-                            />
+                            <div className="inline-flex bg-white p-1 rounded-md items-center justify-center">
+                                <Image
+                                    src="/img/logos/WGIN.svg"
+                                    alt="WGI Network"
+                                    width={240}
+                                    height={180}
+                                    className="h-10 w-auto"
+                                />
+                            </div>
                             <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase">World Green Infrastructure Network</h2>
                         </div>
                         
@@ -58,16 +60,20 @@ const Network = () => {
                     <div className="w-full bg-cactus p-16 justify-center">
 
                         <div className="uppercase text-md text-potus mb-4">Mission</div>
-                        <div className="flex flex-col lg:flex-row gap-16"><Image
-                            src="/img/logos/WGIN.svg"
-                            alt="WGI Network"
-                            width={320}
-                            height={240}
-                            className="max-h-24"
-                        />
+                        <div className="flex flex-col lg:flex-row gap-16">
+                            <div className="inline-flex bg-white p-1 rounded-md items-center justify-center">
+                                <Image
+                                    src="/img/logos/WGIN.svg"
+                                    alt="WGI Network"
+                                    width={320}
+                                    height={240}
+                                    className="h-12 w-auto"
+                                />
+                            </div>
                             <div className="uppercase text-2xl text-white leading-relaxed">
                                 Aligned with the WGIN, our mission is to advocate and promote the integration of green infrastructure in urban planning globally.
-                            </div></div>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="w-full bg-sansiviera p-16 justify-center">
