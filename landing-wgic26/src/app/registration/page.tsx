@@ -50,9 +50,9 @@ const Speakers = () => {
               strategy="afterInteractive"
               onLoad={() => {
                 const interval = setInterval(() => {
-                  // @ts-expect-error
+                  // @ts-expect-error -- iFrameResizer is injected by external script at runtime
                   if (window.iFrameResize) {
-                    // @ts-expect-error
+                    // @ts-expect-error -- global from external library, no TS types available
                     window.iFrameResize({ log: false, checkOrigin: false }, "#frame214760");
                     clearInterval(interval);
                   }
