@@ -50,9 +50,9 @@ const Speakers = () => {
               strategy="afterInteractive"
               onLoad={() => {
                 const interval = setInterval(() => {
-                  // @ts-ignore
+                  // @ts-expect-error
                   if (window.iFrameResize) {
-                    // @ts-ignore
+                    // @ts-expect-error
                     window.iFrameResize({ log: false, checkOrigin: false }, "#frame214760");
                     clearInterval(interval);
                   }
