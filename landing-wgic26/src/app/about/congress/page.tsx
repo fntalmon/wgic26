@@ -106,61 +106,61 @@ const Congress = () => {
                         <table className="w-full border-collapse border border-white/20">
                             <thead>
                                 <tr className="bg-cactus/20">
-                                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Who?</th>
-                                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">What?</th>
-                                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">When?</th>
+                                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base">Who?</th>
+                                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base">What?</th>
+                                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">When?</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Authors</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">First draft paper submitted</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 31 March 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Authors</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">First draft paper submitted</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 31 March 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Scientific committee</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Notification of acceptance and Oral/Poster decision</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 15 April 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Scientific committee</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Notification of acceptance and Oral/Poster decision</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 15 April 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Authors</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">R1 draft paper</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 31 May 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Authors</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">R1 draft paper</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 31 May 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Scientific committee</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Revision R2 draft paper</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 30 June 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Scientific committee</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Revision R2 draft paper</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 30 June 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Authors</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Final paper submitted</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 31 July 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Authors</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Final paper submitted</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 31 July 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Organizing Committee</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Final program</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">31 July 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Organizing Committee</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Final program</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">31 July 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Attendees</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Early-bird registration (up to 400 registrations)</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 15 April 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Attendees</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Early-bird registration (up to 400 registrations)</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 15 April 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Attendees</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Registration</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 30 September 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Attendees</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Registration</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 30 September 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Partners and exhibitors</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Registration</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 31 April 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Partners and exhibitors</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Registration</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 31 April 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Sponsors</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Registration</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 30 September 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Sponsors</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Registration</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 30 September 2026</td>
                                 </tr>
                             </tbody>
                         </table>

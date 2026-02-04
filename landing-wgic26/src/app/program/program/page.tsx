@@ -77,7 +77,7 @@ const Program = () => {
                                         </TableHeader>
                                         <TableBody>
                                             {day.events.length > 0 ? (
-                                                day.events.map((event: { time?: string; activity: string; isFullWidth?: boolean; isParallel?: boolean; sessions?: { topic: string; chair: string }[]; typology?: string; extra?: string; location?: string; roomIndex?: number }, index: number) => (
+                                                day.events.map((event: { time?: string; activity: string; isFullWidth?: boolean; isParallel?: boolean; sessions?: { topic: string; chair: string }[]; typology?: string; extra?: string; location?: string; roomIndex?: number; speakers?: string }, index: number) => (
                                                     <TableRow key={index} className="border-white/10 hover:bg-white/5">
                                                         <TableCell className="font-medium text-xs whitespace-nowrap align-top text-white/80 p-4">{event.time}</TableCell>
                                                         {event.isFullWidth ? (
@@ -103,7 +103,12 @@ const Program = () => {
                                                         ) : day.rooms ? (
                                                             day.rooms.map((_: string, i: number) => (
                                                                 <TableCell key={i} className="text-xs font-semibold text-white border-l border-white/10 p-4">
-                                                                    {i === (event.roomIndex ?? 0) ? event.activity : ""}
+                                                                    {i === (event.roomIndex ?? 0) ? (
+                                                                        <div>
+                                                                            <div>{event.activity}</div>
+                                                                            {event.speakers && <div className="text-[10px] text-white/60 mt-1 font-normal">{event.speakers}</div>}
+                                                                        </div>
+                                                                    ) : ""}
                                                                 </TableCell>
                                                                 
                                                             ))

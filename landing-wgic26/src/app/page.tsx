@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col gap-0">
-        <div className="bg-[url(/img/hero.jpg)] bg-no-repeat bg-cover bg-center w-full h-[700px]"></div>
+        <div className="bg-[url(/img/Tibidabo3.jpg)] bg-no-repeat bg-cover bg-center w-full h-[700px]"></div>
         <Countdown />
         <div id="banner" className="bg-cement text-mortar w-full py-12 pl-6 pr-6">
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 items-start">
@@ -242,8 +242,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Third Row: 1 logo */}
-            <div className="flex justify-center items-center">
+            {/* Third Row: 2 logos */}
+            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
               <a
                 href="https://www.sempergreen.com"
                 target="_blank"
@@ -257,6 +257,16 @@ export default function Home() {
                   className="h-28 w-auto object-contain"
                 />
               </a>
+
+              <div className="flex items-center justify-center">
+                <Image
+                  src="/img/logo-3-1.png"
+                  alt="Sponsor"
+                  width={300}
+                  height={220}
+                  className="h-28 w-auto object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>

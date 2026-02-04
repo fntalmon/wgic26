@@ -3,13 +3,13 @@ import PageHeader from "@/components/PageHeader";
 const OrganisationCommittee = () => {
     const honourCommittee = [
         { role: "Chair of the conference", name: "Dr. Gabriel Pérez", institution: "University of Lleida" },
-        { role: "WGIN President", name: "Mr. Steven Peck", institution: "WGIN" },
+        { role: "WGIN President", name: "Mr. Steeven Peck", institution: "WGIN" },
         { role: "University of Lleida Rector", name: "Maria Àngels Balsells", institution: "University of Lleida" },
-        { role: "Local Institutional Representative BCN", name: "", institution: "Barcelona Municipality" },
-        { role: "Local Institutional Representative BCN", name: "", institution: "Barcelona Provincial Council" },
+        { role: "Local Institutional Representative BCN", name: "Maria Buhigas", institution: "Barcelona Municipality" },
+        { role: "Local Institutional Representative BCN", name: "Ramon Torra", institution: "Barcelona Provincial Council" },
         { role: "Local Institutional Representative Lleida", name: "", institution: "Lleida Municipality" },
         { role: "Local Institutional Representative Lleida", name: "", institution: "Lleida Provincial Council" },
-        { role: "Catalan Government Representative", name: "", institution: "" },
+        { role: "Catalan Government Representative", name: "Jordi Mas", institution: "" },
         { role: "International Expert in GI/NBS", name: "", institution: "" },
         { role: "Private Sector Representative", name: "Mr. Corné van Garderen", institution: "Sempergreen" },
     ];
@@ -24,27 +24,23 @@ const OrganisationCommittee = () => {
         { role: "Representative WGIN", name: "Hemma Kumar" },
         { role: "Representative WGIN", name: "Zoe Averi" },
         { role: "Representative WGIN", name: "Tanya Muller" },
-        { role: "Representative Congress Management", name: "" },
-        { role: "Representative Congress Management", name: "" },
-        { role: "Representative Congress Organization", name: "" },
-        { role: "Representative Congress Organization", name: "" },
         { role: "Representative private sector", name: "Toni Amich", institution: "Sempergreen" },
     ];
 
     const advisoryCommittee = [
-        { role: "Representative WGIN", name: "David Brasfield" },
-        { role: "Representative WGIN", name: "Hemma Kumar" },
-        { role: "Representative WGIN", name: "Zoe Averi" },
-        { role: "Representative WGIN", name: "Tanya Muller" },
         { role: "Representative EFB", name: "Paulo Palha" },
         { role: "Representative EFB", name: "Vera Enzi" },
         { role: "Representative PRONATUR", name: "Julián Briz" },
         { role: "Representative ASESCUVE", name: "Andreu Masoni" },
-        { role: "Representative ASESCUVE", name: "David Maria Gómez" },
+        { role: "Representative ASESCUVE", name: "Daniel Lacueva" },
         { role: "Representative BIG4LIFE project", name: "Daniel Guzman", institution: "Verdtical" },
         { role: "Representative BIG4LIFE project", name: "Joan Beruezo", institution: "TEBVerd" },
         { role: "Representative BIG4LIFE project", name: "Lidia Calvo", institution: "Eixverd" },
         { role: "Official Association of Agricultural Engineers of Catalonia", name: "Contxi Villar" },
+        { role: "COAC", name: "Guim Costa" },
+        { role: "CAATEEB", name: "Isabel Pagonabarraga" },
+        { role: "CSCAE", name: "Marta Vall-llosera" },
+        { role: "CGATE", name: "Juan Carlos Asiain" },
     ];
 
     return (

@@ -73,7 +73,8 @@ const Speakers = () => {
                     </tr>
                     <tr className="hover:bg-white/5">
                       <td className="border border-white/20 px-4 py-3 text-white/80">Poster presentation</td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80">Mounted during conference</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">Posters will be mounted in the open space available. The program specifies time slots during the lunch breaks so that authors can explain their posters to attendees.
+</td>
                       <td className="border border-white/20 px-4 py-3 text-white/80">A0-sized paper (841 × 1189 mm) portrait. Use the single-slide poster template (<a className="text-potus underline" href="#">link</a>).</td>
                     </tr>
                   </tbody>

@@ -19,13 +19,14 @@ const Network = () => {
                 <section className="flex flex-col lg:flex-row gap-12 items-start">
                     <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
                         <div className="flex flex-col lg:flex-row gap-8 items-start">
-                            <div className="inline-flex bg-white p-1 rounded-md items-center justify-center">
+                            <div className="inline-flex items-center justify-center min-w-fit flex-shrink-0">
                                 <Image
                                     src="/img/logos/WGIN.svg"
                                     alt="WGI Network"
                                     width={240}
                                     height={180}
-                                    className="h-10 w-auto"
+                                    className="h-20 w-auto object-contain"
+                                    style={{ maxWidth: 'none' }}
                                 />
                             </div>
                             <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase">World Green Infrastructure Network</h2>
@@ -61,13 +62,14 @@ const Network = () => {
 
                         <div className="uppercase text-md text-potus mb-4">Mission</div>
                         <div className="flex flex-col lg:flex-row gap-16">
-                            <div className="inline-flex bg-white p-1 rounded-md items-center justify-center">
+                            <div className="inline-flex items-center justify-center min-w-fit flex-shrink-0">
                                 <Image
                                     src="/img/logos/WGIN.svg"
                                     alt="WGI Network"
                                     width={320}
                                     height={240}
-                                    className="h-12 w-auto"
+                                    className="h-24 w-auto object-contain"
+                                    style={{ maxWidth: 'none' }}
                                 />
                             </div>
                             <div className="uppercase text-2xl text-white leading-relaxed">
@@ -81,7 +83,7 @@ const Network = () => {
                         <div className="leading-relaxed flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 items between border-b-1 border-white/40 py-20">
                             <div className="uppercase w-full lg:w-1/2 text-lg"><strong>01</strong> Sustainability
                             </div>
-                            <div className="w-full lg:w-1/2 text-white/70">
+                            <div className="w-full lg:w-1/2 text-white/70 text-base">
                                 A commitment to integrating green infrastructure to enhance
                                 environmental resilience and combat climate change.
                             </div>
@@ -90,7 +92,7 @@ const Network = () => {
                         <div className="leading-relaxed flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 items between border-b-1 border-white/40 py-20">
                             <div className="uppercase w-full lg:w-1/2 text-lg"><strong>02</strong> Inclusivity
                             </div>
-                            <div className="w-full lg:w-1/2 text-white/70">
+                            <div className="w-full lg:w-1/2 text-white/70 text-base">
                                 Ensuring accessibility and participation, fostering shared knowledge.
                             </div>
                         </div>
@@ -98,7 +100,7 @@ const Network = () => {
                         <div className="leading-relaxed flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 items between border-b-1 border-white/40 py-20">
                             <div className="uppercase w-full lg:w-1/2 text-lg"><strong>03</strong> Innovation
                             </div>
-                            <div className="w-full lg:w-1/2 text-white/70">
+                            <div className="w-full lg:w-1/2 text-white/70 text-base">
                                 Promoting smart and forward-thinking solutions to address urban and environmental challenges.
                             </div>
                         </div>
@@ -106,7 +108,7 @@ const Network = () => {
                         <div className="leading-relaxed flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 items between border-b-1 border-white/40 py-20">
                             <div className="uppercase w-full lg:w-1/2 text-lg"><strong>04</strong> Collaboration
                             </div>
-                            <div className="w-full lg:w-1/2 text-white/70">
+                            <div className="w-full lg:w-1/2 text-white/70 text-base">
                                 Encouraging cooperation between governments, institutions, universities and communities for a collective impact.
                             </div>
                         </div>
