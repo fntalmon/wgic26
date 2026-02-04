@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import TextImage from "@/components/TextImage";
 import Image from "next/image";
 
 const Congress = () => {
@@ -12,19 +13,24 @@ const Congress = () => {
 
             <div className="w-full max-w-7xl px-0 py-12 flex flex-col gap-20">
                 {/* Main Congress Description */}
-                <section className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
-                    <p>
-                        Annually, the WGIN promotes and co-organizes the World Green Infrastructure Congress (WGIC), together with university academic institutions that host this global event.
-                    </p>
-                    <p>
-                        World congresses on green infrastructure offer several important benefits to society. First, they bring together researchers, professionals, public administrations, and companies from around the world to share scientific and technical advances on nature-based solutions such as green roofs, green façades, ecological corridors, and sustainable urban drainage systems. This accelerates innovation and improves the quality of interventions in cities and territories.
-                    </p>
-                    <p>
-                        In addition, these congresses help spread best practices and real examples that have improved urban resilience, reduced the impact of climate change, or increased citizens&apos; well-being. The transfer of knowledge allows more cities to adopt green strategies that reduce urban heat, improve air quality, and promote biodiversity.
-                    </p>
-                    <p>
-                        These events drive more ambitious public policies and foster international collaboration. By placing green infrastructure on the global agenda, they encourage governments and organizations to invest in sustainable, accessible, and economically beneficial solutions, generating a direct impact on health, quality of life, and the environmental sustainability of present and future societies.
-                    </p>
+                <section className="flex flex-col gap-8 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+                    <TextImage imageSrc="/img/varias/02 Porxos_BCN_02 (1).jpg" imageAlt="World Green Infrastructure Congress" imagePosition="right">
+                        <p>
+                            Annually, the WGIN promotes and co-organizes the World Green Infrastructure Congress (WGIC), together with university academic institutions that host this global event.
+                        </p>
+                        <p>
+                            World congresses on green infrastructure offer several important benefits to society. First, they bring together researchers, professionals, public administrations, and companies from around the world to share scientific and technical advances on nature-based solutions such as green roofs, green façades, ecological corridors, and sustainable urban drainage systems. This accelerates innovation and improves the quality of interventions in cities and territories.
+                        </p>
+                    </TextImage>
+                    
+                    <TextImage imageSrc="/img/varias/01 IMG_20250827_114013.jpg" imageAlt="Congress benefits and collaboration" imagePosition="left">
+                        <p>
+                            In addition, these congresses help spread best practices and real examples that have improved urban resilience, reduced the impact of climate change, or increased citizens&apos; well-being. The transfer of knowledge allows more cities to adopt green strategies that reduce urban heat, improve air quality, and promote biodiversity.
+                        </p>
+                        <p>
+                            These events drive more ambitious public policies and foster international collaboration. By placing green infrastructure on the global agenda, they encourage governments and organizations to invest in sustainable, accessible, and economically beneficial solutions, generating a direct impact on health, quality of life, and the environmental sustainability of present and future societies.
+                        </p>
+                    </TextImage>
                 </section>
 
                 {/* Congress History */}
@@ -106,61 +112,61 @@ const Congress = () => {
                         <table className="w-full border-collapse border border-white/20">
                             <thead>
                                 <tr className="bg-cactus/20">
-                                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Who?</th>
-                                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">What?</th>
-                                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">When?</th>
+                                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base">Who?</th>
+                                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base">What?</th>
+                                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">When?</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Authors</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">First draft paper submitted</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 31 March 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Authors</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">First draft paper submitted</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 31 March 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Scientific committee</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Notification of acceptance and Oral/Poster decision</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 15 April 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Scientific committee</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Notification of acceptance and Oral/Poster decision</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 15 April 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Authors</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">R1 draft paper</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 31 May 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Authors</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">R1 draft paper</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 31 May 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Scientific committee</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Revision R2 draft paper</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 30 June 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Scientific committee</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Revision R2 draft paper</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 30 June 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Authors</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Final paper submitted</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 31 July 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Authors</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Final paper submitted</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 31 July 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Organizing Committee</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Final program</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">31 July 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Organizing Committee</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Final program</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">31 July 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Attendees</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Early-bird registration (up to 400 registrations)</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 15 April 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Attendees</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Early-bird registration (up to 400 registrations)</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 15 April 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Attendees</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Registration</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 30 September 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Attendees</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Registration</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 30 September 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Partners and exhibitors</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Registration</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 31 April 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Partners and exhibitors</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Registration</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 31 April 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Sponsors</td>
-                                    <td className="border border-white/20 px-4 py-3 text-white/80">Registration</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium">&lt; 30 September 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Sponsors</td>
+                                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Registration</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 30 September 2026</td>
                                 </tr>
                             </tbody>
                         </table>

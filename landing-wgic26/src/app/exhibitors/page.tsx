@@ -13,8 +13,6 @@ For more information and a detailed breakdown of packages and benefits, you can 
       <section className="w-full justify-start text-xs">
         <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-10">
           <div className="flex flex-col gap-6">
-
-
             <h3 className="text-xl text-white uppercase">
               Partner: Elite Global or Event
             </h3>
@@ -297,11 +295,26 @@ For more information and a detailed breakdown of packages and benefits, you can 
             <div className="mt-6">
               <h4 className="text-lg text-white uppercase mb-3">The Venue</h4>
               <p className="text-white/80 mb-4">
-                The International Barcelona Convention Center (CCIB) offers an
-                iconic and flexible setting for the congress, with excellent
-                transport links and facilities to host a worldwide audience. The
-                venue combines sunlight, space and modular areas ideal for
-                exhibitions and networking.
+                The venue where WGIC26 will be held is perfect for creating the
+                networking atmosphere that sponsors, attendees and exhibitors
+                expect from a global event. The International Barcelona
+                Convention Center of Barcelona is an iconic venue located in the
+                Barcelona district of Sant Martí, inside the 22@ of Poblenou
+                neighbourhood.
+              </p>
+              <p className="text-white/80 mb-4">
+                The CCIB comprises two buildings of great architectural value:
+                the Convention Centre and the Auditorium CCIB Forum, joined by
+                an underground connecting walkway. With a gross surface area of
+                100,000 m² and a capacity for up to 15,000 attendees, both
+                buildings stand out for their size, natural light, and the great
+                versatility of their spaces.
+              </p>
+              <p className="text-white/80 mb-4">
+                The CCIB enjoys a privileged location just 500 metres from the
+                beach, 6 km from the historic centre and 22 km from the airport,
+                with excellent links to the most important highways and roads,
+                and by the public transport network.
               </p>
               <Carousel
                 images={[
@@ -325,13 +338,14 @@ For more information and a detailed breakdown of packages and benefits, you can 
               </div>
               <div className="flex flex-wrap gap-3 mt-2">
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1w62XZagr7RhDoR4fhyT8vfnhga0CWnHR"
+                  href="https://drive.google.com/uc?export=download&id=15hLfdY-jNAy47zCE-RNAl132PxDU2_Q-"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium"
                 >
                   Download info pack
                 </a>
+
                 <a
                   href="#"
                   className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 text-white"
@@ -339,7 +353,6 @@ For more information and a detailed breakdown of packages and benefits, you can 
                   Interest form (coming soon)
                 </a>
               </div>
-
             </div>
           </div>
         </div>
