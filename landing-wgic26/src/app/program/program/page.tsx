@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import TextImage from "@/components/TextImage";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
     Table,
@@ -23,19 +24,26 @@ const Program = () => {
             />
             <section className="container mx-auto py-12 px-4">
                 <div className="max-w-7xl mx-auto">
-                    <div className="mb-12 space-y-4 text-white/80">
-                        <p>
-                            The congress program will be structured over multiple days to maximize engagement and learning opportunities.
-                        </p>
-                        <p>
-                            Days one and two will feature parallel sessions covering the full range of selected topics, allowing participants to select sessions most relevant to their interests and expertise. The specific workshops will also take place in parallel with the oral presentation sessions.
-                        </p>
-                        <p>
-                            The third day will be dedicated to technical visits, offering first-hand insights into exemplary green infrastructure projects in Barcelona, illustrating innovative approaches and practical applications in a real-world urban context. Detailed information on the visit options and how to sign up will be available soon.
-                        </p>
-                        <p>
-                            An additional fourth day has been planned and will focus specifically on innovation and research processes within the green infrastructure sector. This day will be hosted by the University of Lleida and will provide an immersive experience highlighting cutting-edge research, emerging methodologies, and the latest advancements in the field.
-                        </p>
+                    <div className="mb-12 space-y-8 text-white/80">
+                        
+                        <TextImage imageSrc="/img/Tibidabo 1.jpg" imageAlt="Barcelona congress program" imagePosition="right">
+                            <p>
+                                The congress program will be structured over multiple days to maximize engagement and learning opportunities.
+                            </p>
+                            <p>
+                                Days one and two will feature parallel sessions covering the full range of selected topics, allowing participants to select sessions most relevant to their interests and expertise. The specific workshops will also take place in parallel with the oral presentation sessions.
+                            </p>
+                        </TextImage>
+                        
+                        <TextImage imageSrc="/img/Exterior_15.jpg" imageAlt="Technical visits and university facilities" imagePosition="left">
+                            <p>
+                                The third day will be dedicated to technical visits, offering first-hand insights into exemplary green infrastructure projects in Barcelona, illustrating innovative approaches and practical applications in a real-world urban context. Detailed information on the visit options and how to sign up will be available soon.
+                            </p>
+                            <p>
+                                An additional fourth day has been planned and will focus specifically on innovation and research processes within the green infrastructure sector. This day will be hosted by the University of Lleida and will provide an immersive experience highlighting cutting-edge research, emerging methodologies, and the latest advancements in the field.
+                            </p>
+                        </TextImage>
+
                     </div>
 
                     <Tabs defaultValue="day1" className="w-full">

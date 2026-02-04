@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import TextImage from "@/components/TextImage";
 import { HardHat } from "lucide-react";
 
 const Workshops = () => {
@@ -27,11 +28,11 @@ const Workshops = () => {
             <section className="w-full justify-start text-xs">
                 <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-12">
 
-                    <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base">
+                    <TextImage imageSrc="/img/Tibidabo 1.jpg" imageAlt="Barcelona workshop venue" imagePosition="right">
                         <p>
                             WGIC26 will feature thematic workshops running in parallel with the oral presentation sessions during days one and two. These interactive sessions are designed to stimulate discussion and collaboration among participants on three central themes emphasized during the congress.
                         </p>
-                    </div>
+                    </TextImage>
 
                     {/* Main Workshops */}
                     <div>
@@ -52,11 +53,11 @@ const Workshops = () => {
                     {/* Day 4 Innovation Workshops */}
                     <div className="mt-8">
                         <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-6">Day 4: Innovation Workshops at University of Lleida</h2>
-                        <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base">
+                        <TextImage imageSrc="/img/Exterior_15.jpg" imageAlt="University of Lleida facilities" imagePosition="left">
                             <p>
                                 An additional fourth day has been planned, focusing specifically on innovation and research processes within the green infrastructure sector. This day will be hosted by the University of Lleida and will provide an immersive experience highlighting cutting-edge research, emerging methodologies, and the latest advancements in the field.
                             </p>
-                        </div>
+                        </TextImage>
 
                         <div className="mt-6 overflow-x-auto">
                             <table className="w-full border-collapse border border-white/20">

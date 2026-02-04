@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import TextImage from "@/components/TextImage";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
@@ -32,12 +33,16 @@ const Network = () => {
                             <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase">World Green Infrastructure Network</h2>
                         </div>
                         
-                        <p>
-                            The World Green Infrastructure Network (WGIN) is an international nonprofit organization dedicated to promoting the planning, development, and implementation of green infrastructure worldwide. Its mission is to advance the use of nature-based solutions—such as green roofs, green walls, urban forests, and sustainable water management systems—to improve the environmental, social, and economic health of cities. By encouraging the adoption of these practices, WGIN aims to help urban areas become more resilient to climate change and more livable for their inhabitants.
-                        </p>
-                        <p>
-                            WGIN operates as a global network that connects national green roof and green infrastructure associations, researchers, professionals, and policymakers. Through conferences, publications, and collaborative projects, the organization facilitates the exchange of knowledge, research, and best practices. This collaboration helps different countries and cities learn from each other&apos;s experiences and accelerates the development of sustainable urban environments.
-                        </p>
+                        <TextImage imageSrc="/img/varias/02 IMG_20241204_153528.jpg" imageAlt="Green infrastructure development" imagePosition="right">
+                            <p>
+                                The World Green Infrastructure Network (WGIN) is an international nonprofit organization dedicated to promoting the planning, development, and implementation of green infrastructure worldwide. Its mission is to advance the use of nature-based solutions—such as green roofs, green walls, urban forests, and sustainable water management systems—to improve the environmental, social, and economic health of cities. By encouraging the adoption of these practices, WGIN aims to help urban areas become more resilient to climate change and more livable for their inhabitants.
+                            </p>
+                        </TextImage>
+                        <TextImage imageSrc="/img/varias/03 IMG_20250310_130100.jpg" imageAlt="Network collaboration" imagePosition="left">
+                            <p>
+                                WGIN operates as a global network that connects national green roof and green infrastructure associations, researchers, professionals, and policymakers. Through conferences, publications, and collaborative projects, the organization facilitates the exchange of knowledge, research, and best practices. This collaboration helps different countries and cities learn from each other&apos;s experiences and accelerates the development of sustainable urban environments.
+                            </p>
+                        </TextImage>
                         <p>
                             In addition to fostering international cooperation, WGIN advocates for supportive policies and standards that encourage the widespread adoption of green infrastructure. It works to raise awareness about the multiple benefits of integrating nature into urban design—from reducing heat islands and managing stormwater to improving air quality and biodiversity. By engaging governments, industry, and communities, the World Green Infrastructure Network plays a key role in advancing greener and more sustainable cities around the world.
                         </p>

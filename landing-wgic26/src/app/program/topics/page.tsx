@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import TextImage from "@/components/TextImage";
 import {
     Table,
     TableBody,
@@ -18,19 +19,32 @@ const Topics = () => {
             />
             <section className="container mx-auto py-12 px-4">
                 <div className="max-w-7xl mx-auto">
-                    <div className="mb-12 space-y-4 text-white/80">
-                        <p>
-                            The congress program has been carefully designed to offer a comprehensive and engaging experience for all participants. It will feature a diverse range of activities, including keynote speeches by internationally recognised experts, invited talks highlighting emerging trends and innovations, plenary sessions to address overarching topics, and interactive panel discussions where participants can exchange ideas and debate critical issues. In addition, the program will include thematic workshops, technical exhibitions showcasing the latest solutions and technologies in green infrastructure, as well as oral and poster presentations that provide a platform for researchers, practitioners, and policymakers to share their latest findings and projects.
-                        </p>
-                        <p>
-                            Participants will have the opportunity to engage with a wide spectrum of topics, reflecting the multifaceted nature of green infrastructure and nature-based solutions. These topics include Strategies, Policies, and Funding Programs; emerging Technologies; the Market and Standards in the Green Infrastructure (GI) and Nature-Based Solutions (NBS) sector; Design, Implementation, Maintenance, and Quality of projects; as well as Education and Training. This diversity ensures that the congress addresses the full lifecycle of green infrastructure projects, from conceptual planning to execution and long-term management, while also exploring broader societal, economic, and educational aspects of sustainable urban development.
-                        </p>
-                        <p>
-                            A particularly important part of the congress will be dedicated to examining the impacts of green infrastructure on society and the environment. Specific sessions will explore a wide range of benefits, including climate resilience, water management, natural and climate hazard mitigation, green space management, biodiversity enhancement, air quality improvement, and urban place regeneration. Other sessions will focus on knowledge and social capacity building for sustainable urban transformation, participatory planning and governance, social justice and cohesion, public health and well-being, as well as new economic opportunities and green jobs. By highlighting these areas, the congress emphasises how green infrastructure can deliver tangible and measurable benefits to communities while contributing to long-term sustainability goals.
-                        </p>
-                        <p>
-                            Three central themes will be emphasised during WGIC26, each designed to stimulate discussion and collaboration among participants. The first theme focuses on improving people’s health and well-being, encouraging a strong interaction between the green infrastructure and health sectors. The second theme examines the role of green infrastructure in recovering societies and places after post-conflict or post-disaster situations, highlighting its potential to support resilience and social reconstruction. The third theme addresses the challenge of building resilient, healthy, and just cities in the Global South, where green infrastructure can play a pivotal role in addressing environmental, social, and economic inequalities.
-                        </p>
+                    <div className="mb-12 space-y-8 text-white/80">
+                        
+                        <TextImage imageSrc="/img/varias/01 Bilbao_BCN.jpg" imageAlt="Barcelona congress venue" imagePosition="right">
+                            <p>
+                                The congress program has been carefully designed to offer a comprehensive and engaging experience for all participants. It will feature a diverse range of activities, including keynote speeches by internationally recognised experts, invited talks highlighting emerging trends and innovations, plenary sessions to address overarching topics, and interactive panel discussions where participants can exchange ideas and debate critical issues. In addition, the program will include thematic workshops, technical exhibitions showcasing the latest solutions and technologies in green infrastructure, as well as oral and poster presentations that provide a platform for researchers, practitioners, and policymakers to share their latest findings and projects.
+                            </p>
+                        </TextImage>
+
+                        <TextImage imageSrc="/img/varias/02 Porxos_BCN_02.jpg" imageAlt="Barcelona green infrastructure" imagePosition="left">
+                            <p>
+                                Participants will have the opportunity to engage with a wide spectrum of topics, reflecting the multifaceted nature of green infrastructure and nature-based solutions. These topics include Strategies, Policies, and Funding Programs; emerging Technologies; the Market and Standards in the Green Infrastructure (GI) and Nature-Based Solutions (NBS) sector; Design, Implementation, Maintenance, and Quality of projects; as well as Education and Training. This diversity ensures that the congress addresses the full lifecycle of green infrastructure projects, from conceptual planning to execution and long-term management, while also exploring broader societal, economic, and educational aspects of sustainable urban development.
+                            </p>
+                        </TextImage>
+
+                        <TextImage imageSrc="/img/varias/03 Moritz_BCN.jpg" imageAlt="Barcelona urban development" imagePosition="right">
+                            <p>
+                                A particularly important part of the congress will be dedicated to examining the impacts of green infrastructure on society and the environment. Specific sessions will explore a wide range of benefits, including climate resilience, water management, natural and climate hazard mitigation, green space management, biodiversity enhancement, air quality improvement, and urban place regeneration. Other sessions will focus on knowledge and social capacity building for sustainable urban transformation, participatory planning and governance, social justice and cohesion, public health and well-being, as well as new economic opportunities and green jobs. By highlighting these areas, the congress emphasises how green infrastructure can deliver tangible and measurable benefits to communities while contributing to long-term sustainability goals.
+                            </p>
+                        </TextImage>
+
+                        <TextImage imageSrc="/img/varias/01 IMG_20250827_114013.jpg" imageAlt="Congress activities" imagePosition="left">
+                            <p>
+                                Three central themes will be emphasised during WGIC26, each designed to stimulate discussion and collaboration among participants. The first theme focuses on improving people's health and well-being, encouraging a strong interaction between the green infrastructure and health sectors. The second theme examines the role of green infrastructure in recovering societies and places after post-conflict or post-disaster situations, highlighting its potential to support resilience and social reconstruction. The third theme addresses the challenge of building resilient, healthy, and just cities in the Global South, where green infrastructure can play a pivotal role in addressing environmental, social, and economic inequalities.
+                            </p>
+                        </TextImage>
+
                     </div>
 
                     {/* Unified Topics Table */}
