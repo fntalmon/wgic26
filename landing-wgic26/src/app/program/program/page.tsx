@@ -49,7 +49,7 @@ const Program = () => {
                     <Tabs defaultValue="day1" className="w-full">
                         <TabsList className="grid w-full grid-cols-4 mb-8">
                             {days.map((day: { id: string; label: string }) => (
-                                <TabsTrigger key={day.id} value={day.id} className="text-xs md:text-sm">
+                                <TabsTrigger key={day.id} value={day.id} className="text-sm md:text-base">
                                     {day.label}
                                 </TabsTrigger>
                             ))}
@@ -87,34 +87,34 @@ const Program = () => {
                                             {day.events.length > 0 ? (
                                                 day.events.map((event: { time?: string; activity: string; isFullWidth?: boolean; isParallel?: boolean; sessions?: { topic: string; chair: string }[]; typology?: string; extra?: string; location?: string; roomIndex?: number; speakers?: string }, index: number) => (
                                                     <TableRow key={index} className="border-white/10 hover:bg-white/5">
-                                                        <TableCell className="font-medium text-xs whitespace-nowrap align-top text-white/80 p-4">{event.time}</TableCell>
+                                                        <TableCell className="font-medium text-sm whitespace-nowrap align-top text-white/80 p-4">{event.time}</TableCell>
                                                         {event.isFullWidth ? (
                                                             <TableCell 
                                                                 colSpan={day.rooms ? day.rooms.length : (day.headers ? day.headers.length - 1 : 2)} 
-                                                                className="text-xs font-semibold text-white bg-white/10 p-4"
+                                                                className="text-sm font-semibold text-white bg-white/10 p-4"
                                                             >
                                                                 {event.activity}
                                                             </TableCell>
                                                         ) : event.isParallel ? (
                                                             event.sessions?.map((session: { topic: string; chair: string }, i: number) => (
-                                                                <TableCell key={i} className="text-xs align-top border-l border-white/10 p-4">
+                                                                <TableCell key={i} className="text-sm align-top border-l border-white/10 p-4">
                                                                     <div className="font-semibold text-white mb-1">{session.topic}</div>
-                                                                    <div className="text-[10px] text-white/60">Chair: {session.chair}</div>
+                                                                    <div className="text-xs text-white/60">Chair: {session.chair}</div>
                                                                 </TableCell>
                                                             ))
                                                         ) : day.headers ? (
                                                             <>
-                                                                <TableCell className="text-xs font-semibold text-white border-l border-white/10 p-4">{event.typology}</TableCell>
-                                                                <TableCell className="text-xs text-white/70 border-l border-white/10 p-4 whitespace-pre-line">{event.activity}</TableCell>
-                                                                <TableCell className="text-xs text-white/70 border-l border-white/10 p-4 whitespace-pre-line">{event.extra}</TableCell>
+                                                                <TableCell className="text-sm font-semibold text-white border-l border-white/10 p-4">{event.typology}</TableCell>
+                                                                <TableCell className="text-sm text-white/70 border-l border-white/10 p-4 whitespace-pre-line">{event.activity}</TableCell>
+                                                                <TableCell className="text-sm text-white/70 border-l border-white/10 p-4 whitespace-pre-line">{event.extra}</TableCell>
                                                             </>
                                                         ) : day.rooms ? (
                                                             day.rooms.map((_: string, i: number) => (
-                                                                <TableCell key={i} className="text-xs font-semibold text-white border-l border-white/10 p-4">
+                                                                <TableCell key={i} className="text-sm font-semibold text-white border-l border-white/10 p-4">
                                                                     {i === (event.roomIndex ?? 0) ? (
                                                                         <div>
                                                                             <div>{event.activity}</div>
-                                                                            {event.speakers && <div className="text-[10px] text-white/60 mt-1 font-normal">{event.speakers}</div>}
+                                                                            {event.speakers && <div className="text-xs text-white/60 mt-1 font-normal">{event.speakers}</div>}
                                                                         </div>
                                                                     ) : ""}
                                                                 </TableCell>
@@ -122,8 +122,8 @@ const Program = () => {
                                                             ))
                                                         ) : (
                                                             <>
-                                                                <TableCell className="text-xs font-semibold text-white border-l border-white/10 p-4">{event.activity}</TableCell>
-                                                                <TableCell className="text-xs text-white/70 border-l border-white/10 p-4">{event.location}</TableCell>
+                                                                <TableCell className="text-sm font-semibold text-white border-l border-white/10 p-4">{event.activity}</TableCell>
+                                                                <TableCell className="text-sm text-white/70 border-l border-white/10 p-4">{event.location}</TableCell>
                                                             </>
                                                         )}
                                                     </TableRow>
@@ -141,7 +141,7 @@ const Program = () => {
                             </TabsContent>
                         ))}
                     </Tabs>
-                    <div className="mt-8 text-xs text-white/60 italic">
+                    <div className="mt-8 text-sm text-white/60 italic">
                         Detailed information about the innovation and research workshops that will be held in Lleida and how to sign up will be provided soon.
                     </div>
                 </div>
