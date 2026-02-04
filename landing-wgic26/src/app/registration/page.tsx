@@ -2,7 +2,7 @@
 
 import PageHeader from "@/components/PageHeader";
 import { FileText } from "lucide-react";
-import Script from "next/script";
+//import Script from "next/script";
 
 const Registration = () => {
   return (
