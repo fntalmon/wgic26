@@ -15,10 +15,6 @@ const Workshops = () => {
             title: "Green Infrastructure vs Post-Conflict Recovery",
             description: "Examining the role of green infrastructure in recovering societies and places after post-conflict or post-disaster situations, highlighting its potential to support resilience and social reconstruction.",
         },
-        {
-            title: "Life EU - New European Bauhaus",
-            description: "Workshop exploring the intersection of LIFE EU projects and the New European Bauhaus initiative, focusing on sustainable, aesthetic and inclusive approaches to green infrastructure.",
-        },
     ];
 
     return (
@@ -40,7 +36,7 @@ const Workshops = () => {
                     {/* Main Workshops */}
                     <div>
                         <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-6">Thematic Workshops</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {workshops.map((workshop, index) => (
                                 <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-6 flex flex-col gap-4">
                                     <div className="w-12 h-12 bg-cactus/30 rounded-lg flex items-center justify-center">

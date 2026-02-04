@@ -100,12 +100,14 @@ const Navigation = ({
           url: "/about/organisation-committee",
           description: "...",
           icon: <ArrowRight />,
+          disabled: true,
         },
         {
-          title: "Scientific committee",
-          url: "/about/scientific-committee",
+          title: "Congress committee",
+          url: "/about/congress-committee",
           description: "...",
           icon: <ArrowRight />,
+          disabled: true,
         },
       ],
     },
@@ -130,13 +132,13 @@ const Navigation = ({
           url: "/program/program",
           description: "...",
           icon: <ArrowRight />,
-        },/*
+        },
         {
           title: "Workshops",
           url: "/program/workshops",
           description: "...",
           icon: <ArrowRight />,
-        },*/
+        },
         {
           title: "WGIN Awards",
           url: "/program/wgin-awards",
