@@ -1,137 +1,172 @@
 import PageHeader from "@/components/PageHeader";
 
 const OrganisationCommittee = () => {
-    const honourCommittee = [
-        { role: "Chair of the conference", name: "Dr. Gabriel Pérez", institution: "University of Lleida" },
-        { role: "WGIN President", name: "Mr. Steven Peck", institution: "WGIN" },
-        { role: "University of Lleida Rector", name: "Maria Àngels Balsells", institution: "University of Lleida" },
-        { role: "Local Institutional Representative BCN", name: "", institution: "Barcelona Municipality" },
-        { role: "Local Institutional Representative BCN", name: "", institution: "Barcelona Provincial Council" },
-        { role: "Local Institutional Representative Lleida", name: "", institution: "Lleida Municipality" },
-        { role: "Local Institutional Representative Lleida", name: "", institution: "Lleida Provincial Council" },
-        { role: "Catalan Government Representative", name: "", institution: "" },
-        { role: "International Expert in GI/NBS", name: "", institution: "" },
-        { role: "Private Sector Representative", name: "Mr. Corné van Garderen", institution: "Sempergreen" },
-    ];
+  const honourCommittee = [
+    {
+      role: "WGIN President",
+      name: "Mr. Steeven Peck",
+      institution: "WGIN President",
+    },
+    {
+      role: "University of Lleida Rector",
+      name: "Maria Àngels Balsells",
+      institution: "University of Lleida Rector",
+    },
+    {
+      role: "Representative Catalan Government",
+      name: "",
+      institution: "Representative Catalan Goverment ",
+    },
+    {
+      role: "Representative Barcelona Municipality",
+      name: "",
+      institution: "Representative Barcelona Municipality",
+    },
+    {
+      role: "Representative Provincial Council (Barcelona)",
+      name: "",
+      institution: "Representative Provincial Council",
+    },
+    {
+      role: "Representative Lleida Municipality",
+      name: "",
+      institution: "Representative Lleida Municipality",
+    },
+    {
+      role: "Representative Provincial Council (Lleida)",
+      name: "",
+      institution: "Representative Provincial Council",
+    },
+    {
+      role: "Chair of the congress",
+      name: "Dr. Gabriel Pérez",
+      institution: "Chair of the congress",
+    },
+  ];
 
-    const organizingCommittee = [
-        { role: "Representative University of Lleida", name: "Gabriel Pérez" },
-        { role: "Representative University of Lleida", name: "Julià Coma" },
-        { role: "Representative University of Lleida", name: "Laura Herrera" },
-        { role: "Representative UdL Foundation", name: "Mercè Balcells" },
-        { role: "Representative UdL Foundation", name: "Marta Iglesias" },
-        { role: "Representative WGIN", name: "David Brasfield" },
-        { role: "Representative WGIN", name: "Hemma Kumar" },
-        { role: "Representative WGIN", name: "Zoe Averi" },
-        { role: "Representative WGIN", name: "Tanya Muller" },
-        { role: "Representative Congress Management", name: "" },
-        { role: "Representative Congress Management", name: "" },
-        { role: "Representative Congress Organization", name: "" },
-        { role: "Representative Congress Organization", name: "" },
-        { role: "Representative private sector", name: "Toni Amich", institution: "Sempergreen" },
-    ];
+  const organizingCommittee = [
+    {
+      role: "University of Lleida / BIG4LIFE",
+      name: "Gabriel Pérez",
+      institution: "University of Lleida",
+    },
+    {
+      role: "University of Lleida / BIG4LIFE",
+      name: "Julià Coma",
+      institution: "University of Lleida",
+    },
+    {
+      role: "University of Lleida / BIG4LIFE",
+      name: "Laura Herrera",
+      institution: "University of Lleida",
+    },
+    { role: "WGIN", name: "David Brasfield", institution: "WGIN" },
+    { role: "WGIN", name: "Hemma Kumar", institution: "WGIN" },
+    { role: "WGIN", name: "Zoe Averi", institution: "WGIN" },
+    { role: "WGIN", name: "Tanya Muller", institution: "WGIN" },
+    {
+      role: "Private sector / BIG4LIFE",
+      name: "Toni Amich",
+      institution: "Sempergreen",
+    },
+  ];
 
-    const advisoryCommittee = [
-        { role: "Representative WGIN", name: "David Brasfield" },
-        { role: "Representative WGIN", name: "Hemma Kumar" },
-        { role: "Representative WGIN", name: "Zoe Averi" },
-        { role: "Representative WGIN", name: "Tanya Muller" },
-        { role: "Representative EFB", name: "Paulo Palha" },
-        { role: "Representative EFB", name: "Vera Enzi" },
-        { role: "Representative PRONATUR", name: "Julián Briz" },
-        { role: "Representative ASESCUVE", name: "Andreu Masoni" },
-        { role: "Representative ASESCUVE", name: "David Maria Gómez" },
-        { role: "Representative BIG4LIFE project", name: "Daniel Guzman", institution: "Verdtical" },
-        { role: "Representative BIG4LIFE project", name: "Joan Beruezo", institution: "TEBVerd" },
-        { role: "Representative BIG4LIFE project", name: "Lidia Calvo", institution: "Eixverd" },
-        { role: "Official Association of Agricultural Engineers of Catalonia", name: "Contxi Villar" },
-    ];
+  return (
+    <div>
+      <PageHeader
+        title="Organisation Committee"
+        description="WGIC26 Structure"
+        section="about"
+      />
+      <section className="w-full justify-start text-xs">
+        <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-12">
+          {/* Honour Committee */}
+          <div>
+            <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-6">
+              Honour Committee
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-white/20">
+                <thead>
+                  <tr className="bg-cactus/20">
+                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">
+                      Role
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">
+                      Representative
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">
+                      Institution/Company
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {honourCommittee.map((member, index) => (
+                    <tr key={index} className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80">
+                        {member.role}
+                      </td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">
+                        {member.name || (
+                          <span className="italic text-white/40">
+                            To be confirmed
+                          </span>
+                        )}
+                      </td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">
+                        {member.institution || (
+                          <span className="italic text-white/40">
+                            To be confirmed
+                          </span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
 
-    return (
-        <div>
-            <PageHeader
-                title="Organisation Committee"
-                description="WGIC26 Structure"
-                section="about"
-            />
-            <section className="w-full justify-start text-xs">
-                <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-12">
-
-                    {/* Honour Committee */}
-                    <div>
-                        <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-6">Honour Committee</h2>
-                        <div className="overflow-x-auto">
-                            <table className="w-full border-collapse border border-white/20">
-                                <thead>
-                                    <tr className="bg-cactus/20">
-                                        <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Role</th>
-                                        <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Representative</th>
-                                        <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Institution/Company</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {honourCommittee.map((member, index) => (
-                                        <tr key={index} className="hover:bg-white/5">
-                                            <td className="border border-white/20 px-4 py-3 text-white/80">{member.role}</td>
-                                            <td className="border border-white/20 px-4 py-3 text-white/80">{member.name || <span className="italic text-white/40">To be confirmed</span>}</td>
-                                            <td className="border border-white/20 px-4 py-3 text-white/80">{member.institution || <span className="italic text-white/40">To be confirmed</span>}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    {/* Organizing Committee */}
-                    <div>
-                        <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-6">Organizing Committee</h2>
-                        <div className="overflow-x-auto">
-                            <table className="w-full border-collapse border border-white/20">
-                                <thead>
-                                    <tr className="bg-cactus/20">
-                                        <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Role</th>
-                                        <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Representative</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {organizingCommittee.map((member, index) => (
-                                        <tr key={index} className="hover:bg-white/5">
-                                            <td className="border border-white/20 px-4 py-3 text-white/80">{member.role}</td>
-                                            <td className="border border-white/20 px-4 py-3 text-white/80">{member.name || <span className="italic text-white/40">To be confirmed</span>}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    {/* Advisory Committee */}
-                    <div>
-                        <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-6">Advisory Committee</h2>
-                        <div className="overflow-x-auto">
-                            <table className="w-full border-collapse border border-white/20">
-                                <thead>
-                                    <tr className="bg-cactus/20">
-                                        <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Role</th>
-                                        <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Representative</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {advisoryCommittee.map((member, index) => (
-                                        <tr key={index} className="hover:bg-white/5">
-                                            <td className="border border-white/20 px-4 py-3 text-white/80">{member.role}</td>
-                                            <td className="border border-white/20 px-4 py-3 text-white/80">{member.name || <span className="italic text-white/40">To be confirmed</span>}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+          {/* Organizing Committee */}
+          <div>
+            <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-6">
+              Organizing Committee
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-white/20">
+                <thead>
+                  <tr className="bg-cactus/20">
+                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">
+                      Role
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">
+                      Representative
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {organizingCommittee.map((member, index) => (
+                    <tr key={index} className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80">
+                        {member.role}
+                      </td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80">
+                        {member.name || (
+                          <span className="italic text-white/40">
+                            To be confirmed
+                          </span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-    );
+      </section>
+    </div>
+  );
 };
 
 export default OrganisationCommittee;

@@ -2,50 +2,28 @@ import PageHeader from "@/components/PageHeader";
 
 const OrganisationCommittee = () => {
     const honourCommittee = [
-        { role: "Chair of the conference", name: "Dr. Gabriel Pérez", institution: "University of Lleida" },
-        { role: "WGIN President", name: "Mr. Steven Peck", institution: "WGIN" },
+        { role: "WGIN President", name: "Mr. Steeven Peck", institution: "WGIN" },
         { role: "University of Lleida Rector", name: "Maria Àngels Balsells", institution: "University of Lleida" },
-        { role: "Local Institutional Representative BCN", name: "", institution: "Barcelona Municipality" },
-        { role: "Local Institutional Representative BCN", name: "", institution: "Barcelona Provincial Council" },
-        { role: "Local Institutional Representative Lleida", name: "", institution: "Lleida Municipality" },
-        { role: "Local Institutional Representative Lleida", name: "", institution: "Lleida Provincial Council" },
-        { role: "Catalan Government Representative", name: "", institution: "" },
-        { role: "International Expert in GI/NBS", name: "", institution: "" },
-        { role: "Private Sector Representative", name: "Mr. Corné van Garderen", institution: "Sempergreen" },
+        { role: "Representative Catalan Government", name: "", institution: "" },
+        { role: "Representative Barcelona Municipality", name: "", institution: "Barcelona Municipality" },
+        { role: "Representative Provincial Council (Barcelona)", name: "", institution: "Provincial Council" },
+        { role: "Representative Lleida Municipality", name: "", institution: "Lleida Municipality" },
+        { role: "Representative Provincial Council (Lleida)", name: "", institution: "Provincial Council" },
+        { role: "Chair of the congress", name: "Dr. Gabriel Pérez", institution: "" },
     ];
 
     const organizingCommittee = [
-        { role: "Representative University of Lleida", name: "Gabriel Pérez" },
-        { role: "Representative University of Lleida", name: "Julià Coma" },
-        { role: "Representative University of Lleida", name: "Laura Herrera" },
-        { role: "Representative UdL Foundation", name: "Mercè Balcells" },
-        { role: "Representative UdL Foundation", name: "Marta Iglesias" },
-        { role: "Representative WGIN", name: "David Brasfield" },
-        { role: "Representative WGIN", name: "Hemma Kumar" },
-        { role: "Representative WGIN", name: "Zoe Averi" },
-        { role: "Representative WGIN", name: "Tanya Muller" },
-        { role: "Representative Congress Management", name: "" },
-        { role: "Representative Congress Management", name: "" },
-        { role: "Representative Congress Organization", name: "" },
-        { role: "Representative Congress Organization", name: "" },
-        { role: "Representative private sector", name: "Toni Amich", institution: "Sempergreen" },
+        { role: "University of Lleida / BIG4LIFE", name: "Gabriel Pérez", institution: "University of Lleida" },
+        { role: "University of Lleida / BIG4LIFE", name: "Julià Coma", institution: "University of Lleida" },
+        { role: "University of Lleida / BIG4LIFE", name: "Laura Herrera", institution: "University of Lleida" },
+        { role: "WGIN", name: "David Brasfield", institution: "WGIN" },
+        { role: "WGIN", name: "Hemma Kumar", institution: "WGIN" },
+        { role: "WGIN", name: "Zoe Averi", institution: "WGIN" },
+        { role: "WGIN", name: "Tanya Muller", institution: "WGIN" },
+        { role: "Private sector / BIG4LIFE", name: "Toni Amich", institution: "Sempergreen" },
     ];
 
-    const advisoryCommittee = [
-        { role: "Representative WGIN", name: "David Brasfield" },
-        { role: "Representative WGIN", name: "Hemma Kumar" },
-        { role: "Representative WGIN", name: "Zoe Averi" },
-        { role: "Representative WGIN", name: "Tanya Muller" },
-        { role: "Representative EFB", name: "Paulo Palha" },
-        { role: "Representative EFB", name: "Vera Enzi" },
-        { role: "Representative PRONATUR", name: "Julián Briz" },
-        { role: "Representative ASESCUVE", name: "Andreu Masoni" },
-        { role: "Representative ASESCUVE", name: "David Maria Gómez" },
-        { role: "Representative BIG4LIFE project", name: "Daniel Guzman", institution: "Verdtical" },
-        { role: "Representative BIG4LIFE project", name: "Joan Beruezo", institution: "TEBVerd" },
-        { role: "Representative BIG4LIFE project", name: "Lidia Calvo", institution: "Eixverd" },
-        { role: "Official Association of Agricultural Engineers of Catalonia", name: "Contxi Villar" },
-    ];
+
 
     return (
         <div>

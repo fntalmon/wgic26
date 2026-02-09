@@ -11,6 +11,23 @@ const Congress = () => {
                 section="about"
             />
 
+                            {/* Congress Video */}
+                <section className="w-full">
+                    <div className="w-full max-w-7xl mx-auto px-0 py-6">
+                        <div className="relative w-full h-0 pb-[56.25%]"> {/* 16:9 aspect ratio */}
+                            <iframe
+                                src="https://drive.google.com/file/d/1blhcUZR8J4-ICQcVgiP6Ez8LJK3OIbXe/preview?usp=embed_facebook"
+                                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                                allow="autoplay; encrypted-media"
+                                allowFullScreen
+                                title="World Green Infrastructure Congress Overview"
+                                frameBorder="0"
+                            />
+                        </div>
+                        <div className="h-px bg-white/10 my-6"></div>
+                    </div>
+                </section>
+
             <div className="w-full max-w-7xl px-0 py-12 flex flex-col gap-20">
                 {/* Main Congress Description */}
                 <section className="flex flex-col gap-8 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
@@ -32,6 +49,10 @@ const Congress = () => {
                         </p>
                     </TextImage>
                 </section>
+
+
+
+                <div className="w-full h-px bg-white/10 my-6"></div>
 
                 {/* Congress History */}
                 <section className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
