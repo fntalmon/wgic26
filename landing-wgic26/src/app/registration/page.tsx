@@ -175,7 +175,7 @@ const Registration = () => {
                 minHeight: "800px",
                 border: "0px",
               }}
-              //  sandbox="allow-scripts allow-forms allow-popups allow-modals allow-same-origin allow-top-navigation-by-user-activation"
+              sandbox="allow-scripts allow-forms allow-popups allow-modals allow-same-origin allow-top-navigation-by-user-activation"
               src="https://panel.helice.app/w/wgic26/214760/registration?preview=1"
             ></iframe>
 
