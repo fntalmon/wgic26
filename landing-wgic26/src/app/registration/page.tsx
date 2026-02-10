@@ -2,7 +2,7 @@
 
 import PageHeader from "@/components/PageHeader";
 import { FileText } from "lucide-react";
-import Script from "next/script";
+//import Script from "next/script";
 
 const Registration = () => {
   return (
@@ -166,35 +166,31 @@ const Registration = () => {
             </div>
           </div>
 
-          <div className="w-full bg-white rounded-lg overflow-hidden">
-            <iframe
-              id="frame214760"
-              style={{
-                width: "1px",
-                minWidth: "100%",
-                minHeight: "800px",
-                border: "0px",
-              }}
-              sandbox="allow-scripts allow-forms allow-popups allow-modals allow-same-origin"
-              src="https://panel.helice.app/w/wgic26/214760/registration?preview=1"
-            ></iframe>
+          {/*
+  Embedded Registration Form (desactivado temporalmente)
 
-            <Script
-              src="https://panel.helice.app/land/assets/plugins/iFrameResizer/js/iframeResizer.min.js"
-              strategy="afterInteractive"
-              onLoad={() => {
-                const interval = setInterval(() => {
-                  if (window.iFrameResize) {
-                    window.iFrameResize(
-                      { log: false, checkOrigin: false },
-                      "#frame214760",
-                    );
-                    clearInterval(interval);
-                  }
-                }, 100);
-              }}
-            />
-          </div>
+  <div className="w-full bg-white rounded-lg overflow-hidden">
+    <iframe 
+      id="frame214760" 
+      style={{ width: '1px', minWidth: '100%', minHeight: '800px', border: '0px' }} 
+      sandbox="allow-scripts allow-forms allow-popups allow-modals allow-same-origin" 
+      src="https://panel.helice.app/w/wgic26/214760/registration?preview=1"
+    ></iframe>
+
+    <Script 
+      src="https://panel.helice.app/land/assets/plugins/iFrameResizer/js/iframeResizer.min.js" 
+      strategy="afterInteractive"
+      onLoad={() => {
+        const interval = setInterval(() => {
+          if (window.iFrameResize) {
+            window.iFrameResize({ log: false, checkOrigin: false }, "#frame214760");
+            clearInterval(interval);
+          }
+        }, 100);
+      }}
+    />
+  </div>
+*/}
 
           <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base">
             <div>
