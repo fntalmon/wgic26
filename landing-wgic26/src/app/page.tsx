@@ -28,7 +28,7 @@ export default function Home() {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage('¡Thank you for suscribing to our newsletter.');
+        setMessage('Thank you for suscribing to our newsletter!');
         setEmail('');
       } else {
         setMessage(data.error || 'Error, try again.');
@@ -280,7 +280,7 @@ export default function Home() {
                   disabled={isSubmitting}
                 />
                 {message && (
-                  <p className={`text-sm ${message.includes('Gracias') ? 'text-green-600' : 'text-red-600'}`}>
+                  <p className={`text-sm ${message.includes('Thank') ? 'text-green-600' : 'text-red-600'}`}>
                     {message}
                   </p>
                 )}
