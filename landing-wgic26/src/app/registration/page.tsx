@@ -1,7 +1,7 @@
 "use client";
 
 import PageHeader from "@/components/PageHeader";
-import { FileText } from "lucide-react";
+import { FileText, ExternalLink } from "lucide-react";
 
 const Registration = () => {
   return (
@@ -143,7 +143,9 @@ const Registration = () => {
             </div>
             <div className="flex-shrink-0 flex flex-col gap-3">
               <a
-                href="#"
+                href="https://panel.helice.app/w/wgic26/214760/registration"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium"
               >
                 <svg
@@ -154,40 +156,40 @@ const Registration = () => {
                 >
                   <path d="M3 7a2 2 0 012-2h14a2 2 0 012 2v3H3V7zm0 5h18v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5z" />
                 </svg>
-                Register now
+                Open Registration
               </a>
               <a
-                href="#"
+                href="https://panel.helice.app/w/wgic26/214760/registration"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 text-white"
               >
-                Registration Form (link)
+                Open Registration Form
               </a>
             </div>
           </div>
 
-          <div className="w-full bg-white/5 border border-white/20 rounded-lg p-8 flex flex-col items-center justify-center gap-4 text-center">
-            <svg className="w-12 h-12 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-            <p className="text-white/80 text-lg">
-              The registration form is hosted on an external platform. You will be redirected to complete your registration.
-            </p>
-            <a
-              href="https://panel.helice.app/w/wgic26/214760/registration"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-6 py-3 font-medium text-lg hover:bg-yellow-500 transition-colors"
-            >
-              <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                <polyline points="15 3 21 3 21 9" />
-                <line x1="10" y1="14" x2="21" y2="3" />
-              </svg>
-              Go to Registration Form
-            </a>
-          </div>
+          <div className="w-full bg-white rounded-lg p-8 flex flex-col items-center justify-center gap-6 text-center min-h-[320px]">
+            <div className="bg-yellow-100 p-4 rounded-full">
+              <FileText className="w-10 h-10 text-yellow-700" />
+            </div>
+
+            <div className="max-w-2xl">
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-3">Registration form</h2>
+              <p className="text-gray-600 mb-6">The registration form is hosted on our partner platform. For the best experience, please complete the registration on the external site.</p>
+
+              <a
+                href="https://panel.helice.app/w/wgic26/214760/registration"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 rounded-md bg-yellow-600 text-black px-6 py-3 font-medium text-lg hover:bg-yellow-500 transition-colors"
+              >
+                Open Registration Form <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+
+            <p className="text-gray-400 text-sm mt-4 italic">If you need help, contact <a href="mailto:wgic26.economics@udl.cat" className="underline">wgic26.economics@udl.cat</a>.</p>
+          </div> 
 
           <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
             <div>

@@ -1,7 +1,7 @@
 "use client";
 
 import Countdown from "@/components/Countdown";
-import { MapPin } from "lucide-react";
+import { MapPin, CheckCircle, AlertCircle } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -28,13 +28,13 @@ export default function Home() {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage('Thank you for suscribing to our newsletter!');
+        setMessage('Thank you for subscribing to our newsletter!');
         setEmail('');
       } else {
-        setMessage(data.error || 'Error, try again.');
+        setMessage(data.error || 'An error occurred, please try again.');
       }
     } catch {
-      setMessage('Error, try again.');
+      setMessage('An error occurred, please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -516,9 +516,10 @@ export default function Home() {
                   disabled={isSubmitting}
                 />
                 {message && (
-                  <p className={`text-sm ${message.includes('Thank') ? 'text-green-600' : 'text-red-600'}`}>
-                    {message}
-                  </p>
+                  <div className={`inline-flex items-center gap-2 text-sm ${message.includes('Thank') ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' : 'bg-red-50 text-red-800 border border-red-200'} px-3 py-2 rounded-md` }>
+                    {message.includes('Thank') ? <CheckCircle className="w-4 h-4" /> : <AlertCircle className="w-4 h-4" />}
+                    <span className="leading-tight">{message}</span>
+                  </div>
                 )}
               </div>
               <Button

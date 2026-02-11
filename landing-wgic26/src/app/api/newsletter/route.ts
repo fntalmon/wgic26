@@ -140,4 +140,36 @@ async function sendEmailNotification(subscriberEmail: string) {
 
   await transporter.sendMail(mailOptions);
   console.log(`Newsletter subscription notification sent to ${recipientEmail} for subscriber: ${subscriberEmail}`);
+
+  // Send confirmation email to the subscriber (if possible)
+  try {
+    const confirmationSubject = 'Subscription confirmation - WGIC26';
+    const confirmationText = `Thank you for subscribing to the World Green Infrastructure Congress (WGIC26) newsletter.\n\nWe will send updates about the congress to this address: ${subscriberEmail}`;
+    const confirmationHtml = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #f9f9f9; padding: 20px;">
+        <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+          <h2 style="color: #2d5a27; margin-bottom: 20px;">Thank you for subscribing!</h2>
+          <p style="color: #555; line-height: 1.6;">Hello,</p>
+          <p style="color: #555; line-height: 1.6;">Thank you for subscribing to the <strong>WGIC26 newsletter</strong>. We will send news and updates to <strong>${subscriberEmail}</strong>.</p>
+          <p style="color: #555; line-height: 1.6;">If you wish to unsubscribe at any time, reply to this email or contact <a href=\"mailto:${recipientEmail}\">${recipientEmail}</a>.</p>
+          <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+          <p style="color: #888; font-size: 12px; margin: 0;">This email was sent automatically from the WGIC26 Barcelona-Lleida website.</p>
+        </div>
+      </div>
+    `;
+
+    const confirmationMail = {
+      from: process.env.GMAIL_USER || process.env.ZOHO_USER || process.env.SMTP_USER || 'noreply@wgic26.barcelona',
+      to: subscriberEmail,
+      subject: confirmationSubject,
+      text: confirmationText,
+      html: confirmationHtml
+    };
+
+    await transporter.sendMail(confirmationMail);
+    console.log(`Confirmation email sent to subscriber: ${subscriberEmail}`);
+  } catch (confirmError) {
+    console.error('Failed to send confirmation email to subscriber:', confirmError);
+    // Do not throw — subscription already recorded and admin notified
+  }
 }
