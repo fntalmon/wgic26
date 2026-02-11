@@ -32,19 +32,19 @@ const Congress = () => {
                 {/* Main Congress Description */}
                 <section className="flex flex-col gap-8 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
                     <TextImage imageSrc="/img/varias/02 Porxos_BCN_02 (1).jpg" imageAlt="World Green Infrastructure Congress" imagePosition="right">
-                        <p>
+                        <p className="text-justify">
                             Annually, the WGIN promotes and co-organizes the World Green Infrastructure Congress (WGIC), together with university academic institutions that host this global event.
                         </p>
-                        <p>
+                        <p className="text-justify">
                             World congresses on green infrastructure offer several important benefits to society. First, they bring together researchers, professionals, public administrations, and companies from around the world to share scientific and technical advances on nature-based solutions such as green roofs, green façades, ecological corridors, and sustainable urban drainage systems. This accelerates innovation and improves the quality of interventions in cities and territories.
                         </p>
                     </TextImage>
                     
                     <TextImage imageSrc="/img/varias/01 IMG_20250827_114013.jpg" imageAlt="Congress benefits and collaboration" imagePosition="left">
-                        <p>
+                        <p className="text-justify">
                             In addition, these congresses help spread best practices and real examples that have improved urban resilience, reduced the impact of climate change, or increased citizens&apos; well-being. The transfer of knowledge allows more cities to adopt green strategies that reduce urban heat, improve air quality, and promote biodiversity.
                         </p>
-                        <p>
+                        <p className="text-justify">
                             These events drive more ambitious public policies and foster international collaboration. By placing green infrastructure on the global agenda, they encourage governments and organizations to invest in sustainable, accessible, and economically beneficial solutions, generating a direct impact on health, quality of life, and the environmental sustainability of present and future societies.
                         </p>
                     </TextImage>
@@ -57,7 +57,7 @@ const Congress = () => {
                 {/* Congress History */}
                 <section className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
                     <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-2">Congress History</h2>
-                    <p>
+                    <p className="text-justify">
                         Since its inception in 2009 in Toronto (Canada), the congress has been held in different cities of the world, always with great participation success and providing important networking opportunities between different interest groups, companies, universities and research centres, designers and project managers, and students. The last editions took place in Berlin 2023 (Germany), Auckland 2024 (New Zealand) and Basel 2025 (Switzerland).
                     </p>
 

@@ -2,7 +2,6 @@
 
 import PageHeader from "@/components/PageHeader";
 import { FileText } from "lucide-react";
-import Script from "next/script";
 
 const Registration = () => {
   return (
@@ -128,12 +127,12 @@ const Registration = () => {
               <h2 className="text-2xl lg:text-3xl font-semibold text-white">
                 Registration (to attend)
               </h2>
-              <p className="mt-2 text-white/80 leading-relaxed">
+              <p className="mt-2 text-white/80 leading-relaxed text-justify">
                 Please click the link to register. To register for WGIC26, enter
                 and fill in the data in the registration submission application
                 at the link below.
               </p>
-              <p className="mt-3 text-white/70">
+              <p className="mt-3 text-white/70 text-justify">
                 The registration system will open soon. Registration fee covers
                 the costs during the conference period, including lunch and
                 coffee breaks. No travel and/or accommodation is covered.
@@ -165,38 +164,32 @@ const Registration = () => {
               </a>
             </div>
           </div>
-          <div className="w-full bg-white rounded-lg overflow-hidden">
-            <iframe
-              id="frame214760"
-              title="Registro"
-              style={{
-                width: "1px",
-                minWidth: "100%",
-                minHeight: "800px",
-                border: "0px",
-              }}
-              sandbox="allow-scripts allow-forms allow-popups allow-modals allow-same-origin allow-top-navigation-by-user-activation"
-              src="https://panel.helice.app/w/wgic26/214760/registration?preview=1"
-            ></iframe>
 
-            <Script
-              src="https://panel.helice.app/land/assets/plugins/iFrameResizer/js/iframeResizer.min.js"
-              strategy="afterInteractive"
-              onLoad={() => {
-                const interval = setInterval(() => {
-                  if ((window as any).iFrameResize) {
-                    (window as any).iFrameResize(
-                      { log: false, checkOrigin: false },
-                      "#frame214760",
-                    );
-                    clearInterval(interval);
-                  }
-                }, 100);
-              }}
-            />
+          <div className="w-full bg-white/5 border border-white/20 rounded-lg p-8 flex flex-col items-center justify-center gap-4 text-center">
+            <svg className="w-12 h-12 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+            <p className="text-white/80 text-lg">
+              The registration form is hosted on an external platform. You will be redirected to complete your registration.
+            </p>
+            <a
+              href="https://panel.helice.app/w/wgic26/214760/registration"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-6 py-3 font-medium text-lg hover:bg-yellow-500 transition-colors"
+            >
+              <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Go to Registration Form
+            </a>
           </div>
 
-          <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base">
+          <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
             <div>
               <h3 className="text-xl font-medium text-white uppercase mb-3">
                 Registration fees
@@ -210,48 +203,34 @@ const Registration = () => {
                         Category
                       </th>
                       <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
-                        Early-bird &lt; 31 Mar 2026
+                        Early-bird &lt; 15 Apr 2026
                       </th>
                       <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
-                        Standard &lt; 30 Sep 2026 (+15%)
+                        Standard (+15%)
                       </th>
                       <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
-                        In situ (+30%)
+                        Onsite (+30%)
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="hover:bg-white/5">
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
-                        Registration 2 days
-                      </td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        400 €
-                      </td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        460 €
-                      </td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        520 €
-                      </td>
-                    </tr>
-                    <tr className="hover:bg-white/5">
-                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
-                        Registration 1 day
-                      </td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        200 €
-                      </td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        230 €
-                      </td>
-                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        260 €
-                      </td>
-                    </tr>
-                    <tr className="hover:bg-white/5">
-                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
                         Oral Presentation
+                      </td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                        700 €
+                      </td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                        805 €
+                      </td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                        —
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                        Poster (own DIN A1 size)
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
                         600 €
@@ -265,16 +244,30 @@ const Registration = () => {
                     </tr>
                     <tr className="hover:bg-white/5">
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
-                        Poster (A1)
+                        Full registration (2-day attendant)
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        500 €
+                        550 €
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        575 €
+                        635 €
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        —
+                        715 €
+                      </td>
+                    </tr>
+                    <tr className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                        Day registration (1-day attendant)
+                      </td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                        150 €
+                      </td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                        175 €
+                      </td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                        195 €
                       </td>
                     </tr>
                     <tr className="hover:bg-white/5">
@@ -282,46 +275,48 @@ const Registration = () => {
                         Students
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        150 €
+                        300 €
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        173 €
+                        350 €
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        195 €
+                        390 €
                       </td>
                     </tr>
                     <tr className="hover:bg-white/5">
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
-                        Companions
+                        Accompanying persons
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        150 €
+                        120 €
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        173 €
+                        140 €
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        195 €
+                        160 €
                       </td>
                     </tr>
                     <tr className="hover:bg-white/5">
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
-                        Gala Dinner
+                        Conference dinner (50%)
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        -
+                        60 €
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        150 €
+                        70 €
                       </td>
                       <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
-                        -
+                        80 €
                       </td>
                     </tr>
                   </tbody>
                 </table>
-
+                <p className="text-white/60 text-xs mt-3 italic">
+                  25% discount available for Scientific Committee members.
+                </p>
               </div>
             </div>
 

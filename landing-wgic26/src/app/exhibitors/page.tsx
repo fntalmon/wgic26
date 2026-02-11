@@ -16,14 +16,14 @@ For more information and a detailed breakdown of packages and benefits, you can 
             <h3 className="text-xl text-white uppercase">
               Partner: Elite Global or Event
             </h3>
-            <p className="text-white/80">
+            <p className="text-white/80 text-justify">
               If what you want is to participate actively in the conference,
               collaborating in decision-making, contributing knowledge, and
               assuming shared responsibilities, choose one of the partner
               options, Global or Event. In these typologies you will have the
               maximum benefits of visibility and participation.
             </p>
-            <p className="text-white/80">
+            <p className="text-white/80 text-justify">
               The Elite Partners will contribute strategically to the
               development of the congress and its promotion and will have all
               the benefits of the Global partners plus, those that can be
@@ -36,7 +36,7 @@ For more information and a detailed breakdown of packages and benefits, you can 
             <h3 className="text-xl text-white uppercase">
               Sponsor: Tree or Leaf
             </h3>
-            <p className="text-white/80">
+            <p className="text-white/80 text-justify">
               If you are looking to maximize visibility, publicity or benefits
               for your brand or company in the green infrastructure sector,
               without the need to be involved in the management or
@@ -48,7 +48,7 @@ For more information and a detailed breakdown of packages and benefits, you can 
               <h3 className="text-xl text-white uppercase mb-6">
                 Exhibitors (limited to first 40)
               </h3>
-              <p className="text-white/80 mb-4">
+              <p className="text-white/80 mb-4 text-justify">
                 Whether you are a partner or sponsor, you have the possibility
                 of showing your company or products to attendees as an
                 exhibitor, in two options, as a Garden and as a Flower. Being an
@@ -260,13 +260,13 @@ For more information and a detailed breakdown of packages and benefits, you can 
 
             <div className="mt-6">
               <h4 className="text-lg text-white uppercase mb-3">The Venue</h4>
-              <p className="text-white/80 mb-4">
+              <p className="text-white/80 mb-4 text-justify">
                 The venue where WGIC26 will be held is perfect for creating the networking atmosphere that sponsors, attendees and exhibitors expect from a global event. The International Barcelona Convention Center of Barcelona is an iconic venue located in the Barcelona district of Sant Martí, inside the 22@ of Poblenou neighbourhood.
               </p>
-              <p className="text-white/80 mb-4">
+              <p className="text-white/80 mb-4 text-justify">
                 The CCIB comprises two buildings of great architectural value: the Convention Centre and the Auditorium CCIB Forum, joined by an underground connecting walkway. With a gross surface area of 100,000 m² and a capacity for up to 15,000 attendees, both buildings stand out for their size, natural light, and the great versatility of their spaces.
               </p>
-              <p className="text-white/80 mb-4">
+              <p className="text-white/80 mb-4 text-justify">
                 The CCIB enjoys a privileged location just 500 metres from the beach, 6 km from the historic centre and 22 km from the airport, with excellent links to the most important highways and roads, and by the public transport network.
               </p>
               <Carousel

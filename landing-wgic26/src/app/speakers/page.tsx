@@ -18,10 +18,10 @@ const Speakers = () => {
           <div id="paper-submission" className="bg-cactus/20 border border-cactus/30 rounded-lg p-6 flex flex-col sm:flex-row items-start justify-between gap-6">
             <div className="flex-1">
               <h2 className="text-2xl lg:text-3xl font-semibold text-white">Submit your paper by 31st March 2026!</h2>
-              <p className="mt-2 text-white/80 leading-relaxed">
+              <p className="mt-2 text-white/80 leading-relaxed text-justify">
                 Thank you for your interest in participating in World Green Infrastructure Congress 2026 Barcelona – Lleida (WGIC 2026). To submit a paper, enter and fill in the data in the paper submission application at the link below.
               </p>
-              <p className="mt-3 text-white/70">
+              <p className="mt-3 text-white/70 text-justify">
                 The 12th World Green Infrastructure Congress will be held in Barcelona at the International Barcelona Convention Centre, from 27th to 30th October 2026. WGIC 2026 welcomes original research, case studies and innovative applications in short paper format (maximum 5 pages), in MS Word format.
               </p>
             </div>
@@ -31,7 +31,7 @@ const Speakers = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base">
+          <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
             <p>
               WGIC026 warmly welcomes submissions of original research, case studies, and innovative applications, in short paper format (maximum 5 pages), in MS Word format. The limitation to 5 pages helps reduce similarity for papers later recommended for publication in special issues of journals.
             </p>

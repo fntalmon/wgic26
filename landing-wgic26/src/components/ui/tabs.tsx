@@ -12,7 +12,7 @@ const TabsList = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof TabsPrimitive.List>
 >(({ className, children, ...props }, ref) => {
   const localRef = React.useRef<HTMLDivElement | null>(null)
-  React.useImperativeHandle(ref, () => localRef.current)
+  React.useImperativeHandle(ref, () => localRef.current!)
 
   const [indicator, setIndicator] = React.useState({ left: 0, width: 0 })
 

@@ -23,7 +23,9 @@ const OrganisationCommittee = () => {
         { role: "Private sector / BIG4LIFE", name: "Toni Amich", institution: "Sempergreen" },
     ];
 
-
+    const advisoryCommittee = [
+        { role: "To be confirmed", name: "" },
+    ];
 
     return (
         <div>

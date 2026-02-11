@@ -3,8 +3,43 @@
 import Countdown from "@/components/Countdown";
 import { MapPin } from "lucide-react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function Home() {
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState('');
+
+  const handleNewsletterSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setMessage('');
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage('¡Gracias! Te has suscrito exitosamente al newsletter.');
+        setEmail('');
+      } else {
+        setMessage(data.error || 'Error al suscribirse. Inténtalo de nuevo.');
+      }
+    } catch {
+      setMessage('Error de conexión. Inténtalo de nuevo.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div>
       <section className="lg:pt-24">
@@ -45,7 +80,7 @@ export default function Home() {
           className="bg-cement text-mortar w-full py-12 pl-6 pr-6"
         >
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 items-start">
-            <div className="flex-1 prose prose-invert max-w-none text-lg sm:text-xl leading-relaxed md:max-h-[420px] overflow-y-auto pr-4">
+            <div className="flex-1 prose prose-invert max-w-none text-lg sm:text-xl leading-relaxed md:max-h-[420px] overflow-y-auto pr-4 text-justify">
               <h2 className="uppercase text-3xl md:text-5xl lg:text-6xl mb-3">
                 WGIC26 Barcelona-Lleida
               </h2>
@@ -216,7 +251,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/*   
+
       <section id="newsletter" className="flex flex-col lg:flex-row gap-0">
         <div className="bg-[url(/img/image.png)] bg-no-repeat bg-cover bg-center w-full xl:w-1/3"></div>
 
@@ -229,27 +264,35 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col xl:flex-row w-full items-center gap-20 lg:justify-between">
-            
             <form
               className="flex flex-col xl:flex-row gap-8 w-full 2xl:w-1/2 xl:w-2/3"
-              onSubmit={(e) => {
-                e.preventDefault()
-                const email = e.currentTarget.email.value
-                console.log("Newsletter registration:", email)
-                // Handle API request here
-              }}
+              onSubmit={handleNewsletterSubmit}
             >
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="Email address"
-                className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
-              />
+              <div className="flex flex-col gap-2 flex-1">
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Email address"
+                  className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
+                  disabled={isSubmitting}
+                />
+                {message && (
+                  <p className={`text-sm ${message.includes('Gracias') ? 'text-green-600' : 'text-red-600'}`}>
+                    {message}
+                  </p>
+                )}
+              </div>
               <Button
                 type="submit"
-                size={"lg"}
-              >Subscribe</Button>
+                size="lg"
+                disabled={isSubmitting}
+                className="bg-cactus hover:bg-cactus/90 text-white"
+              >
+                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
+              </Button>
             </form>
             <Image
               src="/img/wgic26_logo/wgic26_logo.svg"
@@ -259,10 +302,8 @@ export default function Home() {
               className="max-h-24"
             />
           </div>
-
         </div>
       </section>
-     */}
 
       <section id="sponsors" className="flex flex-col gap-6 mt-16 pb-24">
         <div className="text-xs uppercase w-full border-b border-white/50 py-2 tracking-wider">
@@ -363,13 +404,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* GLOBAL PARTNERS */}
+            {/* GLOBAL PARTNERS - hidden until logos are added
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 Global Partners
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24"></div>
             </div>
+            */}
 
             {/* EVENT PARTNERS */}
             <div className="w-full">
@@ -393,7 +435,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* TREE SPONSORS */}
+            {/* TREE SPONSORS - hidden until logos are added
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 Tree Sponsors
@@ -402,8 +444,9 @@ export default function Home() {
                 <p className="italic">Coming Soon...</p>
               </div>
             </div>
+            */}
 
-            {/* LEAF SPONSORS */}
+            {/* LEAF SPONSORS - hidden until logos are added
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 Leaf Sponsors
@@ -412,8 +455,9 @@ export default function Home() {
                 <p className="italic">Coming Soon...</p>
               </div>
             </div>
+            */}
 
-            {/* GARDEN BIG EXHIBITORS */}
+            {/* GARDEN BIG EXHIBITORS - hidden until logos are added
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 Garden Big Exhibitors
@@ -422,8 +466,9 @@ export default function Home() {
                 <p className="italic">Coming Soon...</p>
               </div>
             </div>
+            */}
 
-            {/* GARDEN MEDIUM EXHIBITORS */}
+            {/* GARDEN MEDIUM EXHIBITORS - hidden until logos are added
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 Garden Medium Exhibitors
@@ -432,8 +477,9 @@ export default function Home() {
                 <p className="italic">Coming Soon...</p>
               </div>
             </div>
+            */}
 
-            {/* FLOWER EXHIBITORS */}
+            {/* FLOWER EXHIBITORS - hidden until logos are added
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 Flower Exhibitors
@@ -442,6 +488,7 @@ export default function Home() {
                 <p className="italic">Coming Soon...</p>
               </div>
             </div>
+            */}
 
             {/* MEDIA PARTNERS */}
             <div className="w-full">
@@ -485,15 +532,7 @@ export default function Home() {
                   />
                 </a>
                 
-                <div className="flex items-center justify-center">
-                  <Image
-                    src="/img/logos-color/asociacion-espanola-paisajistas-logo.png"
-                    alt="Asociación Española de Paisajistas"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </div>
+
               </div>
             </div>
           </div>

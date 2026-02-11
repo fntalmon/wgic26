@@ -27,19 +27,19 @@ const Program = () => {
                     <div className="mb-12 space-y-8 text-white/80">
                         
                         <TextImage imageSrc="/img/Tibidabo 1.jpg" imageAlt="Barcelona congress program" imagePosition="right">
-                            <p>
+                            <p className="text-justify">
                                 The congress program will be structured over multiple days to maximize engagement and learning opportunities.
                             </p>
-                            <p>
+                            <p className="text-justify">
                                 Days one and two will feature parallel sessions covering the full range of selected topics, allowing participants to select sessions most relevant to their interests and expertise. The specific workshops will also take place in parallel with the oral presentation sessions.
                             </p>
                         </TextImage>
                         
                         <TextImage imageSrc="/img/Exterior_15.jpg" imageAlt="Technical visits and university facilities" imagePosition="left">
-                            <p>
+                            <p className="text-justify">
                                 The third day will be dedicated to technical visits, offering first-hand insights into exemplary green infrastructure projects in Barcelona, illustrating innovative approaches and practical applications in a real-world urban context. Detailed information on the visit options and how to sign up will be available soon.
                             </p>
-                            <p>
+                            <p className="text-justify">
                                 An additional fourth day has been planned and will focus specifically on innovation and research processes within the green infrastructure sector. This day will be hosted by the University of Lleida and will provide an immersive experience highlighting cutting-edge research, emerging methodologies, and the latest advancements in the field.
                             </p>
                         </TextImage>
