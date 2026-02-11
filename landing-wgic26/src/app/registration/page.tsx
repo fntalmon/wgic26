@@ -125,71 +125,24 @@ const Registration = () => {
           >
             <div className="flex-1">
               <h2 className="text-2xl lg:text-3xl font-semibold text-white">
-                Registration (to attend)
+                Registration
               </h2>
-              <p className="mt-2 text-white/80 leading-relaxed text-justify">
-                Please click the link to register. To register for WGIC26, enter
-                and fill in the data in the registration submission application
-                at the link below.
+              <p className="mt-2 text-white/80 leading-relaxed">
+                Registration is handled through our external partner platform, Helice. The registration fee covers costs during the conference period, including lunch and coffee breaks. No travel and/or accommodation is covered.
               </p>
-              <p className="mt-3 text-white/70 text-justify">
-                The registration system will open soon. Registration fee covers
-                the costs during the conference period, including lunch and
-                coffee breaks. No travel and/or accommodation is covered.
-                Tickets for the Congress Gala Dinner, Technical Visits (3rd Day)
-                and Research & Innovation day (4th Day, Lleida) are sold
-                separately.
-              </p>
+
             </div>
-            <div className="flex-shrink-0 flex flex-col gap-3">
+            <div className="flex-shrink-0">
               <a
                 href="https://panel.helice.app/w/wgic26/214760/registration"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium"
+                className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-6 py-3 font-medium"
               >
-                <svg
-                  className="w-4 h-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M3 7a2 2 0 012-2h14a2 2 0 012 2v3H3V7zm0 5h18v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5z" />
-                </svg>
-                Open Registration
-              </a>
-              <a
-                href="https://panel.helice.app/w/wgic26/214760/registration"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 text-white"
-              >
-                Open Registration Form
+                Register on Helice Platform <ExternalLink className="w-4 h-4" />
               </a>
             </div>
           </div>
-
-          <div className="w-full bg-white rounded-lg p-8 flex flex-col items-center justify-center gap-6 text-center min-h-[320px]">
-            <div className="bg-yellow-100 p-4 rounded-full">
-              <FileText className="w-10 h-10 text-yellow-700" />
-            </div>
-
-            <div className="max-w-2xl">
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-3">Registration form</h2>
-              <p className="text-gray-600 mb-6">The registration form is hosted on our partner platform. For the best experience, please complete the registration on the external site.</p>
-
-              <a
-                href="https://panel.helice.app/w/wgic26/214760/registration"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 rounded-md bg-yellow-600 text-black px-6 py-3 font-medium text-lg hover:bg-yellow-500 transition-colors"
-              >
-                Open Registration Form <ExternalLink className="w-4 h-4" />
-              </a>
-            </div>
-
-            <p className="text-gray-400 text-sm mt-4 italic">If you need help, contact <a href="mailto:wgic26.economics@udl.cat" className="underline">wgic26.economics@udl.cat</a>.</p>
-          </div> 
 
           <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
             <div>
