@@ -35,7 +35,7 @@ const Registration = () => {
             </p>
             <div className="text-center">
               <a
-                href="https://panel.helice.app/w/wgic26/214760/registration"
+                href="https://panel.helice.app/w/wgic26/214760/registration?preview=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-md bg-yellow-600 hover:bg-yellow-500 text-black px-8 py-3 font-medium transition-colors"
