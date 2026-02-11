@@ -28,13 +28,13 @@ export default function Home() {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage('¡Gracias! Te has suscrito exitosamente al newsletter.');
+        setMessage('¡Thank you for suscribing to our newsletter.');
         setEmail('');
       } else {
-        setMessage(data.error || 'Error al suscribirse. Inténtalo de nuevo.');
+        setMessage(data.error || 'Error, try again.');
       }
     } catch {
-      setMessage('Error de conexión. Inténtalo de nuevo.');
+      setMessage('Error, try again.');
     } finally {
       setIsSubmitting(false);
     }
