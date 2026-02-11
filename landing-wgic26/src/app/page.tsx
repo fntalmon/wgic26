@@ -252,58 +252,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="newsletter" className="flex flex-col lg:flex-row gap-0">
-        <div className="bg-[url(/img/image.png)] bg-no-repeat bg-cover bg-center w-full xl:w-1/3"></div>
 
-        <div className="flex flex-col gap-20 bg-cement text-mortar w-full p-10 lg:p-18  justify-between items-end">
-          <div className="flex flex-col gap-8 w-full">
-            <div className="flex flex-col gap-8 uppercase text-3xl md:text-4xl">
-              <div>Stay up to date</div>
-              <h4>Register to our Newsletter</h4>
-            </div>
-          </div>
-
-          <div className="flex flex-col xl:flex-row w-full items-center gap-20 lg:justify-between">
-            <form
-              className="flex flex-col xl:flex-row gap-8 w-full 2xl:w-1/2 xl:w-2/3"
-              onSubmit={handleNewsletterSubmit}
-            >
-              <div className="flex flex-col gap-2 flex-1">
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email address"
-                  className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
-                  disabled={isSubmitting}
-                />
-                {message && (
-                  <p className={`text-sm ${message.includes('Thank') ? 'text-green-600' : 'text-red-600'}`}>
-                    {message}
-                  </p>
-                )}
-              </div>
-              <Button
-                type="submit"
-                size="lg"
-                disabled={isSubmitting}
-                className="bg-cactus hover:bg-cactus/90 text-white"
-              >
-                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
-              </Button>
-            </form>
-            <Image
-              src="/img/wgic26_logo/wgic26_logo.svg"
-              alt="WGIC26_logo"
-              width={200}
-              height={80}
-              className="max-h-24"
-            />
-          </div>
-        </div>
-      </section>
 
       <section id="sponsors" className="flex flex-col gap-6 mt-16 pb-24">
         <div className="text-xs uppercase w-full border-b border-white/50 py-2 tracking-wider">
@@ -427,9 +376,9 @@ export default function Home() {
                   <Image
                     src="/img/logos/eixverd.png"
                     alt="Eixverd"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
+                    width={350}
+                    height={250}
+                    className="h-32 w-auto object-contain"
                   />
                 </a>
               </div>
@@ -535,6 +484,59 @@ export default function Home() {
 
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+            <section id="newsletter" className="flex flex-col lg:flex-row gap-0">
+        <div className="bg-[url(/img/image.png)] bg-no-repeat bg-cover bg-center w-full xl:w-1/3"></div>
+
+        <div className="flex flex-col gap-20 bg-cement text-mortar w-full p-10 lg:p-18  justify-between items-end">
+          <div className="flex flex-col gap-8 w-full">
+            <div className="flex flex-col gap-8 uppercase text-3xl md:text-4xl">
+              <div>Stay up to date</div>
+              <h4>Register to our Newsletter</h4>
+            </div>
+          </div>
+
+          <div className="flex flex-col xl:flex-row w-full items-center gap-20 lg:justify-between">
+            <form
+              className="flex flex-col xl:flex-row gap-8 w-full 2xl:w-1/2 xl:w-2/3"
+              onSubmit={handleNewsletterSubmit}
+            >
+              <div className="flex flex-col gap-2 flex-1">
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Email address"
+                  className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
+                  disabled={isSubmitting}
+                />
+                {message && (
+                  <p className={`text-sm ${message.includes('Thank') ? 'text-green-600' : 'text-red-600'}`}>
+                    {message}
+                  </p>
+                )}
+              </div>
+              <Button
+                type="submit"
+                size="lg"
+                disabled={isSubmitting}
+                className="bg-cactus hover:bg-cactus/90 text-white"
+              >
+                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
+              </Button>
+            </form>
+            <Image
+              src="/img/wgic26_logo/wgic26_logo.svg"
+              alt="WGIC26_logo"
+              width={200}
+              height={80}
+              className="max-h-24"
+            />
           </div>
         </div>
       </section>
