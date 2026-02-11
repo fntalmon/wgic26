@@ -26,7 +26,7 @@ const Speakers = () => {
               </p>
             </div>
             <div className="flex-shrink-0 flex flex-col gap-3">
-              <a href="#" className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium">Go to submission form</a>
+              <a href="https://panel.helice.app/w/wgic26/214757/papers?preview=1" className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium">Go to submission form</a>
               <a href="https://docs.google.com/document/d/1X_aNCsK5tu56rAlhRSx2sXcMt_8PgUze/export?format=docx" className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 text-white">Download paper template</a>
             </div>
           </div>
@@ -82,9 +82,18 @@ const Speakers = () => {
               </div>
             </div>
 
-            <p className="mt-6 text-white/70">
-              To submit a paper, enter and fill in the data in the paper submission application at this <a href="#" className="text-potus underline">link</a>.
-            </p>
+            <div className="mt-6">
+              <div role="region" aria-label="Paper submission" className="rounded-md bg-white/5 border border-white/10 p-4 flex items-center justify-between gap-4">
+                <div className="flex items-start gap-4">
+                  <FileText size={20} className="text-white/80 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-white">Submit your paper</p>
+                    <p className="text-white/80 text-sm">Use the online paper submission application to upload your manuscript and details.</p>
+                  </div>
+                </div>
+                <a href="https://panel.helice.app/w/wgic26/214757/papers?preview=1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium">Go to submission form</a>
+              </div>
+            </div>
 
           </div>
 
