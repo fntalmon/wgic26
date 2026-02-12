@@ -100,14 +100,14 @@ const Navigation = ({
           url: "/about/organisation-committee",
           description: "...",
           icon: <ArrowRight />,
-          disabled: true,
+
         },
         {
           title: "Congress committee",
           url: "/about/congress-committee",
           description: "...",
           icon: <ArrowRight />,
-          disabled: true,
+
         },
       ],
     },

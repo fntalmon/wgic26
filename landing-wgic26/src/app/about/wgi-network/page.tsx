@@ -34,16 +34,16 @@ const Network = () => {
                         </div>
                         
                         <TextImage imageSrc="/img/varias/02 IMG_20241204_153528.jpg" imageAlt="Green infrastructure development" imagePosition="right">
-                            <p>
+                            <p className="text-justify">
                                 The World Green Infrastructure Network (WGIN) is an international nonprofit organization dedicated to promoting the planning, development, and implementation of green infrastructure worldwide. Its mission is to advance the use of nature-based solutions—such as green roofs, green walls, urban forests, and sustainable water management systems—to improve the environmental, social, and economic health of cities. By encouraging the adoption of these practices, WGIN aims to help urban areas become more resilient to climate change and more livable for their inhabitants.
                             </p>
                         </TextImage>
                         <TextImage imageSrc="/img/varias/03 IMG_20250310_130100.jpg" imageAlt="Network collaboration" imagePosition="left">
-                            <p>
+                            <p className="text-justify">
                                 WGIN operates as a global network that connects national green roof and green infrastructure associations, researchers, professionals, and policymakers. Through conferences, publications, and collaborative projects, the organization facilitates the exchange of knowledge, research, and best practices. This collaboration helps different countries and cities learn from each other&apos;s experiences and accelerates the development of sustainable urban environments.
                             </p>
                         </TextImage>
-                        <p>
+                        <p className="text-justify">
                             In addition to fostering international cooperation, WGIN advocates for supportive policies and standards that encourage the widespread adoption of green infrastructure. It works to raise awareness about the multiple benefits of integrating nature into urban design—from reducing heat islands and managing stormwater to improving air quality and biodiversity. By engaging governments, industry, and communities, the World Green Infrastructure Network plays a key role in advancing greener and more sustainable cities around the world.
                         </p>
 
@@ -88,7 +88,7 @@ const Network = () => {
                         <div className="leading-relaxed flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 items between border-b-1 border-white/40 py-20">
                             <div className="uppercase w-full lg:w-1/2 text-lg"><strong>01</strong> Sustainability
                             </div>
-                            <div className="w-full lg:w-1/2 text-white/70 text-base">
+                            <div className="w-full lg:w-1/2 text-white/70 text-base text-justify">
                                 A commitment to integrating green infrastructure to enhance
                                 environmental resilience and combat climate change.
                             </div>
@@ -97,7 +97,7 @@ const Network = () => {
                         <div className="leading-relaxed flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 items between border-b-1 border-white/40 py-20">
                             <div className="uppercase w-full lg:w-1/2 text-lg"><strong>02</strong> Inclusivity
                             </div>
-                            <div className="w-full lg:w-1/2 text-white/70 text-base">
+                            <div className="w-full lg:w-1/2 text-white/70 text-base text-justify">
                                 Ensuring accessibility and participation, fostering shared knowledge.
                             </div>
                         </div>
@@ -105,7 +105,7 @@ const Network = () => {
                         <div className="leading-relaxed flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 items between border-b-1 border-white/40 py-20">
                             <div className="uppercase w-full lg:w-1/2 text-lg"><strong>03</strong> Innovation
                             </div>
-                            <div className="w-full lg:w-1/2 text-white/70 text-base">
+                            <div className="w-full lg:w-1/2 text-white/70 text-base text-justify">
                                 Promoting smart and forward-thinking solutions to address urban and environmental challenges.
                             </div>
                         </div>
@@ -113,7 +113,7 @@ const Network = () => {
                         <div className="leading-relaxed flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 items between border-b-1 border-white/40 py-20">
                             <div className="uppercase w-full lg:w-1/2 text-lg"><strong>04</strong> Collaboration
                             </div>
-                            <div className="w-full lg:w-1/2 text-white/70 text-base">
+                            <div className="w-full lg:w-1/2 text-white/70 text-base text-justify">
                                 Encouraging cooperation between governments, institutions, universities and communities for a collective impact.
                             </div>
                         </div>
