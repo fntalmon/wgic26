@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: "frame-src 'self' https://drive.google.com https://docs.google.com https://*.google.com https://*.googleusercontent.com https://panel.helice.app https://*.helice.app https://www.google.com https://www.gstatic.com; frame-ancestors 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://panel.helice.app https://*.helice.app https://www.google.com https://www.gstatic.com https://*.googleapis.com; connect-src 'self' https://panel.helice.app https://*.helice.app https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;",
+            value: "frame-src 'self' https://drive.google.com https://docs.google.com https://*.google.com https://*.googleusercontent.com https://panel.helice.app https://*.helice.app https://www.google.com https://www.gstatic.com; frame-ancestors 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://panel.helice.app https://*.helice.app https://www.google.com https://www.gstatic.com https://*.googleapis.com https://www.googletagmanager.com; connect-src 'self' https://panel.helice.app https://*.helice.app https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;",
           },
           {
             key: 'X-Frame-Options',
