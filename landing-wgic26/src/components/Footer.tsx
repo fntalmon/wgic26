@@ -24,8 +24,8 @@ const Footer = () => {
                         <div className="flex flex-col gap-6 items-start">
                             <div className="uppercase text-xs text-white/40">Contact</div>
                             <div className="flex flex-col gap-6 text-xs">
-                                <a href="#" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">X</a>
-                                <a href="#" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">Linkedin</a>
+                                <a href="https://x.com/WGIC2026" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">X</a>
+                                <a href="https://www.linkedin.com/company/wgic/" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">Linkedin</a>
                                 <a href="#" className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus">Email</a>
                             </div>
                         </div>
