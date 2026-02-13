@@ -1,5 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
+import Link from "next/link";
 
 const MarchNewsletter = () => {
     return (
@@ -24,7 +25,7 @@ const MarchNewsletter = () => {
                             We are thrilled to announce that registration for the World Green Infrastructure Congress 2026 (WGIC26) is officially open! This landmark event, taking place from September 14-17, 2026, in Lleida, Spain, will bring together leading experts, researchers, practitioners, and policymakers from around the globe to explore the latest innovations in green infrastructure and nature-based solutions.
                         </p>
                         <p>
-                            Early bird registration is available until May 31, 2026, offering discounted rates for participants. Don't miss this opportunity to be part of a transformative gathering that will shape the future of sustainable urban development. Visit our registration page to secure your spot today!
+                            Early bird registration is available until May 31, 2026, offering discounted rates for participants. Don&apos;t miss this opportunity to be part of a transformative gathering that will shape the future of sustainable urban development. Visit our registration page to secure your spot today!
                         </p>
                     </div>
 
@@ -91,7 +92,7 @@ const MarchNewsletter = () => {
                             Stay connected with us on social media for the latest updates and announcements.
                         </p>
                         <p className="text-sm text-white/60 mt-2">
-                            Visit <a href="/" className="text-potus hover:underline">www.wgic26.com</a> for more information.
+                            Visit <Link href="/" className="text-potus hover:underline">www.wgic26.com</Link> for more information.
                         </p>
                     </div>
 

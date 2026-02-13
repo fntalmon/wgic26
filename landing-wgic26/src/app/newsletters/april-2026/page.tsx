@@ -49,7 +49,7 @@ const AprilNewsletter = () => {
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="text-2xl font-semibold text-white">Spotlight: Lleida's Green Initiatives</h3>
+                        <h3 className="text-2xl font-semibold text-white">Spotlight: Lleida&apos;s Green Initiatives</h3>
                         <p>
                             Lleida has been transforming its urban landscape through innovative green infrastructure projects. From green corridors connecting parks to living walls in public buildings, the city demonstrates a strong commitment to sustainability and climate adaptation.
                         </p>
@@ -63,7 +63,7 @@ const AprilNewsletter = () => {
                             height={400} 
                             className="rounded-lg w-full h-auto"
                         />
-                        <p className="text-sm text-white/60 mt-2 text-center">One of Lleida's beautiful green spaces</p>
+                        <p className="text-sm text-white/60 mt-2 text-center">One of Lleida&apos;s beautiful green spaces</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
