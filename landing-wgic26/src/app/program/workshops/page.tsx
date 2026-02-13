@@ -25,7 +25,7 @@ const Workshops = () => {
                 description="Interactive sessions on key themes of WGIC26"
                 section="program"
             />
-            <section className="w-full justify-start text-xs">
+            <section className="w-full justify-start text-xs text-justify">
                 <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-12">
 
                     <TextImage imageSrc="/img/Tibidabo 1.jpg" imageAlt="Barcelona workshop venue" imagePosition="right">

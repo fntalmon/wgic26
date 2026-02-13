@@ -139,6 +139,12 @@ const Navigation = ({
           description: "...",
           icon: <ArrowRight />,
         },
+                {
+          title: "Technical Visits",
+          url: "/program/technical-visits",
+          description: "...",
+          icon: <ArrowRight />,
+        },
         {
           title: "WGIN Awards",
           url: "/program/wgin-awards",

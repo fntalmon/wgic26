@@ -52,7 +52,12 @@ const CongressCommittee = () => {
                     <div>
                         <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-6">Scientific Committee</h2>
                         <div className="overflow-x-auto">
-                            <table className="w-full border-collapse border border-white/20">
+                            <table className="w-full border-collapse border border-white/20 table-fixed">
+                                <colgroup>
+                                    <col className="w-1/3" />
+                                    <col className="w-1/3" />
+                                    <col className="w-1/3" />
+                                </colgroup>
                                 <thead>
                                     <tr className="bg-cactus/20">
                                         <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Name</th>
@@ -76,7 +81,12 @@ const CongressCommittee = () => {
                     <div>
                         <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-6">Professional Committee </h2>
                         <div className="overflow-x-auto">
-                            <table className="w-full border-collapse border border-white/20">
+                            <table className="w-full border-collapse border border-white/20 table-fixed">
+                                <colgroup>
+                                    <col className="w-1/3" />
+                                    <col className="w-1/3" />
+                                    <col className="w-1/3" />
+                                </colgroup>
                                 <thead>
                                     <tr className="bg-cactus/20">
                                         <th className="border border-white/20 px-4 py-3 text-left text-white font-medium">Name</th>

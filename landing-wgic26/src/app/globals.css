@@ -88,6 +88,7 @@
 
     p {
       font-size: calc(var(--text-base) * 1.1);
+      text-align: justify;
     }
 
     strong {

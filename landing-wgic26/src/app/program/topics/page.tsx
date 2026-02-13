@@ -8,10 +8,11 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
+import "./topics.css";
 
 const Topics = () => {
     return (
-        <div>
+        <div className="justify-text">
             <PageHeader
                 title="Main Topics"
                 description=""
@@ -20,7 +21,7 @@ const Topics = () => {
             <section className="container mx-auto py-12 px-4">
                 <div className="max-w-7xl mx-auto">
                     <div className="mb-12 space-y-8 text-white/80">
-                        
+
                         <TextImage imageSrc="/img/varias/01 Bilbao_BCN.jpg" imageAlt="Barcelona congress venue" imagePosition="right">
                             <p>
                                 The congress program has been carefully designed to offer a comprehensive and engaging experience for all participants. It will feature a diverse range of activities, including keynote speeches by internationally recognised experts, invited talks highlighting emerging trends and innovations, plenary sessions to address overarching topics, and interactive panel discussions where participants can exchange ideas and debate critical issues. In addition, the program will include thematic workshops, technical exhibitions showcasing the latest solutions and technologies in green infrastructure, as well as oral and poster presentations that provide a platform for researchers, practitioners, and policymakers to share their latest findings and projects.
