@@ -277,7 +277,7 @@ export default function Home() {
                     alt="WGI Network"
                     width={300}
                     height={220}
-                    className="h-24 w-auto object-contain"
+                    className="h-28 w-auto object-contain"
                   />
                 </a>
 
@@ -291,7 +291,7 @@ export default function Home() {
                     alt="Universitat de Lleida"
                     width={300}
                     height={220}
-                    className="h-24 w-auto object-contain"
+                    className="h-28 w-auto object-contain"
                   />
                 </a>
 
@@ -301,7 +301,7 @@ export default function Home() {
                     alt="Life EU"
                     width={300}
                     height={220}
-                    className="h-24 w-auto object-contain"
+                    className="h-28 w-auto object-contain"
                   />
                 </div>
 
@@ -311,7 +311,7 @@ export default function Home() {
                     alt="IT4S"
                     width={300}
                     height={220}
-                    className="h-24 w-auto object-contain"
+                    className="h-28 w-auto object-contain"
                   />
                 </div>
 
@@ -325,7 +325,7 @@ export default function Home() {
                     alt="BIG4LIFE"
                     width={300}
                     height={220}
-                    className="h-24 w-auto object-contain"
+                    className="h-28 w-auto object-contain"
                   />
                 </a>
               </div>
@@ -345,22 +345,13 @@ export default function Home() {
                   <Image
                     src="/img/logos-color/sempergreen_urban-grey_green_22112023164728.jpg"
                     alt="Semper Green"
-                    width={350}
-                    height={250}
-                    className="h-32 w-auto object-contain"
+                    width={400}
+                    height={300}
+                    className="h-30 w-auto object-contain"
                   />
                 </a>
               </div>
             </div>
-
-            {/* GLOBAL PARTNERS - hidden until logos are added
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Global Partners
-              </h3>
-              <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24"></div>
-            </div>
-            */}
 
             {/* EVENT PARTNERS */}
             <div className="w-full">
@@ -376,35 +367,13 @@ export default function Home() {
                   <Image
                     src="/img/logos/eixverd.png"
                     alt="Eixverd"
-                    width={350}
-                    height={250}
-                    className="h-32 w-auto object-contain"
+                    width={300}
+                    height={200}
+                    className="h-28 w-auto object-contain"
                   />
                 </a>
               </div>
             </div>
-
-            {/* TREE SPONSORS - hidden until logos are added
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Tree Sponsors
-              </h3>
-              <div className="flex justify-center items-center min-h-[100px] text-gray-500">
-                <p className="italic">Coming Soon...</p>
-              </div>
-            </div>
-            */}
-
-            {/* LEAF SPONSORS - hidden until logos are added
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Leaf Sponsors
-              </h3>
-              <div className="flex justify-center items-center min-h-[100px] text-gray-500">
-                <p className="italic">Coming Soon...</p>
-              </div>
-            </div>
-            */}
 
             {/* GARDEN BIG EXHIBITORS - hidden until logos are added
             <div className="w-full">
@@ -455,7 +424,7 @@ export default function Home() {
                     alt="Greenroofs.com"
                     width={300}
                     height={220}
-                    className="h-28 w-auto object-contain"
+                    className="h-20 w-auto object-contain"
                   />
                 </a>
               </div>
@@ -477,7 +446,7 @@ export default function Home() {
                     alt="ASESCUVE"
                     width={300}
                     height={220}
-                    className="h-28 w-auto object-contain"
+                    className="h-18 w-auto object-contain"
                   />
                 </a>
                 
