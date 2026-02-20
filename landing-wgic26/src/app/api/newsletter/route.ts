@@ -73,19 +73,18 @@ async function sendEmailNotification(subscriberEmail: string, subscriberPhone?: 
       }
     });
   } else if (process.env.ZOHO_USER && process.env.ZOHO_PASS) {
-    // Zoho Mail configuration - Port 587 with STARTTLS
-    configType = 'Zoho Mail (Port 587 STARTTLS)';
+    // Zoho Mail configuration - Port 465 with SSL
+    configType = 'Zoho Mail (Port 465 SSL)';
     transporter = nodemailer.createTransport({
-      host: 'smtp.zoho.com',
-      port: 587,
-      secure: false,
+      host: 'smtppro.zoho.com',
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.ZOHO_USER,
         pass: process.env.ZOHO_PASS
       },
       tls: {
-        rejectUnauthorized: false,
-        servername: 'smtp.zoho.com'
+        rejectUnauthorized: false
       }
     });
   } else if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {

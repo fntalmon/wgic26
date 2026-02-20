@@ -65,9 +65,12 @@ async function sendInterestFormNotification(
 ) {
   const recipientEmail = process.env.INTEREST_FORM_RECIPIENT_EMAIL;
 
-  console.log('🔍 Interest Form Config Check:');
-  console.log('   INTEREST_FORM_RECIPIENT_EMAIL:', process.env.INTEREST_FORM_RECIPIENT_EMAIL ? '✓ Set' : '✗ Not set');
-  console.log('   ZOHO_USER:', process.env.ZOHO_USER ? '✓ Set' : '✗ Not set');
+  const sendUser = process.env.INTEREST_FORM_RECIPIENT_PASSWORD ? recipientEmail : process.env.ZOHO_USER;
+  const sendPass = process.env.INTEREST_FORM_RECIPIENT_PASSWORD ? process.env.INTEREST_FORM_RECIPIENT_PASSWORD : process.env.ZOHO_PASS;
+
+  console.log('🔍 Interest Form Debug:');
+  console.log(`   Trying to send from: ${sendUser}`);
+  console.log(`   Using custom password: ${process.env.INTEREST_FORM_RECIPIENT_PASSWORD ? 'YES' : 'NO'}`);
 
   if (!recipientEmail) {
     console.log('Interest form submission (no admin email configured):', name, email);
@@ -75,21 +78,18 @@ async function sendInterestFormNotification(
   }
 
   let transporter;
-  const sendUser = process.env.INTEREST_FORM_RECIPIENT_PASSWORD ? recipientEmail : process.env.ZOHO_USER;
-  const sendPass = process.env.INTEREST_FORM_RECIPIENT_PASSWORD ? process.env.INTEREST_FORM_RECIPIENT_PASSWORD : process.env.ZOHO_PASS;
 
   if (sendUser && sendPass) {
     transporter = nodemailer.createTransport({
-      host: 'smtp.zoho.com',
-      port: 587,
-      secure: false,
+      host: 'smtppro.zoho.com',
+      port: 465,
+      secure: true, // SSL
       auth: {
         user: sendUser,
         pass: sendPass
       },
       tls: {
-        rejectUnauthorized: false,
-        servername: 'smtp.zoho.com'
+        rejectUnauthorized: false
       }
     });
   } else if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
@@ -109,6 +109,7 @@ async function sendInterestFormNotification(
   const adminMailOptions = {
     from: sendUser || process.env.GMAIL_USER,
     to: recipientEmail,
+    replyTo: email, // Permite responder directamente al interesado
     subject: `Nueva Solicitud de Interés - ${company}`,
     html: `
       <h2>Nueva Solicitud de Interés</h2>

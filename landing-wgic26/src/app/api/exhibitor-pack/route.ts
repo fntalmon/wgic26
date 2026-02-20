@@ -52,16 +52,15 @@ async function sendExhibitorNotification(name: string, email: string) {
   
   if (process.env.ZOHO_USER && process.env.ZOHO_PASS) {
     transporter = nodemailer.createTransport({
-      host: 'smtp.zoho.com',
-      port: 587,
-      secure: false,
+      host: 'smtppro.zoho.com',
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.ZOHO_USER,
         pass: process.env.ZOHO_PASS
       },
       tls: {
-        rejectUnauthorized: false,
-        servername: 'smtp.zoho.com'
+        rejectUnauthorized: false
       }
     });
   } else if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
