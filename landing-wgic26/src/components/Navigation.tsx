@@ -163,18 +163,20 @@ const Navigation = ({
         //{ title: "Awards", url: "/program/awards", description: "...", icon: <ArrowRight />, disabled: true },
       ],
     },
+    { title: "Newsletters", url: "/newsletters" },
     { title: "Speakers", url: "/speakers" },
     { title: "Registration", url: "/registration", disabled: true },
     {
       title: "Partners & Exhibitors",
       url: "/exhibitors",
     },
-    { title: "Social Program", url: "/social-program" },
+
+     { title: "Plan your stay", url: "/plan-your-stay" },
     { title: "Travel", url: "/travel" },
   ],
   actions = {
     button: { title: "Tickets", url: "/registration" },
-    button2: { title: "Papers", url: "/speakers" },
+    button2: { title: "Papers and Projects", url: "/speakers" },
   },
 }: NavigationProps) => {
   const [showNavbar, setShowNavbar] = useState(true);

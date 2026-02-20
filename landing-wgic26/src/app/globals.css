@@ -104,6 +104,11 @@
     font-size: 1.25rem; /* Increased slightly more */
   }
 
+  /* Enable smooth scrolling for anchor navigation */
+  html {
+    scroll-behavior: smooth;
+  }
+
   section {
     display: flex;
     flex-direction: column;

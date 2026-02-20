@@ -3,10 +3,10 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request: NextRequest) {
   try {
-    const { email } = await request.json();
+    const { email, phone } = await request.json();
 
-    if (!email) {
-      return NextResponse.json({ error: 'Email is required' }, { status: 400 });
+    if (!email || !phone) {
+      return NextResponse.json({ error: 'Email and phone are required' }, { status: 400 });
     }
 
     // Email validation
@@ -15,9 +15,15 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid email format' }, { status: 400 });
     }
 
+    // Phone validation (basic: 6–15 digits)
+    const phoneDigits = String(phone).replace(/\D/g, '');
+    if (phoneDigits.length < 6 || phoneDigits.length > 15) {
+      return NextResponse.json({ error: 'Invalid phone number' }, { status: 400 });
+    }
+
     // Send notification email
     try {
-      await sendEmailNotification(email);
+      await sendEmailNotification(email, phone);
     } catch (emailError) {
       console.error('Failed to send notification email:', emailError);
       // Continue execution even if email fails
@@ -36,7 +42,7 @@ export async function POST(request: NextRequest) {
   }
 }
 
-async function sendEmailNotification(subscriberEmail: string) {
+async function sendEmailNotification(subscriberEmail: string, subscriberPhone?: string) {
   const recipientEmail = process.env.NEWSLETTER_RECIPIENT_EMAIL;
   
   // Log environment variables for debugging (without sensitive data)
@@ -48,7 +54,7 @@ async function sendEmailNotification(subscriberEmail: string) {
   console.log('   SMTP_HOST:', process.env.SMTP_HOST ? '✓ Set' : '✗ Not set');
   
   if (!recipientEmail) {
-    console.log('Newsletter subscription (no email configured):', subscriberEmail);
+    console.log('Newsletter subscription (no email configured):', subscriberEmail, subscriberPhone ? ` / ${subscriberPhone}` : '');
     return;
   }
 
@@ -95,7 +101,7 @@ async function sendEmailNotification(subscriberEmail: string) {
       }
     });
   } else {
-    console.log('❌ No email configuration found, logging subscription:', subscriberEmail);
+    console.log('❌ No email configuration found, logging subscription:', subscriberEmail, subscriberPhone ? ` / ${subscriberPhone}` : '');
     return;
   }
 
@@ -106,7 +112,7 @@ async function sendEmailNotification(subscriberEmail: string) {
     from: process.env.GMAIL_USER || process.env.ZOHO_USER || process.env.SMTP_USER || 'noreply@wgic26.barcelona',
     to: recipientEmail,
     subject: 'New Newsletter Subscription - WGIC26',
-    text: `New newsletter subscription: ${subscriberEmail}`,
+    text: `New newsletter subscription: ${subscriberEmail}${subscriberPhone ? ` / ${subscriberPhone}` : ''}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #f9f9f9; padding: 20px;">
         <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
@@ -114,6 +120,7 @@ async function sendEmailNotification(subscriberEmail: string) {
           
           <div style="background-color: #f0f8f0; padding: 20px; border-radius: 5px; margin: 20px 0;">
             <p style="margin: 0; font-size: 16px;"><strong>Email:</strong> ${subscriberEmail}</p>
+            <p style="margin: 0; font-size: 16px;"><strong>Phone:</strong> ${subscriberPhone || '—'}</p>
             <p style="margin: 10px 0 0 0; font-size: 14px; color: #666;"><strong>Fecha:</strong> ${new Date().toLocaleString('es-ES', {
               year: 'numeric',
               month: 'long',
@@ -139,18 +146,19 @@ async function sendEmailNotification(subscriberEmail: string) {
   };
 
   await transporter.sendMail(mailOptions);
-  console.log(`Newsletter subscription notification sent to ${recipientEmail} for subscriber: ${subscriberEmail}`);
+  console.log(`Newsletter subscription notification sent to ${recipientEmail} for subscriber: ${subscriberEmail} ${subscriberPhone ? ` / ${subscriberPhone}` : ''}`);
 
   // Send confirmation email to the subscriber (if possible)
   try {
     const confirmationSubject = 'Subscription confirmation - WGIC26';
-    const confirmationText = `Thank you for subscribing to the World Green Infrastructure Congress (WGIC26) newsletter.\n\nWe will send updates about the congress to this address: ${subscriberEmail}`;
+    const confirmationText = `Thank you for subscribing to the World Green Infrastructure Congress (WGIC26) newsletter.\n\nWe will send updates about the congress to this address: ${subscriberEmail}\nPhone: ${subscriberPhone || 'N/A'}`;
     const confirmationHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #f9f9f9; padding: 20px;">
         <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
           <h2 style="color: #2d5a27; margin-bottom: 20px;">Thank you for subscribing!</h2>
           <p style="color: #555; line-height: 1.6;">Hello,</p>
           <p style="color: #555; line-height: 1.6;">Thank you for subscribing to the <strong>WGIC26 newsletter</strong>. We will send news and updates to <strong>${subscriberEmail}</strong>.</p>
+          <p style="color: #555; line-height: 1.6;"><strong>Phone:</strong> ${subscriberPhone || 'N/A'}</p>
           <p style="color: #555; line-height: 1.6;">If you wish to unsubscribe at any time, reply to this email or contact <a href=\"mailto:${recipientEmail}\">${recipientEmail}</a>.</p>
           <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
           <p style="color: #888; font-size: 12px; margin: 0;">This email was sent automatically from the WGIC26 Barcelona-Lleida website.</p>
