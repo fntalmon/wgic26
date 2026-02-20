@@ -158,7 +158,7 @@ const JanuaryNewsletter = () => {
                 Gaudí Year 2026
               </a>{" "}
               , to bring Antoni Gaudí&apos;s work closer to the general public.
-              Gaudí is one of Catalonia's most universal architects.
+              Gaudí is one of Catalonia&apos;s most universal architects.
             </p>
             <p>
               The initiative will be coordinated by a commission led by Núria

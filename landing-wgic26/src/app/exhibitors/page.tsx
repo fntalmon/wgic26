@@ -3,7 +3,7 @@
 import PageHeader from "@/components/PageHeader";
 import Carousel from "@/components/Carousel";
 import { useState } from "react";
-import { Download, FileText, Send, Loader2, ExternalLink, Presentation, CheckCircle } from "lucide-react";
+import { Download, FileText, Send, Loader2, Presentation, CheckCircle } from "lucide-react";
 
 const Exhibitors = () => {
   const [downloadStep, setDownloadStep] = useState<"initial" | "form" | "success">("initial");
@@ -518,7 +518,7 @@ const Exhibitors = () => {
                       <Send className="text-potus" size={32} />
                     </div>
                     <p className="text-white font-medium text-lg m-0">Your download has started!</p>
-                    <p className="text-white/60 text-base m-0">If it didn't start automatically, <a href="https://drive.google.com/uc?export=download&id=1w62XZagr7RhDoR4fhyT8vfnhga0CWnHR" target="_blank" className="text-potus underline">click here</a>.</p>
+                    <p className="text-white/60 text-base m-0">If it didn&apos;t start automatically, <a href="https://drive.google.com/uc?export=download&id=1w62XZagr7RhDoR4fhyT8vfnhga0CWnHR" target="_blank" className="text-potus underline">click here</a>.</p>
                   </div>
                 )}
               </div>
@@ -535,7 +535,7 @@ const Exhibitors = () => {
                 {interestFormStep === "initial" && (
                   <>
                     <p className="text-white/70 text-base m-0">
-                      Interested in sponsoring or exhibiting? Share your information and preferred participation type. We'll review your details and contact you with customized options.
+                      Interested in sponsoring or exhibiting? Share your information and preferred participation type. We&apos;ll review your details and contact you with customized options.
                     </p>
                     <button
                       onClick={handleInterestFormClick}
@@ -625,7 +625,7 @@ const Exhibitors = () => {
                       <CheckCircle className="text-potus" size={32} />
                     </div>
                     <p className="text-white font-medium text-lg m-0">Thank you for your interest!</p>
-                    <p className="text-white/60 text-base m-0">We've received your information and will get back to you shortly with personalized opportunities.</p>
+                    <p className="text-white/60 text-base m-0">We&apos;ve received your information and will get back to you shortly with personalized opportunities.</p>
                   </div>
                 )}
               </div>
