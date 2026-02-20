@@ -124,8 +124,8 @@ async function sendInterestFormNotification(
   };
 
   try {
-    const result = await transporter.sendMail(adminMailOptions);
-
+    await transporter.sendMail(adminMailOptions);
+    console.log('✓ Email de solicitud enviado a sponsorship');
   } catch (error) {
     console.error('✗ Error al enviar email a sponsorship:', error);
     // Continue — do not block user confirmation
@@ -147,8 +147,8 @@ async function sendInterestFormNotification(
   };
 
   try {
-    const res = await transporter.sendMail(userMailOptions);
-
+    await transporter.sendMail(userMailOptions);
+    console.log('✓ Email de confirmación enviado al usuario:', email);
   } catch (error) {
     console.error('✗ Error al enviar email de confirmación:', error);
     // don't throw — form submission should still work

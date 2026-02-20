@@ -54,11 +54,9 @@ async function sendEmailNotification(subscriberEmail: string, subscriberPhone?: 
 
   // Create transporter based on available configuration
   let transporter;
-  let configType = 'None';
 
   if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
     // Gmail configuration
-    configType = 'Gmail';
     transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -68,7 +66,6 @@ async function sendEmailNotification(subscriberEmail: string, subscriberPhone?: 
     });
   } else if (process.env.ZOHO_USER && process.env.ZOHO_PASS) {
     // Zoho Mail configuration - Port 465 with SSL
-    configType = 'Zoho Mail (Port 465 SSL)';
     transporter = nodemailer.createTransport({
       host: 'smtppro.zoho.com',
       port: 465,
@@ -83,7 +80,6 @@ async function sendEmailNotification(subscriberEmail: string, subscriberPhone?: 
     });
   } else if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {
     // SMTP configuration
-    configType = 'Custom SMTP';
     transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: parseInt(process.env.SMTP_PORT || '587'),
