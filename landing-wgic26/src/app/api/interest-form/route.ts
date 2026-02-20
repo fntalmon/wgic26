@@ -75,15 +75,17 @@ async function sendInterestFormNotification(
   }
 
   let transporter;
+  const sendUser = process.env.INTEREST_FORM_RECIPIENT_PASSWORD ? recipientEmail : process.env.ZOHO_USER;
+  const sendPass = process.env.INTEREST_FORM_RECIPIENT_PASSWORD ? process.env.INTEREST_FORM_RECIPIENT_PASSWORD : process.env.ZOHO_PASS;
 
-  if (process.env.ZOHO_USER && process.env.ZOHO_PASS) {
+  if (sendUser && sendPass) {
     transporter = nodemailer.createTransport({
       host: 'smtp.zoho.com',
       port: 587,
       secure: false,
       auth: {
-        user: process.env.ZOHO_USER,
-        pass: process.env.ZOHO_PASS
+        user: sendUser,
+        pass: sendPass
       },
       tls: {
         rejectUnauthorized: false,
@@ -105,9 +107,9 @@ async function sendInterestFormNotification(
 
   // 1) Email en castellano a sponsorship con los datos del formulario
   const adminMailOptions = {
-    from: process.env.ZOHO_USER || process.env.GMAIL_USER,
+    from: sendUser || process.env.GMAIL_USER,
     to: recipientEmail,
-    subject: `Nueva Solicitud de Interés - ${name}`,
+    subject: `Nueva Solicitud de Interés - ${company}`,
     html: `
       <h2>Nueva Solicitud de Interés</h2>
       <p><strong>Nombre:</strong> ${name}</p>
@@ -132,7 +134,7 @@ async function sendInterestFormNotification(
 
   // 2) Email en inglés a la persona que rellenó el formulario
   const userMailOptions = {
-    from: process.env.ZOHO_USER || process.env.GMAIL_USER,
+    from: sendUser || process.env.GMAIL_USER,
     to: email,
     subject: `Thank you for your interest in WGIC2026`,
     html: `
