@@ -68,12 +68,10 @@ async function sendInterestFormNotification(
   const sendUser = process.env.INTEREST_FORM_RECIPIENT_PASSWORD ? recipientEmail : process.env.ZOHO_USER;
   const sendPass = process.env.INTEREST_FORM_RECIPIENT_PASSWORD ? process.env.INTEREST_FORM_RECIPIENT_PASSWORD : process.env.ZOHO_PASS;
 
-  console.log('🔍 Interest Form Debug:');
-  console.log(`   Trying to send from: ${sendUser}`);
-  console.log(`   Using custom password: ${process.env.INTEREST_FORM_RECIPIENT_PASSWORD ? 'YES' : 'NO'}`);
+
 
   if (!recipientEmail) {
-    console.log('Interest form submission (no admin email configured):', name, email);
+
     return;
   }
 
@@ -101,7 +99,7 @@ async function sendInterestFormNotification(
       }
     });
   } else {
-    console.log('No email service configured for interest form notifications');
+
     return;
   }
 
@@ -127,7 +125,7 @@ async function sendInterestFormNotification(
 
   try {
     const result = await transporter.sendMail(adminMailOptions);
-    console.log('✓ Email de solicitud enviado a sponsorship:', result.response);
+
   } catch (error) {
     console.error('✗ Error al enviar email a sponsorship:', error);
     // Continue — do not block user confirmation
@@ -150,7 +148,7 @@ async function sendInterestFormNotification(
 
   try {
     const res = await transporter.sendMail(userMailOptions);
-    console.log('✓ Email de confirmación enviado al usuario:', email, res.response);
+
   } catch (error) {
     console.error('✗ Error al enviar email de confirmación:', error);
     // don't throw — form submission should still work

@@ -45,16 +45,10 @@ export async function POST(request: NextRequest) {
 async function sendEmailNotification(subscriberEmail: string, subscriberPhone?: string) {
   const recipientEmail = process.env.NEWSLETTER_RECIPIENT_EMAIL;
   
-  // Log environment variables for debugging (without sensitive data)
-  console.log('🔍 Newsletter Config Check:');
-  console.log('   NEWSLETTER_RECIPIENT_EMAIL:', recipientEmail ? '✓ Set' : '✗ Not set');
-  console.log('   ZOHO_USER:', process.env.ZOHO_USER ? '✓ Set' : '✗ Not set');
-  console.log('   ZOHO_PASS:', process.env.ZOHO_PASS ? '✓ Set' : '✗ Not set');
-  console.log('   GMAIL_USER:', process.env.GMAIL_USER ? '✓ Set' : '✗ Not set');
-  console.log('   SMTP_HOST:', process.env.SMTP_HOST ? '✓ Set' : '✗ Not set');
+
   
   if (!recipientEmail) {
-    console.log('Newsletter subscription (no email configured):', subscriberEmail, subscriberPhone ? ` / ${subscriberPhone}` : '');
+  
     return;
   }
 
@@ -100,12 +94,11 @@ async function sendEmailNotification(subscriberEmail: string, subscriberPhone?: 
       }
     });
   } else {
-    console.log('❌ No email configuration found, logging subscription:', subscriberEmail, subscriberPhone ? ` / ${subscriberPhone}` : '');
+
     return;
   }
 
-  console.log(`✉️  Using Email Config: ${configType}`);
-  console.log(`📧 Sending to: ${recipientEmail}`);
+
 
   const mailOptions = {
     from: process.env.GMAIL_USER || process.env.ZOHO_USER || process.env.SMTP_USER || 'noreply@wgic26.barcelona',
@@ -145,7 +138,7 @@ async function sendEmailNotification(subscriberEmail: string, subscriberPhone?: 
   };
 
   await transporter.sendMail(mailOptions);
-  console.log(`Newsletter subscription notification sent to ${recipientEmail} for subscriber: ${subscriberEmail} ${subscriberPhone ? ` / ${subscriberPhone}` : ''}`);
+
 
   // Send confirmation email to the subscriber (if possible)
   try {
@@ -174,7 +167,7 @@ async function sendEmailNotification(subscriberEmail: string, subscriberPhone?: 
     };
 
     await transporter.sendMail(confirmationMail);
-    console.log(`Confirmation email sent to subscriber: ${subscriberEmail}`);
+
   } catch (confirmError) {
     console.error('Failed to send confirmation email to subscriber:', confirmError);
     // Do not throw — subscription already recorded and admin notified
