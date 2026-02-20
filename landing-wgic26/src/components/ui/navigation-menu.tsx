@@ -61,7 +61,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex w-max h-full items-center justify-center px-4 py-2 text-xs uppercase font-medium rounded-none font-medium hover:bg-white hover:text-black data-[state=open]:bg-white data-[state=open]:text-black"
+  "group inline-flex w-max h-full items-center justify-center px-2 2xl:px-4 py-2 text-xs uppercase font-medium rounded-none font-medium hover:bg-white hover:text-black data-[state=open]:bg-white data-[state=open]:text-black"
 )
 
 function NavigationMenuTrigger({
@@ -134,7 +134,7 @@ function NavigationMenuLink({
     <NavigationMenuPrimitive.Link
       data-slot="navigation-menu-link"
       className={cn(
-        "group inline-flex w-max h-full items-center justify-center px-4 py-2 text-xs uppercase font-medium rounded-none font-medium hover:bg-white hover:text-black data-[state=open]:bg-white data-[state=open]:text-black data-[active=true]:border",
+        "group inline-flex w-max h-full items-center justify-center px-2 2xl:px-4 py-2 text-xs uppercase font-medium rounded-none font-medium hover:bg-white hover:text-black data-[state=open]:bg-white data-[state=open]:text-black data-[active=true]:border",
         className
       )}
       {...props}

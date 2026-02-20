@@ -43,7 +43,7 @@ const AnimatedLogo = ({ scrolled, visible }: AnimatedLogoProps) => {
     };
 
     const scaleClass = !scrolled
-        ? "scale-140"
+        ? "scale-110"
         : visible
             ? "scale-100"
             : "scale-100";
