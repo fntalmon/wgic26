@@ -88,6 +88,7 @@
 
     p {
       font-size: calc(var(--text-base) * 1.1);
+      text-align: justify;
     }
 
     strong {
@@ -101,6 +102,11 @@
     font-family: var(--font-primary);
     font-weight: 400;
     font-size: 1.25rem; /* Increased slightly more */
+  }
+
+  /* Enable smooth scrolling for anchor navigation */
+  html {
+    scroll-behavior: smooth;
   }
 
   section {

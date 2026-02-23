@@ -7,6 +7,15 @@ import { Footer } from "@/components/Footer";
 export const metadata = {
   title: "WGIC26 Barcelona",
   description: "World Green Infrastructure Congress 2026 - Barcelona",
+  icons: {
+    icon: [
+      { url: "/img/icons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/img/icons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/img/icons/favicon.ico" },
+    ],
+    apple: "/img/icons/apple-touch-icon.png",
+  },
+  manifest: "/img/icons/site.webmanifest",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

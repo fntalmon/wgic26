@@ -1,18 +1,193 @@
+"use client";
+
 import PageHeader from "@/components/PageHeader";
 import Carousel from "@/components/Carousel";
+import { useState } from "react";
+import { Download, FileText, Send, Loader2, Presentation, CheckCircle } from "lucide-react";
 
 const Exhibitors = () => {
+  const [downloadStep, setDownloadStep] = useState<"initial" | "form" | "success">("initial");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formError, setFormError] = useState<string>("");
+
+  const [interestFormStep, setInterestFormStep] = useState<"initial" | "form" | "success">("initial");
+  const [interestFormSubmitting, setInterestFormSubmitting] = useState(false);
+  const [interestFormError, setInterestFormError] = useState<string>("");
+  const [interestFormData, setInterestFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    participationType: ""
+  });
+
+  const handleDownloadClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setDownloadStep("form");
+    setFormError("");
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setFormError("");
+    
+    const formData = new FormData(e.currentTarget);
+    const name = (formData.get("name") as string)?.trim() || "";
+    const email = (formData.get("email") as string)?.trim() || "";
+
+    // Validations
+    if (!name) {
+      setFormError("Please enter your full name");
+      return;
+    }
+
+    if (name.length < 2) {
+      setFormError("Name must be at least 2 characters");
+      return;
+    }
+
+    if (!email) {
+      setFormError("Please enter your email");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setFormError("Please enter a valid email address");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/exhibitor-pack", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email }),
+      });
+
+      if (response.ok) {
+        setDownloadStep("success");
+        // Trigger the actual download
+        window.open("https://drive.google.com/uc?export=download&id=1w62XZagr7RhDoR4fhyT8vfnhga0CWnHR", "_blank");
+      } else {
+        throw new Error("Failed to process download");
+      }
+    } catch (error) {
+      console.error("Download error:", error);
+      setFormError("Error processing your request. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleInterestFormClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setInterestFormStep("form");
+    setInterestFormError("");
+  };
+
+  const handleInterestFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.currentTarget;
+    setInterestFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleInterestFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setInterestFormError("");
+
+    const { name, email, phone, company, participationType } = interestFormData;
+
+    // Validations
+    if (!name) {
+      setInterestFormError("Please enter your full name");
+      return;
+    }
+
+    if (name.length < 2) {
+      setInterestFormError("Name must be at least 2 characters");
+      return;
+    }
+
+    if (!email) {
+      setInterestFormError("Please enter your email");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setInterestFormError("Please enter a valid email address");
+      return;
+    }
+
+    if (!phone) {
+      setInterestFormError("Please enter your phone number");
+      return;
+    }
+
+    const phoneDigits = phone.replace(/\D/g, '');
+    if (phoneDigits.length < 6) {
+      setInterestFormError("Please enter a valid phone number");
+      return;
+    }
+
+    if (!company) {
+      setInterestFormError("Please enter your company name");
+      return;
+    }
+
+    if (!participationType) {
+      setInterestFormError("Please select a participation type");
+      return;
+    }
+
+    setInterestFormSubmitting(true);
+
+    try {
+      const response = await fetch("/api/interest-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, phone, company, participationType }),
+      });
+
+      if (response.ok) {
+        setInterestFormStep("success");
+        // Reset form
+        setInterestFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          participationType: ""
+        });
+      } else {
+        throw new Error("Failed to submit form");
+      }
+    } catch (error) {
+      console.error("Interest form error:", error);
+      setInterestFormError("Error submitting your form. Please try again.");
+    } finally {
+      setInterestFormSubmitting(false);
+    }
+  };
+
   return (
     <div>
       <PageHeader
         title="Partners & Exhibitors — Sponsorship opportunities"
-        description="Showcase your participation in the green infrastructures sector and ensure visibility and exposure to an international audience at our World Green Infrastructure Congress 2026 in Barcelona and Lleida.
-
-For more information and a detailed breakdown of packages and benefits, you can download the info pack below. To become a partner, sponsor or exhibitor, fill out the interest form (coming soon) "
+        description="Showcase your participation in the green infrastructures sector and ensure visibility and exposure to an international audience at our World Green Infrastructure Congress 2026 in Barcelona and Lleida."
       />
       <section className="w-full justify-start text-xs">
         <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-10">
           <div className="flex flex-col gap-6">
+            {/* ... rest of the content ... */}
             <h3 className="text-xl text-white uppercase">
               Partner: Elite Global or Event
             </h3>
@@ -281,33 +456,208 @@ For more information and a detailed breakdown of packages and benefits, you can 
               />
             </div>
 
-            <div className="mt-8 bg-white/5 border border-white/10 rounded-md p-6 flex flex-col gap-4">
-              <div className="font-medium text-white text-base">
-                Interest form (coming soon)
-              </div>
-              <div className="text-white/70 text-base">
-                We are preparing the interest form and it will be available
-                shortly. If you want to be notified as soon as the form opens,
-                leave your email below and we will contact you.
-              </div>
-              <div className="flex flex-wrap gap-3 mt-2">
-                <a
-                  href="https://drive.google.com/uc?export=download&id=1w62XZagr7RhDoR4fhyT8vfnhga0CWnHR"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium"
-                >
-                  Download info pack
-                </a>
-                <a
-                  href="#"
-                  className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 text-white"
-                >
-                  Interest form (coming soon)
-                </a>
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Info Pack Download Card */}
+              <div className="bg-white/5 border border-white/10 rounded-xl p-8 flex flex-col gap-6 hover:border-potus/30 transition-all">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-cactus/20 rounded-lg">
+                    <Download className="text-potus" size={24} />
+                  </div>
+                  <h4 className="text-xl font-semibold text-white uppercase m-0">Download Info Pack</h4>
+                </div>
+
+                {downloadStep === "initial" && (
+                  <>
+                    <p className="text-white/70 text-base m-0">
+                      Get the complete guide for sponsors and exhibitors, including all technical details and pricing.
+                    </p>
+                    <button
+                      onClick={handleDownloadClick}
+                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"
+                    >
+                      Download PDF
+                    </button>
+                  </>
+                )}
+
+                {downloadStep === "form" && (
+                  <form onSubmit={handleFormSubmit} className="flex flex-col gap-4">
+                    <p className="text-white/70 text-base m-0 mb-2">Please provide your details to access the download.</p>
+                    
+                    {formError && (
+                      <div className="bg-rose/20 border border-rose px-4 py-3 rounded-lg">
+                        <p className="text-rose text-sm m-0">{formError}</p>
+                      </div>
+                    )}
+                    
+                    <input 
+                      name="name"
+                      type="text" 
+                      placeholder="Full Name" 
+                      className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
+                    />
+                    <input 
+                      name="email"
+                      type="email" 
+                      placeholder="Email Address" 
+                      className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
+                    />
+                    <button
+                      disabled={isSubmitting}
+                      type="submit"
+                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-potus text-black px-6 py-4 font-bold text-lg hover:bg-potus/80 transition-all disabled:opacity-50"
+                    >
+                      {isSubmitting ? <Loader2 className="animate-spin" /> : "Download Now"}
+                    </button>
+                  </form>
+                )}
+
+                {downloadStep === "success" && (
+                  <div className="flex flex-col items-center gap-4 py-4 text-center">
+                    <div className="p-4 bg-potus/20 rounded-full">
+                      <Send className="text-potus" size={32} />
+                    </div>
+                    <p className="text-white font-medium text-lg m-0">Your download has started!</p>
+                    <p className="text-white/60 text-base m-0">If it didn&apos;t start automatically, <a href="https://drive.google.com/uc?export=download&id=1w62XZagr7RhDoR4fhyT8vfnhga0CWnHR" target="_blank" className="text-potus underline">click here</a>.</p>
+                  </div>
+                )}
               </div>
 
+              {/* Interest Form Card */}
+              <div className="bg-white/5 border border-white/10 rounded-xl p-8 flex flex-col gap-6 hover:border-potus/30 transition-all">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-cactus/20 rounded-lg">
+                    <FileText className="text-potus" size={24} />
+                  </div>
+                  <h4 className="text-xl font-semibold text-white uppercase m-0">Express Your Interest</h4>
+                </div>
+
+                {interestFormStep === "initial" && (
+                  <>
+                    <p className="text-white/70 text-base m-0">
+                      Interested in sponsoring or exhibiting? Share your information and preferred participation type. We&apos;ll review your details and contact you with customized options.
+                    </p>
+                    <button
+                      onClick={handleInterestFormClick}
+                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"
+                    >
+                      Express Your Interest
+                    </button>
+                  </>
+                )}
+
+                {interestFormStep === "form" && (
+                  <form onSubmit={handleInterestFormSubmit} className="flex flex-col gap-4">
+                    <p className="text-white/70 text-base m-0 mb-2">Provide your contact information and let us know your interests.</p>
+                    
+                    {interestFormError && (
+                      <div className="bg-rose/20 border border-rose px-4 py-3 rounded-lg">
+                        <p className="text-rose text-sm m-0">{interestFormError}</p>
+                      </div>
+                    )}
+                    
+                    <input 
+                      name="name"
+                      type="text" 
+                      placeholder="Full Name" 
+                      value={interestFormData.name}
+                      onChange={handleInterestFormChange}
+                      className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
+                    />
+                    
+                    <input 
+                      name="email"
+                      type="email" 
+                      placeholder="Email Address" 
+                      value={interestFormData.email}
+                      onChange={handleInterestFormChange}
+                      className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
+                    />
+                    
+                    <input 
+                      name="phone"
+                      type="tel" 
+                      placeholder="Phone Number" 
+                      value={interestFormData.phone}
+                      onChange={handleInterestFormChange}
+                      className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
+                    />
+                    
+                    <input 
+                      name="company"
+                      type="text" 
+                      placeholder="Company Name" 
+                      value={interestFormData.company}
+                      onChange={handleInterestFormChange}
+                      className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
+                    />
+                    
+                    <select
+                      name="participationType"
+                      value={interestFormData.participationType}
+                      onChange={handleInterestFormChange}
+                      className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
+                    >
+                      <option value="">Select Participation Type</option>
+                      <option value="Elite Partner">Elite Partner</option>
+                      <option value="Global Partner">Global Partner</option>
+                      <option value="Event Partner">Event Partner</option>
+                      <option value="Tree Sponsor">Tree Sponsor</option>
+                      <option value="Leaf Sponsor">Leaf Sponsor</option>
+                      <option value="Garden Big">Garden Big Exhibitor</option>
+                      <option value="Garden Medium">Garden Medium Exhibitor</option>
+                      <option value="Flower">Flower Exhibitor</option>
+                    </select>
+                    
+                    <button
+                      disabled={interestFormSubmitting}
+                      type="submit"
+                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-potus text-black px-6 py-4 font-bold text-lg hover:bg-potus/80 transition-all disabled:opacity-50"
+                    >
+                      {interestFormSubmitting ? <Loader2 className="animate-spin" /> : "Submit"}
+                    </button>
+                  </form>
+                )}
+
+                {interestFormStep === "success" && (
+                  <div className="flex flex-col items-center gap-4 py-4 text-center">
+                    <div className="p-4 bg-potus/20 rounded-full">
+                      <CheckCircle className="text-potus" size={32} />
+                    </div>
+                    <p className="text-white font-medium text-lg m-0">Thank you for your interest!</p>
+                    <p className="text-white/60 text-base m-0">We&apos;ve received your information and will get back to you shortly with personalized opportunities.</p>
+                  </div>
+                )}
+              </div>
+
+              {/* PPT Presentation Download Card */}
+              <div className="bg-white/5 border border-white/10 rounded-xl p-8 flex flex-col gap-6 hover:border-potus/30 transition-all">
+                <div className="flex items-center gap-4">
+                  <div className="p-3 bg-cactus/20 rounded-lg">
+                    <Presentation className="text-potus" size={24} />
+                  </div>
+                  <h4 className="text-xl font-semibold text-white uppercase m-0">Download Presentation</h4>
+                </div>
+                
+                <p className="text-white/70 text-base m-0">
+                  Get a quick overview of the Congress through our presentation deck, featuring key information and highlights.
+                </p>
+                
+                <div className="mt-auto">
+                  <a 
+                    href="https://docs.google.com/presentation/d/1B6fw8i0h6K50pB0JFK-yW56sIyfImmjVqHQXPo0rQx0/export/pptx
+"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"
+                  >
+                    <Presentation size={18} />
+                    Download PPT
+                  </a>
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
       </section>

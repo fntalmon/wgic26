@@ -4,17 +4,43 @@ import Countdown from "@/components/Countdown";
 import { MapPin, CheckCircle, AlertCircle } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hash === '#newsletter') {
+      const el = document.getElementById('newsletter');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        // brief visual cue when arriving at the newsletter section
+        el.classList.add('animate-pulse');
+        setTimeout(() => el.classList.remove('animate-pulse'), 900);
+      }
+    }
+  }, []);
 
   const handleNewsletterSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setMessage('');
+
+    // Basic client-side validation
+    if (!email || !phone) {
+      setMessage('Please provide both email and phone number.');
+      setIsSubmitting(false);
+      return;
+    }
+    const phoneDigits = phone.replace(/\D/g, '');
+    if (phoneDigits.length < 6 || phoneDigits.length > 15) {
+      setMessage('Please enter a valid phone number.');
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       const response = await fetch('/api/newsletter', {
@@ -22,7 +48,7 @@ export default function Home() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, phone }),
       });
 
       const data = await response.json();
@@ -30,6 +56,7 @@ export default function Home() {
       if (response.ok) {
         setMessage('Thank you for subscribing to our newsletter!');
         setEmail('');
+        setPhone('');
       } else {
         setMessage(data.error || 'An error occurred, please try again.');
       }
@@ -38,7 +65,7 @@ export default function Home() {
     } finally {
       setIsSubmitting(false);
     }
-  };
+  }; 
 
   return (
     <div>
@@ -277,7 +304,7 @@ export default function Home() {
                     alt="WGI Network"
                     width={300}
                     height={220}
-                    className="h-24 w-auto object-contain"
+                    className="h-28 w-auto object-contain"
                   />
                 </a>
 
@@ -291,7 +318,7 @@ export default function Home() {
                     alt="Universitat de Lleida"
                     width={300}
                     height={220}
-                    className="h-24 w-auto object-contain"
+                    className="h-28 w-auto object-contain"
                   />
                 </a>
 
@@ -301,7 +328,7 @@ export default function Home() {
                     alt="Life EU"
                     width={300}
                     height={220}
-                    className="h-24 w-auto object-contain"
+                    className="h-28 w-auto object-contain"
                   />
                 </div>
 
@@ -311,7 +338,7 @@ export default function Home() {
                     alt="IT4S"
                     width={300}
                     height={220}
-                    className="h-24 w-auto object-contain"
+                    className="h-28 w-auto object-contain"
                   />
                 </div>
 
@@ -325,7 +352,7 @@ export default function Home() {
                     alt="BIG4LIFE"
                     width={300}
                     height={220}
-                    className="h-24 w-auto object-contain"
+                    className="h-28 w-auto object-contain"
                   />
                 </a>
               </div>
@@ -345,22 +372,13 @@ export default function Home() {
                   <Image
                     src="/img/logos-color/sempergreen_urban-grey_green_22112023164728.jpg"
                     alt="Semper Green"
-                    width={350}
-                    height={250}
-                    className="h-32 w-auto object-contain"
+                    width={400}
+                    height={300}
+                    className="h-30 w-auto object-contain"
                   />
                 </a>
               </div>
             </div>
-
-            {/* GLOBAL PARTNERS - hidden until logos are added
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Global Partners
-              </h3>
-              <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24"></div>
-            </div>
-            */}
 
             {/* EVENT PARTNERS */}
             <div className="w-full">
@@ -376,35 +394,13 @@ export default function Home() {
                   <Image
                     src="/img/logos/eixverd.png"
                     alt="Eixverd"
-                    width={350}
-                    height={250}
-                    className="h-32 w-auto object-contain"
+                    width={330}
+                    height={230}
+                    className="h-36 w-auto object-contain"
                   />
                 </a>
               </div>
             </div>
-
-            {/* TREE SPONSORS - hidden until logos are added
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Tree Sponsors
-              </h3>
-              <div className="flex justify-center items-center min-h-[100px] text-gray-500">
-                <p className="italic">Coming Soon...</p>
-              </div>
-            </div>
-            */}
-
-            {/* LEAF SPONSORS - hidden until logos are added
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Leaf Sponsors
-              </h3>
-              <div className="flex justify-center items-center min-h-[100px] text-gray-500">
-                <p className="italic">Coming Soon...</p>
-              </div>
-            </div>
-            */}
 
             {/* GARDEN BIG EXHIBITORS - hidden until logos are added
             <div className="w-full">
@@ -453,9 +449,9 @@ export default function Home() {
                   <Image
                     src="/img/logos/greenroofs.png"
                     alt="Greenroofs.com"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
+                    width={280}
+                    height={200}
+                    className="h-14 w-auto object-contain"
                   />
                 </a>
               </div>
@@ -477,7 +473,7 @@ export default function Home() {
                     alt="ASESCUVE"
                     width={300}
                     height={220}
-                    className="h-28 w-auto object-contain"
+                    className="h-14 w-auto object-contain"
                   />
                 </a>
                 
@@ -505,16 +501,28 @@ export default function Home() {
               onSubmit={handleNewsletterSubmit}
             >
               <div className="flex flex-col gap-2 flex-1">
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email address"
-                  className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
-                  disabled={isSubmitting}
-                />
+                <div className="flex flex-col gap-4">
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email address"
+                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
+                    disabled={isSubmitting}
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    required
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    placeholder="Phone number"
+                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
+                    disabled={isSubmitting}
+                  />
+                </div>
                 {message && (
                   <div className={`inline-flex items-center gap-2 text-sm ${message.includes('Thank') ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' : 'bg-red-50 text-red-800 border border-red-200'} px-3 py-2 rounded-md` }>
                     {message.includes('Thank') ? <CheckCircle className="w-4 h-4" /> : <AlertCircle className="w-4 h-4" />}
