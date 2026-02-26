@@ -77,7 +77,7 @@ export default function Home() {
           <br />
           Congress 2026
           <br />
-          <strong>Barcelona</strong>
+          <strong>Barcelona-Lleida</strong>
         </div>
         <div className="flex flex-col h-auto content-between gap-8 w-full lg:w-2/5">
           <div className="w-full pt-7 border-t-1 border-white/50">
