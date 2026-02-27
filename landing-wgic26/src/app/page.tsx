@@ -447,11 +447,11 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    src="/img/logos/greenroofs.png"
+                    src="/img/logos/greenroofsnuevo.png"
                     alt="Greenroofs.com"
                     width={280}
                     height={200}
-                    className="h-14 w-auto object-contain"
+                    className="h-17 w-auto object-contain"
                   />
                 </a>
               </div>
@@ -477,6 +477,15 @@ export default function Home() {
                   />
                 </a>
                 
+
+                  <Image
+                    src="/img/logos/pronaturlogo.jpg"
+                    alt="Logo pronatur"
+                    width={320}
+                    height={240}
+                    className="h-24 w-auto object-contain"
+                  />
+              
 
               </div>
             </div>

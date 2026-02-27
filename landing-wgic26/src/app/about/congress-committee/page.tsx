@@ -24,7 +24,7 @@ const CongressCommittee = () => {
         { name: "Toni Amich", institution: "Sempergreen", country: "Spain" },
         { name: "Ignasi Pérez", institution: "BIM Academy", country: "Spain" },
         { name: "Aslam Jonoubi", institution: "Architect and urban engineer, CEO company", country: "Iran" },
-        { name: "Linda Velasquez", institution: "greenroofs.com", country: "USA" },
+        { name: "Linda Velázquez", institution: "greenroofs.com", country: "USA" },
         { name: "Audrey Timm", institution: "AIPH Green City initiative", country: "United Kingdom" },
         { name: "Steven Peck", institution: "President WGIN/GRHC", country: "USA" },
     ];
