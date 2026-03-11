@@ -5,7 +5,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
 export const metadata = {
-  title: "WGIC26 Barcelona",
+  title: "WGIC26 Barcelona-Lleida",
   description: "World Green Infrastructure Congress 2026 - Barcelona",
   icons: {
     icon: [

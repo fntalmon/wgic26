@@ -1,12 +1,12 @@
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
 
-const JanuaryNewsletter = () => {
+const March2026SpanishNewsletter = () => {
   return (
     <div>
       <PageHeader
-        title="WGIC26 Newsletter - January 2026"
-        description="Updates, first confirmed speakers and key dates for WGIC26"
+        title="WGIC26 Newsletter - Marzo 2026"
+        description="Actualizaciones, primeros ponentes confirmados y fechas clave para WGIC26"
         section="newsletters"
       />
 
@@ -14,32 +14,33 @@ const JanuaryNewsletter = () => {
         <div className="max-w-4xl mx-auto space-y-8 text-white/80">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-2">
-              January 2026 Newsletter
+               Newsletter Marzo 2026
             </h2>
           </div>
 
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
-              The 12th{" "}
+              El 12{" "}
               <a
                 href="https://www.wgic26.barcelona/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-potus"
               >
-                World Congress on Green Infrastructure{" "}
+                Congreso Mundial sobre Infraestructura Verde{" "}
               </a>
-              will be held in Barcelona and Lleida (Catalonia, Spain) from 27-30
-              October 2026.
+              se celebrarå en Barcelona y Lleida (Cataluña, España) del 27 al 30
+              de Octubre de 2026.
             </p>
 
             <div className="space-y-6 pt-8 border-t border-white/10">
               <h3 className="text-2xl font-bold text-white mb-2">
-                Call for papers and projects registration is open
+                La convocatoria para la presentacion de trabajos y la
+                inscripcion de proyectos esta abierta
               </h3>
 
               <p className="text-lg leading-relaxed">
-                Promoted by the{" "}
+                Promovido por la{" "}
                 <a
                   href="https://worldgreeninfrastructurenetwork.org/"
                   target="_blank"
@@ -47,10 +48,10 @@ const JanuaryNewsletter = () => {
                   className="text-potus"
                 >
                   {" "}
-                  World Green Infrastructure Network{" "}
+                  Red Mundial de Infraestructura Verde{" "}
                 </a>{" "}
-                (WGIN) and organized by the University of Lleida (UdL), this
-                occasion will celebrate the{" "}
+                (WGIN) y organizado por la Universidad de Lleida (UdL), esta
+                ocasión celebrará la{" "}
                 <a
                   href="https://www.barcelona.cat/capitalmundialarquitectura/en/presentation/barcelona-2026-world-capital-architecture"
                   target="_blank"
@@ -58,9 +59,10 @@ const JanuaryNewsletter = () => {
                   className="text-potus"
                 >
                   {" "}
-                  World Capital of Architecture
+                 Capital Mundial de la Arquitectura
                 </a>{" "}
-                and the{" "}
+                 y el 
+                 {" "}
                 <a
                   href="https://consellantonigaudi.cat/programa-2026/"
                   target="_blank"
@@ -68,15 +70,16 @@ const JanuaryNewsletter = () => {
                   className="text-potus"
                 >
                   {" "}
-                  Year of Antoni Gaudí
+                  Año de Antoni Gaudí
                 </a>
-                , in Barcelona 2026. The program will be structured into two
-                days of parallel sessions and posters in Barcelona.
+                , en
+                Barcelona 2026. EI programa se estructurará en dos días de
+                sesiones paralelas y pósters en Barcelona.
               </p>
 
               <p className="text-lg leading-relaxed">
-                Among the classic topics (policies, technologies, impacts,
-                education, etc.), three featured topics will be addressed.
+                Entre los temas clásicos (políticas, tecnologías, impactos,
+                educación, etc.), se abordarán tres temas destacados.
               </p>
             </div>
           </div>
@@ -84,58 +87,66 @@ const JanuaryNewsletter = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-white/10">
             <div>
               <h3 className="text-2xl font-semibold text-white mb-4">
-                Green Infrastructure and Nature-based Solutions
+                Infraestructura verde y soluciones basadas en la naturaleza.
               </h3>
               <ul className="list-disc list-inside mb-4 text-white">
-                <li>For human health and well being</li>
-                <li>In post conflict / disaster recovery</li>
-                <li>And the Global South</li>
+                <li>Para la salud y el bienestar humano</li>
+                <li>En la recuperacion post conflicto/desastre</li>
+                <li>Y el sur global</li>
               </ul>
               <p className="mb-4">
-                The congress includes a fair area where leading companies will
-                show their products and latest innovations. The third day of the
-                congress will be dedicated to fantastic technical visits to
-                projects throughout Barcelona, in an innovative ​ open doors
-                format. An optional fourth day will include workshops on
-                research and innovation in Lleida. Since WGIC26 is the only
-                annual forum where researchers, professionals and industry
-                converge, both types of papers, whether research, projects or
-                case studies, can be submitted.
+                El congreso incluye un årea de feria donde las empresas lideres
+                mostrarån sus productos y últimas innovaciones. El tercer dia
+                del congreso estará dedicado a visitas técnicas fantásticas a
+                proyectos en toda Barcelona, en un formato innovador de "puertas
+                abiertas". Un cuarto dia opcional incluirå talleres sobre
+                investigación e innovación en Lleida. Dado que el WGlC26 es un
+                foro anual donde convergen investigadores, profesionales e
+                industria, se pueden presentar ambos tipos de trabajos, ya sean
+                investigaciones, proyectos o estudios de caso.
               </p>
             </div>
 
             <div className="bg-gradient-to-br from-cactus/20 to-monstera/20 p-6 rounded-lg border border-white/10">
               <h3 className="text-xl font-semibold text-white mb-4">
-                Save the Key Dates
+                Recuerda las fechas clave
               </h3>
               <ul className="space-y-3 text-sm">
                 <li className="flex justify-between items-start">
-                  <span className="text-white/60">First draft paper:</span>
+                  <span className="text-white/60">
+                    Primer borrador del trabajo presentado
+                  </span>
                   <span className="font-semibold text-white">
-                    31 March 2026
+                    31 de Marzo de 2026
                   </span>
                 </li>
                 <li className="flex justify-between items-start">
                   <span className="text-white/60">
-                    Early-bird registration:
+                    Inscripcion anticipada (Hasta 400 inscripciones)
                   </span>
                   <span className="font-semibold text-white">
-                    15 April 2026
+                    15 de Abril de 2026
                   </span>
                 </li>
                 <li className="flex justify-between items-start">
-                  <span className="text-white/60">Partners & Exhibitors:</span>
+                  <span className="text-white/60">Socios y Expositores</span>
                   <span className="font-semibold text-white">
-                    30 April 2026
+                    30 de Abril de 2026
                   </span>
                 </li>
                 <li className="flex justify-between items-start">
-                  <span className="text-white/60">Sponsors deadline:</span>
-                  <span className="font-semibold text-white">30 Sept 2026</span>
+                  <span className="text-white/60">Patrocinadores</span>
+                  <span className="font-semibold text-white">
+                    30 de Septiembre de 2026
+                  </span>
                 </li>
                 <li className="flex justify-between items-start pt-2 border-t border-white/10 mt-2">
-                  <span className="text-potus font-bold">Congress Dates:</span>
-                  <span className="font-bold text-potus">27-30 Oct 2026</span>
+                  <span className="text-potus font-bold">
+                    Fecha del congreso
+                  </span>
+                  <span className="font-bold text-potus">
+                    27-30 de Octubre de 2026
+                  </span>
                 </li>
               </ul>
             </div>
@@ -143,11 +154,14 @@ const JanuaryNewsletter = () => {
 
           <div className="space-y-6 pt-8 border-t border-white/10">
             <h3 className="text-2xl font-semibold text-white">
-              2026: A Year Commemorating Antoni Gaudí
+              2026: Un año conmemorativo de Antoni Gaudí.
             </h3>
             <p>
-              The Council for the Promotion and Dissemination of Gaudí&apos;s
-              Work has driven the celebration of the{" "}
+              El Consejo para la Promoci6n y Difusi6n de la Obra de Gaudi, un
+              Organo asesor del Departamento de Cultura de la Generalitat de
+              Catalufia, ha impulsado la celebración del 
+              
+              {" "}
               <a
                 href="https://web.gencat.cat/en/generalitat/accio-govern/commemoracions/2026/any-gaudi"
                 target="_blank"
@@ -155,35 +169,37 @@ const JanuaryNewsletter = () => {
                 className="text-potus"
               >
                 {" "}
-                Gaudí Year 2026
+                Año Gaudi 2026
               </a>{" "}
-              , to bring Antoni Gaudí&apos;s work closer to the general public.
-              Gaudí is one of Catalonia&apos;s most universal architects.
+
+              , con el
+              objetivo de acercar la Obra de Antoni Gaudi al público en general.
+              Gaudi es uno de los arquitectos más universales de Cataluña.
             </p>
             <p>
-              The initiative will be coordinated by a commission led by Núria
-              Poch and Galdric Santana, and will involve the participation of
-              the main Gaudí buildings, including the Expiatory Temple of the
-              Sagrada Família, as well as public and private institutions and
-              experts dedicated to the conservation, study, and dissemination of
-              his legacy.
+              La iniciativa será coordinada por una comisión liderada por Núria
+              Poch y Galdric Santana, e involucrará la participaci6n de los
+              principales edificios de Gaudi, incluyendo el Templo Expiatorio de
+              la Sagrada Familia, asi como instituciones públicas y privadas y
+              expertos dedicados a la conservación, estudio y difusión de su
+              legado.
             </p>
           </div>
 
           <div className="space-y-6 pt-8 border-t border-white/10">
             <h3 className="text-2xl font-semibold text-white mb-6">
-              The first WGIC speakers are already confirmed!
+              Los primeros ponentes del WGiC ya estan confirmados!
             </h3>
             <p className="mb-6">
-              We are pleased to announce that the first speakers for WGIC 2026
-              are now confirmed—leading voices shaping the future of cities,
-              territory, architecture, and public policy:
+              Nos complace anunciar que los primeros ponentes para el WGIC 2026
+              ya estan confirmados: voces líderes que están moldeando el futuro
+              de las ciudades, el territorio, lar arquitectura y la politica
+              pública
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-cactus/10 p-6 rounded-lg border border-white/5 hover:bg-cactus/20 transition-colors">
                 <h4 className="text-lg font-bold text-potus mb-2">
-                  {" "}
                   <a
                     href="https://www.linkedin.com/in/marcosrossempere/"
                     target="_blank"
@@ -193,68 +209,69 @@ const JanuaryNewsletter = () => {
                   </a>
                 </h4>
                 <p className="text-sm text-white/70">
-                  Architect, academic, and Member of the European Parliament,
-                  working on urban policy, sustainability, and the built
-                  environment at the EU level.
+                  Arquitecto, académico y Miembro del Parlamento Europeo,
+                  trabajando en politica urbana, sostenibilidad y entorno
+                  construido a nivel de la UE.
                 </p>
               </div>
 
               <div className="bg-monstera/10 p-6 rounded-lg border border-white/5 hover:bg-monstera/20 transition-colors">
                 <h4 className="text-lg font-bold text-potus mb-2">
                   <a
-                    href="https://www.linkedin.com/in/salvador-rueda-552706240/"
+                    href="https://www.linkedin.com/in/vicente-guallart-49a94315/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {" "}
-                    Vicente Guallart{" "}
+                    Vicente Guallart
                   </a>
                 </h4>
                 <p className="text-sm text-white/70">
-                  Architect and urbanist, Co‑founder of Urbanitree and Founder
-                  of the Institute for Advanced Architecture of Catalonia.
+                  Arquitecto y urbanista, cofundador de Urbanitree y fundador
+                  del Instituto de Arquitectura Avanzada de Cataluña, reconocido
+                  internacionalmente por su innovación urbana basada en la
+                  investigación.
                 </p>
               </div>
 
               <div className="bg-sansiviera/10 p-6 rounded-lg border border-white/5 hover:bg-sansiviera/20 transition-colors">
                 <h4 className="text-lg font-bold text-potus mb-2">
                   <a
-                    href="https://www.linkedin.com/in/vicente-guallart-49a94315/"
+                    href="https://www.linkedin.com/in/alberto-t-est%C3%A9vez-17319876/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {" "}
-                    Alberto Estévez{" "}
+                    Alberto Estevez
                   </a>
                 </h4>
                 <p className="text-sm text-white/70">
-                  Founder and Director of ESARQ‑UIC Barcelona, known for
-                  experimental and biodigital architecture.
+                  Fundador y Director de ESARQ-UIC Barcelona, arquitecto y
+                  académico conocido por avanzar en la arquitectura experimental
+                  y biodigital.
                 </p>
               </div>
 
               <div className="bg-cactus/10 p-6 rounded-lg border border-white/5 hover:bg-cactus/20 transition-colors">
                 <h4 className="text-lg font-bold text-potus mb-2">
                   <a
-                    href="https://www.linkedin.com/in/alberto-t-est%C3%A9vez-17319876/"
+                    href="https://www.linkedin.com/in/salvador-rueda-552706240/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {" "}
-                    Salvador Rueda{" "}
+                    Salvador Rueda
                   </a>
                 </h4>
                 <p className="text-sm text-white/70">
-                  Founder and Director of the Urban and Territorial Ecology
-                  Foundation (FEUT), pioneer of urban ecology and creator of the
-                  “superblock” model.
+                  Fundador y Director de la Fundación de Ecología Urbana y
+                  Terrritorial (FEUT), pionero de la ecología urbana y creador
+                  del modelo urbano de "supermanzana."
                 </p>
               </div>
             </div>
 
             <p className="mt-4 text-sm text-white/60 italic">
-              This first group of speakers underscores the ambition, depth, and
-              multidisciplinary vision of WGIC 2026.
+              Este primer grupo de ponentes subraya la ambición, profundidad y
+              visión multidisciplinaria del WGIC 2026, posicionándolo como un
+              foro clave para el discurso urbano global.
             </p>
           </div>
 
@@ -263,13 +280,13 @@ const JanuaryNewsletter = () => {
               href="https://www.wgic26.barcelona/exhibitors"
               className="inline-block border border-white/20 text-white px-6 py-3 rounded-lg hover:bg-white/5 transition"
             >
-              Be our sponsor
+              Sé nuestro patrocinador
             </a>
             <Link
               href="/#newsletter"
               className="inline-block bg-potus text-black font-semibold px-6 py-3 rounded-lg hover:opacity-95 transition"
             >
-              Subscribe to newsletter
+              Suscríbete al newsletter
             </Link>
           </div>
         </div>
@@ -278,4 +295,4 @@ const JanuaryNewsletter = () => {
   );
 };
 
-export default JanuaryNewsletter;
+export default March2026SpanishNewsletter;

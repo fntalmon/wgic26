@@ -16,10 +16,9 @@ const Registration = () => {
       />
 
       <section className="w-full justify-start text-xs">
-        
         <div className="w-full max-w-7xl px-0 py-12 flex flex-col gap-12 sm:px-4 lg:px-0 mx-auto">
           {/* Main Registration Callout */}
-          
+
           <div
             id="registration"
             className="border border-white/20 rounded-lg p-8"
@@ -321,7 +320,12 @@ const Registration = () => {
 
               <p className="mb-3">
                 If you need an invoice, please send an email to{" "}
-                <strong>wgic26.economics@udl.cat</strong>.
+                <strong>
+                  <a href="mailto:wgic26.economics@udl.cat">
+                    wgic26.economics@udl.cat
+                  </a>
+                </strong>
+                .
               </p>
 
               <div className="mt-6 bg-white/5 border border-white/10 rounded-md p-4">
