@@ -98,8 +98,8 @@ const March2026SpanishNewsletter = () => {
                 El congreso incluye un årea de feria donde las empresas lideres
                 mostrarån sus productos y últimas innovaciones. El tercer dia
                 del congreso estará dedicado a visitas técnicas fantásticas a
-                proyectos en toda Barcelona, en un formato innovador de "puertas
-                abiertas". Un cuarto dia opcional incluirå talleres sobre
+                proyectos en toda Barcelona, en un formato innovador de &quot;puertas
+                abiertas&quot;. Un cuarto dia opcional incluirå talleres sobre
                 investigación e innovación en Lleida. Dado que el WGlC26 es un
                 foro anual donde convergen investigadores, profesionales e
                 industria, se pueden presentar ambos tipos de trabajos, ya sean
@@ -263,7 +263,7 @@ const March2026SpanishNewsletter = () => {
                 <p className="text-sm text-white/70">
                   Fundador y Director de la Fundación de Ecología Urbana y
                   Terrritorial (FEUT), pionero de la ecología urbana y creador
-                  del modelo urbano de "supermanzana."
+                  del modelo urbano de &quot;supermanzana.&quot;
                 </p>
               </div>
             </div>
