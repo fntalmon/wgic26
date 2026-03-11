@@ -16,6 +16,7 @@ type MailConfig = {
   imapPort: number;
   imapUser: string;
   imapPass: string;
+  imapMailbox: string;
   smtpHost: string;
   smtpPort: number;
   smtpSecure: boolean;
@@ -32,6 +33,7 @@ function getConfig(): MailConfig {
   const imapPort = Number(process.env.ZOHO_IMAP_PORT ?? '993');
   const imapUser = process.env.ZOHO_IMAP_USER ?? '';
   const imapPass = process.env.ZOHO_IMAP_PASS ?? '';
+  const imapMailbox = process.env.ZOHO_IMAP_MAILBOX ?? 'Sent';
 
   const smtpHost = process.env.ZOHO_SMTP_HOST ?? 'smtp.zoho.com';
   const smtpPort = Number(process.env.ZOHO_SMTP_PORT ?? '465');
@@ -69,6 +71,7 @@ function getConfig(): MailConfig {
     imapPort,
     imapUser,
     imapPass,
+    imapMailbox,
     smtpHost,
     smtpPort,
     smtpSecure,
@@ -109,7 +112,8 @@ function isAuthorized(request: NextRequest, cronSecret?: string): boolean {
   }
 
   const authHeader = request.headers.get('authorization') ?? '';
-  return authHeader === `Bearer ${cronSecret}`;
+  const queryToken = request.nextUrl.searchParams.get('token') ?? '';
+  return authHeader === `Bearer ${cronSecret}` || queryToken === cronSecret;
 }
 
 function buildSinceDate(daysBack: number): Date {
@@ -134,7 +138,7 @@ async function countRegistrations(config: MailConfig, daysBack: number): Promise
 
   try {
     await client.connect();
-    await client.mailboxOpen('INBOX');
+    await client.mailboxOpen(config.imapMailbox);
 
     const sequence = await client.search({
       since: sinceDate,
