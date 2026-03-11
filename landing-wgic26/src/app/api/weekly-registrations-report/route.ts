@@ -138,10 +138,11 @@ async function countRegistrations(config: MailConfig, daysBack: number): Promise
 
     const sequence = await client.search({
       since: sinceDate,
-      header: ['subject', TARGET_SUBJECT],
+      header: { subject: TARGET_SUBJECT },
     });
 
-    for await (const message of client.fetch(sequence, { envelope: true })) {
+    if (sequence && sequence.length > 0) {
+      for await (const message of client.fetch(sequence, { envelope: true })) {
       const subject = (message.envelope?.subject ?? '').trim();
       const receivedAt = message.envelope?.date;
 
@@ -152,6 +153,7 @@ async function countRegistrations(config: MailConfig, daysBack: number): Promise
       if (subject === TARGET_SUBJECT && receivedAt >= sinceDate) {
         total += 1;
       }
+      }
     }
   } finally {
     await client.logout().catch(() => undefined);
@@ -160,7 +162,6 @@ async function countRegistrations(config: MailConfig, daysBack: number): Promise
   return total;
 }
 
-async function sendWeeklyReport(config: MailConfig, total: number): Promise<void> {
 async function sendReportEmail(config: MailConfig, total: number, daysBack: number, recipients: string[], mode: ReportMode): Promise<void> {
   const transporter = nodemailer.createTransport({
     host: config.smtpHost,
