@@ -226,7 +226,7 @@ const March2026ItalianNewsletter = () => {
                 </h4>
                 <p className="text-sm text-white/70">
                   Fondatore e direttore di ESARQ-UIC Barcellona, architetto e
-                  accademico noto per il suo avanzamento nell'architettura
+                  accademico noto per il suo avanzamento nell&apos;architettura
                   sperimentale e biodigitale.
                 </p>
               </div>
@@ -250,7 +250,7 @@ const March2026ItalianNewsletter = () => {
             </div>
 
             <p className="mt-4 text-sm text-white/60 italic">
-              Questo primo gruppo di relatori sottolinea l'ambizione, la
+              Questo primo gruppo di relatori sottolinea l&apos;ambizione, la
               profondità e la visione multidisciplinare del WGIC 2026,
               posizionandolo come un forum chiave per il dibattito urbano
               globale.
