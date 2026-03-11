@@ -117,7 +117,7 @@ const March2026SpanishNewsletter = () => {
                     Primer borrador del trabajo presentado
                   </span>
                   <span className="font-semibold text-white">
-                    31 de Marzo de 2026
+                    30 de Abril de 2026
                   </span>
                 </li>
                 <li className="flex justify-between items-start">

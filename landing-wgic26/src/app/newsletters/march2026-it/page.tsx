@@ -114,7 +114,7 @@ const March2026ItalianNewsletter = () => {
                   <span className="text-white/60">
                     Prima bozza dell&apos;articolo da inviare
                   </span>
-                  <span className="font-semibold text-white">31 marzo 2026</span>
+                  <span className="font-semibold text-white">30 aprile 2026</span>
                 </li>
                 <li className="flex justify-between items-start">
                   <span className="text-white/60">

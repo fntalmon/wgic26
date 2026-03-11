@@ -112,7 +112,7 @@ const JanuaryNewsletter = () => {
                 <li className="flex justify-between items-start">
                   <span className="text-white/60">First draft paper:</span>
                   <span className="font-semibold text-white">
-                    31 March 2026
+                    30 April 2026
                   </span>
                 </li>
                 <li className="flex justify-between items-start">
