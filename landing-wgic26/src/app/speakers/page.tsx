@@ -46,9 +46,9 @@ const Speakers = () => {
                 <li>Read the instructions carefully.</li>
                 <li>Select a main topic where your work fits.</li>
                 <li>Prepare the paper (max 5 pages).</li>
-                <li>Submit your paper in .doc format before <strong>31 March 2026</strong> (<a href="#" className="text-potus underline">submission form</a>).</li>
-                <li>You will receive a decision and R1 revision before <strong>15 April 2026</strong>.</li>
-                <li>Return revised paper (R1) before <strong>31 May 2026</strong> and R2 before <strong>30 June 2026</strong>.</li>
+                <li>Submit your paper in .doc format before <strong>30 April 2026</strong> (<a href="#" className="text-potus underline">submission form</a>).</li>
+                <li>You will receive a decision and R1 revision before <strong>15 May 2026</strong>.</li>
+                <li>Return revised paper (R1) before <strong>12 June 2026</strong> and R2 before <strong>30 June 2026</strong>.</li>
                 <li>Return the final paper before <strong>30 July 2026</strong>.</li>
               </ol>
             </div>

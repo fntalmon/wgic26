@@ -142,17 +142,17 @@ const Congress = () => {
                                 <tr className="hover:bg-white/5">
                                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Authors</td>
                                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base">First draft paper submitted</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 31 March 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 30 April 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
                                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Scientific committee</td>
                                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Notification of acceptance and Oral/Poster decision</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 15 April 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 15 May 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
                                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Authors</td>
                                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base">R1 draft paper</td>
-                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 31 May 2026</td>
+                                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">&lt; 12 June 2026</td>
                                 </tr>
                                 <tr className="hover:bg-white/5">
                                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base">Scientific committee</td>
