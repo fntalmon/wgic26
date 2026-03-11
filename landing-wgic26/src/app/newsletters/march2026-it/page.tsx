@@ -41,7 +41,7 @@ const March2026ItalianNewsletter = () => {
               </h3>
 
               <p className="text-lg leading-relaxed">
-                L'evento, promosso dalla{" "}
+                L&apos;evento, promosso dalla{" "}
                 <a
                   href="https://worldgreeninfrastructurenetwork.org/"
                   target="_blank"
@@ -50,7 +50,7 @@ const March2026ItalianNewsletter = () => {
                 >
                   Rete Mondiale delle Infrastrutture Verdi
                 </a>{" "}
-                (WGIN) e organizzato dall'Università di Lerida (UdL), celebrerà
+                (WGIN) e organizzato dall&apos;Università di Lerida (UdL), celebrerà
                 la nomina di Barcellona a{" "}
                 <a
                   href="https://www.barcelona.cat/capitalmundialarquitectura/en/presentation/barcelona-2026-world-capital-architecture"
@@ -58,9 +58,9 @@ const March2026ItalianNewsletter = () => {
                   rel="noopener noreferrer"
                   className="text-potus"
                 >
-                  Capitale mondiale dell'architettura 2026
+                  Capitale mondiale dell&apos;architettura 2026
                 </a>{" "}
-                e l'{" "}
+                e l&apos;{" "}
                 <a
                   href="https://consellantonigaudi.cat/programa-2026/"
                   target="_blank"
@@ -92,10 +92,10 @@ const March2026ItalianNewsletter = () => {
                 <li>Il Sud del mondo</li>
               </ul>
               <p className="mb-4">
-                Il congresso include un'area fieristica dove le aziende leader
+                Il congresso include un&apos;area fieristica dove le aziende leader
                 mostreranno i loro prodotti e le ultime innovazioni. Il terzo
                 giorno sarà dedicato a visite di sopralluogo di progetti nella
-                città di Barcellona, in un innovativo formato "porte aperte".
+                città di Barcellona, in un innovativo formato &quot;porte aperte&quot;.
                 Un quarto giorno facoltativo includerà workshop su ricerca e
                 innovazione a Lerida. Dato che il WGIC26 è un forum annuale in
                 cui ricercatori, professionisti e industria si incontrano,
@@ -143,10 +143,10 @@ const March2026ItalianNewsletter = () => {
               2026: un anno che commemora Antoni Gaudí
             </h3>
             <p>
-              Il Consiglio per la Promozione e la Diffusione dell'Opera di
+              Il Consiglio per la Promozione e la Diffusione dell&apos;Opera di
               Gaudí, un organo consultivo del Dipartimento della Cultura della
               Generalitat della Catalogna, ha promosso la celebrazione
-              dell'{" "}
+              dell&apos;{" "}
               <a
                 href="https://web.gencat.cat/en/generalitat/accio-govern/commemoracions/2026/any-gaudi"
                 target="_blank"
@@ -155,12 +155,12 @@ const March2026ItalianNewsletter = () => {
               >
                 Anno commemorativo di Gaudí 2026
               </a>
-              , con l'obiettivo di
-              avvicinare l'opera di Antoni Gaudí al grande pubblico. Gaudí è
+              , con l&apos;obiettivo di
+              avvicinare l&apos;opera di Antoni Gaudí al grande pubblico. Gaudí è
               uno degli architetti più universali della Catalogna.
             </p>
             <p>
-              L'iniziativa, coordinata da una commissione guidata da Núria Poch
+              L&apos;iniziativa, coordinata da una commissione guidata da Núria Poch
               e Galdric Santana, abbraccerà i principali edifici di Gaudí,
               incluso il Tempio Espiatorio della Sagrada Família. Saranno
               coinvolte istituzioni pubbliche e private, nonché esperti di
@@ -175,7 +175,7 @@ const March2026ItalianNewsletter = () => {
             <p className="mb-6">
               Siamo lieti di annunciare i primi relatori confermati del WGIC
               2026: voci di spicco che plasmano il futuro delle città, del
-              territorio, dell'architettura e delle politiche urbane.
+              territorio, dell&apos;architettura e delle politiche urbane.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -208,9 +208,9 @@ const March2026ItalianNewsletter = () => {
                 </h4>
                 <p className="text-sm text-white/70">
                   Architetto e urbanista, co-fondatore di Urbanitree e
-                  fondatore dell'Istituto per l'Architettura Avanzata della
+                  fondatore dell&apos;Istituto per l&apos;Architettura Avanzata della
                   Catalogna, riconosciuto a livello internazionale per
-                  l'innovazione urbana basata sulla ricerca.
+                  l&apos;innovazione urbana basata sulla ricerca.
                 </p>
               </div>
 
@@ -243,8 +243,8 @@ const March2026ItalianNewsletter = () => {
                 </h4>
                 <p className="text-sm text-white/70">
                   Fondatore e direttore della Fondazione Ecologia Urbana e
-                  Territoriale (FEUT), pioniere dell'ecologia urbana e creatore
-                  del modello urbano "superblocco".
+                  Territoriale (FEUT), pioniere dell&apos;ecologia urbana e creatore
+                  del modello urbano &quot;superblocco&quot;.
                 </p>
               </div>
             </div>
