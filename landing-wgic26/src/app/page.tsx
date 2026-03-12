@@ -428,7 +428,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    src="/img/logos/jardinmovil.png"
+                    src="/img/logos/jardinMovil.png"
                     alt="Semper Green"
                     width={200}
                     height={150}
