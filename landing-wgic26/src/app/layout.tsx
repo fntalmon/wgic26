@@ -3,9 +3,11 @@ import { ReactNode } from "react";
 import Script from "next/script";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 
 export const metadata = {
-  title: "WGIC26 Barcelona-Lleida",
+  title: "WGIC26 Barcelona",
   description: "World Green Infrastructure Congress 2026 - Barcelona",
   icons: {
     icon: [
@@ -18,9 +20,12 @@ export const metadata = {
   manifest: "/img/icons/site.webmanifest",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         {/* Google Analytics */}
         <Script
@@ -42,12 +47,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           }}
         />
       </head>
-      <body className="bg-monstera text-white font-light" style={{ fontFamily: 'Century Gothic, sans-serif' }}>
-        <Navigation />
-        <main className="flex flex-col gap-10 mt-28 lg:mt-40 mb-24 min-h-screen">
-          {children}
-        </main>
-        <Footer />
+      <body className="bg-monstera text-white font-light" style={{ fontFamily: "Century Gothic, sans-serif" }}>
+        <NextIntlClientProvider messages={messages}>
+          <Navigation />
+          <main className="flex flex-col gap-10 mt-28 lg:mt-40 mb-24 min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

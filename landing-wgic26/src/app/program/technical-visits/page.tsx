@@ -1,7 +1,10 @@
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
-const TechnicalVisits = () => {
+const TechnicalVisits = async () => {
+    const t = await getTranslations("technicalVisitsPage");
+
     const visits = [
         { name: "Almirall - Offices", image: "/img/visits/Almirall - Offices.jpg" },
         { name: "Bonay Hotel", image: "/img/visits/Bonay-Hotel.jpg" },
@@ -22,8 +25,8 @@ const TechnicalVisits = () => {
     return (
         <div>
             <PageHeader
-                title="Technical Visits"
-                description="Discover the most exciting technical green infrastructure projects in Barcelona. We will soon announce the tours and registration. The following projects are already confirmed"
+                title={t("title")}
+                description={t("description")}
                 section="program"
             />
 

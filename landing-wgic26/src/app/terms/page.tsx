@@ -1,11 +1,14 @@
 import PageHeader from "@/components/PageHeader";
 import { HardHat } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
-const Terms = () => {
+const Terms = async () => {
+    const t = await getTranslations("legalPages");
+
     return (
         <div>
             <PageHeader
-                title="Terms & Conditions"
+                title={t("termsTitle")}
                 description=""
                 buttonText=""
                 buttonUrl=""
@@ -15,8 +18,8 @@ const Terms = () => {
             <section className="w-full justify-start text-xs">
                 <div className="flex w-full flex-col items-center gap-6 p-16 border-1 border-potus/40">
                     <HardHat size={72} className="text-potus" />
-                    <div className="text-2xl uppercase">Coming soon</div>
-                    <div className="text-potus">hola@wgic26.barcelona</div>
+                    <div className="text-2xl uppercase">{t("comingSoon")}</div>
+                    <div className="text-potus">{t("contactEmail")}</div>
 
                 </div>            </section>
         </div>
