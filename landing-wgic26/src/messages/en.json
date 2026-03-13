@@ -1,0 +1,515 @@
+{
+  "navigation": {
+    "about": "About",
+    "congress": "The Congress",
+    "wgiNetwork": "WGI Network",
+    "universityLleida": "University of Lleida",
+    "locations": "Locations",
+    "organisationCommittee": "Organisation committee",
+    "congressCommittee": "Congress committee",
+    "program": "Program",
+    "gaudiYear": "Gaudi Year 2026",
+    "mainTopics": "Main Topics",
+    "workshops": "Workshops",
+    "technicalVisits": "Technical Visits",
+    "wginAwards": "WGIN Awards",
+    "keyNoteSpeakers": "Key Note Speakers",
+    "newsletters": "Newsletters",
+    "speakers": "Speakers",
+    "registration": "Registration",
+    "partnersExhibitors": "Partners & Exhibitors",
+    "planYourStay": "Plan your stay",
+    "travel": "Travel",
+    "tickets": "Tickets",
+    "papersProjects": "Papers and Projects",
+    "language": "Language",
+    "mobileMenuTitle": "Navigation Menu",
+    "mobileMenuDescription": "Mobile navigation menu for WGIC26"
+  },
+  "countdown": {
+    "startingIn": "Starting in:"
+  },
+  "home": {
+    "heroTitle": "World Green Infrastructure Congress 2026 Barcelona-Lleida",
+    "date1": "27-29 Oct 2026",
+    "date1Location": "CCIB - Parc del Forum, Barcelona (Spain)",
+    "date2": "30 Oct 2026",
+    "date2Location": "Universitat de Lleida - Lleida (Spain)",
+    "bannerTitle": "WGIC26 Barcelona-Lleida",
+    "introP1": "Welcome to the WGIC26 - 12th World Green Infrastructure Congress, which will be held from October 27th to 30th, 2026, at the International Convention Centre of Barcelona (CCIB), Catalonia, Spain. WGIC2026 aims to provide a dynamic and interdisciplinary platform for addressing the challenges of the urban green infrastructure sector contributing to climate change mitigation and adaptation on the way to a safer and healthier future.",
+    "introP2": "As global society strives for resilient, healthy and fair cities, WGIC26 brings together researchers, engineers, architects and landscape architects, policymakers, industry leaders, and innovators from across the world to exchange cutting-edge research, practical solutions, and forward-thinking ideas. The conference fosters collaboration across disciplines and sectors, emphasizing the role of green infrastructure and nature-based solutions in driving transformative change.",
+    "introP3": "The program will feature keynote speeches, invited talks, plenary sessions, panel discussions, thematic workshops, technical exhibitions, and oral/poster presentations. Participants will engage with a broad spectrum of topics ranging from Strategies, Policies and Funding programs, Technologies, Market GI/NBS sector and Standards, to Design and Projects, Execution, Maintenance and Quality, but also Education and Training.",
+    "introP4": "An important part of the congress will be dedicated to the impacts of green infrastructure, i.e. the benefits for society, with the following sections: Climate resilience; Water management; Natural and Climate Hazards; Green Space Management; Biodiversity; Air Quality; Place Regeneration; Knowledge and Social Capacity Building for Sustainable Urban Transformation; Participatory Planning and Governance; Social Justice and Social Cohesion; Health and Well-being; New Economic Opportunities and Green Jobs.",
+    "introP5": "Three themes will be highlighted during WGIC26: improving people's health and well-being; recovering society and places after post-conflict or post-disaster situations; and building resilient, healthy and just cities in the Global South.",
+    "introP6": "The program will be structured in two days of parallel sessions and a third day of technical visits to examples of green infrastructure in Barcelona. In addition, an additional fourth day has been planned dedicated to innovation and research processes in the green infrastructure sector, which will be hosted by the University of Lleida.",
+    "introP7": "WGIC26 warmly welcomes submissions of original research, case studies, and innovative applications that align with our mission to accelerate the integration of green infrastructure in urban planning, globally. Companies will play a very important role in the congress: the exhibition space will provide a unique exchange place to consolidate future projects, showcase innovative solutions and foster collaborations.",
+    "introP8": "Located on the coast and with a Mediterranean climate, the city of Barcelona breathes life throughout the year - discover the Gothic Quarter, the legacy of Antoni Gaudi and an outstanding gastronomic scene. Join us in Barcelona and Lleida to co-design urban green infrastructure solutions that allow future generations to enjoy more sustainable, resilient and healthy cities.",
+    "introClosing": "We look forward to meeting you at CCIB in October 2026!",
+    "chairRole": "University of Lleida - Chair of WGIC26",
+    "presidentRole": "President of WGIN",
+    "locations": "Locations",
+    "mainActivities": "Main activities:",
+    "congress": "Congress",
+    "workshops": "Workshops",
+    "visits": "Visits",
+    "sponsorsPartners": "Sponsors & Partners",
+    "organizedBy": "Organized by",
+    "newsletterTitle": "Stay up to date",
+    "newsletterSubtitle": "Register to our Newsletter",
+    "newsletterEmailPlaceholder": "Email address",
+    "newsletterPhonePlaceholder": "Phone number",
+    "newsletterSubmitting": "Subscribing...",
+    "newsletterSubmit": "Subscribe",
+    "newsletterValidation": "Please provide both email and phone number.",
+    "newsletterPhoneValidation": "Please enter a valid phone number.",
+    "newsletterSuccess": "Thank you for subscribing to our newsletter!",
+    "newsletterError": "An error occurred, please try again."
+  },
+  "footer": {
+    "title": "World Green Infrastructure Congress 2026 Barcelona",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "contact": "Contact",
+    "copyright": "WGIC 2026 - All rights reserved",
+    "another": "Another",
+    "creation": "creation."
+  },
+  "aboutCongress": {
+    "title": "The Congress",
+    "description": "World Green Infrastructure Congress",
+    "videoTitle": "World Green Infrastructure Congress Overview",
+    "img1Alt": "World Green Infrastructure Congress",
+    "img2Alt": "Congress benefits and collaboration",
+    "mainP1": "Annually, the WGIN promotes and co-organizes the World Green Infrastructure Congress (WGIC), together with university academic institutions that host this global event.",
+    "mainP2": "World congresses on green infrastructure offer several important benefits to society. First, they bring together researchers, professionals, public administrations, and companies from around the world to share scientific and technical advances on nature-based solutions such as green roofs, green facades, ecological corridors, and sustainable urban drainage systems. This accelerates innovation and improves the quality of interventions in cities and territories.",
+    "mainP3": "In addition, these congresses help spread best practices and real examples that have improved urban resilience, reduced the impact of climate change, or increased citizens' well-being. The transfer of knowledge allows more cities to adopt green strategies that reduce urban heat, improve air quality, and promote biodiversity.",
+    "mainP4": "These events drive more ambitious public policies and foster international collaboration. By placing green infrastructure on the global agenda, they encourage governments and organizations to invest in sustainable, accessible, and economically beneficial solutions, generating a direct impact on health, quality of life, and the environmental sustainability of present and future societies.",
+    "historyTitle": "Congress History",
+    "historyP1": "Since its inception in 2009 in Toronto (Canada), the congress has been held in different cities of the world, always with great participation success and providing important networking opportunities between different interest groups, companies, universities and research centres, designers and project managers, and students. The last editions took place in Berlin 2023 (Germany), Auckland 2024 (New Zealand) and Basel 2025 (Switzerland).",
+    "berlinAlt": "Berlin 2023 Congress",
+    "aucklandAlt": "Auckland 2024 Congress",
+    "baselAlt": "Basel 2025 Congress",
+    "wgicTitle": "WGIC26 Barcelona - Lleida",
+    "mottoLabel": "Motto",
+    "motto": "Green infrastructure for a healthier and safer urban future",
+    "wgicP1": "Under the motto Green infrastructure for a healthier and safer urban future the twelfth edition of the WGIC wants to emphasize how green infrastructure contributes directly and indirectly to improving the quality of life and health of people.",
+    "wgicP2": "Green infrastructure contributes to climate change mitigation and adaptation. WGIC2026 seeks to align its objectives with the challenges posed by global climate change. These challenges involve not only understanding how urban green infrastructure can help mitigate climate impacts on society but also determining how such infrastructure must adapt to an increasingly changing environmental context in the coming years.",
+    "wgicP3": "The Mediterranean region characterized by high temperatures and low rainfall offers outstanding examples of innovation in urban renaturalization. These strategies provide valuable inspiration for future designs of urban green infrastructure worldwide. Barcelona's strong commitment to sustainability, together with its rich cultural heritage and forward-thinking urban policies, reinforces its position as one of the world's most inspiring cities.",
+    "wgicP4": "WGIC26 is organised by the University of Lleida (Catalonia, Spain) and has a two-day conference format in Barcelona with five parallel sessions, more than ten keynote speakers from the green infrastructure sector and two workshops on specific topics of great current interest. In addition, there is a third day of technical visits to real projects distributed throughout Barcelona and an optional fourth day dedicated to innovation and research on urban green infrastructure at the headquarters of the University of Lleida, in the city of Lleida.",
+    "keyDatesTitle": "Key Dates",
+    "dates": {
+      "who": "Who?",
+      "what": "What?",
+      "when": "When?",
+      "authors": "Authors",
+      "scientificCommittee": "Scientific committee",
+      "organizingCommittee": "Organizing Committee",
+      "attendees": "Attendees",
+      "partners": "Partners and exhibitors",
+      "sponsors": "Sponsors",
+      "firstDraft": "First draft paper submitted",
+      "acceptance": "Notification of acceptance and Oral/Poster decision",
+      "r1Draft": "R1 draft paper",
+      "revisionR2": "Revision R2 draft paper",
+      "finalPaper": "Final paper submitted",
+      "finalProgram": "Final program",
+      "earlyBird": "Early-bird registration (up to 400 registrations)",
+      "registration": "Registration"
+    }
+  },
+  "aboutNetwork": {
+    "title": "WGI Network",
+    "description": "Promoting green infrastructure worldwide",
+    "heading": "World Green Infrastructure Network",
+    "logoAlt": "WGI Network",
+    "img1Alt": "Green infrastructure development",
+    "img2Alt": "Network collaboration",
+    "p1": "The World Green Infrastructure Network (WGIN) is an international nonprofit organization dedicated to promoting the planning, development, and implementation of green infrastructure worldwide. Its mission is to advance the use of nature-based solutions such as green roofs, green walls, urban forests, and sustainable water management systems to improve the environmental, social, and economic health of cities. By encouraging the adoption of these practices, WGIN aims to help urban areas become more resilient to climate change and more livable for their inhabitants.",
+    "p2": "WGIN operates as a global network that connects national green roof and green infrastructure associations, researchers, professionals, and policymakers. Through conferences, publications, and collaborative projects, the organization facilitates the exchange of knowledge, research, and best practices. This collaboration helps different countries and cities learn from each other's experiences and accelerates the development of sustainable urban environments.",
+    "p3": "In addition to fostering international cooperation, WGIN advocates for supportive policies and standards that encourage the widespread adoption of green infrastructure. It works to raise awareness about the multiple benefits of integrating nature into urban design from reducing heat islands and managing stormwater to improving air quality and biodiversity. By engaging governments, industry, and communities, the World Green Infrastructure Network plays a key role in advancing greener and more sustainable cities around the world.",
+    "visitWebsite": "Visit WGIN Website",
+    "mission": "Mission",
+    "missionText": "Aligned with the WGIN, our mission is to advocate and promote the integration of green infrastructure in urban planning globally.",
+    "values": "Values",
+    "value1Title": "Sustainability",
+    "value1Description": "A commitment to integrating green infrastructure to enhance environmental resilience and combat climate change.",
+    "value2Title": "Inclusivity",
+    "value2Description": "Ensuring accessibility and participation, fostering shared knowledge.",
+    "value3Title": "Innovation",
+    "value3Description": "Promoting smart and forward-thinking solutions to address urban and environmental challenges.",
+    "value4Title": "Collaboration",
+    "value4Description": "Encouraging cooperation between governments, institutions, universities and communities for a collective impact."
+  },
+  "aboutUniversity": {
+    "title": "University of Lleida",
+    "description": "",
+    "udlHeading": "University of Lleida (UdL)",
+    "udlP1": "The University of Lleida (Universitat de Lleida, UdL) is a public university located in the city of Lleida, in Catalonia, Spain. It is one of the oldest universities in the region, with historical roots dating back to the 14th century, although it was reestablished in its modern form in 1991. The university is known for its strong commitment to research, academic excellence, and regional development, serving as an important educational and cultural institution in western Catalonia.",
+    "udlP2": "The UdL offers a wide range of undergraduate, master's, and doctoral programs across various fields, including engineering, agriculture, health sciences, law, education, and the humanities. It is especially recognized for its expertise in agricultural and forestry sciences, thanks to the fertile lands of the Lleida region and the university's long-standing connection to environmental and agronomic research. Its campuses are equipped with modern facilities that support both teaching and research activities.",
+    "udlP3": "In addition to academic training, the University of Lleida places significant emphasis on internationalization and innovation. It actively participates in European and global exchange programs, fosters partnerships with research centers and industries, and promotes entrepreneurship among its students. By combining a rich historical heritage with a forward-looking academic approach, the UdL plays an essential role in advancing knowledge, technology, and social progress in Catalonia and beyond.",
+    "visitUdl": "Visit UdL Website",
+    "it4sHeading": "IT4S Research Group",
+    "it4sP1": "The IT4S research group at University of Lleida is a consolidated research team dedicated to exploring and promoting innovative technologies aimed at sustainability and sustainable development in the fields of architecture and engineering. They work across a variety of areas from sustainable, energy-efficient building design, urban planning and green infrastructure (like green roofs, green facades, vertical greening systems) to sustainable agriculture, landscape and industry always with a multidisciplinary approach combining engineering, architecture, environmental science and more.",
+    "it4sP2": "Through research, consultancy, knowledge dissemination and collaborations with public and private partners, IT4S seeks to contribute to environmentally friendly, resource-efficient and socially responsible solutions for buildings, cities and industrial processes.",
+    "visitIt4s": "Visit IT4S Website"
+  },
+  "aboutLocations": {
+    "title": "Locations",
+    "description": "Barcelona and Lleida: Innovation and heritage",
+    "barcelonaTitle": "Barcelona",
+    "barcelonaP1": "Barcelona, the vibrant capital of Catalonia, stands as a shining example of a metropolitan city that harmoniously blends history, culture, and innovation while prioritizing sustainability and citizen well-being. As one of Europe's most dynamic cities, Barcelona has successfully transformed itself into an international hub while maintaining its unique identity and commitment to urban excellence.",
+    "barcelonaP2": "Barcelona is a pioneer in sustainable urban planning, with initiatives such as the Superblocks project, which reclaims public space for pedestrians and green areas, reducing pollution and traffic congestion. The city also invests in renewable energy, smart mobility, and efficient waste management systems, aligning with global climate goals. Additionally, Barcelona promotes social inclusivity through accessible public services and digital innovation aimed at enhancing citizens' quality of life.",
+    "heritageTitle": "Historical Heritage",
+    "heritageP1": "Barcelona's history dates back over 2,000 years, shaping its identity as a melting pot of cultures. From its Roman foundations to the grandeur of the Gothic Quarter and the visionary modernism of Antoni Gaudi, the city embodies a unique architectural heritage.",
+    "heritageP2": "Gaudi's architecture is a clear example of design based on nature, not only in the shapes and colours, but also in the fact of integrating natural processes, such as the management of rainwater, whether through its capture or control.",
+    "barcelonaImg1Alt": "Barcelona Superblocks - Sustainable urban planning",
+    "barcelonaImg1Caption": "Barcelona Superblocks - Sustainable urban planning",
+    "barcelonaImg2Alt": "Gaudi's architecture inspired by nature",
+    "barcelonaImg2Caption": "Gaudi's architecture inspired by nature",
+    "lleidaTitle": "Lleida",
+    "lleidaP1": "Lleida, located in the western part of Catalonia, Spain, is a city with a rich historical and cultural heritage. Nestled along the Segre River, it features a mix of medieval architecture, modern urban development, and vibrant local traditions. Known for its university, agricultural surroundings, and strategic location between the Pyrenees and the Ebro Valley, Lleida combines the charm of a historic city with the dynamism of a growing urban center.",
+    "lleidaP2": "The surrounding landscape of Lleida, marked by fertile plains, rivers, and Mediterranean vegetation, offers a natural laboratory for sustainable practices. The region's agricultural heritage and urban-rural integration provide opportunities to implement green infrastructure, promote biodiversity, and develop sustainable urban planning strategies. By connecting its urban environment with its natural surroundings, Lleida demonstrates how cities can balance growth, environmental stewardship, and quality of life.",
+    "lleidaImgAlt": "Lleida and the Segre River - Natural laboratory for sustainability",
+    "lleidaImgCaption": "Lleida and the Segre River - Natural laboratory for sustainability"
+  },
+  "aboutOrganisationCommittee": {
+    "title": "Organisation Committee",
+    "description": "WGIC26 Structure",
+    "honourCommittee": "Honour Committee",
+    "organizingCommittee": "Organizing Committee",
+    "role": "Role",
+    "representative": "Representative",
+    "institution": "Institution/Company",
+    "toBeConfirmed": "To be confirmed",
+    "roles": {
+      "wginPresident": "WGIN President",
+      "udlRector": "University of Lleida Rector",
+      "catalanGov": "Representative Catalan Government",
+      "barcelonaMunicipality": "Representative Barcelona Municipality",
+      "provincialCouncilBarcelona": "Representative Provincial Council (Barcelona)",
+      "lleidaMunicipality": "Representative Lleida Municipality",
+      "provincialCouncilLleida": "Representative Provincial Council (Lleida)",
+      "provincialCouncil": "Representative Provincial Council",
+      "chairCongress": "Chair of the congress"
+    }
+  },
+  "aboutCongressCommittee": {
+    "title": "Congress Committee",
+    "description": "Scientific and professional committees supporting WGIC26",
+    "introP1": "The Congress Committee of the WGIC26 congress is composed of leading experts, researchers, and practitioners from around the world, representing diverse fields related to urban green infrastructure. Their extensive experience and academic excellence ensure the highest standards for reviewing submissions, guiding thematic sessions, and shaping the overall scientific program.",
+    "introP2": "This committee plays a crucial role in fostering interdisciplinary collaboration and promoting innovative research. By bringing together global perspectives and expertise, the Scientific Committee ensures that the congress remains at the forefront of knowledge, addressing the most pressing challenges in sustainable urban development and inspiring actionable solutions for cities worldwide.",
+    "scientificCommittee": "Scientific Committee",
+    "professionalCommittee": "Professional Committee",
+    "name": "Name",
+    "institution": "Institution",
+    "institutionRole": "Institution / Role",
+    "country": "Country"
+  },
+  "planYourStayPage": {
+    "title": "Plan your stay",
+    "description": "Barcelona and Catalonia are waiting for you.",
+    "heading": "Plan Your Stay in Barcelona",
+    "intro": "Discover the magic of Barcelona and what makes it the perfect destination for your visit. Watch our guide below.",
+    "videoTitle": "Plan your stay Barcelona",
+    "barcelonaImgAlt": "Sagrada Familia - Gaudi",
+    "barcelonaTitle": "Tourism of Barcelona",
+    "barcelonaDescription": "Explore the architectural wonders and vibrant cultural life of Barcelona.",
+    "visitWebsite": "Visit website",
+    "cataloniaImgAlt": "Catalonia view",
+    "cataloniaTitle": "Agencia Catalana de Turismo",
+    "cataloniaDescription": "Discover the Grand Tour de Catalunya and the best gastronomy in the world.",
+    "grandTour": "Grand Tour de Catalunya",
+    "gastronomy": "Gastronomy in Catalonia"
+  },
+  "registrationPage": {
+    "title": "Registration",
+    "description": "Join us for the World Green Infrastructure Congress 2026. Register now to secure your spot.",
+    "platformTitle": "Registration platform",
+    "platformDescription": "Registration is handled through our external partner platform, Helice. The registration fee covers costs during the conference period, including lunch and coffee breaks. No travel and/or accommodation is covered.",
+    "platformButton": "Register on Helice platform",
+    "keyDatesTitle": "Key dates",
+    "keyDatesHeaders": {
+      "milestone": "Milestone",
+      "date": "Date"
+    },
+    "keyDates": {
+      "abstracts": "Abstracts submission period",
+      "acceptance": "Notification of acceptance (Oral/Poster decision)",
+      "firstDraft": "First draft paper/poster",
+      "revision": "Revision paper/poster due",
+      "finalPaper": "Final paper/poster submitted",
+      "finalProgram": "Final program",
+      "earlyBird": "Early-bird registration deadline",
+      "registrationOpen": "Registration open",
+      "partners": "Partners and exhibitors",
+      "sponsors": "Sponsors"
+    },
+    "dateValues": {
+      "abstracts": "15 December 2025 - 30 April 2026",
+      "acceptance": "< 15 May 2026",
+      "firstDraft": "< 12 June 2026",
+      "revision": "< 30 June 2026",
+      "finalPaper": "< 31 July 2026",
+      "finalProgram": "31 July 2026",
+      "earlyBird": "< 30 April 2026",
+      "registrationOpen": "15 December 2025 - 30 September 2026",
+      "partners": "15 December 2025 - 30 April 2026",
+      "sponsors": "15 December 2025 - 30 September 2026"
+    },
+    "feesTitle": "Registration fees",
+    "feesHeaders": {
+      "category": "Category",
+      "early": "Early-bird < March",
+      "standard": "Standard (+15%) < September",
+      "onsite": "On site (+30%)"
+    },
+    "fees": {
+      "registrationTwoDays": "Registration 2 days",
+      "registrationOneDay": "Register one day",
+      "oralPresentations": "Oral presentations",
+      "poster": "Poster (A1)",
+      "students": "Students",
+      "companions": "Companions",
+      "galaDinner": "Gala dinner"
+    },
+    "notes": {
+      "author": "A registered author is allowed to present one paper (including oral presentation). For the second paper, a fee of 200 EUR is required.",
+      "student": "Full time student (not including post doctor) must provide proof of full-time status (copy of valid student ID card or letter from affiliated institution head or program director).",
+      "certificate": "All participants will receive a certificate of attendance.",
+      "proceedings": "To include the paper in the conference program and the conference proceedings, at least one of the authors has to register before the registration deadline.",
+      "invoice": "If you need an invoice, please send an email to"
+    },
+    "cancellationTitle": "Cancellation and refund",
+    "cancellationBody": "After the bank deposit, no reimbursement is possible."
+  },
+  "speakersPage": {
+    "title": "Speakers",
+    "description": "Meet the leading voices in green infrastructure. WGIC 2026 will feature top international experts, innovators, and visionaries shaping the future of sustainable cities.",
+    "calloutTitle": "Submit your paper by 30 April 2026!",
+    "calloutP1": "Thank you for your interest in participating in World Green Infrastructure Congress 2026 Barcelona - Lleida (WGIC 2026). To submit a paper, enter and fill in the data in the paper submission application at the link below.",
+    "calloutP2": "The 12th World Green Infrastructure Congress will be held in Barcelona at the International Barcelona Convention Centre, from 27 to 30 October 2026. WGIC 2026 welcomes original research, case studies and innovative applications in short paper format (maximum 5 pages), in MS Word format.",
+    "submissionButton": "Go to submission form",
+    "templateButton": "Download paper template",
+    "bodyP1": "WGIC26 warmly welcomes submissions of original research, case studies, and innovative applications, in short paper format (maximum 5 pages), in MS Word format. The limitation to 5 pages helps reduce similarity for papers later recommended for publication in special issues of journals.",
+    "bodyP2": "All submitted papers undergo a rigorous peer-review process. The scientific committee decides acceptance and whether the presentation is oral or poster. Accepted papers will be published in the conference proceedings of WGIC2026.",
+    "stepsTitle": "Steps for paper submission",
+    "steps": {
+      "s1": "Download the paper template.",
+      "s2": "Read the instructions carefully.",
+      "s3": "Select a main topic where your work fits.",
+      "s4": "Prepare the paper (max 5 pages).",
+      "s5": "Submit your paper in .doc format before 30 April 2026.",
+      "s6": "You will receive a decision and R1 revision before 15 May 2026.",
+      "s7": "Return revised paper (R1) before 12 June 2026 and R2 before 30 June 2026.",
+      "s8": "Return the final paper before 30 July 2026."
+    },
+    "typologiesTitle": "Typologies of presentation",
+    "tableHeaders": {
+      "typology": "Typology",
+      "length": "Session length",
+      "details": "Details"
+    },
+    "rows": {
+      "oral": {
+        "type": "Oral presentation",
+        "length": "15 min (including questions)",
+        "details": "Use the MS PowerPoint presentation template."
+      },
+      "poster": {
+        "type": "Poster presentation",
+        "length": "Posters will be mounted in the open space available. The program specifies time slots during lunch breaks so that authors can explain their posters to attendees.",
+        "details": "A0-sized paper (841 x 1189 mm) portrait. Use the single-slide poster template."
+      }
+    },
+    "regionAriaLabel": "Paper submission",
+    "finalCardTitle": "Submit your paper",
+    "finalCardDescription": "Use the online paper submission application to upload your manuscript and details."
+  },
+  "legalPages": {
+    "privacyTitle": "Privacy policy",
+    "termsTitle": "Terms and conditions",
+    "comingSoon": "Coming soon",
+    "contactEmail": "hola@wgic26.barcelona"
+  },
+  "travelPage": {
+    "title": "Travel",
+    "description": "Travel information will be available soon.",
+    "comingSoon": "Coming soon",
+    "contactEmail": "hola@wgic26.barcelona"
+  },
+  "programActivitiesPage": {
+    "title": "Activities",
+    "description": "Main congress activities and thematic interactions.",
+    "p1": "The WGIC26 activities are designed to combine scientific exchange, professional networking, and practical learning across the green infrastructure sector.",
+    "p2": "Detailed session activities, formats, and participation guidelines will be published as the final program is confirmed."
+  },
+  "programAgendaPage": {
+    "title": "Agenda",
+    "description": "Track key sessions and milestones across all congress days.",
+    "downloadPdf": "download pdf",
+    "p1": "The agenda will be updated progressively with keynote sessions, thematic tracks, and networking activities.",
+    "p2": "A downloadable PDF version will be provided once the final schedule is published."
+  },
+  "gaudiYearPage": {
+    "title": "Gaudi Year 2026",
+    "description": "2026 has been declared as the Gaudi Year to commemorate the centenary of the death of Antoni Gaudi, one of the most influential architects in the history of architecture.",
+    "img1Alt": "Gaudi project 1",
+    "img2Alt": "Gaudi project 2",
+    "p1": "2026 has been declared as the Gaudi Year to commemorate the centenary of the death of Antoni Gaudi, one of the most influential architects in the history of architecture. This commemoration has been formally recognized by the authorities of Catalonia and Spain as an event of exceptional public interest, with the aim of honoring Gaudi's technical, artistic, urbanistic, and heritage legacy.",
+    "p2": "Throughout 2026 and beyond, a vast coordinated program of events will bring together all major works, institutions, and actors connected to Gaudi's heritage, not only in Catalonia but also his buildings located elsewhere in Spain. These events include exhibitions, conferences, cultural performances, open-house days in his buildings, and an international congress dedicated to the academic and technical study of his work.",
+    "p3": "The Gaudi Year is conceived not only as a retrospective celebration but also as an opportunity to project Gaudi's influence into the future: re-evaluating his contribution to modern architecture, heritage conservation, and urban innovation; encouraging reflection on the relationship between architecture, nature, society, and sustainability; and fostering global dissemination of his values and ideas.",
+    "boxTitle": "Gaudi and green infrastructure",
+    "boxBody": "Gaudi's legacy, deeply rooted in the harmony between architecture and nature, offers a powerful inspiration for reimagining contemporary urban green infrastructure as a more organic, sustainable, and human-centered model for cities."
+  },
+  "keyNoteSpeakersPage": {
+    "title": "Key note speakers",
+    "description": "Meet the leading voices in green infrastructure. WGIC 2026 will feature top international experts, innovators, and visionaries shaping the future of green infrastructures and sustainable cities.",
+    "p1": "WGIC26 will feature up to 12 keynote speakers from around the world, representing the forefront of green infrastructure research, innovation, and implementation.",
+    "p2": "We are pleased to announce that the first speakers for WGIC 2026 are now confirmed.",
+    "speakers": {
+      "marcos": "Architect, academic, and Member of the European Parliament, working on urban policy, sustainability, and the built environment at the EU level.",
+      "salvador": "Founder and Director of the Urban and Territorial Ecology Foundation (FEUT), pioneer of urban ecology and creator of the superblock urban model.",
+      "vicente": "Architect and urbanist, co founder of Urbanitree and founder of the Institute for Advanced Architecture of Catalonia, internationally recognized for research-driven urban innovation.",
+      "alberto": "Founder and Director of ESARQ UIC Barcelona, architect and academic known for advancing experimental and biodigital architecture."
+    },
+    "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban discourse."
+  },
+  "technicalVisitsPage": {
+    "title": "Technical visits",
+    "description": "Discover the most exciting technical green infrastructure projects in Barcelona. Tours and registration details will be announced soon. The following projects are already confirmed."
+  },
+  "programPage": {
+    "title": "Program",
+    "description": "",
+    "img1Alt": "Barcelona congress program",
+    "img2Alt": "Technical visits and university facilities",
+    "p1": "The congress program will be structured over multiple days to maximize engagement and learning opportunities.",
+    "p2": "Days one and two will feature parallel sessions covering the full range of selected topics, allowing participants to select sessions most relevant to their interests and expertise.",
+    "p3": "The third day will be dedicated to technical visits, offering first-hand insights into exemplary green infrastructure projects in Barcelona.",
+    "p4": "An additional fourth day has been planned and will focus specifically on innovation and research processes within the green infrastructure sector, hosted by the University of Lleida.",
+    "headers": {
+      "time": "Time",
+      "activity": "Activity",
+      "location": "Location",
+      "chair": "Chair"
+    },
+    "detailsSoon": "Detailed information will be provided soon.",
+    "footerNote": "Detailed information about the innovation and research workshops that will be held in Lleida and how to sign up will be provided soon."
+  },
+  "topicsPage": {
+    "title": "Main topics",
+    "description": "",
+    "img1Alt": "Barcelona congress venue",
+    "img2Alt": "Barcelona green infrastructure",
+    "img3Alt": "Barcelona urban development",
+    "img4Alt": "Congress activities",
+    "p1": "The congress program has been carefully designed to offer a comprehensive and engaging experience for all participants, including keynote speeches, invited talks, plenary sessions, panel discussions, workshops, exhibitions, and oral/poster presentations.",
+    "p2": "Participants will engage with a broad spectrum of topics spanning policy, technologies, market standards, design, implementation, maintenance, and education.",
+    "p3": "A relevant part of the congress is dedicated to measuring impacts of green infrastructure on society and the environment, including resilience, health, biodiversity, and social cohesion.",
+    "p4": "Three central themes are emphasized during WGIC26: health and well-being, post-conflict or post-disaster recovery, and resilient and just cities in the Global South.",
+    "tableTitle": "WGIC26 Barcelona - Lleida. Main topics",
+    "topicCategory": "Topic / Category"
+  },
+  "workshopsPage": {
+    "title": "Workshops",
+    "description": "Interactive sessions on key themes of WGIC26",
+    "img1Alt": "Barcelona workshop venue",
+    "img2Alt": "University of Lleida facilities",
+    "p1": "WGIC26 will feature thematic workshops running in parallel with oral presentation sessions during days one and two.",
+    "thematicTitle": "Thematic workshops",
+    "day4Title": "Day 4: Innovation workshops at University of Lleida",
+    "day4Description": "An additional fourth day has been planned, focusing specifically on innovation and research processes within the green infrastructure sector.",
+    "tableHeaders": {
+      "time": "Time",
+      "activity": "Activity",
+      "details": "Details"
+    },
+    "schedule": {
+      "reception": "Reception",
+      "workshop1": "Workshop 1",
+      "break": "Break",
+      "breakDetails": "Visit to BIG1 - PCiTAL (Semi-intensive green roof)",
+      "workshop2": "Workshop 2",
+      "lunch": "Lunch",
+      "technicalVisits": "Technical visits",
+      "visit1": "BIG2 - Ronda Merce (Extensive green roof, drone visit)",
+      "visit2": "BIG9 - Coberta Cavallers (Biodiverse, zero water)",
+      "visit3": "Cultural visit: La Seu Vella"
+    },
+    "comingSoonTitle": "Detailed information coming soon",
+    "comingSoonBody": "Detailed information about the innovation and research workshops that will be held in Lleida and how to sign up will be provided soon.",
+    "cards": {
+      "globalSouth": {
+        "title": "Green infrastructure vs Global South",
+        "description": "Addressing the challenge of building resilient, healthy, and just cities in the Global South."
+      },
+      "health": {
+        "title": "Green infrastructure vs Health and well-being",
+        "description": "Exploring the connection between green infrastructure and public health through nature-based solutions."
+      },
+      "recovery": {
+        "title": "Green infrastructure vs Post-conflict recovery",
+        "description": "Examining the role of green infrastructure in recovering societies and places after post-conflict or post-disaster situations."
+      }
+    }
+  },
+  "wginAwardsPage": {
+    "title": "WGIN awards",
+    "description": "World Green Infrastructure Awards 2026",
+    "nominationsTitle": "Nominations are open!",
+    "nominationsSubtitle": "Submit your project before June 2026",
+    "submitNomination": "Submit nomination",
+    "p1": "The World Green Infrastructure Network (WGIN) is accepting nominations for the World Green Infrastructure Awards 2026.",
+    "p2": "The WGIN Awards are unique in the green infrastructure field with comprehensive categories and a strong commitment to excellence.",
+    "categoriesTitle": "Nine key categories",
+    "p3": "Nominations may be submitted until June 2026 through the official World Green Infrastructure Awards website. Winners will be announced during WGIC 2026 in Barcelona.",
+    "moreInfo": "For more information about the World Green Infrastructure Awards 2026 and to submit a nomination, please visit:",
+    "joinTitle": "Join the excellence",
+    "joinBody": "Be part of the most prestigious green infrastructure event of 2026.",
+    "learnMore": "Learn more",
+    "categories": {
+      "greenRoofs": {"title": "Green roofs", "description": "Celebrating exemplary vegetated roof projects."},
+      "greenWalls": {"title": "Green walls", "description": "Honoring outstanding green facades and other integrated greening solutions."},
+      "greenNeighborhood": {"title": "Green neighborhood", "description": "Recognizing urban landscape projects with multifunctional vegetative design."},
+      "policy": {"title": "Green infrastructure policy", "description": "Highlighting excellence in policies that accelerate urban green infrastructure adoption."},
+      "researchAcademic": {"title": "Green infrastructure research (Academic work)", "description": "Acknowledging excellence in green infrastructure-related research and academic projects."},
+      "researchStudent": {"title": "Green infrastructure research (Student posters)", "description": "Recognizing innovative student ideas and projects in green infrastructure."},
+      "livingSystems": {"title": "Green innovative living systems", "description": "Celebrating projects integrating living systems in or on building envelopes."},
+      "unintended": {"title": "Unintended greenery", "description": "Recognizing the value of unplanned natural vegetation and species development."},
+      "champion": {"title": "Green infrastructure champion", "description": "Honouring entities that have made a significant contribution to the green infrastructure industry."}
+    }
+  },
+  "venuePage": {
+    "title": "Venue",
+    "description": "",
+    "barcelonaLabel1": "Bar",
+    "barcelonaLabel2": "cel",
+    "barcelonaLabel3": "ona",
+    "barcelonaP1": "The vibrant capital of Catalonia stands as a shining example of a metropolitan city that harmoniously blends history, culture, and innovation while prioritizing sustainability and citizen well-being.",
+    "barcelonaP2": "Barcelona is a pioneer in sustainable urban planning, with initiatives such as Superblocks that reclaim public space for pedestrians and green areas, reducing pollution and traffic congestion.",
+    "barcelonaP3": "Barcelona's history dates back over 2,000 years. From Roman foundations to the Gothic Quarter and the modernism of Antoni Gaudi, the city embodies a unique architectural heritage.",
+    "ccibP1": "From 27 to 28 October 2026, WGIC 2026 activities will be held at the CCIB in Barcelona, in the Sant Marti district within the 22@ area of Poblenou.",
+    "ccibP2": "The CCIB includes two architecturally valuable buildings: the Convention Centre and the CCIB Forum Auditorium, connected by an underground walkway. Together they offer approximately 100,000 m2 and capacity for up to 15,000 attendees.",
+    "ccibP3": "The CCIB is located 500 meters from the beach, 6 km from the historic center, and 22 km from the airport, with excellent public transport and road connectivity.",
+    "mapTitle": "Map of Barcelona"
+  },
+  "newslettersPage": {
+    "title": "Newsletters",
+    "description": "Stay updated with our latest newsletters.",
+    "readOnline": "Read Online",
+    "downloadPdf": "Download PDF",
+    "languages": {
+      "en": "English",
+      "es": "Spanish",
+      "it": "Italian",
+      "el": "Greek"
+    },
+    "items": {
+      "march2026": {
+        "title": "March 2026 Newsletter",
+        "date": "March 2026"
+      }
+    }
+  }
+}

@@ -10,37 +10,39 @@ import {
     TableRow,
 } from "@/components/ui/table";
 import programData from "@/data/program.json";
+import { getTranslations } from "next-intl/server";
 
-const Program = () => {
+const Program = async () => {
+    const t = await getTranslations("programPage");
     const days = programData;
 
     return (
 
         <div>
             <PageHeader
-                title="Program"
-                description=""
+                title={t("title")}
+                description={t("description")}
                 section="program"
             />
             <section className="container mx-auto py-12 px-4">
                 <div className="max-w-7xl mx-auto">
                     <div className="mb-12 space-y-8 text-white/80">
                         
-                        <TextImage imageSrc="/img/Tibidabo 1.jpg" imageAlt="Barcelona congress program" imagePosition="right">
+                        <TextImage imageSrc="/img/Tibidabo 1.jpg" imageAlt={t("img1Alt")} imagePosition="right">
                             <p className="text-justify">
-                                The congress program will be structured over multiple days to maximize engagement and learning opportunities.
+                                {t("p1")}
                             </p>
                             <p className="text-justify">
-                                Days one and two will feature parallel sessions covering the full range of selected topics, allowing participants to select sessions most relevant to their interests and expertise. The specific workshops will also take place in parallel with the oral presentation sessions.
+                                {t("p2")}
                             </p>
                         </TextImage>
                         
-                        <TextImage imageSrc="/img/Exterior_15.jpg" imageAlt="Technical visits and university facilities" imagePosition="left">
+                        <TextImage imageSrc="/img/Exterior_15.jpg" imageAlt={t("img2Alt")} imagePosition="left">
                             <p className="text-justify">
-                                The third day will be dedicated to technical visits, offering first-hand insights into exemplary green infrastructure projects in Barcelona, illustrating innovative approaches and practical applications in a real-world urban context. Detailed information on the visit options and how to sign up will be available soon.
+                                {t("p3")}
                             </p>
                             <p className="text-justify">
-                                An additional fourth day has been planned and will focus specifically on innovation and research processes within the green infrastructure sector. This day will be hosted by the University of Lleida and will provide an immersive experience highlighting cutting-edge research, emerging methodologies, and the latest advancements in the field.
+                                {t("p4")}
                             </p>
                         </TextImage>
 
@@ -66,7 +68,7 @@ const Program = () => {
                                     <Table className="w-full border-collapse border border-white/10">
                                         <TableHeader className="bg-monstera/30 border-b border-white/20">
                                             <TableRow className="border-white/10 hover:bg-transparent">
-                                                <TableHead className="w-[120px] text-white font-bold">Time</TableHead>
+                                                <TableHead className="w-[120px] text-white font-bold">{t("headers.time")}</TableHead>
                                                 {day.rooms ? (
                                                     day.rooms.map((room: string, i: number) => (
                                                         <TableHead key={i} className="text-white font-bold min-w-[200px] border-l border-white/10">{room}</TableHead>
@@ -77,8 +79,8 @@ const Program = () => {
                                                     ))
                                                 ) : (
                                                     <>
-                                                        <TableHead className="text-white font-bold border-l border-white/10">Activity</TableHead>
-                                                        <TableHead className="text-white font-bold border-l border-white/10">Location</TableHead>
+                                                        <TableHead className="text-white font-bold border-l border-white/10">{t("headers.activity")}</TableHead>
+                                                        <TableHead className="text-white font-bold border-l border-white/10">{t("headers.location")}</TableHead>
                                                     </>
                                                 )}
                                             </TableRow>
@@ -99,7 +101,7 @@ const Program = () => {
                                                             event.sessions?.map((session: { topic: string; chair: string }, i: number) => (
                                                                 <TableCell key={i} className="text-base align-top border-l border-white/10 p-4">
                                                                     <div className="font-semibold text-white mb-1">{session.topic}</div>
-                                                                    <div className="text-sm text-white/60">Chair: {session.chair}</div>
+                                                                    <div className="text-sm text-white/60">{t("headers.chair")}: {session.chair}</div>
                                                                 </TableCell>
                                                             ))
                                                         ) : day.headers ? (
@@ -131,7 +133,7 @@ const Program = () => {
                                             ) : (
                                                 <TableRow>
                                                     <TableCell colSpan={day.rooms ? day.rooms.length + 1 : (day.headers ? day.headers.length : 3)} className="text-center py-8 text-white/50 italic">
-                                                        Detailed information will be provided soon.
+                                                        {t("detailsSoon")}
                                                     </TableCell>
                                                 </TableRow>
                                             )}
@@ -142,7 +144,7 @@ const Program = () => {
                         ))}
                     </Tabs>
                     <div className="mt-8 text-sm text-white/60 italic">
-                        Detailed information about the innovation and research workshops that will be held in Lleida and how to sign up will be provided soon.
+                        {t("footerNote")}
                     </div>
                 </div>
             </section>

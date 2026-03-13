@@ -3,6 +3,7 @@
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 interface NewsletterLanguage {
   language: string;
@@ -19,32 +20,34 @@ interface Newsletter {
 }
 
 const Newsletters = () => {
+  const t = useTranslations("newslettersPage");
+
   const newsletters: Newsletter[] = [
     {
       id: "march2026",
-      title: "March 2026 Newsletter",
-      date: "March 2026",
+      title: t("items.march2026.title"),
+      date: t("items.march2026.date"),
       languages: [
         {
-          language: "English",
+          language: t("languages.en"),
           code: "en",
           slug: "march2026-en",
           pdfUrl: "/newsletters/englishMarch.pdf",
         },
         {
-          language: "Español",
+          language: t("languages.es"),
           code: "es",
           slug: "march2026-es",
           pdfUrl: "/newsletters/spanishMarch.pdf",
         },
         {
-          language: "Italiano",
+          language: t("languages.it"),
           code: "it",
           slug: "march2026-it",
           pdfUrl: "/newsletters/italianMarch.pdf",
         },
         {
-          language: "Ελληνικά",
+          language: t("languages.el"),
           code: "el",
           slug: "march2026-el",
           pdfUrl: "/newsletters/greekMarch.pdf",
@@ -92,8 +95,8 @@ const Newsletters = () => {
   return (
     <div>
       <PageHeader
-        title="Newsletters"
-        description="Stay updated with our latest newsletters."
+        title={t("title")}
+        description={t("description")}
         section="newsletters"
       />
 
@@ -144,7 +147,7 @@ const Newsletters = () => {
                         href={`/newsletters/${selectedLang.slug}`}
                         className="flex-1 bg-cactus hover:bg-cactus/80 text-white text-center py-2 px-4 rounded transition-colors font-medium"
                       >
-                        Read Online
+                        {t("readOnline")}
                       </Link>
                     )}
 
@@ -155,7 +158,7 @@ const Newsletters = () => {
                         className={`bg-white/10 hover:bg-white/20 text-white text-center py-2 px-4 rounded transition-colors flex items-center justify-center gap-2 font-medium ${selectedLang.code !== "el" ? "flex-1" : "w-full"}`}
                       >
                         <DownloadIcon />
-                        Download PDF
+                        {t("downloadPdf")}
                       </a>
                     )}
                   </div>

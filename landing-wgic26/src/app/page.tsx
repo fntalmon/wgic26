@@ -5,53 +5,54 @@ import { MapPin, CheckCircle, AlertCircle } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const t = useTranslations("home");
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState('');
+  const [messageType, setMessageType] = useState<"success" | "error" | null>(null);
 
   useEffect(() => {
-    if (
-      typeof window !== "undefined" &&
-      window.location.hash === "#newsletter"
-    ) {
-      const el = document.getElementById("newsletter");
+    if (typeof window !== 'undefined' && window.location.hash === '#newsletter') {
+      const el = document.getElementById('newsletter');
       if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
+        el.scrollIntoView({ behavior: 'smooth' });
         // brief visual cue when arriving at the newsletter section
-        el.classList.add("animate-pulse");
-        setTimeout(() => el.classList.remove("animate-pulse"), 900);
+        el.classList.add('animate-pulse');
+        setTimeout(() => el.classList.remove('animate-pulse'), 900);
       }
     }
   }, []);
 
-  const handleNewsletterSubmit = async (
-    e: React.FormEvent<HTMLFormElement>,
-  ) => {
+  const handleNewsletterSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setMessage("");
+    setMessage('');
+    setMessageType(null);
 
     // Basic client-side validation
     if (!email || !phone) {
-      setMessage("Please provide both email and phone number.");
+      setMessage(t("newsletterValidation"));
+      setMessageType("error");
       setIsSubmitting(false);
       return;
     }
-    const phoneDigits = phone.replace(/\D/g, "");
+    const phoneDigits = phone.replace(/\D/g, '');
     if (phoneDigits.length < 6 || phoneDigits.length > 15) {
-      setMessage("Please enter a valid phone number.");
+      setMessage(t("newsletterPhoneValidation"));
+      setMessageType("error");
       setIsSubmitting(false);
       return;
     }
 
     try {
-      const response = await fetch("/api/newsletter", {
-        method: "POST",
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ email, phone }),
       });
@@ -59,46 +60,43 @@ export default function Home() {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage("Thank you for subscribing to our newsletter!");
-        setEmail("");
-        setPhone("");
+        setMessage(t("newsletterSuccess"));
+        setMessageType("success");
+        setEmail('');
+        setPhone('');
       } else {
-        setMessage(data.error || "An error occurred, please try again.");
+        setMessage(data.error || t("newsletterError"));
+        setMessageType("error");
       }
     } catch {
-      setMessage("An error occurred, please try again.");
+      setMessage(t("newsletterError"));
+      setMessageType("error");
     } finally {
       setIsSubmitting(false);
     }
-  };
+  }; 
 
   return (
     <div>
       <section className="lg:pt-24">
         <div className="uppercase text-3xl xs:text-4xl pr-8 sm:text-5xl w-full md:text-6xl lg:text-5xl lg:w-3/5 xl:text-6xl leading-tight tracking-tight">
-          World <strong>Green</strong>
-          <br />
-          Infrastructure
-          <br />
-          Congress 2026
-          <br />
-          <strong>Barcelona-Lleida</strong>
+          {t("heroTitle")}
         </div>
         <div className="flex flex-col h-auto content-between gap-8 w-full lg:w-2/5">
           <div className="w-full pt-7 border-t-1 border-white/50">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-              <h6 className="text-lg sm:text-xl">27–29 Oct 2026</h6>
+              <h6 className="text-lg sm:text-xl">{t("date1")}</h6>
               <p className="text-sm sm:text-lg text-white/80 sm:text-right">
-                CCIB - Parc del Forum, Barcelona (Spain)
+                {t("date1Location")}
               </p>
             </div>
           </div>
 
           <div className="w-full pt-7 border-t-1 border-white/50">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-              <h6 className="text-lg sm:text-xl">30 Oct 2026</h6>
+              <h6 className="text-lg sm:text-xl">{t("date2")}</h6>
               <p className="text-sm sm:text-lg text-white/80 sm:text-right">
-                Universitat de Lleida - Lleida (Spain)
+                {t("date2Location")}
               </p>
             </div>
           </div>
@@ -114,91 +112,19 @@ export default function Home() {
           <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 items-start">
             <div className="flex-1 prose prose-invert max-w-none text-lg sm:text-xl leading-relaxed md:max-h-[420px] overflow-y-auto pr-4 text-justify">
               <h2 className="uppercase text-3xl md:text-5xl lg:text-6xl mb-3">
-                WGIC26 Barcelona-Lleida
+                {t("bannerTitle")}
               </h2>
-              <p>
-                Welcome to the WGIC26 – 12th World Green Infrastructure
-                Congress, which will be held from October 27th to 30th, 2026, at
-                the International Convention Centre of Barcelona (CCIB),
-                Catalonia, Spain. WGIC2026 aims to provide a dynamic and
-                interdisciplinary platform for addressing the challenges of the
-                urban green infrastructure sector contributing to climate change
-                mitigation and adaptation on the way to a safer and healthier
-                future.
-              </p>
-
-              <p>
-                As global society strives for resilient, healthy and fair
-                cities, WGIC26 brings together researchers, engineers,
-                architects and landscape architects, policymakers, industry
-                leaders, and innovators from across the world to exchange
-                cutting-edge research, practical solutions, and forward-thinking
-                ideas. The conference fosters collaboration across disciplines
-                and sectors, emphasizing the role of green infrastructure and
-                nature-based solutions in driving transformative change.
-              </p>
-
-              <p>
-                The program will feature keynote speeches, invited talks,
-                plenary sessions, panel discussions, thematic workshops,
-                technical exhibitions, and oral/poster presentations.
-                Participants will engage with a broad spectrum of topics ranging
-                from Strategies, Policies and Funding programs, Technologies,
-                Market GI/NBS sector and Standards, to Design and Projects,
-                Execution, Maintenance and Quality, but also Education and
-                Training.
-              </p>
-
-              <p>
-                An important part of the congress will be dedicated to the
-                impacts of green infrastructure, i.e. the benefits for society,
-                with the following sections: Climate resilience; Water
-                management; Natural and Climate Hazards; Green Space Management;
-                Biodiversity; Air Quality; Place Regeneration; Knowledge and
-                Social Capacity Building for Sustainable Urban Transformation;
-                Participatory Planning and Governance; Social Justice and Social
-                Cohesion; Health and Well-being; New Economic Opportunities and
-                Green Jobs.
-              </p>
-
-              <p>
-                Three themes will be highlighted during WGIC26: improving
-                people&apos;s health and well-being; recovering society and
-                places after post-conflict or post-disaster situations; and
-                building resilient, healthy and just cities in the Global South.
-              </p>
-
-              <p>
-                The program will be structured in two days of parallel sessions
-                and a third day of technical visits to examples of green
-                infrastructure in Barcelona. In addition, an additional fourth
-                day has been planned dedicated to innovation and research
-                processes in the green infrastructure sector, which will be
-                hosted by the University of Lleida.
-              </p>
-
-              <p>
-                WGIC26 warmly welcomes submissions of original research, case
-                studies, and innovative applications that align with our mission
-                to accelerate the integration of green infrastructure in urban
-                planning, globally. Companies will play a very important role in
-                the congress: the exhibition space will provide a unique
-                exchange place to consolidate future projects, showcase
-                innovative solutions and foster collaborations.
-              </p>
-
-              <p>
-                Located on the coast and with a Mediterranean climate, the city
-                of Barcelona breathes life throughout the year—discover the
-                Gothic Quarter, the legacy of Antoni Gaudí and an outstanding
-                gastronomic scene. Join us in Barcelona and Lleida to co-design
-                urban green infrastructure solutions that allow future
-                generations to enjoy more sustainable, resilient and healthy
-                cities.
-              </p>
+              <p>{t("introP1")}</p>
+              <p>{t("introP2")}</p>
+              <p>{t("introP3")}</p>
+              <p>{t("introP4")}</p>
+              <p>{t("introP5")}</p>
+              <p>{t("introP6")}</p>
+              <p>{t("introP7")}</p>
+              <p>{t("introP8")}</p>
 
               <p className="mt-6">
-                We look forward to meeting you at CCIB in October 2026!
+                {t("introClosing")}
               </p>
 
               <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -208,13 +134,13 @@ export default function Home() {
                       Professor Gabriel Pérez
                     </div>
                     <div className="text-black/70 text-sm">
-                      University of Lleida — Chair of WGIC26
+                      {t("chairRole")}
                     </div>
                   </div>
                   <div>
                     <div className="font-medium text-black">Steven Peck</div>
                     <div className="text-black/70 text-sm">
-                      President of WGIN
+                      {t("presidentRole")}
                     </div>
                   </div>
                 </div>
@@ -232,7 +158,7 @@ export default function Home() {
       </section>
       <section id="locations" className="flex flex-col gap-6">
         <div className="text-xs uppercase w-full border-b border-white/50 py-2 tracking-wider">
-          Locations
+          {t("locations")}
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8">
@@ -242,9 +168,9 @@ export default function Home() {
           >
             <div className="bg-[url(/img/ccib.jpg)] bg-no-repeat bg-cover bg-center w-full h-[320px]"></div>
             <div className="flex flex-col gap-2 px-10 pt-10">
-              <div className="text-xs text-white/70 mb-2">Main activities:</div>
-              <div>Congress</div>
-              <div>Visits</div>
+              <div className="text-xs text-white/70 mb-2">{t("mainActivities")}</div>
+              <div>{t("congress")}</div>
+              <div>{t("visits")}</div>
               <div className="flex gap-2 items-center mt-8">
                 <MapPin />
                 <h6>CCIB - Parc del Forum, Barcelona (Spain)</h6>
@@ -265,9 +191,9 @@ export default function Home() {
           >
             <div className="bg-[url(/img/univ_lleida.jpg)] bg-no-repeat bg-cover bg-center w-full h-[320px]"></div>
             <div className="flex flex-col gap-2 px-10 pt-10">
-              <div className="text-xs text-white/70 mb-2">Main activities:</div>
-              <div>Workshops</div>
-              <div>Visits</div>
+              <div className="text-xs text-white/70 mb-2">{t("mainActivities")}</div>
+              <div>{t("workshops")}</div>
+              <div>{t("visits")}</div>
               <div className="flex gap-2 items-center mt-8">
                 <MapPin />
                 <h6>Universitat de Lleida - Lleida (Spain)</h6>
@@ -284,9 +210,11 @@ export default function Home() {
         </div>
       </section>
 
+
+
       <section id="sponsors" className="flex flex-col gap-6 mt-16 pb-24">
         <div className="text-xs uppercase w-full border-b border-white/50 py-2 tracking-wider">
-          Sponsors & Partners
+          {t("sponsorsPartners")}
         </div>
 
         <div className="bg-white text-black py-16 px-6 rounded-md border border-gray-200">
@@ -294,7 +222,7 @@ export default function Home() {
             {/* ORGANISED */}
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Organized by
+                {t("organizedBy")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
                 <a
@@ -380,67 +308,13 @@ export default function Home() {
                     className="h-30 w-auto object-contain"
                   />
                 </a>
-                <a
-                  href="https://www.hunterirrigation.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/Hunter.svg"
-                    alt="Semper Green"
-                    width={200}
-                    height={150}
-                    className="h-14 w-auto object-contain"
-                  />
-                </a>
-                <a
-                  href="https://zinco-cubiertas-ecologicas.es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/zinco.png"
-                    alt="Semper Green"
-                    width={200}
-                    height={150}
-                    className="h-16 w-auto object-contain"
-                  />
-                </a>
               </div>
             </div>
 
-            {/* EVENT PARTNERS 
+            {/* EVENT PARTNERS */}
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 Event Partners
-              </h3>
-            </div>
-            */}
-
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Garden Big Exhibitors
-              </h3>
-              <div className="flex justify-center items-center min-h-[100px] text-gray-500">
-                <a
-                  href="https://www.jardinmovil.com/es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/jardinMovil.png"
-                    alt="Semper Green"
-                    width={200}
-                    height={150}
-                    className="h-22 w-auto object-contain"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Garden Medium Exhibitors
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
                 <a
@@ -456,21 +330,30 @@ export default function Home() {
                     className="h-36 w-auto object-contain"
                   />
                 </a>
-                <a
-                  href="https://www.verdtical.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/verdtical.webp"
-                    alt="Eixverd"
-                    width={330}
-                    height={230}
-                    className="h-10 w-auto object-contain"
-                  />
-                </a>
               </div>
             </div>
+
+            {/* GARDEN BIG EXHIBITORS - hidden until logos are added
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                Garden Big Exhibitors
+              </h3>
+              <div className="flex justify-center items-center min-h-[100px] text-gray-500">
+                <p className="italic">Coming Soon...</p>
+              </div>
+            </div>
+            */}
+
+            {/* GARDEN MEDIUM EXHIBITORS - hidden until logos are added
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                Garden Medium Exhibitors
+              </h3>
+              <div className="flex justify-center items-center min-h-[100px] text-gray-500">
+                <p className="italic">Coming Soon...</p>
+              </div>
+            </div>
+            */}
 
             {/* FLOWER EXHIBITORS - hidden until logos are added
             <div className="w-full">
@@ -524,28 +407,31 @@ export default function Home() {
                     className="h-14 w-auto object-contain"
                   />
                 </a>
+                
 
-                <Image
-                  src="/img/logos/pronaturlogo.jpg"
-                  alt="Logo pronatur"
-                  width={320}
-                  height={240}
-                  className="h-24 w-auto object-contain"
-                />
+                  <Image
+                    src="/img/logos/pronaturlogo.jpg"
+                    alt="Logo pronatur"
+                    width={320}
+                    height={240}
+                    className="h-24 w-auto object-contain"
+                  />
+              
+
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="newsletter" className="flex flex-col lg:flex-row gap-0">
+            <section id="newsletter" className="flex flex-col lg:flex-row gap-0">
         <div className="bg-[url(/img/image.png)] bg-no-repeat bg-cover bg-center w-full xl:w-1/3"></div>
 
         <div className="flex flex-col gap-20 bg-cement text-mortar w-full p-10 lg:p-18  justify-between items-end">
           <div className="flex flex-col gap-8 w-full">
             <div className="flex flex-col gap-8 uppercase text-3xl md:text-4xl">
-              <div>Stay up to date</div>
-              <h4>Register to our Newsletter</h4>
+              <div>{t("newsletterTitle")}</div>
+              <h4>{t("newsletterSubtitle")}</h4>
             </div>
           </div>
 
@@ -562,7 +448,7 @@ export default function Home() {
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Email address"
+                    placeholder={t("newsletterEmailPlaceholder")}
                     className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
                     disabled={isSubmitting}
                   />
@@ -572,20 +458,14 @@ export default function Home() {
                     required
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="Phone number"
+                    placeholder={t("newsletterPhonePlaceholder")}
                     className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
                     disabled={isSubmitting}
                   />
                 </div>
                 {message && (
-                  <div
-                    className={`inline-flex items-center gap-2 text-sm ${message.includes("Thank") ? "bg-emerald-50 text-emerald-800 border border-emerald-200" : "bg-red-50 text-red-800 border border-red-200"} px-3 py-2 rounded-md`}
-                  >
-                    {message.includes("Thank") ? (
-                      <CheckCircle className="w-4 h-4" />
-                    ) : (
-                      <AlertCircle className="w-4 h-4" />
-                    )}
+                  <div className={`inline-flex items-center gap-2 text-sm ${messageType === 'success' ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' : 'bg-red-50 text-red-800 border border-red-200'} px-3 py-2 rounded-md` }>
+                    {messageType === 'success' ? <CheckCircle className="w-4 h-4" /> : <AlertCircle className="w-4 h-4" />}
                     <span className="leading-tight">{message}</span>
                   </div>
                 )}
@@ -596,7 +476,7 @@ export default function Home() {
                 disabled={isSubmitting}
                 className="bg-cactus hover:bg-cactus/90 text-white"
               >
-                {isSubmitting ? "Subscribing..." : "Subscribe"}
+                {isSubmitting ? t("newsletterSubmitting") : t("newsletterSubmit")}
               </Button>
             </form>
             <Image
