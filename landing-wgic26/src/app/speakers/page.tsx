@@ -17,7 +17,7 @@ const Speakers = () => {
 
           <div id="paper-submission" className="bg-cactus/20 border border-cactus/30 rounded-lg p-6 flex flex-col sm:flex-row items-start justify-between gap-6">
             <div className="flex-1">
-              <h2 className="text-2xl lg:text-3xl font-semibold text-white">Submit your paper by 31st March 2026!</h2>
+              <h2 className="text-2xl lg:text-3xl font-semibold text-white">Submit your paper by 30th April 2026!</h2>
               <p className="mt-2 text-white/80 leading-relaxed text-justify">
                 Thank you for your interest in participating in World Green Infrastructure Congress 2026 Barcelona – Lleida (WGIC 2026). To submit a paper, enter and fill in the data in the paper submission application at the link below.
               </p>
