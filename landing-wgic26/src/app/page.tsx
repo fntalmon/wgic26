@@ -9,28 +9,35 @@ import { useTranslations } from "next-intl";
 
 export default function Home() {
   const t = useTranslations("home");
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [message, setMessage] = useState('');
-  const [messageType, setMessageType] = useState<"success" | "error" | null>(null);
+  const [message, setMessage] = useState("");
+  const [messageType, setMessageType] = useState<"success" | "error" | null>(
+    null,
+  );
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.location.hash === '#newsletter') {
-      const el = document.getElementById('newsletter');
+    if (
+      typeof window !== "undefined" &&
+      window.location.hash === "#newsletter"
+    ) {
+      const el = document.getElementById("newsletter");
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({ behavior: "smooth" });
         // brief visual cue when arriving at the newsletter section
-        el.classList.add('animate-pulse');
-        setTimeout(() => el.classList.remove('animate-pulse'), 900);
+        el.classList.add("animate-pulse");
+        setTimeout(() => el.classList.remove("animate-pulse"), 900);
       }
     }
   }, []);
 
-  const handleNewsletterSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleNewsletterSubmit = async (
+    e: React.FormEvent<HTMLFormElement>,
+  ) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setMessage('');
+    setMessage("");
     setMessageType(null);
 
     // Basic client-side validation
@@ -40,7 +47,7 @@ export default function Home() {
       setIsSubmitting(false);
       return;
     }
-    const phoneDigits = phone.replace(/\D/g, '');
+    const phoneDigits = phone.replace(/\D/g, "");
     if (phoneDigits.length < 6 || phoneDigits.length > 15) {
       setMessage(t("newsletterPhoneValidation"));
       setMessageType("error");
@@ -49,10 +56,10 @@ export default function Home() {
     }
 
     try {
-      const response = await fetch('/api/newsletter', {
-        method: 'POST',
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ email, phone }),
       });
@@ -62,8 +69,8 @@ export default function Home() {
       if (response.ok) {
         setMessage(t("newsletterSuccess"));
         setMessageType("success");
-        setEmail('');
-        setPhone('');
+        setEmail("");
+        setPhone("");
       } else {
         setMessage(data.error || t("newsletterError"));
         setMessageType("error");
@@ -74,7 +81,7 @@ export default function Home() {
     } finally {
       setIsSubmitting(false);
     }
-  }; 
+  };
 
   return (
     <div>
@@ -123,9 +130,7 @@ export default function Home() {
               <p>{t("introP7")}</p>
               <p>{t("introP8")}</p>
 
-              <p className="mt-6">
-                {t("introClosing")}
-              </p>
+              <p className="mt-6">{t("introClosing")}</p>
 
               <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div className="flex flex-col sm:flex-row gap-8">
@@ -168,7 +173,9 @@ export default function Home() {
           >
             <div className="bg-[url(/img/ccib.jpg)] bg-no-repeat bg-cover bg-center w-full h-[320px]"></div>
             <div className="flex flex-col gap-2 px-10 pt-10">
-              <div className="text-xs text-white/70 mb-2">{t("mainActivities")}</div>
+              <div className="text-xs text-white/70 mb-2">
+                {t("mainActivities")}
+              </div>
               <div>{t("congress")}</div>
               <div>{t("visits")}</div>
               <div className="flex gap-2 items-center mt-8">
@@ -191,7 +198,9 @@ export default function Home() {
           >
             <div className="bg-[url(/img/univ_lleida.jpg)] bg-no-repeat bg-cover bg-center w-full h-[320px]"></div>
             <div className="flex flex-col gap-2 px-10 pt-10">
-              <div className="text-xs text-white/70 mb-2">{t("mainActivities")}</div>
+              <div className="text-xs text-white/70 mb-2">
+                {t("mainActivities")}
+              </div>
               <div>{t("workshops")}</div>
               <div>{t("visits")}</div>
               <div className="flex gap-2 items-center mt-8">
@@ -209,8 +218,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
 
       <section id="sponsors" className="flex flex-col gap-6 mt-16 pb-24">
         <div className="text-xs uppercase w-full border-b border-white/50 py-2 tracking-wider">
@@ -294,7 +301,7 @@ export default function Home() {
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 Elite Partners
               </h3>
-              <div className="flex justify-center items-center">
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
                 <a
                   href="https://www.sempergreen.com"
                   target="_blank"
@@ -308,15 +315,71 @@ export default function Home() {
                     className="h-30 w-auto object-contain"
                   />
                 </a>
+
+                <a
+                  href="https://www.hunterirrigation.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/hunter.svg"
+                    alt="Hunter"
+                    width={400}
+                    height={300}
+                    className="h-12 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://zinco-cubiertas-ecologicas.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/zinco.svg"
+                    alt="Hunter"
+                    width={400}
+                    height={300}
+                    className="h-22 w-auto object-contain"
+                  />
+                </a>
               </div>
             </div>
 
-            {/* EVENT PARTNERS */}
+            {/* EVENT PARTNERS 
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 Event Partners
               </h3>
-              <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+              <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24"></div>
+            </div>*/}
+
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                Garden Big Exhibitors
+              </h3>
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
+                <a
+                  href="https://www.jardinmovil.com/es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/jardinMovil.png"
+                    alt="Eixverd"
+                    width={330}
+                    height={230}
+                    className="h-20 w-auto object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                Garden Medium Exhibitors
+              </h3>
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
                 <a
                   href="https://eixverd.com/"
                   target="_blank"
@@ -330,30 +393,22 @@ export default function Home() {
                     className="h-36 w-auto object-contain"
                   />
                 </a>
-              </div>
-            </div>
 
-            {/* GARDEN BIG EXHIBITORS - hidden until logos are added
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Garden Big Exhibitors
-              </h3>
-              <div className="flex justify-center items-center min-h-[100px] text-gray-500">
-                <p className="italic">Coming Soon...</p>
+                <a
+                  href="https://verdtical.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/verdtical.webp"
+                    alt="Eixverd"
+                    width={330}
+                    height={230}
+                    className="h-10 w-auto object-contain "
+                  />
+                </a>
               </div>
             </div>
-            */}
-
-            {/* GARDEN MEDIUM EXHIBITORS - hidden until logos are added
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Garden Medium Exhibitors
-              </h3>
-              <div className="flex justify-center items-center min-h-[100px] text-gray-500">
-                <p className="italic">Coming Soon...</p>
-              </div>
-            </div>
-            */}
 
             {/* FLOWER EXHIBITORS - hidden until logos are added
             <div className="w-full">
@@ -371,7 +426,7 @@ export default function Home() {
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 Media Partners
               </h3>
-              <div className="flex justify-center items-center">
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
                 <a
                   href="https://greenroofs.com"
                   target="_blank"
@@ -407,24 +462,21 @@ export default function Home() {
                     className="h-14 w-auto object-contain"
                   />
                 </a>
-                
 
-                  <Image
-                    src="/img/logos/pronaturlogo.jpg"
-                    alt="Logo pronatur"
-                    width={320}
-                    height={240}
-                    className="h-24 w-auto object-contain"
-                  />
-              
-
+                <Image
+                  src="/img/logos/pronaturlogo.jpg"
+                  alt="Logo pronatur"
+                  width={320}
+                  height={240}
+                  className="h-24 w-auto object-contain"
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-            <section id="newsletter" className="flex flex-col lg:flex-row gap-0">
+      <section id="newsletter" className="flex flex-col lg:flex-row gap-0">
         <div className="bg-[url(/img/image.png)] bg-no-repeat bg-cover bg-center w-full xl:w-1/3"></div>
 
         <div className="flex flex-col gap-20 bg-cement text-mortar w-full p-10 lg:p-18  justify-between items-end">
@@ -464,8 +516,14 @@ export default function Home() {
                   />
                 </div>
                 {message && (
-                  <div className={`inline-flex items-center gap-2 text-sm ${messageType === 'success' ? 'bg-emerald-50 text-emerald-800 border border-emerald-200' : 'bg-red-50 text-red-800 border border-red-200'} px-3 py-2 rounded-md` }>
-                    {messageType === 'success' ? <CheckCircle className="w-4 h-4" /> : <AlertCircle className="w-4 h-4" />}
+                  <div
+                    className={`inline-flex items-center gap-2 text-sm ${messageType === "success" ? "bg-emerald-50 text-emerald-800 border border-emerald-200" : "bg-red-50 text-red-800 border border-red-200"} px-3 py-2 rounded-md`}
+                  >
+                    {messageType === "success" ? (
+                      <CheckCircle className="w-4 h-4" />
+                    ) : (
+                      <AlertCircle className="w-4 h-4" />
+                    )}
                     <span className="leading-tight">{message}</span>
                   </div>
                 )}
@@ -476,7 +534,9 @@ export default function Home() {
                 disabled={isSubmitting}
                 className="bg-cactus hover:bg-cactus/90 text-white"
               >
-                {isSubmitting ? t("newsletterSubmitting") : t("newsletterSubmit")}
+                {isSubmitting
+                  ? t("newsletterSubmitting")
+                  : t("newsletterSubmit")}
               </Button>
             </form>
             <Image
