@@ -81,6 +81,7 @@ const Footer = async () => {
             <School size={14} />
             Paesetto
           </a>
+          & Federico Talmon 
           {t("creation")}
         </div>
       </div>
