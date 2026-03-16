@@ -322,7 +322,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    src="/img/logos/hunter.svg"
+                    src="/img/logos/Hunter.svg"
                     alt="Hunter"
                     width={400}
                     height={300}
