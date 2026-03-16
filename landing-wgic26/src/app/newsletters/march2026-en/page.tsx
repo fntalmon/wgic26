@@ -120,7 +120,7 @@ const March2026EnglishNewsletter = () => {
                     Early-bird registration:
                   </span>
                   <span className="font-semibold text-white">
-                    15 April 2026
+                    30 April 2026
                   </span>
                 </li>
                 <li className="flex justify-between items-start">

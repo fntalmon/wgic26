@@ -125,7 +125,7 @@ const March2026SpanishNewsletter = () => {
                     Inscripcion anticipada (Hasta 400 inscripciones)
                   </span>
                   <span className="font-semibold text-white">
-                    15 de Abril de 2026
+                    30 de Abril de 2026
                   </span>
                 </li>
                 <li className="flex justify-between items-start">

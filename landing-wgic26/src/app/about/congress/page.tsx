@@ -6,18 +6,19 @@ import { getTranslations } from "next-intl/server";
 const Congress = async () => {
   const t = await getTranslations("aboutCongress");
   const nav = await getTranslations("navigation");
+  const registration = await getTranslations("registrationPage.dateValues");
 
   const keyDates = [
-    { who: t("dates.authors"), what: t("dates.firstDraft"), when: "< 31 March 2026" },
-    { who: t("dates.scientificCommittee"), what: t("dates.acceptance"), when: "< 15 April 2026" },
-    { who: t("dates.authors"), what: t("dates.r1Draft"), when: "< 31 May 2026" },
-    { who: t("dates.scientificCommittee"), what: t("dates.revisionR2"), when: "< 30 June 2026" },
-    { who: t("dates.authors"), what: t("dates.finalPaper"), when: "< 31 July 2026" },
-    { who: t("dates.organizingCommittee"), what: t("dates.finalProgram"), when: "31 July 2026" },
-    { who: t("dates.attendees"), what: t("dates.earlyBird"), when: "< 15 April 2026" },
-    { who: t("dates.attendees"), what: t("dates.registration"), when: "< 30 September 2026" },
-    { who: t("dates.partners"), what: t("dates.registration"), when: "< 31 April 2026" },
-    { who: t("dates.sponsors"), what: t("dates.registration"), when: "< 30 September 2026" },
+    { who: t("dates.authors"), what: t("dates.firstDraft"), when: registration("paperSubmissionDeadline") },
+    { who: t("dates.scientificCommittee"), what: t("dates.acceptance"), when: registration("acceptanceDecision") },
+    { who: t("dates.authors"), what: t("dates.r1Draft"), when: registration("r1Draft") },
+    { who: t("dates.scientificCommittee"), what: t("dates.revisionR2"), when: registration("revision") },
+    { who: t("dates.authors"), what: t("dates.finalPaper"), when: registration("finalPaper") },
+    { who: t("dates.organizingCommittee"), what: t("dates.finalProgram"), when: registration("finalProgram") },
+    { who: t("dates.attendees"), what: t("dates.earlyBird"), when: registration("earlyBird") },
+    { who: t("dates.attendees"), what: t("dates.registration"), when: registration("registrationOpen") },
+    { who: t("dates.partners"), what: t("dates.registration"), when: registration("partners") },
+    { who: t("dates.sponsors"), what: t("dates.registration"), when: registration("sponsors") },
   ];
 
   return (
@@ -135,6 +136,7 @@ const Congress = async () => {
             </table>
           </div>
         </section>
+
       </div>
     </div>
   );

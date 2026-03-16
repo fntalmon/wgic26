@@ -120,11 +120,11 @@ const March2026ItalianNewsletter = () => {
                   <span className="text-white/60">
                     Registrazione anticipata (fino a 400 registrazioni)
                   </span>
-                  <span className="font-semibold text-white">15 aprile 2026</span>
+                  <span className="font-semibold text-white">30 aprile 2026</span>
                 </li>
                 <li className="flex justify-between items-start">
                   <span className="text-white/60">Partner ed espositori</span>
-                  <span className="font-semibold text-white">31 aprile 2026</span>
+                  <span className="font-semibold text-white">30 aprile 2026</span>
                 </li>
                 <li className="flex justify-between items-start">
                   <span className="text-white/60">Sponsor</span>
