@@ -46,6 +46,11 @@ function toPositiveInteger(value: string | null, fallback: number): number {
   return Math.floor(parsed);
 }
 
+function getDefaultWeeks(): number {
+  const envDefault = process.env.NEWSLETTER_WEEKLY_DEFAULT_WEEKS ?? process.env.WEEKLY_REPORT_WEEKS;
+  return Math.min(toPositiveInteger(envDefault ?? null, 12), 104);
+}
+
 function isValidIsoWeek(value: string | null): value is string {
   if (!value) {
     return false;
@@ -68,7 +73,7 @@ function getCurrentIsoWeekLabel(): string {
 }
 
 function getRequestedWindow(request: NextRequest) {
-  const weeks = Math.min(toPositiveInteger(request.nextUrl.searchParams.get('weeks'), 12), 104);
+  const weeks = Math.min(toPositiveInteger(request.nextUrl.searchParams.get('weeks'), getDefaultWeeks()), 104);
   const startWeekParam = request.nextUrl.searchParams.get('startWeek');
   const endWeekParam = request.nextUrl.searchParams.get('endWeek');
 
@@ -221,6 +226,7 @@ function buildWeeklyRows(weekly: Array<{ displayWeek: string; count: number }>):
 
 function buildChartConfig(weekly: Array<{ displayWeek: string; count: number }>, weeks: number) {
   const maxCount = Math.max(0, ...weekly.map((item) => item.count));
+  const yMax = Math.max(4, maxCount + 1);
 
   return {
     type: 'bar',
@@ -251,13 +257,25 @@ function buildChartConfig(weekly: Array<{ displayWeek: string; count: number }>,
       },
       scales: {
         y: {
+          beginAtZero: true,
           min: 0,
-          suggestedMax: Math.max(4, maxCount + 1),
+          max: yMax,
           ticks: {
             precision: 0,
             stepSize: 1,
           },
         },
+        // QuickChart may use Chart.js v2 on some render paths.
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+              min: 0,
+              max: yMax,
+              stepSize: 1,
+            },
+          },
+        ],
       },
     },
   };
@@ -272,6 +290,7 @@ async function buildWeeklyChartAttachment(
     width: '960',
     height: '420',
     format: 'png',
+    version: '4',
     backgroundColor: 'white',
     chart: JSON.stringify(chartConfig),
   });
