@@ -220,6 +220,8 @@ function buildWeeklyRows(weekly: Array<{ displayWeek: string; count: number }>):
 }
 
 function buildChartConfig(weekly: Array<{ displayWeek: string; count: number }>, weeks: number) {
+  const maxCount = Math.max(0, ...weekly.map((item) => item.count));
+
   return {
     type: 'bar',
     data: {
@@ -249,9 +251,11 @@ function buildChartConfig(weekly: Array<{ displayWeek: string; count: number }>,
       },
       scales: {
         y: {
-          beginAtZero: true,
+          min: 0,
+          suggestedMax: Math.max(4, maxCount + 1),
           ticks: {
             precision: 0,
+            stepSize: 1,
           },
         },
       },
