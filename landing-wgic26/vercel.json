@@ -1,6 +1,10 @@
 {
   "crons": [
     {
+      "path": "/api/newsletter/weekly-report",
+      "schedule": "0 9 * * 5"
+    },
+    {
       "path": "/api/weekly-registrations-report",
       "schedule": "0 9 * * 5"
     }

@@ -1,9 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { recordNewsletterSubscription } from '@/lib/newsletter-metrics';
 
 export async function POST(request: NextRequest) {
   try {
     const { email, phone } = await request.json();
+    let metricsTracked = false;
+    let isNewSubscriber = false;
 
     if (!email || !phone) {
       return NextResponse.json({ error: 'Email and phone are required' }, { status: 400 });
@@ -21,6 +24,16 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Invalid phone number' }, { status: 400 });
     }
 
+    // Persist subscription metrics outside deploy lifecycle.
+    try {
+      const trackingResult = await recordNewsletterSubscription({ email, phone });
+      metricsTracked = trackingResult.tracked;
+      isNewSubscriber = trackingResult.isNewSubscriber;
+    } catch (metricsError) {
+      console.error('Failed to record newsletter metrics:', metricsError);
+      // Continue execution even if metrics tracking fails.
+    }
+
     // Send notification email
     try {
       await sendEmailNotification(email, phone);
@@ -31,7 +44,9 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ 
       success: true, 
-      message: 'Successfully subscribed to newsletter' 
+      message: 'Successfully subscribed to newsletter',
+      isNewSubscriber,
+      metricsTracked,
     }, { status: 200 });
 
   } catch (error) {

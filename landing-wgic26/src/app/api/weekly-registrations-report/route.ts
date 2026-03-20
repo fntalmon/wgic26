@@ -31,15 +31,15 @@ type MailConfig = {
 function getConfig(): MailConfig {
   const imapHost = process.env.ZOHO_IMAP_HOST ?? 'imap.zoho.com';
   const imapPort = Number(process.env.ZOHO_IMAP_PORT ?? '993');
-  const imapUser = process.env.ZOHO_IMAP_USER ?? '';
-  const imapPass = process.env.ZOHO_IMAP_PASS ?? '';
+  const imapUser = process.env.ZOHO_USER ?? process.env.ZOHO_IMAP_USER ?? '';
+  const imapPass = process.env.ZOHO_PASS ?? process.env.ZOHO_IMAP_PASS ?? '';
   const imapMailbox = process.env.ZOHO_IMAP_MAILBOX ?? 'Sent';
 
   const smtpHost = process.env.ZOHO_SMTP_HOST ?? 'smtp.zoho.com';
   const smtpPort = Number(process.env.ZOHO_SMTP_PORT ?? '465');
   const smtpSecure = String(process.env.ZOHO_SMTP_SECURE ?? 'true').toLowerCase() === 'true';
-  const smtpUser = process.env.ZOHO_SMTP_USER ?? '';
-  const smtpPass = process.env.ZOHO_SMTP_PASS ?? '';
+  const smtpUser = process.env.ZOHO_USER ?? process.env.ZOHO_SMTP_USER ?? '';
+  const smtpPass = process.env.ZOHO_PASS ?? process.env.ZOHO_SMTP_PASS ?? '';
 
   const recipients = (process.env.WEEKLY_REPORT_RECIPIENTS ?? '')
     .split(',')
@@ -55,11 +55,11 @@ function getConfig(): MailConfig {
   const cronSecret = process.env.CRON_SECRET;
 
   if (!imapUser || !imapPass) {
-    throw new Error('Missing IMAP credentials: ZOHO_IMAP_USER / ZOHO_IMAP_PASS');
+    throw new Error('Missing IMAP credentials: ZOHO_USER/ZOHO_PASS');
   }
 
   if (!smtpUser || !smtpPass) {
-    throw new Error('Missing SMTP credentials: ZOHO_SMTP_USER / ZOHO_SMTP_PASS');
+    throw new Error('Missing SMTP credentials: ZOHO_USER/ZOHO_PASS');
   }
 
   if (!recipients.length) {
