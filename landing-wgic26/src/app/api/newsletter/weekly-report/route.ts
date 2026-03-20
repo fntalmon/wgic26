@@ -239,6 +239,17 @@ function buildChartConfig(weekly: Array<{ displayWeek: string; count: number }>,
           backgroundColor: '#2d7b5a',
           borderRadius: 4,
         },
+        // Hidden zero baseline dataset to force y-axis to include 0 in all QuickChart runtimes.
+        {
+          label: 'baseline',
+          data: weekly.map(() => 0),
+          backgroundColor: 'rgba(0,0,0,0)',
+          borderColor: 'rgba(0,0,0,0)',
+          borderWidth: 0,
+          barThickness: 0,
+          categoryPercentage: 0,
+          barPercentage: 0,
+        },
       ],
     },
     options: {
