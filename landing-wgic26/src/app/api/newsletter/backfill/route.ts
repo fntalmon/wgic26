@@ -14,7 +14,7 @@ type BackfillConfig = {
   allowedSubjects: string[];
   ignoredRecipients: Set<string>;
   defaultSince: Date;
-  secret?: string;
+  secrets: string[];
 };
 
 type HistoricalEvent = {
@@ -22,6 +22,16 @@ type HistoricalEvent = {
   subscribedAt: Date;
   subject: string;
 };
+
+function describeSecret(value: string): string {
+  const trimmed = value.trim();
+  if (!trimmed) {
+    return 'empty';
+  }
+
+  const last4 = trimmed.slice(-4);
+  return `len:${trimmed.length}|tail:${last4}`;
+}
 
 function getConfig(): BackfillConfig {
   const imapHost = process.env.ZOHO_IMAP_HOST ?? 'imap.zoho.com';
@@ -67,18 +77,20 @@ function getConfig(): BackfillConfig {
     allowedSubjects,
     ignoredRecipients,
     defaultSince,
-    secret: process.env.NEWSLETTER_BACKFILL_SECRET ?? process.env.CRON_SECRET,
+    secrets: [process.env.NEWSLETTER_BACKFILL_SECRET, process.env.CRON_SECRET]
+      .filter((value): value is string => Boolean(value && value.trim()))
+      .map((value) => value.trim()),
   };
 }
 
-function isAuthorized(request: NextRequest, secret?: string): boolean {
-  if (!secret) {
+function isAuthorized(request: NextRequest, secrets: string[]): boolean {
+  if (!secrets.length) {
     return true;
   }
 
   const authHeader = request.headers.get('authorization') ?? '';
   const queryToken = request.nextUrl.searchParams.get('token') ?? '';
-  return authHeader === `Bearer ${secret}` || queryToken === secret;
+  return secrets.some((secret) => authHeader === `Bearer ${secret}` || queryToken === secret);
 }
 
 function parseSinceDate(request: NextRequest, fallback: Date): Date {
@@ -181,7 +193,27 @@ async function collectHistoricalEvents(config: BackfillConfig, sinceDate: Date) 
 export async function POST(request: NextRequest) {
   try {
     const config = getConfig();
-    if (!isAuthorized(request, config.secret)) {
+
+    const authHeader = request.headers.get('authorization') ?? '';
+    const queryToken = request.nextUrl.searchParams.get('token') ?? '';
+    const headerToken = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : '';
+
+    console.info('newsletter-backfill auth debug', {
+      path: request.nextUrl.pathname,
+      host: request.headers.get('host') ?? 'unknown',
+      hasAuthorizationHeader: Boolean(authHeader),
+      hasBearerPrefix: authHeader.startsWith('Bearer '),
+      hasQueryToken: Boolean(queryToken),
+      headerTokenMeta: headerToken ? describeSecret(headerToken) : 'missing',
+      queryTokenMeta: queryToken ? describeSecret(queryToken) : 'missing',
+      configuredSecretsMeta: config.secrets.map(describeSecret),
+    });
+
+    if (!isAuthorized(request, config.secrets)) {
+      console.warn('newsletter-backfill unauthorized request', {
+        path: request.nextUrl.pathname,
+        host: request.headers.get('host') ?? 'unknown',
+      });
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
