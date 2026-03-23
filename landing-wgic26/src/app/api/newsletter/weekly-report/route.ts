@@ -16,24 +16,27 @@ function isAuthorized(request: NextRequest): boolean {
   return authHeader === `Bearer ${cronSecret}` || queryToken === cronSecret;
 }
 
+function parseRecipients(raw: string): string[] {
+  return raw
+    .split(/[;,\n]/)
+    .map((value) => value.trim())
+    .filter(Boolean);
+}
+
 function getRecipients(request: NextRequest): string[] {
   const toOverride = request.nextUrl.searchParams.get('to');
   if (toOverride) {
-    return toOverride
-      .split(',')
-      .map((value) => value.trim())
-      .filter(Boolean);
+    return parseRecipients(toOverride);
   }
 
   const recipientsRaw =
     process.env.NEWSLETTER_WEEKLY_REPORT_RECIPIENTS ??
+    process.env.WEEKLY_REPORT_RECIPIENTS ??
+    process.env.NEWSLETTER_RECIPIENT_EMAIL ??
     '';
 
   console.log('DEBUG: recipientsRaw =', JSON.stringify(recipientsRaw));
-  const parsed = recipientsRaw
-    .split(',')
-    .map((value) => value.trim())
-    .filter(Boolean);
+  const parsed = parseRecipients(recipientsRaw);
   console.log('DEBUG: parsed recipients =', parsed);
 
   return parsed;
