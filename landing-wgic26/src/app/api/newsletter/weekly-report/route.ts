@@ -27,14 +27,16 @@ function getRecipients(request: NextRequest): string[] {
 
   const recipientsRaw =
     process.env.NEWSLETTER_WEEKLY_REPORT_RECIPIENTS ??
-    process.env.WEEKLY_REPORT_RECIPIENTS ??
-    process.env.NEWSLETTER_RECIPIENT_EMAIL ??
     '';
 
-  return recipientsRaw
+  console.log('DEBUG: recipientsRaw =', JSON.stringify(recipientsRaw));
+  const parsed = recipientsRaw
     .split(',')
     .map((value) => value.trim())
     .filter(Boolean);
+  console.log('DEBUG: parsed recipients =', parsed);
+
+  return parsed;
 }
 
 function toPositiveInteger(value: string | null, fallback: number): number {
