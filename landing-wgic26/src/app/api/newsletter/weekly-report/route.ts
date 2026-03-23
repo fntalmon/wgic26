@@ -378,7 +378,7 @@ async function sendWeeklyReportEmail(recipients: string[], weeks: number) {
 
   await transport.transporter.sendMail({
     from: getFromEmail(transport.enforcedFrom),
-    to: recipients.join(', '),
+    to: recipients,
     subject,
     text,
     html,
@@ -461,7 +461,7 @@ async function sendCustomWindowReportEmail(
 
   await transport.transporter.sendMail({
     from: getFromEmail(transport.enforcedFrom),
-    to: recipients.join(', '),
+    to: recipients,
     subject,
     text,
     html,
