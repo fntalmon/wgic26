@@ -23,23 +23,61 @@ function parseRecipients(raw: string): string[] {
     .filter(Boolean);
 }
 
-function getRecipients(request: NextRequest): string[] {
+type RecipientsResolution = {
+  recipients: string[];
+  source: 'query:to' | 'NEWSLETTER_WEEKLY_REPORT_RECIPIENTS' | 'WEEKLY_REPORT_RECIPIENTS' | 'NEWSLETTER_RECIPIENT_EMAIL' | 'none';
+};
+
+function getRecipients(request: NextRequest): RecipientsResolution {
   const toOverride = request.nextUrl.searchParams.get('to');
   if (toOverride) {
-    return parseRecipients(toOverride);
+    return {
+      recipients: parseRecipients(toOverride),
+      source: 'query:to',
+    };
   }
 
-  const recipientsRaw =
-    process.env.NEWSLETTER_WEEKLY_REPORT_RECIPIENTS ??
-    process.env.WEEKLY_REPORT_RECIPIENTS ??
-    process.env.NEWSLETTER_RECIPIENT_EMAIL ??
-    '';
+  const weeklyRecipients = process.env.NEWSLETTER_WEEKLY_REPORT_RECIPIENTS;
+  if (weeklyRecipients && weeklyRecipients.trim()) {
+    const parsed = parseRecipients(weeklyRecipients);
+    console.log('DEBUG: source=NEWSLETTER_WEEKLY_REPORT_RECIPIENTS raw=', JSON.stringify(weeklyRecipients));
+    console.log('DEBUG: parsed recipients =', parsed);
+    return {
+      recipients: parsed,
+      source: 'NEWSLETTER_WEEKLY_REPORT_RECIPIENTS',
+    };
+  }
 
-  console.log('DEBUG: recipientsRaw =', JSON.stringify(recipientsRaw));
-  const parsed = parseRecipients(recipientsRaw);
+  const reportRecipients = process.env.WEEKLY_REPORT_RECIPIENTS;
+  if (reportRecipients && reportRecipients.trim()) {
+    const parsed = parseRecipients(reportRecipients);
+    console.log('DEBUG: source=WEEKLY_REPORT_RECIPIENTS raw=', JSON.stringify(reportRecipients));
+    console.log('DEBUG: parsed recipients =', parsed);
+    return {
+      recipients: parsed,
+      source: 'WEEKLY_REPORT_RECIPIENTS',
+    };
+  }
+
+  const newsletterRecipient = process.env.NEWSLETTER_RECIPIENT_EMAIL;
+  if (newsletterRecipient && newsletterRecipient.trim()) {
+    const parsed = parseRecipients(newsletterRecipient);
+    console.log('DEBUG: source=NEWSLETTER_RECIPIENT_EMAIL raw=', JSON.stringify(newsletterRecipient));
+    console.log('DEBUG: parsed recipients =', parsed);
+    return {
+      recipients: parsed,
+      source: 'NEWSLETTER_RECIPIENT_EMAIL',
+    };
+  }
+
+  const parsed: string[] = [];
+  console.log('DEBUG: source=none raw=', JSON.stringify(''));
   console.log('DEBUG: parsed recipients =', parsed);
 
-  return parsed;
+  return {
+    recipients: parsed,
+    source: 'none',
+  };
 }
 
 function toPositiveInteger(value: string | null, fallback: number): number {
@@ -491,16 +529,17 @@ async function handleRequest(request: NextRequest) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const recipients = getRecipients(request);
+    const recipientsResolution = getRecipients(request);
+    const recipients = recipientsResolution.recipients;
     const windowConfig = getRequestedWindow(request);
     if (!recipients.length) {
-      return NextResponse.json({ error: 'No recipients configured' }, { status: 400 });
+      return NextResponse.json({ error: 'No recipients configured', recipientsSource: recipientsResolution.source }, { status: 400 });
     }
 
     const result = windowConfig.hasCustomWindow && windowConfig.startWeek && windowConfig.endWeek
       ? await sendCustomWindowReportEmail(recipients, windowConfig.startWeek, windowConfig.endWeek)
       : await sendWeeklyReportEmail(recipients, windowConfig.weeks);
-    return NextResponse.json({ ok: true, ...result });
+    return NextResponse.json({ ok: true, recipientsSource: recipientsResolution.source, ...result });
   } catch (error) {
     console.error('Newsletter weekly report failed:', error);
     return NextResponse.json(
