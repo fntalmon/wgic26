@@ -213,8 +213,8 @@ const Registration = async () => {
               <p className="mb-3">
                 {t("notes.invoice")}{" "}
                 <strong>
-                  <a href="mailto:wgic26.economics@udl.cat">
-                    wgic26.economics@udl.cat
+                  <a href="mailto:wgic2026.economics@udl.cat">
+                    wgic2026.economics@udl.cat
                   </a>
                 </strong>
               </p>
