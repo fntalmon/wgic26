@@ -228,6 +228,7 @@
     "platformTitle": "Registration platform",
     "platformDescription": "Registration is managed through our external partner platform, Helice. The registration fee covers costs during the congress period, including lunches and coffee breaks. It does not include travel or accommodation.",
     "platformButton": "Register on Helice platform",
+    "platformInvoiceNote": "If you need an invoice, it will be issued when you complete the registration form.",
     "keyDatesTitle": "Key dates",
     "keyDatesHeaders": {
       "milestone": "Milestone",
@@ -501,6 +502,7 @@
     "title": "Newsletters",
     "description": "Stay up to date with our latest newsletters.",
     "readOnline": "Read online",
+    "latest" : "Latest",
     "downloadPdf": "Download PDF",
     "languages": {
       "en": "English",
@@ -511,6 +513,10 @@
     "items": {
       "march2026": {
         "title": "March 2026 Newsletter",
+        "date": "March 2026"
+      },
+      "march2026Newsletter2": {
+        "title": "Second March Newsletter",
         "date": "March 2026"
       }
     }

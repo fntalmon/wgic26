@@ -228,6 +228,7 @@
     "platformTitle": "Plataforma de inscripcion",
     "platformDescription": "La inscripcion se gestiona a traves de nuestra plataforma colaboradora externa, Helice. La cuota de inscripcion cubre los costes durante el periodo del congreso, incluyendo almuerzos y pausas cafe. No incluye viaje ni alojamiento.",
     "platformButton": "Registrarse en plataforma Helice",
+    "platformInvoiceNote": "Si necesitas factura, esta se generara al finalizar la carga del formulario de inscripcion.",
     "keyDatesTitle": "Fechas clave",
     "keyDatesHeaders": {
       "milestone": "Hito",
@@ -498,6 +499,29 @@
     "mapTitle": "Mapa de Barcelona"
   },
   "newslettersPage": {
+    "title": "Boletines",
+    "description": "Mantente actualizado con nuestros últimos boletines.",
+    "readOnline": "Leer en línea",
+    "latest" : "Mas reciente",
+    "downloadPdf": "Descargar PDF",
+    "languages": {
+      "en": "Inglés",
+      "es": "Español",
+      "it": "Italiano",
+      "el": "Griego"
+    },
+    "items": {
+      "march2026": {
+        "title": "Boletín Marzo 2026",
+        "date": "Marzo 2026"
+      },
+      "march2026Newsletter2": {
+        "title": "Segundo Boletín de Marzo",
+        "date": "Marzo 2026"
+      }
+    }
+  },
+  "oldNewslettersPage": {
     "title": "Boletines",
     "description": "Mantente al dia con nuestros ultimos boletines.",
     "readOnline": "Leer online",

@@ -22,6 +22,8 @@ const CongressCommittee = async () => {
     { name: "Kamil Rawski", institution: "Białystok University of Technology", country: "Poland" },
     { name: "Beatriz Urbano", institution: "Universidad de Valladolid", country: "Spain" },
     { name: "Leila Tolderlund", institution: "University of Copenhagen", country: "Denmark" },
+    { name: "Julián Briz", institution: "Polytechnic University of Madrid", country: "Spain" },
+    { name: "Marc Teixidó", institution: "Spanish National Research Council (CSIC). Institute of Environmental Assessment and Water Research", country: "Spain" },
   ];
 
   const professionalCommittee = [
@@ -31,6 +33,7 @@ const CongressCommittee = async () => {
     { name: "Linda Velázquez", institution: "greenroofs.com", country: "USA" },
     { name: "Audrey Timm", institution: "AIPH Green City initiative", country: "United Kingdom" },
     { name: "Steven Peck", institution: "President WGIN/GRHC", country: "USA" },
+    { name: "Hema Kumar", institution: "ZTC International Landscape Solution", country: "India" },
   ];
 
   return (

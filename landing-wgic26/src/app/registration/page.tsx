@@ -107,6 +107,9 @@ const Registration = async () => {
               >
                 {t("platformButton")} <ExternalLink className="w-4 h-4" />
               </a>
+              <p className="mt-4 text-sm text-white/70 text-center">
+                {t("platformInvoiceNote")}
+              </p>
             </div>
           </div>
 

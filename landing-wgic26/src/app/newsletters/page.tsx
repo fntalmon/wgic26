@@ -10,12 +10,14 @@ interface NewsletterLanguage {
   code: string;
   slug: string;
   pdfUrl?: string;
+  canReadOnline?: boolean;
 }
 
 interface Newsletter {
   id: string;
   title: string;
   date: string;
+  publishedAt: string;
   languages: NewsletterLanguage[];
 }
 
@@ -27,34 +29,59 @@ const Newsletters = () => {
       id: "march2026",
       title: t("items.march2026.title"),
       date: t("items.march2026.date"),
+      publishedAt: "2026-03-01",
       languages: [
         {
           language: t("languages.en"),
           code: "en",
           slug: "march2026-en",
           pdfUrl: "/newsletters/englishMarch.pdf",
+          canReadOnline: true,
         },
         {
           language: t("languages.es"),
           code: "es",
           slug: "march2026-es",
           pdfUrl: "/newsletters/spanishMarch.pdf",
+          canReadOnline: true,
         },
         {
           language: t("languages.it"),
           code: "it",
           slug: "march2026-it",
           pdfUrl: "/newsletters/italianMarch.pdf",
+          canReadOnline: true,
         },
         {
           language: t("languages.el"),
           code: "el",
           slug: "march2026-el",
           pdfUrl: "/newsletters/greekMarch.pdf",
+          canReadOnline: false,
+        },
+      ],
+    },
+    {
+      id: "march2026-newsletter2",
+      title: t("items.march2026Newsletter2.title"),
+      date: t("items.march2026Newsletter2.date"),
+      publishedAt: "2026-03-20",
+      languages: [
+        {
+          language: t("languages.en"),
+          code: "en",
+          slug: "march2026-newsletter2-en",
+          pdfUrl: "/newsletters/englishMarch2.pdf",
+          canReadOnline: false,
         },
       ],
     },
   ];
+
+  const sortedNewsletters = [...newsletters].sort(
+    (a, b) =>
+      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+  );
 
   const [selectedLanguage, setSelectedLanguage] = useState<{
     [key: string]: string;
@@ -103,16 +130,22 @@ const Newsletters = () => {
       <section className="container mx-auto py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 gap-8">
-            {newsletters.map((newsletter) => {
+            {sortedNewsletters.map((newsletter, index) => {
               const selectedLang = getSelectedLanguage(newsletter);
+              const showReadOnline = selectedLang.canReadOnline !== false;
 
               return (
                 <div
                   key={newsletter.id}
-                  className="bg-cactus/10 border border-white/20 rounded-lg p-6 transition-all hover:bg-cactus/20"
+                  className="group bg-cactus/10 border border-white/20 rounded-xl p-6 transition-all hover:bg-cactus/20 hover:border-potus/40"
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
                     <div>
+                      {index === 0 && (
+                        <span className="inline-block text-xs font-semibold uppercase tracking-wide bg-potus text-black px-2 py-1 rounded mb-3">
+                          {t("latest")}
+                        </span>
+                      )}
                       <h3 className="text-2xl font-semibold text-white mb-2">
                         {newsletter.title}
                       </h3>
@@ -142,7 +175,7 @@ const Newsletters = () => {
 
                   {/* Action Buttons */}
                   <div className="flex flex-col sm:flex-row gap-3">
-                    {selectedLang.code !== "el" && (
+                    {showReadOnline && (
                       <Link
                         href={`/newsletters/${selectedLang.slug}`}
                         className="flex-1 bg-cactus hover:bg-cactus/80 text-white text-center py-2 px-4 rounded transition-colors font-medium"
@@ -155,7 +188,7 @@ const Newsletters = () => {
                       <a
                         href={selectedLang.pdfUrl}
                         download
-                        className={`bg-white/10 hover:bg-white/20 text-white text-center py-2 px-4 rounded transition-colors flex items-center justify-center gap-2 font-medium ${selectedLang.code !== "el" ? "flex-1" : "w-full"}`}
+                        className={`bg-white/10 hover:bg-white/20 text-white text-center py-2 px-4 rounded transition-colors flex items-center justify-center gap-2 font-medium ${showReadOnline ? "flex-1" : "w-full"}`}
                       >
                         <DownloadIcon />
                         {t("downloadPdf")}
