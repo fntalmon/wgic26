@@ -72,7 +72,7 @@ const Newsletters = () => {
           code: "en",
           slug: "march2026-newsletter2-en",
           pdfUrl: "/newsletters/englishMarch2.pdf",
-          canReadOnline: false,
+          canReadOnline: true,
         },
       ],
     },

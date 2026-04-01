@@ -1,11 +1,11 @@
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
 
-const March2026Newsletter2EnglishNewsletter = () => {
+const April2026EnglishNewsletter = () => {
   return (
     <div>
       <PageHeader
-        title="WGIC26 Newsletter - March 2026"
+        title="WGIC26 Newsletter - April 2026"
         description="Updates on Health & Well-being track, new speaker, and extended deadline"
         section="newsletters"
       />
@@ -14,7 +14,7 @@ const March2026Newsletter2EnglishNewsletter = () => {
         <div className="max-w-4xl mx-auto space-y-8 text-white/80">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-2">
-              March 2026 Newsletter #2
+              April 2026 Newsletter
             </h2>
           </div>
 
@@ -245,6 +245,4 @@ const March2026Newsletter2EnglishNewsletter = () => {
   );
 };
 
-export default March2026Newsletter2EnglishNewsletter;
-
-
+export default April2026EnglishNewsletter;
