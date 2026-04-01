@@ -247,7 +247,7 @@ const March2026Newsletter2EnglishNewsletter = () => {
                 <p className="text-sm text-white/70">
                   Founder and Director of the Urban and Territorial Ecology
                   Foundation (FEUT), pioneer of urban ecology and creator of the
-                  "superblock" model.
+                  &quot;superblock&quot; model.
                 </p>
               </div>
             </div>
