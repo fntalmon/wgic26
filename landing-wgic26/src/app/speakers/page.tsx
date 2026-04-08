@@ -16,6 +16,50 @@ const Speakers = async () => {
     t("steps.s8"),
   ];
 
+  const keyDates = [
+    {
+      milestone: t("keyDates.abstracts"),
+      date: t("dateValues.abstracts"),
+    },
+    {
+      milestone: t("keyDates.acceptance"),
+      date: t("dateValues.acceptance"),
+    },
+    {
+      milestone: t("keyDates.firstDraft"),
+      date: t("dateValues.firstDraft"),
+    },
+    {
+      milestone: t("keyDates.revision"),
+      date: t("dateValues.revision"),
+    },
+    {
+      milestone: t("keyDates.finalPaper"),
+      date: t("dateValues.finalPaper"),
+    },
+    {
+      milestone: t("keyDates.finalProgram"),
+      date: t("dateValues.finalProgram"),
+    },
+    {
+      milestone: t("keyDates.earlyBird"),
+      date: t("dateValues.earlyBird"),
+      highlight: true,
+    },
+    {
+      milestone: t("keyDates.registrationOpen"),
+      date: t("dateValues.registrationOpen"),
+    },
+    {
+      milestone: t("keyDates.partners"),
+      date: t("dateValues.partners"),
+    },
+    {
+      milestone: t("keyDates.sponsors"),
+      date: t("dateValues.sponsors"),
+    },
+  ];
+
   return (
     <div>
       <PageHeader
@@ -53,6 +97,48 @@ const Speakers = async () => {
               {t("bodyP2")}
             </p>
 
+            {/* Key Dates */}
+            <div className="bg-monstera/20 border border-monstera/30 rounded-lg  w-full">
+              <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-6">
+                {t("keyDatesTitle")}
+              </h2>
+
+              <div className="overflow-x-auto w-full">
+                <table className="min-w-full w-full border-collapse border border-white/20">
+                  <thead>
+                    <tr className="bg-monstera/20">
+                      <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base w-2/3">
+                        {t("keyDatesHeaders.milestone")}
+                      </th>
+                      <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base w-1/3">
+                        {t("keyDatesHeaders.date")}
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    {keyDates.map((item) => (
+                      <tr
+                        key={`${item.milestone}-${item.date}`}
+                        className={`hover:bg-white/5 ${item.highlight ? "bg-cactus/10" : ""}`}
+                      >
+                        <td
+                          className={`border border-white/20 px-4 py-3 text-base text-justify ${item.highlight ? "text-white font-medium" : "text-white/80"}`}
+                        >
+                          {item.milestone}
+                        </td>
+                        <td
+                          className={`border border-white/20 px-4 py-3 text-base text-center ${item.highlight ? "text-white font-medium" : "text-white/80"}`}
+                        >
+                          {item.date}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
             <div className="bg-white/5 border border-white/10 rounded-md p-4">
               <h3 className="font-medium text-white">{t("stepsTitle")}</h3>
               <ol className="mt-3 list-decimal list-inside text-white/80 space-y-2">

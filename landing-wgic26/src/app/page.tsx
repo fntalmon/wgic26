@@ -112,9 +112,9 @@ export default function Home() {
           <div className="w-full pt-7 border-t-1 border-white/50">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
 
-              <Button asChild variant="default">
+              <Button asChild variant="default" size="lg">
                 <a href="/speakers">
-                  <Mic  size={20} />
+                  <Mic size={20} />
                   {t("callForSpeakers")}
                 </a>
               </Button>

@@ -298,6 +298,35 @@
     "templateButton": "Download paper template",
     "bodyP1": "WGIC26 warmly welcomes submissions of original research, case studies, and innovative applications, in short paper format (maximum 5 pages), in MS Word format. This limitation helps reduce similarity for papers subsequently recommended for special journal issues.",
     "bodyP2": "All submitted papers undergo a rigorous peer review process. The scientific committee decides on acceptance and whether the presentation will be oral or poster. Accepted papers will be published in the WGIC2026 proceedings.",
+    "keyDatesTitle": "Key dates",
+    "keyDatesHeaders": {
+      "milestone": "Milestone",
+      "date": "Date"
+    },
+    "keyDates": {
+      "abstracts": "Abstract submission period",
+      "acceptance": "Acceptance notification (Oral/Poster decision)",
+      "firstDraft": "First draft paper/poster",
+      "revision": "Paper/poster revision submission",
+      "finalPaper": "Final paper/poster submission",
+      "finalProgram": "Final program",
+      "earlyBird": "Early-bird registration deadline",
+      "registrationOpen": "Registration open",
+      "partners": "Partners and exhibitors",
+      "sponsors": "Sponsors"
+    },
+    "dateValues": {
+      "abstracts": "December 15, 2025 - April 30, 2026",
+      "acceptance": "Before May 15, 2026",
+      "firstDraft": "Before June 12, 2026",
+      "revision": "Before June 30, 2026",
+      "finalPaper": "Before July 31, 2026",
+      "finalProgram": "July 31, 2026",
+      "earlyBird": "Before April 30, 2026",
+      "registrationOpen": "Before September 30, 2026",
+      "partners": "Before April 30, 2026",
+      "sponsors": "Before September 30, 2026"
+    },
     "stepsTitle": "Paper submission steps",
     "steps": {
       "s1": "Download the paper template.",
@@ -540,12 +569,12 @@
     },
     "items": {
       "march2026": {
-        "title": "February 2026 Newsletter",
-        "date": "February 2026"
+        "title": "February Newsletter",
+        "date": "February "
       },
       "march2026Newsletter2": {
-        "title": "March 2026 Newsletter",
-        "date": "March 2026"
+        "title": "March Newsletter",
+        "date": "March "
       }
     }
   }

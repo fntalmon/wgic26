@@ -113,7 +113,7 @@ const Registration = async () => {
             </div>
           </div>
 
-          {/* Key Dates */}
+          {/* Key Dates  viejo*
           <div className="bg-monstera/20 border border-monstera/30 rounded-lg  w-full">
             <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-6">
               {t("keyDatesTitle")}
@@ -154,7 +154,7 @@ const Registration = async () => {
               </table>
             </div>
           </div>
-
+          */}
           {/* Registration Fees */}
           <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base w-full">
             <div>
