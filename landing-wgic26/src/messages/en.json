@@ -30,6 +30,7 @@
     "startingIn": "Starting in:"
   },
   "home": {
+    "callForSpeakers": "Call for speakers",
     "heroTitle": "World Green Infrastructure Congress 2026 Barcelona-Lleida",
     "date1": "27-29 Oct 2026",
     "date1Location": "CCIB - Parc del Forum, Barcelona (Spain)",
@@ -288,9 +289,9 @@
     "cancellationBody": "After bank deposit, refunds are not possible."
   },
   "speakersPage": {
-    "title": "Speakers",
+    "title": "Be a speaker",
     "description": "Meet the leading voices in green infrastructure. WGIC 2026 will feature international experts, innovators, and thought leaders driving the future of sustainable cities.",
-    "calloutTitle": "Submit your paper before April 30, 2026",
+    "calloutTitle": "Submit your paper or project before April 30, 2026",
     "calloutP1": "Thank you for your interest in participating in the World Green Infrastructure Congress 2026 Barcelona - Lleida (WGIC 2026). To submit a paper, access and complete the data in the submission application at the link below.",
     "calloutP2": "The 12th World Green Infrastructure Congress will be held in Barcelona, at the International Convention Centre of Barcelona, from October 27 to 30, 2026. WGIC 2026 welcomes original research, case studies, and innovative applications in short paper format (maximum 5 pages), in MS Word format.",
     "submissionButton": "Go to submission form",
@@ -367,7 +368,7 @@
     "boxBody": "Gaudi's legacy, deeply rooted in the harmony between architecture and nature, offers powerful inspiration for rethinking contemporary urban green infrastructure as a more organic, sustainable, and people-centered model."
   },
   "keyNoteSpeakersPage": {
-    "title": "Keynote Speakers",
+    "title": "Key note Speakers",
     "description": "Meet the leading voices in green infrastructure. WGIC 2026 will feature international experts, innovators, and thought leaders driving the future of green infrastructure and sustainable cities.",
     "p1": "WGIC26 will feature up to 12 keynote speakers from around the world, positioned at the forefront of research, innovation, and implementation in green infrastructure.",
     "p2": "We are pleased to announce that the first speakers for WGIC 2026 are now confirmed.",
@@ -473,15 +474,42 @@
     "joinBody": "Be part of the most prestigious green infrastructure event of 2026.",
     "learnMore": "Learn more",
     "categories": {
-      "greenRoofs": {"title": "Green Roofs", "description": "Recognizes exemplary vegetated roof projects."},
-      "greenWalls": {"title": "Green Walls", "description": "Rewards outstanding facades and integrated greening solutions."},
-      "greenNeighborhood": {"title": "Green Neighborhood", "description": "Recognizes urban projects with multifunctional vegetative design."},
-      "policy": {"title": "Green Infrastructure Policy", "description": "Highlights public or private policies that accelerate the adoption of urban green infrastructure."},
-      "researchAcademic": {"title": "Green Infrastructure Research (Academic Work)", "description": "Recognizes excellence in research and related academic projects."},
-      "researchStudent": {"title": "Green Infrastructure Research (Student Posters)", "description": "Recognizes innovative ideas and projects from students."},
-      "livingSystems": {"title": "Innovative Living Systems", "description": "Rewards projects that integrate living systems into architectural envelopes."},
-      "unintended": {"title": "Unintended Vegetation", "description": "Recognizes the value of unplanned natural vegetation and its evolution."},
-      "champion": {"title": "Green Infrastructure Champion", "description": "Recognizes entities with significant contributions to the sector."}
+      "greenRoofs": {
+        "title": "Green Roofs",
+        "description": "Recognizes exemplary vegetated roof projects."
+      },
+      "greenWalls": {
+        "title": "Green Walls",
+        "description": "Rewards outstanding facades and integrated greening solutions."
+      },
+      "greenNeighborhood": {
+        "title": "Green Neighborhood",
+        "description": "Recognizes urban projects with multifunctional vegetative design."
+      },
+      "policy": {
+        "title": "Green Infrastructure Policy",
+        "description": "Highlights public or private policies that accelerate the adoption of urban green infrastructure."
+      },
+      "researchAcademic": {
+        "title": "Green Infrastructure Research (Academic Work)",
+        "description": "Recognizes excellence in research and related academic projects."
+      },
+      "researchStudent": {
+        "title": "Green Infrastructure Research (Student Posters)",
+        "description": "Recognizes innovative ideas and projects from students."
+      },
+      "livingSystems": {
+        "title": "Innovative Living Systems",
+        "description": "Rewards projects that integrate living systems into architectural envelopes."
+      },
+      "unintended": {
+        "title": "Unintended Vegetation",
+        "description": "Recognizes the value of unplanned natural vegetation and its evolution."
+      },
+      "champion": {
+        "title": "Green Infrastructure Champion",
+        "description": "Recognizes entities with significant contributions to the sector."
+      }
     }
   },
   "venuePage": {
@@ -502,7 +530,7 @@
     "title": "Newsletters",
     "description": "Stay up to date with our latest newsletters.",
     "readOnline": "Read online",
-    "latest" : "Latest",
+    "latest": "Latest",
     "downloadPdf": "Download PDF",
     "languages": {
       "en": "English",
@@ -512,11 +540,11 @@
     },
     "items": {
       "march2026": {
-        "title": "March 2026 Newsletter",
-        "date": "March 2026"
+        "title": "February 2026 Newsletter",
+        "date": "February 2026"
       },
       "march2026Newsletter2": {
-        "title": "Second March Newsletter",
+        "title": "March 2026 Newsletter",
         "date": "March 2026"
       }
     }

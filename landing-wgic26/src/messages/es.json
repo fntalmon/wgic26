@@ -15,7 +15,7 @@
     "wginAwards": "Premios WGIN",
     "keyNoteSpeakers": "Conferencistas principales",
     "newsletters": "Boletines",
-    "speakers": "Ponentes",
+    "speakers": "Oradores",
     "registration": "Registro",
     "partnersExhibitors": "Socios y expositores",
     "planYourStay": "Planifica tu estancia",
@@ -30,6 +30,7 @@
     "startingIn": "Comienza en:"
   },
   "home": {
+    "callForSpeakers": "Llamado a oradores",
     "heroTitle": "Congreso Mundial de Infraestructura Verde 2026 Barcelona-Lleida",
     "date1": "27-29 oct 2026",
     "date1Location": "CCIB - Parc del Forum, Barcelona (Espana)",
@@ -96,7 +97,7 @@
     "wgicP1": "Bajo el lema Infraestructura verde para un futuro urbano mas saludable y seguro, la duodecima edicion de WGIC quiere destacar como la infraestructura verde contribuye directa e indirectamente a mejorar la calidad de vida y la salud de las personas.",
     "wgicP2": "La infraestructura verde contribuye a la mitigacion y adaptacion al cambio climatico. WGIC2026 busca alinear sus objetivos con los retos del cambio climatico global. Estos retos no solo implican comprender como la infraestructura verde urbana puede ayudar a mitigar impactos climaticos en la sociedad, sino tambien determinar como debe adaptarse a un contexto ambiental cada vez mas cambiante.",
     "wgicP3": "La region mediterranea, caracterizada por altas temperaturas y bajas precipitaciones, ofrece ejemplos destacados de innovacion en renaturalizacion urbana. Estas estrategias aportan inspiracion para futuros disenos de infraestructura verde urbana a nivel mundial. El firme compromiso de Barcelona con la sostenibilidad, junto con su patrimonio cultural y politicas urbanas de vanguardia, refuerza su posicion como una de las ciudades mas inspiradoras del mundo.",
-    "wgicP4": "WGIC26 esta organizado por la Universidad de Lleida (Cataluña, Espana) y tiene un formato de dos dias de congreso en Barcelona con cinco sesiones paralelas, mas de diez ponentes magistrales del sector de infraestructura verde y dos talleres sobre temas de gran actualidad. Ademas, incluye un tercer dia de visitas tecnicas a proyectos reales en Barcelona y un cuarto dia opcional dedicado a innovacion e investigacion sobre infraestructura verde urbana en la sede de la Universidad de Lleida.",
+    "wgicP4": "WGIC26 esta organizado por la Universidad de Lleida (Cataluña, Espana) y tiene un formato de dos dias de congreso en Barcelona con cinco sesiones paralelas, mas de diez oradores magistrales del sector de infraestructura verde y dos talleres sobre temas de gran actualidad. Ademas, incluye un tercer dia de visitas tecnicas a proyectos reales en Barcelona y un cuarto dia opcional dedicado a innovacion e investigacion sobre infraestructura verde urbana en la sede de la Universidad de Lleida.",
     "keyDatesTitle": "Fechas clave",
     "dates": {
       "who": "Quien?",
@@ -288,9 +289,9 @@
     "cancellationBody": "Despues del deposito bancario, no es posible realizar reembolsos."
   },
   "speakersPage": {
-    "title": "Ponentes",
+    "title": "Se un Orador",
     "description": "Conoce las voces lideres en infraestructura verde. WGIC 2026 contara con expertos internacionales, innovadores y referentes que impulsan el futuro de las ciudades sostenibles.",
-    "calloutTitle": "Envia tu articulo antes del 30 de abril de 2026",
+    "calloutTitle": "Envia tu articulo o proyecto antes del 30 de abril de 2026",
     "calloutP1": "Gracias por tu interes en participar en el World Green Infrastructure Congress 2026 Barcelona - Lleida (WGIC 2026). Para enviar un articulo, accede y completa los datos en la aplicacion de envio en el enlace inferior.",
     "calloutP2": "El 12o World Green Infrastructure Congress se celebrara en Barcelona, en el Centro de Convenciones Internacional de Barcelona, del 27 al 30 de octubre de 2026. WGIC 2026 recibe investigaciones originales, estudios de caso y aplicaciones innovadoras en formato de articulo corto (maximo 5 paginas), en formato MS Word.",
     "submissionButton": "Ir al formulario de envio",
@@ -367,17 +368,17 @@
     "boxBody": "El legado de Gaudi, profundamente arraigado en la armonia entre arquitectura y naturaleza, ofrece una inspiracion poderosa para replantear la infraestructura verde urbana contemporanea como un modelo mas organico, sostenible y centrado en las personas."
   },
   "keyNoteSpeakersPage": {
-    "title": "Ponentes magistrales",
+    "title": "Oradores magistrales",
     "description": "Conoce las voces lideres en infraestructura verde. WGIC 2026 contara con expertos internacionales, innovadores y referentes que impulsan el futuro de las infraestructuras verdes y las ciudades sostenibles.",
-    "p1": "WGIC26 contara con hasta 12 ponentes magistrales de todo el mundo, situados en la vanguardia de la investigacion, innovacion e implementacion en infraestructura verde.",
-    "p2": "Nos complace anunciar que los primeros ponentes de WGIC 2026 ya estan confirmados.",
+    "p1": "WGIC26 contara con hasta 12 oradores magistrales de todo el mundo, situados en la vanguardia de la investigacion, innovacion e implementacion en infraestructura verde.",
+    "p2": "Nos complace anunciar que los primeros oradores de WGIC 2026 ya estan confirmados.",
     "speakers": {
       "marcos": "Arquitecto, academico y miembro del Parlamento Europeo, centrado en politica urbana, sostenibilidad y entorno construido a escala de la UE.",
       "salvador": "Fundador y director de la Fundacion de Ecologia Urbana y Territorial (FEUT), pionero de la ecologia urbana y creador del modelo de supermanzana.",
       "vicente": "Arquitecto y urbanista, cofundador de Urbanitree y fundador del Instituto de Arquitectura Avanzada de Cataluña, reconocido internacionalmente por su innovacion urbana basada en investigacion.",
       "alberto": "Fundador y director de ESARQ UIC Barcelona, arquitecto y academico reconocido por impulsar la arquitectura experimental y biodigital."
     },
-    "closing": "Este primer grupo de ponentes subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
+    "closing": "Este primer grupo de oradores subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
   },
   "technicalVisitsPage": {
     "title": "Visitas tecnicas",
@@ -473,15 +474,42 @@
     "joinBody": "Forma parte del evento de infraestructura verde mas prestigioso de 2026.",
     "learnMore": "Saber mas",
     "categories": {
-      "greenRoofs": {"title": "Cubiertas verdes", "description": "Reconoce proyectos ejemplares de cubiertas vegetadas."},
-      "greenWalls": {"title": "Muros verdes", "description": "Premia fachadas y soluciones destacadas de enverdecimiento integrado."},
-      "greenNeighborhood": {"title": "Barrio verde", "description": "Reconoce proyectos urbanos con diseno vegetativo multifuncional."},
-      "policy": {"title": "Politica de infraestructura verde", "description": "Destaca politicas publicas o privadas que aceleran la adopcion de infraestructura verde urbana."},
-      "researchAcademic": {"title": "Investigacion en infraestructura verde (Trabajo academico)", "description": "Reconoce excelencia en investigacion y proyectos academicos relacionados."},
-      "researchStudent": {"title": "Investigacion en infraestructura verde (Posters estudiantiles)", "description": "Reconoce ideas y proyectos innovadores del estudiantado."},
-      "livingSystems": {"title": "Sistemas vivos innovadores", "description": "Premia proyectos que integran sistemas vivos en envolventes arquitectonicas."},
-      "unintended": {"title": "Vegetacion no intencionada", "description": "Reconoce el valor de la vegetacion natural no planificada y su evolucion."},
-      "champion": {"title": "Campeon de infraestructura verde", "description": "Reconoce entidades con aportaciones significativas al sector."}
+      "greenRoofs": {
+        "title": "Cubiertas verdes",
+        "description": "Reconoce proyectos ejemplares de cubiertas vegetadas."
+      },
+      "greenWalls": {
+        "title": "Muros verdes",
+        "description": "Premia fachadas y soluciones destacadas de enverdecimiento integrado."
+      },
+      "greenNeighborhood": {
+        "title": "Barrio verde",
+        "description": "Reconoce proyectos urbanos con diseno vegetativo multifuncional."
+      },
+      "policy": {
+        "title": "Politica de infraestructura verde",
+        "description": "Destaca politicas publicas o privadas que aceleran la adopcion de infraestructura verde urbana."
+      },
+      "researchAcademic": {
+        "title": "Investigacion en infraestructura verde (Trabajo academico)",
+        "description": "Reconoce excelencia en investigacion y proyectos academicos relacionados."
+      },
+      "researchStudent": {
+        "title": "Investigacion en infraestructura verde (Posters estudiantiles)",
+        "description": "Reconoce ideas y proyectos innovadores del estudiantado."
+      },
+      "livingSystems": {
+        "title": "Sistemas vivos innovadores",
+        "description": "Premia proyectos que integran sistemas vivos en envolventes arquitectonicas."
+      },
+      "unintended": {
+        "title": "Vegetacion no intencionada",
+        "description": "Reconoce el valor de la vegetacion natural no planificada y su evolucion."
+      },
+      "champion": {
+        "title": "Campeon de infraestructura verde",
+        "description": "Reconoce entidades con aportaciones significativas al sector."
+      }
     }
   },
   "venuePage": {
@@ -502,7 +530,7 @@
     "title": "Boletines",
     "description": "Mantente actualizado con nuestros últimos boletines.",
     "readOnline": "Leer en línea",
-    "latest" : "Mas reciente",
+    "latest": "Mas reciente",
     "downloadPdf": "Descargar PDF",
     "languages": {
       "en": "Inglés",
@@ -512,11 +540,11 @@
     },
     "items": {
       "march2026": {
-        "title": "Boletín Marzo 2026",
-        "date": "Marzo 2026"
+        "title": "Boletín Febrero 2026",
+        "date": "Febrero 2026"
       },
       "march2026Newsletter2": {
-        "title": "Segundo Boletín de Marzo",
+        "title": "Boletín de Marzo",
         "date": "Marzo 2026"
       }
     }

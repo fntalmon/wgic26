@@ -84,7 +84,11 @@ const renderMobileMenuItem = (item: MenuItem) => {
   }
 
   return (
-    <a className="text-2xl font-light uppercase" key={item.title} href={item.url}>
+    <a
+      className="text-2xl font-light uppercase"
+      key={item.title}
+      href={item.url}
+    >
       {item.title}
     </a>
   );
@@ -141,15 +145,30 @@ const Navigation = () => {
       title: t("about"),
       url: "/about",
       items: [
-        { title: t("congress"), url: "/about/congress", description: "...", icon: <ArrowRight /> },
-        { title: t("wgiNetwork"), url: "/about/wgi-network", description: "...", icon: <ArrowRight /> },
+        {
+          title: t("congress"),
+          url: "/about/congress",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: t("wgiNetwork"),
+          url: "/about/wgi-network",
+          description: "...",
+          icon: <ArrowRight />,
+        },
         {
           title: t("universityLleida"),
           url: "/about/univeristy-of-lleida",
           description: "...",
           icon: <ArrowRight />,
         },
-        { title: t("locations"), url: "/about/locations", description: "...", icon: <ArrowRight /> },
+        {
+          title: t("locations"),
+          url: "/about/locations",
+          description: "...",
+          icon: <ArrowRight />,
+        },
         {
           title: t("organisationCommittee"),
           url: "/about/organisation-committee",
@@ -168,31 +187,53 @@ const Navigation = () => {
       title: t("program"),
       url: "/program",
       items: [
-        { title: t("gaudiYear"), url: "/program/gaudi-year-2026", description: "...", icon: <ArrowRight /> },
-        { title: t("mainTopics"), url: "/program/topics", description: "...", icon: <ArrowRight /> },
-        { title: t("program"), url: "/program/program", description: "...", icon: <ArrowRight /> },
-        { title: t("workshops"), url: "/program/workshops", description: "...", icon: <ArrowRight /> },
+        {
+          title: t("gaudiYear"),
+          url: "/program/gaudi-year-2026",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: t("mainTopics"),
+          url: "/program/topics",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: t("program"),
+          url: "/program/program",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: t("workshops"),
+          url: "/program/workshops",
+          description: "...",
+          icon: <ArrowRight />,
+        },
         {
           title: t("technicalVisits"),
           url: "/program/technical-visits",
           description: "...",
           icon: <ArrowRight />,
         },
-        { title: t("wginAwards"), url: "/program/wgin-awards", description: "...", icon: <ArrowRight /> },
         {
-          title: t("keyNoteSpeakers"),
-          url: "/program/key-note-speakers",
+          title: t("wginAwards"),
+          url: "/program/wgin-awards",
           description: "...",
           icon: <ArrowRight />,
         },
+
       ],
     },
     { title: t("newsletters"), url: "/newsletters" },
-    { title: t("speakers"), url: "/speakers" },
-    { title: t("registration"), url: "/registration", disabled: true },
+    { title: t("keyNoteSpeakers"), url: "/key-note-speakers" },
+    // { title: t("speakers"), url: "/speakers" },
+    // { title: t("registration"), url: "/registration", disabled: true },
     { title: t("partnersExhibitors"), url: "/exhibitors" },
     { title: t("planYourStay"), url: "/plan-your-stay" },
-    { title: t("travel"), url: "/travel" },
+
+    // { title: t("travel"), url: "/travel" },
   ];
 
   return (
@@ -244,24 +285,44 @@ const Navigation = () => {
           </Link>
           <div className="flex gap-1 sm:gap-1.5">
             <div className="flex gap-1 sm:gap-2">
-              <Button asChild variant="yellow" size="lg" className="hidden sm:flex">
+              <Button
+                asChild
+                variant="yellow"
+                size="lg"
+                className="hidden sm:flex"
+              >
                 <a href="/speakers">
                   <FileUp size={24} />
                   {t("papersProjects")}
                 </a>
               </Button>
-              <Button asChild className="sm:hidden" variant="yellow" size="icon">
+              <Button
+                asChild
+                className="sm:hidden"
+                variant="yellow"
+                size="icon"
+              >
                 <a href="/speakers">
                   <FileUp size={24} />
                 </a>
               </Button>
-              <Button asChild variant="default" size="lg" className="hidden sm:flex">
+              <Button
+                asChild
+                variant="default"
+                size="lg"
+                className="hidden sm:flex"
+              >
                 <a href="/registration">
                   <Ticket size={24} />
                   {t("tickets")}
                 </a>
               </Button>
-              <Button asChild className="sm:hidden" variant="default" size="icon">
+              <Button
+                asChild
+                className="sm:hidden"
+                variant="default"
+                size="icon"
+              >
                 <a href="/registration">
                   <Ticket size={24} />
                 </a>
@@ -274,10 +335,17 @@ const Navigation = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent className="overflow-y-auto bg-cactus/50 backdrop-blur-xl rounded-3xl text-white border-1 border-white/8 m-6 pt-32 pb-16 px-10 sm:px-20 md:px-40 w-[calc(100%-24px*2)] h-[calc(100%-24px*2)] sm:max-w-full">
-                <SheetTitle className="sr-only">{t("mobileMenuTitle")}</SheetTitle>
-                <SheetDescription className="sr-only">{t("mobileMenuDescription")}</SheetDescription>
+                <SheetTitle className="sr-only">
+                  {t("mobileMenuTitle")}
+                </SheetTitle>
+                <SheetDescription className="sr-only">
+                  {t("mobileMenuDescription")}
+                </SheetDescription>
                 <div className="flex flex-col gap-6 justify-between h-full">
-                  <Accordion type="multiple" className="flex w-full flex-col gap-6 text-regular">
+                  <Accordion
+                    type="multiple"
+                    className="flex w-full flex-col gap-6 text-regular"
+                  >
                     {menu.map((item) => renderMobileMenuItem(item))}
                   </Accordion>
                   <div className="flex flex-col gap-3 items-center pb-12">

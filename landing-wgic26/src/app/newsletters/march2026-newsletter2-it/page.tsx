@@ -1,12 +1,12 @@
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
 
-const March2026Newsletter2EnglishNewsletter = () => {
+const March2026Newsletter2ItalianNewsletter = () => {
   return (
     <div>
       <PageHeader
-        title="WGIC26 Newsletter - March 2026"
-        description="Updates on Health & Well-being track, new speaker, and extended deadline"
+        title="WGIC26 Newsletter - Marzo 2026"
+        description="Aggiornamenti sulla sezione Salute & Benessere, nuovo relatore e proroga della scadenza"
         section="newsletters"
       />
 
@@ -14,63 +14,65 @@ const March2026Newsletter2EnglishNewsletter = () => {
         <div className="max-w-4xl mx-auto space-y-8 text-white/80">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-2">
-              March 2026 Newsletter
+              Newsletter di Marzo 2026
             </h2>
           </div>
 
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
-              The 12th{" "}
+              Il 12°{" "}
               <a
                 href="https://www.wgic26.barcelona/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-potus"
               >
-                World Congress on Green Infrastructure{" "}
+                Congresso Mondiale sull&apos;Infrastruttura Verde{" "}
               </a>
-              will be held in Barcelona and Lleida (Catalonia, Spain) from 27–30
-              October 2026.
+              si terrà a Barcellona e Lleida (Catalogna, Spagna) dal 27 al 30
+              ottobre 2026.
             </p>
           </div>
 
           <div className="space-y-6 pt-8 border-t border-white/10">
             <h3 className="text-2xl font-bold text-white mb-2">
-              Health & Well-being: a core theme of WGIC26
+              Salute e Benessere: un tema centrale del WGIC26
             </h3>
             <p className="text-lg leading-relaxed">
-              How can we better assess the impact of biophilic design on human
-              health and well-being?
+              Come possiamo valutare meglio l&apos;impatto del design biofilico sulla
+              salute e sul benessere umano?
             </p>
             <p className="text-lg leading-relaxed">
-              What role can initiatives such as Green Social Prescribing play in
-              shaping healthier cities?
+              Quale ruolo possono svolgere iniziative come la Prescrizione
+              Sociale Verde nella creazione di città più sane?
             </p>
             <p className="text-lg leading-relaxed">
-              These are some of the key questions driving one of the three main
-              thematic tracks of WGIC26 Barcelona – Lleida.
+              Queste sono alcune delle domande chiave che guidano una delle tre
+              principali linee tematiche del WGIC26 Barcellona – Lleida.
             </p>
             <p className="text-lg leading-relaxed">
-              The World Green Infrastructure Network (WGIN) has long promoted
-              the integration of green infrastructure in urban environments,
-              benefiting both people and the planet. Yet today, a clear
-              challenge remains: strengthening the connection between urban
-              nature and human health.
+              La Rete Mondiale di Infrastruttura Verde (WGIN) promuove da tempo
+              l&apos;integrazione dell&apos;infrastruttura verde negli ambienti urbani,
+              beneficiando sia le persone che il pianeta. Tuttavia, oggi esiste
+              ancora una chiara sfida: rafforzare il legame tra la natura urbana
+              e la salute umana.
             </p>
             <p className="text-lg leading-relaxed">
-              At WGIC26, this topic will be explored through a dedicated track on
-              Health & Well-being, inspired by the latest WHO report “Nature-based
-              solutions and health” (May 2025).
+              Al WGIC26, questo tema sarà esplorato attraverso una linea
+              dedicata alla Salute e al Benessere, ispirata all&apos;ultimo rapporto
+              dell&apos;OMS &quot;Soluzioni basate sulla natura e salute&quot; (maggio 2025).
             </p>
             <p className="text-lg leading-relaxed">
-              This track will focus on the practical integration of nature-based
-              solutions into health frameworks, public policies, and urban
-              planning strategies, fostering stronger collaboration between the
-              green infrastructure and health sectors.
+              Questa linea si concentrerà sull&apos;integrazione pratica delle
+              soluzioni basate sulla natura nei quadri di salute, politiche
+              pubbliche e strategie di pianificazione urbana, promuovendo una
+              collaborazione più forte tra i settori dell&apos;infrastruttura verde e
+              della salute.
             </p>
             <p className="text-lg leading-relaxed">
-              The goal is to advance research, inform policy, and reinforce the
-              role of urban nature in improving quality of life.
+              L&apos;obiettivo è avanzare nella ricerca, informare le politiche e
+              rafforzare il ruolo della natura urbana nel miglioramento della
+              qualità della vita.
             </p>
             <p className="text-lg leading-relaxed">
               <a
@@ -79,88 +81,89 @@ const March2026Newsletter2EnglishNewsletter = () => {
                 rel="noopener noreferrer"
                 className="text-potus"
               >
-                Explore the full WGIC26 programme.
+                Esplora il programma completo del WGIC26.
               </a>
             </p>
           </div>
 
           <div className="space-y-6 pt-8 border-t border-white/10">
             <h3 className="text-2xl font-semibold text-white mb-6">
-              New confirmed speaker
+              Nuovo relatore confermato
             </h3>
             <div className="bg-cactus/10 p-6 rounded-lg border border-white/5 hover:bg-cactus/20 transition-colors">
               <h4 className="text-lg font-bold text-potus mb-2">
-
-                  Wendy Y. Chen
-                
+                Wendy Y. Chen
               </h4>
               <p className="text-sm text-white/70">
-                Professor at HKU in green-blue infrastructure.
+                Professoressa presso l&apos;HKU in infrastruttura verde-blu.
               </p>
               <p className="mt-4 text-sm text-white/70">
-                Professor Wendy Y. Chen specialises in urban green-blue
-                infrastructure, with a strong focus on evaluating and modelling
-                its impact on urban sustainability and quality of life.
+                La professoressa Wendy Y. Chen si specializza in infrastruttura
+                urbana verde-blu, con un forte focus sulla valutazione e
+                modellazione del suo impatto sulla sostenibilità urbana e sulla
+                qualità della vita.
               </p>
               <p className="mt-4 text-sm text-white/70">
-                Her research addresses key challenges in understanding how
-                green-blue spaces are designed, transformed, and integrated into
-                urban systems, combining environmental, economic, and social
-                perspectives.
+                La sua ricerca affronta sfide chiave nella comprensione di come
+                gli spazi verde-blu vengano progettati, trasformati e integrati
+                nei sistemi urbani, combinando prospettive ambientali,
+                economiche e sociali.
               </p>
               <p className="mt-4 text-sm text-white/70">
-                Through her work, she contributes to advancing the quantitative
-                assessment of nature-based solutions, helping to inform more
-                effective urban planning and policy-making.
+                Attraverso il suo lavoro, contribuisce ad avanzare nella
+                valutazione quantitativa delle soluzioni basate sulla natura,
+                aiutando a informare una pianificazione urbana e una
+                formulazione di politiche più efficaci.
               </p>
               <p className="mt-4 text-sm text-white/70">
-                At WGIC26, she will bring valuable insights to the dialogue on
-                green infrastructure and nature-based solutions.
+                Al WGIC26, porterà preziose conoscenze al dialogo su
+                infrastruttura verde e soluzioni basate sulla natura.
               </p>
             </div>
           </div>
 
           <div className="space-y-6 pt-8 border-t border-white/10">
             <h3 className="text-2xl font-semibold text-white">
-              Submission deadline extended
+              Scadenza per la presentazione prorogata
             </h3>
             <div className="bg-gradient-to-br from-cactus/20 to-monstera/20 p-6 rounded-lg border border-white/10">
               <ul className="space-y-3 text-sm">
                 <li className="flex justify-between items-start">
-                  <span className="text-white/60">Previous deadline:</span>
+                  <span className="text-white/60">Scadenza precedente:</span>
                   <span className="font-semibold text-white">
-                    15 March 2026
+                    15 marzo 2026
                   </span>
                 </li>
                 <li className="flex justify-between items-start">
-                  <span className="text-potus font-bold">New deadline:</span>
-                  <span className="font-bold text-potus">30 April 2026</span>
+                  <span className="text-potus font-bold">Nuova scadenza:</span>
+                  <span className="font-bold text-potus">30 aprile 2026</span>
                 </li>
               </ul>
             </div>
             <p className="text-lg leading-relaxed">
-              We are pleased to announce that the Call for Papers & Projects
-              deadline has been extended.
+              Siamo lieti di annunciare che la scadenza per la presentazione di
+              lavori e progetti è stata prorogata.
             </p>
             <p className="text-lg leading-relaxed">
-              Researchers, practitioners, designers, and policymakers now have
-              additional time to submit their work.
+              Ricercatori, professionisti, designer e responsabili politici ora
+              hanno tempo aggiuntivo per inviare il proprio lavoro.
             </p>
             <p className="text-lg leading-relaxed">
-              WGIC26 welcomes original research, case studies, and innovative
-              applications in green infrastructure and nature-based solutions.
-              Submissions must be presented in short paper format (maximum 5
-              pages, MS Word).
+              Il WGIC26 accoglie ricerche originali, casi studio e applicazioni
+              innovative in infrastruttura verde e soluzioni basate sulla
+              natura. Le presentazioni devono essere effettuate in formato di
+              articolo breve (massimo 5 pagine, MS Word).
             </p>
             <p className="text-lg leading-relaxed">
-              All submitted papers will undergo a rigorous peer-review process,
-              led by the Scientific Committee, which will determine acceptance
-              and presentation format (oral or poster).
+              Tutti i lavori presentati passeranno attraverso un rigoroso
+              processo di revisione tra pari, guidato dal Comitato Scientifico,
+              che determinerà l&apos;accettazione e il formato di presentazione
+              (orale o poster).
             </p>
             <p className="text-lg leading-relaxed">
-              Accepted contributions will be published in the official WGIC26
-              proceedings, offering international visibility within the global
-              green infrastructure community.
+              Le contribuzioni accettate saranno pubblicate negli atti ufficiali
+              del WGIC26, offrendo visibilità internazionale all&apos;interno della
+              comunità globale di infrastruttura verde.
             </p>
             <p className="text-lg leading-relaxed">
               <a
@@ -169,18 +172,19 @@ const March2026Newsletter2EnglishNewsletter = () => {
                 rel="noopener noreferrer"
                 className="text-potus"
               >
-                Learn how to properly submit your paper or project for WGIC26.
+                Scopri come inviare correttamente il tuo lavoro o progetto per il
+                WGIC26.
               </a>
             </p>
           </div>
 
           <div className="space-y-6 pt-8 border-t border-white/10">
             <h3 className="text-2xl font-semibold text-white">
-              Stay connected with WGIC26
+              Rimani connesso con il WGIC26
             </h3>
-            <p>Our official channels are now live.</p>
+            <p>I nostri canali ufficiali sono già attivi.</p>
             <p>
-              Follow WGIC26 on{" "}
+              Segui il WGIC26 su{" "}
               <a
                 href="https://www.linkedin.com/company/wgic"
                 target="_blank"
@@ -207,7 +211,7 @@ const March2026Newsletter2EnglishNewsletter = () => {
               >
                 Facebook
               </a>
-              , and{" "}
+              , e{" "}
               <a
                 href="https://x.com/WGIC2026"
                 target="_blank"
@@ -216,12 +220,14 @@ const March2026Newsletter2EnglishNewsletter = () => {
               >
                 Twitter
               </a>{" "}
-              to stay up to date with the latest announcements, speakers,
-              programme updates, and key milestones leading up to the congress.
+              per rimanere aggiornato con gli ultimi annunci, relatori,
+              aggiornamenti del programma e traguardi chiave che portano al
+              congresso.
             </p>
             <p>
-              Join the conversation and be part of the global community shaping
-              the future of green infrastructure and nature-based solutions.
+              Unisciti alla conversazione e fai parte della comunità globale che
+              sta plasmando il futuro dell&apos;infrastruttura verde e delle
+              soluzioni basate sulla natura.
             </p>
           </div>
 
@@ -230,13 +236,13 @@ const March2026Newsletter2EnglishNewsletter = () => {
               href="https://www.wgic26.barcelona/exhibitors"
               className="inline-block border border-white/20 text-white px-6 py-3 rounded-lg hover:bg-white/5 transition"
             >
-              Be our sponsor
+              Diventa nostro sponsor
             </a>
             <Link
               href="https://wgic26.barcelona/#newsletter"
               className="inline-block bg-potus text-black font-semibold px-6 py-3 rounded-lg hover:opacity-95 transition"
             >
-              Subscribe to newsletter
+              Iscriviti alla newsletter
             </Link>
           </div>
         </div>
@@ -245,6 +251,4 @@ const March2026Newsletter2EnglishNewsletter = () => {
   );
 };
 
-export default March2026Newsletter2EnglishNewsletter;
-
-
+export default March2026Newsletter2ItalianNewsletter;
