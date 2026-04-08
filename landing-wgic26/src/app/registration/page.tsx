@@ -5,28 +5,7 @@ import { getTranslations } from "next-intl/server";
 const Registration = async () => {
   const t = await getTranslations("registrationPage");
 
-  const keyDates = [
-    { milestone: t("keyDates.abstracts"), date: t("dateValues.abstracts") },
-    { milestone: t("keyDates.acceptance"), date: t("dateValues.acceptance") },
-    { milestone: t("keyDates.firstDraft"), date: t("dateValues.firstDraft") },
-    { milestone: t("keyDates.revision"), date: t("dateValues.revision") },
-    { milestone: t("keyDates.finalPaper"), date: t("dateValues.finalPaper") },
-    {
-      milestone: t("keyDates.finalProgram"),
-      date: t("dateValues.finalProgram"),
-    },
-    {
-      milestone: t("keyDates.earlyBird"),
-      date: t("dateValues.earlyBird"),
-      highlight: true,
-    },
-    {
-      milestone: t("keyDates.registrationOpen"),
-      date: t("dateValues.registrationOpen"),
-    },
-    { milestone: t("keyDates.partners"), date: t("dateValues.partners") },
-    { milestone: t("keyDates.sponsors"), date: t("dateValues.sponsors") },
-  ];
+
 
   const fees = [
     {
