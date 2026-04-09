@@ -86,7 +86,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="lg:pt-24">
+      <section className="lg:pt-24 lg:flex-row lg:items-start lg:justify-between">
         <div className="uppercase text-3xl sm:text-4xl pr-8 md:text-5xl w-full lg:text-5xl lg:w-3/5 xl:text-6xl leading-tight tracking-tight">
           {t("heroTitle")}
         </div>

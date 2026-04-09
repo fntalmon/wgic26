@@ -195,11 +195,11 @@ const Newsletters = () => {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-3">
+                  <div className="flex flex-col sm:flex-row gap-3 items-stretch">
                     {showReadOnline && (
                       <Link
                         href={`/newsletters/${selectedLang.slug}`}
-                        className="flex-1 bg-cactus hover:bg-cactus/80 text-white py-2 px-4 rounded transition-colors font-medium inline-flex items-center justify-center"
+                        className="flex-1 bg-cactus hover:bg-cactus/80 text-white py-2 px-4 rounded transition-colors font-medium inline-flex items-center justify-center min-h-[56px] whitespace-nowrap text-base"
                       >
                         {t("readOnline")}
                       </Link>
@@ -209,10 +209,10 @@ const Newsletters = () => {
                       <a
                         href={selectedLang.pdfUrl}
                         download
-                        className={`bg-white/10 hover:bg-white/20 text-white text-center py-2 px-4 rounded transition-colors flex items-center justify-center gap-2 font-medium ${showReadOnline ? "flex-1" : "w-full"}`}
+                        className={`bg-white/10 hover:bg-white/20 text-white py-2 px-4 rounded transition-colors inline-flex items-center justify-center gap-2 font-medium min-h-[56px] whitespace-nowrap text-base ${showReadOnline ? "flex-1" : "w-full"}`}
                       >
                         <DownloadIcon />
-                        {t("downloadPdf")}
+                        <span className="whitespace-nowrap">{t("downloadPdf")}</span>
                       </a>
                     )}
                   </div>
