@@ -58,7 +58,7 @@ const Topics = async () => {
                             <Table className="w-full border-collapse border border-white/10">
                                 <TableHeader className="bg-monstera/30 border-b border-white/20">
                                     <TableRow className="border-white/10 hover:bg-transparent">
-                                        <TableHead className="w-[80px] text-white font-bold">#</TableHead>
+                                        <TableHead className="w-[50px] md:w-[80px] text-white font-bold">#</TableHead>
                                         <TableHead className="text-white font-bold">{t("topicCategory")}</TableHead>
                                     </TableRow>
                                 </TableHeader>

@@ -199,7 +199,7 @@ const Newsletters = () => {
                     {showReadOnline && (
                       <Link
                         href={`/newsletters/${selectedLang.slug}`}
-                        className="flex-1 bg-cactus hover:bg-cactus/80 text-white text-center py-2 px-4 rounded transition-colors font-medium"
+                        className="flex-1 bg-cactus hover:bg-cactus/80 text-white py-2 px-4 rounded transition-colors font-medium inline-flex items-center justify-center"
                       >
                         {t("readOnline")}
                       </Link>

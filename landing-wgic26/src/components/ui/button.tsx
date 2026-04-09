@@ -50,7 +50,7 @@ function Button({
   return (
     <div
       className={cn(
-        "relative group inline-block transition-transform duration-500 self-center origin-bottom-right",
+        "relative group inline-block transition-transform duration-500 self-center origin-bottom-right mb-2",
         "hover:-translate-x-1 hover:-translate-y-1 hover:origin-bottom-right",
         "active:translate-x-1 active:translate-y-1 hover:origin-bottom-right"
       )}

@@ -13,7 +13,7 @@ const Travel = async () => {
                 section=""
             />
             <section className="w-full justify-start text-xs">
-                <div className="flex w-full flex-col items-center gap-6 p-16 border-1 border-potus/40">
+                <div className="flex w-full flex-col items-center gap-6 p-6 md:p-12 lg:p-16 border-1 border-potus/40">
                     <HardHat size={72} className="text-potus" />
                     <div className="text-2xl uppercase">{t("comingSoon")}</div>
                     <div className="text-potus">{t("contactEmail")}</div>

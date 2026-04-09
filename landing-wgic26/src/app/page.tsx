@@ -87,7 +87,7 @@ export default function Home() {
   return (
     <div>
       <section className="lg:pt-24">
-        <div className="uppercase text-3xl xs:text-4xl pr-8 sm:text-5xl w-full md:text-6xl lg:text-5xl lg:w-3/5 xl:text-6xl leading-tight tracking-tight">
+        <div className="uppercase text-3xl sm:text-4xl pr-8 md:text-5xl w-full lg:text-5xl lg:w-3/5 xl:text-6xl leading-tight tracking-tight">
           {t("heroTitle")}
         </div>
         <div className="flex flex-col h-auto content-between gap-8 w-full lg:w-2/5">
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col gap-0">
-        <div className="bg-[url(/img/Tibidabo3.jpg)] bg-no-repeat bg-cover bg-center w-full h-[700px]"></div>
+        <div className="bg-[url(/img/Tibidabo3.jpg)] bg-no-repeat bg-cover bg-center w-full h-[400px] md:h-[550px] lg:h-[700px]"></div>
         <Countdown />
         <div
           id="banner"
@@ -182,10 +182,10 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row gap-8">
           <div
             id="location-barcelona"
-            className="flex flex-col bg-cactus text-white uppercase text-4xl gap-0 lg:aspect-auto flex-1"
+            className="flex flex-col bg-cactus text-white uppercase text-2xl sm:text-3xl lg:text-4xl gap-0 lg:aspect-auto flex-1"
           >
             <div className="bg-[url(/img/ccib.jpg)] bg-no-repeat bg-cover bg-center w-full h-[320px]"></div>
-            <div className="flex flex-col gap-2 px-10 pt-10">
+            <div className="flex flex-col gap-2 px-6 pt-6 sm:px-10 sm:pt-10">
               <div className="text-xs text-white/70 mb-2">
                 {t("mainActivities")}
               </div>
@@ -207,10 +207,10 @@ export default function Home() {
 
           <div
             id="location-lleida"
-            className="flex flex-col bg-sansiviera text-white uppercase text-4xl gap-0 lg:aspect-auto flex-1"
+            className="flex flex-col bg-sansiviera text-white uppercase text-2xl sm:text-3xl lg:text-4xl gap-0 lg:aspect-auto flex-1"
           >
             <div className="bg-[url(/img/univ_lleida.jpg)] bg-no-repeat bg-cover bg-center w-full h-[320px]"></div>
-            <div className="flex flex-col gap-2 px-10 pt-10">
+            <div className="flex flex-col gap-2 px-6 pt-6 sm:px-10 sm:pt-10">
               <div className="text-xs text-white/70 mb-2">
                 {t("mainActivities")}
               </div>
@@ -490,9 +490,9 @@ export default function Home() {
       </section>
 
       <section id="newsletter" className="flex flex-col lg:flex-row gap-0">
-        <div className="bg-[url(/img/image.png)] bg-no-repeat bg-cover bg-center w-full xl:w-1/3"></div>
+        <div className="bg-[url(/img/image.png)] bg-no-repeat bg-cover bg-center w-full min-h-[200px] lg:min-h-0 xl:w-1/3"></div>
 
-        <div className="flex flex-col gap-20 bg-cement text-mortar w-full p-10 lg:p-18  justify-between items-end">
+        <div className="flex flex-col gap-10 lg:gap-20 bg-cement text-mortar w-full p-6 sm:p-10 lg:p-18  justify-between items-end">
           <div className="flex flex-col gap-8 w-full">
             <div className="flex flex-col gap-8 uppercase text-3xl md:text-4xl">
               <div>{t("newsletterTitle")}</div>
@@ -500,7 +500,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex flex-col xl:flex-row w-full items-center gap-20 lg:justify-between">
+          <div className="flex flex-col xl:flex-row w-full items-center gap-10 lg:gap-20 lg:justify-between">
             <form
               className="flex flex-col xl:flex-row gap-8 w-full 2xl:w-1/2 xl:w-2/3"
               onSubmit={handleNewsletterSubmit}

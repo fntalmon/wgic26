@@ -177,7 +177,7 @@ const Speakers = async () => {
             </div>
 
             <div className="mt-6">
-              <div role="region" aria-label={t("regionAriaLabel")} className="rounded-md bg-white/5 border border-white/10 p-4 flex items-center justify-between gap-4">
+              <div role="region" aria-label={t("regionAriaLabel")} className="rounded-md bg-white/5 border border-white/10 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div className="flex items-start gap-4">
                   <FileText size={20} className="text-white/80 mt-0.5" />
                   <div>

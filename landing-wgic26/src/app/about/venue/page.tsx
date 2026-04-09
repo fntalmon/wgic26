@@ -16,7 +16,7 @@ const Venue = async () => {
             <section className="w-full flex flex-col justify-start text-base">
                 <div className="flex flex-col gap-0 text-white/80">
                     <div className="flex flex-col lg:flex-row">
-                        <div className="uppercase text-6xl bg-sansiviera p-16 leading-snug flex justify-center text-white">{t("barcelonaLabel1")}<br />{t("barcelonaLabel2")}<br />{t("barcelonaLabel3")}</div>
+                        <div className="uppercase text-3xl md:text-5xl lg:text-6xl bg-sansiviera p-6 md:p-10 lg:p-16 leading-snug flex justify-center text-white">{t("barcelonaLabel1")}<br />{t("barcelonaLabel2")}<br />{t("barcelonaLabel3")}</div>
                         <div className="flex flex-col gap-8 p-8 lg:p-12">
                             <div className="leading-loose text-base text-justify">
                                 {t("barcelonaP1")}
@@ -50,7 +50,7 @@ const Venue = async () => {
                                 {t("ccibP3")}
                             </div>
                         </div>
-                        <div className="uppercase text-6xl bg-black/70 p-16 leading-snug flex justify-center text-white">CCIB</div>
+                        <div className="uppercase text-3xl md:text-5xl lg:text-6xl bg-black/70 p-6 md:p-10 lg:p-16 leading-snug flex justify-center text-white">CCIB</div>
                     </div>
                     <Image
                         src="/img/ccib.jpg"

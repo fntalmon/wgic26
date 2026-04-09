@@ -114,7 +114,7 @@ const Workshops = async () => {
                     </div>
 
                     {/* Coming Soon Section */}
-                    <div className="flex w-full flex-col items-center gap-6 p-16 border border-potus/40 rounded-lg">
+                    <div className="flex w-full flex-col items-center gap-6 p-6 md:p-12 lg:p-16 border border-potus/40 rounded-lg">
                         <HardHat size={72} className="text-potus" />
                         <div className="text-2xl uppercase text-white text-center">{t("comingSoonTitle")}</div>
                         <p className="text-white/60 text-center max-w-xl">

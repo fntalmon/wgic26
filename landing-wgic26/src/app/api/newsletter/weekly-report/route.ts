@@ -240,18 +240,26 @@ function getEmailTransport() {
 }
 
 function getFromEmail(enforcedFrom?: string): string {
-  if (enforcedFrom) {
-    return enforcedFrom;
-  }
-
-  return (
+  const fromEmail =
+    enforcedFrom ||
     process.env.NEWSLETTER_WEEKLY_REPORT_FROM ||
     process.env.WEEKLY_REPORT_FROM ||
     process.env.GMAIL_USER ||
     process.env.ZOHO_USER ||
     process.env.SMTP_USER ||
-    'noreply@wgic26.barcelona'
-  );
+    'noreply@wgic26.barcelona';
+
+  const fromName =
+    process.env.NEWSLETTER_WEEKLY_REPORT_FROM_NAME ||
+    process.env.WEEKLY_REPORT_FROM_NAME ||
+    '';
+
+  const trimmedName = fromName.trim();
+  if (!trimmedName) {
+    return fromEmail;
+  }
+
+  return `${trimmedName} <${fromEmail}>`;
 }
 
 function buildWeeklyRows(weekly: Array<{ displayWeek: string; count: number }>): string {

@@ -39,7 +39,7 @@ const Countdown = () => {
             id="countdown"
             className="flex text-4xl bg-cactus text-white w-full h-auto py-24 md:py-32 justify-center"
         >
-            <div className="flex flex-col md:flex-row gap-12 items-start md:items-center md:justify-center">
+            <div className="flex flex-col md:flex-row gap-12 items-center md:justify-center">
                 <div className="text-sm text-cement">{t("startingIn")}</div>
                 <div className="flex gap-2">
                     {timeLeft.days}
