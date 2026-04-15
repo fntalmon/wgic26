@@ -206,6 +206,12 @@ const Navigation = () => {
           icon: <ArrowRight />,
         },
         {
+          title: t("specialIssues"),
+          url: "/program/special-issues",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
           title: t("workshops"),
           url: "/program/workshops",
           description: "...",
@@ -223,7 +229,6 @@ const Navigation = () => {
           description: "...",
           icon: <ArrowRight />,
         },
-
       ],
     },
     { title: t("newsletters"), url: "/newsletters" },

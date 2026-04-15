@@ -40,7 +40,7 @@ const Footer = async () => {
               <div className="uppercase text-xs text-white/40">{t("contact")}</div>
               <div className="flex flex-col gap-6 text-xs">
                 <a
-                  href="https://www.linkedin.com/company/wgic/"
+                  href="https://www.linkedin.com/company/wgic26"
                   className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus"
                 >
                   Linkedin

@@ -8,6 +8,7 @@
     "organisationCommittee": "Organisation committee",
     "congressCommittee": "Congress committee",
     "program": "Program",
+    "specialIssues": "Special Issues",
     "gaudiYear": "Gaudi Year 2026",
     "mainTopics": "Main Topics",
     "workshops": "Workshops",
@@ -294,6 +295,7 @@
     "calloutTitle": "Submit your paper or project before April 30, 2026",
     "calloutP1": "Thank you for your interest in participating in the World Green Infrastructure Congress 2026 Barcelona - Lleida (WGIC 2026). To submit a paper, access and complete the data in the submission application at the link below.",
     "calloutP2": "The 12th World Green Infrastructure Congress will be held in Barcelona, at the International Convention Centre of Barcelona, from October 27 to 30, 2026. WGIC 2026 welcomes original research, case studies, and innovative applications in short paper format (maximum 5 pages), in MS Word format.",
+    "calloutP3": "The best papers presented at WGIC26 will be fast-tracked for Special Issues in three leading peer-reviewed journals: Urban Forestry and Urban Greening (Elsevier), Nature-Based Solutions (Elsevier), and the Journal of Living Architecture (Green Roofs for Healthy Cities –GRHC).",
     "submissionButton": "Go to submission form",
     "templateButton": "Download paper template",
     "bodyP1": "WGIC26 warmly welcomes submissions of original research, case studies, and innovative applications, in short paper format (maximum 5 pages), in MS Word format. This limitation helps reduce similarity for papers subsequently recommended for special journal issues.",
@@ -384,6 +386,34 @@
     "downloadPdf": "download pdf",
     "p1": "The agenda will be progressively updated with keynote sessions, thematic blocks, and networking activities.",
     "p2": "A downloadable PDF version will be published when the final schedule is confirmed."
+  },
+  "programSpecialIssuesPage": {
+    "title": "Special Issues",
+    "description": "Selected congress contributions will be considered for publication in high-impact journals.",
+    "intro": "The most outstanding communications from the congress will be redirected to special issues in high-impact journals, where they will be treated according to the criteria and requirements of each journal.",
+    "journalLink": "Visit journal website",
+    "specialIssueLink": "Visit special issue",
+    "journals": {
+      "urban": {
+        "name": "Urban Forestry and Urban Greening",
+        "publisher": "Elsevier",
+        "imageAlt": "Urban green infrastructure and forestry",
+        "about": "Urban Forestry and Urban Greening is a refereed, international journal aimed at presenting high-quality research with urban and peri-urban woody and non-woody vegetation and its use, planning, design, establishment, and management as its main topics. It concentrates on tree-dominated systems and other green resources in and around urban areas, such as woodlands, public and private parks and gardens, urban nature areas, street trees, botanical gardens, cemeteries, and building envelope greening.",
+        "specialIssueTitle": "Special Issue: Green Infrastructure for Health, Global Equity, and Urban Recovery - Contributions from the 12th World Green Infrastructure Congress (WGIC26)"
+      },
+      "nbs": {
+        "name": "Nature-Based Solutions",
+        "publisher": "Elsevier",
+        "imageAlt": "Nature-based solutions in urban contexts",
+        "about": "Nature-Based Solutions is dedicated to research that broadens and deepens scientific knowledge on NBS and advances its adoption, synthesis, and application to address critical societal challenges at multiple scales. NBS use nature and ecological processes to strengthen a system's capacity to deal with multiple and interconnected challenges, promoting a holistic approach to climate adaptation and resilience with social, environmental, and economic balance."
+      },
+      "jliv": {
+        "name": "Journal of Living Architecture",
+        "publisher": "Green Infrastructure Foundation",
+        "imageAlt": "Living architecture journal publication",
+        "about": "The Journal of Living Architecture (JLIV) is the peer-reviewed journal of the Green Infrastructure Foundation, affiliated with Green Roofs for Healthy Cities in the United States and Canada. JLIV is written, reviewed, and edited by living architecture professionals and shares successful educational applications, original research findings, scholarly perspectives, educational resources, and current challenges. Its mission is to expand and update the research and knowledge base for living architecture and related professionals."
+      }
+    }
   },
   "gaudiYearPage": {
     "title": "Gaudi Year 2026",

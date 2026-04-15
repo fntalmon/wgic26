@@ -13,6 +13,18 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/storage/v1/object/public/**",
       },
+      {
+        protocol: "https",
+        hostname: "ars.els-cdn.com",
+        port: "",
+        pathname: "/content/image/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.squarespace-cdn.com",
+        port: "",
+        pathname: "/content/**",
+      },
     ],
   },
   async headers() {

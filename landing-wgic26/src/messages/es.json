@@ -8,6 +8,7 @@
     "organisationCommittee": "Comite organizador",
     "congressCommittee": "Comite cientifico",
     "program": "Programa",
+    "specialIssues": "Ediciones especiales",
     "gaudiYear": "Año Gaudi 2026",
     "mainTopics": "Temas principales",
     "workshops": "Talleres",
@@ -294,7 +295,9 @@
     "calloutTitle": "Envia tu articulo o proyecto antes del 30 de abril de 2026",
     "calloutP1": "Gracias por tu interes en participar en el World Green Infrastructure Congress 2026 Barcelona - Lleida (WGIC 2026). Para enviar un articulo, accede y completa los datos en la aplicacion de envio en el enlace inferior.",
     "calloutP2": "El 12o World Green Infrastructure Congress se celebrara en Barcelona, en el Centro de Convenciones Internacional de Barcelona, del 27 al 30 de octubre de 2026. WGIC 2026 recibe investigaciones originales, estudios de caso y aplicaciones innovadoras en formato de articulo corto (maximo 5 paginas), en formato MS Word.",
-    "submissionButton": "Ir al formulario de envio",
+   
+     "calloutP3": "The best papers presented at WGIC26 will be fast-tracked for Special Issues in three leading peer-reviewed journals: Urban Forestry and Urban Greening (Elsevier), Nature-Based Solutions (Elsevier), and the Journal of Living Architecture (Green Roofs for Healthy Cities –GRHC).",
+  "submissionButton": "Ir al formulario de envio",
     "templateButton": "Descargar plantilla de articulo",
     "bodyP1": "WGIC26 recibe con entusiasmo envios de investigacion original, estudios de caso y aplicaciones innovadoras, en formato de articulo corto (maximo 5 paginas), en formato MS Word. Esta limitacion ayuda a reducir similitud para articulos recomendados posteriormente para numeros especiales de revistas.",
     "bodyP2": "Todos los articulos enviados pasan por un proceso riguroso de revision por pares. El comite cientifico decide la aceptacion y si la presentacion sera oral o poster. Los articulos aceptados se publicaran en las actas del WGIC2026.",
@@ -384,6 +387,34 @@
     "downloadPdf": "descargar pdf",
     "p1": "La agenda se actualizara progresivamente con sesiones magistrales, bloques tematicos y actividades de networking.",
     "p2": "Se publicara una version descargable en PDF cuando el calendario final este confirmado."
+  },
+  "programSpecialIssuesPage": {
+    "title": "Ediciones especiales",
+    "description": "Las contribuciones mas destacadas del congreso podran ser consideradas para publicacion en revistas de alto impacto.",
+    "intro": "Las comunicaciones mas destacadas del congreso seran redirigidas a numeros especiales en revistas de alto impacto, donde seran tratadas segun los criterios y requisitos de cada revista.",
+    "journalLink": "Visitar web de la revista",
+    "specialIssueLink": "Visitar numero especial",
+    "journals": {
+      "urban": {
+        "name": "Urban Forestry and Urban Greening",
+        "publisher": "Elsevier",
+        "imageAlt": "Infraestructura verde urbana y arbolado",
+        "about": "Urban Forestry and Urban Greening es una revista internacional arbitrada orientada a publicar investigacion de alta calidad sobre vegetacion lenosa y no lenosa en entornos urbanos y periurbanos, asi como su uso, planificacion, diseno, implantacion y gestion. Se centra en sistemas dominados por arbolado y otros recursos verdes en y alrededor de las areas urbanas, como bosques, parques y jardines publicos y privados, areas naturales urbanas, arbolado viario, jardines botanicos, cementerios y reverdecimiento de envolventes de edificios.",
+        "specialIssueTitle": "Numero especial: Green Infrastructure for Health, Global Equity, and Urban Recovery - Contributions from the 12th World Green Infrastructure Congress (WGIC26)"
+      },
+      "nbs": {
+        "name": "Nature-Based Solutions",
+        "publisher": "Elsevier",
+        "imageAlt": "Soluciones basadas en la naturaleza en contexto urbano",
+        "about": "Nature-Based Solutions se dedica a investigaciones que amplian y profundizan el conocimiento cientifico sobre SBN y que impulsan su adopcion, sintesis y aplicacion para responder a desafios sociales criticos a multiples escalas. Las SBN utilizan la naturaleza y los procesos ecologicos para fortalecer la capacidad de un sistema frente a desafios multiples e interconectados, promoviendo un enfoque integral de adaptacion climatica y resiliencia con equilibrio social, ambiental y economico."
+      },
+      "jliv": {
+        "name": "Journal of Living Architecture",
+        "publisher": "Green Infrastructure Foundation",
+        "imageAlt": "Publicacion sobre arquitectura viva",
+        "about": "The Journal of Living Architecture (JLIV) es la revista revisada por pares de la Green Infrastructure Foundation, afiliada a Green Roofs for Healthy Cities en Estados Unidos y Canada. JLIV esta escrita, revisada y editada por profesionales de arquitectura viva, y comparte aplicaciones educativas exitosas, hallazgos de investigacion original, perspectivas academicas, recursos educativos y retos actuales. Su mision es ampliar y actualizar la base de conocimiento para profesionales de arquitectura viva y disciplinas afines."
+      }
+    }
   },
   "gaudiYearPage": {
     "title": "Año Gaudi 2026",
