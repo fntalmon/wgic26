@@ -669,7 +669,7 @@ const Exhibitors = () => {
                       <Send className="text-potus" size={32} />
                     </div>
                     <p className="text-white font-medium text-lg m-0">{t.cards.started}</p>
-                    <p className="text-white/60 text-base m-0">{t.cards.didNotStart} <a href="https://drive.google.com/uc?export=download&id=1w62XZagr7RhDoR4fhyT8vfnhga0CWnHR" target="_blank" className="text-potus underline">{t.cards.clickHere}</a>.</p>
+                    <p className="text-white/60 text-base m-0">{t.cards.didNotStart} <a href="https://drive.google.com/uc?export=download&id=15hLfdY-jNAy47zCE-RNAl132PxDU2_Q-" target="_blank" className="text-potus underline">{t.cards.clickHere}</a>.</p>
                   </div>
                 )}
               </div>
