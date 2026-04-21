@@ -243,7 +243,8 @@ const Exhibitors = () => {
       if (response.ok) {
         setDownloadStep("success");
         // Trigger the actual download
-        window.open("https://drive.google.com/uc?export=download&id=1w62XZagr7RhDoR4fhyT8vfnhga0CWnHR", "_blank");
+        window.open("https://drive.google.com/uc?export=download&id=15hLfdY-jNAy47zCE-RNAl132PxDU2_Q-", "_blank");
+        
       } else {
         throw new Error("Failed to process download");
       }
