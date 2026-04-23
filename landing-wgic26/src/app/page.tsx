@@ -476,6 +476,16 @@ export default function Home() {
                   />
                 </a>
 
+
+                  <Image
+                    src="/img/logos/arboretum.png"
+                    alt="Arboretum"
+                    width={300}
+                    height={220}
+                    className="h-14 w-auto object-contain"
+                  />
+             
+
                 <Image
                   src="/img/logos/pronaturlogo.jpg"
                   alt="Logo pronatur"

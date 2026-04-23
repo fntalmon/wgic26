@@ -200,7 +200,7 @@ const Registration = async () => {
                   </a>
                 </strong>
               </p>
-
+{/*
               <div className="mt-6 bg-white/5 border border-white/10 rounded-md p-4">
                 <h3 className="font-medium text-white mb-2">
                   {t("cancellationTitle")}
@@ -209,6 +209,7 @@ const Registration = async () => {
                   {t("cancellationBody")}
                 </p>
               </div>
+               */}
             </div>
           </div>
         </div>

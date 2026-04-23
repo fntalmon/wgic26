@@ -9,7 +9,8 @@
             "2. Room 2",
             "3. Room 3",
             "4. Room 4",
-            "5. Room 5"
+            "5. Room 5",
+            "6. Room 6"
         ],
         "events": [
             {
@@ -24,14 +25,14 @@
             },
             {
                 "time": "09:30-10:00",
-                "activity": "Duet Keynote 1: Impact of New European Bauhaus and Three-level Urban Planning",
-                "speakers": "Marcos Ros (EU Parliament) + Maria Buhigas (Barcelona Municipality)",
+                "activity": "Duet Keynote 1: Green Infrastructure Policies",
+                "speakers": "Marcos Ros - Benjamin Rolles - Luigi Petito",
                 "roomIndex": 0
             },
             {
                 "time": "10:00-10:30",
-                "activity": "Duet Keynote 2: From Gaudí to Barcelona 2026",
-                "speakers": "Alberto Estévez (UIC) + Vicente Guallart (IaaC)",
+                "activity": "Duet Keynote 2: Living Architecture Barcelona",
+                "speakers": "Alberto Estévez  - Enric Battle - Vicente Guallart ",
                 "roomIndex": 0
             },
             {
@@ -46,7 +47,7 @@
                 "sessions": [
                     {
                         "topic": "Strategies – Policies – Funding programs",
-                        "chair": "TBA"
+                        "chair": "Luigi Petito"
                     },
                     {
                         "topic": "Technologies – Market – GI/NBS sector – Standards",
@@ -60,8 +61,12 @@
                         "topic": "Execution – Maintenance – Quality",
                         "chair": "TBA"
                     },
+
                     {
-                        "topic": "Education - Training",
+                        "topic": "Impacts: k) Health and Well-being",
+                        "chair": "TBA"
+                    }  ,                  {
+                        "topic": "Workshop LIFE-New European Bauhaus",
                         "chair": "TBA"
                     }
                 ]
@@ -88,19 +93,23 @@
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Education - Training",
+                        "topic": "Impacts: k) Health and Well-being",
                         "chair": "TBA"
+                    },
+                    {
+                        "topic": "",
+                        "chair": ""
                     }
                 ]
             },
             {
                 "time": "13:00-14:30",
-                "activity": "Lunch break - Exhibition tour",
+                "activity": "Lunch break - Exhibition tour - Poster sessions",
                 "isFullWidth": true
             },
             {
                 "time": "14:30-15:30",
-                "activity": "Awards Ceremony - Selected Projects",
+                "activity": "WGIN - AWARDS Ceremony 1",
                 "isFullWidth": true
             },
             {
@@ -126,6 +135,10 @@
                     },
                     {
                         "topic": "Education - Training",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Workshop Health and Well-Being",
                         "chair": "TBA"
                     }
                 ]
@@ -154,13 +167,17 @@
                     {
                         "topic": "Education - Training",
                         "chair": "TBA"
+                    },
+                    {
+                        "topic": "",
+                        "chair": ""
                     }
                 ]
             },
             {
                 "time": "17:30-18:00",
-                "activity": "Duet Keynote 3",
-                "speakers": "Xueman Wang (World Bank) + Cristina Romanelli (WHO) + Salvador Rueda",
+                "activity": "Duet Keynote 3 Green for Health",
+                "speakers": "",
                 "roomIndex": 0
             },
             {
@@ -170,7 +187,7 @@
             },
             {
                 "time": "20:00",
-                "activity": "Gala dinner - Keynote - WGIN Awards Ceremony (8 Categories)",
+                "activity": "Gala dinner - Keynote - WGIN Awards Ceremony 2 ",
                 "isFullWidth": true
             }
         ]
@@ -185,7 +202,8 @@
             "2. Room 2",
             "3. Room 3",
             "4. Room 4",
-            "5. Room 5"
+            "5. Room 5",
+            "6. Room 6"
         ],
         "events": [
             {
@@ -200,14 +218,14 @@
             },
             {
                 "time": "09:30-10:00",
-                "activity": "Duet Keynote 4",
-                "speakers": "Kotchakorn Voraakhom (Thailand) + Marta Pozo Gill (MVRDV) + Nyaguthii Chege (The Green Belt Movement AFR) + Namawu Alhassan Alolo (African Development Bank Group AFR)",
+                "activity": "Duet Keynote 5",
+                "speakers": "Green & Blue Cities: Wendy Y Chen - Salvador Rueda ",
                 "roomIndex": 0
             },
             {
                 "time": "10:00-10:30",
-                "activity": "Duet Keynote 5",
-                "speakers": "Timothy Beatley (University of Virginia) o Judith Heerwagen (University of Washington) + Fernanda Barbara (UNAbv SUDAMER) o Edgar Mazo (Connatural SUDAMER) + Ignacio Solano (Paisajismo Urbano)",
+                "activity": "Duet Keynote 6",
+                "speakers": "Global Green Futures",
                 "roomIndex": 0
             },
 
@@ -222,23 +240,27 @@
                 "activity": "Parallel sessions",
                 "sessions": [
                     {
+                        "topic": "PostConflict-Distaster Recovery",
+                        "chair": "TBA"
+                    },
+                    {
                         "topic": "Impacts: a) Climate resilience",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: b) Water management",
-                        "chair": "TBA"
-                    },
-                    {
-                        "topic": "Impacts: c) Natural and Climate Hazards",
-                        "chair": "TBA"
-                    },
-                    {
-                        "topic": "Impacts: d) Green Space Management",
-                        "chair": "TBA"
-                    },
-                    {
                         "topic": "Impacts: e) Biodiversity",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: i) Participatory Planning and Governance",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Miscellaneous",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Workshop Global South",
                         "chair": "TBA"
                     }
                 ]
@@ -249,24 +271,29 @@
                 "activity": "Parallel sessions",
                 "sessions": [
                     {
-                        "topic": "Impacts: f) Air Quality",
+                        "topic": "PostConflict-Distaster Recovery",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: g) Place Regeneration",
+                        "topic": "Impacts: b) Water management" ,
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: h) Knowledge and Social Capacity Building for Sustainable Urban Transformation",
+                        "topic": "Impacts: f) Air quality",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: i) Participatory Planning and Governance",
+                        "topic": "Impacts: j) Social Equity and Social Cohesion",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: j) Social Justice and Social Cohesion",
+                        "topic": "Miscellaneous",
                         "chair": "TBA"
+                    },
+                    
+                    {
+                        "topic": "",
+                        "chair": ""
                     }
                 ]
             },
@@ -283,7 +310,7 @@
             {
                 "time": "15:00-15:30",
                 "activity": "Duet Keynote 6",
-                "speakers": "Enric Batlle (batlle i roig, Spain) + Wong Mun Summ (WOHA Singapore) o Ken Yeang (Malaysia)",
+                "speakers": "Urban Ecosystems",
                 "roomIndex": 0
             },
             {
@@ -292,23 +319,27 @@
                 "activity": "Parallel sessions",
                 "sessions": [
                     {
-                        "topic": "Impacts: k) Health and Well-being",
+                        "topic": "Global South",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: h) New Economic Oportunities and Green Jobs",
+                        "topic": "Impacts: c) Natural and Climate Hazards",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Post-Conflict Recovery",
+                        "topic": "Impacts: g) Place Regeneration",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: Global South",
+                        "topic": "Impacts: h) Knowledge and Social Capacity Building for Sustainable Urban Transformation",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: Miscellaneous",
+                        "topic": "Miscellaneous",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Workshop PostConflict-Disaster Recovery",
                         "chair": "TBA"
                     }
                 ]
@@ -319,30 +350,30 @@
                 "activity": "Parallel sessions",
                 "sessions": [
                     {
-                        "topic": "Impacts: Miscellaneous",
+                        "topic": "Global South",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: Miscellaneous",
+                        "topic": "Impacts: d) Green Space Management",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Post-Conflict Recovery",
+                        "topic": "Impacts h) New Economic Oportunities and Green Jobs",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: Global South",
+                        "topic": "Miscellaneous",
                         "chair": "TBA"
                     },
                     {
-                        "topic": "Impacts: Miscellaneous",
-                        "chair": "TBA"
+                        "topic": "",
+                        "chair": ""
                     }
                 ]
             },
             {
                 "time": "17:30-18:00",
-                "activity": "Congress Conclusions",
+                "activity": "Round Table and Congress Conclusions",
                 "roomIndex": 0
             },
             {

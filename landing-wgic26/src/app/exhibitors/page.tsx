@@ -2,8 +2,16 @@
 
 import PageHeader from "@/components/PageHeader";
 import Carousel from "@/components/Carousel";
+import Image from "next/image";
 import { useState } from "react";
-import { Download, FileText, Send, Loader2, Presentation, CheckCircle } from "lucide-react";
+import {
+  Download,
+  FileText,
+  Send,
+  Loader2,
+  Presentation,
+  CheckCircle,
+} from "lucide-react";
 import { useLocale } from "next-intl";
 
 const copy = {
@@ -41,8 +49,10 @@ const copy = {
       specialContent: "Special Content",
       adPage: "Ad page in Proceedings",
       attendees: "List of Attendees",
-      totalCost: "Total Cost"
+      totalCost: "Total Cost",
     },
+    organizedBy: "Organized by",
+    sponsorsPartners: "Partners and Sponsors",
     venueTitle: "The Venue",
     venueP1:
       "The venue where WGIC26 will be held is perfect for creating the networking atmosphere that sponsors, attendees and exhibitors expect from a global event. The International Barcelona Convention Center of Barcelona is an iconic venue located in the Barcelona district of Sant Marti, inside the 22@ of Poblenou neighbourhood.",
@@ -53,7 +63,8 @@ const copy = {
     venueImagesAlt: "Venue images",
     cards: {
       infoPackTitle: "Download Info Pack",
-      infoPackDesc: "Get the complete guide for sponsors and exhibitors, including all technical details and pricing.",
+      infoPackDesc:
+        "Get the complete guide for sponsors and exhibitors, including all technical details and pricing.",
       downloadPdf: "Download PDF",
       provideDetails: "Please provide your details to access the download.",
       fullName: "Full Name",
@@ -66,16 +77,19 @@ const copy = {
       interestDesc:
         "Interested in sponsoring or exhibiting? Share your information and preferred participation type. We will review your details and contact you with customized options.",
       interestCta: "Express Your Interest",
-      contactInfo: "Provide your contact information and let us know your interests.",
+      contactInfo:
+        "Provide your contact information and let us know your interests.",
       phone: "Phone Number",
       company: "Company Name",
       selectParticipation: "Select Participation Type",
       submit: "Submit",
       thanks: "Thank you for your interest!",
-      thanksBody: "We have received your information and will get back to you shortly with personalized opportunities.",
+      thanksBody:
+        "We have received your information and will get back to you shortly with personalized opportunities.",
       pptTitle: "Download Presentation",
-      pptDesc: "Get a quick overview of the Congress through our presentation deck, featuring key information and highlights.",
-      downloadPpt: "Download PPT"
+      pptDesc:
+        "Get a quick overview of the Congress through our presentation deck, featuring key information and highlights.",
+      downloadPpt: "Download PPT",
     },
     errors: {
       enterName: "Please enter your full name",
@@ -87,8 +101,8 @@ const copy = {
       enterCompany: "Please enter your company name",
       selectType: "Please select a participation type",
       processing: "Error processing your request. Please try again.",
-      submitForm: "Error submitting your form. Please try again."
-    }
+      submitForm: "Error submitting your form. Please try again.",
+    },
   },
   es: {
     pageTitle: "Socios y expositores - Oportunidades de patrocinio",
@@ -124,9 +138,11 @@ const copy = {
       specialContent: "Contenido especial",
       adPage: "Pagina de anuncio en actas",
       attendees: "Listado de asistentes",
-      totalCost: "Coste total"
+      totalCost: "Coste total",
     },
+    sponsorsPartners: "Patrocinadores y socios",
     venueTitle: "La sede",
+    organizedBy: "Organizado por",
     venueP1:
       "La sede de WGIC26 es ideal para crear el entorno de networking que patrocinadores, asistentes y expositores esperan de un evento global. El Centro de Convenciones Internacional de Barcelona es un espacio iconico ubicado en Sant Marti, dentro del 22@ de Poblenou.",
     venueP2:
@@ -136,7 +152,8 @@ const copy = {
     venueImagesAlt: "Imagenes de la sede",
     cards: {
       infoPackTitle: "Descargar dossier informativo",
-      infoPackDesc: "Obten la guia completa para patrocinadores y expositores, con detalles tecnicos y precios.",
+      infoPackDesc:
+        "Obten la guia completa para patrocinadores y expositores, con detalles tecnicos y precios.",
       downloadPdf: "Descargar PDF",
       provideDetails: "Comparte tus datos para acceder a la descarga.",
       fullName: "Nombre completo",
@@ -149,16 +166,19 @@ const copy = {
       interestDesc:
         "Te interesa patrocinar o exponer? Comparte tu informacion y el tipo de participacion preferido. Revisaremos tus datos y te contactaremos con opciones personalizadas.",
       interestCta: "Expresar interes",
-      contactInfo: "Comparte tu informacion de contacto y cuentanos tus intereses.",
+      contactInfo:
+        "Comparte tu informacion de contacto y cuentanos tus intereses.",
       phone: "Telefono",
       company: "Empresa",
       selectParticipation: "Selecciona tipo de participacion",
       submit: "Enviar",
       thanks: "Gracias por tu interes",
-      thanksBody: "Hemos recibido tu informacion y te contactaremos pronto con opciones personalizadas.",
+      thanksBody:
+        "Hemos recibido tu informacion y te contactaremos pronto con opciones personalizadas.",
       pptTitle: "Descargar presentacion",
-      pptDesc: "Obten una vista rapida del Congreso con nuestra presentacion, incluyendo informacion clave y destacados.",
-      downloadPpt: "Descargar PPT"
+      pptDesc:
+        "Obten una vista rapida del Congreso con nuestra presentacion, incluyendo informacion clave y destacados.",
+      downloadPpt: "Descargar PPT",
     },
     errors: {
       enterName: "Por favor, ingresa tu nombre completo",
@@ -170,19 +190,23 @@ const copy = {
       enterCompany: "Por favor, ingresa el nombre de tu empresa",
       selectType: "Por favor, selecciona un tipo de participacion",
       processing: "Error procesando tu solicitud. Intentalo de nuevo.",
-      submitForm: "Error al enviar el formulario. Intentalo de nuevo."
-    }
-  }
+      submitForm: "Error al enviar el formulario. Intentalo de nuevo.",
+    },
+  },
 } as const;
 
 const Exhibitors = () => {
   const locale = useLocale();
   const t = locale === "es" ? copy.es : copy.en;
-  const [downloadStep, setDownloadStep] = useState<"initial" | "form" | "success">("initial");
+  const [downloadStep, setDownloadStep] = useState<
+    "initial" | "form" | "success"
+  >("initial");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formError, setFormError] = useState<string>("");
 
-  const [interestFormStep, setInterestFormStep] = useState<"initial" | "form" | "success">("initial");
+  const [interestFormStep, setInterestFormStep] = useState<
+    "initial" | "form" | "success"
+  >("initial");
   const [interestFormSubmitting, setInterestFormSubmitting] = useState(false);
   const [interestFormError, setInterestFormError] = useState<string>("");
   const [interestFormData, setInterestFormData] = useState({
@@ -190,7 +214,7 @@ const Exhibitors = () => {
     email: "",
     phone: "",
     company: "",
-    participationType: ""
+    participationType: "",
   });
 
   const handleDownloadClick = (e: React.MouseEvent) => {
@@ -202,7 +226,7 @@ const Exhibitors = () => {
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormError("");
-    
+
     const formData = new FormData(e.currentTarget);
     const name = (formData.get("name") as string)?.trim() || "";
     const email = (formData.get("email") as string)?.trim() || "";
@@ -243,8 +267,10 @@ const Exhibitors = () => {
       if (response.ok) {
         setDownloadStep("success");
         // Trigger the actual download
-        window.open("https://drive.google.com/uc?export=download&id=15hLfdY-jNAy47zCE-RNAl132PxDU2_Q-", "_blank");
-        
+        window.open(
+          "https://drive.google.com/uc?export=download&id=15hLfdY-jNAy47zCE-RNAl132PxDU2_Q-",
+          "_blank",
+        );
       } else {
         throw new Error("Failed to process download");
       }
@@ -262,15 +288,19 @@ const Exhibitors = () => {
     setInterestFormError("");
   };
 
-  const handleInterestFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleInterestFormChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+  ) => {
     const { name, value } = e.currentTarget;
-    setInterestFormData(prev => ({
+    setInterestFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
-  const handleInterestFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleInterestFormSubmit = async (
+    e: React.FormEvent<HTMLFormElement>,
+  ) => {
     e.preventDefault();
     setInterestFormError("");
 
@@ -303,7 +333,7 @@ const Exhibitors = () => {
       return;
     }
 
-    const phoneDigits = phone.replace(/\D/g, '');
+    const phoneDigits = phone.replace(/\D/g, "");
     if (phoneDigits.length < 6) {
       setInterestFormError(t.errors.invalidPhone);
       return;
@@ -327,7 +357,13 @@ const Exhibitors = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, phone, company, participationType }),
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          company,
+          participationType,
+        }),
       });
 
       if (response.ok) {
@@ -338,7 +374,7 @@ const Exhibitors = () => {
           email: "",
           phone: "",
           company: "",
-          participationType: ""
+          participationType: "",
         });
       } else {
         throw new Error("Failed to submit form");
@@ -353,30 +389,17 @@ const Exhibitors = () => {
 
   return (
     <div>
-      <PageHeader
-        title={t.pageTitle}
-        description={t.pageDescription}
-      />
+      <PageHeader title={t.pageTitle} description={t.pageDescription} />
       <section className="w-full justify-start text-xs">
         <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-10">
           <div className="flex flex-col gap-6">
             {/* ... rest of the content ... */}
-            <h3 className="text-xl text-white uppercase">
-              {t.partnerTitle}
-            </h3>
-            <p className="text-white/80 text-justify">
-              {t.partnerP1}
-            </p>
-            <p className="text-white/80 text-justify">
-              {t.partnerP2}
-            </p>
+            <h3 className="text-xl text-white uppercase">{t.partnerTitle}</h3>
+            <p className="text-white/80 text-justify">{t.partnerP1}</p>
+            <p className="text-white/80 text-justify">{t.partnerP2}</p>
 
-            <h3 className="text-xl text-white uppercase">
-              {t.sponsorTitle}
-            </h3>
-            <p className="text-white/80 text-justify">
-              {t.sponsorP1}
-            </p>
+            <h3 className="text-xl text-white uppercase">{t.sponsorTitle}</h3>
+            <p className="text-white/80 text-justify">{t.sponsorP1}</p>
 
             <div className="mt-6">
               <h3 className="text-xl text-white uppercase mb-6">
@@ -418,110 +441,98 @@ const Exhibitors = () => {
                   </tr>
 
                   <tr className="bg-cactus/20">
-                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">Elite</th>
-                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">Global</th>
-                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">Event</th>
-                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">Tree</th>
-                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">Leaf</th>
-                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">Garden Big</th>
-                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">Garden Medium</th>
-                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">Flower</th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
+                      Elite
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
+                      Global
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
+                      Event
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
+                      Tree
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
+                      Leaf
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
+                      Garden Big
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
+                      Garden Medium
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
+                      Flower
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.congressInvitations}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">15</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">10</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">4</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">2</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">1</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">2</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">2</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">1</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.congressInvitations}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      15
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      10
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      4
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      2
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      1
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      2
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      2
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      1
+                    </td>
                   </tr>
                   <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.galaDinner}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">10</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">5</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">3</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">2</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">1</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                  </tr>
-                  <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.speakingSlot}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">3</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">2</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">1</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                  </tr>
-                  <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.roomsNaming}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                  </tr>
-                  <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.workshops}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">1</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base" >{t.table.rollup}</td>
-                  </tr>
-                  <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.space}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">Island 12x6m (72sqm)</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">6x6m (36sqm)</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">3x9m (27sqm)</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">3x6m (18sqm)</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">3x3m (9sqm)</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">3x1.5m (4.5sqm)</td>
-                  </tr>
-                  <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.visibility}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                  </tr>
-                  <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.newsletter}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.galaDinner}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      10
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      5
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      3
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      2
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      1
+                    </td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                   </tr>
                   <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.socialMedia}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.speakingSlot}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      3
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      2
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      1
+                    </td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
@@ -529,9 +540,15 @@ const Exhibitors = () => {
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                   </tr>
                   <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.logoVisibility}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.roomsNaming}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
@@ -540,8 +557,138 @@ const Exhibitors = () => {
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                   </tr>
                   <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.specialContent}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.workshops}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      1
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.rollup}
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.space}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      Island 12x6m (72sqm)
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      6x6m (36sqm)
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      3x9m (27sqm)
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      3x6m (18sqm)
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      3x3m (9sqm)
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      3x1.5m (4.5sqm)
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.visibility}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.newsletter}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.socialMedia}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.logoVisibility}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.specialContent}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
@@ -551,53 +698,87 @@ const Exhibitors = () => {
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                   </tr>
                   <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.adPage}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.adPage}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                   </tr>
                   <tr className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.table.attendees}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">✔</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">
+                      {t.table.attendees}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                      ✔
+                    </td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                     <td className="border border-white/20 px-4 py-3 text-white/80 text-base"></td>
                   </tr>
                   <tr className="bg-cactus/10 font-bold">
-                    <td className="border border-white/20 px-4 py-3 text-white text-base">{t.table.totalCost}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">30.000€</td>
-                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">15.000€</td>
-                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">10.000€</td>
-                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">8.000€</td>
-                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">6.000€</td>
-                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">5.000€</td>
-                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">3.000€</td>
-                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">2.000€</td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base">
+                      {t.table.totalCost}
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">
+                      30.000€
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">
+                      15.000€
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">
+                      10.000€
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">
+                      8.000€
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">
+                      6.000€
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">
+                      5.000€
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">
+                      3.000€
+                    </td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center">
+                      2.000€
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
             <div className="mt-6">
-              <h4 className="text-lg text-white uppercase mb-3">{t.venueTitle}</h4>
-              <p className="text-white/80 mb-4 text-justify">
-                {t.venueP1}
-              </p>
-              <p className="text-white/80 mb-4 text-justify">
-                {t.venueP2}
-              </p>
-              <p className="text-white/80 mb-4 text-justify">
-                {t.venueP3}
-              </p>
+              <h4 className="text-lg text-white uppercase mb-3">
+                {t.venueTitle}
+              </h4>
+              <p className="text-white/80 mb-4 text-justify">{t.venueP1}</p>
+              <p className="text-white/80 mb-4 text-justify">{t.venueP2}</p>
+              <p className="text-white/80 mb-4 text-justify">{t.venueP3}</p>
               <Carousel
                 images={[
                   "/img/1.Exterior.jpg",
@@ -617,12 +798,16 @@ const Exhibitors = () => {
                   <div className="p-3 bg-cactus/20 rounded-lg">
                     <Download className="text-potus" size={24} />
                   </div>
-                  <h4 className="text-xl font-semibold text-white uppercase m-0">{t.cards.infoPackTitle}</h4>
+                  <h4 className="text-xl font-semibold text-white uppercase m-0">
+                    {t.cards.infoPackTitle}
+                  </h4>
                 </div>
 
                 {downloadStep === "initial" && (
                   <>
-                    <p className="text-white/70 text-base m-0">{t.cards.infoPackDesc}</p>
+                    <p className="text-white/70 text-base m-0">
+                      {t.cards.infoPackDesc}
+                    </p>
                     <button
                       onClick={handleDownloadClick}
                       className="inline-flex items-center justify-center gap-2 rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"
@@ -633,24 +818,29 @@ const Exhibitors = () => {
                 )}
 
                 {downloadStep === "form" && (
-                  <form onSubmit={handleFormSubmit} className="flex flex-col gap-4">
-                    <p className="text-white/70 text-base m-0 mb-2">{t.cards.provideDetails}</p>
-                    
+                  <form
+                    onSubmit={handleFormSubmit}
+                    className="flex flex-col gap-4"
+                  >
+                    <p className="text-white/70 text-base m-0 mb-2">
+                      {t.cards.provideDetails}
+                    </p>
+
                     {formError && (
                       <div className="bg-rose/20 border border-rose px-4 py-3 rounded-lg">
                         <p className="text-rose text-sm m-0">{formError}</p>
                       </div>
                     )}
-                    
-                    <input 
+
+                    <input
                       name="name"
-                      type="text" 
+                      type="text"
                       placeholder={t.cards.fullName}
                       className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
                     />
-                    <input 
+                    <input
                       name="email"
-                      type="email" 
+                      type="email"
                       placeholder={t.cards.email}
                       className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
                     />
@@ -659,7 +849,11 @@ const Exhibitors = () => {
                       type="submit"
                       className="inline-flex items-center justify-center gap-2 rounded-lg bg-potus text-black px-6 py-4 font-bold text-lg hover:bg-potus/80 transition-all disabled:opacity-50"
                     >
-                      {isSubmitting ? <Loader2 className="animate-spin" /> : t.cards.downloadNow}
+                      {isSubmitting ? (
+                        <Loader2 className="animate-spin" />
+                      ) : (
+                        t.cards.downloadNow
+                      )}
                     </button>
                   </form>
                 )}
@@ -669,8 +863,20 @@ const Exhibitors = () => {
                     <div className="p-4 bg-potus/20 rounded-full">
                       <Send className="text-potus" size={32} />
                     </div>
-                    <p className="text-white font-medium text-lg m-0">{t.cards.started}</p>
-                    <p className="text-white/60 text-base m-0">{t.cards.didNotStart} <a href="https://drive.google.com/uc?export=download&id=15hLfdY-jNAy47zCE-RNAl132PxDU2_Q-" target="_blank" className="text-potus underline">{t.cards.clickHere}</a>.</p>
+                    <p className="text-white font-medium text-lg m-0">
+                      {t.cards.started}
+                    </p>
+                    <p className="text-white/60 text-base m-0">
+                      {t.cards.didNotStart}{" "}
+                      <a
+                        href="https://drive.google.com/uc?export=download&id=15hLfdY-jNAy47zCE-RNAl132PxDU2_Q-"
+                        target="_blank"
+                        className="text-potus underline"
+                      >
+                        {t.cards.clickHere}
+                      </a>
+                      .
+                    </p>
                   </div>
                 )}
               </div>
@@ -681,12 +887,16 @@ const Exhibitors = () => {
                   <div className="p-3 bg-cactus/20 rounded-lg">
                     <FileText className="text-potus" size={24} />
                   </div>
-                  <h4 className="text-xl font-semibold text-white uppercase m-0">{t.cards.interestTitle}</h4>
+                  <h4 className="text-xl font-semibold text-white uppercase m-0">
+                    {t.cards.interestTitle}
+                  </h4>
                 </div>
 
                 {interestFormStep === "initial" && (
                   <>
-                    <p className="text-white/70 text-base m-0">{t.cards.interestDesc}</p>
+                    <p className="text-white/70 text-base m-0">
+                      {t.cards.interestDesc}
+                    </p>
                     <button
                       onClick={handleInterestFormClick}
                       className="inline-flex items-center justify-center gap-2 rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"
@@ -697,51 +907,58 @@ const Exhibitors = () => {
                 )}
 
                 {interestFormStep === "form" && (
-                  <form onSubmit={handleInterestFormSubmit} className="flex flex-col gap-4">
-                    <p className="text-white/70 text-base m-0 mb-2">{t.cards.contactInfo}</p>
-                    
+                  <form
+                    onSubmit={handleInterestFormSubmit}
+                    className="flex flex-col gap-4"
+                  >
+                    <p className="text-white/70 text-base m-0 mb-2">
+                      {t.cards.contactInfo}
+                    </p>
+
                     {interestFormError && (
                       <div className="bg-rose/20 border border-rose px-4 py-3 rounded-lg">
-                        <p className="text-rose text-sm m-0">{interestFormError}</p>
+                        <p className="text-rose text-sm m-0">
+                          {interestFormError}
+                        </p>
                       </div>
                     )}
-                    
-                    <input 
+
+                    <input
                       name="name"
-                      type="text" 
+                      type="text"
                       placeholder={t.cards.fullName}
                       value={interestFormData.name}
                       onChange={handleInterestFormChange}
                       className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
                     />
-                    
-                    <input 
+
+                    <input
                       name="email"
-                      type="email" 
+                      type="email"
                       placeholder={t.cards.email}
                       value={interestFormData.email}
                       onChange={handleInterestFormChange}
                       className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
                     />
-                    
-                    <input 
+
+                    <input
                       name="phone"
-                      type="tel" 
+                      type="tel"
                       placeholder={t.cards.phone}
                       value={interestFormData.phone}
                       onChange={handleInterestFormChange}
                       className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
                     />
-                    
-                    <input 
+
+                    <input
                       name="company"
-                      type="text" 
+                      type="text"
                       placeholder={t.cards.company}
                       value={interestFormData.company}
                       onChange={handleInterestFormChange}
                       className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
                     />
-                    
+
                     <select
                       name="participationType"
                       value={interestFormData.participationType}
@@ -749,22 +966,48 @@ const Exhibitors = () => {
                       className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
                     >
                       <option value="">{t.cards.selectParticipation}</option>
-                      <option value="Elite Partner">{locale === "es" ? "Socio Elite" : "Elite Partner"}</option>
-                      <option value="Global Partner">{locale === "es" ? "Socio Global" : "Global Partner"}</option>
-                      <option value="Event Partner">{locale === "es" ? "Socio Event" : "Event Partner"}</option>
-                      <option value="Tree Sponsor">{locale === "es" ? "Patrocinador Tree" : "Tree Sponsor"}</option>
-                      <option value="Leaf Sponsor">{locale === "es" ? "Patrocinador Leaf" : "Leaf Sponsor"}</option>
-                      <option value="Garden Big">{locale === "es" ? "Expositor Garden Big" : "Garden Big Exhibitor"}</option>
-                      <option value="Garden Medium">{locale === "es" ? "Expositor Garden Medium" : "Garden Medium Exhibitor"}</option>
-                      <option value="Flower">{locale === "es" ? "Expositor Flower" : "Flower Exhibitor"}</option>
+                      <option value="Elite Partner">
+                        {locale === "es" ? "Socio Elite" : "Elite Partner"}
+                      </option>
+                      <option value="Global Partner">
+                        {locale === "es" ? "Socio Global" : "Global Partner"}
+                      </option>
+                      <option value="Event Partner">
+                        {locale === "es" ? "Socio Event" : "Event Partner"}
+                      </option>
+                      <option value="Tree Sponsor">
+                        {locale === "es" ? "Patrocinador Tree" : "Tree Sponsor"}
+                      </option>
+                      <option value="Leaf Sponsor">
+                        {locale === "es" ? "Patrocinador Leaf" : "Leaf Sponsor"}
+                      </option>
+                      <option value="Garden Big">
+                        {locale === "es"
+                          ? "Expositor Garden Big"
+                          : "Garden Big Exhibitor"}
+                      </option>
+                      <option value="Garden Medium">
+                        {locale === "es"
+                          ? "Expositor Garden Medium"
+                          : "Garden Medium Exhibitor"}
+                      </option>
+                      <option value="Flower">
+                        {locale === "es"
+                          ? "Expositor Flower"
+                          : "Flower Exhibitor"}
+                      </option>
                     </select>
-                    
+
                     <button
                       disabled={interestFormSubmitting}
                       type="submit"
                       className="inline-flex items-center justify-center gap-2 rounded-lg bg-potus text-black px-6 py-4 font-bold text-lg hover:bg-potus/80 transition-all disabled:opacity-50"
                     >
-                      {interestFormSubmitting ? <Loader2 className="animate-spin" /> : t.cards.submit}
+                      {interestFormSubmitting ? (
+                        <Loader2 className="animate-spin" />
+                      ) : (
+                        t.cards.submit
+                      )}
                     </button>
                   </form>
                 )}
@@ -774,8 +1017,12 @@ const Exhibitors = () => {
                     <div className="p-4 bg-potus/20 rounded-full">
                       <CheckCircle className="text-potus" size={32} />
                     </div>
-                    <p className="text-white font-medium text-lg m-0">{t.cards.thanks}</p>
-                    <p className="text-white/60 text-base m-0">{t.cards.thanksBody}</p>
+                    <p className="text-white font-medium text-lg m-0">
+                      {t.cards.thanks}
+                    </p>
+                    <p className="text-white/60 text-base m-0">
+                      {t.cards.thanksBody}
+                    </p>
                   </div>
                 )}
               </div>
@@ -786,13 +1033,15 @@ const Exhibitors = () => {
                   <div className="p-3 bg-cactus/20 rounded-lg">
                     <Presentation className="text-potus" size={24} />
                   </div>
-                  <h4 className="text-xl font-semibold text-white uppercase m-0">{t.cards.pptTitle}</h4>
+                  <h4 className="text-xl font-semibold text-white uppercase m-0">
+                    {t.cards.pptTitle}
+                  </h4>
                 </div>
-                
+
                 <p className="text-white/70 text-base m-0">{t.cards.pptDesc}</p>
-                
+
                 <div className="mt-auto">
-                  <a 
+                  <a
                     href="https://docs.google.com/presentation/d/1B6fw8i0h6K50pB0JFK-yW56sIyfImmjVqHQXPo0rQx0/export/pptx
 "
                     target="_blank"
@@ -805,7 +1054,271 @@ const Exhibitors = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="sponsors" className="flex flex-col gap-6 mt-16 pb-24">
+        <div className="text-xs uppercase w-full border-b border-white/50 py-2 tracking-wider">
+          {t.sponsorsPartners}
+        </div>
+
+        <div className="bg-white text-black py-16 px-6 rounded-md border border-gray-200">
+          <div className="flex flex-col gap-12 items-center">
+            {/* ORGANISED */}
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                {t.organizedBy}
+              </h3>
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                <a
+                  href="https://worldgreeninfrastructurenetwork.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos-color/WGIN-logo.png"
+                    alt="WGI Network"
+                    width={300}
+                    height={220}
+                    className="h-28 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href="http://udl.cat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos-color/Logo-de-la-Universitat-de-Lleida.png"
+                    alt="Universitat de Lleida"
+                    width={300}
+                    height={220}
+                    className="h-28 w-auto object-contain"
+                  />
+                </a>
+
+                <div className="flex items-center justify-center">
+                  <Image
+                    src="/img/logos-color/logo-life.jpg"
+                    alt="Life EU"
+                    width={300}
+                    height={220}
+                    className="h-28 w-auto object-contain"
+                  />
+                </div>
+
+                <div className="flex items-center justify-center">
+                  <Image
+                    src="/img/logos-color/it4s.png"
+                    alt="IT4S"
+                    width={300}
+                    height={220}
+                    className="h-28 w-auto object-contain"
+                  />
+                </div>
+
+                <a
+                  href="http://big4life.eu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos-color/Footer_logo_BIG4LIFE_144.png"
+                    alt="BIG4LIFE"
+                    width={300}
+                    height={220}
+                    className="h-28 w-auto object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
+            {/* ELITE PARTNERS */}
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                Elite Partners
+              </h3>
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
+                <a
+                  href="https://www.sempergreen.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos-color/sempergreen_urban-grey_green_22112023164728.jpg"
+                    alt="Semper Green"
+                    width={400}
+                    height={300}
+                    className="h-30 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://www.hunterirrigation.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/Hunter.svg"
+                    alt="Hunter"
+                    width={400}
+                    height={300}
+                    className="h-12 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://zinco-cubiertas-ecologicas.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/zinco.svg"
+                    alt="Hunter"
+                    width={400}
+                    height={300}
+                    className="h-22 w-auto object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
+            {/* EVENT PARTNERS 
+                  <div className="w-full">
+                    <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                      Event Partners
+                    </h3>
+                    <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24"></div>
+                  </div>*/}
+
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                Garden Big Exhibitors
+              </h3>
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
+                <a
+                  href="https://www.jardinmovil.com/es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/jardinMovil.png"
+                    alt="Eixverd"
+                    width={330}
+                    height={230}
+                    className="h-20 w-auto object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                Garden Medium Exhibitors
+              </h3>
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
+                <a
+                  href="https://eixverd.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/eixverd.png"
+                    alt="Eixverd"
+                    width={330}
+                    height={230}
+                    className="h-36 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://verdtical.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/verdtical.webp"
+                    alt="Eixverd"
+                    width={330}
+                    height={230}
+                    className="h-10 w-auto object-contain "
+                  />
+                </a>
+              </div>
+            </div>
+
+            {/* FLOWER EXHIBITORS - hidden until logos are added
+                  <div className="w-full">
+                    <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                      Flower Exhibitors
+                    </h3>
+                    <div className="flex justify-center items-center min-h-[100px] text-gray-500">
+                      <p className="italic">Coming Soon...</p>
+                    </div>
+                  </div>
+                  */}
+
+            {/* MEDIA PARTNERS */}
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                Media Partners
+              </h3>
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                <a
+                  href="https://greenroofs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/greenroofsnuevo.png"
+                    alt="Greenroofs.com"
+                    width={280}
+                    height={200}
+                    className="h-17 w-auto object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
+            {/* WITH THE SUPPORT OF */}
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                With the Support of
+              </h3>
+              <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+                <a
+                  href="https://asescuve.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/Asescuve-logo-24a.webp"
+                    alt="ASESCUVE"
+                    width={300}
+                    height={220}
+                    className="h-14 w-auto object-contain"
+                  />
+                </a>
+
+                <Image
+                  src="/img/logos/arboretum.png"
+                  alt="Arboretum"
+                  width={300}
+                  height={220}
+                  className="h-14 w-auto object-contain"
+                />
+
+                <Image
+                  src="/img/logos/pronaturlogo.jpg"
+                  alt="Logo pronatur"
+                  width={320}
+                  height={240}
+                  className="h-24 w-auto object-contain"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

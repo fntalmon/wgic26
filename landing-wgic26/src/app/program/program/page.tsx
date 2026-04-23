@@ -68,19 +68,19 @@ const Program = async () => {
                                     <Table className="w-full border-collapse border border-white/10">
                                         <TableHeader className="bg-monstera/30 border-b border-white/20">
                                             <TableRow className="border-white/10 hover:bg-transparent">
-                                                <TableHead className="w-[120px] text-white font-bold">{t("headers.time")}</TableHead>
+                                                <TableHead className="w-[80px] md:w-auto text-white font-bold text-xs md:text-sm">{t("headers.time")}</TableHead>
                                                 {day.rooms ? (
                                                     day.rooms.map((room: string, i: number) => (
-                                                        <TableHead key={i} className="text-white font-bold min-w-[200px] border-l border-white/10">{room}</TableHead>
+                                                        <TableHead key={i} className="text-white font-bold text-xs md:text-sm border-l border-white/10 break-words">{room}</TableHead>
                                                     ))
                                                 ) : day.headers ? (
                                                     day.headers.slice(1).map((header: string, i: number) => (
-                                                        <TableHead key={i} className="text-white font-bold border-l border-white/10">{header}</TableHead>
+                                                        <TableHead key={i} className="text-white font-bold text-xs md:text-sm border-l border-white/10 break-words">{header}</TableHead>
                                                     ))
                                                 ) : (
                                                     <>
-                                                        <TableHead className="text-white font-bold border-l border-white/10">{t("headers.activity")}</TableHead>
-                                                        <TableHead className="text-white font-bold border-l border-white/10">{t("headers.location")}</TableHead>
+                                                        <TableHead className="text-white font-bold text-xs md:text-sm border-l border-white/10">{t("headers.activity")}</TableHead>
+                                                        <TableHead className="text-white font-bold text-xs md:text-sm border-l border-white/10">{t("headers.location")}</TableHead>
                                                     </>
                                                 )}
                                             </TableRow>
@@ -89,34 +89,34 @@ const Program = async () => {
                                             {day.events.length > 0 ? (
                                                 day.events.map((event: { time?: string; activity: string; isFullWidth?: boolean; isParallel?: boolean; sessions?: { topic: string; chair: string }[]; typology?: string; extra?: string; location?: string; roomIndex?: number; speakers?: string }, index: number) => (
                                                     <TableRow key={index} className="border-white/10 hover:bg-white/5">
-                                                        <TableCell className="font-medium text-base whitespace-nowrap align-top text-white/80 p-4">{event.time}</TableCell>
+                                                        <TableCell className="font-medium text-xs md:text-sm align-top text-white/80 p-3 md:p-4">{event.time}</TableCell>
                                                         {event.isFullWidth ? (
                                                             <TableCell 
                                                                 colSpan={day.rooms ? day.rooms.length : (day.headers ? day.headers.length - 1 : 2)} 
-                                                                className="text-base font-semibold text-white bg-white/10 p-4"
+                                                                className="text-xs md:text-sm font-semibold text-white bg-white/10 p-3 md:p-4"
                                                             >
                                                                 {event.activity}
                                                             </TableCell>
                                                         ) : event.isParallel ? (
                                                             event.sessions?.map((session: { topic: string; chair: string }, i: number) => (
-                                                                <TableCell key={i} className="text-base align-top border-l border-white/10 p-4">
+                                                                <TableCell key={i} className="text-xs md:text-sm align-top border-l border-white/10 p-3 md:p-4">
                                                                     <div className="font-semibold text-white mb-1">{session.topic}</div>
-                                                                    <div className="text-sm text-white/60">{t("headers.chair")}: {session.chair}</div>
+                                                                    <div className="text-xs text-white/60">{t("headers.chair")}: {session.chair}</div>
                                                                 </TableCell>
                                                             ))
                                                         ) : day.headers ? (
                                                             <>
-                                                                <TableCell className="text-base font-semibold text-white border-l border-white/10 p-4">{event.typology}</TableCell>
-                                                                <TableCell className="text-base text-white/70 border-l border-white/10 p-4 whitespace-pre-line">{event.activity}</TableCell>
-                                                                <TableCell className="text-base text-white/70 border-l border-white/10 p-4 whitespace-pre-line">{event.extra}</TableCell>
+                                                                <TableCell className="text-xs md:text-sm font-semibold text-white border-l border-white/10 p-3 md:p-4">{event.typology}</TableCell>
+                                                                <TableCell className="text-xs md:text-sm text-white/70 border-l border-white/10 p-3 md:p-4 whitespace-pre-line">{event.activity}</TableCell>
+                                                                <TableCell className="text-xs md:text-sm text-white/70 border-l border-white/10 p-3 md:p-4 whitespace-pre-line">{event.extra}</TableCell>
                                                             </>
                                                         ) : day.rooms ? (
                                                             day.rooms.map((_: string, i: number) => (
-                                                                <TableCell key={i} className="text-base font-semibold text-white border-l border-white/10 p-4">
+                                                                <TableCell key={i} className="text-xs md:text-sm font-semibold text-white border-l border-white/10 p-3 md:p-4">
                                                                     {i === (event.roomIndex ?? 0) ? (
                                                                         <div>
                                                                             <div>{event.activity}</div>
-                                                                            {event.speakers && <div className="text-sm text-white/60 mt-1 font-normal">{event.speakers}</div>}
+                                                                            {event.speakers && <div className="text-xs mt-1 font-normal text-white/60">{event.speakers}</div>}
                                                                         </div>
                                                                     ) : ""}
                                                                 </TableCell>
@@ -124,8 +124,8 @@ const Program = async () => {
                                                             ))
                                                         ) : (
                                                             <>
-                                                                <TableCell className="text-base font-semibold text-white border-l border-white/10 p-4">{event.activity}</TableCell>
-                                                                <TableCell className="text-base text-white/70 border-l border-white/10 p-4">{event.location}</TableCell>
+                                                                <TableCell className="text-xs md:text-sm font-semibold text-white border-l border-white/10 p-3 md:p-4">{event.activity}</TableCell>
+                                                                <TableCell className="text-xs md:text-sm text-white/70 border-l border-white/10 p-3 md:p-4">{event.location}</TableCell>
                                                             </>
                                                         )}
                                                     </TableRow>
