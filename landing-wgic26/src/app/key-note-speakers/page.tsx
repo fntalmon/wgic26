@@ -2,6 +2,23 @@ import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
+const speakerSlots = [
+    { id: "speaker1", image: "/img/speakers/marcosros.jpg" },
+    { id: "speaker2", image: "/img/speakers/salvadorrueda.jpg" },
+    { id: "speaker3", image: "/img/speakers/vicenteguallart.jpg" },
+    { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },
+    { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
+    { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
+] as const;
+
+const getInitials = (name: string) =>
+    name
+        .split(" ")
+        .filter(Boolean)
+        .slice(0, 2)
+        .map((part) => part[0]?.toUpperCase() ?? "")
+        .join("") || "?";
+
 const KeyNoteSpeakers = async () => {
     const t = await getTranslations("keyNoteSpeakersPage");
 
@@ -26,30 +43,35 @@ const KeyNoteSpeakers = async () => {
 
                     {/* Speakers Grid */}
                     <div className="w-full flex flex-col gap-6">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <div className="flex flex-col items-center text-center bg-white/5 border border-white/10 rounded-lg p-6 hover:shadow-lg transition-shadow">
-                                <Image src="/img/speakers/Marcos_Ros.png" alt="Marcos Ros" width={144} height={144} className="rounded-full object-cover mb-4" />
-                                <div className="font-semibold text-lg">Marcos Ros</div>
-                                <p className="text-sm text-white/60">{t("speakers.marcos")}</p>
-                            </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                            {speakerSlots.map((speaker) => {
+                                const name = t(`speakers.${speaker.id}.name`);
+                                const bio = t(`speakers.${speaker.id}.bio`);
 
-                            <div className="flex flex-col items-center text-center bg-white/5 border border-white/10 rounded-lg p-6 hover:shadow-lg transition-shadow">
-                                <Image src="/img/speakers/Salvador_Rueda.png" alt="Salvador Rueda" width={144} height={144} className="rounded-full object-cover mb-4" />
-                                <div className="font-semibold text-lg">Salvador Rueda</div>
-                                <p className="text-sm text-white/60">{t("speakers.salvador")}</p>
-                            </div>
+                                return (
+                                    <article
+                                        key={speaker.id}
+                                        className="flex flex-col items-center text-center bg-white/5 border border-white/10 rounded-lg p-6 hover:shadow-lg transition-shadow min-h-[320px]"
+                                    >
+                                        {speaker.image ? (
+                                            <Image
+                                                src={speaker.image}
+                                                alt={name}
+                                                width={144}
+                                                height={144}
+                                                className="rounded-full object-cover mb-4"
+                                            />
+                                        ) : (
+                                            <div className="w-36 h-36 rounded-full mb-4 bg-white/10 border border-white/20 grid place-items-center text-3xl font-semibold text-white/80">
+                                                {getInitials(name)}
+                                            </div>
+                                        )}
 
-                            <div className="flex flex-col items-center text-center bg-white/5 border border-white/10 rounded-lg p-6 hover:shadow-lg transition-shadow">
-                                <Image src="/img/speakers/Vicente Guallart.png" alt="Vicente Guallart" width={144} height={144} className="rounded-full object-cover mb-4" />
-                                <div className="font-semibold text-lg">Vicente Guallart</div>
-                                <p className="text-sm text-white/60">{t("speakers.vicente")}</p>
-                            </div>
-
-                            <div className="flex flex-col items-center text-center bg-white/5 border border-white/10 rounded-lg p-6 hover:shadow-lg transition-shadow">
-                                <Image src="/img/speakers/Alberto Estevez.png" alt="Alberto Estévez" width={144} height={144} className="rounded-full object-cover mb-4" />
-                                <div className="font-semibold text-lg">Alberto Estévez</div>
-                                <p className="text-sm text-white/60">{t("speakers.alberto")}</p>
-                            </div>
+                                        <h3 className="font-semibold text-lg">{name}</h3>
+                                        <p className="text-sm text-white/60 mt-1">{bio}</p>
+                                    </article>
+                                );
+                            })}
                         </div>
 
                         <p className="text-white/60 text-center mt-6">{t("closing")}</p>

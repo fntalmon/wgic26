@@ -432,10 +432,30 @@
     "p1": "WGIC26 will feature up to 12 keynote speakers from around the world, positioned at the forefront of research, innovation, and implementation in green infrastructure.",
     "p2": "We are pleased to announce that the first speakers for WGIC 2026 are now confirmed.",
     "speakers": {
-      "marcos": "Architect, academic, and Member of the European Parliament, focused on urban policy, sustainability, and the built environment at the EU level.",
-      "salvador": "Founder and director of the Foundation for Urban and Territorial Ecology (FEUT), pioneer of urban ecology and creator of the superblock model.",
-      "vicente": "Architect and urban planner, co-founder of Urbanitree and founder of the Institute for Advanced Architecture of Catalonia, internationally recognized for his research-based urban innovation.",
-      "alberto": "Founder and director of ESARQ UIC Barcelona, architect and academic recognized for promoting experimental and biodigital architecture."
+      "speaker1": {
+        "name": "Marcos Ros",
+        "bio": "Architect, academic, and Member of the European Parliament, Marcos Ros works at the intersection of urban policy, sustainability, housing, and the built environment, bringing a strong European institutional perspective to the future of cities."
+      },
+      "speaker2": {
+        "name": "Salvador Rueda",
+        "bio": "Founder of the Urban and Territorial Ecology Foundation (FEUT), Salvador Rueda is a pioneer in urban ecology and the creator of the internationally recognised Superblocks model, which is redefining healthier and more liveable cities."
+      },
+      "speaker3": {
+        "name": "Vicente Guallart",
+        "bio": "Architect and urbanist, Co-Founder of Urbanitree and Founder of the Institute for Advanced Architecture of Catalonia (IAAC), Vicente Guallart is recognised globally for innovation in sustainable cities, advanced architecture, and urban transformation."
+      },
+      "speaker4": {
+        "name": "Alberto Estevez",
+        "bio": "Architect, researcher, and Founder of ESARQ-UIC Barcelona, Alberto Estévez is a leading voice in biodigital architecture, exploring the convergence of design, biology, technology, and sustainability."
+      },
+      "speaker5": {
+        "name": "Enric Batlle",
+        "bio": "Founding Partner of Batlleiroig, architect and landscape architect Enric Batlle is internationally known for integrating architecture, landscape, and urban planning to create resilient and environmentally conscious urban environments."
+      },
+      "speaker6": {
+        "name": "Wendy Y. Chen",
+        "bio": "Professor at the University of Hong Kong, Wendy Y. Chen specialises in urban green-blue infrastructure, focusing on how nature-based solutions improve urban sustainability, planning, and quality of life."
+      }
     },
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."
   },

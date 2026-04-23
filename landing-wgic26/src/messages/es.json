@@ -295,9 +295,8 @@
     "calloutTitle": "Envia tu articulo o proyecto antes del 30 de abril de 2026",
     "calloutP1": "Gracias por tu interes en participar en el World Green Infrastructure Congress 2026 Barcelona - Lleida (WGIC 2026). Para enviar un articulo, accede y completa los datos en la aplicacion de envio en el enlace inferior.",
     "calloutP2": "El 12o World Green Infrastructure Congress se celebrara en Barcelona, en el Centro de Convenciones Internacional de Barcelona, del 27 al 30 de octubre de 2026. WGIC 2026 recibe investigaciones originales, estudios de caso y aplicaciones innovadoras en formato de articulo corto (maximo 5 paginas), en formato MS Word.",
-   
-     "calloutP3": "The best papers presented at WGIC26 will be fast-tracked for Special Issues in three leading peer-reviewed journals: Urban Forestry and Urban Greening (Elsevier), Nature-Based Solutions (Elsevier), and the Journal of Living Architecture (Green Roofs for Healthy Cities –GRHC).",
-  "submissionButton": "Ir al formulario de envio",
+    "calloutP3": "The best papers presented at WGIC26 will be fast-tracked for Special Issues in three leading peer-reviewed journals: Urban Forestry and Urban Greening (Elsevier), Nature-Based Solutions (Elsevier), and the Journal of Living Architecture (Green Roofs for Healthy Cities –GRHC).",
+    "submissionButton": "Ir al formulario de envio",
     "templateButton": "Descargar plantilla de articulo",
     "bodyP1": "WGIC26 recibe con entusiasmo envios de investigacion original, estudios de caso y aplicaciones innovadoras, en formato de articulo corto (maximo 5 paginas), en formato MS Word. Esta limitacion ayuda a reducir similitud para articulos recomendados posteriormente para numeros especiales de revistas.",
     "bodyP2": "Todos los articulos enviados pasan por un proceso riguroso de revision por pares. El comite cientifico decide la aceptacion y si la presentacion sera oral o poster. Los articulos aceptados se publicaran en las actas del WGIC2026.",
@@ -433,10 +432,30 @@
     "p1": "WGIC26 contara con hasta 12 oradores magistrales de todo el mundo, situados en la vanguardia de la investigacion, innovacion e implementacion en infraestructura verde.",
     "p2": "Nos complace anunciar que los primeros oradores de WGIC 2026 ya estan confirmados.",
     "speakers": {
-      "marcos": "Arquitecto, academico y miembro del Parlamento Europeo, centrado en politica urbana, sostenibilidad y entorno construido a escala de la UE.",
-      "salvador": "Fundador y director de la Fundacion de Ecologia Urbana y Territorial (FEUT), pionero de la ecologia urbana y creador del modelo de supermanzana.",
-      "vicente": "Arquitecto y urbanista, cofundador de Urbanitree y fundador del Instituto de Arquitectura Avanzada de Cataluña, reconocido internacionalmente por su innovacion urbana basada en investigacion.",
-      "alberto": "Fundador y director de ESARQ UIC Barcelona, arquitecto y academico reconocido por impulsar la arquitectura experimental y biodigital."
+      "speaker1": {
+        "name": "Marcos Ros",
+        "bio": "Arquitecto, académico y miembro del Parlamento Europeo, Marcos Ros trabaja en la intersección de la política urbana, la sostenibilidad, la vivienda y el entorno construido, aportando una sólida perspectiva institucional europea al futuro de las ciudades."
+      },
+      "speaker2": {
+        "name": "Salvador Rueda",
+        "bio": "Fundador de la Fundación de Ecología Urbana y Territorial (FEUT), Salvador Rueda es un pionero en ecología urbana y el creador del modelo de Supermanzanas, reconocido internacionalmente, que está redefiniendo ciudades más saludables y habitables."
+      },
+      "speaker3": {
+        "name": "Vicente Guallart",
+        "bio": "Arquitecto y urbanista, cofundador de Urbanitree y fundador del Instituto de Arquitectura Avanzada de Cataluña (IAAC), Vicente Guallart es reconocido globalmente por su innovación en ciudades sostenibles, arquitectura avanzada y transformación urbana."
+      },
+      "speaker4": {
+        "name": "Alberto Estévez",
+        "bio": "Arquitecto, investigador y fundador de ESARQ-UIC Barcelona, Alberto Estévez es una voz líder en arquitectura biodigital, explorando la convergencia entre diseño, biología, tecnología y sostenibilidad."
+      },
+      "speaker5": {
+        "name": "Enric Batlle",
+        "bio": "Socio fundador de Batlleiroig, arquitecto y paisajista, Enric Batlle es reconocido internacionalmente por integrar arquitectura, paisaje y planificación urbana para crear entornos urbanos resilientes y ambientalmente responsables."
+      },
+      "speaker6": {
+        "name": "Wendy Y. Chen",
+        "bio": "Profesora en la Universidad de Hong Kong, Wendy Y. Chen se especializa en infraestructura verde-azul urbana, enfocándose en cómo las soluciones basadas en la naturaleza mejoran la sostenibilidad urbana, la planificación y la calidad de vida."
+      }
     },
     "closing": "Este primer grupo de oradores subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
   },
