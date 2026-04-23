@@ -1,0 +1,459 @@
+[
+    {
+        "id": "day1",
+        "label": "Day 1",
+        "date": "Tuesday, October 27, 2026",
+        "title": "",
+        "rooms": [
+            "1. Main Room",
+            "2. Room 2",
+            "3. Room 3",
+            "4. Room 4",
+            "5. Room 5",
+            "6. Room 6"
+        ],
+        "events": [
+            {
+                "time": "08:00-09:00",
+                "activity": "Registration",
+                "isFullWidth": true
+            },
+            {
+                "time": "09:00-09:30",
+                "activity": "Opening Ceremony & Welcome",
+                "roomIndex": 0
+            },
+            {
+                "time": "09:30-10:00",
+                "activity": "Duet Keynote 1: Green Infrastructure Policies",
+                "speakers": "Marcos Ros - Benjamin Rolles - Luigi Petito",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:00-10:30",
+                "activity": "Duet Keynote 2: Living Architecture Barcelona",
+                "speakers": "Alberto Estévez  - Enric Battle - Vicente Guallart ",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:30-11:00",
+                "activity": "Coffee break",
+                "isFullWidth": true
+            },
+            {
+                "time": "11:00-12:00",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Strategies – Policies – Funding programs",
+                        "chair": "Luigi Petito"
+                    },
+                    {
+                        "topic": "Technologies – Market – GI/NBS sector – Standards",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Projects – Design",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Execution – Maintenance – Quality",
+                        "chair": "TBA"
+                    },
+
+                    {
+                        "topic": "Impacts: k) Health and Well-being",
+                        "chair": "TBA"
+                    }  ,                  {
+                        "topic": "Workshop LIFE-New European Bauhaus",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "12:00-13:00",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Strategies – Policies – Funding programs",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Technologies – Market – GI/NBS sector – Standards",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Projects – Design",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Execution – Maintenance – Quality",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: k) Health and Well-being",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "",
+                        "chair": ""
+                    }
+                ]
+            },
+            {
+                "time": "13:00-14:30",
+                "activity": "Lunch break - Exhibition tour - Poster sessions",
+                "isFullWidth": true
+            },
+            {
+                "time": "14:30-15:30",
+                "activity": "WGIN - AWARDS Ceremony 1",
+                "isFullWidth": true
+            },
+            {
+                "time": "15:30-16:30",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Strategies – Policies – Funding programs",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Technologies – Market – GI/NBS sector – Standards",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Projects – Design",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Execution – Maintenance – Quality",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Education - Training",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Workshop Health and Well-Being",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "16:30-17:30",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Strategies – Policies – Funding programs",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Technologies – Market – GI/NBS sector – Standards",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Projects – Design",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Execution – Maintenance – Quality",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Education - Training",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "",
+                        "chair": ""
+                    }
+                ]
+            },
+            {
+                "time": "17:30-18:00",
+                "activity": "Duet Keynote 3 Green for Health",
+                "speakers": "",
+                "roomIndex": 0
+            },
+            {
+                "time": "18:00",
+                "activity": "Closing Day 1",
+                "roomIndex": 0
+            },
+            {
+                "time": "20:00",
+                "activity": "Gala dinner - Keynote - WGIN Awards Ceremony 2 ",
+                "isFullWidth": true
+            }
+        ]
+    },
+    {
+        "id": "day2",
+        "label": "Day 2",
+        "date": "Wednesday, October 28, 2026",
+        "title": "",
+        "rooms": [
+            "1. Main Room",
+            "2. Room 2",
+            "3. Room 3",
+            "4. Room 4",
+            "5. Room 5",
+            "6. Room 6"
+        ],
+        "events": [
+            {
+                "time": "08:00-09:00",
+                "activity": "Registration",
+                "isFullWidth": true
+            },
+            {
+                "time": "09:00-09:30",
+                "activity": "Opening",
+                "roomIndex": 0
+            },
+            {
+                "time": "09:30-10:00",
+                "activity": "Duet Keynote 5",
+                "speakers": "Green & Blue Cities: Wendy Y Chen - Salvador Rueda ",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:00-10:30",
+                "activity": "Duet Keynote 6",
+                "speakers": "Global Green Futures",
+                "roomIndex": 0
+            },
+
+            {
+                "time": "10:30-11:00",
+                "activity": "Coffee break",
+                "isFullWidth": true
+            },
+            {
+                "time": "11:00-12:00",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "PostConflict-Distaster Recovery",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: a) Climate resilience",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: e) Biodiversity",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: i) Participatory Planning and Governance",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Miscellaneous",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Workshop Global South",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "12:00-13:00",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "PostConflict-Distaster Recovery",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: b) Water management" ,
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: f) Air quality",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: j) Social Equity and Social Cohesion",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Miscellaneous",
+                        "chair": "TBA"
+                    },
+                    
+                    {
+                        "topic": "",
+                        "chair": ""
+                    }
+                ]
+            },
+            {
+                "time": "13:00-14:30",
+                "activity": "Lunch break - Exhibition tour",
+                "isFullWidth": true
+            },
+            {
+                "time": "14:30-15:00",
+                "activity": "Poster sessions",
+                "isFullWidth": true
+            },
+            {
+                "time": "15:00-15:30",
+                "activity": "Duet Keynote 6",
+                "speakers": "Urban Ecosystems",
+                "roomIndex": 0
+            },
+            {
+                "time": "15:30-16:30",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Global South",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: c) Natural and Climate Hazards",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: g) Place Regeneration",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: h) Knowledge and Social Capacity Building for Sustainable Urban Transformation",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Miscellaneous",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Workshop PostConflict-Disaster Recovery",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "16:30-17:30",
+                "isParallel": true,
+                "activity": "Parallel sessions",
+                "sessions": [
+                    {
+                        "topic": "Global South",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts: d) Green Space Management",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impacts h) New Economic Oportunities and Green Jobs",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Miscellaneous",
+                        "chair": "TBA"
+                    },
+                                        {
+                        "topic": "Miscellaneous",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "",
+                        "chair": ""
+                    }
+                ]
+            },
+            {
+                "time": "17:30-18:00",
+                "activity": "Round Table and Congress Conclusions",
+                "roomIndex": 0
+            },
+            {
+                "time": "18:00",
+                "activity": "Closing Day 2",
+                "roomIndex": 0
+            }
+        ]
+    },
+    {
+        "id": "day3",
+        "label": "Day 3",
+        "date": "Thursday, October 29, 2026",
+        "title": "Technical Visits - Barcelona",
+        "description": "The third day will be dedicated to technical visits, offering first-hand insights into exemplary green infrastructure projects in Barcelona, illustrating innovative approaches and practical applications in a real-world urban context. Detailed information on the visit options and how to sign up will be available soon.",
+        "events": []
+    },
+    {
+        "id": "day4",
+        "label": "Day 4",
+        "date": "Friday, October 30, 2026",
+        "title": "Innovation Workshops. Green Thinking - Lleida",
+        "subtitle": "Networking Plan for Monitoring and Evaluation of BIG4LIFE systems Impacts. Parc Agrobiotech Lleida",
+        "headers": [
+            "",
+            "",
+            "",
+            "Typology"
+        ],
+        "events": [
+            {
+                "time": "09:00-09:30",
+                "typology": "Reception",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "09:30-11:00",
+                "typology": "Workshop 1",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "11:00-11:30",
+                "typology": "Rest",
+                "activity": "Visit to BIG1-PCiTAL",
+                "extra": "Semi-intensive green roof"
+            },
+            {
+                "time": "11:30-13:00",
+                "typology": "Workshop 2",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "13:00-14:30",
+                "typology": "Lunch",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "14:30-17:00",
+                "typology": "Technical Visits",
+                "activity": "Visit to  BIG2 - Ronda Mercè using drone",
+                "extra": "Extensive green roof"
+            },
+            {
+
+                "activity": "Visit to BIG9 - Coberta Cavallers",
+                "extra": "Biodiverse. Zero water"
+            },
+            {
+
+                "activity": "Cultural visit to La Seu Vella",
+                "extra": ""
+            }
+        ]
+    }
+]

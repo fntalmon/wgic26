@@ -9,11 +9,16 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
-import programData from "@/data/program.json";
-import { getTranslations } from "next-intl/server";
+import programDataEn from "@/data/program-en.json";
+import programDataEs from "@/data/program-es.json";
+import { getTranslations, getLocale } from "next-intl/server";
 
 const Program = async () => {
     const t = await getTranslations("programPage");
+    const locale = await getLocale();
+    
+    // Select the program JSON file based on locale
+    const programData = locale === "es" ? programDataEs : programDataEn;
     const days = programData;
 
     return (

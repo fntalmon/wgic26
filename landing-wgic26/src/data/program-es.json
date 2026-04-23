@@ -1,0 +1,455 @@
+[
+    {
+        "id": "day1",
+        "label": "Dia 1",
+        "date": "Martes, 27 de octubre de 2026",
+        "title": "",
+        "rooms": [
+            "1. Sala Principal",
+            "2. Sala 2",
+            "3. Sala 3",
+            "4. Sala 4",
+            "5. Sala 5",
+            "6. Sala 6"
+        ],
+        "events": [
+            {
+                "time": "08:00-09:00",
+                "activity": "Acreditacion",
+                "isFullWidth": true
+            },
+            {
+                "time": "09:00-09:30",
+                "activity": "Ceremonia de apertura y bienvenida",
+                "roomIndex": 0
+            },
+            {
+                "time": "09:30-10:00",
+                "activity": "Conferencia magistral dual 1: Politicas de infraestructura verde",
+                "speakers": "Marcos Ros - Benjamin Rolles - Luigi Petito",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:00-10:30",
+                "activity": "Conferencia magistral dual 2: Arquitectura viva en Barcelona",
+                "speakers": "Alberto Estevez - Enric Battle - Vicente Guallart",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:30-11:00",
+                "activity": "Pausa para cafe",
+                "isFullWidth": true
+            },
+            {
+                "time": "11:00-12:00",
+                "isParallel": true,
+                "activity": "Sesiones paralelas",
+                "sessions": [
+                    {
+                        "topic": "Estrategias - Politicas - Programas de financiacion",
+                        "chair": "Luigi Petito"
+                    },
+                    {
+                        "topic": "Tecnologias - Mercado - Sector GI/NBS - Normativas",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Proyectos - Diseno",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Ejecucion - Mantenimiento - Calidad",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: k) Salud y bienestar",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Taller LIFE-New European Bauhaus",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "12:00-13:00",
+                "isParallel": true,
+                "activity": "Sesiones paralelas",
+                "sessions": [
+                    {
+                        "topic": "Estrategias - Politicas - Programas de financiacion",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Tecnologias - Mercado - Sector GI/NBS - Normativas",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Proyectos - Diseno",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Ejecucion - Mantenimiento - Calidad",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: k) Salud y bienestar",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "",
+                        "chair": ""
+                    }
+                ]
+            },
+            {
+                "time": "13:00-14:30",
+                "activity": "Almuerzo - Recorrido por la exposicion - Sesiones de posters",
+                "isFullWidth": true
+            },
+            {
+                "time": "14:30-15:30",
+                "activity": "Ceremonia de premios WGIN 1",
+                "isFullWidth": true
+            },
+            {
+                "time": "15:30-16:30",
+                "isParallel": true,
+                "activity": "Sesiones paralelas",
+                "sessions": [
+                    {
+                        "topic": "Estrategias - Politicas - Programas de financiacion",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Tecnologias - Mercado - Sector GI/NBS - Normativas",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Proyectos - Diseno",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Ejecucion - Mantenimiento - Calidad",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Educacion - Formacion",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Taller Salud y Bienestar",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "16:30-17:30",
+                "isParallel": true,
+                "activity": "Sesiones paralelas",
+                "sessions": [
+                    {
+                        "topic": "Estrategias - Politicas - Programas de financiacion",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Tecnologias - Mercado - Sector GI/NBS - Normativas",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Proyectos - Diseno",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Ejecucion - Mantenimiento - Calidad",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Educacion - Formacion",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "",
+                        "chair": ""
+                    }
+                ]
+            },
+            {
+                "time": "17:30-18:00",
+                "activity": "Conferencia magistral dual 3: Verde para la salud",
+                "speakers": "",
+                "roomIndex": 0
+            },
+            {
+                "time": "18:00",
+                "activity": "Cierre del Dia 1",
+                "roomIndex": 0
+            },
+            {
+                "time": "20:00",
+                "activity": "Cena de gala - Conferencia magistral - Ceremonia de premios WGIN 2",
+                "isFullWidth": true
+            }
+        ]
+    },
+    {
+        "id": "day2",
+        "label": "Dia 2",
+        "date": "Miercoles, 28 de octubre de 2026",
+        "title": "",
+        "rooms": [
+            "1. Sala Principal",
+            "2. Sala 2",
+            "3. Sala 3",
+            "4. Sala 4",
+            "5. Sala 5",
+            "6. Sala 6"
+        ],
+        "events": [
+            {
+                "time": "08:00-09:00",
+                "activity": "Acreditacion",
+                "isFullWidth": true
+            },
+            {
+                "time": "09:00-09:30",
+                "activity": "Apertura",
+                "roomIndex": 0
+            },
+            {
+                "time": "09:30-10:00",
+                "activity": "Conferencia magistral dual 5",
+                "speakers": "Ciudades verdes y azules: Wendy Y Chen - Salvador Rueda",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:00-10:30",
+                "activity": "Conferencia magistral dual 6",
+                "speakers": "Futuros verdes globales",
+                "roomIndex": 0
+            },
+            {
+                "time": "10:30-11:00",
+                "activity": "Pausa para cafe",
+                "isFullWidth": true
+            },
+            {
+                "time": "11:00-12:00",
+                "isParallel": true,
+                "activity": "Sesiones paralelas",
+                "sessions": [
+                    {
+                        "topic": "Recuperacion posconflicto-posdesastre",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: a) Resiliencia climatica",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: e) Biodiversidad",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: i) Planificacion participativa y gobernanza",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Miscelanea",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Taller Sur Global",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "12:00-13:00",
+                "isParallel": true,
+                "activity": "Sesiones paralelas",
+                "sessions": [
+                    {
+                        "topic": "Recuperacion posconflicto-posdesastre",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: b) Gestion del agua",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: f) Calidad del aire",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: j) Equidad social y cohesion social",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Miscelanea",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "",
+                        "chair": ""
+                    }
+                ]
+            },
+            {
+                "time": "13:00-14:30",
+                "activity": "Almuerzo - Recorrido por la exposicion",
+                "isFullWidth": true
+            },
+            {
+                "time": "14:30-15:00",
+                "activity": "Sesiones de posters",
+                "isFullWidth": true
+            },
+            {
+                "time": "15:00-15:30",
+                "activity": "Conferencia magistral dual 6",
+                "speakers": "Ecosistemas urbanos",
+                "roomIndex": 0
+            },
+            {
+                "time": "15:30-16:30",
+                "isParallel": true,
+                "activity": "Sesiones paralelas",
+                "sessions": [
+                    {
+                        "topic": "Sur Global",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: c) Riesgos naturales y climaticos",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: g) Regeneracion de espacios",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: h) Conocimiento y fortalecimiento de capacidades sociales para la transformacion urbana sostenible",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Miscelanea",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Taller Recuperacion posconflicto-posdesastre",
+                        "chair": "TBA"
+                    }
+                ]
+            },
+            {
+                "time": "16:30-17:30",
+                "isParallel": true,
+                "activity": "Sesiones paralelas",
+                "sessions": [
+                    {
+                        "topic": "Sur Global",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: d) Gestion de espacios verdes",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Impactos: h) Nuevas oportunidades economicas y empleos verdes",
+                        "chair": "TBA"
+                    },
+                                      {
+                        "topic": "Miscelanea",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "Miscelanea",
+                        "chair": "TBA"
+                    },
+                    {
+                        "topic": "",
+                        "chair": ""
+                    }
+                ]
+            },
+            {
+                "time": "17:30-18:00",
+                "activity": "Mesa redonda y conclusiones del congreso",
+                "roomIndex": 0
+            },
+            {
+                "time": "18:00",
+                "activity": "Cierre del Dia 2",
+                "roomIndex": 0
+            }
+        ]
+    },
+    {
+        "id": "day3",
+        "label": "Dia 3",
+        "date": "Jueves, 29 de octubre de 2026",
+        "title": "Visitas tecnicas - Barcelona",
+        "description": "El tercer dia estara dedicado a visitas tecnicas, ofreciendo una vision de primera mano sobre proyectos ejemplares de infraestructura verde en Barcelona, mostrando enfoques innovadores y aplicaciones practicas en un contexto urbano real. La informacion detallada sobre las opciones de visita y como inscribirse estara disponible proximamente.",
+        "events": []
+    },
+    {
+        "id": "day4",
+        "label": "Dia 4",
+        "date": "Viernes, 30 de octubre de 2026",
+        "title": "Talleres de innovacion. Green Thinking - Lleida",
+        "subtitle": "Plan de networking para el monitoreo y la evaluacion de los impactos de los sistemas BIG4LIFE. Parc Agrobiotech Lleida",
+        "headers": [
+            "",
+            "",
+            "",
+            "Tipologia"
+        ],
+        "events": [
+            {
+                "time": "09:00-09:30",
+                "typology": "Recepcion",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "09:30-11:00",
+                "typology": "Taller 1",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "11:00-11:30",
+                "typology": "Descanso",
+                "activity": "Visita a BIG1-PCiTAL",
+                "extra": "Cubierta verde semiintensiva"
+            },
+            {
+                "time": "11:30-13:00",
+                "typology": "Taller 2",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "13:00-14:30",
+                "typology": "Almuerzo",
+                "activity": "",
+                "extra": ""
+            },
+            {
+                "time": "14:30-17:00",
+                "typology": "Visitas tecnicas",
+                "activity": "Visita a BIG2 - Ronda Merce con dron",
+                "extra": "Cubierta verde extensiva"
+            },
+            {
+                "activity": "Visita a BIG9 - Coberta Cavallers",
+                "extra": "Biodiversa. Agua cero"
+            },
+            {
+                "activity": "Visita cultural a La Seu Vella",
+                "extra": ""
+            }
+        ]
+    }
+]
