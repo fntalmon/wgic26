@@ -249,7 +249,7 @@
       "sponsors": "Patrocinadores"
     },
     "dateValues": {
-      "abstracts": "15 de diciembre de 2025 - 30 de abril de 2026",
+      "abstracts": "15 de diciembre de 2025 - 31 de mayo de 2026",
       "paperSubmissionDeadline": "< 30 de abril de 2026",
       "acceptance": "< 15 de mayo de 2026",
       "acceptanceDecision": "< 15 de mayo de 2026",
@@ -318,7 +318,7 @@
       "sponsors": "Patrocinadores"
     },
     "dateValues": {
-      "abstracts": "15 de diciembre de 2025 - 30 de abril de 2026",
+      "abstracts": "15 de diciembre de 2025 - 31 de mayo de 2026",
       "acceptance": "Antes del 15 de mayo de 2026",
       "firstDraft": "Antes del 12 de junio de 2026",
       "revision": "Antes del 30 de junio de 2026",
@@ -615,7 +615,10 @@
       "en": "Inglés",
       "es": "Español",
       "it": "Italiano",
-      "el": "Griego"
+      "el": "Griego",
+      "fr": "Francés",
+      "pt": "Portugués",
+      "ar": "Árabe"
     },
     "items": {
       "march2026": {
@@ -625,6 +628,10 @@
       "march2026Newsletter2": {
         "title": "Boletín de Marzo",
         "date": "Marzo "
+      },
+      "april2026Newsletter3": {
+        "title": "Boletín de Abril",
+        "date": "Abril "
       }
     }
   },

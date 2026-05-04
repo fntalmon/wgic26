@@ -249,11 +249,11 @@
       "sponsors": "Sponsors"
     },
     "dateValues": {
-      "abstracts": "December 15, 2025 - April 30, 2026",
+      "abstracts": "December 15, 2025 - May 31, 2026",
       "paperSubmissionDeadline": "< April 30, 2026",
       "acceptance": "< May 15, 2026",
       "acceptanceDecision": "< May 15, 2026",
-      "firstDraft": "< June 12, 2026",
+      "firstDraft": "< 31 May, 2026",
       "r1Draft": "< June 12, 2026",
       "revision": "< June 30, 2026",
       "finalPaper": "< July 31, 2026",
@@ -292,7 +292,7 @@
   "speakersPage": {
     "title": "Be a speaker",
     "description": "Meet the leading voices in green infrastructure. WGIC 2026 will feature international experts, innovators, and thought leaders driving the future of sustainable cities.",
-    "calloutTitle": "Submit your paper or project before April 30, 2026",
+    "calloutTitle": "Submit your paper or project before May 31, 2026",
     "calloutP1": "Thank you for your interest in participating in the World Green Infrastructure Congress 2026 Barcelona - Lleida (WGIC 2026). To submit a paper, access and complete the data in the submission application at the link below.",
     "calloutP2": "The 12th World Green Infrastructure Congress will be held in Barcelona, at the International Convention Centre of Barcelona, from October 27 to 30, 2026. WGIC 2026 welcomes original research, case studies, and innovative applications in short paper format (maximum 5 pages), in MS Word format.",
     "calloutP3": "The best papers presented at WGIC26 will be fast-tracked for Special Issues in three leading peer-reviewed journals: Urban Forestry and Urban Greening (Elsevier), Nature-Based Solutions (Elsevier), and the Journal of Living Architecture (Green Roofs for Healthy Cities –GRHC).",
@@ -318,15 +318,15 @@
       "sponsors": "Sponsors"
     },
     "dateValues": {
-      "abstracts": "December 15, 2025 - April 30, 2026",
+      "abstracts": "December 15, 2025 - May 31, 2026",
       "acceptance": "Before May 15, 2026",
-      "firstDraft": "Before June 12, 2026",
-      "revision": "Before June 30, 2026",
+      "firstDraft": "Before June 15, 2026",
+      "revision": "Before July 15, 2026",
       "finalPaper": "Before July 31, 2026",
       "finalProgram": "July 31, 2026",
-      "earlyBird": "Before April 30, 2026",
+      "earlyBird": "Before May 31, 2026",
       "registrationOpen": "Before September 30, 2026",
-      "partners": "Before April 30, 2026",
+      "partners": "Before May 31, 2026",
       "sponsors": "Before September 30, 2026"
     },
     "stepsTitle": "Paper submission steps",
@@ -335,10 +335,10 @@
       "s2": "Read the instructions carefully.",
       "s3": "Select a main topic where your work fits.",
       "s4": "Prepare the paper (maximum 5 pages).",
-      "s5": "Submit your paper in .doc format before April 30, 2026.",
-      "s6": "You will receive the decision and R1 review before May 15, 2026.",
-      "s7": "Submit the revised paper (R1) before June 12, 2026 and R2 before June 30, 2026.",
-      "s8": "Submit the final paper before July 30, 2026."
+      "s5": "Submit your paper in .doc format before May 31, 2026.",
+      "s6": "You will receive the decision and R1 review before June 15, 2026.",
+      "s7": "Submit the revised paper (R1) before July 15, 2026 and R2 before July 31, 2026.",
+      "s8": "Submit the final paper before July 31, 2026."
     },
     "typologiesTitle": "Presentation typologies",
     "tableHeaders": {
@@ -615,7 +615,10 @@
       "en": "English",
       "es": "Spanish",
       "it": "Italian",
-      "el": "Greek"
+      "el": "Greek",
+      "fr": "French",
+      "pt": "Portuguese",
+      "ar": "Arabic"
     },
     "items": {
       "march2026": {
@@ -625,6 +628,10 @@
       "march2026Newsletter2": {
         "title": "March Newsletter",
         "date": "March "
+      },
+      "april2026Newsletter3": {
+        "title": "April Newsletter",
+        "date": "April "
       }
     }
   }

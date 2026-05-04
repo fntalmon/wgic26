@@ -72,16 +72,7 @@ const Footer = async () => {
         <div>{t("copyright")}</div>
         <div className="flex gap-2 items-end">
           {t("another")}
-          <a
-            href="http://jordipoblet.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex gap-1 items-center text-white underline underline-offset-4 decoration-1 decoration-potus lg:no-underline hover:underline hover:underline-offset-4 hover:decoration-1 hover:decoration-potus"
-          >
-            <School size={14} />
-            Paesetto
-          </a>
-          & Federico Talmon 
+           Federico Talmon 
           {t("creation")}
         </div>
       </div>
