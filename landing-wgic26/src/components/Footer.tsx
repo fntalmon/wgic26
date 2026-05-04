@@ -1,4 +1,4 @@
-import { School } from "lucide-react";
+
 import Link from "next/link";
 import React from "react";
 import { getTranslations } from "next-intl/server";
