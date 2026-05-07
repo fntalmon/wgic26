@@ -3,9 +3,16 @@ import { cookies } from "next/headers";
 import { defaultLocale, isValidLocale, localeCookieName } from "./config";
 
 export default getRequestConfig(async () => {
-  const cookieStore = await cookies();
-  const localeFromCookie = cookieStore.get(localeCookieName)?.value;
-  const locale = isValidLocale(localeFromCookie) ? localeFromCookie : defaultLocale;
+  let locale = defaultLocale;
+  try {
+    const cookieStore = await cookies();
+    const localeFromCookie = cookieStore.get(localeCookieName)?.value;
+    if (isValidLocale(localeFromCookie)) {
+      locale = localeFromCookie;
+    }
+  } catch {
+    // During static build, cookies() may not be available
+  }
 
   return {
     locale,
