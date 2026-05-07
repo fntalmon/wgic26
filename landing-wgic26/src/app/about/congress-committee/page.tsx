@@ -24,7 +24,7 @@ const CongressCommittee = async () => {
     { name: "Leila Tolderlund", institution: "University of Copenhagen", country: "Denmark" },
     { name: "Julián Briz", institution: "Polytechnic University of Madrid", country: "Spain" },
     { name: "Marc Teixidó", institution: "Spanish National Research Council (CSIC). Institute of Environmental Assessment and Water Research", country: "Spain" },
-    { name: "Efthimios Zervas", institution: "Hellenic Open University", country: "Grrece" },
+    { name: "Efthimios Zervas", institution: "Hellenic Open University", country: "Greece" },
   ];
 
   const professionalCommittee = [
