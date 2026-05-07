@@ -268,7 +268,8 @@ const Exhibitors = () => {
         setDownloadStep("success");
         // Trigger the actual download
         window.open(
-          "https://drive.google.com/uc?export=download&id=15hLfdY-jNAy47zCE-RNAl132PxDU2_Q-",
+          "https://drive.google.com/uc?export=download&id=1yRPB7IyOzDifeCW_sDjgI1APAwOa8zjC",
+  
           "_blank",
         );
       } else {
@@ -869,7 +870,7 @@ const Exhibitors = () => {
                     <p className="text-white/60 text-base m-0">
                       {t.cards.didNotStart}{" "}
                       <a
-                        href="https://drive.google.com/uc?export=download&id=15hLfdY-jNAy47zCE-RNAl132PxDU2_Q-"
+                        href="https://drive.google.com/file/d/1yRPB7IyOzDifeCW_sDjgI1APAwOa8zjC/view"
                         target="_blank"
                         className="text-potus underline"
                       >
