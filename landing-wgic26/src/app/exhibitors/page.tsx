@@ -1321,7 +1321,7 @@ const Exhibitors = () => {
 
                 <Image
                   src="/img/logos/eadc.png"
-                  alt="Logo pronatur"
+                  alt="Logo eadc"
                   width={320}
                   height={240}
                   className="h-24 w-auto object-contain"
