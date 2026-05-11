@@ -2,7 +2,7 @@
 title: "WGIC26 Papers to Be Fast-Tracked for Elsevier Special Issue"
 date: "2026-04-28"
 excerpt: "The best papers presented at WGIC26 will be fast-tracked for publication in Special Issues of Urban Forestry & Urban Greening, a leading Elsevier journal in urban green infrastructure."
-coverImage: "https://www.lib.umd.edu/sites/default/files/styles/optimized/public/2023-05/Web%20News%20Item%20Photos%289%29.png?itok=mW_oI4EU"
+coverImage: "/img/elsevier_logo_icon_171184.jpg"
 author: "WGIC26 Editorial Team"
 category: "Research"
 tags: ["publication", "elsevier", "urban forestry", "research", "journal"]

@@ -269,7 +269,7 @@ const Exhibitors = () => {
         // Trigger the actual download
         window.open(
           "https://drive.google.com/uc?export=download&id=1yRPB7IyOzDifeCW_sDjgI1APAwOa8zjC",
-  
+
           "_blank",
         );
       } else {
@@ -1313,6 +1313,14 @@ const Exhibitors = () => {
 
                 <Image
                   src="/img/logos/pronaturlogo.jpg"
+                  alt="Logo pronatur"
+                  width={320}
+                  height={240}
+                  className="h-24 w-auto object-contain"
+                />
+
+                <Image
+                  src="/img/logos/eadc.png"
                   alt="Logo pronatur"
                   width={320}
                   height={240}

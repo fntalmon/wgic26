@@ -81,12 +81,12 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Cover Image */}
         {post.coverImage && (
           <section className="pt-0 gap-0 px-0 sm:px-0 lg:px-0">
-            <div className="w-full aspect-[21/9] max-h-[500px] overflow-hidden">
+            <div className="w-full aspect-[16/9] max-h-[500px] overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={post.coverImage}
                 alt={post.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
           </section>
@@ -191,13 +191,13 @@ export default async function BlogPostPage({ params }: Props) {
                     href={`/blog/${r.slug}`}
                     className="relative overflow-hidden rounded-lg"
                   >
-                    <div className="aspect-[16/10] relative">
+                    <div className="aspect-[16/9] relative">
                       {r.coverImage ? (
                         <Image
                           src={r.coverImage}
                           alt={r.title}
                           fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          className="object-contain transition-transform duration-500 group-hover:scale-105"
                         />
                       ) : (
                         <div className="w-full h-full bg-gradient-to-br from-cactus to-monstera" />

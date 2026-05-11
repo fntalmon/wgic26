@@ -455,6 +455,10 @@
       "speaker6": {
         "name": "Wendy Y. Chen",
         "bio": "Profesora en la Universidad de Hong Kong, Wendy Y. Chen se especializa en infraestructura verde-azul urbana, enfocándose en cómo las soluciones basadas en la naturaleza mejoran la sostenibilidad urbana, la planificación y la calidad de vida."
+      },
+      "speaker7": {
+        "name": "Dorothy Aseyo",
+        "bio": "Directora Ejecutiva del Movimiento Cinturón Verde, Dorothy Aseyo trabaja en conservación ambiental, empoderamiento comunitario, medios de vida sostenibles y resiliencia climática, promoviendo soluciones basadas en la naturaleza y acción de base para construir sociedades más resilientes e inclusivas."
       }
     },
     "closing": "Este primer grupo de oradores subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
@@ -632,6 +636,10 @@
       "april2026Newsletter3": {
         "title": "Boletín de Abril",
         "date": "Abril "
+      },
+      "may2026Newsletter4": {
+        "title": "Boletín de Mayo",
+        "date": "Mayo "
       }
     }
   },

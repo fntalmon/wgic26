@@ -493,6 +493,14 @@ export default function Home() {
                   height={240}
                   className="h-24 w-auto object-contain"
                 />
+
+                                <Image
+                  src="/img/logos/eadc.png"
+                  alt="Logo pronatur"
+                  width={320}
+                  height={240}
+                  className="h-24 w-auto object-contain"
+                />
               </div>
             </div>
           </div>

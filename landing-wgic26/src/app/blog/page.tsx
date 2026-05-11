@@ -41,13 +41,13 @@ export default async function BlogIndexPage() {
               href={`/blog/${featuredPost.slug}`}
               className="lg:w-1/2 relative overflow-hidden rounded-lg group"
             >
-              <div className="aspect-[16/10] relative">
+              <div className="aspect-[16/9] relative">
                 {featuredPost.coverImage ? (
                   <Image
                     src={featuredPost.coverImage}
                     alt={featuredPost.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-cactus to-monstera" />
@@ -129,13 +129,13 @@ export default async function BlogIndexPage() {
                   href={`/blog/${post.slug}`}
                   className="relative overflow-hidden rounded-lg"
                 >
-                  <div className="aspect-[16/10] relative">
+                  <div className="aspect-[16/9] relative">
                     {post.coverImage ? (
                       <Image
                         src={post.coverImage}
                         alt={post.title}
                         fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="object-contain transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-cactus to-monstera" />

@@ -147,6 +147,56 @@ const Newsletters = () => {
         },
       ],
     },
+    {
+      id: "may2026-newsletter4",
+      title: t("items.may2026Newsletter4.title"),
+      date: t("items.may2026Newsletter4.date"),
+      publishedAt: "2026-05-08",
+      languages: [
+        {
+          language: t("languages.en"),
+          code: "en",
+          slug: "may2026-newsletter4-en",
+          pdfUrl: "/newsletters/Newsletter4Ingles.pdf",
+          canReadOnline: true,
+        },
+        {
+          language: t("languages.es"),
+          code: "es",
+          slug: "may2026-newsletter4-es",
+          pdfUrl: "/newsletters/Newsletter4Espanol.pdf",
+          canReadOnline: true,
+        },
+        {
+          language: t("languages.it"),
+          code: "it",
+          slug: "may2026-newsletter4-it",
+          pdfUrl: "/newsletters/Newsletter4Italiano.pdf",
+          canReadOnline: true,
+        },
+        {
+          language: t("languages.fr"),
+          code: "fr",
+          slug: "may2026-newsletter4-fr",
+          pdfUrl: "/newsletters/Newsletter4Frances.pdf",
+          canReadOnline: true,
+        },
+        {
+          language: t("languages.pt"),
+          code: "pt",
+          slug: "may2026-newsletter4-pt",
+          pdfUrl: "/newsletters/Newsletter4Portugues.pdf",
+          canReadOnline: true,
+        },
+        {
+          language: t("languages.ar"),
+          code: "ar",
+          slug: "may2026-newsletter4-ar",
+          pdfUrl: "/newsletters/Newsletter4Arabe.pdf",
+          canReadOnline: true,
+        },
+      ],
+    },
   ];
 
   const sortedNewsletters = [...newsletters].sort(

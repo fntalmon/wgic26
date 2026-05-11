@@ -455,6 +455,10 @@
       "speaker6": {
         "name": "Wendy Y. Chen",
         "bio": "Professor at the University of Hong Kong, Wendy Y. Chen specialises in urban green-blue infrastructure, focusing on how nature-based solutions improve urban sustainability, planning, and quality of life."
+      },
+      "speaker7": {
+        "name": "Dorothy Aseyo",
+        "bio": "Executive Director of The Green Belt Movement, Dorothy Aseyo works on environmental conservation, community empowerment, sustainable livelihoods, and climate resilience, promoting nature-based solutions and grassroots action to build more resilient and inclusive societies."
       }
     },
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."
@@ -632,6 +636,10 @@
       "april2026Newsletter3": {
         "title": "April Newsletter",
         "date": "April "
+      },
+      "may2026Newsletter4": {
+        "title": "May Newsletter",
+        "date": "May "
       }
     }
   }
