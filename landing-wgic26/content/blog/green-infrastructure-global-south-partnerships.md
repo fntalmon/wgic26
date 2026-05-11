@@ -6,7 +6,7 @@ coverImage: "/img/hero.jpg"
 author: "Gabriel Perez"
 category: "Research"
 tags: ["global south", "partnerships", "nature-based solutions", "equity", "WGIC26"]
-featured: false
+featured: true
 ---
 
 The World Green Infrastructure Network has long recognized that the climate crisis, biodiversity loss, and interconnected sustainability challenges we face today transcend borders and affect all nations, albeit with profound unequal impacts and responsibilities. The countries of the Global South, many of which bear the least historical responsibility for environmental degradation, often face the most severe consequences while possessing the fewest resources to respond. Yet these same regions hold invaluable knowledge systems, innovative approaches, and context-specific solutions that are essential for addressing our shared planetary challenges.
