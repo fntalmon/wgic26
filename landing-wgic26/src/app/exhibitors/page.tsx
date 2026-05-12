@@ -410,7 +410,7 @@ const Exhibitors = () => {
                 {t.exhibitorsP1}
               </p>
             </div>
-
+{/*
             <div className="overflow-x-auto">
               <table className="w-full border-collapse border border-white/20">
                 <thead>
@@ -771,7 +771,7 @@ const Exhibitors = () => {
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> */}
 
             <div className="mt-6">
               <h4 className="text-lg text-white uppercase mb-3">
@@ -792,8 +792,8 @@ const Exhibitors = () => {
               />
             </div>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Info Pack Download Card */}
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+              {/* Info Pack Download Card */}{/*
               <div className="bg-white/5 border border-white/10 rounded-xl p-8 flex flex-col gap-6 hover:border-potus/30 transition-all">
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-cactus/20 rounded-lg">
@@ -881,7 +881,7 @@ const Exhibitors = () => {
                   </div>
                 )}
               </div>
-
+              */}
               {/* Interest Form Card */}
               <div className="bg-white/5 border border-white/10 rounded-xl p-8 flex flex-col gap-6 hover:border-potus/30 transition-all">
                 <div className="flex items-center gap-4">
@@ -1040,6 +1040,7 @@ const Exhibitors = () => {
                 </div>
 
                 <p className="text-white/70 text-base m-0">{t.cards.pptDesc}</p>
+                
 
                 <div className="mt-auto">
                   <a
