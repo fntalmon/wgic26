@@ -5,9 +5,7 @@ import Carousel from "@/components/Carousel";
 import Image from "next/image";
 import { useState } from "react";
 import {
-  Download,
   FileText,
-  Send,
   Loader2,
   Presentation,
   CheckCircle,
@@ -198,11 +196,12 @@ const copy = {
 const Exhibitors = () => {
   const locale = useLocale();
   const t = locale === "es" ? copy.es : copy.en;
-  const [downloadStep, setDownloadStep] = useState<
-    "initial" | "form" | "success"
-  >("initial");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formError, setFormError] = useState<string>("");
+  // Download form state (reserved for future use)
+  // const [downloadStep, setDownloadStep] = useState<
+  //   "initial" | "form" | "success"
+  // >("initial");
+  // const [isSubmitting, setIsSubmitting] = useState(false);
+  // const [formError, setFormError] = useState<string>("");
 
   const [interestFormStep, setInterestFormStep] = useState<
     "initial" | "form" | "success"
@@ -217,71 +216,18 @@ const Exhibitors = () => {
     participationType: "",
   });
 
-  const handleDownloadClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setDownloadStep("form");
-    setFormError("");
-  };
+  // Download handlers (reserved for future use)
+  // const handleDownloadClick = (e: React.MouseEvent) => {
+  //   e.preventDefault();
+  //   setDownloadStep("form");
+  //   setFormError("");
+  // };
 
-  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setFormError("");
-
-    const formData = new FormData(e.currentTarget);
-    const name = (formData.get("name") as string)?.trim() || "";
-    const email = (formData.get("email") as string)?.trim() || "";
-
-    // Validations
-    if (!name) {
-      setFormError(t.errors.enterName);
-      return;
-    }
-
-    if (name.length < 2) {
-      setFormError(t.errors.shortName);
-      return;
-    }
-
-    if (!email) {
-      setFormError(t.errors.enterEmail);
-      return;
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      setFormError(t.errors.invalidEmail);
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    try {
-      const response = await fetch("/api/exhibitor-pack", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email }),
-      });
-
-      if (response.ok) {
-        setDownloadStep("success");
-        // Trigger the actual download
-        window.open(
-          "https://drive.google.com/uc?export=download&id=1yRPB7IyOzDifeCW_sDjgI1APAwOa8zjC",
-
-          "_blank",
-        );
-      } else {
-        throw new Error("Failed to process download");
-      }
-    } catch (error) {
-      console.error("Download error:", error);
-      setFormError(t.errors.processing);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  // const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setFormError("");
+  //   ...
+  // };
 
   const handleInterestFormClick = (e: React.MouseEvent) => {
     e.preventDefault();
