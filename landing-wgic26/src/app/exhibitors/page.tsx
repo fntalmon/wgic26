@@ -410,7 +410,7 @@ const Exhibitors = () => {
                 {t.exhibitorsP1}
               </p>
             </div>
-{/*
+{/*s
             <div className="overflow-x-auto">
               <table className="w-full border-collapse border border-white/20">
                 <thead>
