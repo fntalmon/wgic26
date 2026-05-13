@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { Mic  } from "lucide-react";
+import { Mic } from "lucide-react";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -111,7 +111,6 @@ export default function Home() {
 
           <div className="w-full pt-7 border-t-1 border-white/50">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-
               <Button asChild variant="default" size="lg">
                 <a href="/speakers">
                   <Mic size={20} />
@@ -385,13 +384,19 @@ export default function Home() {
                     className="h-20 w-auto object-contain"
                   />
                 </a>
-                                  <Image
+                <a
+                  href="https://www.projar.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
                     src="/img/logos/projar.jpg"
                     alt="Projar"
                     width={330}
                     height={230}
                     className="h-30 w-auto object-contain"
                   />
+                </a>
               </div>
             </div>
 
@@ -483,15 +488,13 @@ export default function Home() {
                   />
                 </a>
 
-
-                  <Image
-                    src="/img/logos/arboretum.png"
-                    alt="Arboretum"
-                    width={300}
-                    height={220}
-                    className="h-14 w-auto object-contain"
-                  />
-             
+                <Image
+                  src="/img/logos/arboretum.png"
+                  alt="Arboretum"
+                  width={300}
+                  height={220}
+                  className="h-14 w-auto object-contain"
+                />
 
                 <Image
                   src="/img/logos/pronaturlogo.jpg"
@@ -501,7 +504,7 @@ export default function Home() {
                   className="h-24 w-auto object-contain"
                 />
 
-                                <Image
+                <Image
                   src="/img/logos/eadc.png"
                   alt="Logo eadc"
                   width={320}

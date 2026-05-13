@@ -1154,14 +1154,19 @@ const Exhibitors = () => {
                     className="h-20 w-auto object-contain"
                   />
                 </a>
-
-                <Image
-                  src="/img/logos/projar.jpg"
-                  alt="Projar"
-                  width={330}
-                  height={230}
-                  className="h-30 w-auto object-contain"
-                />
+                <a
+                  href="https://www.projar.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/projar.jpg"
+                    alt="Projar"
+                    width={330}
+                    height={230}
+                    className="h-30 w-auto object-contain"
+                  />
+                </a>
               </div>
             </div>
 
