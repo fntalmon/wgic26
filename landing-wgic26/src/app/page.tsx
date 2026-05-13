@@ -379,12 +379,19 @@ export default function Home() {
                 >
                   <Image
                     src="/img/logos/jardinMovil.png"
-                    alt="Eixverd"
+                    alt="JardinMovil"
                     width={330}
                     height={230}
                     className="h-20 w-auto object-contain"
                   />
                 </a>
+                                  <Image
+                    src="/img/logos/projar.jpg"
+                    alt="Projar"
+                    width={330}
+                    height={230}
+                    className="h-30 w-auto object-contain"
+                  />
               </div>
             </div>
 

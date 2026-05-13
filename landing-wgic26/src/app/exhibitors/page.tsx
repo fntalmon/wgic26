@@ -4,12 +4,7 @@ import PageHeader from "@/components/PageHeader";
 import Carousel from "@/components/Carousel";
 import Image from "next/image";
 import { useState } from "react";
-import {
-  FileText,
-  Loader2,
-  Presentation,
-  CheckCircle,
-} from "lucide-react";
+import { FileText, Loader2, Presentation, CheckCircle } from "lucide-react";
 import { useLocale } from "next-intl";
 
 const copy = {
@@ -356,7 +351,7 @@ const Exhibitors = () => {
                 {t.exhibitorsP1}
               </p>
             </div>
-{/*s
+            {/*s
             <div className="overflow-x-auto">
               <table className="w-full border-collapse border border-white/20">
                 <thead>
@@ -739,7 +734,8 @@ const Exhibitors = () => {
             </div>
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-              {/* Info Pack Download Card */}{/*
+              {/* Info Pack Download Card */}
+              {/*
               <div className="bg-white/5 border border-white/10 rounded-xl p-8 flex flex-col gap-6 hover:border-potus/30 transition-all">
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-cactus/20 rounded-lg">
@@ -986,7 +982,6 @@ const Exhibitors = () => {
                 </div>
 
                 <p className="text-white/70 text-base m-0">{t.cards.pptDesc}</p>
-                
 
                 <div className="mt-auto">
                   <a
@@ -1159,6 +1154,14 @@ const Exhibitors = () => {
                     className="h-20 w-auto object-contain"
                   />
                 </a>
+
+                <Image
+                  src="/img/logos/projar.jpg"
+                  alt="Projar"
+                  width={330}
+                  height={230}
+                  className="h-30 w-auto object-contain"
+                />
               </div>
             </div>
 
