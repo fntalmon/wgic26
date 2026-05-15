@@ -1288,6 +1288,11 @@ const Exhibitors = () => {
                   />
                 </a>
 
+                <a
+                  href="https://agronoms.cat//"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                 <Image
                   src="/img/logos/eadc.png"
                   alt="Logo eadc"
@@ -1295,6 +1300,7 @@ const Exhibitors = () => {
                   height={240}
                   className="h-24 w-auto object-contain"
                 />
+                </a>
               </div>
             </div>
           </div>

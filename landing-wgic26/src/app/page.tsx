@@ -515,6 +515,11 @@ export default function Home() {
                     className="h-24 w-auto object-contain"
                   />
                 </a>
+                <a
+                  href="https://agronoms.cat//"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                 <Image
                   src="/img/logos/eadc.png"
                   alt="Logo eadc"
@@ -522,6 +527,7 @@ export default function Home() {
                   height={240}
                   className="h-24 w-auto object-contain"
                 />
+                </a>
               </div>
             </div>
           </div>
