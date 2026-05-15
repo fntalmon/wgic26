@@ -487,23 +487,34 @@ export default function Home() {
                     className="h-14 w-auto object-contain"
                   />
                 </a>
-
-                <Image
-                  src="/img/logos/arboretum.png"
-                  alt="Arboretum"
-                  width={300}
-                  height={220}
-                  className="h-14 w-auto object-contain"
-                />
-
-                <Image
-                  src="/img/logos/pronaturlogo.jpg"
-                  alt="Logo pronatur"
-                  width={320}
-                  height={240}
-                  className="h-24 w-auto object-contain"
-                />
-
+                <a
+                  href="https://parcagrobiotech.com/arboretum/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <Image
+                    src="/img/logos/arboretum.png"
+                    alt="Arboretum"
+                    width={300}
+                    height={220}
+                    className="h-14 w-auto object-contain"
+                  />
+                </a>
+                
+                <a
+                  href="https://pronatur.chil.me/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/pronaturlogo.jpg"
+                    alt="Logo pronatur"
+                    width={320}
+                    height={240}
+                    className="h-24 w-auto object-contain"
+                  />
+                </a>
                 <Image
                   src="/img/logos/eadc.png"
                   alt="Logo eadc"
