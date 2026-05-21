@@ -258,24 +258,26 @@ const Navigation = () => {
             <AnimatedLogo scrolled={scrolled} visible={showNavbar} />
           </Link>
           <NavigationMenu className="flex-1">
-            <NavigationMenuList className="flex 2xl:gap-2 xl:gap-1.5 gap-0.5 justify-center">
+            <NavigationMenuList className="flex 2xl:gap-2 xl:gap-1 gap-0 justify-center">
               {menu.map((item) => renderMenuItem(item))}
             </NavigationMenuList>
           </NavigationMenu>
-          <div className="flex gap-1.5 justify-end flex-wrap flex-shrink-0 items-center">
+          <div className="flex gap-3 items-center flex-shrink-0">
             <LanguageSwitcher />
-            <Button asChild variant="yellow">
-              <a href="/speakers">
-                <FileUp size={20} />
-                {t("papersProjects")}
-              </a>
-            </Button>
-            <Button asChild variant="default">
-              <a href="/registration">
-                <Ticket size={20} />
-                {t("tickets")}
-              </a>
-            </Button>
+            <div className="flex gap-1 items-center">
+              <Button asChild variant="yellow">
+                <a href="/speakers">
+                  <FileUp size={20} />
+                  {t("papersProjects")}
+                </a>
+              </Button>
+              <Button asChild variant="default">
+                <a href="/registration">
+                  <Ticket size={20} />
+                  {t("tickets")}
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
 

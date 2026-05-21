@@ -8,6 +8,12 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion";
 import "./topics.css";
 import { getTranslations } from "next-intl/server";
 
@@ -49,6 +55,61 @@ const Topics = async () => {
                             </p>
                         </TextImage>
 
+                    </div>
+
+                    {/* Key Topics Accordion */}
+                    <div className="mt-12 mb-12">
+                        <h3 className="text-2xl font-semibold text-white mb-6 uppercase">{t("accordionTitle")}</h3>
+                        <Accordion type="single" collapsible className="w-full">
+                            <AccordionItem value="topic1">
+                                <AccordionTrigger className="text-white text-lg hover:no-underline">
+                                    {t("accordion.topic1.title")}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-white/80 text-base leading-relaxed">
+                                    {t("accordion.topic1.description")}
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="topic2">
+                                <AccordionTrigger className="text-white text-lg hover:no-underline">
+                                    {t("accordion.topic2.title")}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-white/80 text-base leading-relaxed">
+                                    {t("accordion.topic2.description")}
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="topic3">
+                                <AccordionTrigger className="text-white text-lg hover:no-underline">
+                                    {t("accordion.topic3.title")}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-white/80 text-base leading-relaxed">
+                                    {t("accordion.topic3.description")}
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="topic4">
+                                <AccordionTrigger className="text-white text-lg hover:no-underline">
+                                    {t("accordion.topic4.title")}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-white/80 text-base leading-relaxed">
+                                    {t("accordion.topic4.description")}
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="topic5">
+                                <AccordionTrigger className="text-white text-lg hover:no-underline">
+                                    {t("accordion.topic5.title")}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-white/80 text-base leading-relaxed">
+                                    {t("accordion.topic5.description")}
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="topic6">
+                                <AccordionTrigger className="text-white text-lg hover:no-underline">
+                                    {t("accordion.topic6.title")}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-white/80 text-base leading-relaxed">
+                                    {t("accordion.topic6.description")}
+                                </AccordionContent>
+                            </AccordionItem>
+                        </Accordion>
                     </div>
 
                     {/* Unified Topics Table */}

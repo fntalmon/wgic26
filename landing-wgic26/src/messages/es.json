@@ -14,15 +14,15 @@
     "workshops": "Talleres",
     "technicalVisits": "Visitas tecnicas",
     "wginAwards": "Premios WGIN",
-    "keyNoteSpeakers": "Conferencistas principales",
+    "keyNoteSpeakers": "Oradores",
     "newsletters": "Boletines",
     "speakers": "Oradores",
     "registration": "Registro",
-    "partnersExhibitors": "Socios y expositores",
-    "planYourStay": "Planifica tu estancia",
+    "partnersExhibitors": "Expositores",
+    "planYourStay": "Tu estancia",
     "travel": "Viaje",
     "tickets": "Entradas",
-    "papersProjects": "Ponencias y proyectos",
+    "papersProjects": "Ponencias",
     "language": "Idioma",
     "mobileMenuTitle": "Menu de navegacion",
     "mobileMenuDescription": "Menu de navegacion movil de WGIC26"
@@ -497,7 +497,34 @@
     "p3": "Una parte relevante del congreso se centra en analizar impactos de la infraestructura verde en sociedad y medio ambiente, incluyendo resiliencia, salud, biodiversidad y cohesion social.",
     "p4": "WGIC26 enfatiza tres ejes centrales: salud y bienestar, recuperacion postconflicto o postdesastre, y ciudades resilientes y justas en el Sur Global.",
     "tableTitle": "WGIC26 Barcelona - Lleida. Temas principales",
-    "topicCategory": "Tema / Categoria"
+    "topicCategory": "Tema / Categoria",
+    "accordionTitle": "Temas Clave",
+    "accordion": {
+      "topic1": {
+        "title": "Sistemas de Edificación Verde",
+        "description": "Integración de cubiertas, fachadas y muros vegetados como soluciones constructivas clave para la eficiencia energética."
+      },
+      "topic2": {
+        "title": "Planificación Urbana y Paisajismo",
+        "description": "Rediseño de las ciudades mediante la infraestructura verde como eje vertebrador de la cohesión social y el desarrollo."
+      },
+      "topic3": {
+        "title": "Gestión del Agua y Clima",
+        "description": "Estrategias de drenaje sostenible para mitigar inundaciones. Resiliencia hídrica y soluciones basadas en la naturaleza para adaptar nuestros territorios a la emergencia climática."
+      },
+      "topic4": {
+        "title": "Salud y Biofilia",
+        "description": "El diseño biofílico como herramienta científica para reducir el estrés, mejorar la calidad del aire y potenciar la salud mental."
+      },
+      "topic5": {
+        "title": "Desafíos Globales",
+        "description": "Respuestas innovadoras ante la pérdida de biodiversidad y el crecimiento urbano acelerado desde una perspectiva internacional."
+      },
+      "topic6": {
+        "title": "Políticas y Economía",
+        "description": "Análisis de marcos regulatorios y modelos de inversión para acelerar la transición hacia una economía urbana verde y circular."
+      }
+    }
   },
   "workshopsPage": {
     "title": "Talleres",

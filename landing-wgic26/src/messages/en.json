@@ -497,7 +497,34 @@
     "p3": "A significant part of the congress focuses on analyzing the impacts of green infrastructure on society and the environment, including resilience, health, biodiversity, and social cohesion.",
     "p4": "WGIC26 emphasizes three core themes: health and well-being, post-conflict or post-disaster recovery, and resilient and just cities in the Global South.",
     "tableTitle": "WGIC26 Barcelona - Lleida. Main Topics",
-    "topicCategory": "Topic / Category"
+    "topicCategory": "Topic / Category",
+    "accordionTitle": "Key Topics",
+    "accordion": {
+      "topic1": {
+        "title": "Green Building Systems",
+        "description": "Integration of vegetated roofs, facades, and walls as key construction solutions for energy efficiency."
+      },
+      "topic2": {
+        "title": "Urban Planning and Landscape",
+        "description": "Redesign of cities through green infrastructure as the backbone of social cohesion and development."
+      },
+      "topic3": {
+        "title": "Water and Climate Management",
+        "description": "Sustainable drainage strategies to mitigate flooding. Water resilience and nature-based solutions to adapt our territories to the climate emergency."
+      },
+      "topic4": {
+        "title": "Health and Biophilia",
+        "description": "Biophilic design as a scientific tool to reduce stress, improve air quality, and enhance mental health."
+      },
+      "topic5": {
+        "title": "Global Challenges",
+        "description": "Innovative responses to biodiversity loss and accelerated urban growth from an international perspective."
+      },
+      "topic6": {
+        "title": "Policy and Economy",
+        "description": "Analysis of regulatory frameworks and investment models to accelerate the transition towards a green and circular urban economy."
+      }
+    }
   },
   "workshopsPage": {
     "title": "Workshops",
