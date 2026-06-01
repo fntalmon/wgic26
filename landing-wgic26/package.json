@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource-variable/martian-mono": "^5.2.5",
     "@radix-ui/react-accordion": "^1.2.10",
     "@radix-ui/react-dialog": "^1.1.13",
     "@radix-ui/react-navigation-menu": "^1.2.12",
@@ -28,7 +27,6 @@
     "postcss": "^8.5.14",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "rehype-highlight": "^7.0.2",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "tailwind-merge": "^3.3.0"

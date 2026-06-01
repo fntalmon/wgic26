@@ -1099,27 +1099,13 @@ const Exhibitors = () => {
                 </a>
 
                 <a
-                  href="https://www.hunterirrigation.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/Hunter.svg"
-                    alt="Hunter"
-                    width={400}
-                    height={300}
-                    className="h-12 w-auto object-contain"
-                  />
-                </a>
-
-                <a
                   href="https://zinco-cubiertas-ecologicas.es/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Image
                     src="/img/logos/zinco.svg"
-                    alt="Hunter"
+                    alt="Zinco"
                     width={400}
                     height={300}
                     className="h-22 w-auto object-contain"
@@ -1148,33 +1134,13 @@ const Exhibitors = () => {
                 >
                   <Image
                     src="/img/logos/jardinMovil.png"
-                    alt="Eixverd"
+                    alt="JardinMovil"
                     width={330}
                     height={230}
                     className="h-20 w-auto object-contain"
                   />
                 </a>
-                <a
-                  href="https://www.projar.es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/projar.jpg"
-                    alt="Projar"
-                    width={330}
-                    height={230}
-                    className="h-30 w-auto object-contain"
-                  />
-                </a>
-              </div>
-            </div>
 
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Garden Medium Exhibitors
-              </h3>
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
                 <a
                   href="https://eixverd.com/"
                   target="_blank"
@@ -1188,7 +1154,14 @@ const Exhibitors = () => {
                     className="h-36 w-auto object-contain"
                   />
                 </a>
+              </div>
+            </div>
 
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                Garden Medium Exhibitors
+              </h3>
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
                 <a
                   href="https://verdtical.com/"
                   target="_blank"
@@ -1196,10 +1169,38 @@ const Exhibitors = () => {
                 >
                   <Image
                     src="/img/logos/verdtical.webp"
-                    alt="Eixverd"
+                    alt="Verdtical"
                     width={330}
                     height={230}
-                    className="h-10 w-auto object-contain "
+                    className="h-10 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://www.hunterirrigation.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/Hunter.svg"
+                    alt="Hunter"
+                    width={400}
+                    height={300}
+                    className="h-12 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://www.projar.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/projar.jpg"
+                    alt="Projar"
+                    width={330}
+                    height={230}
+                    className="h-30 w-auto object-contain"
                   />
                 </a>
               </div>
