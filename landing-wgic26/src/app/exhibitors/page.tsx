@@ -79,9 +79,9 @@ const copy = {
       thanks: "Thank you for your interest!",
       thanksBody:
         "We have received your information and will get back to you shortly with personalized opportunities.",
-      pptTitle: "Download Presentation",
+      pptTitle: "Download Sponsorship Brochure",
       pptDesc:
-        "Get a quick overview of the Congress through our presentation deck, featuring key information and highlights.",
+        "Get the complete sponsorship and exhibitor guide with all the details, benefits, and pricing to partner with WGIC 2026.",
       downloadPpt: "Download PPT",
     },
     errors: {
@@ -168,9 +168,9 @@ const copy = {
       thanks: "Gracias por tu interes",
       thanksBody:
         "Hemos recibido tu informacion y te contactaremos pronto con opciones personalizadas.",
-      pptTitle: "Descargar presentacion",
+      pptTitle: "Descargar brochure de patrocinio",
       pptDesc:
-        "Obten una vista rapida del Congreso con nuestra presentacion, incluyendo informacion clave y destacados.",
+        "Obten la guia completa de patrocinio y exposicion con todos los detalles, beneficios y precios para asociarte al WGIC 2026.",
       downloadPpt: "Descargar PPT",
     },
     errors: {
@@ -985,8 +985,7 @@ const Exhibitors = () => {
 
                 <div className="mt-auto">
                   <a
-                    href="https://docs.google.com/presentation/d/1B6fw8i0h6K50pB0JFK-yW56sIyfImmjVqHQXPo0rQx0/export/pptx
-"
+                    href="/docs/WGIC26_SponsorshipBrochure_v3.pptx"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"
