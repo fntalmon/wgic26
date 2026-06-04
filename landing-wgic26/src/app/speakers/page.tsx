@@ -89,7 +89,7 @@ const Speakers = async () => {
             </div>
             <div className="flex-shrink-0 flex flex-col gap-3">
               <a
-                href="https://panel.helice.app/w/wgic26/214757/papers?preview=1"
+                href="https://panel.helice.app/w/wgic26/214757/papers"
                 className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium"
               >
                 {t("submissionButton")}
@@ -225,7 +225,7 @@ const Speakers = async () => {
                   </div>
                 </div>
                 <a
-                  href="https://panel.helice.app/w/wgic26/214757/papers?preview=1"
+                  href="https://panel.helice.app/w/wgic26/214757/papers"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium"
