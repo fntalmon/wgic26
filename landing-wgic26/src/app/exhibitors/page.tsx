@@ -1282,33 +1282,33 @@ const Exhibitors = () => {
                 {t.gardenMediumExhibitors}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
-                <a
-                  href="https://verdtical.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/verdtical.webp"
-                    alt="Verdtical"
-                    width={330}
-                    height={230}
-                    className="h-10 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://www.hunterirrigation.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/Hunter.svg"
-                    alt="Hunter"
-                    width={400}
-                    height={300}
-                    className="h-12 w-auto object-contain"
-                  />
-                </a>
+               <a
+                                 href="https://verdtical.com/"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                               >
+                                 <Image
+                                   src="/img/logos/verdtical.webp"
+                                   alt="Verdtical"
+                                   width={300}
+                                   height={200}
+                                   className="h-8 w-auto object-contain "
+                                 />
+                               </a>
+               
+                               <a
+                                 href="https://www.hunterirrigation.com/"
+                                 target="_blank"
+                                 rel="noopener noreferrer"
+                               >
+                                 <Image
+                                   src="/img/logos/Hunter.svg"
+                                   alt="Hunter"
+                                   width={300}
+                                   height={200}
+                                   className="h-8 w-auto object-contain"
+                                 />
+                               </a>
 
                 <a
                   href="https://www.projar.es/"

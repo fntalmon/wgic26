@@ -408,9 +408,9 @@ export default function Home() {
                   <Image
                     src="/img/logos/verdtical.webp"
                     alt="Verdtical"
-                    width={330}
-                    height={230}
-                    className="h-10 w-auto object-contain "
+                    width={300}
+                    height={200}
+                    className="h-8 w-auto object-contain "
                   />
                 </a>
 
@@ -422,9 +422,9 @@ export default function Home() {
                   <Image
                     src="/img/logos/Hunter.svg"
                     alt="Hunter"
-                    width={400}
-                    height={300}
-                    className="h-12 w-auto object-contain"
+                    width={300}
+                    height={200}
+                    className="h-8 w-auto object-contain"
                   />
                 </a>
 
