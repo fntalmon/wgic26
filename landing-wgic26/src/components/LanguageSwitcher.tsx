@@ -10,6 +10,7 @@ import { ChevronDown } from "lucide-react";
 const labelByLocale: Record<AppLocale, string> = {
   en: "English",
   es: "Español",
+  ca: "Català",
 };
 
 export function LanguageSwitcher() {

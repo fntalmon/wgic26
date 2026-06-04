@@ -46,6 +46,14 @@ const copy = {
     },
     organizedBy: "Organized by",
     sponsorsPartners: "Partners and Sponsors",
+    elitePartners: "Elite Partners",
+    gardenBigExhibitors: "Garden Big Exhibitors",
+    gardenMediumExhibitors: "Garden Medium Exhibitors",
+    flowerExhibitors: "Flower Exhibitors",
+    mediaPartners: "Media Partners",
+    withTheSupportOf: "With the Support of",
+    comingSoon: "Coming soon",
+    eventPartners: "Event Partners",
     venueTitle: "The Venue",
     venueP1:
       "The venue where WGIC26 will be held is perfect for creating the networking atmosphere that sponsors, attendees and exhibitors expect from a global event. The International Barcelona Convention Center of Barcelona is an iconic venue located in the Barcelona district of Sant Marti, inside the 22@ of Poblenou neighbourhood.",
@@ -136,6 +144,14 @@ const copy = {
     sponsorsPartners: "Patrocinadores y socios",
     venueTitle: "La sede",
     organizedBy: "Organizado por",
+    elitePartners: "Socios Elite",
+    gardenBigExhibitors: "Expositores Garden Big",
+    gardenMediumExhibitors: "Expositores Garden Medium",
+    flowerExhibitors: "Expositores Flower",
+    mediaPartners: "Socios de medios",
+    withTheSupportOf: "Con el apoyo de",
+    comingSoon: "Proximamente",
+    eventPartners: "Socios del evento",
     venueP1:
       "La sede de WGIC26 es ideal para crear el entorno de networking que patrocinadores, asistentes y expositores esperan de un evento global. El Centro de Convenciones Internacional de Barcelona es un espacio iconico ubicado en Sant Marti, dentro del 22@ de Poblenou.",
     venueP2:
@@ -174,23 +190,120 @@ const copy = {
       downloadPpt: "Descargar PPT",
     },
     errors: {
-      enterName: "Por favor, ingresa tu nombre completo",
-      shortName: "El nombre debe tener al menos 2 caracteres",
-      enterEmail: "Por favor, ingresa tu correo",
-      invalidEmail: "Por favor, ingresa un correo valido",
-      enterPhone: "Por favor, ingresa tu telefono",
-      invalidPhone: "Por favor, ingresa un telefono valido",
-      enterCompany: "Por favor, ingresa el nombre de tu empresa",
-      selectType: "Por favor, selecciona un tipo de participacion",
-      processing: "Error procesando tu solicitud. Intentalo de nuevo.",
-      submitForm: "Error al enviar el formulario. Intentalo de nuevo.",
+      enterName: "Si us plau, ingressa el teu nom complet",
+      shortName: "El nom ha de tenir almenys 2 caràcters",
+      enterEmail: "Si us plau, ingressa el teu correu",
+      invalidEmail: "Si us plau, ingressa un correu vàlid",
+      enterPhone: "Si us plau, ingressa el teu telèfon",
+      invalidPhone: "Si us plau, ingressa un telèfon vàlid",
+      enterCompany: "Si us plau, ingressa el nom de la teva empresa",
+      selectType: "Si us plau, selecciona un tipus de participació",
+      processing: "Error processant la teva sol·licitud. Torna-ho a intentar.",
+      submitForm: "Error en enviar el formulari. Torna-ho a intentar.",
+    },
+  },
+  ca: {
+    pageTitle: "Socis i expositors - Oportunitats de patrocini",
+    pageDescription:
+      "Mostra la teva participació en el sector d'infraestructures verdes i assegura visibilitat i exposició davant una audiència internacional al World Green Infrastructure Congress 2026 a Barcelona i Lleida.",
+    partnerTitle: "Soci: Elite, Global o Event",
+    partnerP1:
+      "Si vols participar activament en el congrés, col·laborant en la presa de decisions, aportant coneixement i assumint responsabilitats compartides, tria una de les opcions de soci: Global o Event. En aquestes tipologies obtindràs els màxims beneficis de visibilitat i participació.",
+    partnerP2:
+      "Els socis Elite contribuiran estratègicament al desenvolupament i promoció del congrés i tindran tots els beneficis dels socis Global, a més d'aquells que es defineixin finalment, per exemple, presència de marca al peu de correus del congrés o suports en àrees comunes. La contribució econòmica s'acordarà específicament amb l'equip organitzador.",
+    sponsorTitle: "Patrocinador: Tree o Leaf",
+    sponsorP1:
+      "Si busques maximitzar visibilitat, publicitat o beneficis per a la teva marca o empresa en el sector d'infraestructura verda, sense necessitat d'involucrar-te en la gestió o presa de decisions de l'esdeveniment, la teva opció és ser patrocinador, com a Tree o com a Leaf.",
+    exhibitorsTitle: "Expositors (limitat als primers 40)",
+    exhibitorsP1:
+      "Tant si ets soci com patrocinador, pots mostrar la teva empresa o productes als assistents com a expositor, en dues opcions: Garden i Flower. Ser expositor et permetrà visibilitat física durant el congrés i generar networking amb potencials clients interessats en la teva marca.",
+    benefits: "Beneficis",
+    table: {
+      partners: "Socis",
+      sponsors: "Patrocinadors",
+      exhibitors: "Expositors",
+      congressInvitations: "Invitacions al congrés",
+      galaDinner: "Sopar de gala al CCIB",
+      speakingSlot: "Espai de ponència",
+      roomsNaming: "Naming de sales",
+      workshops: "Tallers",
+      rollup: "Roll up (aportat per tu) + Taula + 3 cadires",
+      space: "Espai",
+      visibility: "Visibilitat i xarxes socials",
+      newsletter: "Butlletí",
+      socialMedia: "Xarxes socials",
+      logoVisibility: "Visibilitat de logotip",
+      specialContent: "Contingut especial",
+      adPage: "Pàgina d'anunci en actes",
+      attendees: "Llistat d'assistents",
+      totalCost: "Cost total",
+    },
+    sponsorsPartners: "Patrocinadors i socis",
+    venueTitle: "La seu",
+    organizedBy: "Organitzat per",
+    elitePartners: "Socis Elite",
+    gardenBigExhibitors: "Expositors Garden Big",
+    gardenMediumExhibitors: "Expositors Garden Medium",
+    flowerExhibitors: "Expositors Flower",
+    mediaPartners: "Socis de mitjans",
+    withTheSupportOf: "Amb el suport de",
+    comingSoon: "Pròximament",
+    eventPartners: "Socis de l'esdeveniment",
+    venueP1:
+      "La seu de WGIC26 és ideal per crear l'entorn de networking que patrocinadors, assistents i expositors esperen d'un esdeveniment global. El Centre de Convencions Internacional de Barcelona és un espai icònic ubicat a Sant Martí, dins del 22@ de Poblenou.",
+    venueP2:
+      "El CCIB compta amb dos edificis de gran valor arquitectònic: el Centre de Convencions i l'Auditori Fòrum CCIB, units per una passarel·la subterrània. Amb una superfície de 100.000 m2 i capacitat de fins a 15.000 assistents, destaca per la seva amplitud, llum natural i versatilitat.",
+    venueP3:
+      "El CCIB té una ubicació privilegiada a 500 metres de la platja, a 6 km del centre històric i a 22 km de l'aeroport, amb excel·lents connexions per carretera i transport públic.",
+    venueImagesAlt: "Imatges de la seu",
+    cards: {
+      infoPackTitle: "Descarregar dossier informatiu",
+      infoPackDesc:
+        "Obté la guia completa per a patrocinadors i expositors, amb detalls tècnics i preus.",
+      downloadPdf: "Descarregar PDF",
+      provideDetails: "Comparteix les teves dades per accedir a la descàrrega.",
+      fullName: "Nom complet",
+      email: "Correu electrònic",
+      downloadNow: "Descarregar ara",
+      started: "La teva descàrrega ha començat",
+      didNotStart: "Si no ha començat automàticament,",
+      clickHere: "fes clic aquí",
+      interestTitle: "Expressa el teu interès",
+      interestDesc:
+        "T'interessa patrocinar o exposar? Comparteix la teva informació i el tipus de participació preferit. Revisarem les teves dades i et contactarem amb opcions personalitzades.",
+      interestCta: "Expressar interès",
+      contactInfo:
+        "Comparteix la teva informació de contacte i explica'ns els teus interessos.",
+      phone: "Telèfon",
+      company: "Empresa",
+      selectParticipation: "Selecciona tipus de participació",
+      submit: "Enviar",
+      thanks: "Gràcies pel teu interès",
+      thanksBody:
+        "Hem rebut la teva informació i et contactarem aviat amb opcions personalitzades.",
+      pptTitle: "Descarregar brochure de patrocini",
+      pptDesc:
+        "Obté la guia completa de patrocini i exposició amb tots els detalls, beneficis i preus per associar-te al WGIC 2026.",
+      downloadPpt: "Descarregar PPT",
+    },
+    errors: {
+      enterName: "Si us plau, ingressa el teu nom complet",
+      shortName: "El nom ha de tenir almenys 2 caràcters",
+      enterEmail: "Si us plau, ingressa el teu correu",
+      invalidEmail: "Si us plau, ingressa un correu vàlid",
+      enterPhone: "Si us plau, ingressa el teu telèfon",
+      invalidPhone: "Si us plau, ingressa un telèfon vàlid",
+      enterCompany: "Si us plau, ingressa el nom de la teva empresa",
+      selectType: "Si us plau, selecciona un tipus de participació",
+      processing: "Error processant la teva sol·licitud. Torna-ho a intentar.",
+      submitForm: "Error en enviar el formulari. Torna-ho a intentar.",
     },
   },
 } as const;
 
 const Exhibitors = () => {
   const locale = useLocale();
-  const t = locale === "es" ? copy.es : copy.en;
+  const t = locale === "es" ? copy.es : locale === "ca" ? copy.ca : copy.en;
   // Download form state (reserved for future use)
   // const [downloadStep, setDownloadStep] = useState<
   //   "initial" | "form" | "success"
@@ -1041,25 +1154,33 @@ const Exhibitors = () => {
                   />
                 </a>
 
-                <div className="flex items-center justify-center">
+                <a
+                  href="https://cinea.ec.europa.eu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src="/img/logos-color/logo-life.jpg"
-                    alt="Life EU"
+                    alt="LIFE - European Climate, Infrastructure and Environment Executive Agency"
                     width={300}
                     height={220}
                     className="h-28 w-auto object-contain"
                   />
-                </div>
+                </a>
 
-                <div className="flex items-center justify-center">
+                <a
+                  href="https://it4s.cat/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src="/img/logos-color/it4s.png"
-                    alt="IT4S"
+                    alt="it4s – Innovative Technologies for Sustainability"
                     width={300}
                     height={220}
                     className="h-28 w-auto object-contain"
                   />
-                </div>
+                </a>
 
                 <a
                   href="http://big4life.eu"
@@ -1080,7 +1201,7 @@ const Exhibitors = () => {
             {/* ELITE PARTNERS */}
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Elite Partners
+                {t.elitePartners}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
                 <a
@@ -1096,20 +1217,6 @@ const Exhibitors = () => {
                     className="h-30 w-auto object-contain"
                   />
                 </a>
-
-                <a
-                  href="https://zinco-cubiertas-ecologicas.es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/zinco.svg"
-                    alt="Zinco"
-                    width={400}
-                    height={300}
-                    className="h-22 w-auto object-contain"
-                  />
-                </a>
               </div>
             </div>
 
@@ -1123,7 +1230,7 @@ const Exhibitors = () => {
 
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Garden Big Exhibitors
+                {t.gardenBigExhibitors}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
                 <a
@@ -1153,12 +1260,26 @@ const Exhibitors = () => {
                     className="h-36 w-auto object-contain"
                   />
                 </a>
+
+                <a
+                  href="https://zinco-cubiertas-ecologicas.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/zinco.svg"
+                    alt="Zinco"
+                    width={400}
+                    height={300}
+                    className="h-22 w-auto object-contain"
+                  />
+                </a>
               </div>
             </div>
 
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Garden Medium Exhibitors
+                {t.gardenMediumExhibitors}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
                 <a
@@ -1208,10 +1329,10 @@ const Exhibitors = () => {
             {/* FLOWER EXHIBITORS - hidden until logos are added
                   <div className="w-full">
                     <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                      Flower Exhibitors
+                      {t.flowerExhibitors}
                     </h3>
                     <div className="flex justify-center items-center min-h-[100px] text-gray-500">
-                      <p className="italic">Coming Soon...</p>
+                      <p className="italic">{t.comingSoon}</p>
                     </div>
                   </div>
                   */}
@@ -1219,7 +1340,7 @@ const Exhibitors = () => {
             {/* MEDIA PARTNERS */}
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Media Partners
+                {t.mediaPartners}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
                 <a
@@ -1241,7 +1362,7 @@ const Exhibitors = () => {
             {/* WITH THE SUPPORT OF */}
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                With the Support of
+                {t.withTheSupportOf}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
                 <a
@@ -1289,7 +1410,7 @@ const Exhibitors = () => {
                 </a>
 
                 <a
-                  href="https://agronoms.cat//"
+                  href="https://agronoms.cat/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -1301,6 +1422,35 @@ const Exhibitors = () => {
                   className="h-24 w-auto object-contain"
                 />
                 </a>
+
+                              <a
+                                href="https://www.idaea.csic.es/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <Image
+                                  src="/img/logos/IDAEA.png"
+                                  alt="Logo IDAEA"
+                                  width={320}
+                                  height={240}
+                                  className="h-14 w-auto object-contain"
+                                />
+                              </a>
+              
+                              <a
+                                href="https://www.csic.es/es"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <Image
+                                  src="/img/logos/CSIC.svg"
+                                  alt="Logo eadc"
+                                  width={320}
+                                  height={240}
+                                  className="h-14 w-auto object-contain"
+                                />
+                              </a>
+                
               </div>
             </div>
           </div>

@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/table";
 import programDataEn from "@/data/program-en.json";
 import programDataEs from "@/data/program-es.json";
+import programDataCa from "@/data/program-ca.json";
 import { getTranslations, getLocale } from "next-intl/server";
 
 const Program = async () => {
@@ -18,7 +19,7 @@ const Program = async () => {
     const locale = await getLocale();
     
     // Select the program JSON file based on locale
-    const programData = locale === "es" ? programDataEs : programDataEn;
+    const programData = locale === "es" ? programDataEs : locale === "ca" ? programDataCa : programDataEn;
     const days = programData;
 
     return (

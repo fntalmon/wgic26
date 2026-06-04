@@ -1,0 +1,726 @@
+{
+  "navigation": {
+    "about": "Sobre",
+    "congress": "El Congrés",
+    "wgiNetwork": "Xarxa WGI",
+    "universityLleida": "Universitat de Lleida",
+    "locations": "Ubicacions",
+    "organisationCommittee": "Comitè organitzador",
+    "congressCommittee": "Comitè científic",
+    "program": "Programa",
+    "specialIssues": "Edicions especials",
+    "gaudiYear": "Any Gaudí 2026",
+    "mainTopics": "Temes principals",
+    "workshops": "Tallers",
+    "technicalVisits": "Visites tècniques",
+    "wginAwards": "Premis WGIN",
+    "keyNoteSpeakers": "Oradors",
+    "newsletters": "Butlletins",
+    "speakers": "Oradors",
+    "registration": "Registre",
+    "partnersExhibitors": "Expositors",
+    "planYourStay": "La teva estada",
+    "travel": "Viatge",
+    "tickets": "Entrades",
+    "papersProjects": "Ponències",
+    "language": "Idioma",
+    "mobileMenuTitle": "Menú de navegació",
+    "mobileMenuDescription": "Menú de navegació mòbil de WGIC26"
+  },
+  "countdown": {
+    "startingIn": "Comença en:"
+  },
+  "home": {
+    "callForSpeakers": "Crida a oradors",
+    "heroTitle": "Congrés Mundial d'Infraestructura Verda 2026 Barcelona-Lleida",
+    "date1": "27-29 oct 2026",
+    "date1Location": "CCIB - Parc del Fòrum, Barcelona (Espanya)",
+    "date2": "30 oct 2026",
+    "date2Location": "Universitat de Lleida - Lleida (Espanya)",
+    "bannerTitle": "WGIC26 Barcelona-Lleida",
+    "introP1": "Benvinguts al WGIC26 - 12è Congrés Mundial d'Infraestructura Verda, que se celebrarà del 27 al 30 d'octubre de 2026 al Centre de Convencions Internacional de Barcelona (CCIB), Catalunya, Espanya. WGIC2026 busca oferir una plataforma dinàmica i interdisciplinària per abordar els reptes del sector d'infraestructura verda urbana i contribuir a la mitigació i adaptació al canvi climàtic cap a un futur més segur i saludable.",
+    "introP2": "Mentre la societat global avança cap a ciutats resilients, saludables i justes, WGIC26 reuneix investigadors, enginyers, arquitectes i arquitectes paisatgistes, responsables de polítiques públiques, líders de la indústria i innovadors de tot el món per intercanviar recerca de frontera, solucions pràctiques i idees innovadores. La conferència fomenta la col·laboració entre disciplines i sectors, destacant el paper de la infraestructura verda i de les solucions basades en la natura per impulsar canvis transformadors.",
+    "introP3": "El programa inclourà conferències magistrals, ponències convidades, sessions plenàries, taules rodones, tallers temàtics, exposicions tècniques i presentacions orals/pòster. Els participants abordaran un ampli espectre de temes: estratègies, polítiques i programes de finançament, tecnologies, mercat del sector GI/NBS i estàndards, disseny i projectes, execució, manteniment i qualitat, així com educació i formació.",
+    "introP4": "Una part important del congrés estarà dedicada als impactes de la infraestructura verda, és a dir, als seus beneficis per a la societat, amb seccions sobre: resiliència climàtica; gestió de l'aigua; riscos naturals i climàtics; gestió d'espais verds; biodiversitat; qualitat de l'aire; regeneració de llocs; coneixement i enfortiment de capacitats socials per a la transformació urbana sostenible; planificació participativa i governança; justícia social i cohesió social; salut i benestar; noves oportunitats econòmiques i ocupacions verdes.",
+    "introP5": "Durant WGIC26 es destacaran tres temes: millorar la salut i el benestar de les persones; recuperar la societat i els llocs després de situacions de postconflicte o postdesastre; i construir ciutats resilients, saludables i justes al Sud Global.",
+    "introP6": "El programa s'estructurarà en dos dies de sessions paral·leles i un tercer dia de visites tècniques a exemples d'infraestructura verda a Barcelona. A més, s'ha previst un quart dia addicional dedicat a processos d'innovació i recerca en el sector d'infraestructura verda, que serà acollit per la Universitat de Lleida.",
+    "introP7": "WGIC26 convida cordialment a l'enviament d'investigacions originals, estudis de cas i aplicacions innovadores alineades amb la nostra missió d'accelerar la integració de la infraestructura verda en la planificació urbana a nivell global. Les empreses tindran un paper molt rellevant en el congrés: l'espai d'exposició brindarà un lloc únic per consolidar projectes futurs, mostrar solucions innovadores i fomentar col·laboracions.",
+    "introP8": "Ubicada a la costa i amb clima mediterrani, la ciutat de Barcelona es viu durant tot l'any: descobreix el Barri Gòtic, el llegat d'Antoni Gaudí i una escena gastronòmica excepcional. Uneix-te a Barcelona i Lleida per codissenyar solucions d'infraestructura verda urbana que permetin a les futures generacions gaudir de ciutats més sostenibles, resilients i saludables.",
+    "introClosing": "T' esperem al CCIB a l'octubre de 2026!",
+    "chairRole": "Universitat de Lleida - President de WGIC26",
+    "presidentRole": "President de WGIN",
+    "locations": "Ubicacions",
+    "mainActivities": "Activitats principals:",
+    "congress": "Congrés",
+    "workshops": "Tallers",
+    "visits": "Visites",
+    "sponsorsPartners": "Patrocinadors i socis",
+    "organizedBy": "Organitzat per",
+    "newsletterTitle": "Mantén-te al dia",
+    "newsletterSubtitle": "Registra't al nostre butlletí",
+    "newsletterEmailPlaceholder": "Correu electrònic",
+    "newsletterPhonePlaceholder": "Número de telèfon",
+    "newsletterSubmitting": "Subscrivint...",
+    "newsletterSubmit": "Subscriure'm",
+    "newsletterValidation": "Si us plau, completa el correu i el número de telèfon.",
+    "newsletterPhoneValidation": "Si us plau, introdueix un número de telèfon vàlid.",
+    "newsletterSuccess": "Gràcies per subscriure't al nostre butlletí!",
+    "newsletterError": "Ha ocorregut un error, si us plau intenta-ho de nou.",
+    "elitePartners": "Socis Elite",
+    "gardenBigExhibitors": "Expositors Garden Big",
+    "gardenMediumExhibitors": "Expositors Garden Medium",
+    "flowerExhibitors": "Expositors Flower",
+    "mediaPartners": "Socis de mitjans",
+    "withTheSupportOf": "Amb el suport de",
+    "comingSoon": "Pròximament",
+    "eventPartners": "Socis de l'esdeveniment"
+  },
+  "footer": {
+    "title": "Congrés Mundial d'Infraestructura Verda 2026 Barcelona",
+    "legal": "Legal",
+    "privacyPolicy": "Política de privacitat",
+    "terms": "Termes i condicions",
+    "contact": "Contacte",
+    "copyright": "WGIC 2026 - Tots els drets reservats",
+    "another": "Una altra",
+    "creation": " creació."
+  },
+  "aboutCongress": {
+    "title": "El Congrés",
+    "description": "Congrés Mundial d'Infraestructura Verda",
+    "videoTitle": "Resum del Congrés Mundial d'Infraestructura Verda",
+    "img1Alt": "Congrés Mundial d'Infraestructura Verda",
+    "img2Alt": "Beneficis del congrés i col·laboració",
+    "mainP1": "Cada any, la WGIN promou i coorganitza el Congrés Mundial d'Infraestructura Verda (WGIC), juntament amb institucions universitàries que acullen aquest esdeveniment global.",
+    "mainP2": "Els congressos mundials sobre infraestructura verda ofereixen beneficis importants per a la societat. Reuneixen investigadors, professionals, administracions públiques i empreses de tot el món per compartir avanços científics i tècnics sobre solucions basades en la natura, com cobertes verdes, façanes verdes, corredors ecològics i sistemes urbans de drenatge sostenible. Això accelera la innovació i millora la qualitat de les intervencions en ciutats i territoris.",
+    "mainP3": "A més, aquests congressos ajuden a difondre bones pràctiques i casos reals que han millorat la resiliència urbana, reduït l'impacte del canvi climàtic i augmentat el benestar de la ciutadania. La transferència de coneixement permet que més ciutats adoptin estratègies verdes que redueixen la calor urbana, milloren la qualitat de l'aire i promouen la biodiversitat.",
+    "mainP4": "Aquests esdeveniments impulsen polítiques públiques més ambicioses i fomenten la col·laboració internacional. En situar la infraestructura verda a l'agenda global, animen a governs i organitzacions a invertir en solucions sostenibles, accessibles i econòmicament beneficioses, amb impacte directe en la salut, la qualitat de vida i la sostenibilitat ambiental de les societats presents i futures.",
+    "historyTitle": "Història del Congrés",
+    "historyP1": "Des del seu inici el 2009 a Toronto (Canadà), el congrés s'ha celebrat en diferents ciutats del món, sempre amb gran participació i generant importants oportunitats de networking entre grups d'interès, empreses, universitats i centres de recerca, dissenyadors, gestors de projectes i estudiants. Les últimes edicions es van celebrar a Berlín 2023 (Alemanya), Auckland 2024 (Nova Zelanda) i Basilea 2025 (Suïssa).",
+    "berlinAlt": "Congrés Berlín 2023",
+    "aucklandAlt": "Congrés Auckland 2024",
+    "baselAlt": "Congrés Basilea 2025",
+    "wgicTitle": "WGIC26 Barcelona - Lleida",
+    "mottoLabel": "Lema",
+    "motto": "Infraestructura verda per a un futur urbà més saludable i segur",
+    "wgicP1": "Sota el lema Infraestructura verda per a un futur urbà més saludable i segur, la dotzena edició de WGIC vol destacar com la infraestructura verda contribueix directa i indirectament a millorar la qualitat de vida i la salut de les persones.",
+    "wgicP2": "La infraestructura verda contribueix a la mitigació i adaptació al canvi climàtic. WGIC2026 busca alinear els seus objectius amb els reptes del canvi climàtic global. Aquests reptes no només impliquen comprendre com la infraestructura verda urbana pot ajudar a mitigar impactes climàtics en la societat, sinó també determinar com s'ha d'adaptar a un context ambiental cada cop més canviant.",
+    "wgicP3": "La regió mediterrània, caracteritzada per altes temperatures i poques precipitacions, ofereix exemples destacats d'innovació en renaturalització urbana. Aquestes estratègies aporten inspiració per a futurs dissenys d'infraestructura verda urbana a nivell mundial. El ferm compromís de Barcelona amb la sostenibilitat, juntament amb el seu patrimoni cultural i polítiques urbanes de vanguàrdia, reforça la seva posició com una de les ciutats més inspiradores del món.",
+    "wgicP4": "WGIC26 està organitzat per la Universitat de Lleida (Catalunya, Espanya) i té un format de dos dies de congrés a Barcelona amb cinc sessions paral·leles, més de deu oradors magistrals del sector d'infraestructura verda i dos tallers sobre temes de gran actualitat. A més, inclou un tercer dia de visites tècniques a projectes reals a Barcelona i un quart dia opcional dedicat a innovació i recerca sobre infraestructura verda urbana a la seu de la Universitat de Lleida.",
+    "keyDatesTitle": "Dates clau",
+    "dates": {
+      "who": "Qui?",
+      "what": "Què?",
+      "when": "Quan?",
+      "authors": "Autors",
+      "scientificCommittee": "Comitè científic",
+      "organizingCommittee": "Comitè organitzador",
+      "attendees": "Assistents",
+      "partners": "Socis i expositors",
+      "sponsors": "Patrocinadors",
+      "firstDraft": "Envio del primer esborrany",
+      "acceptance": "Notificació d'acceptació i decisió Oral/Pòster",
+      "r1Draft": "Esborrany R1",
+      "revisionR2": "Revisió de l'esborrany R2",
+      "finalPaper": "Envio de l'article final",
+      "finalProgram": "Programa final",
+      "earlyBird": "Inscripció anticipada (fins a 400 inscripcions)",
+      "registration": "Inscripció"
+    }
+  },
+  "aboutNetwork": {
+    "title": "Xarxa WGI",
+    "description": "Promovent infraestructura verda arreu del món",
+    "heading": "World Green Infrastructure Network",
+    "logoAlt": "Xarxa WGI",
+    "img1Alt": "Desenvolupament d'infraestructura verda",
+    "img2Alt": "Col·laboració de la xarxa",
+    "p1": "La World Green Infrastructure Network (WGIN) és una organització internacional sense ànim de lucre dedicada a promoure la planificació, el desenvolupament i la implementació d'infraestructura verda arreu del món. La seva missió és impulsar l'ús de solucions basades en la natura, com cobertes verdes, murs verds, boscos urbans i sistemes sostenibles de gestió de l'aigua, per millorar la salut ambiental, social i econòmica de les ciutats.",
+    "p2": "WGIN funciona com una xarxa global que connecta associacions nacionals de cobertes verdes i infraestructura verda, investigadors, professionals i responsables de polítiques públiques. Mitjançant congressos, publicacions i projectes col·laboratius, l'organització facilita l'intercanvi de coneixement, recerca i bones pràctiques.",
+    "p3": "A més de fomentar la cooperació internacional, WGIN promou polítiques i estàndards que facilitin l'adopció generalitzada d'infraestructura verda. Treballa per sensibilitzar sobre els beneficis d'integrar la natura en el disseny urbà, des de reduir illes de calor i gestionar aigües pluvials fins a millorar la qualitat de l'aire i la biodiversitat.",
+    "visitWebsite": "Visitar web de WGIN",
+    "mission": "Missió",
+    "missionText": "Alineats amb WGIN, la nostra missió és defensar i promoure la integració d'infraestructura verda en la planificació urbana a nivell global.",
+    "values": "Valors",
+    "value1Title": "Sostenibilitat",
+    "value1Description": "Compromís amb la integració d'infraestructura verda per millorar la resiliència ambiental i combatre el canvi climàtic.",
+    "value2Title": "Inclusivitat",
+    "value2Description": "Garantir accessibilitat i participació, fomentant coneixement compartit.",
+    "value3Title": "Innovació",
+    "value3Description": "Promoure solucions intel·ligents i de vanguàrdia per abordar reptes urbans i ambientals.",
+    "value4Title": "Col·laboració",
+    "value4Description": "Impulsar la cooperació entre governs, institucions, universitats i comunitats per a un impacte col·lectiu."
+  },
+  "aboutUniversity": {
+    "title": "Universitat de Lleida",
+    "description": "",
+    "udlHeading": "Universitat de Lleida (UdL)",
+    "udlP1": "La Universitat de Lleida (UdL) és una universitat pública ubicada a la ciutat de Lleida, Catalunya, Espanya. És una de les universitats més antigues de la regió, amb orígens històrics que es remunten al segle XIV, tot i que va ser restablerta en la seva forma moderna el 1991.",
+    "udlP2": "La UdL ofereix una àmplia gamma de graus, màsters i doctorats en enginyeria, agricultura, ciències de la salut, dret, educació i humanitats. Destaca especialment per la seva experiència en ciències agràries i forestals, gràcies a la fertilitat de la regió de Lleida i a la seva llarga vinculació amb la recerca ambiental i agronòmica.",
+    "udlP3": "A més de la formació acadèmica, la Universitat de Lleida posa especial èmfasi en internacionalització i innovació. Participa activament en programes d'intercanvi europeus i globals, promou aliances amb centres de recerca i indústria i impulsa l'emprenedoria entre el seu estudiantat.",
+    "visitUdl": "Visitar web de la UdL",
+    "it4sHeading": "Grup de recerca IT4S",
+    "it4sP1": "El grup de recerca IT4S de la Universitat de Lleida és un equip consolidat dedicat a explorar i promoure tecnologies innovadores orientades a la sostenibilitat i al desenvolupament sostenible en arquitectura i enginyeria. Treballa en disseny d'edificis eficients, planificació urbana, infraestructura verda, agricultura sostenible, paisatge i indústria amb un enfocament multidisciplinari.",
+    "it4sP2": "A través de recerca, consultoria, difusió de coneixement i col·laboracions públiques i privades, IT4S busca contribuir amb solucions ambientalment responsables, eficients en recursos i socialment sostenibles per a edificis, ciutats i processos industrials.",
+    "visitIt4s": "Visitar web d'IT4S"
+  },
+  "aboutLocations": {
+    "title": "Ubicacions",
+    "description": "Barcelona i Lleida: innovació i patrimoni",
+    "barcelonaTitle": "Barcelona",
+    "barcelonaP1": "Barcelona, vibrant capital de Catalunya, és un exemple destacat de ciutat metropolitana que combina història, cultura i innovació, prioritzant la sostenibilitat i el benestar ciutadà.",
+    "barcelonaP2": "Barcelona és pionera en planificació urbana sostenible, amb iniciatives com les superilles, que recuperen espai públic per a vianants i zones verdes, reduint contaminació i congestió. La ciutat també inverteix en energia renovable, mobilitat intel·ligent i gestió eficient de residus.",
+    "heritageTitle": "Patrimoni històric",
+    "heritageP1": "La història de Barcelona es remunta a més de 2.000 anys i ha configurat la seva identitat com a creuament de cultures. Des dels seus orígens romans fins al Barri Gòtic i el modernisme d'Antoni Gaudí, la ciutat posseeix un patrimoni arquitectònic únic.",
+    "heritageP2": "L'arquitectura de Gaudí és un exemple clar de disseny basat en la natura, no només en formes i colors, sinó també en la integració de processos naturals com la gestió de l'aigua de pluja.",
+    "barcelonaImg1Alt": "Superilles de Barcelona - planificació urbana sostenible",
+    "barcelonaImg1Caption": "Superilles de Barcelona - planificació urbana sostenible",
+    "barcelonaImg2Alt": "Arquitectura de Gaudí inspirada en la natura",
+    "barcelonaImg2Caption": "Arquitectura de Gaudí inspirada en la natura",
+    "lleidaTitle": "Lleida",
+    "lleidaP1": "Lleida, situada a l'oest de Catalunya, és una ciutat amb un ric patrimoni històric i cultural. Ubicada al costat del riu Segre, combina arquitectura medieval, desenvolupament urbà modern i tradicions locals.",
+    "lleidaP2": "El paisatge de Lleida, amb planeres fèrtils, rius i vegetació mediterrània, ofereix un laboratori natural per a pràctiques sostenibles. La seva herència agrícola i la integració urbà-rural brinden oportunitats per a infraestructura verda, biodiversitat i estratègies de planificació urbana sostenible.",
+    "lleidaImgAlt": "Lleida i el riu Segre - laboratori natural per a la sostenibilitat",
+    "lleidaImgCaption": "Lleida i el riu Segre - laboratori natural per a la sostenibilitat"
+  },
+  "aboutOrganisationCommittee": {
+    "title": "Comitè organitzador",
+    "description": "Estructura de WGIC26",
+    "honourCommittee": "Comitè d'honor",
+    "organizingCommittee": "Comitè organitzador",
+    "role": "Rol",
+    "representative": "Representant",
+    "institution": "Institució/Empresa",
+    "toBeConfirmed": "Per confirmar",
+    "roles": {
+      "wginPresident": "President de WGIN",
+      "udlRector": "Rectorat de la Universitat de Lleida",
+      "catalanGov": "Representant del Govern de Catalunya",
+      "barcelonaMunicipality": "Representant de l'Ajuntament de Barcelona",
+      "provincialCouncilBarcelona": "Representant de la Diputació (Barcelona)",
+      "lleidaMunicipality": "Representant de l'Ajuntament de Lleida",
+      "provincialCouncilLleida": "Representant de la Diputació (Lleida)",
+      "provincialCouncil": "Representant de la Diputació",
+      "chairCongress": "Presidència del congrés"
+    }
+  },
+  "aboutCongressCommittee": {
+    "title": "Comitè del congrés",
+    "description": "Comitès científic i professional que donen suport a WGIC26",
+    "introP1": "El Comitè del Congrés WGIC26 està format per experts, investigadors i professionals de tot el món, representant diversos àmbits relacionats amb la infraestructura verda urbana. La seva experiència garanteix alts estàndards en revisió de treballs, orientació de sessions temàtiques i definició del programa científic.",
+    "introP2": "Aquest comitè compleix un paper clau per fomentar la col·laboració interdisciplinar i impulsar recerca innovadora. En reunir perspectives i experiència global, assegura que el congrés es mantingui a l'avantguarda del coneixement i aporti solucions aplicables per a ciutats de tot el món.",
+    "scientificCommittee": "Comitè científic",
+    "professionalCommittee": "Comitè professional",
+    "name": "Nom",
+    "institution": "Institució",
+    "institutionRole": "Institució / Rol",
+    "country": "País"
+  },
+  "planYourStayPage": {
+    "title": "Planifica la teva estada",
+    "description": "Barcelona i Catalunya t'esperen.",
+    "heading": "Planifica la teva estada a Barcelona",
+    "intro": "Descobreix la màgia de Barcelona i per què és el destí perfecte per a la teva visita. Mira la nostra guia a continuació.",
+    "videoTitle": "Planifica la teva estada a Barcelona",
+    "barcelonaImgAlt": "Sagrada Família - Gaudí",
+    "barcelonaTitle": "Turisme de Barcelona",
+    "barcelonaDescription": "Explora les meravelles arquitectòniques i la vibrant vida cultural de Barcelona.",
+    "visitWebsite": "Visitar web",
+    "cataloniaImgAlt": "Vista de Catalunya",
+    "cataloniaTitle": "Agència Catalana de Turisme",
+    "cataloniaDescription": "Descobreix el Grand Tour de Catalunya i la millor gastronomia del món.",
+    "grandTour": "Grand Tour de Catalunya",
+    "gastronomy": "Gastronomia a Catalunya"
+  },
+  "registrationPage": {
+    "title": "Inscripció",
+    "description": "Uneix-te al Congrés Mundial d'Infraestructura Verda 2026. Registra't ara per assegurar la teva plaça.",
+    "platformTitle": "Plataforma d'inscripció",
+    "platformDescription": "La inscripció es gestiona a través de la nostra plataforma col·laboradora externa, Hèlice. La quota d'inscripció cobreix els costos durant el període del congrés, incloent dinars i pauses cafè. No inclou viatge ni allotjament.",
+    "platformButton": "Registrar-se a la plataforma Hèlice",
+    "platformInvoiceNote": "Si necessites factura, aquesta es generarà al finalitzar la càrrega del formulari d'inscripció.",
+    "keyDatesTitle": "Dates clau",
+    "keyDatesHeaders": {
+      "milestone": "Fita",
+      "date": "Data"
+    },
+    "keyDates": {
+      "abstracts": "Període d'enviament de resums",
+      "acceptance": "Notificació d'acceptació (decisió Oral/Pòster)",
+      "firstDraft": "Primer esborrany d'article/pòster",
+      "revision": "Lliurament de revisió d'article/pòster",
+      "finalPaper": "Lliurament final d'article/pòster",
+      "finalProgram": "Programa final",
+      "earlyBird": "Data límit d'inscripció anticipada",
+      "registrationOpen": "Inscripció oberta",
+      "partners": "Socis i expositors",
+      "sponsors": "Patrocinadors"
+    },
+    "dateValues": {
+      "abstracts": "15 de desembre de 2025 - 31 de maig de 2026",
+      "paperSubmissionDeadline": "< 31 de maig de 2026",
+      "acceptance": "< 15 de maig de 2026",
+      "acceptanceDecision": "< 15 de maig de 2026",
+      "firstDraft": "< 31 de maig de 2026",
+      "r1Draft": "< 15 de juny de 2026",
+      "revision": "< 15 de juliol de 2026",
+      "finalPaper": "< 31 de juliol de 2026",
+      "finalProgram": "31 de juliol de 2026",
+      "earlyBird": "< 31 de maig de 2026",
+      "registrationOpen": "< 30 de setembre de 2026",
+      "partners": "< 31 de maig de 2026",
+      "sponsors": "< 30 de setembre de 2026"
+    },
+    "feesTitle": "Quotes d'inscripció",
+    "feesHeaders": {
+      "category": "Categoria",
+      "early": "Anticipada < Maig",
+      "standard": "Estàndard (+15%) < setembre",
+      "onsite": "In situ (+30%)"
+    },
+    "fees": {
+      "registrationTwoDays": "Inscripció 2 dies",
+      "registrationOneDay": "Inscripció 1 dia",
+      "oralPresentations": "Presentacions orals",
+      "poster": "Pòster (A1)",
+      "students": "Estudiants",
+      "companions": "Acompanyants",
+      "galaDinner": "Sopar de gala"
+    },
+    "notes": {
+      "author": "Cada autor inscrit pot presentar un article (inclosa presentació oral). Per a un segon article, es requereix una quota de 200 EUR.",
+      "student": "L'estudiantat a temps complet (sense incloure postdoctorat) ha d'aportar prova de matrícula a temps complet (còpia de carnet estudiantil vigent o carta de la institució o direcció del programa).",
+      "certificate": "Totes les persones participants rebran un certificat d'assistència.",
+      "proceedings": "Per incloure l'article en el programa del congrés i en les actes, almenys una persona autora s'ha de registrar abans de la data límit d'inscripció.",
+      "invoice": "Si necessites factura, envia un correu a"
+    },
+    "cancellationTitle": "Cancel·lació i reemborsament",
+    "cancellationBody": "Després del dipòsit bancari, no és possible realitzar reemborsaments."
+  },
+  "speakersPage": {
+    "title": "Sigues un Orador",
+    "description": "Coneix les veus líders en infraestructura verda. WGIC 2026 comptarà amb experts internacionals, innovadors i referents que impulsen el futur de les ciutats sostenibles.",
+    "calloutTitle": "Envia el teu article o projecte abans del 31 de maig de 2026",
+    "calloutP1": "Gràcies pel teu interès a participar en el World Green Infrastructure Congress 2026 Barcelona - Lleida (WGIC 2026). Per enviar un article, accedeix i completa les dades a l'aplicació d'enviament a l'enllaç inferior.",
+    "calloutP2": "El 12è World Green Infrastructure Congress se celebrarà a Barcelona, al Centre de Convencions Internacional de Barcelona, del 27 al 30 d'octubre de 2026. WGIC 2026 rep investigacions originals, estudis de cas i aplicacions innovadores en format d'article curt (màxim 5 pàgines), en format MS Word.",
+    "calloutP3": "The best papers presented at WGIC26 will be fast-tracked for Special Issues in three leading peer-reviewed journals: Urban Forestry and Urban Greening (Elsevier), Nature-Based Solutions (Elsevier), and the Journal of Living Architecture (Green Roofs for Healthy Cities –GRHC).",
+    "submissionButton": "Anar al formulari d'enviament",
+    "templateButton": "Descarregar plantilla d'article",
+    "bodyP1": "WGIC26 rep amb entusiasme enviaments d'investigació original, estudis de cas i aplicacions innovadores, en format d'article curt (màxim 5 pàgines), en format MS Word. Aquesta limitació ajuda a reduir similitud per a articles recomanats posteriorment per a números especials de revistes.",
+    "bodyP2": "Tots els articles enviats passen per un procés rigorós de revisió per parells. El comitè científic decideix l'acceptació i si la presentació serà oral o pòster. Els articles acceptats es publicaran en les actes del WGIC2026.",
+    "keyDatesTitle": "Dates clau",
+    "keyDatesHeaders": {
+      "milestone": "Fita",
+      "date": "Data"
+    },
+    "keyDates": {
+      "abstracts": "Període d'enviament de resums",
+      "acceptance": "Notificació d'acceptació (decisió Oral/Pòster)",
+      "firstDraft": "Primer esborrany d'article/pòster",
+      "revision": "Lliurament de revisió d'article/pòster",
+      "finalPaper": "Lliurament final d'article/pòster",
+      "finalProgram": "Programa final",
+      "earlyBird": "Data límit d'inscripció anticipada",
+      "registrationOpen": "Inscripció oberta",
+      "partners": "Socis i expositors",
+      "sponsors": "Patrocinadors"
+    },
+    "dateValues": {
+      "abstracts": "15 de desembre de 2025 - 31 de maig de 2026",
+      "acceptance": "Abans del 15 de maig de 2026",
+      "firstDraft": "Abans del 15 de juny de 2026",
+      "revision": "Abans del 15 de juliol de 2026",
+      "finalPaper": "Abans del 31 de juliol de 2026",
+      "finalProgram": "31 de juliol de 2026",
+      "earlyBird": "Abans del 31 de maig de 2026",
+      "registrationOpen": "Abans del 30 de setembre de 2026",
+      "partners": "Abans del 31 de maig de 2026",
+      "sponsors": "Abans del 30 de setembre de 2026"
+    },
+    "stepsTitle": "Passos per a l'enviament d'articles",
+    "steps": {
+      "s1": "Descarrega la plantilla de l'article.",
+      "s2": "Llegeix les instruccions amb cura.",
+      "s3": "Selecciona un tema principal on encaixi el teu treball.",
+      "s4": "Prepara l'article (màxim 5 pàgines).",
+      "s5": "Envia el teu article en format .doc abans del 30 d'abril de 2026.",
+      "s6": "Rebràs la decisió i revisió R1 abans del 15 de maig de 2026.",
+      "s7": "Lliura l'article revisat (R1) abans del 12 de juny de 2026 i R2 abans del 30 de juny de 2026.",
+      "s8": "Lliura l'article final abans del 30 de juliol de 2026."
+    },
+    "typologiesTitle": "Tipologies de presentació",
+    "tableHeaders": {
+      "typology": "Tipologia",
+      "length": "Durada de sessió",
+      "details": "Detalls"
+    },
+    "rows": {
+      "oral": {
+        "type": "Presentació oral",
+        "length": "15 min (incloent preguntes)",
+        "details": "Utilitza la plantilla de presentació MS PowerPoint."
+      },
+      "poster": {
+        "type": "Presentació pòster",
+        "length": "Els pòsters es muntaran a l'espai obert disponible. El programa especifica franges durant les pauses de dinar perquè els autors expliquin els seus pòsters als assistents.",
+        "details": "Format A0 (841 x 1189 mm) vertical. Utilitza la plantilla de pòster d'una sola diapositiva."
+      }
+    },
+    "regionAriaLabel": "Enviaments d'articles",
+    "finalCardTitle": "Envia el teu article",
+    "finalCardDescription": "Utilitza l'aplicació online d'enviament per pujar el teu manuscrit i les dades requerides."
+  },
+  "legalPages": {
+    "privacyTitle": "Política de privacitat",
+    "termsTitle": "Termes i condicions",
+    "comingSoon": "Pròximament",
+    "contactEmail": "hola@wgic26.barcelona"
+  },
+  "travelPage": {
+    "title": "Viatge",
+    "description": "La informació de viatge estarà disponible aviat.",
+    "comingSoon": "Pròximament",
+    "contactEmail": "hola@wgic26.barcelona"
+  },
+  "programActivitiesPage": {
+    "title": "Activitats",
+    "description": "Activitats principals del congrés i interaccions temàtiques.",
+    "p1": "Les activitats de WGIC26 estan dissenyades per combinar intercanvi científic, networking professional i aprenentatge pràctic en tot el sector d'infraestructura verda.",
+    "p2": "Els detalls de sessions, formats i pautes de participació es publicaran quan es confirmi el programa final."
+  },
+  "programAgendaPage": {
+    "title": "Agenda",
+    "description": "Segueix les sessions clau i les fites durant tots els dies del congrés.",
+    "downloadPdf": "descarregar pdf",
+    "p1": "L'agenda s'actualitzarà progressivament amb sessions magistrals, blocs temàtics i activitats de networking.",
+    "p2": "Es publicarà una versió descarregable en PDF quan el calendari final estigui confirmat."
+  },
+  "programSpecialIssuesPage": {
+    "title": "Edicions especials",
+    "description": "Les contribucions més destacades del congrés podran ser considerades per a publicació en revistes d'alt impacte.",
+    "intro": "Les comunicacions més destacades del congrés seran redirigides a números especials en revistes d'alt impacte, on seran tractades segons els criteris i requisits de cada revista.",
+    "journalLink": "Visitar web de la revista",
+    "specialIssueLink": "Visitar número especial",
+    "journals": {
+      "urban": {
+        "name": "Urban Forestry and Urban Greening",
+        "publisher": "Elsevier",
+        "imageAlt": "Infraestructura verda urbana i arbrat",
+        "about": "Urban Forestry and Urban Greening és una revista internacional arbitrada orientada a publicar recerca d'alta qualitat sobre vegetació llenyosa i no llenyosa en entorns urbans i periurbans, així com el seu ús, planificació, disseny, implantació i gestió. Se centra en sistemes dominats per arbrat i altres recursos verds en i al voltant de les àrees urbanes, com boscos, parcs i jardins públics i privats, àrees naturals urbanes, arbrat viari, jardins botànics, cementiris i enverdiment d'envolvents d'edificis.",
+        "specialIssueTitle": "Número especial: Green Infrastructure for Health, Global Equity, and Urban Recovery - Contributions from the 12th World Green Infrastructure Congress (WGIC26)"
+      },
+      "nbs": {
+        "name": "Nature-Based Solutions",
+        "publisher": "Elsevier",
+        "imageAlt": "Solucions basades en la natura en context urbà",
+        "about": "Nature-Based Solutions es dedica a investigacions que amplien i aprofundeixen el coneixement científic sobre SBN i que impulsen la seva adopció, síntesi i aplicació per respondre a reptes socials crítics a múltiples escales. Les SBN utilitzen la natura i els processos ecològics per enfortir la capacitat d'un sistema davant reptes múltiples i interconnectats, promovent un enfocament integral d'adaptació climàtica i resiliència amb equilibri social, ambiental i econòmic."
+      },
+      "jliv": {
+        "name": "Journal of Living Architecture",
+        "publisher": "Green Infrastructure Foundation",
+        "imageAlt": "Publicació sobre arquitectura viva",
+        "about": "The Journal of Living Architecture (JLIV) és la revista revisada per parells de la Green Infrastructure Foundation, afiliada a Green Roofs for Healthy Cities als Estats Units i Canadà. JLIV està escrita, revisada i editada per professionals d'arquitectura viva, i comparteix aplicacions educatives exitoses, hallazgos de recerca original, perspectives acadèmiques, recursos educatius i reptes actuals. La seva missió és ampliar i actualitzar la base de coneixement per a professionals d'arquitectura viva i disciplines afins."
+      }
+    }
+  },
+  "gaudiYearPage": {
+    "title": "Any Gaudí 2026",
+    "description": "2026 ha estat declarat com Any Gaudí per commemorar el centenari de la mort d'Antoni Gaudí, un dels arquitectes més influents de la història de l'arquitectura.",
+    "img1Alt": "Projecte de Gaudí 1",
+    "img2Alt": "Projecte de Gaudí 2",
+    "p1": "2026 ha estat declarat Any Gaudí per commemorar el centenari de la mort d'Antoni Gaudí, un dels arquitectes més influents de la història de l'arquitectura. Aquesta commemoració ha estat reconeguda formalment per les autoritats de Catalunya i Espanya com un esdeveniment d'interès públic excepcional, amb l'objectiu de posar en valor el llegat tècnic, artístic, urbanístic i patrimonial de Gaudí.",
+    "p2": "Al llarg de 2026 i més enllà, un ampli programa coordinat d'activitats reunirà les principals obres, institucions i agents vinculats al llegat de Gaudí, no només a Catalunya sinó també a altres regions d'Espanya. Aquestes activitats inclouran exposicions, congressos, actuacions culturals, jornades de portes obertes i un congrés internacional dedicat a l'estudi acadèmic i tècnic de la seva obra.",
+    "p3": "L'Any Gaudí es concep no només com una celebració retrospectiva, sinó també com una oportunitat per projectar la seva influència cap al futur: reavaluar la seva aportació a l'arquitectura moderna, la conservació del patrimoni i la innovació urbana; promoure la reflexió sobre la relació entre arquitectura, natura, societat i sostenibilitat; i fomentar la difusió global dels seus valors i idees.",
+    "boxTitle": "Gaudí i infraestructura verda",
+    "boxBody": "El llegat de Gaudí, profundament arrelat en l'harmonia entre arquitectura i natura, ofereix una inspiració poderosa per replantejar la infraestructura verda urbana contemporània com un model més orgànic, sostenible i centrat en les persones."
+  },
+  "keyNoteSpeakersPage": {
+    "title": "Oradors magistrals",
+    "description": "Coneix les veus líders en infraestructura verda. WGIC 2026 comptarà amb experts internacionals, innovadors i referents que impulsen el futur de les infraestructures verdes i les ciutats sostenibles.",
+    "p1": "WGIC26 comptarà amb fins a 12 oradors magistrals de tot el món, situats a l'avantguarda de la recerca, innovació i implementació en infraestructura verda.",
+    "p2": "Ens complau anunciar que els primers oradors de WGIC 2026 ja estan confirmats.",
+    "speakers": {
+      "speaker1": {
+        "name": "Marcos Ros",
+        "bio": "Arquitecte, acadèmic i membre del Parlament Europeu, Marcos Ros treballa en la intersecció de la política urbana, la sostenibilitat, l'habitatge i l'entorn construït, aportant una sòlida perspectiva institucional europea al futur de les ciutats."
+      },
+      "speaker2": {
+        "name": "Salvador Rueda",
+        "bio": "Fundador de la Fundació d'Ecologia Urbana i Territorial (FEUT), Salvador Rueda és un pioner en ecologia urbana i el creador del model de Superilles, reconegut internacionalment, que està redefinint ciutats més saludables i habitables."
+      },
+      "speaker3": {
+        "name": "Vicente Guallart",
+        "bio": "Arquitecte i urbanista, cofundador d'Urbanitree i fundador de l'Institut d'Arquitectura Avançada de Catalunya (IAAC), Vicente Guallart és reconegut globalment per la seva innovació en ciutats sostenibles, arquitectura avançada i transformació urbana."
+      },
+      "speaker4": {
+        "name": "Alberto Estévez",
+        "bio": "Arquitecte, investigador i fundador d'ESARQ-UIC Barcelona, Alberto Estévez és una veu líder en arquitectura biodigital, explorant la convergència entre disseny, biologia, tecnologia i sostenibilitat."
+      },
+      "speaker5": {
+        "name": "Enric Batlle",
+        "bio": "Soci fundador de Batlleiroig, arquitecte i paisatgista, Enric Batlle és reconegut internacionalment per integrar arquitectura, paisatge i planificació urbana per crear entorns urbans resilients i ambientalment responsables."
+      },
+      "speaker6": {
+        "name": "Wendy Y. Chen",
+        "bio": "Professora a la Universitat de Hong Kong, Wendy Y. Chen es especialitza en infraestructura verda-azul urbana, enfocant-se en com les solucions basades en la natura milloren la sostenibilitat urbana, la planificació i la qualitat de vida."
+      },
+      "speaker7": {
+        "name": "Dorothy Aseyo",
+        "bio": "Directora Executiva del Moviment Cinturó Verd, Dorothy Aseyo treballa en conservació ambiental, empoderament comunitari, mitjans de vida sostenibles i resiliència climàtica, promovent solucions basades en la natura i acció de base per construir societats més resilients i inclusives."
+      }
+    },
+    "closing": "Aquest primer grup d'oradors subratlla l'ambició, profunditat i visió multidisciplinar de WGIC 2026, posicionant-lo com un fòrum clau per al debat urbà global."
+  },
+  "technicalVisitsPage": {
+    "title": "Visites tècniques",
+    "description": "Descobreix els projectes tècnics d'infraestructura verda més destacats de Barcelona. Els detalls de visites i inscripció s'anunciaran aviat. Els següents projectes ja estan confirmats."
+  },
+  "programPage": {
+    "title": "Programa",
+    "description": "",
+    "img1Alt": "Programa del congrés a Barcelona",
+    "img2Alt": "Visites tècniques i instal·lacions universitàries",
+    "p1": "El programa del congrés s'estructurarà en diversos dies per maximitzar la participació i l'aprenentatge.",
+    "p2": "Els dies u i dos inclouran sessions paral·leles sobre els temes seleccionats, permetent a cada participant triar segons el seu interès i perfil.",
+    "p3": "El tercer dia estarà dedicat a visites tècniques, oferint una visió directa de projectes exemplars d'infraestructura verda a Barcelona.",
+    "p4": "S'ha planificat un quart dia addicional centrat en innovació i recerca en infraestructura verda, organitzat per la Universitat de Lleida.",
+    "headers": {
+      "time": "Hora",
+      "activity": "Activitat",
+      "location": "Ubicació",
+      "chair": "Moderació"
+    },
+    "detailsSoon": "Es proporcionarà informació detallada pròximament.",
+    "footerNote": "La informació detallada sobre els tallers d'innovació i recerca a Lleida i el procés d'inscripció es publicarà pròximament."
+  },
+  "topicsPage": {
+    "title": "Temes principals",
+    "description": "",
+    "img1Alt": "Seu del congrés a Barcelona",
+    "img2Alt": "Infraestructura verda a Barcelona",
+    "img3Alt": "Desenvolupament urbà a Barcelona",
+    "img4Alt": "Activitats del congrés",
+    "p1": "El programa del congrés s'ha dissenyat per oferir una experiència completa i participativa, amb ponències magistrals, sessions plenàries, panells, tallers, exposicions i presentacions orals i pòster.",
+    "p2": "Les persones participants podran treballar un ampli espectre de temes que abasten polítiques, tecnologies, mercat, estàndards, disseny, execució, manteniment i formació.",
+    "p3": "Una part rellevant del congrés se centra en analitzar impactes de la infraestructura verda en societat i medi ambient, incloent resiliència, salut, biodiversitat i cohesió social.",
+    "p4": "WGIC26 enfatitza tres eixos centrals: salut i benestar, recuperació postconflicte o postdesastre, i ciutats resilients i justes al Sud Global.",
+    "tableTitle": "WGIC26 Barcelona - Lleida. Temes principals",
+    "topicCategory": "Tema / Categoria",
+    "accordionTitle": "Temes Clau",
+    "accordion": {
+      "topic1": {
+        "title": "Sistemes d'Edificació Verda",
+        "description": "Integració de cobertes, façanes i murs vegetats com a solucions constructives clau per a l'eficiència energètica."
+      },
+      "topic2": {
+        "title": "Planificació Urbana i Paisatgisme",
+        "description": "Redisseny de les ciutats mitjançant la infraestructura verda com a eix vertebrador de la cohesió social i el desenvolupament."
+      },
+      "topic3": {
+        "title": "Gestió de l'Aigua i Clima",
+        "description": "Estratègies de drenatge sostenible per mitigar inundacions. Resiliència hídrica i solucions basades en la natura per adaptar els nostres territoris a l'emergència climàtica."
+      },
+      "topic4": {
+        "title": "Salut i Biofília",
+        "description": "El disseny biofílic com a eina científica per reduir l'estrès, millorar la qualitat de l'aire i potenciar la salut mental."
+      },
+      "topic5": {
+        "title": "Reptes Globals",
+        "description": "Respostes innovadores davant la pèrdua de biodiversitat i el creixement urbà accelerat des d'una perspectiva internacional."
+      },
+      "topic6": {
+        "title": "Política i Economia",
+        "description": "Anàlisi de marcs reguladors i models d'inversió per accelerar la transició cap a una economia urbana verda i circular."
+      }
+    },
+    "strategiesPoliciesFunding": "Estratègies – Polítiques – Programes de finançament",
+    "technologiesMarketStandards": "Tecnologies – Mercat – Sector GI/NBS – Normatives",
+    "projectsDesign": "Projectes – Disseny",
+    "executionMaintenanceQuality": "Execució – Manteniment – Qualitat",
+    "educationTraining": "Educació – Formació",
+    "impacts": "Impactes",
+    "impactClimateResilience": "a) Resiliència climàtica",
+    "impactWaterManagement": "b) Gestió de l'aigua",
+    "impactNaturalClimateHazards": "c) Riscos naturals i climàtics",
+    "impactGreenSpaceManagement": "d) Gestió d'espais verds",
+    "impactBiodiversity": "e) Biodiversitat",
+    "impactAirQuality": "f) Qualitat de l'aire",
+    "impactPlaceRegeneration": "g) Regeneració d'espais",
+    "impactKnowledgeCapacity": "h) Coneixement i enfortiment de capacitats socials per a la transformació urbana sostenible",
+    "impactParticipatoryPlanning": "i) Planificació participativa i governança",
+    "impactSocialJustice": "j) Justícia social i cohesió social",
+    "impactHealthWellbeing": "k) Salut i benestar",
+    "impactEconomicOpportunities": "l) Noves oportunitats econòmiques i ocupacions verdes",
+    "impactMiscellaneous": "Impactes: Miscel·lània",
+    "workshopsTitle": "Tallers",
+    "workshopGlobalSouth": "Taller Infraestructura verda vs Sud Global",
+    "workshopHealthWellbeing": "Taller Infraestructura verda vs Salut i benestar",
+    "workshopPostConflict": "Taller Infraestructura verda vs Recuperació postconflicte"
+  },
+  "workshopsPage": {
+    "title": "Tallers",
+    "description": "Sessions interactives sobre temes clau de WGIC26",
+    "img1Alt": "Espai de tallers a Barcelona",
+    "img2Alt": "Instal·lacions de la Universitat de Lleida",
+    "p1": "WGIC26 inclourà tallers temàtics en paral·lel a les sessions de presentació oral durant els dies u i dos.",
+    "thematicTitle": "Tallers temàtics",
+    "day4Title": "Dia 4: Tallers d'innovació a la Universitat de Lleida",
+    "day4Description": "S'ha previst un quart dia addicional centrat específicament en innovació i recerca dins del sector d'infraestructura verda.",
+    "tableHeaders": {
+      "time": "Hora",
+      "activity": "Activitat",
+      "details": "Detalls"
+    },
+    "schedule": {
+      "reception": "Recepció",
+      "workshop1": "Taller 1",
+      "break": "Pausa",
+      "breakDetails": "Visita a BIG1 - PCiTAL (coberta verda semi-intensiva)",
+      "workshop2": "Taller 2",
+      "lunch": "Dinar",
+      "technicalVisits": "Visites tècniques",
+      "visit1": "BIG2 - Ronda Mercè (coberta verda extensiva, visita amb dron)",
+      "visit2": "BIG9 - Coberta Cavallers (biodiversa, consum zero d'aigua)",
+      "visit3": "Visita cultural: La Seu Vella"
+    },
+    "comingSoonTitle": "Informació detallada pròximament",
+    "comingSoonBody": "La informació detallada sobre els tallers d'innovació i recerca a Lleida i la seva inscripció es publicarà pròximament.",
+    "cards": {
+      "globalSouth": {
+        "title": "Infraestructura verda vs Sud Global",
+        "description": "Abordar el repte de construir ciutats resilients, saludables i justes al Sud Global."
+      },
+      "health": {
+        "title": "Infraestructura verda vs salut i benestar",
+        "description": "Explorar la connexió entre infraestructura verda i salut pública mitjançant solucions basades en la natura."
+      },
+      "recovery": {
+        "title": "Infraestructura verda vs recuperació postconflicte",
+        "description": "Examinar el paper de la infraestructura verda en la recuperació de societats i llocs després de contextos de conflicte o desastre."
+      }
+    }
+  },
+  "wginAwardsPage": {
+    "title": "Premis WGIN",
+    "description": "World Green Infrastructure Awards 2026",
+    "nominationsTitle": "Nominacions obertes",
+    "nominationsSubtitle": "Envia el teu projecte abans de juny de 2026",
+    "submitNomination": "Enviar nominació",
+    "p1": "World Green Infrastructure Network (WGIN) obre nominacions per als World Green Infrastructure Awards 2026.",
+    "p2": "Els WGIN Awards són referents en infraestructura verda per la seva amplitud de categories i el seu compromís amb l'excel·lència.",
+    "categoriesTitle": "Nou categories clau",
+    "p3": "Les nominacions podran presentar-se fins a juny de 2026 a través del lloc oficial dels premis. Les persones guanyadores s'anunciaran durant WGIC 2026 a Barcelona.",
+    "moreInfo": "Per a més informació sobre els World Green Infrastructure Awards 2026 i enviar una nominació, visita:",
+    "joinTitle": "Suma't a l'excel·lència",
+    "joinBody": "Forma part de l'esdeveniment d'infraestructura verda més prestigiós de 2026.",
+    "learnMore": "Saber-ne més",
+    "categories": {
+      "greenRoofs": {
+        "title": "Cobertes verdes",
+        "description": "Reconeix projectes exemplars de cobertes vegetades."
+      },
+      "greenWalls": {
+        "title": "Murs verds",
+        "description": "Premia façanes i solucions destacades d'enverdiment integrat."
+      },
+      "greenNeighborhood": {
+        "title": "Barri verd",
+        "description": "Reconeix projectes urbans amb disseny vegetatiu multifuncional."
+      },
+      "policy": {
+        "title": "Política d'infraestructura verda",
+        "description": "Destaca polítiques públiques o privades que accelerin l'adopció d'infraestructura verda urbana."
+      },
+      "researchAcademic": {
+        "title": "Recerca en infraestructura verda (Treball acadèmic)",
+        "description": "Reconeix excel·lència en recerca i projectes acadèmics relacionats."
+      },
+      "researchStudent": {
+        "title": "Recerca en infraestructura verda (Pòsters estudiants)",
+        "description": "Reconeix idees i projectes innovadors de l'estudiantat."
+      },
+      "livingSystems": {
+        "title": "Sistemes vius innovadors",
+        "description": "Premia projectes que integren sistemes vius en envolvents arquitectòniques."
+      },
+      "unintended": {
+        "title": "Vegetació no intencionada",
+        "description": "Reconeix el valor de la vegetació natural no planificada i la seva evolució."
+      },
+      "champion": {
+        "title": "Campió d'infraestructura verda",
+        "description": "Reconeix entitats amb aportacions significatives al sector."
+      }
+    }
+  },
+  "venuePage": {
+    "title": "Seu",
+    "description": "",
+    "barcelonaLabel1": "Bar",
+    "barcelonaLabel2": "ce",
+    "barcelonaLabel3": "lona",
+    "barcelonaP1": "La vibrant capital de Catalunya és un exemple destacat de ciutat metropolitana que integra història, cultura i innovació, prioritzant sostenibilitat i benestar ciutadà.",
+    "barcelonaP2": "Barcelona és pionera en planificació urbana sostenible, amb iniciatives com les superilles que recuperen espai públic per a vianants i zones verdes, reduint contaminació i congestió.",
+    "barcelonaP3": "La història de Barcelona es remunta a més de 2.000 anys. Des dels seus orígens romans fins al Barri Gòtic i el modernisme d'Antoni Gaudí, la ciutat ofereix un patrimoni arquitectònic únic.",
+    "ccibP1": "Del 27 al 28 d'octubre de 2026, les activitats de WGIC 2026 se celebraran al CCIB de Barcelona, al districte de Sant Martí dins l'àrea 22@ de Poblenou.",
+    "ccibP2": "El CCIB inclou dos edificis de gran valor arquitectònic: el Centre de Convencions i l'Auditori Fòrum CCIB, connectats per una passarel·la subterrània. En conjunt ofereixen uns 100.000 m2 i capacitat per a fins a 15.000 assistents.",
+    "ccibP3": "El CCIB està ubicat a 500 metres de la platja, a 6 km del centre històric i a 22 km de l'aeroport, amb excel·lents connexions per transport públic i carretera.",
+    "mapTitle": "Mapa de Barcelona"
+  },
+  "newslettersPage": {
+    "title": "Butlletins",
+    "description": "Mantén-te actualitzat amb els nostres últims butlletins.",
+    "readOnline": "Llegir en línia",
+    "latest": "Més recent",
+    "downloadPdf": "Descarregar PDF",
+    "languages": {
+      "en": "Anglès",
+      "es": "Castellà",
+      "it": "Italià",
+      "el": "Grec",
+      "fr": "Francès",
+      "pt": "Portuguès",
+      "ar": "Àrab"
+    },
+    "items": {
+      "march2026": {
+        "title": "Butlletí de Febrer",
+        "date": "Febrer"
+      },
+      "march2026Newsletter2": {
+        "title": "Butlletí de Març",
+        "date": "Març"
+      },
+      "april2026Newsletter3": {
+        "title": "Butlletí d'Abril",
+        "date": "Abril"
+      },
+      "may2026Newsletter5": {
+        "title": "Butlletí de Maig #2",
+        "date": "Maig 2026"
+      },
+      "may2026Newsletter4": {
+        "title": "Butlletí de Maig",
+        "date": "Maig"
+      }
+    }
+  },
+  "oldNewslettersPage": {
+    "title": "Butlletins",
+    "description": "Mantén-te al dia amb els nostres últims butlletins.",
+    "readOnline": "Llegir en línia",
+    "downloadPdf": "Descarregar PDF",
+    "languages": {
+      "en": "Anglès",
+      "es": "Castellà",
+      "it": "Italià",
+      "el": "Grec"
+    },
+    "items": {
+      "march2026": {
+        "title": "Butlletí de març",
+        "date": "Març"
+      }
+    }
+  }
+}

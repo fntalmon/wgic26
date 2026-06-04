@@ -13,6 +13,9 @@ function detectPreferredLocale(request: NextRequest) {
   }
 
   const normalized = header.toLowerCase();
+  if (normalized.includes("ca")) {
+    return "ca";
+  }
   if (normalized.includes("es")) {
     return "es";
   }

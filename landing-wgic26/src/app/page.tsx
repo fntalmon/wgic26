@@ -272,25 +272,33 @@ export default function Home() {
                   />
                 </a>
 
-                <div className="flex items-center justify-center">
+                <a
+                  href="https://cinea.ec.europa.eu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src="/img/logos-color/logo-life.jpg"
-                    alt="Life EU"
+                    alt="LIFE - European Climate, Infrastructure and Environment Executive Agency"
                     width={300}
                     height={220}
                     className="h-28 w-auto object-contain"
                   />
-                </div>
+                </a>
 
-                <div className="flex items-center justify-center">
+                <a
+                  href="https://it4s.cat/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
                     src="/img/logos-color/it4s.png"
-                    alt="IT4S"
+                    alt="it4s – Innovative Technologies for Sustainability"
                     width={300}
                     height={220}
                     className="h-28 w-auto object-contain"
                   />
-                </div>
+                </a>
 
                 <a
                   href="http://big4life.eu"
@@ -311,7 +319,7 @@ export default function Home() {
             {/* ELITE PARTNERS */}
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Elite Partners
+                {t("elitePartners")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
                 <a
@@ -327,20 +335,6 @@ export default function Home() {
                     className="h-30 w-auto object-contain"
                   />
                 </a>
-
-                <a
-                  href="https://zinco-cubiertas-ecologicas.es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/zinco.svg"
-                    alt="Zinco"
-                    width={400}
-                    height={300}
-                    className="h-22 w-auto object-contain"
-                  />
-                </a>
               </div>
             </div>
 
@@ -354,7 +348,7 @@ export default function Home() {
 
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Garden Big Exhibitors
+                {t("gardenBigExhibitors")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
                 <a
@@ -384,12 +378,26 @@ export default function Home() {
                     className="h-36 w-auto object-contain"
                   />
                 </a>
+
+                <a
+                  href="https://zinco-cubiertas-ecologicas.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/zinco.svg"
+                    alt="Zinco"
+                    width={400}
+                    height={300}
+                    className="h-22 w-auto object-contain"
+                  />
+                </a>
               </div>
             </div>
 
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Garden Medium Exhibitors
+                {t("gardenMediumExhibitors")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
                 <a
@@ -439,10 +447,10 @@ export default function Home() {
             {/* FLOWER EXHIBITORS - hidden until logos are added
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Flower Exhibitors
+                {t("flowerExhibitors")}
               </h3>
               <div className="flex justify-center items-center min-h-[100px] text-gray-500">
-                <p className="italic">Coming Soon...</p>
+                <p className="italic">{t("comingSoon")}</p>
               </div>
             </div>
             */}
@@ -450,7 +458,7 @@ export default function Home() {
             {/* MEDIA PARTNERS */}
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                Media Partners
+                {t("mediaPartners")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
                 <a
@@ -472,7 +480,7 @@ export default function Home() {
             {/* WITH THE SUPPORT OF */}
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                With the Support of
+                {t("withTheSupportOf")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
                 <a
@@ -517,7 +525,7 @@ export default function Home() {
                   />
                 </a>
                 <a
-                  href="https://agronoms.cat//"
+                  href="https://agronoms.cat/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -527,6 +535,34 @@ export default function Home() {
                     width={320}
                     height={240}
                     className="h-24 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://www.idaea.csic.es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/IDAEA.png"
+                    alt="Logo IDAEA"
+                    width={320}
+                    height={240}
+                    className="h-14 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://www.csic.es/es"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/CSIC.svg"
+                    alt="Logo eadc"
+                    width={320}
+                    height={240}
+                    className="h-14 w-auto object-contain"
                   />
                 </a>
               </div>

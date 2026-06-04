@@ -65,7 +65,15 @@
     "newsletterValidation": "Please provide both email and phone number.",
     "newsletterPhoneValidation": "Please enter a valid phone number.",
     "newsletterSuccess": "Thank you for subscribing to our newsletter!",
-    "newsletterError": "An error occurred, please try again."
+    "newsletterError": "An error occurred, please try again.",
+    "elitePartners": "Elite Partners",
+    "gardenBigExhibitors": "Garden Big Exhibitors",
+    "gardenMediumExhibitors": "Garden Medium Exhibitors",
+    "flowerExhibitors": "Flower Exhibitors",
+    "mediaPartners": "Media Partners",
+    "withTheSupportOf": "With the Support of",
+    "comingSoon": "Coming soon",
+    "eventPartners": "Event Partners"
   },
   "footer": {
     "title": "World Green Infrastructure Congress 2026 Barcelona",
@@ -524,7 +532,30 @@
         "title": "Policy and Economy",
         "description": "Analysis of regulatory frameworks and investment models to accelerate the transition towards a green and circular urban economy."
       }
-    }
+    },
+    "strategiesPoliciesFunding": "Strategies – Policies – Funding programs",
+    "technologiesMarketStandards": "Technologies – Market – GI/NBS sector – Standards",
+    "projectsDesign": "Projects – Design",
+    "executionMaintenanceQuality": "Execution – Maintenance – Quality",
+    "educationTraining": "Education – Training",
+    "impacts": "Impacts",
+    "impactClimateResilience": "a) Climate resilience",
+    "impactWaterManagement": "b) Water management",
+    "impactNaturalClimateHazards": "c) Natural and Climate Hazards",
+    "impactGreenSpaceManagement": "d) Green Space Management",
+    "impactBiodiversity": "e) Biodiversity",
+    "impactAirQuality": "f) Air Quality",
+    "impactPlaceRegeneration": "g) Place Regeneration",
+    "impactKnowledgeCapacity": "h) Knowledge and Social Capacity Building for Sustainable Urban Transformation",
+    "impactParticipatoryPlanning": "i) Participatory Planning and Governance",
+    "impactSocialJustice": "j) Social Justice and Social Cohesion",
+    "impactHealthWellbeing": "k) Health and Well-being",
+    "impactEconomicOpportunities": "l) New Economic Opportunities and Green Jobs",
+    "impactMiscellaneous": "Impacts: Miscellaneous",
+    "workshopsTitle": "Workshops",
+    "workshopGlobalSouth": "Workshop Green Infrastructure vs Global South",
+    "workshopHealthWellbeing": "Workshop Green Infrastructure vs Health and Well-being",
+    "workshopPostConflict": "Workshop Green Infrastructure vs Post-Conflict Recovery"
   },
   "workshopsPage": {
     "title": "Workshops",

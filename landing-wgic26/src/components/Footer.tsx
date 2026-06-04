@@ -57,12 +57,7 @@ const Footer = async () => {
                 >
                   Facebook
                 </a>
-                <a
-                  href="https://x.com/WGIC2026"
-                  className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus"
-                >
-                  X
-                </a>
+
               </div>
             </div>
           </div>
@@ -70,11 +65,6 @@ const Footer = async () => {
       </div>
       <div className="flex flex-col sm:flex-row py-8 px-8 sm:px-6 sm:py-8 lg:py-6 text-white/60 bg-cactus lg:bg-monstera/60 justify-between gap-2 text-[10px]">
         <div>{t("copyright")}</div>
-        <div className="flex gap-2 items-end">
-          {t("another")}
-           Federico Talmon 
-          {t("creation")}
-        </div>
       </div>
     </footer>
   );

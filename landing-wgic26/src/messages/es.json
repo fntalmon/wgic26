@@ -65,7 +65,15 @@
     "newsletterValidation": "Por favor, completa correo y numero de telefono.",
     "newsletterPhoneValidation": "Por favor, ingresa un numero de telefono valido.",
     "newsletterSuccess": "Gracias por suscribirte a nuestro boletin!",
-    "newsletterError": "Ha ocurrido un error, por favor intenta nuevamente."
+    "newsletterError": "Ha ocurrido un error, por favor intenta nuevamente.",
+    "elitePartners": "Socios Elite",
+    "gardenBigExhibitors": "Expositores Garden Big",
+    "gardenMediumExhibitors": "Expositores Garden Medium",
+    "flowerExhibitors": "Expositores Flower",
+    "mediaPartners": "Socios de medios",
+    "withTheSupportOf": "Con el apoyo de",
+    "comingSoon": "Proximamente",
+    "eventPartners": "Socios del evento"
   },
   "footer": {
     "title": "Congreso Mundial de Infraestructura Verde 2026 Barcelona",
@@ -524,7 +532,30 @@
         "title": "Políticas y Economía",
         "description": "Análisis de marcos regulatorios y modelos de inversión para acelerar la transición hacia una economía urbana verde y circular."
       }
-    }
+    },
+    "strategiesPoliciesFunding": "Estrategias – Políticas – Programas de financiación",
+    "technologiesMarketStandards": "Tecnologías – Mercado – Sector GI/NBS – Normativas",
+    "projectsDesign": "Proyectos – Diseño",
+    "executionMaintenanceQuality": "Ejecución – Mantenimiento – Calidad",
+    "educationTraining": "Educación – Formación",
+    "impacts": "Impactos",
+    "impactClimateResilience": "a) Resiliencia climática",
+    "impactWaterManagement": "b) Gestión del agua",
+    "impactNaturalClimateHazards": "c) Riesgos naturales y climáticos",
+    "impactGreenSpaceManagement": "d) Gestión de espacios verdes",
+    "impactBiodiversity": "e) Biodiversidad",
+    "impactAirQuality": "f) Calidad del aire",
+    "impactPlaceRegeneration": "g) Regeneración de espacios",
+    "impactKnowledgeCapacity": "h) Conocimiento y fortalecimiento de capacidades sociales para la transformación urbana sostenible",
+    "impactParticipatoryPlanning": "i) Planificación participativa y gobernanza",
+    "impactSocialJustice": "j) Equidad social y cohesión social",
+    "impactHealthWellbeing": "k) Salud y bienestar",
+    "impactEconomicOpportunities": "l) Nuevas oportunidades económicas y empleos verdes",
+    "impactMiscellaneous": "Impactos: Miscelánea",
+    "workshopsTitle": "Talleres",
+    "workshopGlobalSouth": "Taller Infraestructura verda vs Sur Global",
+    "workshopHealthWellbeing": "Taller Infraestructura verda vs Salud y bienestar",
+    "workshopPostConflict": "Taller Infraestructura verda vs Recuperación postconflicto"
   },
   "workshopsPage": {
     "title": "Talleres",
