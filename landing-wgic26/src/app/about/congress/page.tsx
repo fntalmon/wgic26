@@ -1,12 +1,21 @@
 import PageHeader from "@/components/PageHeader";
 import TextImage from "@/components/TextImage";
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 const Congress = async () => {
   const t = await getTranslations("aboutCongress");
   const nav = await getTranslations("navigation");
   const registration = await getTranslations("registrationPage.dateValues");
+  const locale = await getLocale();
+
+  const videoIds: Record<string, string> = {
+    ca: "Ksh_rzrAo28",
+    en: "Ioq74bbxeuw",
+    es: "Ioq74bbxeuw",
+  };
+
+  const videoId = videoIds[locale] || videoIds.en;
 
   const keyDates = [
     { who: t("dates.authors"), what: t("dates.firstDraft"), when: registration("paperSubmissionDeadline") },
@@ -29,9 +38,9 @@ const Congress = async () => {
         <div className="w-full max-w-7xl mx-auto px-0 py-6">
           <div className="relative w-full h-0 pb-[56.25%]">
             <iframe
-              src="https://drive.google.com/file/d/1blhcUZR8J4-ICQcVgiP6Ez8LJK3OIbXe/preview?usp=embed_facebook"
+              src={`https://www.youtube.com/embed/${videoId}`}
               className="absolute top-0 left-0 w-full h-full rounded-lg"
-              allow="autoplay; encrypted-media"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
               title={t("videoTitle")}
               frameBorder="0"

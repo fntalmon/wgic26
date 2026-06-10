@@ -1,18 +1,9 @@
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 const TechnicalVisits = async () => {
     const t = await getTranslations("technicalVisitsPage");
-    const locale = await getLocale();
-
-    const videoIds: Record<string, string> = {
-        ca: "Ksh_rzrAo28",
-        en: "Ioq74bbxeuw",
-        es: "Ioq74bbxeuw",
-    };
-
-    const videoId = videoIds[locale] || videoIds.en;
 
     const itineraryA = [
         { name: "Plaça de les Dones", image: "/img/visits/Plaça_de_les_dones_Residential.jpeg" },
@@ -55,21 +46,6 @@ const TechnicalVisits = async () => {
                         <p>{t("intro1")}</p>
                         <p>{t("intro2")}</p>
                         <p>{t("intro3")}</p>
-                    </div>
-
-                    <div className="space-y-4">
-                        <h2 className="text-xl font-semibold uppercase text-white tracking-wide">
-                            {t("videoTitle")}
-                        </h2>
-                        <div className="relative w-full aspect-video overflow-hidden rounded-lg">
-                            <iframe
-                                src={`https://www.youtube.com/embed/${videoId}`}
-                                title={t("videoTitle")}
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                                className="absolute top-0 left-0 w-full h-full border-0"
-                            />
-                        </div>
                     </div>
 
                     {itineraries.map((itinerary) => (
