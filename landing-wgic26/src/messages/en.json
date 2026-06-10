@@ -492,7 +492,15 @@
   },
   "technicalVisitsPage": {
     "title": "Technical Visits",
-    "description": "Discover Barcelona's most outstanding green infrastructure technical projects. Visit details and registration will be announced soon. The following projects are already confirmed."
+    "intro1": "Visit the most iconic green roofs and green façades of Barcelona. You will explore unique green roofs that are not normally open to the public. A coordinator will accompany the group throughout the itinerary, while a specialized guide will provide detailed explanations at each location.",
+    "intro2": "Groups will be limited to a maximum of 10 participants, with up to 5 groups per itinerary. The schedule will run from 9:00 to 17:00, and public transportation as well as a packed lunch will be included.",
+    "intro3": "Registration details and pricing will be published in the coming weeks.",
+    "itineraryA": "Itinerary A",
+    "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
+    "itineraryB": "Itinerary B",
+    "itineraryBSubtitle": "Sant Martí · Horta · Sant Andreu",
+    "itineraryC": "Itinerary C",
+    "itineraryCSubtitle": "Ciutat Vella · Born"
   },
   "programPage": {
     "title": "Program",

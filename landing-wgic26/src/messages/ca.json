@@ -492,7 +492,15 @@
   },
   "technicalVisitsPage": {
     "title": "Visites tècniques",
-    "description": "Descobreix els projectes tècnics d'infraestructura verda més destacats de Barcelona. Els detalls de visites i inscripció s'anunciaran aviat. Els següents projectes ja estan confirmats."
+    "intro1": "Visita les cobertes verdes i les façanes vegetals més icòniques de Barcelona. Exploraràs cobertes verdes úniques que normalment no estan obertes al públic. Un coordinador acompanyarà el grup durant tot l'itinerari, mentre que un guia especialitzat oferirà explicacions detallades a cada lloc.",
+    "intro2": "Els grups estaran limitats a un màxim de 10 participants, amb fins a 5 grups per itinerari. L'horari serà de 9:00 a 17:00, i inclourà transport públic i un dinar per emportar.",
+    "intro3": "Els detalls d'inscripció i preus es publicaran les properes setmanes.",
+    "itineraryA": "Itinerari A",
+    "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
+    "itineraryB": "Itinerari B",
+    "itineraryBSubtitle": "Sant Martí · Horta · Sant Andreu",
+    "itineraryC": "Itinerari C",
+    "itineraryCSubtitle": "Ciutat Vella · Born"
   },
   "programPage": {
     "title": "Programa",

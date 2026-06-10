@@ -491,8 +491,16 @@
     "closing": "Este primer grupo de oradores subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
   },
   "technicalVisitsPage": {
-    "title": "Visitas tecnicas",
-    "description": "Descubre los proyectos tecnicos de infraestructura verde mas destacados de Barcelona. Los detalles de visitas e inscripcion se anunciaran pronto. Los siguientes proyectos ya estan confirmados."
+    "title": "Visitas técnicas",
+    "intro1": "Visita las cubiertas verdes y fachadas vegetales más icónicas de Barcelona. Explorarás cubiertas verdes únicas que normalmente no están abiertas al público. Un coordinador acompañará al grupo durante todo el itinerario, mientras que un guía especializado ofrecerá explicaciones detalladas en cada lugar.",
+    "intro2": "Los grupos estarán limitados a un máximo de 10 participantes, con hasta 5 grupos por itinerario. El horario será de 9:00 a 17:00, e incluirá transporte público y un almuerzo para llevar.",
+    "intro3": "Los detalles de inscripción y precios se publicarán en las próximas semanas.",
+    "itineraryA": "Itinerario A",
+    "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
+    "itineraryB": "Itinerario B",
+    "itineraryBSubtitle": "Sant Martí · Horta · Sant Andreu",
+    "itineraryC": "Itinerario C",
+    "itineraryCSubtitle": "Ciutat Vella · Born"
   },
   "programPage": {
     "title": "Programa",
