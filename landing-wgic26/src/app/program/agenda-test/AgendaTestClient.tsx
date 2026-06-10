@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Clock, MapPin, Tag, ChevronDown } from "lucide-react";
+import { MapPin, Tag, ChevronDown } from "lucide-react";
 
 interface Session {
   idsession: string;
@@ -92,7 +92,6 @@ function formatDate(dateStr: string) {
 export default function AgendaTestClient({
   sessions,
   facets,
-  eventConfig,
   tracks,
   translations: t,
 }: Props) {
@@ -250,7 +249,7 @@ export default function AgendaTestClient({
 
                 {/* Sessions */}
                 <div className="flex flex-col gap-4">
-                  {groupedByDate.groups[date].map((session, idx) => {
+                  {groupedByDate.groups[date].map((session) => {
                     const isExpanded = expandedSession === session.idsession;
 
                     return (
