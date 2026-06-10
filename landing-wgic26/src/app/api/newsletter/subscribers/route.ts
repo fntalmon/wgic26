@@ -17,9 +17,12 @@ function toCsv(subscribers: { email: string; phone: string | null; subscribedAt:
   const lines: string[] = ['Email,Phone,Date'];
   for (const s of subscribers) {
     const date = new Date(s.subscribedAt).toLocaleDateString('es-ES');
-    lines.push(`${escapeCsv(s.email)},${escapeCsv(s.phone)},${date}`);
+    // Prepend tab to phone so Excel treats it as text (prevents scientific notation)
+    const phone = s.phone ? `\t${escapeCsv(s.phone)}` : '';
+    lines.push(`${escapeCsv(s.email)},${phone},${date}`);
   }
-  return lines.join('\n');
+  // UTF-8 BOM so Excel opens special chars correctly
+  return '\uFEFF' + lines.join('\n');
 }
 
 function toHtml(subscribers: { email: string; phone: string | null; subscribedAt: string }[]): string {
@@ -28,7 +31,7 @@ function toHtml(subscribers: { email: string; phone: string | null; subscribedAt
       (s) => `
     <tr>
       <td>${s.email}</td>
-      <td>${s.phone ?? '—'}</td>
+      <td>${s.phone && s.phone.trim() ? s.phone : '—'}</td>
       <td>${new Date(s.subscribedAt).toLocaleDateString('es-ES')}</td>
     </tr>`,
     )
