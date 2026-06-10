@@ -1,6 +1,7 @@
 import PageHeader from "@/components/PageHeader";
 import TextImage from "@/components/TextImage";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Link from "next/link";
 import {
     Table,
     TableBody,
@@ -66,7 +67,24 @@ const Program = async () => {
                             <TabsContent key={day.id} value={day.id} className="border border-cactus rounded-lg overflow-hidden bg-cactus shadow-sm text-white">
                                 <div className="bg-monstera p-6 border-b border-white/10">
                                     <h3 className="text-xl font-semibold text-white mb-2">{day.date}</h3>
-                                    {day.title && <p className="text-base text-white/90 font-medium">{day.title}</p>}
+                                    {day.title && (
+                                        <p className="text-base text-white/90 font-medium">
+                                            {day.id === "day3" ? (
+                                                <Link href="/program/technical-visits" className="underline hover:text-potus transition-colors">
+                                                    {day.title}
+                                                </Link>
+                                            ) : (
+                                                day.title
+                                            )}
+                                        </p>
+                                    )}
+                                    {day.id === "day3" && (
+                                        <p className="text-sm text-potus mt-1">
+                                            <Link href="/program/technical-visits" className="hover:underline transition-colors inline-flex items-center gap-1">
+                                                {t("learnMore")} →
+                                            </Link>
+                                        </p>
+                                    )}
                                     {day.subtitle && <p className="text-sm text-white/70 mt-1">{day.subtitle}</p>}
                                     {day.description && <p className="text-sm text-white/70 mt-2 italic">{day.description}</p>}
                                 </div>
