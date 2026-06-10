@@ -42,11 +42,6 @@ const Speakers = async () => {
       date: t("dateValues.finalProgram"),
     },
     {
-      milestone: t("keyDates.earlyBird"),
-      date: t("dateValues.earlyBird"),
-      highlight: true,
-    },
-    {
       milestone: t("keyDates.registrationOpen"),
       date: t("dateValues.registrationOpen"),
     },
@@ -131,16 +126,12 @@ const Speakers = async () => {
                     {keyDates.map((item) => (
                       <tr
                         key={`${item.milestone}-${item.date}`}
-                        className={`hover:bg-white/5 ${item.highlight ? "bg-cactus/10" : ""}`}
+                        className="hover:bg-white/5"
                       >
-                        <td
-                          className={`border border-white/20 px-4 py-3 text-base text-justify ${item.highlight ? "text-white font-medium" : "text-white/80"}`}
-                        >
+                        <td className="border border-white/20 px-4 py-3 text-base text-justify text-white/80">
                           {item.milestone}
                         </td>
-                        <td
-                          className={`border border-white/20 px-4 py-3 text-base text-center ${item.highlight ? "text-white font-medium" : "text-white/80"}`}
-                        >
+                        <td className="border border-white/20 px-4 py-3 text-base text-center text-white/80">
                           {item.date}
                         </td>
                       </tr>

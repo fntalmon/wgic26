@@ -24,7 +24,6 @@ const Congress = async () => {
     { who: t("dates.scientificCommittee"), what: t("dates.revisionR2"), when: registration("revision") },
     { who: t("dates.authors"), what: t("dates.finalPaper"), when: registration("finalPaper") },
     { who: t("dates.organizingCommittee"), what: t("dates.finalProgram"), when: registration("finalProgram") },
-    { who: t("dates.attendees"), what: t("dates.earlyBird"), when: registration("earlyBird") },
     { who: t("dates.attendees"), what: t("dates.registration"), when: registration("registrationOpen") },
     { who: t("dates.partners"), what: t("dates.registration"), when: registration("partners") },
     { who: t("dates.sponsors"), what: t("dates.registration"), when: registration("sponsors") },

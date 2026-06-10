@@ -21,6 +21,12 @@ type WeeklyCount = {
   count: number;
 };
 
+export type Subscriber = {
+  email: string;
+  phone: string | null;
+  subscribedAt: string;
+};
+
 export type NewsletterStats = {
   source: 'redis' | 'disabled';
   days: number;
@@ -199,4 +205,43 @@ export async function getNewsletterStats(daysInput = 7, weeksInput = 12): Promis
     totalUnique: asNumber(totalRaw),
     weekly,
   };
+}
+
+export async function getAllSubscribers(): Promise<{ source: 'redis' | 'disabled'; subscribers: Subscriber[] }> {
+  const redis = getRedisClient();
+  if (!redis) {
+    return { source: 'disabled', subscribers: [] };
+  }
+
+  const keys: string[] = [];
+  let cursor = 0;
+
+  do {
+    const result = await redis.scan(cursor, { match: `${SUBSCRIBER_PREFIX}*`, count: 100 });
+    cursor = Number(result[0]);
+    keys.push(...result[1]);
+  } while (cursor !== 0);
+
+  if (keys.length === 0) {
+    return { source: 'redis', subscribers: [] };
+  }
+
+  const values = await redis.mget<unknown[]>(...keys);
+
+  const subscribers: Subscriber[] = [];
+  for (const value of values) {
+    if (!value || typeof value !== 'object') continue;
+    const v = value as Record<string, unknown>;
+    if (typeof v.email === 'string' && typeof v.subscribedAt === 'string') {
+      subscribers.push({
+        email: v.email,
+        phone: typeof v.phone === 'string' ? v.phone : null,
+        subscribedAt: v.subscribedAt,
+      });
+    }
+  }
+
+  subscribers.sort((a, b) => new Date(b.subscribedAt).getTime() - new Date(a.subscribedAt).getTime());
+
+  return { source: 'redis', subscribers };
 }
