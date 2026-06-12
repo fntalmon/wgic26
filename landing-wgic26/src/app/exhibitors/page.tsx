@@ -10,19 +10,14 @@ import { useLocale } from "next-intl";
 const copy = {
   en: {
     pageTitle: "Partners & Exhibitors — Sponsorship opportunities",
-    pageDescription:
-      "Showcase your participation in the green infrastructures sector and ensure visibility and exposure to an international audience at our World Green Infrastructure Congress 2026 in Barcelona and Lleida.",
-    partnerTitle: "Partner: Elite Global or Event",
-    partnerP1:
-      "If what you want is to participate actively in the conference, collaborating in decision-making, contributing knowledge, and assuming shared responsibilities, choose one of the partner options, Global or Event. In these typologies you will have the maximum benefits of visibility and participation.",
-    partnerP2:
-      "The Elite Partners will contribute strategically to the development of the congress and its promotion and will have all the benefits of the Global partners plus, those that can be finally defined, as for example, branding on the footer of conference emails, standees in the ballroom/foyer area, etc. and those that can be considered. Your financial contribution will be specifically agreed with the congress organization team.",
-    sponsorTitle: "Sponsor: Tree or Leaf",
-    sponsorP1:
-      "If you are looking to maximize visibility, publicity or benefits for your brand or company in the green infrastructure sector, without the need to be involved in the management or decision-making of the event, your option is to be a sponsor, either as a Tree or as a Leaf.",
-    exhibitorsTitle: "Exhibitors (limited to first 40)",
-    exhibitorsP1:
-      "Whether you are a partner or sponsor, you have the possibility of showing your company or products to attendees as an exhibitor, in two options, as a Garden and as a Flower. Being an exhibitor will allow you to be physically visible during the congress and network with potential customers interested in your brand.",
+    pageDescription: "Showcase your participation in the green infrastructures sector and ensure visibility and exposure to an international audience at our World Green Infrastructure Congress 2026 in Barcelona and Lleida.",
+    partnerTitle: "Partners: Diamond, Emerald & Platinum",
+    partnerP1: "If you want to take a leading role in WGIC26, choose among Diamante, Esmeralda or Platino. These packages offer the highest visibility, speaking opportunities, naming rights and exhibition space.",
+    partnerP2: "Diamante is exclusive and includes maximum brand exposure, main auditorium naming rights and a premium stand. Esmeralda and Platino benefits can be tailored with the organizing team.",
+    sponsorTitle: "Sponsor: Gold",
+    sponsorP1: "If you are looking for a digital-only presence and entry-level participation in WGIC26, the Oro package offers brand visibility, digital promotion and congress access.",
+    exhibitorsTitle: "The WGIC Garden – Exhibition stands",
+    exhibitorsP1: "Showcase your company in the heart of the congress. All lunches and coffee breaks take place in the Expo Zone. Choose among Jardín Grande, Jardín Medio or Flor/Pod stands.",
     benefits: "Benefits",
     table: {
       partners: "Partners",
@@ -46,26 +41,22 @@ const copy = {
     },
     organizedBy: "Organized by",
     sponsorsPartners: "Partners and Sponsors",
-    elitePartners: "Elite Partners",
-    gardenBigExhibitors: "Garden Big Exhibitors",
-    gardenMediumExhibitors: "Garden Medium Exhibitors",
+    elitePartners: "Diamond Partners",
+    gardenBigExhibitors: "Large Garden Exhibitors",
+    gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
     mediaPartners: "Media Partners",
     withTheSupportOf: "With the Support of",
     comingSoon: "Coming soon",
     eventPartners: "Event Partners",
     venueTitle: "The Venue",
-    venueP1:
-      "The venue where WGIC26 will be held is perfect for creating the networking atmosphere that sponsors, attendees and exhibitors expect from a global event. The International Barcelona Convention Center of Barcelona is an iconic venue located in the Barcelona district of Sant Marti, inside the 22@ of Poblenou neighbourhood.",
-    venueP2:
-      "The CCIB comprises two buildings of great architectural value: the Convention Centre and the Auditorium CCIB Forum, joined by an underground connecting walkway. With a gross surface area of 100,000 m2 and a capacity for up to 15,000 attendees, both buildings stand out for their size, natural light, and the great versatility of their spaces.",
-    venueP3:
-      "The CCIB enjoys a privileged location just 500 metres from the beach, 6 km from the historic centre and 22 km from the airport, with excellent links to the most important highways and roads, and by the public transport network.",
+    venueP1: "The venue where WGIC26 will be held is perfect for creating the networking atmosphere that sponsors, attendees and exhibitors expect from a global event. The International Barcelona Convention Center of Barcelona is an iconic venue located in the Barcelona district of Sant Marti, inside the 22@ of Poblenou neighbourhood.",
+    venueP2: "The CCIB comprises two buildings of great architectural value: the Convention Centre and the Auditorium CCIB Forum, joined by an underground connecting walkway. With a gross surface area of 100,000 m2 and a capacity for up to 15,000 attendees, both buildings stand out for their size, natural light, and the great versatility of their spaces.",
+    venueP3: "The CCIB enjoys a privileged location just 500 metres from the beach, 6 km from the historic centre and 22 km from the airport, with excellent links to the most important highways and roads, and by the public transport network.",
     venueImagesAlt: "Venue images",
     cards: {
       infoPackTitle: "Download Info Pack",
-      infoPackDesc:
-        "Get the complete guide for sponsors and exhibitors, including all technical details and pricing.",
+      infoPackDesc: "Get the complete guide for sponsors and exhibitors, including all technical details and pricing.",
       downloadPdf: "Download PDF",
       provideDetails: "Please provide your details to access the download.",
       fullName: "Full Name",
@@ -75,21 +66,17 @@ const copy = {
       didNotStart: "If it did not start automatically,",
       clickHere: "click here",
       interestTitle: "Express Your Interest",
-      interestDesc:
-        "Interested in sponsoring or exhibiting? Share your information and preferred participation type. We will review your details and contact you with customized options.",
+      interestDesc: "Interested in sponsoring or exhibiting? Share your information and preferred participation type. We will review your details and contact you with customized options.",
       interestCta: "Express Your Interest",
-      contactInfo:
-        "Provide your contact information and let us know your interests.",
+      contactInfo: "Provide your contact information and let us know your interests.",
       phone: "Phone Number",
       company: "Company Name",
       selectParticipation: "Select Participation Type",
       submit: "Submit",
       thanks: "Thank you for your interest!",
-      thanksBody:
-        "We have received your information and will get back to you shortly with personalized opportunities.",
+      thanksBody: "We have received your information and will get back to you shortly with personalized opportunities.",
       pptTitle: "Download Sponsorship Brochure",
-      pptDesc:
-        "Get the complete sponsorship and exhibitor guide with all the details, benefits, and pricing to partner with WGIC 2026.",
+      pptDesc: "Get the complete sponsorship and exhibitor guide with all the details, benefits, and pricing to partner with WGIC 2026.",
       downloadPpt: "Download PPT",
     },
     errors: {
@@ -104,22 +91,194 @@ const copy = {
       processing: "Error processing your request. Please try again.",
       submitForm: "Error submitting your form. Please try again.",
     },
+    sponsorship: {
+      tableTitle: "Sponsorship packages",
+      tableHeaders: {
+        category: "Category",
+        investment: "Investment (€)",
+        passes: "Passes",
+        galaDinner: "Gala Dinner",
+        speaking: "Speaking opportunity",
+        naming: "Naming rights",
+        stand: "Stand",
+      },
+      addonsTitle: "Sponsorship add-ons",
+      addonsHeaders: {
+        item: "Item",
+        price: "Price",
+        availability: "Availability",
+      },
+      exclusivoBadge: "Exclusive",
+      standsTitle: "The WGIC Garden",
+      standsConcept: "Turn-key solution for a smooth, high-impact presence. The Expo Zone is the heart of the congress. All lunches and coffee breaks take place inside the Expo Zone.",
+      standsLabels: {
+        space: "Space",
+        format: "Format",
+        services: "Services",
+        branding: "Branding",
+        furniture: "Furniture",
+        passesIncluded: "Passes included",
+      },
+      standsLogisticsNote: "All stands are managed and produced directly by the venue's official suppliers. Professional, unified and hassle-free experience.",
+      contactTitle: "Contact the sponsorship team",
+      contactLabels: {
+        phone: "Phone",
+        email: "Email",
+        web: "Web",
+      },
+      contactCta: "Contact the sponsorship team",
+      formOptions: {
+        diamante: "Diamond",
+        esmeralda: "Emerald",
+        platino: "Platinum",
+        oro: "Gold",
+        jardinGrande: "Large Garden",
+        jardinMedio: "Medium Garden",
+        flor: "Flower",
+      },
+      packages: {
+        diamante: {
+          name: "Diamond",
+          investment: "30.000 €",
+          passes: "15",
+          gala: "10",
+          speaking: "Main Conference",
+          naming: "Main Auditorium",
+          stand: "Premium 4×4m",
+        },
+        esmeralda: {
+          name: "Emerald",
+          investment: "15.000 €",
+          passes: "10",
+          gala: "5",
+          speaking: "Plenary Slot (30 min)",
+          naming: "Parallel Room",
+          stand: "Medium 3×3m",
+        },
+        platino: {
+          name: "Platinum",
+          investment: "10.000 €",
+          passes: "5",
+          gala: "2",
+          speaking: "Panelist (15 min)",
+          naming: "—",
+          stand: "Compact 2×2m (pod)",
+        },
+        oro: {
+          name: "Gold",
+          investment: "6.000 €",
+          passes: "2",
+          gala: "1",
+          speaking: "Workshop Slot",
+          naming: "—",
+          stand: "Digital only",
+        },
+      },
+      addons: [
+        {
+          item: "Gala dinner naming rights",
+          price: "20.000 €",
+          availability: "1 (Exclusive)",
+        },
+        {
+          item: "Official Congress App",
+          price: "10.000 €",
+          availability: "1 (Exclusive)",
+        },
+        {
+          item: "Lanyards and Badges",
+          price: "8.000 €",
+          availability: "1 (Exclusive)",
+        },
+        {
+          item: "Coffee Break Sponsor (per day)",
+          price: "5.000 €",
+          availability: "4 available",
+        },
+        {
+          item: "Technical Visits (BCN or Lleida)",
+          price: "6.000 €",
+          availability: "4 available",
+        },
+        {
+          item: "Full-page Ad in Proceedings",
+          price: "2.000 €",
+          availability: "Unlimited",
+        },
+        {
+          item: "Produced Video Interview",
+          price: "2.500 €",
+          availability: "10 spots",
+        },
+      ],
+      stands: {
+        jardinGrande: {
+          name: "Large Garden",
+          category: "Premium Stand",
+          target: "Market leaders looking for maximum visibility",
+          space: "4m × 4m",
+          format: "Fully produced turn-key solution with unified high-end design",
+          services: [
+            "LED lights",
+            "Information counter",
+            "Electricity: 3.3 kW panel (1 socket available)",
+            "High-speed Wi-Fi",
+            "Pre-opening cleaning",
+          ],
+          branding: "Black 10 cm high letters (20 letters included). Dedicated space for logo and custom graphics.",
+          furniture: "1 meeting table and 4 chairs or bar stools",
+          investment: "8.000 €",
+          passesIncluded: "3",
+          notes: "Final furniture to be defined. The company can upgrade basic equipment or signage directly with the venue and organizers.",
+        },
+        jardinMedio: {
+          name: "Medium Garden",
+          category: "Standard Stand",
+          target: "Market leaders looking for maximum visibility",
+          space: "3m × 3m",
+          format: "Fully produced turn-key solution with unified high-end design",
+          services: [
+            "LED lights",
+            "Information counter",
+            "Electricity: 3.3 kW panel (1 socket available)",
+            "High-speed Wi-Fi",
+            "Pre-opening cleaning",
+          ],
+          branding: "Black 10 cm high letters (20 letters included). Dedicated space for logo and custom graphics.",
+          furniture: "1 meeting table and 2 bar stools",
+          investment: "5.000 €",
+          passesIncluded: "2",
+          notes: "Final furniture to be defined. The company can upgrade basic equipment or signage directly with the venue and organizers.",
+        },
+        flor: {
+          name: "Flower",
+          category: "Compact Stand / Pod",
+          target: "Startups and specialized companies. Efficient and cost-effective option.",
+          space: "Compact workstation (concept to be defined)",
+          format: "Minimalist design for quick interaction",
+          services: [
+            "Electricity (1 socket)",
+            "High-speed Wi-Fi",
+          ],
+          branding: "Totem-style display (provided and printed by the organizer)",
+          furniture: "1 table and 2 chairs or bar stools",
+          investment: "3.000 €",
+          passesIncluded: "1",
+          notes: "Indicative rendering. Final format to be defined.",
+        },
+      },
+    },
   },
   es: {
     pageTitle: "Socios y expositores - Oportunidades de patrocinio",
-    pageDescription:
-      "Muestra tu participacion en el sector de infraestructuras verdes y asegura visibilidad y exposicion ante una audiencia internacional en el World Green Infrastructure Congress 2026 en Barcelona y Lleida.",
-    partnerTitle: "Socio: Elite, Global o Event",
-    partnerP1:
-      "Si quieres participar activamente en el congreso, colaborando en la toma de decisiones, aportando conocimiento y asumiendo responsabilidades compartidas, elige una de las opciones de socio: Global o Event. En estas tipologias obtendras los maximos beneficios de visibilidad y participacion.",
-    partnerP2:
-      "Los socios Elite contribuirán estrategicamente al desarrollo y promocion del congreso y tendran todos los beneficios de los socios Global, ademas de aquellos que se definan finalmente, por ejemplo, presencia de marca en el pie de correos del congreso o soportes en areas comunes. La contribucion economica se acordara especificamente con el equipo organizador.",
-    sponsorTitle: "Patrocinador: Tree o Leaf",
-    sponsorP1:
-      "Si buscas maximizar visibilidad, publicidad o beneficios para tu marca o empresa en el sector de infraestructura verde, sin necesidad de involucrarte en la gestion o toma de decisiones del evento, tu opcion es ser patrocinador, como Tree o como Leaf.",
-    exhibitorsTitle: "Expositores (limitado a los primeros 40)",
-    exhibitorsP1:
-      "Tanto si eres socio como patrocinador, puedes mostrar tu empresa o productos a los asistentes como expositor, en dos opciones: Garden y Flower. Ser expositor te permitira visibilidad fisica durante el congreso y generar networking con potenciales clientes interesados en tu marca.",
+    pageDescription: "Muestra tu participación en el sector de infraestructuras verdes y asegura visibilidad y exposición ante una audiencia internacional en el World Green Infrastructure Congress 2026 en Barcelona y Lleida.",
+    partnerTitle: "Socios: Diamante, Esmeralda y Platino",
+    partnerP1: "Si quieres liderar la presencia en WGIC26, elige entre Diamante, Esmeralda o Platino. Estos paquetes ofrecen la máxima visibilidad, espacios de ponencia, naming rights y stand.",
+    partnerP2: "Diamante es exclusivo e incluye la máxima exposición de marca, naming del auditorio principal y un stand premium. Los beneficios de Esmeralda y Platino se pueden ajustar con el equipo organizador.",
+    sponsorTitle: "Patrocinador: Oro",
+    sponsorP1: "Si buscas una presencia digital y participar de forma accesible en WGIC26, el paquete Oro ofrece visibilidad de marca, promoción digital y acceso al congreso.",
+    exhibitorsTitle: "El Jardín WGIC – Stands de exposición",
+    exhibitorsP1: "Muestra tu empresa en el corazón del congreso. Todos los almuerzos y coffee breaks se realizan en la Zona Expo. Elige entre Jardín Grande, Jardín Medio o Flor/Pod.",
     benefits: "Beneficios",
     table: {
       partners: "Socios",
@@ -137,86 +296,250 @@ const copy = {
       socialMedia: "Redes sociales",
       logoVisibility: "Visibilidad de logo",
       specialContent: "Contenido especial",
-      adPage: "Pagina de anuncio en actas",
+      adPage: "Página de anuncio en actas",
       attendees: "Listado de asistentes",
       totalCost: "Coste total",
     },
     sponsorsPartners: "Patrocinadores y socios",
     venueTitle: "La sede",
     organizedBy: "Organizado por",
-    elitePartners: "Socios Elite",
-    gardenBigExhibitors: "Expositores Garden Big",
-    gardenMediumExhibitors: "Expositores Garden Medium",
-    flowerExhibitors: "Expositores Flower",
+    elitePartners: "Socios Diamante",
+    gardenBigExhibitors: "Expositores Jardín Grande",
+    gardenMediumExhibitors: "Expositores Jardín Medio",
+    flowerExhibitors: "Expositores Flor",
     mediaPartners: "Socios de medios",
     withTheSupportOf: "Con el apoyo de",
-    comingSoon: "Proximamente",
+    comingSoon: "Próximamente",
     eventPartners: "Socios del evento",
-    venueP1:
-      "La sede de WGIC26 es ideal para crear el entorno de networking que patrocinadores, asistentes y expositores esperan de un evento global. El Centro de Convenciones Internacional de Barcelona es un espacio iconico ubicado en Sant Marti, dentro del 22@ de Poblenou.",
-    venueP2:
-      "El CCIB cuenta con dos edificios de gran valor arquitectonico: el Centro de Convenciones y el Auditorio Forum CCIB, unidos por una pasarela subterranea. Con una superficie de 100.000 m2 y capacidad de hasta 15.000 asistentes, destaca por su amplitud, luz natural y versatilidad.",
-    venueP3:
-      "El CCIB tiene una ubicacion privilegiada a 500 metros de la playa, a 6 km del centro historico y a 22 km del aeropuerto, con excelentes conexiones por carretera y transporte publico.",
-    venueImagesAlt: "Imagenes de la sede",
+    venueP1: "La sede de WGIC26 es ideal para crear el entorno de networking que patrocinadores, asistentes y expositores esperan de un evento global. El Centro de Convenciones Internacional de Barcelona es un espacio icónico ubicado en Sant Martí, dentro del 22@ de Poblenou.",
+    venueP2: "El CCIB cuenta con dos edificios de gran valor arquitectónico: el Centro de Convenciones y el Auditorio Forum CCIB, unidos por una pasarela subterránea. Con una superficie de 100.000 m2 y capacidad de hasta 15.000 asistentes, destaca por su amplitud, luz natural y versatilidad.",
+    venueP3: "El CCIB tiene una ubicación privilegiada a 500 metros de la playa, a 6 km del centro histórico y a 22 km del aeropuerto, con excelentes conexiones por carretera y transporte público.",
+    venueImagesAlt: "Imágenes de la sede",
     cards: {
       infoPackTitle: "Descargar dossier informativo",
-      infoPackDesc:
-        "Obten la guia completa para patrocinadores y expositores, con detalles tecnicos y precios.",
+      infoPackDesc: "Obtén la guía completa para patrocinadores y expositores, con detalles técnicos y precios.",
       downloadPdf: "Descargar PDF",
       provideDetails: "Comparte tus datos para acceder a la descarga.",
       fullName: "Nombre completo",
-      email: "Correo electronico",
+      email: "Correo electrónico",
       downloadNow: "Descargar ahora",
       started: "Tu descarga ha comenzado",
-      didNotStart: "Si no comenzo automaticamente,",
-      clickHere: "haz clic aqui",
-      interestTitle: "Expresa tu interes",
-      interestDesc:
-        "Te interesa patrocinar o exponer? Comparte tu informacion y el tipo de participacion preferido. Revisaremos tus datos y te contactaremos con opciones personalizadas.",
-      interestCta: "Expresar interes",
-      contactInfo:
-        "Comparte tu informacion de contacto y cuentanos tus intereses.",
-      phone: "Telefono",
+      didNotStart: "Si no comenzó automáticamente,",
+      clickHere: "haz clic aquí",
+      interestTitle: "Expresa tu interés",
+      interestDesc: "¿Te interesa patrocinar o exponer? Comparte tu información y el tipo de participación preferido. Revisaremos tus datos y te contactaremos con opciones personalizadas.",
+      interestCta: "Expresar interés",
+      contactInfo: "Comparte tu información de contacto y cuéntanos tus intereses.",
+      phone: "Teléfono",
       company: "Empresa",
-      selectParticipation: "Selecciona tipo de participacion",
+      selectParticipation: "Selecciona tipo de participación",
       submit: "Enviar",
-      thanks: "Gracias por tu interes",
-      thanksBody:
-        "Hemos recibido tu informacion y te contactaremos pronto con opciones personalizadas.",
+      thanks: "Gracias por tu interés",
+      thanksBody: "Hemos recibido tu información y te contactaremos pronto con opciones personalizadas.",
       pptTitle: "Descargar brochure de patrocinio",
-      pptDesc:
-        "Obten la guia completa de patrocinio y exposicion con todos los detalles, beneficios y precios para asociarte al WGIC 2026.",
+      pptDesc: "Obtén la guía completa de patrocinio y exposición con todos los detalles, beneficios y precios para asociarte al WGIC 2026.",
       downloadPpt: "Descargar PPT",
     },
     errors: {
-      enterName: "Si us plau, ingressa el teu nom complet",
-      shortName: "El nom ha de tenir almenys 2 caràcters",
-      enterEmail: "Si us plau, ingressa el teu correu",
-      invalidEmail: "Si us plau, ingressa un correu vàlid",
-      enterPhone: "Si us plau, ingressa el teu telèfon",
-      invalidPhone: "Si us plau, ingressa un telèfon vàlid",
-      enterCompany: "Si us plau, ingressa el nom de la teva empresa",
-      selectType: "Si us plau, selecciona un tipus de participació",
-      processing: "Error processant la teva sol·licitud. Torna-ho a intentar.",
-      submitForm: "Error en enviar el formulari. Torna-ho a intentar.",
+      enterName: "Por favor, introduce tu nombre completo",
+      shortName: "El nombre debe tener al menos 2 caracteres",
+      enterEmail: "Por favor, introduce tu correo electrónico",
+      invalidEmail: "Por favor, introduce una dirección de correo válida",
+      enterPhone: "Por favor, introduce tu teléfono",
+      invalidPhone: "Por favor, introduce un teléfono válido",
+      enterCompany: "Por favor, introduce el nombre de tu empresa",
+      selectType: "Por favor, selecciona un tipo de participación",
+      processing: "Error al procesar tu solicitud. Inténtalo de nuevo.",
+      submitForm: "Error al enviar el formulario. Inténtalo de nuevo.",
+    },
+    sponsorship: {
+      tableTitle: "Paquetes de patrocinio",
+      tableHeaders: {
+        category: "Categoría",
+        investment: "Inversión (€)",
+        passes: "Pases",
+        galaDinner: "Cena de Gala",
+        speaking: "Oportunidad de ponencia",
+        naming: "Naming rights",
+        stand: "Stand",
+      },
+      addonsTitle: "Complementos de patrocinio",
+      addonsHeaders: {
+        item: "Concepto",
+        price: "Precio",
+        availability: "Disponibilidad",
+      },
+      exclusivoBadge: "Exclusivo",
+      standsTitle: "El Jardín WGIC",
+      standsConcept: "Solución llave en mano para una presencia fluida y de alto impacto. La Zona Expo es el corazón del congreso. Todos los almuerzos y coffee breaks se realizan dentro de la Zona Expo.",
+      standsLabels: {
+        space: "Espacio",
+        format: "Formato",
+        services: "Servicios",
+        branding: "Branding",
+        furniture: "Mobiliario",
+        passesIncluded: "Pases incluidos",
+      },
+      standsLogisticsNote: "Todos los stands son gestionados y producidos directamente por los proveedores oficiales del lugar. Experiencia profesional, unificada y sin complicaciones.",
+      contactTitle: "Contactar con el equipo de patrocinio",
+      contactLabels: {
+        phone: "Teléfono",
+        email: "Email",
+        web: "Web",
+      },
+      contactCta: "Contactar con el equipo de patrocinio",
+      formOptions: {
+        diamante: "Diamante",
+        esmeralda: "Esmeralda",
+        platino: "Platino",
+        oro: "Oro",
+        jardinGrande: "Jardín Grande",
+        jardinMedio: "Jardín Medio",
+        flor: "Flor",
+      },
+      packages: {
+        diamante: {
+          name: "Diamante",
+          investment: "30.000 €",
+          passes: "15",
+          gala: "10",
+          speaking: "Conferencia Principal",
+          naming: "Auditorio Principal",
+          stand: "Premium 4×4m",
+        },
+        esmeralda: {
+          name: "Esmeralda",
+          investment: "15.000 €",
+          passes: "10",
+          gala: "5",
+          speaking: "Slot Plenario (30 min)",
+          naming: "Sala Paralela",
+          stand: "Mediano 3×3m",
+        },
+        platino: {
+          name: "Platino",
+          investment: "10.000 €",
+          passes: "5",
+          gala: "2",
+          speaking: "Panelista (15 min)",
+          naming: "—",
+          stand: "Compacto 2×2m (pod)",
+        },
+        oro: {
+          name: "Oro",
+          investment: "6.000 €",
+          passes: "2",
+          gala: "1",
+          speaking: "Slot de Taller",
+          naming: "—",
+          stand: "Solo Digital",
+        },
+      },
+      addons: [
+        {
+          item: "Derechos de nombramiento para la cena de gala",
+          price: "20.000 €",
+          availability: "1 (Exclusivo)",
+        },
+        {
+          item: "Aplicación Oficial del Congreso",
+          price: "10.000 €",
+          availability: "1 (Exclusivo)",
+        },
+        {
+          item: "Lanyards y Credenciales",
+          price: "8.000 €",
+          availability: "1 (Exclusivo)",
+        },
+        {
+          item: "Patrocinador de Pausa para Café (por día)",
+          price: "5.000 €",
+          availability: "4 disponibles",
+        },
+        {
+          item: "Visitas Técnicas (BCN o Lleida)",
+          price: "6.000 €",
+          availability: "4 disponibles",
+        },
+        {
+          item: "Anuncio de página completa en Actas",
+          price: "2.000 €",
+          availability: "Ilimitado",
+        },
+        {
+          item: "Entrevista en Video Producida",
+          price: "2.500 €",
+          availability: "10 espacios",
+        },
+      ],
+      stands: {
+        jardinGrande: {
+          name: "Jardín GRANDE",
+          category: "Stand Premium",
+          target: "Líderes del mercado que buscan máxima visibilidad",
+          space: "4m × 4m",
+          format: "Solución llave en mano completamente producida con diseño unificado de alta gama",
+          services: [
+            "Luces LED",
+            "Mostrador de información",
+            "Electricidad: tablero 3,3 kW (1 enchufe disponible)",
+            "Wi-Fi de alta velocidad",
+            "Limpieza previa a la inauguración",
+          ],
+          branding: "Letras negras 10 cm de alto (20 letras incluidas). Espacio dedicado para logo y gráficos personalizados.",
+          furniture: "1 mesa de reunión y 4 sillas o taburetes de bar",
+          investment: "8.000 €",
+          passesIncluded: "3",
+          notes: "Mobiliario final por definir. La empresa puede actualizar equipo básico o señalización directamente con el lugar y organizadores.",
+        },
+        jardinMedio: {
+          name: "Jardín MEDIO",
+          category: "Stand Estándar",
+          target: "Líderes del mercado que buscan máxima visibilidad",
+          space: "3m × 3m",
+          format: "Solución llave en mano completamente producida con diseño unificado de alta gama",
+          services: [
+            "Luces LED",
+            "Mostrador de información",
+            "Electricidad: tablero 3,3 kW (1 enchufe disponible)",
+            "Wi-Fi de alta velocidad",
+            "Limpieza previa a la inauguración",
+          ],
+          branding: "Letras negras 10 cm de alto (20 letras incluidas). Espacio dedicado para logo y gráficos personalizados.",
+          furniture: "1 mesa de reunión y 2 taburetes de bar",
+          investment: "5.000 €",
+          passesIncluded: "2",
+          notes: "Mobiliario final por definir. La empresa puede actualizar equipo básico o señalización directamente con el lugar y organizadores.",
+        },
+        flor: {
+          name: "Flor",
+          category: "Stand Compacto / Pod",
+          target: "Startups y empresas especializadas. Opción eficiente y rentable.",
+          space: "Estación de trabajo compacta (concepto por definir)",
+          format: "Diseño minimalista para facilitar interacción rápida",
+          services: [
+            "Electricidad (1 enchufe)",
+            "Wi-Fi de alta velocidad",
+          ],
+          branding: "Exhibición estilo tótem (proporcionada e impresa por la organización)",
+          furniture: "1 mesa y 2 sillas o taburetes de bar",
+          investment: "3.000 €",
+          passesIncluded: "1",
+          notes: "Renderización indicativa. Formato final por definir.",
+        },
+      },
     },
   },
   ca: {
     pageTitle: "Socis i expositors - Oportunitats de patrocini",
-    pageDescription:
-      "Mostra la teva participació en el sector d'infraestructures verdes i assegura visibilitat i exposició davant una audiència internacional al World Green Infrastructure Congress 2026 a Barcelona i Lleida.",
-    partnerTitle: "Soci: Elite, Global o Event",
-    partnerP1:
-      "Si vols participar activament en el congrés, col·laborant en la presa de decisions, aportant coneixement i assumint responsabilitats compartides, tria una de les opcions de soci: Global o Event. En aquestes tipologies obtindràs els màxims beneficis de visibilitat i participació.",
-    partnerP2:
-      "Els socis Elite contribuiran estratègicament al desenvolupament i promoció del congrés i tindran tots els beneficis dels socis Global, a més d'aquells que es defineixin finalment, per exemple, presència de marca al peu de correus del congrés o suports en àrees comunes. La contribució econòmica s'acordarà específicament amb l'equip organitzador.",
-    sponsorTitle: "Patrocinador: Tree o Leaf",
-    sponsorP1:
-      "Si busques maximitzar visibilitat, publicitat o beneficis per a la teva marca o empresa en el sector d'infraestructura verda, sense necessitat d'involucrar-te en la gestió o presa de decisions de l'esdeveniment, la teva opció és ser patrocinador, com a Tree o com a Leaf.",
-    exhibitorsTitle: "Expositors (limitat als primers 40)",
-    exhibitorsP1:
-      "Tant si ets soci com patrocinador, pots mostrar la teva empresa o productes als assistents com a expositor, en dues opcions: Garden i Flower. Ser expositor et permetrà visibilitat física durant el congrés i generar networking amb potencials clients interessats en la teva marca.",
+    pageDescription: "Mostra la teva participació en el sector d'infraestructures verdes i assegura visibilitat i exposició davant una audiència internacional al World Green Infrastructure Congress 2026 a Barcelona i Lleida.",
+    partnerTitle: "Socis: Diamant, Esmeralda i Platí",
+    partnerP1: "Si vols liderar la presència a WGIC26, tria entre Diamant, Esmeralda o Platí. Aquests paquets ofereixen la màxima visibilitat, espais de ponència, naming rights i stand.",
+    partnerP2: "Diamant és exclusiu i inclou la màxima exposició de marca, naming de l'auditori principal i un stand premium. Els beneficis d'Esmeralda i Platí es poden ajustar amb l'equip organitzador.",
+    sponsorTitle: "Patrocinador: Or",
+    sponsorP1: "Si busques una presència digital i participar de forma accessible a WGIC26, el paquet Or ofereix visibilitat de marca, promoció digital i accés al congrés.",
+    exhibitorsTitle: "El Jardí WGIC – Stands d'exposició",
+    exhibitorsP1: "Mostra la teva empresa al cor del congrés. Tots els dinars i coffee breaks es fan a la Zona Expo. Tria entre Jardí Gran, Jardí Mitjà o Flor/Pod.",
     benefits: "Beneficis",
     table: {
       partners: "Socis",
@@ -241,25 +564,21 @@ const copy = {
     sponsorsPartners: "Patrocinadors i socis",
     venueTitle: "La seu",
     organizedBy: "Organitzat per",
-    elitePartners: "Socis Elite",
-    gardenBigExhibitors: "Expositors Garden Big",
-    gardenMediumExhibitors: "Expositors Garden Medium",
-    flowerExhibitors: "Expositors Flower",
+    elitePartners: "Socis Diamant",
+    gardenBigExhibitors: "Expositors Jardí Gran",
+    gardenMediumExhibitors: "Expositors Jardí Mitjà",
+    flowerExhibitors: "Expositors Flor",
     mediaPartners: "Socis de mitjans",
     withTheSupportOf: "Amb el suport de",
     comingSoon: "Pròximament",
     eventPartners: "Socis de l'esdeveniment",
-    venueP1:
-      "La seu de WGIC26 és ideal per crear l'entorn de networking que patrocinadors, assistents i expositors esperen d'un esdeveniment global. El Centre de Convencions Internacional de Barcelona és un espai icònic ubicat a Sant Martí, dins del 22@ de Poblenou.",
-    venueP2:
-      "El CCIB compta amb dos edificis de gran valor arquitectònic: el Centre de Convencions i l'Auditori Fòrum CCIB, units per una passarel·la subterrània. Amb una superfície de 100.000 m2 i capacitat de fins a 15.000 assistents, destaca per la seva amplitud, llum natural i versatilitat.",
-    venueP3:
-      "El CCIB té una ubicació privilegiada a 500 metres de la platja, a 6 km del centre històric i a 22 km de l'aeroport, amb excel·lents connexions per carretera i transport públic.",
+    venueP1: "La seu de WGIC26 és ideal per crear l'entorn de networking que patrocinadors, assistents i expositors esperen d'un esdeveniment global. El Centre de Convencions Internacional de Barcelona és un espai icònic ubicat a Sant Martí, dins del 22@ de Poblenou.",
+    venueP2: "El CCIB compta amb dos edificis de gran valor arquitectònic: el Centre de Convencions i l'Auditori Fòrum CCIB, units per una passarel·la subterrània. Amb una superfície de 100.000 m2 i capacitat de fins a 15.000 assistents, destaca per la seva amplitud, llum natural i versatilitat.",
+    venueP3: "El CCIB té una ubicació privilegiada a 500 metres de la platja, a 6 km del centre històric i a 22 km de l'aeroport, amb excel·lents connexions per carretera i transport públic.",
     venueImagesAlt: "Imatges de la seu",
     cards: {
       infoPackTitle: "Descarregar dossier informatiu",
-      infoPackDesc:
-        "Obté la guia completa per a patrocinadors i expositors, amb detalls tècnics i preus.",
+      infoPackDesc: "Obté la guia completa per a patrocinadors i expositors, amb detalls tècnics i preus.",
       downloadPdf: "Descarregar PDF",
       provideDetails: "Comparteix les teves dades per accedir a la descàrrega.",
       fullName: "Nom complet",
@@ -269,21 +588,17 @@ const copy = {
       didNotStart: "Si no ha començat automàticament,",
       clickHere: "fes clic aquí",
       interestTitle: "Expressa el teu interès",
-      interestDesc:
-        "T'interessa patrocinar o exposar? Comparteix la teva informació i el tipus de participació preferit. Revisarem les teves dades i et contactarem amb opcions personalitzades.",
+      interestDesc: "T'interessa patrocinar o exposar? Comparteix la teva informació i el tipus de participació preferit. Revisarem les teves dades i et contactarem amb opcions personalitzades.",
       interestCta: "Expressar interès",
-      contactInfo:
-        "Comparteix la teva informació de contacte i explica'ns els teus interessos.",
+      contactInfo: "Comparteix la teva informació de contacte i explica'ns els teus interessos.",
       phone: "Telèfon",
       company: "Empresa",
       selectParticipation: "Selecciona tipus de participació",
       submit: "Enviar",
       thanks: "Gràcies pel teu interès",
-      thanksBody:
-        "Hem rebut la teva informació i et contactarem aviat amb opcions personalitzades.",
+      thanksBody: "Hem rebut la teva informació i et contactarem aviat amb opcions personalitzades.",
       pptTitle: "Descarregar brochure de patrocini",
-      pptDesc:
-        "Obté la guia completa de patrocini i exposició amb tots els detalls, beneficis i preus per associar-te al WGIC 2026.",
+      pptDesc: "Obté la guia completa de patrocini i exposició amb tots els detalls, beneficis i preus per associar-te al WGIC 2026.",
       downloadPpt: "Descarregar PPT",
     },
     errors: {
@@ -298,12 +613,193 @@ const copy = {
       processing: "Error processant la teva sol·licitud. Torna-ho a intentar.",
       submitForm: "Error en enviar el formulari. Torna-ho a intentar.",
     },
+    sponsorship: {
+      tableTitle: "Paquets de patrocini",
+      tableHeaders: {
+        category: "Categoria",
+        investment: "Inversió (€)",
+        passes: "Passes",
+        galaDinner: "Sopar de Gala",
+        speaking: "Oportunitat de ponència",
+        naming: "Naming rights",
+        stand: "Stand",
+      },
+      addonsTitle: "Complements de patrocini",
+      addonsHeaders: {
+        item: "Concepte",
+        price: "Preu",
+        availability: "Disponibilitat",
+      },
+      exclusivoBadge: "Exclusiu",
+      standsTitle: "El Jardí WGIC",
+      standsConcept: "Solució clau en mà per a una presència fluida i d'alt impacte. La Zona Expo és el cor del congrés. Tots els dinars i coffee breaks es fan dins de la Zona Expo.",
+      standsLabels: {
+        space: "Espai",
+        format: "Format",
+        services: "Serveis",
+        branding: "Branding",
+        furniture: "Mobiliari",
+        passesIncluded: "Passes incloses",
+      },
+      standsLogisticsNote: "Tots els stands són gestionats i produïts directament pels proveïdors oficials del lloc. Experiència professional, unificada i sense complicacions.",
+      contactTitle: "Contactar amb l'equip de patrocini",
+      contactLabels: {
+        phone: "Telèfon",
+        email: "Email",
+        web: "Web",
+      },
+      contactCta: "Contactar amb l'equip de patrocini",
+      formOptions: {
+        diamante: "Diamant",
+        esmeralda: "Esmeralda",
+        platino: "Platí",
+        oro: "Or",
+        jardinGrande: "Jardí Gran",
+        jardinMedio: "Jardí Mitjà",
+        flor: "Flor",
+      },
+      packages: {
+        diamante: {
+          name: "Diamant",
+          investment: "30.000 €",
+          passes: "15",
+          gala: "10",
+          speaking: "Conferència Principal",
+          naming: "Auditori Principal",
+          stand: "Premium 4×4m",
+        },
+        esmeralda: {
+          name: "Esmeralda",
+          investment: "15.000 €",
+          passes: "10",
+          gala: "5",
+          speaking: "Slot Plenari (30 min)",
+          naming: "Sala Paral·lela",
+          stand: "Mitjà 3×3m",
+        },
+        platino: {
+          name: "Platí",
+          investment: "10.000 €",
+          passes: "5",
+          gala: "2",
+          speaking: "Panelista (15 min)",
+          naming: "—",
+          stand: "Compacte 2×2m (pod)",
+        },
+        oro: {
+          name: "Or",
+          investment: "6.000 €",
+          passes: "2",
+          gala: "1",
+          speaking: "Slot de Taller",
+          naming: "—",
+          stand: "Només Digital",
+        },
+      },
+      addons: [
+        {
+          item: "Drets de nomenament per al sopar de gala",
+          price: "20.000 €",
+          availability: "1 (Exclusiu)",
+        },
+        {
+          item: "Aplicació Oficial del Congrés",
+          price: "10.000 €",
+          availability: "1 (Exclusiu)",
+        },
+        {
+          item: "Lanyards i Credencials",
+          price: "8.000 €",
+          availability: "1 (Exclusiu)",
+        },
+        {
+          item: "Patrocinador de Pausa per a Cafè (per dia)",
+          price: "5.000 €",
+          availability: "4 disponibles",
+        },
+        {
+          item: "Visites Tècniques (BCN o Lleida)",
+          price: "6.000 €",
+          availability: "4 disponibles",
+        },
+        {
+          item: "Anunci de pàgina completa en Actes",
+          price: "2.000 €",
+          availability: "Ilimitat",
+        },
+        {
+          item: "Entrevista en Vídeo Produïda",
+          price: "2.500 €",
+          availability: "10 espais",
+        },
+      ],
+      stands: {
+        jardinGrande: {
+          name: "Jardí GRAN",
+          category: "Stand Premium",
+          target: "Líders del mercat que busquen màxima visibilitat",
+          space: "4m × 4m",
+          format: "Solució clau en mà completament produïda amb disseny unificat d'alta gamma",
+          services: [
+            "Llums LED",
+            "Mostrador d'informació",
+            "Electricitat: tauler 3,3 kW (1 endoll disponible)",
+            "Wi-Fi d'alta velocitat",
+            "Neteja prèvia a la inauguració",
+          ],
+          branding: "Lletres negres 10 cm d'alt (20 lletres incloses). Espai dedicat per a logo i gràfics personalitzats.",
+          furniture: "1 taula de reunió i 4 cadires o tamborets de bar",
+          investment: "8.000 €",
+          passesIncluded: "3",
+          notes: "Mobiliari final per definir. L'empresa pot actualitzar equip bàsic o senyalització directament amb el lloc i organitzadors.",
+        },
+        jardinMedio: {
+          name: "Jardí MITJÀ",
+          category: "Stand Estàndard",
+          target: "Líders del mercat que busquen màxima visibilitat",
+          space: "3m × 3m",
+          format: "Solució clau en mà completament produïda amb disseny unificat d'alta gamma",
+          services: [
+            "Llums LED",
+            "Mostrador d'informació",
+            "Electricitat: tauler 3,3 kW (1 endoll disponible)",
+            "Wi-Fi d'alta velocitat",
+            "Neteja prèvia a la inauguració",
+          ],
+          branding: "Lletres negres 10 cm d'alt (20 lletres incloses). Espai dedicat per a logo i gràfics personalitzats.",
+          furniture: "1 taula de reunió i 2 tamborets de bar",
+          investment: "5.000 €",
+          passesIncluded: "2",
+          notes: "Mobiliari final per definir. L'empresa pot actualitzar equip bàsic o senyalització directament amb el lloc i organitzadors.",
+        },
+        flor: {
+          name: "Flor",
+          category: "Stand Compacte / Pod",
+          target: "Startups i empreses especialitzades. Opció eficient i rendible.",
+          space: "Estació de treball compacta (concepte per definir)",
+          format: "Disseny minimalista per facilitar interacció ràpida",
+          services: [
+            "Electricitat (1 endoll)",
+            "Wi-Fi d'alta velocitat",
+          ],
+          branding: "Exhibició estil tòtem (proporcionada i impresa per l'organització)",
+          furniture: "1 taula i 2 cadires o tamborets de bar",
+          investment: "3.000 €",
+          passesIncluded: "1",
+          notes: "Renderització indicativa. Format final per definir.",
+        },
+      },
+    },
   },
 } as const;
 
 const Exhibitors = () => {
   const locale = useLocale();
   const t = locale === "es" ? copy.es : locale === "ca" ? copy.ca : copy.en;
+  const pptHref =
+    locale === "es"
+      ? "/docs/WGIC26_SponsorshipBrochure_v0.4_spanish.pptx"
+      : "/docs/WGIC26_SponsorshipBrochure_v0.4.pptx";
   // Download form state (reserved for future use)
   // const [downloadStep, setDownloadStep] = useState<
   //   "initial" | "form" | "success"
@@ -827,6 +1323,176 @@ const Exhibitors = () => {
               </table>
             </div> */}
 
+
+            <div className="overflow-x-auto -mx-6 px-6 my-8">
+              <h3 className="text-xl text-white uppercase mb-4">{t.sponsorship.tableTitle}</h3>
+              <table className="w-full min-w-[800px] border-collapse border border-white/20">
+                <thead>
+                  <tr className="bg-cactus/30">
+                    <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base uppercase">{t.sponsorship.tableHeaders.category}</th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base uppercase bg-potus/20">
+                      {t.sponsorship.packages.diamante.name} <span className="ml-2 inline-flex items-center rounded-full bg-potus px-2 py-0.5 text-xs text-black uppercase">{t.sponsorship.exclusivoBadge}</span>
+                    </th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base uppercase">{t.sponsorship.packages.esmeralda.name}</th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base uppercase">{t.sponsorship.packages.platino.name}</th>
+                    <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base uppercase">{t.sponsorship.packages.oro.name}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.tableHeaders.investment}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center font-medium bg-potus/10">{t.sponsorship.packages.diamante.investment}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center font-medium">{t.sponsorship.packages.esmeralda.investment}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center font-medium">{t.sponsorship.packages.platino.investment}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white text-base text-center font-medium">{t.sponsorship.packages.oro.investment}</td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.tableHeaders.passes}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center bg-potus/10">{t.sponsorship.packages.diamante.passes}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.esmeralda.passes}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.platino.passes}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.oro.passes}</td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.tableHeaders.galaDinner}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center bg-potus/10">{t.sponsorship.packages.diamante.gala}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.esmeralda.gala}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.platino.gala}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.oro.gala}</td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.tableHeaders.speaking}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center bg-potus/10">{t.sponsorship.packages.diamante.speaking}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.esmeralda.speaking}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.platino.speaking}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.oro.speaking}</td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.tableHeaders.naming}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center bg-potus/10">{t.sponsorship.packages.diamante.naming}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.esmeralda.naming}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.platino.naming}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.oro.naming}</td>
+                  </tr>
+                  <tr className="hover:bg-white/5">
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.tableHeaders.stand}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center bg-potus/10">{t.sponsorship.packages.diamante.stand}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.esmeralda.stand}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.platino.stand}</td>
+                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">{t.sponsorship.packages.oro.stand}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="my-8">
+              <h3 className="text-xl text-white uppercase mb-4">{t.sponsorship.addonsTitle}</h3>
+              <div className="overflow-x-auto -mx-6 px-6">
+                <table className="w-full min-w-[600px] border-collapse border border-white/20">
+                  <thead>
+                    <tr className="bg-cactus/30">
+                      <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base uppercase">{t.sponsorship.addonsHeaders.item}</th>
+                      <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base uppercase">{t.sponsorship.addonsHeaders.price}</th>
+                      <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base uppercase">{t.sponsorship.addonsHeaders.availability}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="hover:bg-white/5 bg-potus/10">
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[0].item} <span className="inline-flex items-center rounded-full bg-potus/20 border border-potus/30 px-2 py-0.5 text-potus text-sm uppercase">{t.sponsorship.exclusivoBadge}</span></td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base font-medium">{t.sponsorship.addons[0].price}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[0].availability}</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 bg-potus/10">
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[1].item} <span className="inline-flex items-center rounded-full bg-potus/20 border border-potus/30 px-2 py-0.5 text-potus text-sm uppercase">{t.sponsorship.exclusivoBadge}</span></td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base font-medium">{t.sponsorship.addons[1].price}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[1].availability}</td>
+                    </tr>
+                    <tr className="hover:bg-white/5 bg-potus/10">
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[2].item} <span className="inline-flex items-center rounded-full bg-potus/20 border border-potus/30 px-2 py-0.5 text-potus text-sm uppercase">{t.sponsorship.exclusivoBadge}</span></td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base font-medium">{t.sponsorship.addons[2].price}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[2].availability}</td>
+                    </tr>
+                    <tr className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[3].item}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base font-medium">{t.sponsorship.addons[3].price}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[3].availability}</td>
+                    </tr>
+                    <tr className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[4].item}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base font-medium">{t.sponsorship.addons[4].price}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[4].availability}</td>
+                    </tr>
+                    <tr className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[5].item}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base font-medium">{t.sponsorship.addons[5].price}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[5].availability}</td>
+                    </tr>
+                    <tr className="hover:bg-white/5">
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[6].item}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base font-medium">{t.sponsorship.addons[6].price}</td>
+                      <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{t.sponsorship.addons[6].availability}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div className="my-8">
+              <h3 className="text-xl text-white uppercase mb-4">{t.sponsorship.standsTitle}</h3>
+              <p className="text-white/80 mb-4 text-justify">{t.sponsorship.standsConcept}</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col gap-3">
+                  <div className="flex items-center justify-between">
+                    <h4 className="text-lg text-white uppercase">{t.sponsorship.stands.jardinGrande.name}</h4>
+                    <span className="text-potus font-medium">{t.sponsorship.stands.jardinGrande.investment}</span>
+                  </div>
+                  <p className="text-white/70 text-sm">{t.sponsorship.stands.jardinGrande.category} · {t.sponsorship.stands.jardinGrande.target}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.space}:</span> {t.sponsorship.stands.jardinGrande.space}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.format}:</span> {t.sponsorship.stands.jardinGrande.format}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.services}:</span></p>
+                  <ul className="list-disc list-inside text-white/80 text-sm flex flex-col gap-1">
+                    {t.sponsorship.stands.jardinGrande.services.map((s, i) => <li key={i} className="text-white/80 text-sm">{s}</li>)}
+                  </ul>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.branding}:</span> {t.sponsorship.stands.jardinGrande.branding}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.furniture}:</span> {t.sponsorship.stands.jardinGrande.furniture}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.passesIncluded}:</span> {t.sponsorship.stands.jardinGrande.passesIncluded}</p>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col gap-3">
+                  <div className="flex items-center justify-between">
+                    <h4 className="text-lg text-white uppercase">{t.sponsorship.stands.jardinMedio.name}</h4>
+                    <span className="text-potus font-medium">{t.sponsorship.stands.jardinMedio.investment}</span>
+                  </div>
+                  <p className="text-white/70 text-sm">{t.sponsorship.stands.jardinMedio.category} · {t.sponsorship.stands.jardinMedio.target}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.space}:</span> {t.sponsorship.stands.jardinMedio.space}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.format}:</span> {t.sponsorship.stands.jardinMedio.format}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.services}:</span></p>
+                  <ul className="list-disc list-inside text-white/80 text-sm flex flex-col gap-1">
+                    {t.sponsorship.stands.jardinMedio.services.map((s, i) => <li key={i} className="text-white/80 text-sm">{s}</li>)}
+                  </ul>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.branding}:</span> {t.sponsorship.stands.jardinMedio.branding}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.furniture}:</span> {t.sponsorship.stands.jardinMedio.furniture}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.passesIncluded}:</span> {t.sponsorship.stands.jardinMedio.passesIncluded}</p>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col gap-3">
+                  <div className="flex items-center justify-between">
+                    <h4 className="text-lg text-white uppercase">{t.sponsorship.stands.flor.name}</h4>
+                    <span className="text-potus font-medium">{t.sponsorship.stands.flor.investment}</span>
+                  </div>
+                  <p className="text-white/70 text-sm">{t.sponsorship.stands.flor.category} · {t.sponsorship.stands.flor.target}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.space}:</span> {t.sponsorship.stands.flor.space}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.format}:</span> {t.sponsorship.stands.flor.format}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.services}:</span></p>
+                  <ul className="list-disc list-inside text-white/80 text-sm flex flex-col gap-1">
+                    {t.sponsorship.stands.flor.services.map((s, i) => <li key={i} className="text-white/80 text-sm">{s}</li>)}
+                  </ul>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.branding}:</span> {t.sponsorship.stands.flor.branding}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.furniture}:</span> {t.sponsorship.stands.flor.furniture}</p>
+                  <p className="text-white/80 text-sm"><span className="text-potus uppercase text-xs">{t.sponsorship.standsLabels.passesIncluded}:</span> {t.sponsorship.stands.flor.passesIncluded}</p>
+                </div>
+              </div>
+              <p className="text-white/70 text-sm italic">{t.sponsorship.standsLogisticsNote}</p>
+            </div>
+
             <div className="mt-6">
               <h4 className="text-lg text-white uppercase mb-3">
                 {t.venueTitle}
@@ -1022,35 +1688,26 @@ const Exhibitors = () => {
                       className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
                     >
                       <option value="">{t.cards.selectParticipation}</option>
-                      <option value="Elite Partner">
-                        {locale === "es" ? "Socio Elite" : "Elite Partner"}
+                      <option value="Diamante">
+                        {t.sponsorship.packages.diamante.name}
                       </option>
-                      <option value="Global Partner">
-                        {locale === "es" ? "Socio Global" : "Global Partner"}
+                      <option value="Esmeralda">
+                        {t.sponsorship.packages.esmeralda.name}
                       </option>
-                      <option value="Event Partner">
-                        {locale === "es" ? "Socio Event" : "Event Partner"}
+                      <option value="Platino">
+                        {t.sponsorship.packages.platino.name}
                       </option>
-                      <option value="Tree Sponsor">
-                        {locale === "es" ? "Patrocinador Tree" : "Tree Sponsor"}
+                      <option value="Oro">
+                        {t.sponsorship.packages.oro.name}
                       </option>
-                      <option value="Leaf Sponsor">
-                        {locale === "es" ? "Patrocinador Leaf" : "Leaf Sponsor"}
+                      <option value="Jardín Grande">
+                        {t.sponsorship.stands.jardinGrande.name}
                       </option>
-                      <option value="Garden Big">
-                        {locale === "es"
-                          ? "Expositor Garden Big"
-                          : "Garden Big Exhibitor"}
+                      <option value="Jardín Medio">
+                        {t.sponsorship.stands.jardinMedio.name}
                       </option>
-                      <option value="Garden Medium">
-                        {locale === "es"
-                          ? "Expositor Garden Medium"
-                          : "Garden Medium Exhibitor"}
-                      </option>
-                      <option value="Flower">
-                        {locale === "es"
-                          ? "Expositor Flower"
-                          : "Flower Exhibitor"}
+                      <option value="Flor">
+                        {t.sponsorship.stands.flor.name}
                       </option>
                     </select>
 
@@ -1098,7 +1755,7 @@ const Exhibitors = () => {
 
                 <div className="mt-auto">
                   <a
-                    href="/docs/WGIC26_SponsorshipBrochure_v3.pptx"
+                    href={pptHref}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"
@@ -1108,6 +1765,9 @@ const Exhibitors = () => {
                   </a>
                 </div>
               </div>
+
+              {/* Contact Card */}
+              
             </div>
           </div>
         </div>

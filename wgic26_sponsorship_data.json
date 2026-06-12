@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "version": "0.4",
+    "language": "es",
+    "last_updated": "2026-06-12",
+    "source": "WGIC26_SponsorshipBrochure_v0.4 ESPAÑOL.pptx",
+    "notes_for_dev": "Reemplazar contenido existente de pagina de patrocinios. Nuevos paquetes: Diamante/Esmeralda/Platino/Oro. Nuevos complementos y stands El Jardin WGIC."
+  },
+  "event": {
+    "name": "WGIC26 – Congreso Mundial de Infraestructura Verde",
+    "dates": "27-30 de octubre de 2026",
+    "locations": [
+      "Barcelona",
+      "Lleida, España"
+    ],
+    "tagline": "Dando forma al futuro de la infraestructura verde en las ciudades",
+    "special_year": "Año de Gaudí – Barcelona Capital Mundial de la Arquitectura",
+    "website": "wgic26.barcelona",
+    "contact": {
+      "phone": "+34 623 04 90 22",
+      "email": "sponsorship@wgic26.org"
+    }
+  },
+  "context": {
+    "challenges": [
+      "Cambio climático",
+      "Inundaciones urbanas",
+      "Islas de calor",
+      "Pérdida de biodiversidad"
+    ],
+    "market_drivers": [
+      "Pacto Verde Europeo: cientos de miles de millones en inversión climática",
+      "Estrategia de la UE sobre Biodiversidad 2030",
+      "Inversión fuerte de ciudades europeas en resiliencia urbana"
+    ],
+    "investment_areas": [
+      "Sistemas de drenaje urbano sostenible",
+      "Techos y paredes verdes",
+      "Infraestructura de biodiversidad urbana",
+      "Espacios públicos adaptados al clima"
+    ]
+  },
+  "audience": {
+    "international_reach": "Más de 30 países",
+    "distribution": {
+      "academia_e_investigacion": "45–55%",
+      "sector_privado": "20–30%",
+      "sector_publico": "15–20%"
+    },
+    "key_sectors": [
+      "Ingeniería",
+      "Construcción",
+      "Planificación urbana",
+      "Arquitectura del paisaje",
+      "Gestión del agua"
+    ],
+    "typical_attendees": [
+      "Planificadores urbanos",
+      "Agencias ambientales",
+      "Ingenieros de infraestructura",
+      "Arquitectos y arquitectos paisajistas",
+      "Investigadores y expertos en políticas",
+      "Proveedores de tecnología urbana"
+    ]
+  },
+  "workshops": [
+    {
+      "id": "sur_global",
+      "title": "Sur global",
+      "description": "Diseñando las infraestructuras verdes del sur global a través de una asociación genuina basada en el aprendizaje mutuo, la co-creación de conocimiento y el intercambio equitativo de beneficios"
+    },
+    {
+      "id": "salud_bienestar",
+      "title": "Salud y bienestar",
+      "description": "Conectando los sectores de la salud y la infraestructura verde. Diseñando para conectar con la naturaleza (criterios de biofilia) y evitando el impacto negativo de la falta de naturaleza"
+    },
+    {
+      "id": "post_conflicto",
+      "title": "Post-conflicto y recuperación de desastres",
+      "description": "Cómo puede la infraestructura verde contribuir a la recuperación social y ambiental tras situaciones de crisis debidas a conflictos o desastres"
+    }
+  ],
+  "why_sponsor": {
+    "benefits": [
+      "Posicionamiento como líder en infraestructura sostenible",
+      "Acceso a tomadores de decisiones internacionales",
+      "Oportunidad de presentar tecnologías y proyectos",
+      "Desarrollo de negocios y asociaciones"
+    ],
+    "interaction_opportunities": [
+      "Sesiones plenarias",
+      "Paneles patrocinados",
+      "Stands de exposición",
+      "Recepciones de networking",
+      "Cena de gala",
+      "Visitas técnicas"
+    ],
+    "brand_visibility_examples": [
+      "Branding en el escenario",
+      "Presencia en la exposición",
+      "Branding del programa",
+      "Promoción en el sitio web",
+      "Exposición en marketing digital"
+    ]
+  },
+  "sponsor_packages": [
+    {
+      "tier": "Diamante",
+      "badge": "EXCLUSIVO",
+      "investment_eur": 30000,
+      "full_passes": 15,
+      "gala_entries": 10,
+      "speaking_opportunity": "Conferencia Principal",
+      "naming_rights": "Auditorio Principal",
+      "brand_placement": "Máximo (Global)",
+      "stand": {
+        "included": true,
+        "type": "Premium",
+        "size": "4×4m"
+      }
+    },
+    {
+      "tier": "Esmeralda",
+      "badge": null,
+      "investment_eur": 15000,
+      "full_passes": 10,
+      "gala_entries": 5,
+      "speaking_opportunity": "Slot Plenario (30 min)",
+      "naming_rights": "Sala Paralela",
+      "brand_placement": "Alta Visibilidad",
+      "stand": {
+        "included": true,
+        "type": "Mediano",
+        "size": "3×3m"
+      }
+    },
+    {
+      "tier": "Platino",
+      "badge": null,
+      "investment_eur": 10000,
+      "full_passes": 5,
+      "gala_entries": 2,
+      "speaking_opportunity": "Panelista (15 min)",
+      "naming_rights": null,
+      "brand_placement": "Estándar",
+      "stand": {
+        "included": true,
+        "type": "Compacto",
+        "size": "2×2m (pod)"
+      }
+    },
+    {
+      "tier": "Oro",
+      "badge": null,
+      "investment_eur": 6000,
+      "full_passes": 2,
+      "gala_entries": 1,
+      "speaking_opportunity": "Slot de Taller",
+      "naming_rights": null,
+      "brand_placement": "Solo Digital",
+      "stand": {
+        "included": false,
+        "type": null,
+        "size": null
+      }
+    }
+  ],
+  "sponsor_addons": [
+    {
+      "item": "Derechos de nombramiento para la cena de gala",
+      "price_eur": 20000,
+      "availability": "1 (Exclusivo)"
+    },
+    {
+      "item": "Aplicación Oficial del Congreso",
+      "price_eur": 10000,
+      "availability": "1 (Exclusivo)"
+    },
+    {
+      "item": "Lanyards y Credenciales",
+      "price_eur": 8000,
+      "availability": "1 (Exclusivo)"
+    },
+    {
+      "item": "Patrocinador de Pausa para Café (por día)",
+      "price_eur": 5000,
+      "availability": "4 disponibles"
+    },
+    {
+      "item": "Visitas Técnicas (BCN o Lleida)",
+      "price_eur": 6000,
+      "availability": "4 disponibles"
+    },
+    {
+      "item": "Anuncio de página completa en Actas",
+      "price_eur": 2000,
+      "availability": "Ilimitado"
+    },
+    {
+      "item": "Entrevista en Video Producida",
+      "price_eur": 2500,
+      "availability": "10 espacios"
+    }
+  ],
+  "exhibition": {
+    "zone_name": "El Jardín WGIC",
+    "concept": "Solución llave en mano para presencia fluida y de alto impacto. Zona Expo = corazón del congreso. Todos los almuerzos y coffee breaks se realizan dentro de la Zona Expo.",
+    "logistics_note": "Todos los stands son gestionados y producidos directamente por los proveedores oficiales del lugar. Experiencia profesional, unificada y sin complicaciones.",
+    "stands": [
+      {
+        "id": "jardin_grande",
+        "name": "Jardín GRANDE",
+        "category": "Stand Premium",
+        "target": "Líderes del mercado que buscan máxima visibilidad",
+        "space": "4m × 4m",
+        "format": "Solución llave en mano completamente producida con diseño unificado de alta gama",
+        "services": [
+          "Luces LED",
+          "Mostrador de información",
+          "Electricidad: tablero 3,3 kW (1 enchufe disponible)",
+          "Wi-Fi de alta velocidad",
+          "Limpieza previa a la inauguración"
+        ],
+        "branding": "Letras negras 10 cm de alto (20 letras incluidas). Espacio dedicado para logo y gráficos personalizados.",
+        "furniture": "1 mesa de reunión y 4 sillas o taburetes de bar",
+        "passes_included": 3,
+        "investment_eur": 8000,
+        "notes": "Mobiliario final por definir. La empresa puede actualizar equipo básico o señalización directamente con el lugar y organizadores."
+      },
+      {
+        "id": "jardin_medio",
+        "name": "Jardín MEDIO",
+        "category": "Stand Estándar",
+        "target": "Líderes del mercado que buscan máxima visibilidad",
+        "space": "3m × 3m",
+        "format": "Solución llave en mano completamente producida con diseño unificado de alta gama",
+        "services": [
+          "Luces LED",
+          "Mostrador de información",
+          "Electricidad: tablero 3,3 kW (1 enchufe disponible)",
+          "Wi-Fi de alta velocidad",
+          "Limpieza previa a la inauguración"
+        ],
+        "branding": "Letras negras 10 cm de alto (20 letras incluidas). Espacio dedicado para logo y gráficos personalizados.",
+        "furniture": "1 mesa de reunión y 2 taburetes de bar",
+        "passes_included": 2,
+        "investment_eur": 5000,
+        "notes": "Mobiliario final por definir. La empresa puede actualizar equipo básico o señalización directamente con el lugar y organizadores."
+      },
+      {
+        "id": "flor_pod",
+        "name": "Flor",
+        "category": "Stand Compacto / Pod",
+        "target": "Startups y empresas especializadas. Opción eficiente y rentable.",
+        "space": "Estación de trabajo compacta (concepto por definir)",
+        "format": "Diseño minimalista para facilitar interacción rápida",
+        "services": [
+          "Electricidad (1 enchufe)",
+          "Wi-Fi de alta velocidad"
+        ],
+        "branding": "Exhibición estilo tótem (proporcionada e impresa por la organización)",
+        "furniture": "1 mesa y 2 sillas o taburetes de bar",
+        "passes_included": 1,
+        "investment_eur": 3000,
+        "notes": "Renderización indicativa. Formato final por definir."
+      }
+    ]
+  }
+}
