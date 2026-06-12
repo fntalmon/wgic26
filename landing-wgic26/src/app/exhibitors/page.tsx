@@ -1098,7 +1098,7 @@ const Exhibitors = () => {
 
                 <div className="mt-auto">
                   <a
-                    href="/docs/WGIC26_SponsorshipBrochure_v3.pptx"
+                    href="/docs/WGIC26_SponsorshipBrochure.pptx"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"

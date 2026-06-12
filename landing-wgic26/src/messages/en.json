@@ -414,6 +414,15 @@
     "roomsCount": "Rooms",
     "tracksCount": "Tracks"
   },
+  "programSpeakersPage": {
+    "title": "Speakers",
+    "description": "Meet the experts, researchers and professionals who will share their knowledge at WGIC26.",
+    "noSpeakers": "No speakers available yet.",
+    "moreInfo": "More info",
+    "lessInfo": "Less info",
+    "linkedin": "LinkedIn",
+    "speakersCount": "Speakers"
+  },
   "programSpecialIssuesPage": {
     "title": "Special Issues",
     "description": "Selected congress contributions will be considered for publication in high-impact journals.",

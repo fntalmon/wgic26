@@ -414,6 +414,15 @@
     "roomsCount": "Sales",
     "tracksCount": "Tracks"
   },
+  "programSpeakersPage": {
+    "title": "Speakers",
+    "description": "Coneix els experts, investigadors i professionals que compartiran el seu coneixement al WGIC26.",
+    "noSpeakers": "Encara no hi ha speakers disponibles.",
+    "moreInfo": "Mes info",
+    "lessInfo": "Menys info",
+    "linkedin": "LinkedIn",
+    "speakersCount": "Speakers"
+  },
   "programSpecialIssuesPage": {
     "title": "Edicions especials",
     "description": "Les contribucions més destacades del congrés podran ser considerades per a publicació en revistes d'alt impacte.",
