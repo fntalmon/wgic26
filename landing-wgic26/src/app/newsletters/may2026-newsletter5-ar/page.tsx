@@ -1,5 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
+import NewsletterFooter from "@/components/NewsletterFooter";
 
 const May2026Newsletter5Arabic = () => {
   return (
@@ -160,8 +161,10 @@ const May2026Newsletter5Arabic = () => {
               ةيرابخإلا ةرشنلا يف كرتشا
             </Link>
           </div>
+        
+          <NewsletterFooter language="ar" />
         </div>
-      </section>
+        </section>
     </div>
   );
 };

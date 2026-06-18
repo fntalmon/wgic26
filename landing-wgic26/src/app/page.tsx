@@ -3,6 +3,7 @@
 import Countdown from "@/components/Countdown";
 import { MapPin, CheckCircle, AlertCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
@@ -11,6 +12,7 @@ export default function Home() {
   const t = useTranslations("home");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [consent, setConsent] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState<"success" | "error" | null>(
@@ -54,6 +56,12 @@ export default function Home() {
       setIsSubmitting(false);
       return;
     }
+    if (!consent) {
+      setMessage(t("newsletterConsentError"));
+      setMessageType("error");
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       const response = await fetch("/api/newsletter", {
@@ -71,6 +79,7 @@ export default function Home() {
         setMessageType("success");
         setEmail("");
         setPhone("");
+        setConsent(false);
       } else {
         setMessage(data.error || t("newsletterError"));
         setMessageType("error");
@@ -365,7 +374,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    src="/img/logos/eixverd.png"
+                    src="/img/logos/eixverd.svg"
                     alt="Eixverd"
                     width={330}
                     height={230}
@@ -581,7 +590,7 @@ export default function Home() {
               className="flex flex-col xl:flex-row gap-8 w-full 2xl:w-1/2 xl:w-2/3"
               onSubmit={handleNewsletterSubmit}
             >
-              <div className="flex flex-col gap-2 flex-1">
+              <div className="flex flex-col gap-4 flex-1">
                 <div className="flex flex-col gap-4">
                   <input
                     type="email"
@@ -604,6 +613,30 @@ export default function Home() {
                     disabled={isSubmitting}
                   />
                 </div>
+
+                {/* Consent checkbox */}
+                <label className="flex items-start gap-3 text-sm text-mortar cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={consent}
+                    onChange={(e) => setConsent(e.target.checked)}
+                    disabled={isSubmitting}
+                    className="mt-1 h-4 w-4 rounded border-mortar text-cactus focus:ring-cactus"
+                  />
+                  <span className="leading-snug">
+                    {t.rich("newsletterPrivacyNotice", {
+                      privacyLink: (chunks) => (
+                        <Link
+                          href="/privacy"
+                          className="underline hover:text-cactus"
+                        >
+                          {chunks}
+                        </Link>
+                      ),
+                    })}
+                  </span>
+                </label>
+
                 {message && (
                   <div
                     className={`inline-flex items-center gap-2 text-sm ${messageType === "success" ? "bg-emerald-50 text-emerald-800 border border-emerald-200" : "bg-red-50 text-red-800 border border-red-200"} px-3 py-2 rounded-md`}

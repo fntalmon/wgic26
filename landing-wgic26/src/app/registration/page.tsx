@@ -1,5 +1,6 @@
 import PageHeader from "@/components/PageHeader";
-import { FileText, ExternalLink } from "lucide-react";
+import RegistrationConsent from "./RegistrationConsent";
+import { FileText } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 const Registration = async () => {
@@ -62,27 +63,32 @@ const Registration = async () => {
 
           <div
             id="registration"
-            className="border border-white/20 rounded-lg p-8"
+            className="border border-white/20 rounded-lg p-8 flex flex-col gap-6"
           >
-            <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-4">
+            <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-2">
               {t("platformTitle")}
             </h2>
-            <p className="text-white/80 leading-relaxed text-justify mb-6">
+            <p className="text-white/80 leading-relaxed text-justify">
               {t("platformDescription")}
             </p>
-            <div className="text-center">
-              <a
-                href="https://panel.helice.app/w/wgic26/214760/registration?preview=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-md bg-yellow-600 hover:bg-yellow-500 text-black px-8 py-3 font-medium transition-colors"
-              >
-                {t("platformButton")} <ExternalLink className="w-4 h-4" />
-              </a>
-              <p className="mt-4 text-sm text-white/70 text-center">
-                {t("platformInvoiceNote")}
-              </p>
-            </div>
+            <p className="text-sm text-white/70">
+              {t("platformInvoiceNote")}
+            </p>
+
+            <RegistrationConsent
+              heliceUrl="https://panel.helice.app/w/wgic26/214760/registration?preview=1"
+              labels={{
+                legalNoticeTitle: t("legalNoticeTitle"),
+                legalNoticeIntro: t("legalNoticeIntro"),
+                legalNoticeHeliceNote: t("legalNoticeHeliceNote"),
+                checkboxMandatory: t("checkboxMandatory"),
+                checkboxOptional: t("checkboxOptional"),
+                checkboxRequiredError: t("checkboxRequiredError"),
+                rightsNote: t("rightsNote"),
+                continueButton: t("continueButton"),
+                privacyPolicy: t("privacyPolicy"),
+              }}
+            />
           </div>
 
           {/* Key Dates  viejo*
@@ -185,6 +191,13 @@ const Registration = async () => {
                   <a href="mailto:wgic2026.economics@udl.cat">
                     wgic2026.economics@udl.cat
                   </a>
+                </strong>
+              </p>
+
+              <p className="mb-3">
+                {t("notes.invoiceFallback")}{" "}
+                <strong>
+                  <a href="mailto:inquiry@wgic26.org">inquiry@wgic26.org</a>
                 </strong>
               </p>
 {/*

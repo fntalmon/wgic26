@@ -66,6 +66,9 @@
     "newsletterPhoneValidation": "Por favor, ingresa un numero de telefono valido.",
     "newsletterSuccess": "Gracias por suscribirte a nuestro boletin!",
     "newsletterError": "Ha ocurrido un error, por favor intenta nuevamente.",
+    "newsletterConsentLabel": "Acepto recibir comunicaciones electronicas, newsletters e informacion sobre WGIC26 segun la Politica de Privacidad.",
+    "newsletterConsentError": "Debes aceptar la Politica de Privacidad para suscribirte.",
+    "newsletterPrivacyNotice": "Al suscribirte, aceptas que tratemos tus datos conforme a la {privacyLink}. Responsable: Društvo WGIN. Encargado: Universitat de Lleida.",
     "elitePartners": "Socios Elite",
     "gardenBigExhibitors": "Expositores Garden Big",
     "gardenMediumExhibitors": "Expositores Garden Medium",
@@ -79,7 +82,6 @@
     "title": "Congreso Mundial de Infraestructura Verde 2026 Barcelona-Lleida",
     "legal": "Legal",
     "privacyPolicy": "Politica de privacidad",
-    "terms": "Terminos y condiciones",
     "contact": "Contacto",
     "copyright": "WGIC 2026 - Todos los derechos reservados",
     "another": "Otra",
@@ -292,10 +294,20 @@
       "student": "El estudiantado a tiempo completo (sin incluir postdoctorado) debe aportar prueba de matricula a tiempo completo (copia de carnet estudiantil vigente o carta de la institucion o direccion del programa).",
       "certificate": "Todas las personas participantes recibiran un certificado de asistencia.",
       "proceedings": "Para incluir el articulo en el programa del congreso y en las actas, al menos una persona autora debe registrarse antes de la fecha limite de inscripcion.",
-      "invoice": "Si necesitas factura, envia un correo a"
+      "invoice": "Si necesitas factura, envia un correo a",
+      "invoiceFallback": "Si tienes algun problema para contactar con esta direccion, puedes escribir a"
     },
     "cancellationTitle": "Cancelacion y reembolso",
-    "cancellationBody": "Despues del deposito bancario, no es posible realizar reembolsos."
+    "cancellationBody": "Despues del deposito bancario, no es posible realizar reembolsos.",
+    "privacyPolicy": "Politica de Privacidad",
+    "legalNoticeTitle": "Informacion sobre proteccion de datos",
+    "legalNoticeIntro": "La inscripcion se gestiona a traves de nuestra plataforma externa Helice. Antes de continuar, asegurate de haber leido y aceptado lo siguiente:",
+    "legalNoticeHeliceNote": "Los siguientes consentimientos tambien deben configurarse en el formulario de Helice, ya que es alli donde se recogen los datos personales.",
+    "checkboxMandatory": "Acepto la Politica de Privacidad para la gestion de mi inscripcion al evento (Obligatoria).",
+    "checkboxOptional": "Deseo recibir comunicaciones electronicas, novedades, newsletters e informacion comercial relacionada con WGIC26 y futuras actividades (Opcional).",
+    "checkboxRequiredError": "Debes aceptar la Politica de Privacidad para continuar con el registro.",
+    "rightsNote": "Puedes ejercer tus derechos de acceso, rectificacion, supresion y limitacion escribiendo a las entidades indicadas en la Politica de Privacidad.",
+    "continueButton": "Continuar al formulario de Helice"
   },
   "speakersPage": {
     "title": "Se un Orador",
@@ -372,9 +384,47 @@
   },
   "legalPages": {
     "privacyTitle": "Politica de privacidad",
-    "termsTitle": "Terminos y condiciones",
     "comingSoon": "Proximamente",
-    "contactEmail": "hola@wgic26.barcelona"
+    "contactEmail": "hola@wgic26.barcelona",
+    "lastUpdated": "Ultima actualizacion",
+    "privacyIntro": "En cumplimiento del Reglamento (UE) 2016/679 (RGPD), se informa a los usuarios y participantes del World Green Infrastructure Congress 2026 (WGIC26) sobre el tratamiento de sus datos personales.",
+    "controllerTitle": "1. Responsables del tratamiento",
+    "controllerLabel": "Responsable Principal (Data Controller)",
+    "controllerName": "Društvo WGIN",
+    "controllerAddress": "Trata 31, 4220 Škofja Loka, Eslovenia",
+    "controllerVat": "NIF SI84998911",
+    "processorLabel": "Encargado del Tratamiento (Data Processor)",
+    "processorName": "UNIVERSITAT DE LLEIDA",
+    "processorAddress": "Pl. Víctor Siurana 1, 25003 Lleida, España",
+    "processorVat": "NIF Q7550001G",
+    "processingAgreement": "Ambos organismos actuan bajo un contrato de encargo de tratamiento de datos conforme al articulo 28 del RGPD para la correcta organizacion, difusion y soporte tecnico del congreso.",
+    "purposesTitle": "2. Finalidad del tratamiento",
+    "purposesIntro": "Tratamos la informacion facilitada por las personas interesadas para:",
+    "purposeRegistration": "Gestionar la inscripcion, asistencia, facturacion y control de accesos al evento WGIC26.",
+    "purposeAgenda": "Coordinar las agendas, ponencias (calls for papers/speakers) y actividades comerciales o de promocion del congreso.",
+    "purposeCommunications": "Enviar newsletters y comunicaciones electronicas relacionadas con el evento.",
+    "retentionTitle": "3. Plazo de conservacion",
+    "retentionText": "Los datos personales proporcionados se conservaran mientras se mantenga la relacion con el evento, durante los plazos legales para atender posibles responsabilidades y hasta que el interesado solicite su supresion.",
+    "legalBasisTitle": "4. Legitimacion",
+    "legalBasisText": "La base legal es el consentimiento del usuario al registrarse en el formulario, enviar un resumen (abstract) o suscribirse a nuestros boletines informativos.",
+    "rightsTitle": "5. Derechos",
+    "rightsText": "Cualquier persona tiene derecho a obtener confirmacion sobre si estamos tratando sus datos personales. Los interesados pueden ejercer sus derechos de acceso, rectificacion, supresion, limitacion, oposicion y portabilidad enviando una comunicacion por escrito a las direcciones postales de Društvo WGIN o de la Universitat de Lleida especificadas anteriormente, o enviando un email a",
+    "rightsEmail": "wgic2026.economics@udl.cat",
+    "shortNoticeTitle": "Informacion basica sobre proteccion de datos",
+    "shortNoticeIntro": "Informacion basica sobre proteccion de datos:",
+    "shortNoticeController": "Responsable: Društvo WGIN (Trata 31, 4220 Škofja Loka, Eslovenia).",
+    "shortNoticeProcessor": "Encargado del Tratamiento: Universitat de Lleida (Pl. Víctor Siurana 1, 25003 Lleida, España).",
+    "shortNoticePurpose": "Finalidad: Gestion de la inscripcion al congreso WGIC26, envio de comunicaciones informativas, novedades del evento y gestion de actividades asociadas.",
+    "shortNoticeLegalBasis": "Legitimacion: Consentimiento del interesado al suscribirse o registrarse.",
+    "shortNoticeRecipients": "Destinatarios: No se cederaan datos a terceros salvo obligacion legal o necesidad estricta para la ejecucion del evento.",
+    "shortNoticeRights": "Derechos: Puede acceder, rectificar, limitar y suprimir sus datos, asi como ejercer otros derechos dirigiendose por escrito a las direcciones de las entidades responsables.",
+    "shortNoticeMoreInfo": "Informacion adicional: Puede consultar la politica de privacidad completa en nuestro sitio web.",
+    "registrationNoticeTitle": "Formulario de registro web",
+    "registrationNoticeIntro": "Informacion sobre Proteccion de Datos: Društvo WGIN (Responsable) y la Universitat de Lleida (Encargado del Tratamiento) trataran sus datos para gestionar su inscripcion, asistencia, facturacion y participacion en el congreso WGIC26. Para el envio de comunicaciones posteriores, por favor, marque las siguientes casillas segun sus preferencias:",
+    "checkboxMandatory": "Acepto la Politica de Privacidad para la gestion de mi inscripcion al evento (Obligatoria para registrarse).",
+    "checkboxOptional": "Deseo recibir comunicaciones electronicas, novedades, newsletters e informacion comercial relacionada con el congreso WGIC26 y futuras actividades de las entidades organizadoras (Opcional).",
+    "rightsNote": "Puede ejercer sus derechos de acceso, rectificacion, supresion y limitacion escribiendo a las direcciones de las entidades indicadas en la Politica de Privacidad.",
+    "readMore": "Ver Politica de Privacidad completa"
   },
   "travelPage": {
     "title": "Viaje",
@@ -588,10 +638,13 @@
   "workshopsPage": {
     "title": "Talleres",
     "description": "Sesiones interactivas sobre temas clave de WGIC26",
-    "img1Alt": "Espacio de talleres en Barcelona",
+    "img1Alt": "Espacio de taller en Barcelona",
     "img2Alt": "Instalaciones de la Universidad de Lleida",
     "p1": "WGIC26 incluira talleres tematicos en paralelo a las sesiones de presentacion oral durante los dias uno y dos.",
     "thematicTitle": "Talleres tematicos",
+    "expandHint": "Haz clic en cada taller para ver mas detalles",
+    "seeMore": "Ver mas",
+    "seeLess": "Ver menos",
     "day4Title": "Dia 4: Talleres de innovacion en la Universidad de Lleida",
     "day4Description": "Se ha previsto un cuarto dia adicional centrado especificamente en innovacion e investigacion dentro del sector de infraestructura verde.",
     "tableHeaders": {
@@ -613,18 +666,182 @@
     },
     "comingSoonTitle": "Informacion detallada proximamente",
     "comingSoonBody": "La informacion detallada sobre los talleres de innovacion e investigacion en Lleida y su inscripcion se publicara proximamente.",
+    "labels": {
+      "leadership": "Liderazgo",
+      "workingGroup": "Grupo de trabajo",
+      "why": "Por que?",
+      "mainObjective": "Objetivo principal",
+      "specificObjectives": "Objetivos especificos",
+      "caseStudies": "Ejemplos / Casos de estudio",
+      "proposal": "Que proponemos para el taller",
+      "keynoteSpeaker": "Ponente principal destacado en WGIC26",
+      "goals": "Objetivos",
+      "expectedOutcomes": "Resultados esperados"
+    },
     "cards": {
       "globalSouth": {
-        "title": "Infraestructura verde vs Sur Global",
-        "description": "Abordar el reto de construir ciudades resilientes, saludables y justas en el Sur Global."
+        "title": "Global Minds. Alianzas de investigacion del Sur Global en infraestructura verde",
+        "description": "Pasar de la transferencia de conocimiento del Norte a una alianza genuina con el Sur Global, el co-diseno y la produccion compartida de conocimiento sobre infraestructura verde y soluciones basadas en la naturaleza.",
+        "leadership": "Bert Belmans – University of Antwerp",
+        "workingGroup": [
+          "Francesca Mosca (University of Genoa, Italy)",
+          "Elaise Gabriel (Federal University of Santa Maria, Brazil)",
+          "Rutineia Tassi (Federal University of Santa Maria, Brazil)",
+          "Fabiana Pimentel (Federal University of Santa Maria, Brazil)",
+          "Aline Vilela (Ares - Eficiencia Energetica e Sustentabilidade, Brazil)",
+          "Kamal Passi (Central Public Works Department, India)",
+          "Irfan Haider Khan (Central Public Works Department, India)",
+          "Manika Goel (School of Planning and Architecture, New Delhi and Guru Gobind Singh Indraprastha University, India)",
+          "Jack Omondi (CIDE Group & Kenyatta University, Kenya)",
+          "Andrea Castro (Nfinite, Colombia)",
+          "Luowen Lyu (University of Technology, Australia)",
+          "Anouk De Bock (University of Antwerp, Belgium)",
+          "Lotte Carron (University of Antwerp, Belgium)"
+        ],
+        "why": "La crisis climatica y los interconectados desafios de sostenibilidad a los que nos enfrentamos hoy afectan a todas las naciones, aunque con impactos y responsabilidades profundamente desiguales. Los paises del Sur Global a menudo enfrentan las consecuencias mas graves al tiempo que poseen sistemas de conocimiento invaluables, enfoques innovadores y soluciones especificas para cada contexto que son esenciales para afrontar nuestros desafios planetarios compartidos. Este tema estara dedicado a explorar como podemos pasar de ver al Sur Global principalmente como receptor de la experiencia del Norte Global a adoptar una colaboracion genuina caracterizada por el aprendizaje mutuo, la co-creacion de conocimiento y la distribucion equitativa de beneficios.",
+        "mainObjective": "Fomentar una colaboracion genuinamente equitativa entre investigadores, profesionales y profesionales emergentes del Norte Global y el Sur Global en el campo de la GI y las NbS, superando la transferencia acritica de marcos del Norte Global para abrazar el co-diseno, el aprendizaje mutuo y la produccion compartida de conocimiento. Documentar y amplificar los enfoques innovadores de GI y NbS desarrollados en contextos del Sur Global con recursos limitados que estan practicamente ausentes en la literatura convencional.",
+        "specificObjectives": [
+          "Establecer un marco operativo para la colaboracion equitativa Norte-Sur en GI fundamentada en el co-diseno, el analisis explicito del poder, la sensibilidad al contexto, los sistemas hibridos de conocimiento y el fortalecimiento mutuo de capacidades.",
+          "Co-producir un manifiesto en WGIC26 en Barcelona que abogue por un cambio estructural en la forma en que el conocimiento sobre GI se produce, publica y reconoce a nivel mundial."
+        ],
+        "caseStudies": [
+          {
+            "title": "Caso de estudio 1 — Experiencia verde a nivel de calle en Lucknow, India",
+            "body": "Se aplicaron analisis de pixeles verdes a la altura de la vista, observacion conductual y encuestas estructuradas de percepcion en calles urbanas contrastadas de Lucknow, India, para evaluar el arbolado como infraestructura urbana experimentada mas que como cobertura arborea estadistica. Los hallazgos demostraron que la calidad de la experiencia verde a nivel de calle importa mas que la cobertura de dosel cuantitativa por si sola, con ambientes sombreados y visualmente cerrados que muestran una actividad peatonal significativamente mayor. El marco es escalable y transferible a otras ciudades en rapida urbanizacion del Sur Global y del Norte Global.",
+            "id": "lucknow"
+          },
+          {
+            "title": "Caso de estudio 2 — Regeneracion comunitaria liderada por soluciones basadas en la naturaleza (Latinoamerica)",
+            "body": "Proyectos de Medellin, Sao Paulo, Buenos Aires y Chile demuestran como la GI puede funcionar como una respuesta multifuncional a crisis urbanas superpuestas en condiciones de escasez de recursos y desigualdad socioespacial. La efectividad de las NbS depende tanto de la apropiacion social, la participacion comunitaria y la adaptacion local como del desempeno tecnico. Las soluciones no pueden transferirse como modelos estandarizados desde el Norte Global.",
+            "id": "latin-america"
+          },
+          {
+            "title": "Caso de estudio 3 — Enverdecimiento vertical para asentamientos informales (Kibera, Kenia)",
+            "body": "Kibera, el asentamiento informal mas grande de Nairobi, alberga hasta 750 000 personas en 2,5 km2 en condiciones de extrema escasez de recursos, espacio criticamente limitado a nivel del suelo, estres termico intenso, inundaciones perennes y alta pobreza. Se demostro que muros verdes y cubiertas verdes de bajo costo elaborados con materiales locales reciclados proporcionan confort termico, capacidad de agricultura urbana y resiliencia ante inundaciones simultaneamente, sin exigir el escaso espacio en el suelo. Se identifico el uso de escuelas como puntos de anclaje para escalar las NbS como una estrategia particularmente importante, ya que los edificios escolares son reconocidos como bienes comunitarios compartidos y tienden a conservarse incluso durante episodios de destruccion deliberada. Kibera ilustra la innovacion bajo presion y la urgencia de una colaboracion interregional que aprenda del Sur Global en lugar de imponer soluciones del Norte Global.",
+            "id": "kibera"
+          },
+          {
+            "title": "Caso de estudio 4 — Teto Verde Favela, Rio de Janeiro",
+            "body": "Iniciativa socioambiental creada en 2014 en Benfica (Zona Norte de Rio). El proyecto transforma los techos en cubiertas verdes para mitigar el efecto de isla de calor urbana, mejorar la calidad del aire y hacer de la favela un lugar mas agradable para vivir.",
+            "link": "https://wikifavelas.com.br/index.php/Teto_Verde_Favela#Contato",
+            "id": "teto-verde"
+          }
+        ],
+        "proposal": "Una sesion participativa y abierta para co-producir el primer borrador completo del manifiesto sobre colaboracion equitativa en GI y NbS con una amplia audiencia internacional. La sesion se basa en el plan desarrollado durante el taller Global Minds en Amberes (mayo de 2026) y se estructurara en torno a seis ejes tematicos: (1) equidad del conocimiento y acceso a la informacion; (2) brechas de financiacion y apoyo a investigadores en etapa inicial de carrera; (3) incidencia politica y visibilizacion de las NbS ante los gobiernos; (4) empoderamiento comunitario y asentamientos informales; (5) educacion, fortalecimiento de capacidades e intercambio Norte-Sur; (6) alianzas estrategicas Norte-Sur y centros CEP activos. La sesion dara como resultado un conjunto acordado de compromisos que se publicaran como el Manifiesto del Sur Global de WGIN-CEP. Tras la sesion de co-produccion, el manifiesto se publicara a traves de los canales de WGIN-CEP y se compartira con los participantes, ponentes principales y la comunidad mas amplia de GI y NbS. El manifiesto abogara por un cambio estructural en la forma en que el conocimiento sobre GI se produce, publica, financia y reconoce a nivel mundial, con un enfoque especifico en la equidad, los asentamientos informales y el reconocimiento de la innovacion del Sur Global.",
+        "keynoteSpeaker": "El congreso contara con Dorothy Asuza Aseyo (Green Belt Movement), una voz lider en la interseccion entre la restauracion ecologica y la justicia social. El Green Belt Movement (GBM) demuestra como las soluciones basadas en la naturaleza pueden transformar tanto los paisajes como las comunidades: reforestacion a gran escala y restauracion de ecosistemas; empoderamiento de las mujeres mediante la accion ambiental; desarrollo de medios de vida sostenibles; educacion ambiental y movilizacion comunitaria; accion climatica con impacto tanto local como global.",
+        "leadershipName": "Bert Belmans",
+        "leadershipAffiliation": "University of Antwerp"
       },
       "health": {
-        "title": "Infraestructura verde vs salud y bienestar",
-        "description": "Explorar la conexion entre infraestructura verde y salud publica mediante soluciones basadas en la naturaleza."
+        "title": "Cerrando la brecha — La salud y el bienestar como corazon de la infraestructura verde",
+        "description": "Explorar como la infraestructura verde, desde bosques urbanos hasta techos y muros vivos, apoya la salud mental y fisica y ayuda a prevenir enfermedades no transmisibles.",
+        "leadership": "David Brasfield - World Green Infrastructure Network",
+        "workingGroup": [
+          "Silvia Sole Cases - University of Lleida",
+          "Laura Herrera Diez - University of Lleida",
+          "Elsa Punset - Punset Terraviva Foundation",
+          "Rocio Varela de Seijas Sapia - VASE arquitectos",
+          "Lucia Gomez Rodriguez - VASE arquitectos"
+        ],
+        "why": "Pueden nuestras ciudades realmente sanarnos? La World Green Infrastructure Network (WGIN) aboga por el uso optimo de la infraestructura verde para apoyar la salud y el bienestar de las personas y del planeta. Sin embargo, se reconoce una brecha en la atencion prestada a los beneficios especificos para la salud humana del enverdecimiento urbano. El World Green Infrastructure Congress 2026 (WGIC26) en Barcelona tiene como objetivo cerrar esta division entre la planificacion urbana y la salud publica. Exploramos como la 'infraestructura verde', desde bosques urbanos hasta techos y muros vivos, es un prerrequisito para el florecimiento mental y fisico y la prevencion de enfermedades no transmisibles (NCDs). La naturaleza en la ciudad actua como la medicina preventiva definitiva, reduciendo los niveles de cortisol, mejorando la calidad del aire, favoreciendo el microbioma humano y mitigando el calor extremo para crear entornos resilientes donde las personas pueden prosperar. Esta linea tematica fomentara la colaboracion interdisciplinaria y destacara areas clave de atencion: La ciencia de la conexion, examinar como la exposicion a la naturaleza reduce las enfermedades cronicas y mejora la salud mental; El diseno urbano como terapia, estrategias para transformar espacios 'grises' en 'paisajes terapeuticos' funcionales; Historias de exito, mostrar ciudades del mundo que lideran el camino hacia una sostenibilidad centrada en la salud; y un Llamado a la accion para la comunidad de la salud, mediante una colaboracion interdisciplinaria mas solida, podemos fomentar un mayor reconocimiento de la relevancia de la infraestructura verde integrada en los edificios en la investigacion, las politicas y la practica en salud.",
+        "goals": [
+          "Mejorar la salud y el bienestar humanos mediante la adopcion y el diseno optimos de infraestructura verde en areas urbanas.",
+          "Facilitar una mejor colaboracion entre la comunidad de practica de infraestructura verde y el sector de la salud.",
+          "Ofrecer ejemplos especificos, conceptos y elementos de diseno que puedan incorporarse en instalaciones de salud y desarrollos urbanos en Barcelona y en los municipios participantes de BIG4LIFE.",
+          "Mejorar la defensa de la infraestructura verde mediante una comprension mas profunda de los beneficios para la salud y el bienestar del contacto humano con la naturaleza.",
+          "Identificar las principales variables de medicion en este tipo de intervenciones."
+        ],
+        "caseStudies": [
+          {
+            "title": "Jardin terapeutico en el Instituto Catalan de Oncologia",
+            "link": "https://arquitopia.com/portfolio/reforma-del-patio-del-instituto-catalan-de-oncologia-ardi-platejat/",
+            "id": "catalan-oncology"
+          },
+          {
+            "title": "Jardin terapeutico en el Hospital de Sant Pau, Barcelona",
+            "link": "https://www.santpau.cat/en/comunic-actualitat/-/asset_publisher/0n2ILqhO4yy6/content/lhospital-de-sant-pau-estrena-jardins-terapeutics?_assetEntryId=803018",
+            "id": "sant-pau"
+          },
+          {
+            "title": "Jardines terapeuticos, Hospital 12 de Octubre",
+            "link": "https://vasearq.com/proyecto/jardines-terapeuticos-12-octubre/",
+            "id": "hospital-12-octubre"
+          },
+          {
+            "title": "Fundacion Juegaterapia: jardines terapeuticos en la azotea del Hospital La Paz, Gregorio y 12 de Octubre en Madrid y del Hospital La Fe en Valencia",
+            "link": "https://www.juegaterapia.org/proyectos-solidarios-cancer-infantil/el-jardin-de-mi-hospi-12-de-octubre/",
+            "id": "juegaterapia"
+          },
+          {
+            "title": "Bosque de Tres Roures, junto al Hospital de Olot",
+            "link": "https://hospiolot.com/lhospital-dolot-inaugura-el-bosc-dels-tres-roures/",
+            "id": "tres-roures"
+          },
+          {
+            "title": "Jardin terapeutico en el Hospital de Santa Creu i Sant Pau",
+            "link": "https://fundaciosantpau.cat/es/news/lhospital-estrena-jardins-terapeutics",
+            "id": "santa-creu"
+          },
+          {
+            "title": "Maggies Yorkshire Palliative Cancer Care Facility, Leeds, Reino Unido. Heatherwick Studio",
+            "link": "https://heatherwick.com/project/maggies/",
+            "id": "maggies-yorkshire"
+          },
+          {
+            "title": "Hospital de rehabilitacion en Basilea, Suiza. Herzog & de Meuron Architects",
+            "link": "https://www.herzogdemeuron.com/projects/165-rehab-clinic-for-neurorehabilitation-and-paraplegiology/",
+            "id": "rehab-basel"
+          }
+        ],
+        "leadershipName": "David Brasfield",
+        "leadershipAffiliation": "World Green Infrastructure Network"
       },
       "recovery": {
-        "title": "Infraestructura verde vs recuperacion postconflicto",
-        "description": "Examinar el papel de la infraestructura verde en la recuperacion de sociedades y lugares tras contextos de conflicto o desastre."
+        "title": "La infraestructura verde como infraestructura de recuperacion: recuperacion comunitaria, evaluacion de danos y reconstruccion resiliente",
+        "description": "Posicionar la infraestructura verde como un componente medible, invertible y listo para implementar de la recuperacion postconflicto y postdesastre.",
+        "leadership": "Oleksandra Strashok – Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; National University of Life and Environmental Sciences of Ukraine, Department of Phytodesign and Landscape Architecture; Ukrainian Association of Green Infrastructure; World Green Infrastructure Network",
+        "workingGroup": [
+          "David Brasfield – Norwegian Association for Green Infrastructure; World Green Infrastructure Network",
+          "Marta Weber – Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; Polish Green Roofs Association; World Green Infrastructure Network",
+          "Selim Bayraktar – Istanbul University-Cerrahpasa, Faculty of Forestry, Department of Landscape Architecture",
+          "Maria Gabriella Trovato – Norwegian University of Life Sciences; International Federation of Landscape Architects",
+          "Audrey Timm – International Association of Horticultural Producers",
+          "Zoe Avery – Associate Director of Design (Urban Planning), School of Architecture and Planning, University of Auckland; Director of The Urbanist; Chair of Design for Nature; Australasian Green Infrastructure Network; World Green Infrastructure Network"
+        ],
+        "why": "Las ciudades que se recuperan de conflictos y desastres enfrentan un desafio y una oportunidad comunes: no solo reconstruir lo perdido, sino utilizar los procesos de recuperacion para crear entornos urbanos mas seguros, resilientes, ambientalmente sostenibles y socialmente inclusivos mediante la integracion estrategica de infraestructura verde y gris. Los programas de recuperacion tradicionalmente se centran en la vivienda, el transporte, los sistemas energeticos y los servicios publicos. Sin embargo, los parques, bosques urbanos, arboles de calle, jardines privados, cubiertas verdes, espacios abiertos publicos y otras formas de GI rara vez se consideran activos esenciales de recuperacion a pesar de su contribucion comprobada a la salud publica, la adaptacion al clima, la restauracion de ecosistemas y el bienestar comunitario. La experiencia internacional demuestra que la GI puede servir como algo mas que un equipamiento ambiental. Puede funcionar como infraestructura de recuperacion al apoyar la cohesion social, facilitar la participacion comunitaria, mejorar los resultados de salud mental, restaurar los servicios ecosistemicos y reducir la vulnerabilidad climatica a largo plazo. Al mismo tiempo, persisten desafios significativos. Los danos a la GI rara vez se cuantifican, las perdidas de ecosistemas rara vez se incorporan a los marcos de compensacion y los mecanismos de financiacion para la recuperacion verde siguen siendo limitados. Los arquitectos paisajistas, planificadores y ecologos a menudo estan subrepresentados en las evaluaciones de danos y en los procesos de toma de decisiones sobre recuperacion. Este tema destacado explora como la GI puede convertirse en un componente medible, invertible y listo para implementar de la recuperacion postconflicto y postdesastre.",
+        "mainObjective": "Posicionar la GI como un componente estrategico de la recuperacion urbana y la construccion de resiliencia, capaz de generar beneficios sociales, ambientales y economicos a lo largo de los procesos de reconstruccion postconflicto y postdesastre.",
+        "specificObjectives": [
+          "Explorar experiencias internacionales en las que la GI contribuyo a la recuperacion y la resiliencia.",
+          "Debater como las perdidas de GI pueden reconocerse mejor dentro de las evaluaciones y procesos de planificacion de la recuperacion.",
+          "Investigar el papel de la participacion comunitaria en la configuracion de los resultados de la recuperacion.",
+          "Explorar el rol evolutivo de los arquitectos paisajistas en la gobernanza e implementacion de la recuperacion.",
+          "Identificar barreras y oportunidades para financiar iniciativas de recuperacion verde.",
+          "Co-producir recomendaciones para integrar la infraestructura verde en los marcos de recuperacion."
+        ],
+        "caseStudies": [
+          {
+            "title": "Caso de estudio 1 — Recuperacion y adaptacion lideradas por la comunidad en Nueva Zelanda",
+            "body": "Nueva Zelanda ofrece ejemplos internacionalmente reconocidos de planificacion de recuperacion y resiliencia centrada en la comunidad. Tras los terremotos de Christchurch, iniciativas como Greening the Rubble y Gap Filler transformaron terrenos vacios en espacios publicos temporales que apoyaron la recuperacion social, la participacion comunitaria y el place-making mucho antes de que se completara la reconstruccion permanente. Mas recientemente, las experiencias de las comunidades del Far North han demostrado como las comunidades locales, planificadores y tomadores de decisiones trabajan juntos para abordar los crecientes riesgos climaticos, incluida la retirada planificada, la planificacion de reubicacion y las estrategias de adaptacion basadas en la naturaleza. En conjunto, estos ejemplos ilustran como la participacion comunitaria puede dar forma a los resultados de la recuperacion y como la infraestructura verde puede apoyar tanto la recuperacion como la resiliencia a largo plazo.",
+            "link": "https://www.gehlpeople.com/projects/christchurch-redevelopment-plan/",
+            "id": "new-zealand"
+          },
+          {
+            "title": "Caso de estudio 2 — Evaluacion de danos de infraestructura verde y planificacion de la recuperacion en Ucrania",
+            "body": "La recuperacion de las ciudades ucranianas presenta una oportunidad unica para repensar el papel de la GI dentro de los marcos de reconstruccion. Aunque se ha avanzado significativamente en la evaluacion de danos en edificios e infraestructura tecnica, las metodologias para evaluar las perdidas de bosques urbanos, parques, arboles de calle y servicios ecosistemicos siguen siendo limitadas. Los enfoques emergentes basados en teledeteccion, valoracion de servicios ecosistemicos y analisis espacial ofrecen oportunidades para desarrollar metodos basados en evidencia que permitan evaluar los danos a la infraestructura verde y apoyar la planificacion de la recuperacion. El caso ucraniano pone de relieve la necesidad de enfoques practicos para cuantificar las perdidas de ecosistemas, priorizar las inversiones en recuperacion verde e integrar la resiliencia climatica en las estrategias de reconstruccion.",
+            "link": "https://www.gettyimages.com/editorial-images/news/event/kyiv-suburbs-begin-cleanup-and-commemorate-their-dead-after-war-shifts-away-from-capital/775803516",
+            "id": "ukraine"
+          }
+        ],
+        "proposal": "El taller se organizara como una sesion interactiva de World Cafe que combinara breves introducciones de expertos con discusiones moderadas en mesas redondas. Los participantes rotaran entre cuatro mesas de discusion tematicas, cada una liderada por un miembro del grupo de trabajo y apoyada por ejemplos practicos de los casos de estudio. El taller tiene como objetivo facilitar el dialogo entre investigadores, responsables politicos, profesionales, inversionistas y representantes comunitarios, generando al mismo tiempo recomendaciones practicas para integrar la infraestructura verde en los procesos de recuperacion.",
+        "expectedOutcomes": [
+          "Identificacion de las barreras y oportunidades clave para integrar la GI en los procesos de recuperacion.",
+          "Intercambio de experiencias internacionales de Nueva Zelanda, Ucrania y otros contextos de recuperacion.",
+          "Comprension compartida de como la participacion comunitaria, la arquitectura del paisaje y la GI contribuyen a una recuperacion resiliente.",
+          "Recomendaciones iniciales para mejorar el reconocimiento de la GI dentro de los marcos de planificacion, evaluacion y financiacion de la recuperacion.",
+          "Identificacion de areas prioritarias para futuras investigaciones, desarrollo de politicas y colaboracion internacional."
+        ],
+        "leadershipName": "Oleksandra Strashok",
+        "leadershipAffiliation": "Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; National University of Life and Environmental Sciences of Ukraine, Department of Phytodesign and Landscape Architecture; Ukrainian Association of Green Infrastructure; World Green Infrastructure Network"
       }
     }
   },

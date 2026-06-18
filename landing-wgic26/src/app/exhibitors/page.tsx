@@ -1913,7 +1913,7 @@ const Exhibitors = () => {
                   rel="noopener noreferrer"
                 >
                   <Image
-                    src="/img/logos/eixverd.png"
+                    src="/img/logos/eixverd.svg"
                     alt="Eixverd"
                     width={330}
                     height={230}

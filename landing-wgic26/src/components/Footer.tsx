@@ -28,12 +28,6 @@ const Footer = async () => {
                 >
                   {t("privacyPolicy")}
                 </Link>
-                <Link
-                  href="/terms"
-                  className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus"
-                >
-                  {t("terms")}
-                </Link>
               </div>
             </div>
             <div className="flex flex-col gap-6 items-start">

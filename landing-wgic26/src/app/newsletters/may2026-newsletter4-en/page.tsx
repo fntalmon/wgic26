@@ -1,5 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import Link from "next/link";
+import NewsletterFooter from "@/components/NewsletterFooter";
 
 const May2026Newsletter4English = () => {
   return (
@@ -219,8 +220,10 @@ const May2026Newsletter4English = () => {
               Subscribe to newsletter
             </Link>
           </div>
+        
+          <NewsletterFooter language="en" />
         </div>
-      </section>
+        </section>
     </div>
   );
 };
