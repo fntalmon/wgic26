@@ -71,7 +71,7 @@ interface SectionProps {
 }
 
 const Section = ({ icon: Icon, label, children }: SectionProps) => (
-    <div className="bg-white/[0.03] border border-white/10 rounded-lg p-4">
+    <div className="bg-white/[0.03] border border-white/10 rounded-lg p-3 sm:p-4">
         <div className="flex items-center gap-2 mb-3">
             <Icon size={16} className="text-potus" />
             <h4 className="text-xs uppercase text-potus font-medium tracking-wide">{label}</h4>
@@ -89,13 +89,13 @@ const BulletList = ({ items }: { items: string[] }) => (
 );
 
 const LeadershipCard = ({ name, affiliation, image }: { name: string; affiliation: string; image: string }) => (
-    <div className="flex items-start gap-4">
+    <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3 sm:gap-4 text-center sm:text-left">
         <div className="shrink-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
                 src={image}
                 alt={name}
-                className="w-20 h-20 rounded-full object-cover border-2 border-white/20"
+                className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-2 border-white/20"
             />
         </div>
         <div>
@@ -126,7 +126,7 @@ const Workshops = async () => {
                 description={t("description")}
                 section="program"
             />
-            <section className="w-full justify-start text-xs text-justify">
+            <section className="w-full justify-start text-sm sm:text-base text-left">
                 <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-12">
 
                     {/* Thematic Workshops */}
@@ -161,12 +161,12 @@ const Workshops = async () => {
                                         className="bg-white/5 border border-white/10 rounded-xl overflow-hidden data-[state=open]:bg-white/[0.07]"
                                     >
                                         {/* Trigger */}
-                                        <AccordionTrigger className="text-white hover:no-underline py-5 px-6 group">
-                                            <div className="flex items-center gap-4 text-left w-full">
-                                                <div className={`hidden sm:flex size-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${meta.gradient} border border-white/10 group-hover:border-white/30 transition-colors`}>
+                                        <AccordionTrigger className="text-white hover:no-underline px-4 py-4 sm:px-6 sm:py-5 group">
+                                            <div className="flex items-start sm:items-center gap-3 sm:gap-4 text-left w-full">
+                                                <div className={`flex size-10 sm:size-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${meta.gradient} border border-white/10 group-hover:border-white/30 transition-colors`}>
                                                     <WorkshopIcon size={22} className="text-white" />
                                                 </div>
-                                                <div className="flex flex-col gap-1 pr-4 flex-1">
+                                                <div className="flex flex-col gap-1 pr-2 sm:pr-4 flex-1">
                                                     <span className="text-lg font-semibold leading-snug">{ct("title")}</span>
                                                     <span className="text-sm text-white/70 font-normal leading-relaxed">{ct("description")}</span>
                                                 </div>
@@ -177,7 +177,7 @@ const Workshops = async () => {
                                         </AccordionTrigger>
 
                                         {/* Content */}
-                                        <AccordionContent className="text-white/80 text-sm leading-relaxed pb-6 px-6">
+                                        <AccordionContent className="text-white/80 text-sm leading-relaxed pb-6 px-4 sm:px-6">
                                             <div className="flex flex-col gap-6 pt-2">
 
                                                 {/* Two-column grid */}
@@ -252,7 +252,7 @@ const Workshops = async () => {
                                                                                 href={caseStudy.link}
                                                                                 target="_blank"
                                                                                 rel="noopener noreferrer"
-                                                                                className="text-potus hover:underline break-all text-xs mt-2 inline-block"
+                                                                                className="text-potus hover:underline break-words text-xs mt-2 inline-block"
                                                                             >
                                                                                 {caseStudy.link}
                                                                             </a>

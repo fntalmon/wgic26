@@ -41,7 +41,7 @@ const copy = {
     },
     organizedBy: "Organized by",
     sponsorsPartners: "Partners and Sponsors",
-    elitePartners: "Diamond Partners",
+    elitePartners: "Emerald Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -176,39 +176,39 @@ const copy = {
       },
       addons: [
         {
-          item: "Gala dinner naming rights",
+          item: "Derechos de nombramiento para la cena de gala",
           price: "20.000 €",
-          availability: "1 (Exclusive)",
+          availability: "1 (Exclusivo)",
         },
         {
-          item: "Official Congress App",
+          item: "Aplicación Oficial del Congreso",
           price: "10.000 €",
-          availability: "1 (Exclusive)",
+          availability: "1 (Exclusivo)",
         },
         {
-          item: "Lanyards and Badges",
+          item: "Lanyards y Credenciales",
           price: "8.000 €",
-          availability: "1 (Exclusive)",
+          availability: "1 (Exclusivo)",
         },
         {
-          item: "Coffee Break Sponsor (per day)",
+          item: "Patrocinador de Pausa para Café (por día)",
           price: "5.000 €",
-          availability: "4 available",
+          availability: "4 disponibles",
         },
         {
-          item: "Technical Visits (BCN or Lleida)",
+          item: "Visitas Técnicas (BCN o Lleida)",
           price: "6.000 €",
-          availability: "4 available",
+          availability: "4 disponibles",
         },
         {
-          item: "Full-page Ad in Proceedings",
+          item: "Anuncio de página completa en Actas",
           price: "2.000 €",
-          availability: "Unlimited",
+          availability: "Ilimitado",
         },
         {
-          item: "Produced Video Interview",
+          item: "Entrevista en Video Producida",
           price: "2.500 €",
-          availability: "10 spots",
+          availability: "10 espacios",
         },
       ],
       stands: {
@@ -272,10 +272,10 @@ const copy = {
   es: {
     pageTitle: "Socios y expositores - Oportunidades de patrocinio",
     pageDescription: "Muestra tu participación en el sector de infraestructuras verdes y asegura visibilidad y exposición ante una audiencia internacional en el World Green Infrastructure Congress 2026 en Barcelona y Lleida.",
-    partnerTitle: "Socios: Diamante, Esmeralda y Platino",
+    partnerTitle: "Partners: Diamond, Emerald & Platinum",
     partnerP1: "Si quieres liderar la presencia en WGIC26, elige entre Diamante, Esmeralda o Platino. Estos paquetes ofrecen la máxima visibilidad, espacios de ponencia, naming rights y stand.",
     partnerP2: "Diamante es exclusivo e incluye la máxima exposición de marca, naming del auditorio principal y un stand premium. Los beneficios de Esmeralda y Platino se pueden ajustar con el equipo organizador.",
-    sponsorTitle: "Patrocinador: Oro",
+    sponsorTitle: "Sponsor: Gold",
     sponsorP1: "Si buscas una presencia digital y participar de forma accesible en WGIC26, el paquete Oro ofrece visibilidad de marca, promoción digital y acceso al congreso.",
     exhibitorsTitle: "El Jardín WGIC – Stands de exposición",
     exhibitorsP1: "Muestra tu empresa en el corazón del congreso. Todos los almuerzos y coffee breaks se realizan en la Zona Expo. Elige entre Jardín Grande, Jardín Medio o Flor/Pod.",
@@ -300,17 +300,17 @@ const copy = {
       attendees: "Listado de asistentes",
       totalCost: "Coste total",
     },
-    sponsorsPartners: "Patrocinadores y socios",
+    sponsorsPartners: "Partners and Sponsors",
     venueTitle: "La sede",
-    organizedBy: "Organizado por",
-    elitePartners: "Socios Diamante",
-    gardenBigExhibitors: "Expositores Jardín Grande",
-    gardenMediumExhibitors: "Expositores Jardín Medio",
-    flowerExhibitors: "Expositores Flor",
-    mediaPartners: "Socios de medios",
-    withTheSupportOf: "Con el apoyo de",
-    comingSoon: "Próximamente",
-    eventPartners: "Socios del evento",
+    organizedBy: "Organized by",
+    elitePartners: "Emerald Partners",
+    gardenBigExhibitors: "Large Garden Exhibitors",
+    gardenMediumExhibitors: "Medium Garden Exhibitors",
+    flowerExhibitors: "Flower Exhibitors",
+    mediaPartners: "Media Partners",
+    withTheSupportOf: "With the Support of",
+    comingSoon: "Coming soon",
+    eventPartners: "Event Partners",
     venueP1: "La sede de WGIC26 es ideal para crear el entorno de networking que patrocinadores, asistentes y expositores esperan de un evento global. El Centro de Convenciones Internacional de Barcelona es un espacio icónico ubicado en Sant Martí, dentro del 22@ de Poblenou.",
     venueP2: "El CCIB cuenta con dos edificios de gran valor arquitectónico: el Centro de Convenciones y el Auditorio Forum CCIB, unidos por una pasarela subterránea. Con una superficie de 100.000 m2 y capacidad de hasta 15.000 asistentes, destaca por su amplitud, luz natural y versatilidad.",
     venueP3: "El CCIB tiene una ubicación privilegiada a 500 metros de la playa, a 6 km del centro histórico y a 22 km del aeropuerto, con excelentes conexiones por carretera y transporte público.",
@@ -389,17 +389,17 @@ const copy = {
       },
       contactCta: "Contactar con el equipo de patrocinio",
       formOptions: {
-        diamante: "Diamante",
-        esmeralda: "Esmeralda",
-        platino: "Platino",
-        oro: "Oro",
-        jardinGrande: "Jardín Grande",
-        jardinMedio: "Jardín Medio",
-        flor: "Flor",
+        diamante: "Diamond",
+        esmeralda: "Emerald",
+        platino: "Platinum",
+        oro: "Gold",
+        jardinGrande: "Large Garden",
+        jardinMedio: "Medium Garden",
+        flor: "Flower",
       },
       packages: {
         diamante: {
-          name: "Diamante",
+          name: "Diamond",
           investment: "30.000 €",
           passes: "15",
           gala: "10",
@@ -408,7 +408,7 @@ const copy = {
           stand: "Premium 4×4m",
         },
         esmeralda: {
-          name: "Esmeralda",
+          name: "Emerald",
           investment: "15.000 €",
           passes: "10",
           gala: "5",
@@ -417,7 +417,7 @@ const copy = {
           stand: "Mediano 3×3m",
         },
         platino: {
-          name: "Platino",
+          name: "Platinum",
           investment: "10.000 €",
           passes: "5",
           gala: "2",
@@ -426,7 +426,7 @@ const copy = {
           stand: "Compacto 2×2m (pod)",
         },
         oro: {
-          name: "Oro",
+          name: "Gold",
           investment: "6.000 €",
           passes: "2",
           gala: "1",
@@ -437,44 +437,44 @@ const copy = {
       },
       addons: [
         {
-          item: "Derechos de nombramiento para la cena de gala",
+          item: "Drets de nomenament per al sopar de gala",
           price: "20.000 €",
-          availability: "1 (Exclusivo)",
+          availability: "1 (Exclusiu)",
         },
         {
-          item: "Aplicación Oficial del Congreso",
+          item: "Aplicació Oficial del Congrés",
           price: "10.000 €",
-          availability: "1 (Exclusivo)",
+          availability: "1 (Exclusiu)",
         },
         {
-          item: "Lanyards y Credenciales",
+          item: "Lanyards i Credencials",
           price: "8.000 €",
-          availability: "1 (Exclusivo)",
+          availability: "1 (Exclusiu)",
         },
         {
-          item: "Patrocinador de Pausa para Café (por día)",
+          item: "Patrocinador de Pausa per a Cafè (per dia)",
           price: "5.000 €",
           availability: "4 disponibles",
         },
         {
-          item: "Visitas Técnicas (BCN o Lleida)",
+          item: "Visites Tècniques (BCN o Lleida)",
           price: "6.000 €",
           availability: "4 disponibles",
         },
         {
-          item: "Anuncio de página completa en Actas",
+          item: "Anunci de pàgina completa en Actes",
           price: "2.000 €",
-          availability: "Ilimitado",
+          availability: "Ilimitat",
         },
         {
-          item: "Entrevista en Video Producida",
+          item: "Entrevista en Vídeo Produïda",
           price: "2.500 €",
-          availability: "10 espacios",
+          availability: "10 espais",
         },
       ],
       stands: {
         jardinGrande: {
-          name: "Jardín GRANDE",
+          name: "Large Garden",
           category: "Stand Premium",
           target: "Líderes del mercado que buscan máxima visibilidad",
           space: "4m × 4m",
@@ -493,7 +493,7 @@ const copy = {
           notes: "Mobiliario final por definir. La empresa puede actualizar equipo básico o señalización directamente con el lugar y organizadores.",
         },
         jardinMedio: {
-          name: "Jardín MEDIO",
+          name: "Medium Garden",
           category: "Stand Estándar",
           target: "Líderes del mercado que buscan máxima visibilidad",
           space: "3m × 3m",
@@ -512,7 +512,7 @@ const copy = {
           notes: "Mobiliario final por definir. La empresa puede actualizar equipo básico o señalización directamente con el lugar y organizadores.",
         },
         flor: {
-          name: "Flor",
+          name: "Flower",
           category: "Stand Compacto / Pod",
           target: "Startups y empresas especializadas. Opción eficiente y rentable.",
           space: "Estación de trabajo compacta (concepto por definir)",
@@ -533,10 +533,10 @@ const copy = {
   ca: {
     pageTitle: "Socis i expositors - Oportunitats de patrocini",
     pageDescription: "Mostra la teva participació en el sector d'infraestructures verdes i assegura visibilitat i exposició davant una audiència internacional al World Green Infrastructure Congress 2026 a Barcelona i Lleida.",
-    partnerTitle: "Socis: Diamant, Esmeralda i Platí",
+    partnerTitle: "Partners: Diamond, Emerald & Platinum",
     partnerP1: "Si vols liderar la presència a WGIC26, tria entre Diamant, Esmeralda o Platí. Aquests paquets ofereixen la màxima visibilitat, espais de ponència, naming rights i stand.",
     partnerP2: "Diamant és exclusiu i inclou la màxima exposició de marca, naming de l'auditori principal i un stand premium. Els beneficis d'Esmeralda i Platí es poden ajustar amb l'equip organitzador.",
-    sponsorTitle: "Patrocinador: Or",
+    sponsorTitle: "Sponsor: Gold",
     sponsorP1: "Si busques una presència digital i participar de forma accessible a WGIC26, el paquet Or ofereix visibilitat de marca, promoció digital i accés al congrés.",
     exhibitorsTitle: "El Jardí WGIC – Stands d'exposició",
     exhibitorsP1: "Mostra la teva empresa al cor del congrés. Tots els dinars i coffee breaks es fan a la Zona Expo. Tria entre Jardí Gran, Jardí Mitjà o Flor/Pod.",
@@ -561,17 +561,17 @@ const copy = {
       attendees: "Llistat d'assistents",
       totalCost: "Cost total",
     },
-    sponsorsPartners: "Patrocinadors i socis",
+    sponsorsPartners: "Partners and Sponsors",
     venueTitle: "La seu",
-    organizedBy: "Organitzat per",
-    elitePartners: "Socis Diamant",
-    gardenBigExhibitors: "Expositors Jardí Gran",
-    gardenMediumExhibitors: "Expositors Jardí Mitjà",
-    flowerExhibitors: "Expositors Flor",
-    mediaPartners: "Socis de mitjans",
-    withTheSupportOf: "Amb el suport de",
-    comingSoon: "Pròximament",
-    eventPartners: "Socis de l'esdeveniment",
+    organizedBy: "Organized by",
+    elitePartners: "Emerald Partners",
+    gardenBigExhibitors: "Large Garden Exhibitors",
+    gardenMediumExhibitors: "Medium Garden Exhibitors",
+    flowerExhibitors: "Flower Exhibitors",
+    mediaPartners: "Media Partners",
+    withTheSupportOf: "With the Support of",
+    comingSoon: "Coming soon",
+    eventPartners: "Event Partners",
     venueP1: "La seu de WGIC26 és ideal per crear l'entorn de networking que patrocinadors, assistents i expositors esperen d'un esdeveniment global. El Centre de Convencions Internacional de Barcelona és un espai icònic ubicat a Sant Martí, dins del 22@ de Poblenou.",
     venueP2: "El CCIB compta amb dos edificis de gran valor arquitectònic: el Centre de Convencions i l'Auditori Fòrum CCIB, units per una passarel·la subterrània. Amb una superfície de 100.000 m2 i capacitat de fins a 15.000 assistents, destaca per la seva amplitud, llum natural i versatilitat.",
     venueP3: "El CCIB té una ubicació privilegiada a 500 metres de la platja, a 6 km del centre històric i a 22 km de l'aeroport, amb excel·lents connexions per carretera i transport públic.",
@@ -650,17 +650,17 @@ const copy = {
       },
       contactCta: "Contactar amb l'equip de patrocini",
       formOptions: {
-        diamante: "Diamant",
-        esmeralda: "Esmeralda",
-        platino: "Platí",
-        oro: "Or",
-        jardinGrande: "Jardí Gran",
-        jardinMedio: "Jardí Mitjà",
-        flor: "Flor",
+        diamante: "Diamond",
+        esmeralda: "Emerald",
+        platino: "Platinum",
+        oro: "Gold",
+        jardinGrande: "Large Garden",
+        jardinMedio: "Medium Garden",
+        flor: "Flower",
       },
       packages: {
         diamante: {
-          name: "Diamant",
+          name: "Diamond",
           investment: "30.000 €",
           passes: "15",
           gala: "10",
@@ -678,7 +678,7 @@ const copy = {
           stand: "Mitjà 3×3m",
         },
         platino: {
-          name: "Platí",
+          name: "Platinum",
           investment: "10.000 €",
           passes: "5",
           gala: "2",
@@ -687,7 +687,7 @@ const copy = {
           stand: "Compacte 2×2m (pod)",
         },
         oro: {
-          name: "Or",
+          name: "Gold",
           investment: "6.000 €",
           passes: "2",
           gala: "1",
@@ -698,44 +698,44 @@ const copy = {
       },
       addons: [
         {
-          item: "Drets de nomenament per al sopar de gala",
+          item: "Gala dinner naming rights",
           price: "20.000 €",
-          availability: "1 (Exclusiu)",
+          availability: "1 (Exclusive)",
         },
         {
-          item: "Aplicació Oficial del Congrés",
+          item: "Official Congress App",
           price: "10.000 €",
-          availability: "1 (Exclusiu)",
+          availability: "1 (Exclusive)",
         },
         {
-          item: "Lanyards i Credencials",
+          item: "Lanyards and Badges",
           price: "8.000 €",
-          availability: "1 (Exclusiu)",
+          availability: "1 (Exclusive)",
         },
         {
-          item: "Patrocinador de Pausa per a Cafè (per dia)",
+          item: "Coffee Break Sponsor (per day)",
           price: "5.000 €",
-          availability: "4 disponibles",
+          availability: "4 available",
         },
         {
-          item: "Visites Tècniques (BCN o Lleida)",
+          item: "Technical Visits (BCN or Lleida)",
           price: "6.000 €",
-          availability: "4 disponibles",
+          availability: "4 available",
         },
         {
-          item: "Anunci de pàgina completa en Actes",
+          item: "Full-page Ad in Proceedings",
           price: "2.000 €",
-          availability: "Ilimitat",
+          availability: "Unlimited",
         },
         {
-          item: "Entrevista en Vídeo Produïda",
+          item: "Produced Video Interview",
           price: "2.500 €",
-          availability: "10 espais",
+          availability: "10 spots",
         },
       ],
       stands: {
         jardinGrande: {
-          name: "Jardí GRAN",
+          name: "Large Garden",
           category: "Stand Premium",
           target: "Líders del mercat que busquen màxima visibilitat",
           space: "4m × 4m",
@@ -754,7 +754,7 @@ const copy = {
           notes: "Mobiliari final per definir. L'empresa pot actualitzar equip bàsic o senyalització directament amb el lloc i organitzadors.",
         },
         jardinMedio: {
-          name: "Jardí MITJÀ",
+          name: "Medium Garden",
           category: "Stand Estàndard",
           target: "Líders del mercat que busquen màxima visibilitat",
           space: "3m × 3m",
@@ -993,7 +993,7 @@ const Exhibitors = () => {
 
                   <tr className="bg-cactus/20">
                     <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
-                      Elite
+                      Emerald
                     </th>
                     <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base">
                       Global
@@ -1688,25 +1688,25 @@ const Exhibitors = () => {
                       className="bg-black/40 border border-white/20 rounded-lg px-4 py-3 text-white text-base focus:border-potus outline-none transition-all"
                     >
                       <option value="">{t.cards.selectParticipation}</option>
-                      <option value="Diamante">
+                      <option value="Diamond">
                         {t.sponsorship.packages.diamante.name}
                       </option>
-                      <option value="Esmeralda">
+                      <option value="Emerald">
                         {t.sponsorship.packages.esmeralda.name}
                       </option>
-                      <option value="Platino">
+                      <option value="Platinum">
                         {t.sponsorship.packages.platino.name}
                       </option>
-                      <option value="Oro">
+                      <option value="Gold">
                         {t.sponsorship.packages.oro.name}
                       </option>
-                      <option value="Jardín Grande">
+                      <option value="Large Garden">
                         {t.sponsorship.stands.jardinGrande.name}
                       </option>
-                      <option value="Jardín Medio">
+                      <option value="Medium Garden">
                         {t.sponsorship.stands.jardinMedio.name}
                       </option>
-                      <option value="Flor">
+                      <option value="Flower">
                         {t.sponsorship.stands.flor.name}
                       </option>
                     </select>
