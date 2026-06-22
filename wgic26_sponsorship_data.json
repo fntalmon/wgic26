@@ -21,6 +21,17 @@
       "email": "sponsorship@wgic26.org"
     }
   },
+  "dateValues": {
+    "abstracts": "15 de diciembre de 2025 - 31 de mayo de 2026",
+    "acceptance": "Antes del 15 de mayo de 2026",
+    "firstDraft": "Antes del 15 de junio de 2026",
+    "revision": "Antes del 31 de julio de 2026",
+    "finalPaper": "Antes del 31 de agosto de 2026",
+    "finalProgram": "31 de julio de 2026",
+    "registrationOpen": "Antes del 30 de septiembre de 2026",
+    "partners": "Antes del 30 de septiembre de 2026",
+    "sponsors": "Antes del 30 de septiembre de 2026"
+  },
   "context": {
     "challenges": [
       "Cambio climático",

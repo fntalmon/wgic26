@@ -18,9 +18,9 @@ const Congress = async () => {
   const videoId = videoIds[locale] || videoIds.en;
 
   const keyDates = [
-    { who: t("dates.authors"), what: t("dates.firstDraft"), when: registration("paperSubmissionDeadline") },
-    { who: t("dates.scientificCommittee"), what: t("dates.acceptance"), when: registration("acceptanceDecision") },
-    { who: t("dates.authors"), what: t("dates.r1Draft"), when: registration("r1Draft") },
+    { who: t("dates.authors"), what: t("dates.abstracts"), when: registration("abstracts") },
+    { who: t("dates.scientificCommittee"), what: t("dates.acceptance"), when: registration("acceptance") },
+    { who: t("dates.authors"), what: t("dates.firstDraft"), when: registration("firstDraft") },
     { who: t("dates.scientificCommittee"), what: t("dates.revisionR2"), when: registration("revision") },
     { who: t("dates.authors"), what: t("dates.finalPaper"), when: registration("finalPaper") },
     { who: t("dates.organizingCommittee"), what: t("dates.finalProgram"), when: registration("finalProgram") },
