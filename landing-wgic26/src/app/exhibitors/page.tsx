@@ -12,12 +12,12 @@ const copy = {
     pageTitle: "Partners & Exhibitors — Sponsorship opportunities",
     pageDescription: "Showcase your participation in the green infrastructures sector and ensure visibility and exposure to an international audience at our World Green Infrastructure Congress 2026 in Barcelona and Lleida.",
     partnerTitle: "Partners: Diamond, Emerald & Platinum",
-    partnerP1: "If you want to take a leading role in WGIC26, choose among Diamante, Esmeralda or Platino. These packages offer the highest visibility, speaking opportunities, naming rights and exhibition space.",
-    partnerP2: "Diamante is exclusive and includes maximum brand exposure, main auditorium naming rights and a premium stand. Esmeralda and Platino benefits can be tailored with the organizing team.",
+    partnerP1: "If you want to take a leading role in WGIC26, choose among Diamond, Emerald or Platinum. These packages offer the highest visibility, speaking opportunities, naming rights and exhibition space.",
+    partnerP2: "Diamond is exclusive and includes maximum brand exposure, main auditorium naming rights and a premium stand. Emerald and Platinum benefits can be tailored with the organizing team.",
     sponsorTitle: "Sponsor: Gold",
-    sponsorP1: "If you are looking for a digital-only presence and entry-level participation in WGIC26, the Oro package offers brand visibility, digital promotion and congress access.",
+    sponsorP1: "If you are looking for a digital-only presence and entry-level participation in WGIC26, the Gold package offers brand visibility, digital promotion and congress access.",
     exhibitorsTitle: "The WGIC Garden – Exhibition stands",
-    exhibitorsP1: "Showcase your company in the heart of the congress. All lunches and coffee breaks take place in the Expo Zone. Choose among Jardín Grande, Jardín Medio or Flor/Pod stands.",
+    exhibitorsP1: "Showcase your company in the heart of the congress. All lunches and coffee breaks take place in the Expo Zone. Choose among Large Garden, Medium Garden or Flower/Pod stands.",
     benefits: "Benefits",
     table: {
       partners: "Partners",
@@ -176,39 +176,39 @@ const copy = {
       },
       addons: [
         {
-          item: "Derechos de nombramiento para la cena de gala",
+          item: "Gala dinner naming rights",
           price: "20.000 €",
-          availability: "1 (Exclusivo)",
+          availability: "1 (Exclusive)",
         },
         {
-          item: "Aplicación Oficial del Congreso",
+          item: "Official Congress App",
           price: "10.000 €",
-          availability: "1 (Exclusivo)",
+          availability: "1 (Exclusive)",
         },
         {
-          item: "Lanyards y Credenciales",
+          item: "Lanyards and Badges",
           price: "8.000 €",
-          availability: "1 (Exclusivo)",
+          availability: "1 (Exclusive)",
         },
         {
-          item: "Patrocinador de Pausa para Café (por día)",
+          item: "Coffee Break Sponsor (per day)",
           price: "5.000 €",
-          availability: "4 disponibles",
+          availability: "4 available",
         },
         {
-          item: "Visitas Técnicas (BCN o Lleida)",
+          item: "Technical Visits (BCN or Lleida)",
           price: "6.000 €",
-          availability: "4 disponibles",
+          availability: "4 available",
         },
         {
-          item: "Anuncio de página completa en Actas",
+          item: "Full-page Ad in Proceedings",
           price: "2.000 €",
-          availability: "Ilimitado",
+          availability: "Unlimited",
         },
         {
-          item: "Entrevista en Video Producida",
+          item: "Produced Video Interview",
           price: "2.500 €",
-          availability: "10 espacios",
+          availability: "10 spots",
         },
       ],
       stands: {
@@ -273,12 +273,12 @@ const copy = {
     pageTitle: "Socios y expositores - Oportunidades de patrocinio",
     pageDescription: "Muestra tu participación en el sector de infraestructuras verdes y asegura visibilidad y exposición ante una audiencia internacional en el World Green Infrastructure Congress 2026 en Barcelona y Lleida.",
     partnerTitle: "Partners: Diamond, Emerald & Platinum",
-    partnerP1: "Si quieres liderar la presencia en WGIC26, elige entre Diamante, Esmeralda o Platino. Estos paquetes ofrecen la máxima visibilidad, espacios de ponencia, naming rights y stand.",
-    partnerP2: "Diamante es exclusivo e incluye la máxima exposición de marca, naming del auditorio principal y un stand premium. Los beneficios de Esmeralda y Platino se pueden ajustar con el equipo organizador.",
+    partnerP1: "Si quieres liderar la presencia en WGIC26, elige entre Diamond, Emerald o Platinum. Estos paquetes ofrecen la máxima visibilidad, espacios de ponencia, naming rights y stand.",
+    partnerP2: "Diamond es exclusivo e incluye la máxima exposición de marca, naming del auditorio principal y un stand premium. Los beneficios de Emerald y Platinum se pueden ajustar con el equipo organizador.",
     sponsorTitle: "Sponsor: Gold",
-    sponsorP1: "Si buscas una presencia digital y participar de forma accesible en WGIC26, el paquete Oro ofrece visibilidad de marca, promoción digital y acceso al congreso.",
-    exhibitorsTitle: "El Jardín WGIC – Stands de exposición",
-    exhibitorsP1: "Muestra tu empresa en el corazón del congreso. Todos los almuerzos y coffee breaks se realizan en la Zona Expo. Elige entre Jardín Grande, Jardín Medio o Flor/Pod.",
+    sponsorP1: "Si buscas una presencia digital y participar de forma accesible en WGIC26, el paquete Gold ofrece visibilidad de marca, promoción digital y acceso al congreso.",
+    exhibitorsTitle: "The WGIC Garden – Stands de exposición",
+    exhibitorsP1: "Muestra tu empresa en el corazón del congreso. Todos los almuerzos y coffee breaks se realizan en la Zona Expo. Elige entre Large Garden, Medium Garden o Flower/Pod.",
     benefits: "Beneficios",
     table: {
       partners: "Socios",
@@ -370,7 +370,7 @@ const copy = {
         availability: "Disponibilidad",
       },
       exclusivoBadge: "Exclusivo",
-      standsTitle: "El Jardín WGIC",
+      standsTitle: "The WGIC Garden",
       standsConcept: "Solución llave en mano para una presencia fluida y de alto impacto. La Zona Expo es el corazón del congreso. Todos los almuerzos y coffee breaks se realizan dentro de la Zona Expo.",
       standsLabels: {
         space: "Espacio",
@@ -437,39 +437,39 @@ const copy = {
       },
       addons: [
         {
-          item: "Drets de nomenament per al sopar de gala",
+          item: "Derechos de nombramiento para la cena de gala",
           price: "20.000 €",
-          availability: "1 (Exclusiu)",
+          availability: "1 (Exclusivo)",
         },
         {
-          item: "Aplicació Oficial del Congrés",
+          item: "Aplicación Oficial del Congreso",
           price: "10.000 €",
-          availability: "1 (Exclusiu)",
+          availability: "1 (Exclusivo)",
         },
         {
-          item: "Lanyards i Credencials",
+          item: "Lanyards y Credenciales",
           price: "8.000 €",
-          availability: "1 (Exclusiu)",
+          availability: "1 (Exclusivo)",
         },
         {
-          item: "Patrocinador de Pausa per a Cafè (per dia)",
+          item: "Patrocinador de Pausa para Café (por día)",
           price: "5.000 €",
           availability: "4 disponibles",
         },
         {
-          item: "Visites Tècniques (BCN o Lleida)",
+          item: "Visitas Técnicas (BCN o Lleida)",
           price: "6.000 €",
           availability: "4 disponibles",
         },
         {
-          item: "Anunci de pàgina completa en Actes",
+          item: "Anuncio de página completa en Actas",
           price: "2.000 €",
-          availability: "Ilimitat",
+          availability: "Ilimitado",
         },
         {
-          item: "Entrevista en Vídeo Produïda",
+          item: "Entrevista en Video Producida",
           price: "2.500 €",
-          availability: "10 espais",
+          availability: "10 espacios",
         },
       ],
       stands: {
@@ -534,12 +534,12 @@ const copy = {
     pageTitle: "Socis i expositors - Oportunitats de patrocini",
     pageDescription: "Mostra la teva participació en el sector d'infraestructures verdes i assegura visibilitat i exposició davant una audiència internacional al World Green Infrastructure Congress 2026 a Barcelona i Lleida.",
     partnerTitle: "Partners: Diamond, Emerald & Platinum",
-    partnerP1: "Si vols liderar la presència a WGIC26, tria entre Diamant, Esmeralda o Platí. Aquests paquets ofereixen la màxima visibilitat, espais de ponència, naming rights i stand.",
-    partnerP2: "Diamant és exclusiu i inclou la màxima exposició de marca, naming de l'auditori principal i un stand premium. Els beneficis d'Esmeralda i Platí es poden ajustar amb l'equip organitzador.",
+    partnerP1: "Si vols liderar la presència a WGIC26, tria entre Diamond, Emerald o Platinum. Aquests paquets ofereixen la màxima visibilitat, espais de ponència, naming rights i stand.",
+    partnerP2: "Diamond és exclusiu i inclou la màxima exposició de marca, naming de l'auditori principal i un stand premium. Els beneficis d'Emerald i Platinum es poden ajustar amb l'equip organitzador.",
     sponsorTitle: "Sponsor: Gold",
-    sponsorP1: "Si busques una presència digital i participar de forma accessible a WGIC26, el paquet Or ofereix visibilitat de marca, promoció digital i accés al congrés.",
-    exhibitorsTitle: "El Jardí WGIC – Stands d'exposició",
-    exhibitorsP1: "Mostra la teva empresa al cor del congrés. Tots els dinars i coffee breaks es fan a la Zona Expo. Tria entre Jardí Gran, Jardí Mitjà o Flor/Pod.",
+    sponsorP1: "Si busques una presència digital i participar de forma accessible a WGIC26, el paquet Gold ofereix visibilitat de marca, promoció digital i accés al congrés.",
+    exhibitorsTitle: "The WGIC Garden – Stands d'exposició",
+    exhibitorsP1: "Mostra la teva empresa al cor del congrés. Tots els dinars i coffee breaks es fan a la Zona Expo. Tria entre Large Garden, Medium Garden o Flower/Pod.",
     benefits: "Beneficis",
     table: {
       partners: "Socis",
@@ -631,7 +631,7 @@ const copy = {
         availability: "Disponibilitat",
       },
       exclusivoBadge: "Exclusiu",
-      standsTitle: "El Jardí WGIC",
+      standsTitle: "The WGIC Garden",
       standsConcept: "Solució clau en mà per a una presència fluida i d'alt impacte. La Zona Expo és el cor del congrés. Tots els dinars i coffee breaks es fan dins de la Zona Expo.",
       standsLabels: {
         space: "Espai",
@@ -669,7 +669,7 @@ const copy = {
           stand: "Premium 4×4m",
         },
         esmeralda: {
-          name: "Esmeralda",
+          name: "Emerald",
           investment: "15.000 €",
           passes: "10",
           gala: "5",
@@ -698,39 +698,39 @@ const copy = {
       },
       addons: [
         {
-          item: "Gala dinner naming rights",
+          item: "Drets de nomenament per al sopar de gala",
           price: "20.000 €",
-          availability: "1 (Exclusive)",
+          availability: "1 (Exclusiu)",
         },
         {
-          item: "Official Congress App",
+          item: "Aplicació Oficial del Congrés",
           price: "10.000 €",
-          availability: "1 (Exclusive)",
+          availability: "1 (Exclusiu)",
         },
         {
-          item: "Lanyards and Badges",
+          item: "Lanyards i Credencials",
           price: "8.000 €",
-          availability: "1 (Exclusive)",
+          availability: "1 (Exclusiu)",
         },
         {
-          item: "Coffee Break Sponsor (per day)",
+          item: "Patrocinador de Pausa per a Cafè (per dia)",
           price: "5.000 €",
-          availability: "4 available",
+          availability: "4 disponibles",
         },
         {
-          item: "Technical Visits (BCN or Lleida)",
+          item: "Visites Tècniques (BCN o Lleida)",
           price: "6.000 €",
-          availability: "4 available",
+          availability: "4 disponibles",
         },
         {
-          item: "Full-page Ad in Proceedings",
+          item: "Anunci de pàgina completa en Actes",
           price: "2.000 €",
-          availability: "Unlimited",
+          availability: "Ilimitat",
         },
         {
-          item: "Produced Video Interview",
+          item: "Entrevista en Vídeo Produïda",
           price: "2.500 €",
-          availability: "10 spots",
+          availability: "10 espais",
         },
       ],
       stands: {
@@ -773,7 +773,7 @@ const copy = {
           notes: "Mobiliari final per definir. L'empresa pot actualitzar equip bàsic o senyalització directament amb el lloc i organitzadors.",
         },
         flor: {
-          name: "Flor",
+          name: "Flower",
           category: "Stand Compacte / Pod",
           target: "Startups i empreses especialitzades. Opció eficient i rendible.",
           space: "Estació de treball compacta (concepte per definir)",
@@ -2108,6 +2108,34 @@ const Exhibitors = () => {
                                   width={320}
                                   height={240}
                                   className="h-14 w-auto object-contain"
+                                />
+                              </a>
+
+                              <a
+                                href="https://www.gremijardineria.cat/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <Image
+                                  src="/img/logos/gremi.png"
+                                  alt="Gremi de Jardineria de Catalunya"
+                                  width={300}
+                                  height={220}
+                                  className="h-20 w-auto object-contain"
+                                />
+                              </a>
+
+                              <a
+                                href="https://vilesflorides.cat/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <Image
+                                  src="/img/logos/VilesFlorides.png"
+                                  alt="Viles Florides"
+                                  width={300}
+                                  height={220}
+                                  className="h-20 w-auto object-contain"
                                 />
                               </a>
                 

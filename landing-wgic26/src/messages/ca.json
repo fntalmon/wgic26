@@ -351,10 +351,10 @@
       "s2": "Llegeix les instruccions amb cura.",
       "s3": "Selecciona un tema principal on encaixi el teu treball.",
       "s4": "Prepara l'article (màxim 5 pàgines).",
-      "s5": "Envia el teu article en format .doc abans del 30 d'abril de 2026.",
-      "s6": "Rebràs la decisió i revisió R1 abans del 15 de maig de 2026.",
-      "s7": "Lliura l'article revisat (R1) abans del 12 de juny de 2026 i R2 abans del 30 de juny de 2026.",
-      "s8": "Lliura l'article final abans del 30 de juliol de 2026."
+      "s5": "Envia el teu article en format .doc abans del 31 de maig de 2026.",
+      "s6": "Rebràs la notificació d'acceptació i la primera revisió abans del 15 de juny de 2026.",
+      "s7": "Els autors fan canvis i tornen a pujar l'article revisat abans del 31 de juliol de 2026. Segona revisió.",
+      "s8": "Els autors pugen l'article final abans del 31 d'agost de 2026."
     },
     "typologiesTitle": "Tipologies de presentació",
     "tableHeaders": {

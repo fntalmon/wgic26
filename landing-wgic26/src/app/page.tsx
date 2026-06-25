@@ -568,6 +568,34 @@ export default function Home() {
                     className="h-14 w-auto object-contain"
                   />
                 </a>
+
+                <a
+                  href="https://www.gremijardineria.cat/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/gremi.png"
+                    alt="Gremi de Jardineria de Catalunya"
+                    width={300}
+                    height={220}
+                    className="h-20 w-auto object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://vilesflorides.cat/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/VilesFlorides.png"
+                    alt="Viles Florides"
+                    width={300}
+                    height={220}
+                    className="h-20 w-auto object-contain"
+                  />
+                </a>
               </div>
             </div>
           </div>

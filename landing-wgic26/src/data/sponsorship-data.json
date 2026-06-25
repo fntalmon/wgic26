@@ -4,7 +4,7 @@
     "language": "es",
     "last_updated": "2026-06-12",
     "source": "WGIC26_SponsorshipBrochure_v0.4 ESPAÑOL.pptx",
-    "notes_for_dev": "Reemplazar contenido existente de pagina de patrocinios. Nuevos paquetes: Diamante/Esmeralda/Platino/Oro. Nuevos complementos y stands El Jardin WGIC."
+    "notes_for_dev": "Reemplazar contenido existente de pagina de patrocinios. Nuevos paquetes: Diamond/Emerald/Platinum/Gold. Nuevos complementos y stands El Jardin WGIC."
   },
   "event": {
     "name": "WGIC26 – Congreso Mundial de Infraestructura Verde",
@@ -105,7 +105,7 @@
   },
   "sponsor_packages": [
     {
-      "tier": "Diamante",
+      "tier": "Diamond",
       "badge": "EXCLUSIVO",
       "investment_eur": 30000,
       "full_passes": 15,
@@ -120,7 +120,7 @@
       }
     },
     {
-      "tier": "Esmeralda",
+      "tier": "Emerald",
       "badge": null,
       "investment_eur": 15000,
       "full_passes": 10,
@@ -135,7 +135,7 @@
       }
     },
     {
-      "tier": "Platino",
+      "tier": "Platinum",
       "badge": null,
       "investment_eur": 10000,
       "full_passes": 5,
@@ -150,7 +150,7 @@
       }
     },
     {
-      "tier": "Oro",
+      "tier": "Gold",
       "badge": null,
       "investment_eur": 6000,
       "full_passes": 2,
@@ -203,7 +203,7 @@
     }
   ],
   "exhibition": {
-    "zone_name": "El Jardín WGIC",
+    "zone_name": "The WGIC Garden",
     "concept": "Solución llave en mano para presencia fluida y de alto impacto. Zona Expo = corazón del congreso. Todos los almuerzos y coffee breaks se realizan dentro de la Zona Expo.",
     "logistics_note": "Todos los stands son gestionados y producidos directamente por los proveedores oficiales del lugar. Experiencia profesional, unificada y sin complicaciones.",
     "stands": [
