@@ -158,7 +158,7 @@ const May2026Newsletter5French = () => {
               >
                 LinkedIn
               </a>
-              ,{" "}
+              et{' '}
               <a
                 href="https://www.instagram.com/wgic2026/"
                 target="_blank"
@@ -166,25 +166,7 @@ const May2026Newsletter5French = () => {
                 className="text-potus"
               >
                 Instagram
-              </a>
-              ,{" "}
-              <a
-                href="https://web.facebook.com/WGIC2026"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-potus"
-              >
-                Facebook
-              </a>{" "}
-              et{" "}
-              <a
-                href="https://x.com/WGIC2026"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-potus"
-              >
-                Twitter
-              </a>{" "}
+              </a>{' '}
               pour rester informé des dernières annonces, intervenants, mises à jour du programme et
               jalons clés menant au congrès.
             </p>

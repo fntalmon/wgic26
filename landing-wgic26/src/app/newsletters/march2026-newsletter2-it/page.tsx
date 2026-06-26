@@ -194,7 +194,7 @@ const March2026Newsletter2ItalianNewsletter = () => {
               >
                 LinkedIn
               </a>
-              ,{" "}
+              e{' '}
               <a
                 href="https://www.instagram.com/wgic2026/"
                 target="_blank"
@@ -202,25 +202,7 @@ const March2026Newsletter2ItalianNewsletter = () => {
                 className="text-potus"
               >
                 Instagram
-              </a>
-              ,{" "}
-              <a
-                href="https://web.facebook.com/WGIC2026"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-potus"
-              >
-                Facebook
-              </a>
-              , e{" "}
-              <a
-                href="https://x.com/WGIC2026"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-potus"
-              >
-                Twitter
-              </a>{" "}
+              </a>{' '}
               per rimanere aggiornato con gli ultimi annunci, relatori,
               aggiornamenti del programma e traguardi chiave che portano al
               congresso.

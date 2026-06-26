@@ -43,4 +43,4 @@ Don't miss this extended opportunity to share your work with the global green in
 
 ---
 
-*Follow WGIC26 on [LinkedIn](https://www.linkedin.com/company/wgic), [Instagram](https://www.instagram.com/wgic2026/), [Facebook](https://web.facebook.com/WGIC2026), and [Twitter/X](https://x.com/WGIC2026) for the latest updates.*
+*Follow WGIC26 on [LinkedIn](https://www.linkedin.com/company/wgic) and [Instagram](https://www.instagram.com/wgic2026/) for the latest updates.*

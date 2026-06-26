@@ -170,7 +170,7 @@ const May2026Newsletter4Italian = () => {
               >
                 LinkedIn
               </a>
-              ,{" "}
+              e{' '}
               <a
                 href="https://www.instagram.com/wgic2026/"
                 target="_blank"
@@ -178,25 +178,7 @@ const May2026Newsletter4Italian = () => {
                 className="text-potus"
               >
                 Instagram
-              </a>
-              ,{" "}
-              <a
-                href="https://web.facebook.com/WGIC2026"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-potus"
-              >
-                Facebook
-              </a>{" "}
-              e{" "}
-              <a
-                href="https://x.com/WGIC2026"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-potus"
-              >
-                Twitter
-              </a>{" "}
+              </a>{' '}
               per rimanere aggiornato con gli ultimi annunci, relatori, aggiornamenti sul programma e
               traguardi chiave in vista del congresso.
             </p>

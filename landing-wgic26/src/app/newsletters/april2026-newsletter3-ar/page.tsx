@@ -143,25 +143,7 @@ const April2026Newsletter3ArabicNewsletter = () => {
                 className="text-potus"
               >
                 Instagram
-              </a>
-              و{" "}
-              <a
-                href="https://web.facebook.com/WGIC2026"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-potus"
-              >
-                Facebook
-              </a>
-              و{" "}
-              <a
-                href="https://x.com/WGIC2026"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-potus"
-              >
-                Twitter
-              </a>{" "}
+              </a>{' '}
               للبقاء على اطلاع بأحدث الإعلانات والمتحدثين وتحديثات البرنامج
               والمعالم الرئيسية التي تسبق المؤتمر.
             </p>

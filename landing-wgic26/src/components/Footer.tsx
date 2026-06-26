@@ -45,13 +45,6 @@ const Footer = async () => {
                 >
                   Instagram
                 </a>
-                                <a
-                  href="https://www.facebook.com/WGIC2026"
-                  className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus"
-                >
-                  Facebook
-                </a>
-
               </div>
             </div>
           </div>
