@@ -1,5 +1,6 @@
 import PageHeader from "@/components/PageHeader";
-import { FileText } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, FileText } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 const Speakers = async () => {
@@ -71,6 +72,16 @@ const Speakers = async () => {
             <p>{t("bodyP1")}</p>
             <p>{t("bodyP2")}</p>
             <p>{t("calloutP3")}</p>
+            <Button asChild variant="yellow">
+              <a
+                href="https://panel.helice.app/w/wgic26/214757/papers"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ExternalLink size={18} />
+                {t("managePapersButton")}
+              </a>
+            </Button>
 
             {/* Key Dates */}
             <div className="bg-monstera/20 border border-monstera/30 rounded-lg  w-full">
