@@ -8,8 +8,19 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 
+const keynoteSpeakerSlots = [
+  { id: "speaker1", image: "/img/speakers/marcosros.jpg" },
+  { id: "speaker2", image: "/img/speakers/salvadorrueda.jpg" },
+  { id: "speaker3", image: "/img/speakers/vicenteguallart.jpg" },
+  { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },
+  { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
+  { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
+  { id: "speaker7", image: "/img/speakers/dorothyaseyo.jpg" },
+] as const;
+
 export default function Home() {
   const t = useTranslations("home");
+  const tKeynoteSpeakers = useTranslations("keyNoteSpeakersPage");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [consent, setConsent] = useState(false);
@@ -175,6 +186,41 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section id="keynote-speakers" className="flex flex-col gap-6 mt-16">
+        <div className="text-xs uppercase w-full border-b border-white/50 py-2 tracking-wider">
+          {t("keynoteSpeakersTitle")}
+        </div>
+
+        <p className="text-white/80 text-sm sm:text-base max-w-3xl">
+          {t("keynoteSpeakersIntro")}
+        </p>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 sm:gap-6">
+          {keynoteSpeakerSlots.map((speaker) => {
+            const name = tKeynoteSpeakers(`speakers.${speaker.id}.name`);
+
+            return (
+              <div
+                key={speaker.id}
+                className="flex flex-col items-center text-center gap-3"
+              >
+                <Image
+                  src={speaker.image}
+                  alt={name}
+                  width={120}
+                  height={120}
+                  className="rounded-full object-cover w-20 h-20 sm:w-28 sm:h-28"
+                />
+                <span className="text-xs sm:text-sm font-medium">{name}</span>
+              </div>
+            );
+          })}
+        </div>
+
+        <Link href="/key-note-speakers" className="self-start mt-2">
+          <Button variant="default">{t("viewAllSpeakers")}</Button>
+        </Link>
       </section>
       <section id="locations" className="flex flex-col gap-6">
         <div className="text-xs uppercase w-full border-b border-white/50 py-2 tracking-wider">

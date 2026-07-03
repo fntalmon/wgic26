@@ -14,9 +14,9 @@
     "workshops": "Talleres",
     "technicalVisits": "Visitas tecnicas",
     "wginAwards": "Premios WGIN",
-    "keyNoteSpeakers": "Oradores",
+    "keyNoteSpeakers": "Ponentes",
     "newsletters": "Boletines",
-    "speakers": "Oradores",
+    "speakers": "Ponentes",
     "registration": "Registro",
     "partnersExhibitors": "Expositores",
     "planYourStay": "Tu estancia",
@@ -31,7 +31,7 @@
     "startingIn": "Comienza en:"
   },
   "home": {
-    "callForSpeakers": "Llamado a oradores",
+    "callForSpeakers": "Llamado a ponentes",
     "heroTitle": "Congreso Mundial de Infraestructura Verde 2026 Barcelona-Lleida",
     "date1": "27-29 oct 2026",
     "date1Location": "CCIB - Parc del Forum, Barcelona (Espana)",
@@ -76,7 +76,10 @@
     "mediaPartners": "Media Partners",
     "withTheSupportOf": "With the Support of",
     "comingSoon": "Coming soon",
-    "eventPartners": "Event Partners"
+    "eventPartners": "Event Partners",
+    "keynoteSpeakersTitle": "Ponentes magistrales",
+    "keynoteSpeakersIntro": "Conoce las voces lideres en infraestructura verde confirmadas para WGIC26.",
+    "viewAllSpeakers": "Ver todos los ponentes magistrales"
   },
   "footer": {
     "title": "Congreso Mundial de Infraestructura Verde 2026 Barcelona-Lleida",
@@ -108,7 +111,7 @@
     "wgicP1": "Bajo el lema Infraestructura verde para un futuro urbano mas saludable y seguro, la duodecima edicion de WGIC quiere destacar como la infraestructura verde contribuye directa e indirectamente a mejorar la calidad de vida y la salud de las personas.",
     "wgicP2": "La infraestructura verde contribuye a la mitigacion y adaptacion al cambio climatico. WGIC2026 busca alinear sus objetivos con los retos del cambio climatico global. Estos retos no solo implican comprender como la infraestructura verde urbana puede ayudar a mitigar impactos climaticos en la sociedad, sino tambien determinar como debe adaptarse a un contexto ambiental cada vez mas cambiante.",
     "wgicP3": "La region mediterranea, caracterizada por altas temperaturas y bajas precipitaciones, ofrece ejemplos destacados de innovacion en renaturalizacion urbana. Estas estrategias aportan inspiracion para futuros disenos de infraestructura verde urbana a nivel mundial. El firme compromiso de Barcelona con la sostenibilidad, junto con su patrimonio cultural y politicas urbanas de vanguardia, refuerza su posicion como una de las ciudades mas inspiradoras del mundo.",
-    "wgicP4": "WGIC26 esta organizado por la Universidad de Lleida (Cataluña, Espana) y tiene un formato de dos dias de congreso en Barcelona con cinco sesiones paralelas, mas de diez oradores magistrales del sector de infraestructura verde y dos talleres sobre temas de gran actualidad. Ademas, incluye un tercer dia de visitas tecnicas a proyectos reales en Barcelona y un cuarto dia opcional dedicado a innovacion e investigacion sobre infraestructura verde urbana en la sede de la Universidad de Lleida.",
+    "wgicP4": "WGIC26 esta organizado por la Universidad de Lleida (Cataluña, Espana) y tiene un formato de dos dias de congreso en Barcelona con cinco sesiones paralelas, mas de diez ponentes magistrales del sector de infraestructura verde y dos talleres sobre temas de gran actualidad. Ademas, incluye un tercer dia de visitas tecnicas a proyectos reales en Barcelona y un cuarto dia opcional dedicado a innovacion e investigacion sobre infraestructura verde urbana en la sede de la Universidad de Lleida.",
     "keyDatesTitle": "Fechas clave",
     "dates": {
       "who": "Quien?",
@@ -307,7 +310,7 @@
     "continueButton": "Continuar al formulario de Helice"
   },
   "speakersPage": {
-    "title": "Se un Orador",
+    "title": "Se un Ponente",
     "description": "Conoce las voces lideres en infraestructura verde. WGIC 2026 contara con expertos internacionales, innovadores y referentes que impulsan el futuro de las ciudades sostenibles.",
     "calloutTitle": "Envia tu articulo o proyecto antes del 31 de mayo de 2026",
     "calloutP1": "Gracias por tu interes en participar en el World Green Infrastructure Congress 2026 Barcelona - Lleida (WGIC 2026). Para enviar un articulo, accede y completa los datos en la aplicacion de envio en el enlace inferior.",
@@ -501,10 +504,10 @@
     "boxBody": "El legado de Gaudi, profundamente arraigado en la armonia entre arquitectura y naturaleza, ofrece una inspiracion poderosa para replantear la infraestructura verde urbana contemporanea como un modelo mas organico, sostenible y centrado en las personas."
   },
   "keyNoteSpeakersPage": {
-    "title": "Oradores magistrales",
+    "title": "Ponentes magistrales",
     "description": "Conoce las voces lideres en infraestructura verde. WGIC 2026 contara con expertos internacionales, innovadores y referentes que impulsan el futuro de las infraestructuras verdes y las ciudades sostenibles.",
-    "p1": "WGIC26 contara con hasta 12 oradores magistrales de todo el mundo, situados en la vanguardia de la investigacion, innovacion e implementacion en infraestructura verde.",
-    "p2": "Nos complace anunciar que los primeros oradores de WGIC 2026 ya estan confirmados.",
+    "p1": "WGIC26 contara con hasta 12 ponentes magistrales de todo el mundo, situados en la vanguardia de la investigacion, innovacion e implementacion en infraestructura verde.",
+    "p2": "Nos complace anunciar que los primeros ponentes de WGIC 2026 ya estan confirmados.",
     "speakers": {
       "speaker1": {
         "name": "Marcos Ros",
@@ -535,7 +538,7 @@
         "bio": "Directora Ejecutiva del Movimiento Cinturón Verde, Dorothy Aseyo trabaja en conservación ambiental, empoderamiento comunitario, medios de vida sostenibles y resiliencia climática, promoviendo soluciones basadas en la naturaleza y acción de base para construir sociedades más resilientes e inclusivas."
       }
     },
-    "closing": "Este primer grupo de oradores subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
+    "closing": "Este primer grupo de ponentes subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
   },
   "technicalVisitsPage": {
     "title": "Visitas técnicas",

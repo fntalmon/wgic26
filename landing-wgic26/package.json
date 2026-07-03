@@ -18,7 +18,6 @@
     "@upstash/redis": "^1.37.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "gray-matter": "^4.0.3",
     "imapflow": "^1.2.13",
     "lucide-react": "^0.510.0",
     "next": "15.3.6",
@@ -27,8 +26,6 @@
     "postcss": "^8.5.14",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "remark": "^15.0.1",
-    "remark-html": "^16.0.1",
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
