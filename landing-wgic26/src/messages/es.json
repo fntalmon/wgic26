@@ -276,8 +276,8 @@
     "feesTitle": "Cuotas de inscripcion",
     "feesHeaders": {
       "category": "Categoria",
-      "early": "Temprana < Mayo",
-      "standard": "Estandar (+15%) < septiembre",
+      "early": "Temprana < Septiembre",
+      "standard": "Estandar (+15%)",
       "onsite": "En sitio (+30%)"
     },
     "fees": {

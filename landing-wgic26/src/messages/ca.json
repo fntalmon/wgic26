@@ -276,8 +276,8 @@
     "feesTitle": "Quotes d'inscripció",
     "feesHeaders": {
       "category": "Categoria",
-      "early": "Anticipada < Maig",
-      "standard": "Estàndard (+15%) < setembre",
+      "early": "Anticipada < Setembre",
+      "standard": "Estàndard (+15%)",
       "onsite": "In situ (+30%)"
     },
     "fees": {

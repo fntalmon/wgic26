@@ -276,8 +276,8 @@
     "feesTitle": "Registration fees",
     "feesHeaders": {
       "category": "Category",
-      "early": "Early < May",
-      "standard": "Standard (+15%) < September",
+      "early": "Early < September",
+      "standard": "Standard (+15%)",
       "onsite": "On-site (+30%)"
     },
     "fees": {
