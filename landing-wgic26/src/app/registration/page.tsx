@@ -11,36 +11,43 @@ const Registration = async () => {
   const fees = [
     {
       category: t("fees.registrationTwoDays"),
+      early: "400 EUR",
       standard: "460 EUR",
       onsite: "520 EUR",
     },
     {
       category: t("fees.registrationOneDay"),
+      early: "200 EUR",
       standard: "230 EUR",
       onsite: "260 EUR",
     },
     {
       category: t("fees.oralPresentations"),
+      early: "600 EUR",
       standard: "690 EUR",
       onsite: "-",
     },
     {
       category: t("fees.poster"),
+      early: "500 EUR",
       standard: "575 EUR",
       onsite: "-",
     },
     {
       category: t("fees.students"),
+      early: "150 EUR",
       standard: "173 EUR",
       onsite: "195 EUR",
     },
     {
       category: t("fees.companions"),
+      early: "150 EUR",
       standard: "173 EUR",
       onsite: "195 EUR",
     },
     {
       category: t("fees.galaDinner"),
+      early: "150 EUR",
       standard: "150 EUR",
       onsite: "-",
     },
@@ -144,13 +151,16 @@ const Registration = async () => {
                 <table className="min-w-full w-full border-collapse border border-white/20">
                   <thead>
                     <tr className="bg-cactus/20">
-                      <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base w-1/3">
+                      <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base w-1/4">
                         {t("feesHeaders.category")}
                       </th>
-                      <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base w-1/3">
+                      <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base w-1/4">
+                        {t("feesHeaders.early")}
+                      </th>
+                      <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base w-1/4">
                         {t("feesHeaders.standard")}
                       </th>
-                      <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base w-1/3">
+                      <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base w-1/4">
                         {t("feesHeaders.onsite")}
                       </th>
                     </tr>
@@ -161,6 +171,9 @@ const Registration = async () => {
                       <tr key={item.category} className="hover:bg-white/5">
                         <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-justify">
                           {item.category}
+                        </td>
+                        <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
+                          {item.early}
                         </td>
                         <td className="border border-white/20 px-4 py-3 text-white/80 text-base text-center">
                           {item.standard}
