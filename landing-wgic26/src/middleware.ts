@@ -29,13 +29,28 @@ function localeFromCountry(countryCode: string | null) {
   return null;
 }
 
+const SUPPORTED_HEADER_LOCALES = new Set(["ca", "pt", "fr", "es"]);
+
 function localeFromAcceptLanguage(header: string | null) {
   if (!header) return null;
-  const normalized = header.toLowerCase();
-  if (normalized.includes("ca")) return "ca";
-  if (normalized.includes("pt")) return "pt";
-  if (normalized.includes("fr")) return "fr";
-  if (normalized.includes("es")) return "es";
+
+  // Parse "es-AR,es;q=0.9,en-CA;q=0.8" into primary subtags ordered by
+  // quality, e.g. ["es", "es", "en"], and match the first supported one.
+  // Matching on the full primary subtag (not a raw substring) avoids false
+  // positives like "en-CA" being mistaken for Catalan ("ca").
+  const entries = header
+    .split(",")
+    .map((part) => {
+      const [tag, qPart] = part.trim().split(";q=");
+      const quality = qPart ? parseFloat(qPart) : 1;
+      return { primary: tag.trim().toLowerCase().split("-")[0], quality };
+    })
+    .sort((a, b) => b.quality - a.quality);
+
+  for (const { primary } of entries) {
+    if (SUPPORTED_HEADER_LOCALES.has(primary)) return primary;
+  }
+
   return null;
 }
 
@@ -56,14 +71,19 @@ function detectPreferredLocale(request: NextRequest) {
 }
 
 export function middleware(request: NextRequest) {
-  const response = NextResponse.next();
-
   // Respect a manual language choice; otherwise detect from the browser/region.
   if (request.cookies.get(localeManualCookieName)?.value) {
-    return response;
+    return NextResponse.next();
   }
 
   const preferred = detectPreferredLocale(request);
+
+  // Mutate the incoming request's cookie too, not just the outgoing response's,
+  // so the current request's server render already sees the detected locale
+  // instead of falling back to defaultLocale for the first page view.
+  request.cookies.set(localeCookieName, preferred);
+
+  const response = NextResponse.next({ request });
   response.cookies.set(localeCookieName, preferred, {
     path: "/",
     sameSite: "lax",
