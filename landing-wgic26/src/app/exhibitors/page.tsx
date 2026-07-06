@@ -1532,7 +1532,7 @@ const Exhibitors = () => {
                     </p>
                     <button
                       onClick={handleDownloadClick}
-                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"
+                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-cactus hover:bg-cactus/80 text-lg px-6 py-4 font-medium text-lg transition-all"
                     >
                       {t.cards.downloadPdf}
                     </button>
@@ -1621,7 +1621,7 @@ const Exhibitors = () => {
                     </p>
                     <button
                       onClick={handleInterestFormClick}
-                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"
+                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-cactus hover:bg-cactus/80 text-lg px-6 py-4 font-medium text-lg transition-all"
                     >
                       {t.cards.interestCta}
                     </button>
@@ -1758,7 +1758,7 @@ const Exhibitors = () => {
                     href={pptHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 w-full rounded-lg bg-cactus hover:bg-cactus/80 text-white px-6 py-4 font-medium text-lg transition-all"
+                    className="inline-flex items-center justify-center gap-2 w-full rounded-lg bg-cactus hover:bg-cactus/80 text-lg px-6 py-4 font-medium text-lg transition-all"
                   >
                     <Presentation size={18} />
                     {t.cards.downloadPpt}

@@ -248,7 +248,7 @@ const Navigation = () => {
           showNavbar ? "translate-y-0" : "-translate-y-[160%]"
         } ${
           scrolled
-            ? "bg-cactus/50 backdrop-blur-xl pl-4 lg:pr-6 lg:py-1 py-4 lg:rounded-2xl border-b-1 lg:border-1 border-white/8"
+            ? "bg-cactus/50 backdrop-blur-xl pl-4 lg:pr-6 lg:py-1 py-4 lg:rounded-2xl border-white/8-1 lg:border-1 border-white/8"
             : "bg-transparent"
         }`}
       >

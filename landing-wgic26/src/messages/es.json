@@ -58,12 +58,15 @@
     "organizedBy": "Organized by",
     "newsletterTitle": "Mantente al dia",
     "newsletterSubtitle": "Registrate a nuestro newsletter",
+    "newsletterFirstNamePlaceholder": "Nombre",
+    "newsletterLastNamePlaceholder": "Apellido",
+    "newsletterCompanyPlaceholder": "Empresa",
+    "newsletterCountryPlaceholder": "Pais",
     "newsletterEmailPlaceholder": "Correo electronico",
-    "newsletterPhonePlaceholder": "Numero de telefono",
     "newsletterSubmitting": "Suscribiendo...",
     "newsletterSubmit": "Suscribirme",
-    "newsletterValidation": "Por favor, completa correo y numero de telefono.",
-    "newsletterPhoneValidation": "Por favor, ingresa un numero de telefono valido.",
+    "newsletterValidation": "Por favor completa todos los campos.",
+    "newsletterEmailValidation": "Por favor ingresa un correo electronico valido.",
     "newsletterSuccess": "Gracias por suscribirte a nuestro boletin!",
     "newsletterError": "Ha ocurrido un error, por favor intenta nuevamente.",
     "newsletterConsentLabel": "Acepto recibir comunicaciones electronicas, newsletters e informacion sobre WGIC26 segun la Politica de Privacidad.",
@@ -79,16 +82,36 @@
     "eventPartners": "Event Partners",
     "keynoteSpeakersTitle": "Ponentes magistrales",
     "keynoteSpeakersIntro": "Conoce las voces lideres en infraestructura verde confirmadas para WGIC26.",
-    "viewAllSpeakers": "Ver todos los ponentes magistrales"
+    "viewAllSpeakers": "Ver todos los ponentes magistrales",
+    "earlyBirdBanner": "Early bird hasta septiembre de 2026 — regístrate ahora y ahorra",
+    "registerNow": "Registrarse ahora",
+    "registerForEvent": "Registrarse en el evento",
+    "socialProof": {
+      "papers": "comunicaciones presentadas",
+      "attendees": "asistentes esperados",
+      "countries": "países",
+      "edition": "edición"
+    }
   },
   "footer": {
     "title": "Congreso Mundial de Infraestructura Verde 2026 Barcelona-Lleida",
-    "legal": "Legal",
+    "date": "27-30 OCT 2026",
+    "usefulLinks": "Links utiles",
+    "tickets": "Entradas",
+    "papersProjects": "Papers and Projects",
+    "program": "Programa",
+    "workshops": "Workshops",
+    "technicalVisits": "Visitas tecnicas",
+    "letsTalk": "Hablemos",
+    "infoEmail": "info@wgic26.barcelona",
+    "registrationEmail": "registration@wgic26.barcelona",
+    "sponsorshipEmail": "sponsorship@wgic26.barcelona",
+    "keyDates": "Fechas clave",
+    "stayUpdated": "Mantente informado",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
     "privacyPolicy": "Politica de privacidad",
-    "contact": "Contacto",
-    "copyright": "WGIC 2026 - Todos los derechos reservados",
-    "another": "Otra",
-    "creation": " creacion."
+    "copyright": "WGIC 2026 - Todos los derechos reservados"
   },
   "aboutCongress": {
     "title": "El Congreso",
@@ -241,10 +264,31 @@
   "registrationPage": {
     "title": "Inscripcion",
     "description": "Unete al Congreso Mundial de Infraestructura Verde 2026. Registrate ahora para asegurar tu plaza.",
+    "earlyBirdBanner": "Early bird hasta septiembre de 2026 — regístrate ahora y ahorra",
     "platformTitle": "Plataforma de inscripcion",
     "platformDescription": "La inscripcion se gestiona a traves de nuestra plataforma colaboradora externa, Helice. La cuota de inscripcion cubre los costes durante el periodo del congreso, incluyendo almuerzos y pausas cafe. No incluye viaje ni alojamiento.",
     "platformButton": "Registrarse en plataforma Helice",
     "platformInvoiceNote": "Si necesitas factura, esta se generara al finalizar la carga del formulario de inscripcion.",
+    "ctaTitle": "Inscríbete ahora",
+    "ctaIntro": "Completa tu inscripción en tres simples pasos. Si necesitas factura, podrás solicitarla durante el proceso de pago.",
+    "ctaStep1": "Elige la tarifa que se ajusta a tu perfil en la tabla de abajo.",
+    "ctaStep2": "Acepta la política de privacidad a continuación.",
+    "ctaStep3": "Haz clic en el botón para completar tus datos en la plataforma Helice.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "cancel": {
+        "question": "¿Puedo cancelar o solicitar un reembolso?",
+        "answer": "Una vez realizado el pago, no es posible realizar reembolsos. Si tienes una situación excepcional, escríbenos a inquiry@wgic26.org."
+      },
+      "meals": {
+        "question": "¿Incluye comidas?",
+        "answer": "Sí. La cuota de inscripción incluye almuerzos y pausas café durante el congreso. La cena de gala requiere un ticket aparte. No incluye viaje ni alojamiento."
+      },
+      "invoice": {
+        "question": "¿Necesito factura?",
+        "answer": "Puedes solicitar la factura en el formulario de pago de Helice. Si necesitas ayuda, escribe a wgic2026.economics@udl.cat o a inquiry@wgic26.org."
+      }
+    },
     "keyDatesTitle": "Fechas clave",
     "keyDatesHeaders": {
       "milestone": "Hito",
@@ -536,6 +580,10 @@
       "speaker7": {
         "name": "Dorothy Aseyo",
         "bio": "Directora Ejecutiva del Movimiento Cinturón Verde, Dorothy Aseyo trabaja en conservación ambiental, empoderamiento comunitario, medios de vida sostenibles y resiliencia climática, promoviendo soluciones basadas en la naturaleza y acción de base para construir sociedades más resilientes e inclusivas."
+      },
+      "speaker8": {
+        "name": "María Buhigas",
+        "bio": "María Buhigas es la Arquitecta Jefa del Ayuntamiento de Barcelona. Arquitecta y urbanista, cuenta con una amplia experiencia en estrategia urbana, espacio público, vivienda y transformación de la ciudad. Su trabajo se centra en el papel de la planificación urbanística y la arquitectura para responder a los retos sociales, ambientales y territoriales actuales, con un fuerte énfasis en crear ciudades más habitables, inclusivas y resilientes."
       }
     },
     "closing": "Este primer grupo de ponentes subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."

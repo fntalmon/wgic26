@@ -56,7 +56,7 @@ const PlanYourStay = async () => {
                                 href="https://www.barcelonaturisme.com/wv3/en/" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="inline-block bg-cactus hover:bg-cactus/80 text-white font-medium py-3 px-6 rounded-lg transition-colors w-full text-center"
+                                className="inline-block bg-cactus hover:bg-cactus/80 text-center font-medium py-3 px-6 rounded-lg transition-colors w-full text-center"
                             >
                                 {t("visitWebsite")}
                             </a>
@@ -105,4 +105,3 @@ const PlanYourStay = async () => {
 };
 
 export default PlanYourStay;
-

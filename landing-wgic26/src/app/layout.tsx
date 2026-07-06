@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import Script from "next/script";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { SocialSidebar } from "@/components/SocialSidebar";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
@@ -50,6 +51,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
       <body className="bg-monstera text-white font-light" style={{ fontFamily: "Century Gothic, sans-serif" }}>
         <NextIntlClientProvider messages={messages}>
           <Navigation />
+          <SocialSidebar />
           <main className="flex flex-col gap-10 mt-28 lg:mt-40 mb-24 min-h-screen">
             {children}
           </main>

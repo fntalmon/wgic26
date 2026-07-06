@@ -10,6 +10,7 @@ const speakerSlots = [
   { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
   { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
   { id: "speaker7", image: "/img/speakers/dorothyaseyo.jpg" },
+  { id: "speaker8", image: "/img/speakers/buhigas_maria.jpg" },
 ] as const;
 
 const getInitials = (name: string) =>

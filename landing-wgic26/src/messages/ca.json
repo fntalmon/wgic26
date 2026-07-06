@@ -58,12 +58,15 @@
     "organizedBy": "Organized by",
     "newsletterTitle": "Mantén-te al dia",
     "newsletterSubtitle": "Registra't al nostre butlletí",
-    "newsletterEmailPlaceholder": "Correu electrònic",
-    "newsletterPhonePlaceholder": "Número de telèfon",
+    "newsletterFirstNamePlaceholder": "Nom",
+    "newsletterLastNamePlaceholder": "Cognom",
+    "newsletterCompanyPlaceholder": "Empresa",
+    "newsletterCountryPlaceholder": "Pais",
+    "newsletterEmailPlaceholder": "Correu electronic",
     "newsletterSubmitting": "Subscrivint...",
     "newsletterSubmit": "Subscriure'm",
-    "newsletterValidation": "Si us plau, completa el correu i el número de telèfon.",
-    "newsletterPhoneValidation": "Si us plau, introdueix un número de telèfon vàlid.",
+    "newsletterValidation": "Si us plau completa tots els camps.",
+    "newsletterEmailValidation": "Si us plau introdueix un correu electronic valid.",
     "newsletterSuccess": "Gràcies per subscriure't al nostre butlletí!",
     "newsletterError": "Ha ocorregut un error, si us plau intenta-ho de nou.",
     "newsletterConsentLabel": "Accepto rebre comunicacions electroniques, newsletters i informacio sobre WGIC26 segons la Política de Privacitat.",
@@ -79,16 +82,36 @@
     "eventPartners": "Event Partners",
     "keynoteSpeakersTitle": "Ponents magistrals",
     "keynoteSpeakersIntro": "Coneix les veus líders en infraestructura verda confirmades per a WGIC26.",
-    "viewAllSpeakers": "Veure tots els ponents magistrals"
+    "viewAllSpeakers": "Veure tots els ponents magistrals",
+    "earlyBirdBanner": "Early bird fins al setembre de 2026 — registra't ara i estalvia",
+    "registerNow": "Registrar-se ara",
+    "registerForEvent": "Registrar-se a l'esdeveniment",
+    "socialProof": {
+      "papers": "comunicacions presentades",
+      "attendees": "assistents esperats",
+      "countries": "països",
+      "edition": "edició"
+    }
   },
   "footer": {
     "title": "Congrés Mundial d'Infraestructura Verda 2026 Barcelona-Lleida",
-    "legal": "Legal",
+    "date": "27-30 OCT 2026",
+    "usefulLinks": "Enllacos utils",
+    "tickets": "Entrades",
+    "papersProjects": "Papers and Projects",
+    "program": "Programa",
+    "workshops": "Workshops",
+    "technicalVisits": "Visitas tècniques",
+    "letsTalk": "Parlem",
+    "infoEmail": "info@wgic26.barcelona",
+    "registrationEmail": "registration@wgic26.barcelona",
+    "sponsorshipEmail": "sponsorship@wgic26.barcelona",
+    "keyDates": "Dates clau",
+    "stayUpdated": "Manteniu-vos informats",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
     "privacyPolicy": "Política de privacitat",
-    "contact": "Contacte",
-    "copyright": "WGIC 2026 - Tots els drets reservats",
-    "another": "Una altra",
-    "creation": " creació."
+    "copyright": "WGIC 2026 - Tots els drets reservats"
   },
   "aboutCongress": {
     "title": "El Congrés",
@@ -241,6 +264,7 @@
   "registrationPage": {
     "title": "Inscripció",
     "description": "Uneix-te al Congrés Mundial d'Infraestructura Verda 2026. Registra't ara per assegurar la teva plaça.",
+    "earlyBirdBanner": "Early bird fins al setembre de 2026 — registra't ara i estalvia",
     "platformTitle": "Plataforma d'inscripció",
     "platformDescription": "La inscripció es gestiona a través de la nostra plataforma col·laboradora externa, Hèlice. La quota d'inscripció cobreix els costos durant el període del congrés, incloent dinars i pauses cafè. No inclou viatge ni allotjament.",
     "platformButton": "Registrar-se a la plataforma Hèlice",
@@ -307,7 +331,27 @@
     "checkboxOptional": "Desitjo rebre comunicacions electròniques, novetats, newsletters i informació comercial relacionada amb WGIC26 i futures activitats (Opcional).",
     "checkboxRequiredError": "Has d'acceptar la Política de Privacitat per continuar amb el registre.",
     "rightsNote": "Pots exercir els teus drets d'accés, rectificació, supressió i limitació escrivint a les entitats indicades a la Política de Privacitat.",
-    "continueButton": "Continuar al formulari d'Helice"
+    "continueButton": "Continuar al formulari d'Helice",
+    "ctaTitle": "Inscriu-te ara",
+    "ctaIntro": "Completa la teva inscripció en tres passos senzills. Si necessites factura, la podràs sol·licitar durant el procés de pagament.",
+    "ctaStep1": "Tria la quota que s'ajusta al teu perfil a la taula d'abaix.",
+    "ctaStep2": "Accepta la política de privacitat a continuació.",
+    "ctaStep3": "Fes clic al botó per completar les teves dades a la plataforma Helice.",
+    "faqTitle": "Preguntes freqüents",
+    "faq": {
+      "cancel": {
+        "question": "Puc cancel·lar o sol·licitar un reemborsament?",
+        "answer": "Un cop realitzat el pagament, no és possible fer reemborsaments. Si tens una situació excepcional, escriu-nos a inquiry@wgic26.org."
+      },
+      "meals": {
+        "question": "Inclou els àpats?",
+        "answer": "Sí. La quota d'inscripció inclou dinars i pauses cafè durant el congrés. El sopar de gala requereix un tiquet a part. No inclou viatge ni allotjament."
+      },
+      "invoice": {
+        "question": "Necessito factura?",
+        "answer": "Pots sol·licitar la factura al formulari de pagament d'Helice. Si necessites ajuda, escriu a wgic2026.economics@udl.cat o a inquiry@wgic26.org."
+      }
+    }
   },
   "speakersPage": {
     "title": "Sigues un Orador",
@@ -536,6 +580,10 @@
       "speaker7": {
         "name": "Dorothy Aseyo",
         "bio": "Directora Executiva del Moviment Cinturó Verd, Dorothy Aseyo treballa en conservació ambiental, empoderament comunitari, mitjans de vida sostenibles i resiliència climàtica, promovent solucions basades en la natura i acció de base per construir societats més resilients i inclusives."
+      },
+      "speaker8": {
+        "name": "María Buhigas",
+        "bio": "María Buhigas és l'Arquitecta en Cap de l'Ajuntament de Barcelona. Arquitecta i urbanista, té una àmplia experiència en estratègia urbana, espai públic, habitatge i transformació de la ciutat. La seva feina se centra en el paper de la planificació urbanística i l'arquitectura per respondre als reptes socials, ambientals i territorials actuals, amb un fort èmfasi en crear ciutats més habitables, inclusives i resilients."
       }
     },
     "closing": "Aquest primer grup d'oradors subratlla l'ambició, profunditat i visió multidisciplinar de WGIC 2026, posicionant-lo com un fòrum clau per al debat urbà global."

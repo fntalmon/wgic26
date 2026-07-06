@@ -83,7 +83,7 @@ const Awards = async () => {
                                 href="https://awards.wgin.org/home" 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
-                                className="inline-flex items-center gap-2 bg-lagoon text-cactus px-6 py-3 rounded-full font-bold hover:bg-white transition-colors text-sm"
+                                className="inline-flex items-center gap-2 bg-lagoon text-sm px-6 py-3 rounded-full font-bold hover:bg-white transition-colors text-sm"
                             >
                                 {t("submitNomination")} <ExternalLink size={16} />
                             </a>
@@ -142,7 +142,7 @@ const Awards = async () => {
                                     href="https://awards.wgin.org/home" 
                                     target="_blank" 
                                     rel="noopener noreferrer" 
-                                    className="inline-block border border-white/20 text-white px-8 py-2 rounded-full text-xs hover:bg-white hover:text-cactus transition-all"
+                                    className="inline-block border border-white/20 text-xs px-8 py-2 rounded-full text-xs hover:bg-white hover:text-cactus transition-all"
                                 >
                                     {t("learnMore")}
                                 </a>

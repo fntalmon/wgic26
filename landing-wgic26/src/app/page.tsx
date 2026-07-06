@@ -1,7 +1,10 @@
 "use client";
 
 import Countdown from "@/components/Countdown";
+import { EarlyBirdBanner } from "@/components/EarlyBirdBanner";
 import { KeynoteSpeakersCarousel } from "@/components/KeynoteSpeakersCarousel";
+import { SocialProof } from "@/components/SocialProof";
+import { SupportersCarousel } from "@/components/SupportersCarousel";
 import { MapPin, CheckCircle, AlertCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,11 +22,65 @@ const keynoteSpeakerSlots = [
   { id: "speaker7", image: "/img/speakers/dorothyaseyo.jpg" },
 ] as const;
 
+const supporters = [
+  {
+    href: "https://asescuve.org",
+    src: "/img/logos/Asescuve-logo-24a.webp",
+    alt: "ASESCUVE",
+    heightClass: "h-14",
+  },
+  {
+    href: "https://parcagrobiotech.com/arboretum/",
+    src: "/img/logos/arboretum.png",
+    alt: "Arboretum",
+    heightClass: "h-14",
+  },
+  {
+    href: "https://pronatur.chil.me/",
+    src: "/img/logos/pronaturlogo.jpg",
+    alt: "Pronatur",
+    heightClass: "h-24",
+  },
+  {
+    href: "https://agronoms.cat/",
+    src: "/img/logos/eadc.png",
+    alt: "EADC",
+    heightClass: "h-24",
+  },
+  {
+    href: "https://www.idaea.csic.es/",
+    src: "/img/logos/IDAEA.png",
+    alt: "IDAEA",
+    heightClass: "h-14",
+  },
+  {
+    href: "https://www.csic.es/es",
+    src: "/img/logos/CSIC.svg",
+    alt: "CSIC",
+    heightClass: "h-14",
+  },
+  {
+    href: "https://www.gremijardineria.cat/",
+    src: "/img/logos/gremi.png",
+    alt: "Gremi de Jardineria de Catalunya",
+    heightClass: "h-20",
+  },
+  {
+    href: "https://vilesflorides.cat/",
+    src: "/img/logos/VilesFlorides.png",
+    alt: "Viles Florides",
+    heightClass: "h-20",
+  },
+];
+
 export default function Home() {
   const t = useTranslations("home");
   const tKeynoteSpeakers = useTranslations("keyNoteSpeakersPage");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [company, setCompany] = useState("");
+  const [country, setCountry] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
   const [consent, setConsent] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
@@ -55,15 +112,15 @@ export default function Home() {
     setMessageType(null);
 
     // Basic client-side validation
-    if (!email || !phone) {
+    if (!firstName || !lastName || !company || !country || !email) {
       setMessage(t("newsletterValidation"));
       setMessageType("error");
       setIsSubmitting(false);
       return;
     }
-    const phoneDigits = phone.replace(/\D/g, "");
-    if (phoneDigits.length < 6 || phoneDigits.length > 15) {
-      setMessage(t("newsletterPhoneValidation"));
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setMessage(t("newsletterEmailValidation"));
       setMessageType("error");
       setIsSubmitting(false);
       return;
@@ -81,7 +138,7 @@ export default function Home() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, phone }),
+        body: JSON.stringify({ firstName, lastName, company, country, email }),
       });
 
       const data = await response.json();
@@ -89,8 +146,11 @@ export default function Home() {
       if (response.ok) {
         setMessage(t("newsletterSuccess"));
         setMessageType("success");
+        setFirstName("");
+        setLastName("");
+        setCompany("");
+        setCountry("");
         setEmail("");
-        setPhone("");
         setConsent(false);
       } else {
         setMessage(data.error || t("newsletterError"));
@@ -136,6 +196,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <EarlyBirdBanner />
       <section className="flex flex-col gap-0">
         <div className="bg-[url(/img/Tibidabo3.jpg)] bg-no-repeat bg-cover bg-center w-full h-[400px] md:h-[550px] lg:h-[700px]"></div>
         <Countdown />
@@ -188,6 +249,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <SocialProof />
+      <section className="w-full justify-start">
+        <div className="flex justify-center">
+          <Link href="/registration">
+            <Button variant="default" size="lg">
+              {t("registerNow")}
+            </Button>
+          </Link>
+        </div>
+      </section>
       <section id="keynote-speakers" className="flex flex-col gap-6 mt-16">
         <div className="bg-cactus rounded-2xl p-6 sm:p-10 lg:p-14 flex flex-col gap-8">
           <div className="flex flex-col gap-4 max-w-4xl">
@@ -207,11 +278,18 @@ export default function Home() {
             }))}
           />
 
-          <Link href="/key-note-speakers" className="self-start">
-            <Button variant="yellow" size="lg">
-              {t("viewAllSpeakers")}
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 self-start">
+            <Link href="/key-note-speakers">
+              <Button variant="yellow" size="lg">
+                {t("viewAllSpeakers")}
+              </Button>
+            </Link>
+            <Link href="/registration">
+              <Button variant="default" size="lg">
+                {t("registerNow")}
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
       <section id="locations" className="flex flex-col gap-6">
@@ -523,118 +601,7 @@ export default function Home() {
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 {t("withTheSupportOf")}
               </h3>
-              <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
-                <a
-                  href="https://asescuve.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/Asescuve-logo-24a.webp"
-                    alt="ASESCUVE"
-                    width={300}
-                    height={220}
-                    className="h-14 w-auto object-contain"
-                  />
-                </a>
-                <a
-                  href="https://parcagrobiotech.com/arboretum/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  <Image
-                    src="/img/logos/arboretum.png"
-                    alt="Arboretum"
-                    width={300}
-                    height={220}
-                    className="h-14 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://pronatur.chil.me/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/pronaturlogo.jpg"
-                    alt="Logo pronatur"
-                    width={320}
-                    height={240}
-                    className="h-24 w-auto object-contain"
-                  />
-                </a>
-                <a
-                  href="https://agronoms.cat/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/eadc.png"
-                    alt="Logo eadc"
-                    width={320}
-                    height={240}
-                    className="h-24 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://www.idaea.csic.es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/IDAEA.png"
-                    alt="Logo IDAEA"
-                    width={320}
-                    height={240}
-                    className="h-14 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://www.csic.es/es"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/CSIC.svg"
-                    alt="Logo eadc"
-                    width={320}
-                    height={240}
-                    className="h-14 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://www.gremijardineria.cat/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/gremi.png"
-                    alt="Gremi de Jardineria de Catalunya"
-                    width={300}
-                    height={220}
-                    className="h-20 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://vilesflorides.cat/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/VilesFlorides.png"
-                    alt="Viles Florides"
-                    width={300}
-                    height={220}
-                    className="h-20 w-auto object-contain"
-                  />
-                </a>
-              </div>
+              <SupportersCarousel supporters={supporters} visibleCount={5} />
             </div>
           </div>
         </div>
@@ -657,7 +624,47 @@ export default function Home() {
               onSubmit={handleNewsletterSubmit}
             >
               <div className="flex flex-col gap-4 flex-1">
-                <div className="flex flex-col gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    name="firstName"
+                    required
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    placeholder={t("newsletterFirstNamePlaceholder")}
+                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
+                    disabled={isSubmitting}
+                  />
+                  <input
+                    type="text"
+                    name="lastName"
+                    required
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    placeholder={t("newsletterLastNamePlaceholder")}
+                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
+                    disabled={isSubmitting}
+                  />
+                  <input
+                    type="text"
+                    name="company"
+                    required
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                    placeholder={t("newsletterCompanyPlaceholder")}
+                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
+                    disabled={isSubmitting}
+                  />
+                  <input
+                    type="text"
+                    name="country"
+                    required
+                    value={country}
+                    onChange={(e) => setCountry(e.target.value)}
+                    placeholder={t("newsletterCountryPlaceholder")}
+                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
+                    disabled={isSubmitting}
+                  />
                   <input
                     type="email"
                     name="email"
@@ -665,17 +672,7 @@ export default function Home() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder={t("newsletterEmailPlaceholder")}
-                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
-                    disabled={isSubmitting}
-                  />
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    placeholder={t("newsletterPhonePlaceholder")}
-                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus"
+                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-mortar text-sm focus:outline-none focus:ring-2 focus:ring-cactus md:col-span-2"
                     disabled={isSubmitting}
                   />
                 </div>

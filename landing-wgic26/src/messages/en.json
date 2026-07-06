@@ -59,11 +59,14 @@
     "newsletterTitle": "Stay up to date",
     "newsletterSubtitle": "Register to our Newsletter",
     "newsletterEmailPlaceholder": "Email address",
-    "newsletterPhonePlaceholder": "Phone number",
+    "newsletterFirstNamePlaceholder": "First name",
+    "newsletterLastNamePlaceholder": "Last name",
+    "newsletterCompanyPlaceholder": "Company",
+    "newsletterCountryPlaceholder": "Country",
     "newsletterSubmitting": "Subscribing...",
     "newsletterSubmit": "Subscribe",
-    "newsletterValidation": "Please provide both email and phone number.",
-    "newsletterPhoneValidation": "Please enter a valid phone number.",
+    "newsletterValidation": "Please fill in all fields.",
+    "newsletterEmailValidation": "Please enter a valid email address.",
     "newsletterSuccess": "Thank you for subscribing to our newsletter!",
     "newsletterError": "An error occurred, please try again.",
     "newsletterConsentLabel": "I agree to receive electronic communications, newsletters and information about WGIC26 according to the Privacy Policy.",
@@ -79,16 +82,36 @@
     "eventPartners": "Event Partners",
     "keynoteSpeakersTitle": "Keynote Speakers",
     "keynoteSpeakersIntro": "Meet the leading voices in green infrastructure confirmed for WGIC26.",
-    "viewAllSpeakers": "View all keynote speakers"
+    "viewAllSpeakers": "View all keynote speakers",
+    "earlyBirdBanner": "Early bird ends September 2026 — register now and save",
+    "registerNow": "Register now",
+    "registerForEvent": "Register for the event",
+    "socialProof": {
+      "papers": "papers submitted",
+      "attendees": "expected attendees",
+      "countries": "countries",
+      "edition": "edition"
+    }
   },
   "footer": {
     "title": "World Green Infrastructure Congress 2026 Barcelona-Lleida",
-    "legal": "Legal",
+    "date": "27-30 OCT 2026",
+    "usefulLinks": "Useful Links",
+    "tickets": "Tickets",
+    "papersProjects": "Papers and Projects",
+    "program": "Program",
+    "workshops": "Workshops",
+    "technicalVisits": "Technical Visits",
+    "letsTalk": "Let's Talk",
+    "infoEmail": "info@wgic26.barcelona",
+    "registrationEmail": "registration@wgic26.barcelona",
+    "sponsorshipEmail": "sponsorship@wgic26.barcelona",
+    "keyDates": "Key Dates",
+    "stayUpdated": "Stay Updated",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
     "privacyPolicy": "Privacy Policy",
-    "contact": "Contact",
-    "copyright": "WGIC 2026 - All rights reserved",
-    "another": "Another",
-    "creation": " creation."
+    "copyright": "WGIC 2026 - All rights reserved"
   },
   "aboutCongress": {
     "title": "The Congress",
@@ -241,10 +264,31 @@
   "registrationPage": {
     "title": "Registration",
     "description": "Join the World Green Infrastructure Congress 2026. Register now to secure your place.",
+    "earlyBirdBanner": "Early bird ends September 2026 — register now and save",
     "platformTitle": "Registration platform",
     "platformDescription": "Registration is managed through our external partner platform, Helice. The registration fee covers costs during the congress period, including lunches and coffee breaks. It does not include travel or accommodation.",
     "platformButton": "Register on Helice platform",
     "platformInvoiceNote": "If you need an invoice, it will be issued when you complete the registration form.",
+    "ctaTitle": "Register now",
+    "ctaIntro": "Complete your registration in three simple steps. If you need an invoice, you can request it during the checkout process.",
+    "ctaStep1": "Choose the fee that matches your profile in the table below.",
+    "ctaStep2": "Accept the privacy policy below.",
+    "ctaStep3": "Click the button to complete your details on the Helice platform.",
+    "faqTitle": "Frequently asked questions",
+    "faq": {
+      "cancel": {
+        "question": "Can I cancel or get a refund?",
+        "answer": "Once payment has been made, refunds are not possible. If you have an exceptional situation, contact us at inquiry@wgic26.org."
+      },
+      "meals": {
+        "question": "Are meals included?",
+        "answer": "Yes. The registration fee includes lunches and coffee breaks during the congress. The gala dinner requires a separate ticket. Travel and accommodation are not included."
+      },
+      "invoice": {
+        "question": "Do I need an invoice?",
+        "answer": "You can request an invoice in the Helice checkout form. If you need assistance, email wgic2026.economics@udl.cat or inquiry@wgic26.org."
+      }
+    },
     "keyDatesTitle": "Key dates",
     "keyDatesHeaders": {
       "milestone": "Milestone",
@@ -536,6 +580,10 @@
       "speaker7": {
         "name": "Dorothy Aseyo",
         "bio": "Executive Director of The Green Belt Movement, Dorothy Aseyo works on environmental conservation, community empowerment, sustainable livelihoods, and climate resilience, promoting nature-based solutions and grassroots action to build more resilient and inclusive societies."
+      },
+      "speaker8": {
+        "name": "María Buhigas",
+        "bio": "María Buhigas is the Chief Architect of Barcelona City Council. An architect and urban planner, she has extensive experience in urban strategy, public space, housing, and city transformation. Her work focuses on the role of urban planning and architecture in responding to today’s social, environmental, and territorial challenges, with a strong emphasis on creating more liveable, inclusive, and resilient cities."
       }
     },
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."

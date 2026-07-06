@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { localeCookieName, locales, type AppLocale } from "@/i18n/config";
+import { localeCookieName, localeManualCookieName, locales, type AppLocale } from "@/i18n/config";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
@@ -11,6 +11,8 @@ const labelByLocale: Record<AppLocale, string> = {
   en: "English",
   es: "Español",
   ca: "Català",
+  pt: "Português",
+  fr: "Français",
 };
 
 export function LanguageSwitcher() {
@@ -27,6 +29,7 @@ export function LanguageSwitcher() {
     }
 
     document.cookie = `${localeCookieName}=${nextLocale}; path=/; max-age=31536000; SameSite=Lax`;
+    document.cookie = `${localeManualCookieName}=1; path=/; max-age=31536000; SameSite=Lax`;
 
     startTransition(() => {
       router.refresh();

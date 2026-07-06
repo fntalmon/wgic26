@@ -1,39 +1,74 @@
 import { NextRequest, NextResponse } from "next/server";
-import { defaultLocale, isValidLocale, localeCookieName } from "@/i18n/config";
+import {
+  defaultLocale,
+  localeCookieName,
+  localeManualCookieName,
+} from "@/i18n/config";
+
+const SPANISH_SPEAKING_COUNTRIES = new Set([
+  "ES", "MX", "AR", "CO", "PE", "CL", "VE", "EC", "BO", "PY", "UY", "CR", "PA",
+  "GT", "HN", "SV", "NI", "DO", "CU", "PR",
+]);
+
+const PORTUGUESE_SPEAKING_COUNTRIES = new Set([
+  "PT", "BR", "AO", "MZ", "CV", "GW", "ST", "TL",
+]);
+
+const FRENCH_SPEAKING_COUNTRIES = new Set([
+  "FR", "BE", "CH", "CA", "MC", "LU", "CD", "CI", "SN", "ML", "BF", "NE", "TG",
+  "BJ", "GA", "CM", "MG", "MA", "DZ", "TN", "HT", "RE", "GP", "MQ", "GF", "PF",
+  "NC", "WF", "PM",
+]);
+
+function localeFromCountry(countryCode: string | null) {
+  if (!countryCode) return null;
+  const code = countryCode.toUpperCase();
+  if (SPANISH_SPEAKING_COUNTRIES.has(code)) return "es";
+  if (PORTUGUESE_SPEAKING_COUNTRIES.has(code)) return "pt";
+  if (FRENCH_SPEAKING_COUNTRIES.has(code)) return "fr";
+  return null;
+}
+
+function localeFromAcceptLanguage(header: string | null) {
+  if (!header) return null;
+  const normalized = header.toLowerCase();
+  if (normalized.includes("ca")) return "ca";
+  if (normalized.includes("pt")) return "pt";
+  if (normalized.includes("fr")) return "fr";
+  if (normalized.includes("es")) return "es";
+  return null;
+}
 
 function detectPreferredLocale(request: NextRequest) {
-  const existing = request.cookies.get(localeCookieName)?.value;
-  if (isValidLocale(existing)) {
-    return existing;
-  }
+  // First honour the browser's language preference when it matches one of
+  // our supported locales (e.g. Catalan in Spain, Portuguese in Brazil).
+  const headerLocale = localeFromAcceptLanguage(
+    request.headers.get("accept-language")
+  );
+  if (headerLocale) return headerLocale;
 
-  const header = request.headers.get("accept-language");
-  if (!header) {
-    return defaultLocale;
-  }
-
-  const normalized = header.toLowerCase();
-  if (normalized.includes("ca")) {
-    return "ca";
-  }
-  if (normalized.includes("es")) {
-    return "es";
-  }
-
-  return defaultLocale;
+  // Fall back to country-level detection (Vercel / Cloudflare / common proxy headers).
+  const countryCode =
+    request.headers.get("x-vercel-ip-country") ??
+    request.headers.get("cf-ipcountry") ??
+    request.headers.get("x-country");
+  return localeFromCountry(countryCode) ?? defaultLocale;
 }
 
 export function middleware(request: NextRequest) {
   const response = NextResponse.next();
-  const current = request.cookies.get(localeCookieName)?.value;
 
-  if (!isValidLocale(current)) {
-    response.cookies.set(localeCookieName, detectPreferredLocale(request), {
-      path: "/",
-      sameSite: "lax",
-      maxAge: 60 * 60 * 24 * 365,
-    });
+  // Respect a manual language choice; otherwise detect from the browser/region.
+  if (request.cookies.get(localeManualCookieName)?.value) {
+    return response;
   }
+
+  const preferred = detectPreferredLocale(request);
+  response.cookies.set(localeCookieName, preferred, {
+    path: "/",
+    sameSite: "lax",
+    maxAge: 60 * 60 * 24 * 365,
+  });
 
   return response;
 }
