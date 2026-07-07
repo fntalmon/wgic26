@@ -560,6 +560,20 @@ export default function Home() {
                     className="h-30 w-auto object-contain"
                   />
                 </a>
+
+                <a
+                  href="https://leprieure1840.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/LePrieure.jpg"
+                    alt="Le Prieuré 1840"
+                    width={200}
+                    height={200}
+                    className="h-24 w-auto object-contain"
+                  />
+                </a>
               </div>
             </div>
 
