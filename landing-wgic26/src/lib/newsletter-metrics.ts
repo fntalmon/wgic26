@@ -8,6 +8,10 @@ const SUBSCRIBER_PREFIX = 'newsletter:subscriber:';
 type RecordSubscriptionInput = {
   email: string;
   phone?: string;
+  firstName?: string;
+  lastName?: string;
+  company?: string;
+  country?: string;
   subscribedAt?: Date;
 };
 
@@ -19,6 +23,16 @@ type RecordSubscriptionResult = {
 type WeeklyCount = {
   week: string;
   count: number;
+};
+
+export type Subscriber = {
+  email: string;
+  phone: string | null;
+  firstName: string | null;
+  lastName: string | null;
+  company: string | null;
+  country: string | null;
+  subscribedAt: string;
 };
 
 export type NewsletterStats = {
@@ -135,6 +149,10 @@ export async function recordNewsletterSubscription(input: RecordSubscriptionInpu
     JSON.stringify({
       email,
       phone: input.phone ?? null,
+      firstName: input.firstName ?? null,
+      lastName: input.lastName ?? null,
+      company: input.company ?? null,
+      country: input.country ?? null,
       subscribedAt: subscribedAt.toISOString(),
     }),
     { nx: true },
@@ -199,4 +217,47 @@ export async function getNewsletterStats(daysInput = 7, weeksInput = 12): Promis
     totalUnique: asNumber(totalRaw),
     weekly,
   };
+}
+
+export async function getAllSubscribers(): Promise<{ source: 'redis' | 'disabled'; subscribers: Subscriber[] }> {
+  const redis = getRedisClient();
+  if (!redis) {
+    return { source: 'disabled', subscribers: [] };
+  }
+
+  const keys: string[] = [];
+  let cursor = 0;
+
+  do {
+    const result = await redis.scan(cursor, { match: `${SUBSCRIBER_PREFIX}*`, count: 100 });
+    cursor = Number(result[0]);
+    keys.push(...result[1]);
+  } while (cursor !== 0);
+
+  if (keys.length === 0) {
+    return { source: 'redis', subscribers: [] };
+  }
+
+  const values = await redis.mget<unknown[]>(...keys);
+
+  const subscribers: Subscriber[] = [];
+  for (const value of values) {
+    if (!value || typeof value !== 'object') continue;
+    const v = value as Record<string, unknown>;
+    if (typeof v.email === 'string' && typeof v.subscribedAt === 'string') {
+      subscribers.push({
+        email: v.email,
+        phone: typeof v.phone === 'string' ? v.phone : null,
+        firstName: typeof v.firstName === 'string' ? v.firstName : null,
+        lastName: typeof v.lastName === 'string' ? v.lastName : null,
+        company: typeof v.company === 'string' ? v.company : null,
+        country: typeof v.country === 'string' ? v.country : null,
+        subscribedAt: v.subscribedAt,
+      });
+    }
+  }
+
+  subscribers.sort((a, b) => new Date(b.subscribedAt).getTime() - new Date(a.subscribedAt).getTime());
+
+  return { source: 'redis', subscribers };
 }

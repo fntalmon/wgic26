@@ -1,9 +1,16 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import TextImage from "@/components/TextImage";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "WGI Network | WGIC26 Barcelona-Lleida",
+  description:
+    "Learn about the World Green Infrastructure Network (WGIN), the global organisation behind WGIC26 and its mission to advance nature-based solutions worldwide.",
+};
 
 const Network = async () => {
   const t = await getTranslations("aboutNetwork");

@@ -54,36 +54,70 @@
     "congress": "Congrés",
     "workshops": "Tallers",
     "visits": "Visites",
-    "sponsorsPartners": "Patrocinadors i socis",
-    "organizedBy": "Organitzat per",
+    "sponsorsPartners": "Partners and Sponsors",
+    "organizedBy": "Organized by",
     "newsletterTitle": "Mantén-te al dia",
     "newsletterSubtitle": "Registra't al nostre butlletí",
-    "newsletterEmailPlaceholder": "Correu electrònic",
-    "newsletterPhonePlaceholder": "Número de telèfon",
+    "newsletterFirstNamePlaceholder": "Nom",
+    "newsletterLastNamePlaceholder": "Cognom",
+    "newsletterCompanyPlaceholder": "Empresa",
+    "newsletterCountryPlaceholder": "Pais",
+    "newsletterEmailPlaceholder": "Correu electronic",
     "newsletterSubmitting": "Subscrivint...",
     "newsletterSubmit": "Subscriure'm",
-    "newsletterValidation": "Si us plau, completa el correu i el número de telèfon.",
-    "newsletterPhoneValidation": "Si us plau, introdueix un número de telèfon vàlid.",
+    "newsletterValidation": "Si us plau completa tots els camps.",
+    "newsletterEmailValidation": "Si us plau introdueix un correu electronic valid.",
     "newsletterSuccess": "Gràcies per subscriure't al nostre butlletí!",
     "newsletterError": "Ha ocorregut un error, si us plau intenta-ho de nou.",
-    "elitePartners": "Socis Elite",
-    "gardenBigExhibitors": "Expositors Garden Big",
-    "gardenMediumExhibitors": "Expositors Garden Medium",
-    "flowerExhibitors": "Expositors Flower",
-    "mediaPartners": "Socis de mitjans",
-    "withTheSupportOf": "Amb el suport de",
-    "comingSoon": "Pròximament",
-    "eventPartners": "Socis de l'esdeveniment"
+    "newsletterConsentLabel": "Accepto rebre comunicacions electroniques, newsletters i informacio sobre WGIC26 segons la Política de Privacitat.",
+    "newsletterConsentError": "Has d'acceptar la Política de Privacitat per subscriure't.",
+    "newsletterPrivacyNotice": "En subscriure't, acceptes que tractem les teves dades conformement a la {privacyLink}. Responsable: Društvo WGIN. Encarregat: Universitat de Lleida.",
+    "elitePartners": "Emerald Partners",
+    "gardenBigExhibitors": "Garden Big Exhibitors",
+    "gardenMediumExhibitors": "Garden Medium Exhibitors",
+    "flowerExhibitors": "Flower Exhibitors",
+    "mediaPartners": "Media Partners",
+    "withTheSupportOf": "With the Support of",
+    "comingSoon": "Coming soon",
+    "eventPartners": "Event Partners",
+    "keynoteSpeakersTitle": "Ponents magistrals",
+    "keynoteSpeakersIntro": "Coneix les veus líders en infraestructura verda confirmades per a WGIC26.",
+    "viewAllSpeakers": "Veure tots els ponents magistrals",
+    "earlyBirdBanner": "Early bird fins al setembre de 2026 — registra't ara i estalvia",
+    "earlyBirdPopupEyebrow": "Oferta per temps limitat",
+    "earlyBirdPopupTitle": "La tarifa early bird acaba el setembre de 2026",
+    "earlyBirdPopupBody": "Assegura la teva plaça a WGIC26 ara i estalvia en la teva inscripció abans que pugin els preus.",
+    "earlyBirdPopupCta": "Registrar-se ara",
+    "earlyBirdPopupDismiss": "Potser més tard",
+    "earlyBirdPopupClose": "Tancar",
+    "registerNow": "Registrar-se ara",
+    "registerForEvent": "Registrar-se a l'esdeveniment",
+    "socialProof": {
+      "papers": "comunicacions presentades",
+      "attendees": "assistents esperats",
+      "countries": "països",
+      "edition": "edició"
+    }
   },
   "footer": {
     "title": "Congrés Mundial d'Infraestructura Verda 2026 Barcelona-Lleida",
-    "legal": "Legal",
+    "date": "27-30 OCT 2026",
+    "usefulLinks": "Enllacos utils",
+    "tickets": "Entrades",
+    "papersProjects": "Papers and Projects",
+    "program": "Programa",
+    "workshops": "Workshops",
+    "technicalVisits": "Visitas tècniques",
+    "letsTalk": "Parlem",
+    "infoEmail": "info@wgic26.barcelona",
+    "registrationEmail": "registration@wgic26.barcelona",
+    "sponsorshipEmail": "sponsorship@wgic26.barcelona",
+    "keyDates": "Dates clau",
+    "stayUpdated": "Manteniu-vos informats",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
     "privacyPolicy": "Política de privacitat",
-    "terms": "Termes i condicions",
-    "contact": "Contacte",
-    "copyright": "WGIC 2026 - Tots els drets reservats",
-    "another": "Una altra",
-    "creation": " creació."
+    "copyright": "WGIC 2026 - Tots els drets reservats"
   },
   "aboutCongress": {
     "title": "El Congrés",
@@ -118,6 +152,7 @@
       "attendees": "Assistents",
       "partners": "Socis i expositors",
       "sponsors": "Patrocinadors",
+      "abstracts": "Període d'enviament de resums",
       "firstDraft": "Envio del primer esborrany",
       "acceptance": "Notificació d'acceptació i decisió Oral/Pòster",
       "r1Draft": "Esborrany R1",
@@ -235,6 +270,7 @@
   "registrationPage": {
     "title": "Inscripció",
     "description": "Uneix-te al Congrés Mundial d'Infraestructura Verda 2026. Registra't ara per assegurar la teva plaça.",
+    "earlyBirdBanner": "Early bird fins al setembre de 2026 — registra't ara i estalvia",
     "platformTitle": "Plataforma d'inscripció",
     "platformDescription": "La inscripció es gestiona a través de la nostra plataforma col·laboradora externa, Hèlice. La quota d'inscripció cobreix els costos durant el període del congrés, incloent dinars i pauses cafè. No inclou viatge ni allotjament.",
     "platformButton": "Registrar-se a la plataforma Hèlice",
@@ -247,10 +283,11 @@
     "keyDates": {
       "abstracts": "Període d'enviament de resums",
       "acceptance": "Notificació d'acceptació (decisió Oral/Pòster)",
-      "firstDraft": "Primer esborrany d'article/pòster",
-      "revision": "Lliurament de revisió d'article/pòster",
-      "finalPaper": "Lliurament final d'article/pòster",
+      "firstDraft": "Primer esborrany d'article",
+      "revision": "Lliurament de revisió d'article",
+      "finalPaper": "Lliurament final d'article",
       "finalProgram": "Programa final",
+      "posterSubmission": "Data límit d'enviament de pòsters",
       "earlyBird": "Data límit d'inscripció anticipada",
       "registrationOpen": "Inscripció oberta",
       "partners": "Socis i expositors",
@@ -258,24 +295,21 @@
     },
     "dateValues": {
       "abstracts": "15 de desembre de 2025 - 31 de maig de 2026",
-      "paperSubmissionDeadline": "< 31 de maig de 2026",
-      "acceptance": "< 15 de maig de 2026",
-      "acceptanceDecision": "< 15 de maig de 2026",
-      "firstDraft": "< 31 de maig de 2026",
-      "r1Draft": "< 15 de juny de 2026",
-      "revision": "< 15 de juliol de 2026",
-      "finalPaper": "< 31 de juliol de 2026",
+      "acceptance": "Abans del 15 de maig de 2026",
+      "firstDraft": "Abans del 15 de juny de 2026",
+      "revision": "Abans del 31 de juliol de 2026",
+      "finalPaper": "Abans del 31 d'agost de 2026",
       "finalProgram": "31 de juliol de 2026",
-      "earlyBird": "< 31 de maig de 2026",
-      "registrationOpen": "< 30 de setembre de 2026",
-      "partners": "< 31 de maig de 2026",
-      "sponsors": "< 30 de setembre de 2026"
+      "posterSubmission": "Abans del 30 de setembre de 2026",
+      "registrationOpen": "Abans del 30 de setembre de 2026",
+      "partners": "Abans del 30 de setembre de 2026",
+      "sponsors": "Abans del 30 de setembre de 2026"
     },
     "feesTitle": "Quotes d'inscripció",
     "feesHeaders": {
       "category": "Categoria",
-      "early": "Anticipada < Maig",
-      "standard": "Estàndard (+15%) < setembre",
+      "early": "Anticipada < Setembre",
+      "standard": "Estàndard (+15%)",
       "onsite": "In situ (+30%)"
     },
     "fees": {
@@ -285,17 +319,75 @@
       "poster": "Pòster (A1)",
       "students": "Estudiants",
       "companions": "Acompanyants",
-      "galaDinner": "Sopar de gala"
+      "galaDinner": "Sopar de gala",
+      "dividerLabel": "QUOTES D'INSCRIPCIÓ"
     },
     "notes": {
       "author": "Cada autor inscrit pot presentar un article (inclosa presentació oral). Per a un segon article, es requereix una quota de 200 EUR.",
       "student": "L'estudiantat a temps complet (sense incloure postdoctorat) ha d'aportar prova de matrícula a temps complet (còpia de carnet estudiantil vigent o carta de la institució o direcció del programa).",
       "certificate": "Totes les persones participants rebran un certificat d'assistència.",
       "proceedings": "Per incloure l'article en el programa del congrés i en les actes, almenys una persona autora s'ha de registrar abans de la data límit d'inscripció.",
-      "invoice": "Si necessites factura, envia un correu a"
+      "invoice": "Si necessites factura, envia un correu a",
+      "invoiceFallback": "Si tens algun problema per contactar amb aquesta adreca, pots escriure a"
     },
     "cancellationTitle": "Cancel·lació i reemborsament",
-    "cancellationBody": "Després del dipòsit bancari, no és possible realitzar reemborsaments."
+    "cancellationBody": "Després del dipòsit bancari, no és possible realitzar reemborsaments.",
+    "privacyPolicy": "Política de privacitat",
+    "legalNoticeTitle": "Informació sobre protecció de dades",
+    "legalNoticeIntro": "La inscripció es gestiona a través de la nostra plataforma externa Helice. Abans de continuar, assegura't d'haver llegit i acceptat el següent:",
+    "legalNoticeHeliceNote": "Els següents consentiments també s'han de configurar al formulari d'Helice, ja que és allà on es recullen les dades personals.",
+    "checkboxMandatory": "Accepto els termes, condicions i la Política de Privacitat per a la gestió de la meva inscripció a l'esdeveniment (Obligatòria).",
+    "checkboxOptional": "Desitjo rebre comunicacions electròniques, novetats, newsletters i informació comercial relacionada amb WGIC26 i futures activitats (Opcional).",
+    "checkboxRequiredError": "Has d'acceptar la Política de Privacitat per continuar amb el registre.",
+    "rightsNote": "Pots exercir els teus drets d'accés, rectificació, supressió i limitació escrivint a les entitats indicades a la Política de Privacitat.",
+    "continueButton": "Continuar al formulari d'Helice",
+    "ctaTitle": "Inscriu-te ara",
+    "ctaIntro": "Completa la teva inscripció en tres passos senzills. Si necessites factura, la podràs sol·licitar durant el procés de pagament.",
+    "ctaStep1": "Tria la quota que s'ajusta al teu perfil a la taula d'abaix.",
+    "ctaStep2": "Accepta la política de privacitat a continuació.",
+    "ctaStep3": "Fes clic al botó per completar les teves dades a la plataforma Helice.",
+    "faqTitle": "Preguntes freqüents",
+    "faq": {
+      "cancel": {
+        "question": "Puc cancel·lar o sol·licitar un reemborsament?",
+        "answer": "Un cop realitzat el pagament, no és possible fer reemborsaments. Si tens una situació excepcional, escriu-nos a inquiry@wgic26.org."
+      },
+      "meals": {
+        "question": "Inclou els àpats?",
+        "answer": "Sí. La quota d'inscripció inclou dinars i pauses cafè durant el congrés. El sopar de gala requereix un tiquet a part. No inclou viatge ni allotjament."
+      },
+      "invoice": {
+        "question": "Necessito factura?",
+        "answer": "Pots sol·licitar la factura al formulari de pagament d'Helice. Si necessites ajuda, escriu a wgic2026.economics@udl.cat o a inquiry@wgic26.org."
+      },
+      "dividerLabel": "PREGUNTES FREQÜENTS"
+    },
+    "countdown": {
+      "title": "EARLY BIRD FINS AL SETEMBRE DE 2026",
+      "cta": "REGISTRA'T ARA I ESTALVIA",
+      "days": "DIES",
+      "hours": "HORES",
+      "minutes": "MIN"
+    },
+    "steps": {
+      "title": "PROCÉS D'INSCRIPCIÓ",
+      "step1": {
+        "title": "TRIA LA TEVA QUOTA",
+        "description": "Selecciona la categoria d'inscripció que s'ajusta al teu perfil a la taula de preus."
+      },
+      "step2": {
+        "title": "ACCEPTA LA POLÍTICA DE PRIVACITAT",
+        "description": "Llegeix i accepta els termes de protecció de dades per continuar amb la teva inscripció."
+      },
+      "step3": {
+        "title": "COMPLETA A HELICE",
+        "description": "Fes clic al botó per completar les teves dades a la plataforma d'inscripció Helice."
+      }
+    },
+    "dataProtection": {
+      "title": "PROTECCIÓ DE DADES",
+      "heliceNote": "La inscripció es gestiona a través de la nostra plataforma externa Helice. Els següents consentiments també s'han de configurar al formulari d'Helice, ja que és allà on es recullen les dades personals."
+    }
   },
   "speakersPage": {
     "title": "Sigues un Orador",
@@ -306,6 +398,7 @@
     "calloutP3": "The best papers presented at WGIC26 will be fast-tracked for Special Issues in three leading peer-reviewed journals: Urban Forestry and Urban Greening (Elsevier), Nature-Based Solutions (Elsevier), and the Journal of Living Architecture (Green Roofs for Healthy Cities –GRHC).",
     "submissionButton": "Anar al formulari d'enviament",
     "templateButton": "Descarregar plantilla d'article",
+    "managePapersButton": "Gestionar les teves ponencies",
     "bodyP1": "WGIC26 rep amb entusiasme enviaments d'investigació original, estudis de cas i aplicacions innovadores, en format d'article curt (màxim 5 pàgines), en format MS Word. Aquesta limitació ajuda a reduir similitud per a articles recomanats posteriorment per a números especials de revistes.",
     "bodyP2": "Tots els articles enviats passen per un procés rigorós de revisió per parells. El comitè científic decideix l'acceptació i si la presentació serà oral o pòster. Els articles acceptats es publicaran en les actes del WGIC2026.",
     "keyDatesTitle": "Dates clau",
@@ -316,10 +409,11 @@
     "keyDates": {
       "abstracts": "Període d'enviament de resums",
       "acceptance": "Notificació d'acceptació (decisió Oral/Pòster)",
-      "firstDraft": "Primer esborrany d'article/pòster",
-      "revision": "Lliurament de revisió d'article/pòster",
-      "finalPaper": "Lliurament final d'article/pòster",
+      "firstDraft": "Primer esborrany d'article",
+      "revision": "Lliurament de revisió d'article",
+      "finalPaper": "Lliurament final d'article",
       "finalProgram": "Programa final",
+      "posterSubmission": "Data límit d'enviament de pòsters",
       "earlyBird": "Data límit d'inscripció anticipada",
       "registrationOpen": "Inscripció oberta",
       "partners": "Socis i expositors",
@@ -329,12 +423,12 @@
       "abstracts": "15 de desembre de 2025 - 31 de maig de 2026",
       "acceptance": "Abans del 15 de maig de 2026",
       "firstDraft": "Abans del 15 de juny de 2026",
-      "revision": "Abans del 15 de juliol de 2026",
-      "finalPaper": "Abans del 31 de juliol de 2026",
+      "revision": "Abans del 31 de juliol de 2026",
+      "finalPaper": "Abans del 31 d'agost de 2026",
       "finalProgram": "31 de juliol de 2026",
-      "earlyBird": "Abans del 31 de maig de 2026",
+      "posterSubmission": "Abans del 30 de setembre de 2026",
       "registrationOpen": "Abans del 30 de setembre de 2026",
-      "partners": "Abans del 31 de maig de 2026",
+      "partners": "Abans del 30 de setembre de 2026",
       "sponsors": "Abans del 30 de setembre de 2026"
     },
     "stepsTitle": "Passos per a l'enviament d'articles",
@@ -343,10 +437,10 @@
       "s2": "Llegeix les instruccions amb cura.",
       "s3": "Selecciona un tema principal on encaixi el teu treball.",
       "s4": "Prepara l'article (màxim 5 pàgines).",
-      "s5": "Envia el teu article en format .doc abans del 30 d'abril de 2026.",
-      "s6": "Rebràs la decisió i revisió R1 abans del 15 de maig de 2026.",
-      "s7": "Lliura l'article revisat (R1) abans del 12 de juny de 2026 i R2 abans del 30 de juny de 2026.",
-      "s8": "Lliura l'article final abans del 30 de juliol de 2026."
+      "s5": "Envia el teu article en format .doc abans del 31 de maig de 2026.",
+      "s6": "Rebràs la notificació d'acceptació i la primera revisió abans del 15 de juny de 2026.",
+      "s7": "Els autors fan canvis i tornen a pujar l'article revisat abans del 31 de juliol de 2026. Segona revisió.",
+      "s8": "Els autors pugen l'article final abans del 31 d'agost de 2026."
     },
     "typologiesTitle": "Tipologies de presentació",
     "tableHeaders": {
@@ -372,9 +466,47 @@
   },
   "legalPages": {
     "privacyTitle": "Política de privacitat",
-    "termsTitle": "Termes i condicions",
     "comingSoon": "Pròximament",
-    "contactEmail": "hola@wgic26.barcelona"
+    "contactEmail": "hola@wgic26.barcelona",
+    "lastUpdated": "Ultima actualitzacio",
+    "privacyIntro": "En compliment del Reglament (UE) 2016/679 (RGPD), s'informa els usuaris i participants del World Green Infrastructure Congress 2026 (WGIC26) sobre el tractament de les seves dades personals.",
+    "controllerTitle": "1. Responsables del tractament",
+    "controllerLabel": "Responsable Principal (Data Controller)",
+    "controllerName": "Društvo WGIN",
+    "controllerAddress": "Trata 31, 4220 Škofja Loka, Eslovenia",
+    "controllerVat": "NIF SI84998911",
+    "processorLabel": "Encarregat del Tractament (Data Processor)",
+    "processorName": "UNIVERSITAT DE LLEIDA",
+    "processorAddress": "Pl. Víctor Siurana 1, 25003 Lleida, Espanya",
+    "processorVat": "NIF Q7550001G",
+    "processingAgreement": "Ambdos organismes actuen sota un contracte d'encarregament de tractament de dades conforme a l'article 28 del RGPD per a la correcta organitzacio, difusio i support tecnic del congrés.",
+    "purposesTitle": "2. Finalitat del tractament",
+    "purposesIntro": "Tractem la informacio facilitada per les persones interessades per a:",
+    "purposeRegistration": "Gestionar la inscripcio, assistencia, facturacio i control d'accessos a l'esdeveniment WGIC26.",
+    "purposeAgenda": "Coordinar les agendes, ponencies (calls for papers/speakers) i activitats comercials o de promocio del congrés.",
+    "purposeCommunications": "Enviar newsletters i comunicacions electroniques relacionades amb l'esdeveniment.",
+    "retentionTitle": "3. Termini de conservacio",
+    "retentionText": "Les dades personals proporcionades es conservaran mentre es mantingui la relacio amb l'esdeveniment, durant els terminis legals per atendre possibles responsabilitats i fins que l'interessat sol-liciti la seva supressio.",
+    "legalBasisTitle": "4. Legitimacio",
+    "legalBasisText": "La base legal es el consentiment de l'usuari en registrar-se al formulari, enviar un resum (abstract) o subscriure's als nostres butlletins informatius.",
+    "rightsTitle": "5. Drets",
+    "rightsText": "Qualsevol persona te dret a obtenir confirmacio sobre si estem tractant les seves dades personals. Els interessats poden exercir els seus drets d'acces, rectificacio, supressio, limitacio, oposicio i portabilitat enviant una comunicacio per escrit a les adreces postals de Društvo WGIN o de la Universitat de Lleida especificades anteriorment, o enviant un correu electronic a",
+    "rightsEmail": "wgic2026.economics@udl.cat",
+    "shortNoticeTitle": "Informacio basica sobre proteccio de dades",
+    "shortNoticeIntro": "Informacio basica sobre proteccio de dades:",
+    "shortNoticeController": "Responsable: Društvo WGIN (Trata 31, 4220 Škofja Loka, Eslovenia).",
+    "shortNoticeProcessor": "Encarregat del Tractament: Universitat de Lleida (Pl. Víctor Siurana 1, 25003 Lleida, Espanya).",
+    "shortNoticePurpose": "Finalitat: Gestio de la inscripcio al congrés WGIC26, enviament de comunicacions informatives, novetats de l'esdeveniment i gestio d'activitats associades.",
+    "shortNoticeLegalBasis": "Legitimacio: Consentiment de l'interessat en subscriure's o registrar-se.",
+    "shortNoticeRecipients": "Destinataris: No es cediran dades a tercers llevat obligacio legal o necessitat estricta per a l'execucio de l'esdeveniment.",
+    "shortNoticeRights": "Drets: Pot accedir, rectificar, limitar i suprimir les seves dades, aixi com exercir altres drets dirigint-se per escrit a les adreces de les entitats responsables.",
+    "shortNoticeMoreInfo": "Informacio addicional: Pot consultar la politica de privacitat completa al nostre lloc web.",
+    "registrationNoticeTitle": "Formulari de registre web",
+    "registrationNoticeIntro": "Informacio sobre Proteccio de Dades: Društvo WGIN (Responsable) i la Universitat de Lleida (Encarregada del Tractament) tractaran les seves dades per gestionar la seva inscripcio, assistencia, facturacio i participacio al congrés WGIC26. Per a l'enviament de comunicacions posteriors, si us plau, marqui les seguents caselles segons les seves preferencies:",
+    "checkboxMandatory": "Accepto la Política de Privacitat per a la gestio de la meva inscripcio a l'esdeveniment (Obligatoria per registrar-se).",
+    "checkboxOptional": "Desitjo rebre comunicacions electroniques, novetats, newsletters i informacio comercial relacionada amb el congrés WGIC26 i futures activitats de les entitats organitzadores (Opcional).",
+    "rightsNote": "Pot exercir els seus drets d'acces, rectificacio, supressio i limitacio escrivint a les adreces de les entitats indicades a la Política de Privacitat.",
+    "readMore": "Veure Política de Privacitat completa"
   },
   "travelPage": {
     "title": "Viatge",
@@ -413,15 +545,6 @@
     "daysCount": "Dies",
     "roomsCount": "Sales",
     "tracksCount": "Tracks"
-  },
-  "programSpeakersPage": {
-    "title": "Speakers",
-    "description": "Coneix els experts, investigadors i professionals que compartiran el seu coneixement al WGIC26.",
-    "noSpeakers": "Encara no hi ha speakers disponibles.",
-    "moreInfo": "Mes info",
-    "lessInfo": "Menys info",
-    "linkedin": "LinkedIn",
-    "speakersCount": "Speakers"
   },
   "programSpecialIssuesPage": {
     "title": "Edicions especials",
@@ -495,6 +618,10 @@
       "speaker7": {
         "name": "Dorothy Aseyo",
         "bio": "Directora Executiva del Moviment Cinturó Verd, Dorothy Aseyo treballa en conservació ambiental, empoderament comunitari, mitjans de vida sostenibles i resiliència climàtica, promovent solucions basades en la natura i acció de base per construir societats més resilients i inclusives."
+      },
+      "speaker8": {
+        "name": "María Buhigas",
+        "bio": "María Buhigas és l'Arquitecta en Cap de l'Ajuntament de Barcelona. Arquitecta i urbanista, té una àmplia experiència en estratègia urbana, espai públic, habitatge i transformació de la ciutat. La seva feina se centra en el paper de la planificació urbanística i l'arquitectura per respondre als reptes socials, ambientals i territorials actuals, amb un fort èmfasi en crear ciutats més habitables, inclusives i resilients."
       }
     },
     "closing": "Aquest primer grup d'oradors subratlla l'ambició, profunditat i visió multidisciplinar de WGIC 2026, posicionant-lo com un fòrum clau per al debat urbà global."
@@ -597,10 +724,13 @@
   "workshopsPage": {
     "title": "Tallers",
     "description": "Sessions interactives sobre temes clau de WGIC26",
-    "img1Alt": "Espai de tallers a Barcelona",
+    "img1Alt": "Espai de taller a Barcelona",
     "img2Alt": "Instal·lacions de la Universitat de Lleida",
     "p1": "WGIC26 inclourà tallers temàtics en paral·lel a les sessions de presentació oral durant els dies u i dos.",
     "thematicTitle": "Tallers temàtics",
+    "expandHint": "Fes clic a cada taller per veure més detalls",
+    "seeMore": "Veure mes",
+    "seeLess": "Veure menys",
     "day4Title": "Dia 4: Tallers d'innovació a la Universitat de Lleida",
     "day4Description": "S'ha previst un quart dia addicional centrat específicament en innovació i recerca dins del sector d'infraestructura verda.",
     "tableHeaders": {
@@ -622,18 +752,182 @@
     },
     "comingSoonTitle": "Informació detallada pròximament",
     "comingSoonBody": "La informació detallada sobre els tallers d'innovació i recerca a Lleida i la seva inscripció es publicarà pròximament.",
+    "labels": {
+      "leadership": "Lideratge",
+      "workingGroup": "Grup de treball",
+      "why": "Per què?",
+      "mainObjective": "Objectiu principal",
+      "specificObjectives": "Objectius específics",
+      "caseStudies": "Exemples / Casos d'estudi",
+      "proposal": "Què proposem per al taller",
+      "keynoteSpeaker": "Ponent principal destacat a WGIC26",
+      "goals": "Objectius",
+      "expectedOutcomes": "Resultats esperats"
+    },
     "cards": {
       "globalSouth": {
-        "title": "Infraestructura verda vs Sud Global",
-        "description": "Abordar el repte de construir ciutats resilients, saludables i justes al Sud Global."
+        "title": "Global Minds. Aliances de recerca del Sud Global en infraestructura verda",
+        "description": "Passar de la transferència d'expertesa del Nord a una aliança autèntica amb el Sud Global, el co-disseny i la producció compartida de coneixement sobre infraestructura verda i solucions basades en la natura.",
+        "leadership": "Bert Belmans – University of Antwerp",
+        "workingGroup": [
+          "Francesca Mosca (University of Genoa, Italy)",
+          "Elaise Gabriel (Federal University of Santa Maria, Brazil)",
+          "Rutineia Tassi (Federal University of Santa Maria, Brazil)",
+          "Fabiana Pimentel (Federal University of Santa Maria, Brazil)",
+          "Aline Vilela (Ares - Eficiência Energética e Sustentabilidade, Brazil)",
+          "Kamal Passi (Central Public Works Department, India)",
+          "Irfan Haider Khan (Central Public Works Department, India)",
+          "Manika Goel (School of Planning and Architecture, New Delhi and Guru Gobind Singh Indraprastha University, India)",
+          "Jack Omondi (CIDE Group & Kenyatta University, Kenya)",
+          "Andrea Castro (Nfinite, Colombia)",
+          "Luowen Lyu (University of Technology, Australia)",
+          "Anouk De Bock (University of Antwerp, Belgium)",
+          "Lotte Carron (University of Antwerp, Belgium)"
+        ],
+        "why": "La crisi climàtica i els reptes interconnectats de sostenibilitat als quals ens enfrontem avui afecten totes les nacions, tot i amb impactes i responsabilitats profundament desiguals. Els països del Sud Global sovint enfronten les conseqüències més severes alhora que posseeixen sistemes de coneixement inestimables, enfocaments innovadors i solucions específiques al context essencials per abordar els nostres reptes planetaris compartits. Aquest tema estarà dedicat a explorar com podem passar de veure el Sud Global principalment com a receptor de l'expertesa del Nord a adoptar una aliança autèntica caracteritzada per l'aprenentatge mutu, la co-creació de coneixement i la compartició equitativa de beneficis.",
+        "mainObjective": "Fomentar una col·laboració veritablement equitativa entre investigadors, professionals i professionals emergents del Nord Global i del Sud Global en l'àmbit de la GI i les NbS, anant més enllà de la transferència acrítica de marcs del Nord per adoptar el co-disseny, l'aprenentatge mutu i la producció compartida de coneixement. Documentar i amplificar els enfocaments innovadors de GI i NbS desenvolupats en contextos del Sud Global amb recursos limitats que són pràcticament absents de la literatura convencional.",
+        "specificObjectives": [
+          "Establir un marc operatiu per a una col·laboració Nord-Sud en GI equitativa fonamentada en el co-disseny, l'anàlisi explícita del poder, la sensibilitat al context, els sistemes de coneixement híbrids i el reforç de capacitats mutu.",
+          "Co-produir un manifest a WGIC26 a Barcelona que advoca per un canvi estructural en com es produeix, es publica i es reconeix el coneixement en GI a escala global."
+        ],
+        "caseStudies": [
+          {
+            "title": "Cas d'estudi 1 — Experiència verda a nivell de carrer a Lucknow, Índia",
+            "body": "S'han aplicat l'anàlisi de píxels verds a nivell de vista, l'observació del comportament i enquestes estructurades de percepció en carrers urbans contrastats de Lucknow, Índia, per avaluar la vegetació com a infraestructura urbana viscuda en lloc de com a cobertura verda estadística. Els resultats van demostrar que la qualitat de l'experiència verda a nivell de carrer importa més que la cobertura de capçada quantitativa per si sola, amb entorns ombrívols i visualment tancats que mostren una activitat peatonal significativament més alta. El marc és escalable i transferible a altres ciutats en ràpida urbanització del Sud Global i del Nord Global.",
+            "id": "lucknow"
+          },
+          {
+            "title": "Cas d'estudi 2 — Regeneració dirigida per la comunitat mitjançant NbS (Amèrica Llatina)",
+            "body": "Els projectes de Medellin, São Paulo, Buenos Aires i Xile demostren com la GI pot funcionar com una resposta multifuncional a crisis urbanes superposades en condicions d'escassetat de recursos i desigualtat sociospatial. L'eficàcia de les NbS depèn tant de l'apropiació social, la participació comunitària i l'adaptació local com del rendiment tècnic. Les solucions no es poden transferir com a models estandarditzats des del Nord Global.",
+            "id": "latin-america"
+          },
+          {
+            "title": "Cas d'estudi 3 — Enverdissament vertical per a assentaments informals (Kibera, Kenya)",
+            "body": "Kibera, l'assentament informal més gran de Nairobi, acull fins a 750.000 persones en 2,5 km² en condicions d'extrema escassetat de recursos, espai a nivell de terra críticament limitat, estrès tèrmic intens, inundacions periòdiques i alta pobresa. S'ha demostrat que els murs verds i les cobertes verdes de baix cost fets amb materials locals reciclats aporten confort tèrmic, capacitat d'agricultura urbana i resiliència a les inundacions simultàniament, sense exigir escàs espai a nivell de terra. L'ús d'escoles com a punts d'ancoratge per a l'escalat de les NbS es va identificar com una estratègia especialment important, ja que els edificis escolars es reconeixen com a béns comunitaris compartits i tendeixen a preservar-se fins i tot durant episodis de destrucció deliberada. Kibera il·lustra la innovació sota pressió i la urgència d'una col·laboració interregional que aprengui del Sud Global en lloc d'imposar solucions del Nord.",
+            "id": "kibera"
+          },
+          {
+            "title": "Cas d'estudi 4 — Teto Verde Favela, Rio de Janeiro",
+            "body": "Iniciativa socioambiental creada el 2014 a Benfica (Zona Nord de Rio). El projecte transforma les terrasses en cobertes verdes per mitigar l'efecte d'illa de calor urbana, millorar la qualitat de l'aire i fer de la favela un lloc més agradable per viure.",
+            "link": "https://wikifavelas.com.br/index.php/Teto_Verde_Favela#Contato",
+            "id": "teto-verde"
+          }
+        ],
+        "proposal": "Una sessió participativa i oberta que co-produeix el primer esborrany complet del manifest sobre col·laboració equitativa en GI i NbS amb un públic internacional ampli. La sessió es basa en el pla desenvolupat durant el taller Global Minds a Anvers (maig de 2026) i s'estructurarà al voltant de sis grups temàtics: (1) equitat del coneixement i accés a la informació; (2) bretxes de finançament i suport als investigadors en inicis de carrera; (3) compromís polític i fer visibles les NbS als governs; (4) empoderament comunitari i assentaments informals; (5) educació, reforç de capacitats i intercanvi Nord-Sud; (6) aliances estratègiques Nord-Sud i hubs actius del CEP. La sessió donarà lloc a un conjunt de compromisos acordats que es publicaran com el Manifest del Sud Global de WGIN-CEP. Després de la sessió de co-producció, el manifest es publicarà a través dels canals de WGIN-CEP i es compartirà amb els participants, els ponents principals i la comunitat més àmplia de GI i NbS. El manifest advocarà per un canvi estructural en com es produeix, es publica, es finança i es reconeix el coneixement en GI a escala global, amb un focus específic en l'equitat, els assentaments informals i el reconeixement de la innovació del Sud Global.",
+        "keynoteSpeaker": "El congrés comptarà amb Dorothy Asuza Aseyo (Green Belt Movement), una veu destacada en la intersecció entre la restauració ecològica i la justícia social. El Green Belt Movement (GBM) demostra com les solucions basades en la natura poden transformar tant els paisatges com les comunitats: reforestació a gran escala i restauració d'ecosistemes; empoderament de les dones a través de l'acció ambiental; desenvolupament de mitjans de vida sostenibles; educació ambiental i mobilització comunitària; acció climàtica amb impacte tant local com global.",
+        "leadershipName": "Bert Belmans",
+        "leadershipAffiliation": "University of Antwerp"
       },
       "health": {
-        "title": "Infraestructura verda vs salut i benestar",
-        "description": "Explorar la connexió entre infraestructura verda i salut pública mitjançant solucions basades en la natura."
+        "title": "Superant la bretxa — Salut i benestar com el cor de la infraestructura verda",
+        "description": "Explorar com la infraestructura verda, des de boscos urbans fins a cobertes i murs verds, dóna suport a la salut mental i física i ajuda a prevenir malalties no transmissibles.",
+        "leadership": "David Brasfield - World Green Infrastructure Network",
+        "workingGroup": [
+          "Silvia Solé Cases - University of Lleida",
+          "Laura Herrera Diez - University of Lleida",
+          "Elsa Punset - Punset Terraviva Foundation",
+          "Rocío Varela de Seijas Sapia - VASE arquitectos",
+          "Lucía Gómez Rodríguez - VASE arquitectos"
+        ],
+        "why": "Les nostres ciutats realment poden curar-nos? La World Green Infrastructure Network (WGIN) advoca per l'ús òptim de la infraestructura verda per donar suport a la salut i el benestar tant de les persones com del planeta. Tanmateix, existeix una bretxa reconeguda en l'atenció dedicada als beneficis específics per a la salut humana de la urbanització verda. El World Green Infrastructure Congress 2026 (WGIC26) a Barcelona té com a objectiu superar aquesta divisió entre el planejament urbà i la salut pública. Explorem com la 'infraestructura verda', des de boscos urbans fins a cobertes i murs verds, és un requisit previ per al floreixement mental i físic i la prevenció de malalties no transmissibles (NCDs). La natura a la ciutat actua com la medicina preventiva definitiva, reduint els nivells de cortisol, millorant la qualitat de l'aire, donant suport al microbioma humà i mitigant la calor extrema per crear entorns resilients on les persones puguin prosperar. Aquest eix temàtic fomentarà la col·laboració interdisciplinària i posarà de relleu àrees clau d'atenció: La ciència de la connexió, examinar com l'exposició a la natura redueix les malalties cròniques i potencia la salut mental; El disseny urbà com a teràpia, estratègies per transformar espais 'grisos' en 'paisatges terapèutics' funcionals; Històries d'èxit, mostrar ciutats globals que lideren el camí cap a una sostenibilitat centrada en la salut; i una Crida a l'acció per a la comunitat de la salut, a través d'una col·laboració interdisciplinària més forta, podem fomentar un major reconeixement de la rellevància de la infraestructura verda integrada en l'edificació en la recerca, les polítiques i la pràctica en salut.",
+        "goals": [
+          "Millorar la salut i el benestar humans mitjançant l'adopció i el disseny òptims de la infraestructura verda en àrees urbanes.",
+          "Facilitar una millor col·laboració entre la comunitat de pràctica d'infraestructura verda i el sector de la salut.",
+          "Oferir exemples específics, conceptes i elements de disseny que es puguin incorporar en instal·lacions de salut i desenvolupaments urbans a Barcelona i als municipis participants de BIG4LIFE.",
+          "Millorar l'advocacia per la infraestructura verda mitjançant una comprensió més profunda dels beneficis per a la salut i el benestar del contacte humà amb la natura.",
+          "Identificar les principals variables de mesura en aquest tipus d'intervencions."
+        ],
+        "caseStudies": [
+          {
+            "title": "Jardí terapèutic a l'Institut Català d'Oncologia",
+            "link": "https://arquitopia.com/portfolio/reforma-del-patio-del-instituto-catalan-de-oncologia-ardi-platejat/",
+            "id": "catalan-oncology"
+          },
+          {
+            "title": "Jardí terapèutic a l'Hospital de Sant Pau, Barcelona",
+            "link": "https://www.santpau.cat/en/comunic-actualitat/-/asset_publisher/0n2ILqhO4yy6/content/lhospital-de-sant-pau-estrena-jardins-terapeutics?_assetEntryId=803018",
+            "id": "sant-pau"
+          },
+          {
+            "title": "Jardins terapèutics, Hospital 12 d'Octubre",
+            "link": "https://vasearq.com/proyecto/jardines-terapeuticos-12-octubre/",
+            "id": "hospital-12-octubre"
+          },
+          {
+            "title": "Fundació Juegaterapia: jardins terapèutics a la coberta de l'Hospital La Paz, Gregorio i 12 d'Octubre a Madrid i de l'Hospital La Fe a València",
+            "link": "https://www.juegaterapia.org/proyectos-solidarios-cancer-infantil/el-jardin-de-mi-hospi-12-de-octubre/",
+            "id": "juegaterapia"
+          },
+          {
+            "title": "Bosc de Tres Roures, al costat de l'Hospital d'Olot",
+            "link": "https://hospiolot.com/lhospital-dolot-inaugura-el-bosc-dels-tres-roures/",
+            "id": "tres-roures"
+          },
+          {
+            "title": "Jardí terapèutic a l'Hospital de Santa Creu i Sant Pau",
+            "link": "https://fundaciosantpau.cat/es/news/lhospital-estrena-jardins-terapeutics",
+            "id": "santa-creu"
+          },
+          {
+            "title": "Maggies Yorkshire Palliative Cancer Care Facility, Leeds, Regne Unit. Heatherwick Studio",
+            "link": "https://heatherwick.com/project/maggies/",
+            "id": "maggies-yorkshire"
+          },
+          {
+            "title": "Hospital de rehabilitació a Basilea, Suïssa. Herzog & de Meuron Architects",
+            "link": "https://www.herzogdemeuron.com/projects/165-rehab-clinic-for-neurorehabilitation-and-paraplegiology/",
+            "id": "rehab-basel"
+          }
+        ],
+        "leadershipName": "David Brasfield",
+        "leadershipAffiliation": "World Green Infrastructure Network"
       },
       "recovery": {
-        "title": "Infraestructura verda vs recuperació postconflicte",
-        "description": "Examinar el paper de la infraestructura verda en la recuperació de societats i llocs després de contextos de conflicte o desastre."
+        "title": "La infraestructura verda com a infraestructura de recuperació: recuperació comunitària, avaluació de danys i reconstrucció resilient",
+        "description": "Posicionar la infraestructura verda com a component mesurable, invertible i llest per a la implementació de la recuperació postconflicte i postdesastre.",
+        "leadership": "Oleksandra Strashok – Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; National University of Life and Environmental Sciences of Ukraine, Department of Phytodesign and Landscape Architecture; Ukrainian Association of Green Infrastructure; World Green Infrastructure Network",
+        "workingGroup": [
+          "David Brasfield – Norwegian Association for Green Infrastructure; World Green Infrastructure Network",
+          "Marta Weber – Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; Polish Green Roofs Association; World Green Infrastructure Network",
+          "Selim Bayraktar – İstanbul University-Cerrahpaşa, Faculty of Forestry, Department of Landscape Architecture",
+          "Maria Gabriella Trovato – Norwegian University of Life Sciences; International Federation of Landscape Architects",
+          "Audrey Timm – International Association of Horticultural Producers",
+          "Zoë Avery – Associate Director of Design (Urban Planning), School of Architecture and Planning, University of Auckland; Director of The Urbanist; Chair of Design for Nature; Australasian Green Infrastructure Network; World Green Infrastructure Network"
+        ],
+        "why": "Les ciutats que es recuperen de conflictes i desastres enfronten un repte i una oportunitat comuns: no només reconstruir el que s'ha perdut, sinó utilitzar els processos de recuperació per crear entorns urbans més segurs, resilients, ambientalment sostenibles i socialment inclusius mitjançant la integració estratègica de la infraestructura verda i grisa. Els programes de recuperació tradicionalment se centren en l'habitatge, el transport, els sistemes energètics i els serveis públics. Tanmateix, els parcs, els boscos urbans, els arbres de carrer, els jardins privats, les cobertes verdes, els espais oberts públics i altres formes de GI rares vegades es consideren actius essencials de recuperació malgrat la seva contribució demostrada a la salut pública, l'adaptació climàtica, la restauració d'ecosistemes i el benestar comunitari. L'experiència internacional demostra que la GI pot servir com a més que una comoditat ambiental. Pot funcionar com a infraestructura de recuperació donant suport a la cohesió social, facilitant la participació comunitària, millorant els resultats de salut mental, restaurant serveis ecosistèmics i reduint la vulnerabilitat climàtica a llarg termini. Al mateix temps, persisteixen reptes significatius. Els danys a la GI rares vegades es quantifiquen, les pèrdues d'ecosistemes poques vegades s'incorporen als marcs de compensació, i els mecanismes de finançament per a la recuperació verda segueixen sent limitats. Els arquitectes paisatgistes, els planificadors i els ecòlegs sovint estan infrarepresentats en les avaluacions de danys i els processos de presa de decisions de recuperació. Aquest Tema Destacat explora com la GI pot convertir-se en un component mesurable, invertible i llest per a la implementació de la recuperació postconflicte i postdesastre.",
+        "mainObjective": "Posicionar la GI com a component estratègic de la recuperació urbana i la construcció de resiliència, capaç d'aportar beneficis socials, ambientals i econòmics al llarg dels processos de reconstrucció postconflicte i postdesastre.",
+        "specificObjectives": [
+          "Explorar experiències internacionals on la GI va contribuir a la recuperació i la resiliència.",
+          "Discutir com les pèrdues de GI poden reconèixer-se millor dins de les avaluacions i els processos de planificació de la recuperació.",
+          "Investigar el paper de la participació comunitària en la configuració dels resultats de recuperació.",
+          "Explorar el paper en evolució dels arquitectes paisatgistes en la governança i la implementació de la recuperació.",
+          "Identificar barreres i oportunitats per al finançament d'iniciatives de recuperació verda.",
+          "Co-produir recomanacions per integrar la infraestructura verda en els marcs de recuperació."
+        ],
+        "caseStudies": [
+          {
+            "title": "Cas d'estudi 1 — Recuperació i adaptació liderades per la comunitat a Nova Zelanda",
+            "body": "Nova Zelanda aporta exemples internacionalment reconeguts de planificació de recuperació i resiliència centrada en la comunitat. Després dels terratrèmols de Christchurch, iniciatives com Greening the Rubble i Gap Filler van transformar solars buits en espais públics temporals que van donar suport a la recuperació social, la participació comunitària i la creació de lloc molt abans que es completés la reconstrucció permanent. Més recentment, les experiències de les comunitats del Far North han demostrat com les comunitats locals, els planificadors i els prescriptors treballen junts per abordar els creixents riscos climàtics, incloent-hi la retirada gestionada, la planificació de la reubicació i estratègies d'adaptació basades en la natura. Junts, aquests exemples il·lustren com la implicació comunitària pot configurar els resultats de recuperació i com la infraestructura verda pot donar suport tant a la recuperació com a la resiliència a llarg termini.",
+            "link": "https://www.gehlpeople.com/projects/christchurch-redevelopment-plan/",
+            "id": "new-zealand"
+          },
+          {
+            "title": "Cas d'estudi 2 — Avaluació de danys en infraestructura verda i planificació de la recuperació a Ucraïna",
+            "body": "La recuperació de les ciutats ucraïneses presenta una oportunitat única per repensar el paper de la GI dins dels marcs de reconstrucció. Si bé s'ha avançat significativament en l'avaluació de danys en edificis i infraestructura tècnica, les metodologies per avaluar les pèrdues de boscos urbans, parcs, arbres de carrer i serveis ecosistèmics segueixen sent limitades. Els enfocaments emergents basats en teledetecció, valoració de serveis ecosistèmics i anàlisi espacial ofereixen oportunitats per desenvolupar mètodes basats en evidència per avaluar danys en infraestructura verda i donar suport a la planificació de la recuperació. El cas ucraïnès posa de relleu la necessitat d'enfocaments pràctics per quantificar les pèrdues d'ecosistemes, prioritzar inversions en recuperació verda i integrar la resiliència climàtica en les estratègies de reconstrucció.",
+            "link": "https://www.gettyimages.com/editorial-images/news/event/kyiv-suburbs-begin-cleanup-and-commemorate-their-dead-after-war-shifts-away-from-capital/775803516",
+            "id": "ukraine"
+          }
+        ],
+        "proposal": "El taller s'organitzarà com una sessió interactiva de World Café que combinarà breus introduccions d'experts amb debats moderats a taules rodones. Els participants rotaran entre quatre taules de debat temàtiques, cadascuna liderada per un membre del grup de treball i recolzada amb exemples pràctics dels casos d'estudi. El taller té com a objectiu facilitar el diàleg entre investigadors, responsables polítics, professionals, inversors i representants comunitaris alhora que genera recomanacions pràctiques per integrar la infraestructura verda en els processos de recuperació.",
+        "expectedOutcomes": [
+          "Identificació de les barreres i oportunitats clau per integrar la GI en els processos de recuperació.",
+          "Intercanvi d'experiències internacionals de Nova Zelanda, Ucraïna i altres contextos de recuperació.",
+          "Comprensió compartida de com la implicació comunitària, l'arquitectura del paisatge i la GI contribueixen a una recuperació resilient.",
+          "Recomanacions inicials per millorar el reconeixement de la GI dins dels marcs de planificació, avaluació i finançament de la recuperació.",
+          "Identificació d'àrees prioritàries per a la recerca futura, el desenvolupament de polítiques i la col·laboració internacional."
+        ],
+        "leadershipName": "Oleksandra Strashok",
+        "leadershipAffiliation": "Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; National University of Life and Environmental Sciences of Ukraine, Department of Phytodesign and Landscape Architecture; Ukrainian Association of Green Infrastructure; World Green Infrastructure Network"
       }
     }
   },

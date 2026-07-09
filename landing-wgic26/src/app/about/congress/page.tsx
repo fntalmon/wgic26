@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import TextImage from "@/components/TextImage";
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "About the Congress | WGIC26 Barcelona-Lleida",
+  description:
+    "Discover WGIC26, the urban sustainability congress Barcelona is hosting in 2026 — bringing together researchers, planners and policymakers shaping the future of green infrastructure.",
+};
 
 const Congress = async () => {
   const t = await getTranslations("aboutCongress");
@@ -18,13 +25,12 @@ const Congress = async () => {
   const videoId = videoIds[locale] || videoIds.en;
 
   const keyDates = [
-    { who: t("dates.authors"), what: t("dates.firstDraft"), when: registration("paperSubmissionDeadline") },
-    { who: t("dates.scientificCommittee"), what: t("dates.acceptance"), when: registration("acceptanceDecision") },
-    { who: t("dates.authors"), what: t("dates.r1Draft"), when: registration("r1Draft") },
+    { who: t("dates.authors"), what: t("dates.abstracts"), when: registration("abstracts") },
+    { who: t("dates.scientificCommittee"), what: t("dates.acceptance"), when: registration("acceptance") },
+    { who: t("dates.authors"), what: t("dates.firstDraft"), when: registration("firstDraft") },
     { who: t("dates.scientificCommittee"), what: t("dates.revisionR2"), when: registration("revision") },
     { who: t("dates.authors"), what: t("dates.finalPaper"), when: registration("finalPaper") },
     { who: t("dates.organizingCommittee"), what: t("dates.finalProgram"), when: registration("finalProgram") },
-    { who: t("dates.attendees"), what: t("dates.earlyBird"), when: registration("earlyBird") },
     { who: t("dates.attendees"), what: t("dates.registration"), when: registration("registrationOpen") },
     { who: t("dates.partners"), what: t("dates.registration"), when: registration("partners") },
     { who: t("dates.sponsors"), what: t("dates.registration"), when: registration("sponsors") },

@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "Keynote Speakers | WGIC26 Barcelona-Lleida",
+  description:
+    "Meet the keynote speakers confirmed for WGIC26, international experts and innovators leading this nature-based solutions conference in Barcelona.",
+};
 
 const speakerSlots = [
   { id: "speaker1", image: "/img/speakers/marcosros.jpg" },

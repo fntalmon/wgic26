@@ -35,6 +35,14 @@ function getAuthors(): Record<string, Author> {
   return JSON.parse(raw);
 }
 
+function imageExists(coverImage?: string): boolean {
+  if (!coverImage) return false;
+  // External URLs cannot be verified at build time
+  if (/^https?:\/\//.test(coverImage)) return true;
+  const imagePath = path.join(process.cwd(), "public", coverImage);
+  return fs.existsSync(imagePath);
+}
+
 export function getPostSlugs(): string[] {
   if (!fs.existsSync(postsDirectory)) return [];
   return fs
@@ -61,7 +69,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     title: data.title ?? "Untitled",
     date: data.date ?? new Date().toISOString().split("T")[0],
     excerpt: data.excerpt ?? "",
-    coverImage: data.coverImage,
+    coverImage: imageExists(data.coverImage) ? data.coverImage : undefined,
     author: data.author ?? "WGIC26 Editorial Team",
     category: data.category ?? "General",
     tags: data.tags ?? [],

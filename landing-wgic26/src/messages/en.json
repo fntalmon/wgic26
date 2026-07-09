@@ -59,31 +59,65 @@
     "newsletterTitle": "Stay up to date",
     "newsletterSubtitle": "Register to our Newsletter",
     "newsletterEmailPlaceholder": "Email address",
-    "newsletterPhonePlaceholder": "Phone number",
+    "newsletterFirstNamePlaceholder": "First name",
+    "newsletterLastNamePlaceholder": "Last name",
+    "newsletterCompanyPlaceholder": "Company",
+    "newsletterCountryPlaceholder": "Country",
     "newsletterSubmitting": "Subscribing...",
     "newsletterSubmit": "Subscribe",
-    "newsletterValidation": "Please provide both email and phone number.",
-    "newsletterPhoneValidation": "Please enter a valid phone number.",
+    "newsletterValidation": "Please fill in all fields.",
+    "newsletterEmailValidation": "Please enter a valid email address.",
     "newsletterSuccess": "Thank you for subscribing to our newsletter!",
     "newsletterError": "An error occurred, please try again.",
-    "elitePartners": "Elite Partners",
+    "newsletterConsentLabel": "I agree to receive electronic communications, newsletters and information about WGIC26 according to the Privacy Policy.",
+    "newsletterConsentError": "You must accept the Privacy Policy to subscribe.",
+    "newsletterPrivacyNotice": "By subscribing, you agree that we process your data according to the {privacyLink}. Controller: Društvo WGIN. Processor: Universitat de Lleida.",
+    "elitePartners": "Emerald Partners",
     "gardenBigExhibitors": "Garden Big Exhibitors",
     "gardenMediumExhibitors": "Garden Medium Exhibitors",
     "flowerExhibitors": "Flower Exhibitors",
     "mediaPartners": "Media Partners",
     "withTheSupportOf": "With the Support of",
     "comingSoon": "Coming soon",
-    "eventPartners": "Event Partners"
+    "eventPartners": "Event Partners",
+    "keynoteSpeakersTitle": "Keynote Speakers",
+    "keynoteSpeakersIntro": "Meet the leading voices in green infrastructure confirmed for WGIC26.",
+    "viewAllSpeakers": "View all keynote speakers",
+    "earlyBirdBanner": "Early bird ends September 2026 — register now and save",
+    "earlyBirdPopupEyebrow": "Limited-time offer",
+    "earlyBirdPopupTitle": "Early bird pricing ends September 2026",
+    "earlyBirdPopupBody": "Secure your spot at WGIC26 now and save on your registration before prices go up.",
+    "earlyBirdPopupCta": "Register now",
+    "earlyBirdPopupDismiss": "Maybe later",
+    "earlyBirdPopupClose": "Close",
+    "registerNow": "Register now",
+    "registerForEvent": "Register for the event",
+    "socialProof": {
+      "papers": "papers submitted",
+      "attendees": "expected attendees",
+      "countries": "countries",
+      "edition": "edition"
+    }
   },
   "footer": {
     "title": "World Green Infrastructure Congress 2026 Barcelona-Lleida",
-    "legal": "Legal",
+    "date": "27-30 OCT 2026",
+    "usefulLinks": "Useful Links",
+    "tickets": "Tickets",
+    "papersProjects": "Papers and Projects",
+    "program": "Program",
+    "workshops": "Workshops",
+    "technicalVisits": "Technical Visits",
+    "letsTalk": "Let's Talk",
+    "infoEmail": "info@wgic26.barcelona",
+    "registrationEmail": "registration@wgic26.barcelona",
+    "sponsorshipEmail": "sponsorship@wgic26.barcelona",
+    "keyDates": "Key Dates",
+    "stayUpdated": "Stay Updated",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
     "privacyPolicy": "Privacy Policy",
-    "terms": "Terms & Conditions",
-    "contact": "Contact",
-    "copyright": "WGIC 2026 - All rights reserved",
-    "another": "Another",
-    "creation": " creation."
+    "copyright": "WGIC 2026 - All rights reserved"
   },
   "aboutCongress": {
     "title": "The Congress",
@@ -118,6 +152,7 @@
       "attendees": "Attendees",
       "partners": "Partners and exhibitors",
       "sponsors": "Sponsors",
+      "abstracts": "Abstract submission period",
       "firstDraft": "First draft paper submitted",
       "acceptance": "Notification of acceptance and Oral/Poster decision",
       "r1Draft": "R1 draft paper",
@@ -235,10 +270,32 @@
   "registrationPage": {
     "title": "Registration",
     "description": "Join the World Green Infrastructure Congress 2026. Register now to secure your place.",
+    "earlyBirdBanner": "Early bird ends September 2026 — register now and save",
     "platformTitle": "Registration platform",
     "platformDescription": "Registration is managed through our external partner platform, Helice. The registration fee covers costs during the congress period, including lunches and coffee breaks. It does not include travel or accommodation.",
     "platformButton": "Register on Helice platform",
     "platformInvoiceNote": "If you need an invoice, it will be issued when you complete the registration form.",
+    "ctaTitle": "Register now",
+    "ctaIntro": "Complete your registration in three simple steps. If you need an invoice, you can request it during the checkout process.",
+    "ctaStep1": "Choose the fee that matches your profile in the table below.",
+    "ctaStep2": "Accept the privacy policy below.",
+    "ctaStep3": "Click the button to complete your details on the Helice platform.",
+    "faqTitle": "Frequently asked questions",
+    "faq": {
+      "cancel": {
+        "question": "Can I cancel or get a refund?",
+        "answer": "Once payment has been made, refunds are not possible. If you have an exceptional situation, contact us at inquiry@wgic26.org."
+      },
+      "meals": {
+        "question": "Are meals included?",
+        "answer": "Yes. The registration fee includes lunches and coffee breaks during the congress. The gala dinner requires a separate ticket. Travel and accommodation are not included."
+      },
+      "invoice": {
+        "question": "Do I need an invoice?",
+        "answer": "You can request an invoice in the Helice checkout form. If you need assistance, email wgic2026.economics@udl.cat or inquiry@wgic26.org."
+      },
+      "dividerLabel": "FREQUENTLY ASKED QUESTIONS"
+    },
     "keyDatesTitle": "Key dates",
     "keyDatesHeaders": {
       "milestone": "Milestone",
@@ -247,10 +304,11 @@
     "keyDates": {
       "abstracts": "Abstract submission period",
       "acceptance": "Acceptance notification (Oral/Poster decision)",
-      "firstDraft": "First draft paper/poster",
-      "revision": "Paper/poster revision submission",
-      "finalPaper": "Final paper/poster submission",
+      "firstDraft": "First draft paper",
+      "revision": "Paper revision submission",
+      "finalPaper": "Final paper submission",
       "finalProgram": "Final program",
+      "posterSubmission": "Poster submission deadline",
       "earlyBird": "Early-bird registration deadline",
       "registrationOpen": "Registration open",
       "partners": "Partners and exhibitors",
@@ -258,24 +316,21 @@
     },
     "dateValues": {
       "abstracts": "December 15, 2025 - May 31, 2026",
-      "paperSubmissionDeadline": "< May 31, 2026",
-      "acceptance": "< May 15, 2026",
-      "acceptanceDecision": "< May 15, 2026",
-      "firstDraft": "< 31 May, 2026",
-      "r1Draft": "< June 15, 2026",
-      "revision": "< July 15, 2026",
-      "finalPaper": "< July 31, 2026",
+      "acceptance": "Before May 15, 2026",
+      "firstDraft": "Before June 15, 2026",
+      "revision": "Before July 31, 2026",
+      "finalPaper": "Before August 31, 2026",
       "finalProgram": "July 31, 2026",
-      "earlyBird": "< May 31, 2026",
-      "registrationOpen": "< September 30, 2026",
-      "partners": "< May 31, 2026",
-      "sponsors": "< September 30, 2026"
+      "posterSubmission": "Before September 30, 2026",
+      "registrationOpen": "Before September 30, 2026",
+      "partners": "Before September 30, 2026",
+      "sponsors": "Before September 30, 2026"
     },
     "feesTitle": "Registration fees",
     "feesHeaders": {
       "category": "Category",
-      "early": "Early < May",
-      "standard": "Standard (+15%) < September",
+      "early": "Early < September",
+      "standard": "Standard (+15%)",
       "onsite": "On-site (+30%)"
     },
     "fees": {
@@ -285,17 +340,54 @@
       "poster": "Poster (A1)",
       "students": "Students",
       "companions": "Companions",
-      "galaDinner": "Gala dinner"
+      "galaDinner": "Gala dinner",
+      "dividerLabel": "REGISTRATION FEES"
     },
     "notes": {
       "author": "Each registered author may present one paper (including oral presentation). For a second paper, an additional fee of 200 EUR is required.",
       "student": "Full-time students (excluding postdocs) must provide proof of full-time enrollment (copy of valid student ID or letter from the institution or program director).",
       "certificate": "All participants will receive a certificate of attendance.",
       "proceedings": "To include the paper in the congress program and proceedings, at least one author must register before the registration deadline.",
-      "invoice": "If you need an invoice, send an email to"
+      "invoice": "If you need an invoice, send an email to",
+      "invoiceFallback": "If you have trouble reaching this address, please contact"
     },
     "cancellationTitle": "Cancellation and refund",
-    "cancellationBody": "After bank deposit, refunds are not possible."
+    "cancellationBody": "After bank deposit, refunds are not possible.",
+    "privacyPolicy": "Privacy Policy",
+    "legalNoticeTitle": "Data protection information",
+    "legalNoticeIntro": "Registration is managed through our external Helice platform. Before continuing, please make sure you have read and accepted the following:",
+    "legalNoticeHeliceNote": "The following consents must also be configured in the Helice form, as that is where personal data is collected.",
+    "checkboxMandatory": "I accept the Privacy Policy for the management of my event registration (Required).",
+    "checkboxOptional": "I wish to receive electronic communications, news, newsletters and commercial information related to WGIC26 and future activities (Optional).",
+    "checkboxRequiredError": "You must accept the Privacy Policy to continue with the registration.",
+    "rightsNote": "You may exercise your rights of access, rectification, erasure and restriction by writing to the entities indicated in the Privacy Policy.",
+    "continueButton": "Continue to Helice registration form",
+    "countdown": {
+      "title": "EARLY BIRD ENDS SEPTEMBER 2026",
+      "cta": "REGISTER NOW AND SAVE",
+      "days": "DAYS",
+      "hours": "HOURS",
+      "minutes": "MIN"
+    },
+    "steps": {
+      "title": "REGISTRATION PROCESS",
+      "step1": {
+        "title": "CHOOSE YOUR FEE",
+        "description": "Select the registration category that matches your profile from the pricing table below."
+      },
+      "step2": {
+        "title": "ACCEPT THE PRIVACY POLICY",
+        "description": "Read and accept the data protection terms to proceed with your registration."
+      },
+      "step3": {
+        "title": "COMPLETE ON HELICE",
+        "description": "Click the button below to fill in your details on the Helice registration platform."
+      }
+    },
+    "dataProtection": {
+      "title": "DATA PROTECTION",
+      "heliceNote": "Registration is managed through our external Helice platform. The following consents must also be configured in the Helice form, as that is where personal data is collected."
+    }
   },
   "speakersPage": {
     "title": "Be a speaker",
@@ -306,6 +398,7 @@
     "calloutP3": "The best papers presented at WGIC26 will be fast-tracked for Special Issues in three leading peer-reviewed journals: Urban Forestry and Urban Greening (Elsevier), Nature-Based Solutions (Elsevier), and the Journal of Living Architecture (Green Roofs for Healthy Cities –GRHC).",
     "submissionButton": "Go to submission form",
     "templateButton": "Download paper template",
+    "managePapersButton": "Manage your papers",
     "bodyP1": "WGIC26 warmly welcomes submissions of original research, case studies, and innovative applications, in short paper format (maximum 5 pages), in MS Word format. This limitation helps reduce similarity for papers subsequently recommended for special journal issues.",
     "bodyP2": "All submitted papers undergo a rigorous peer review process. The scientific committee decides on acceptance and whether the presentation will be oral or poster. Accepted papers will be published in the WGIC2026 proceedings.",
     "keyDatesTitle": "Key dates",
@@ -316,10 +409,11 @@
     "keyDates": {
       "abstracts": "Abstract submission period",
       "acceptance": "Acceptance notification (Oral/Poster decision)",
-      "firstDraft": "First draft paper/poster",
-      "revision": "Paper/poster revision submission",
-      "finalPaper": "Final paper/poster submission",
+      "firstDraft": "First draft paper",
+      "revision": "Paper revision submission",
+      "finalPaper": "Final paper submission",
       "finalProgram": "Final program",
+      "posterSubmission": "Poster submission deadline",
       "earlyBird": "Early-bird registration deadline",
       "registrationOpen": "Registration open",
       "partners": "Partners and exhibitors",
@@ -329,12 +423,12 @@
       "abstracts": "December 15, 2025 - May 31, 2026",
       "acceptance": "Before May 15, 2026",
       "firstDraft": "Before June 15, 2026",
-      "revision": "Before July 15, 2026",
-      "finalPaper": "Before July 31, 2026",
+      "revision": "Before July 31, 2026",
+      "finalPaper": "Before August 31, 2026",
       "finalProgram": "July 31, 2026",
-      "earlyBird": "Before May 31, 2026",
+      "posterSubmission": "Before September 30, 2026",
       "registrationOpen": "Before September 30, 2026",
-      "partners": "Before May 31, 2026",
+      "partners": "Before September 30, 2026",
       "sponsors": "Before September 30, 2026"
     },
     "stepsTitle": "Paper submission steps",
@@ -344,9 +438,9 @@
       "s3": "Select a main topic where your work fits.",
       "s4": "Prepare the paper (maximum 5 pages).",
       "s5": "Submit your paper in .doc format before May 31, 2026.",
-      "s6": "You will receive the decision and R1 review before June 15, 2026.",
-      "s7": "Submit the revised paper (R1) before July 15, 2026 and R2 before July 31, 2026.",
-      "s8": "Submit the final paper before July 31, 2026."
+      "s6": "You will receive the acceptance notification and first review before June 15, 2026.",
+      "s7": "Authors make changes and resubmit the revised paper before July 31, 2026. Second review.",
+      "s8": "Authors submit the final paper before August 31, 2026."
     },
     "typologiesTitle": "Presentation typologies",
     "tableHeaders": {
@@ -372,9 +466,47 @@
   },
   "legalPages": {
     "privacyTitle": "Privacy Policy",
-    "termsTitle": "Terms and Conditions",
     "comingSoon": "Coming soon",
-    "contactEmail": "hola@wgic26.barcelona"
+    "contactEmail": "hola@wgic26.barcelona",
+    "lastUpdated": "Last updated",
+    "privacyIntro": "In compliance with Regulation (EU) 2016/679 (GDPR), users and participants of the World Green Infrastructure Congress 2026 (WGIC26) are informed about the processing of their personal data.",
+    "controllerTitle": "1. Data controllers",
+    "controllerLabel": "Data Controller",
+    "controllerName": "Društvo WGIN",
+    "controllerAddress": "Trata 31, 4220 Škofja Loka, Slovenia",
+    "controllerVat": "VAT SI84998911",
+    "processorLabel": "Data Processor",
+    "processorName": "UNIVERSITAT DE LLEIDA",
+    "processorAddress": "Pl. Víctor Siurana 1, 25003 Lleida, Spain",
+    "processorVat": "VAT Q7550001G",
+    "processingAgreement": "Both entities act under a data processing agreement pursuant to Article 28 of the GDPR for the proper organization, dissemination and technical support of the congress.",
+    "purposesTitle": "2. Purpose of processing",
+    "purposesIntro": "We process the information provided by interested parties in order to:",
+    "purposeRegistration": "Manage registration, attendance, invoicing and access control for the WGIC26 event.",
+    "purposeAgenda": "Coordinate agendas, presentations (calls for papers/speakers) and commercial or promotional activities of the congress.",
+    "purposeCommunications": "Send newsletters and electronic communications related to the event.",
+    "retentionTitle": "3. Retention period",
+    "retentionText": "Personal data provided will be retained for as long as the relationship with the event is maintained, during the legal periods to address possible liabilities and until the data subject requests its deletion.",
+    "legalBasisTitle": "4. Legal basis",
+    "legalBasisText": "The legal basis is the user's consent when registering in the form, submitting an abstract or subscribing to our newsletters.",
+    "rightsTitle": "5. Your rights",
+    "rightsText": "Any person has the right to obtain confirmation as to whether or not we are processing their personal data. Data subjects may exercise their rights of access, rectification, erasure, restriction, objection and portability by sending a written communication to the postal addresses of Društvo WGIN or Universitat de Lleida specified above, or by email to",
+    "rightsEmail": "wgic2026.economics@udl.cat",
+    "shortNoticeTitle": "Basic data protection information",
+    "shortNoticeIntro": "Basic information on data protection:",
+    "shortNoticeController": "Controller: Društvo WGIN (Trata 31, 4220 Škofja Loka, Slovenia).",
+    "shortNoticeProcessor": "Processor: Universitat de Lleida (Pl. Víctor Siurana 1, 25003 Lleida, Spain).",
+    "shortNoticePurpose": "Purpose: Management of registration for the WGIC26 congress, sending informative communications, event updates and management of associated activities.",
+    "shortNoticeLegalBasis": "Legal basis: Consent of the data subject when subscribing or registering.",
+    "shortNoticeRecipients": "Recipients: Data will not be transferred to third parties except under legal obligation or strict necessity for the execution of the event.",
+    "shortNoticeRights": "Rights: You may access, rectify, restrict and delete your data, as well as exercise other rights by writing to the addresses of the responsible entities.",
+    "shortNoticeMoreInfo": "Further information: You can consult the full privacy policy on our website.",
+    "registrationNoticeTitle": "Web registration form",
+    "registrationNoticeIntro": "Data protection information: Društvo WGIN (Controller) and Universitat de Lleida (Processor) will process your data to manage your registration, attendance, invoicing and participation in the WGIC26 congress. For subsequent communications, please check the following boxes according to your preferences:",
+    "checkboxMandatory": "I accept the Privacy Policy for the management of my event registration (Required to register).",
+    "checkboxOptional": "I wish to receive electronic communications, news, newsletters and commercial information related to the WGIC26 congress and future activities of the organizing entities (Optional).",
+    "rightsNote": "You may exercise your rights of access, rectification, erasure and restriction by writing to the addresses of the entities indicated in the Privacy Policy.",
+    "readMore": "Read full Privacy Policy"
   },
   "travelPage": {
     "title": "Travel",
@@ -413,15 +545,6 @@
     "daysCount": "Days",
     "roomsCount": "Rooms",
     "tracksCount": "Tracks"
-  },
-  "programSpeakersPage": {
-    "title": "Speakers",
-    "description": "Meet the experts, researchers and professionals who will share their knowledge at WGIC26.",
-    "noSpeakers": "No speakers available yet.",
-    "moreInfo": "More info",
-    "lessInfo": "Less info",
-    "linkedin": "LinkedIn",
-    "speakersCount": "Speakers"
   },
   "programSpecialIssuesPage": {
     "title": "Special Issues",
@@ -495,6 +618,10 @@
       "speaker7": {
         "name": "Dorothy Aseyo",
         "bio": "Executive Director of The Green Belt Movement, Dorothy Aseyo works on environmental conservation, community empowerment, sustainable livelihoods, and climate resilience, promoting nature-based solutions and grassroots action to build more resilient and inclusive societies."
+      },
+      "speaker8": {
+        "name": "María Buhigas",
+        "bio": "María Buhigas is the Chief Architect of Barcelona City Council. An architect and urban planner, she has extensive experience in urban strategy, public space, housing, and city transformation. Her work focuses on the role of urban planning and architecture in responding to today’s social, environmental, and territorial challenges, with a strong emphasis on creating more liveable, inclusive, and resilient cities."
       }
     },
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."
@@ -601,6 +728,9 @@
     "img2Alt": "University of Lleida facilities",
     "p1": "WGIC26 will include thematic workshops in parallel with oral presentation sessions during days one and two.",
     "thematicTitle": "Thematic Workshops",
+    "expandHint": "Click on each workshop to see more details",
+    "seeMore": "See more",
+    "seeLess": "See less",
     "day4Title": "Day 4: Innovation Workshops at the University of Lleida",
     "day4Description": "An additional fourth day has been planned focusing specifically on innovation and research within the green infrastructure sector.",
     "tableHeaders": {
@@ -622,18 +752,182 @@
     },
     "comingSoonTitle": "Detailed information coming soon",
     "comingSoonBody": "Detailed information about the innovation and research workshops in Lleida and registration will be published soon.",
+    "labels": {
+      "leadership": "Leadership",
+      "workingGroup": "Working group",
+      "why": "Why?",
+      "mainObjective": "Main objective",
+      "specificObjectives": "Specific objectives",
+      "caseStudies": "Examples / Study cases",
+      "proposal": "What we propose for the workshop",
+      "keynoteSpeaker": "Featured Keynote Speaker at WGIC26",
+      "goals": "Goals",
+      "expectedOutcomes": "Expected outcomes"
+    },
     "cards": {
       "globalSouth": {
-        "title": "Green infrastructure vs Global South",
-        "description": "Addressing the challenge of building resilient, healthy, and just cities in the Global South."
+        "title": "Global Minds. Global South Research Partnerships on Green Infrastructure",
+        "description": "Shifting from Northern expertise transfer to genuine Global South partnership, co-design and shared knowledge production on green infrastructure and nature-based solutions.",
+        "leadership": "Bert Belmans – University of Antwerp",
+        "workingGroup": [
+          "Francesca Mosca (University of Genoa, Italy)",
+          "Elaise Gabriel (Federal University of Santa Maria, Brazil)",
+          "Rutineia Tassi (Federal University of Santa Maria, Brazil)",
+          "Fabiana Pimentel (Federal University of Santa Maria, Brazil)",
+          "Aline Vilela (Ares - Eficiência Energética e Sustentabilidade, Brazil)",
+          "Kamal Passi (Central Public Works Department, India)",
+          "Irfan Haider Khan (Central Public Works Department, India)",
+          "Manika Goel (School of Planning and Architecture, New Delhi and Guru Gobind Singh Indraprastha University, India)",
+          "Jack Omondi (CIDE Group & Kenyatta University, Kenya)",
+          "Andrea Castro (Nfinite, Colombia)",
+          "Luowen Lyu (University of Technology, Australia)",
+          "Anouk De Bock (University of Antwerp, Belgium)",
+          "Lotte Carron (University of Antwerp, Belgium)"
+        ],
+        "why": "The climate crisis and interconnected sustainability challenges we face today affect all nations — albeit with profoundly unequal impacts and responsibilities. Countries of the Global South often face the most severe consequences while possessing invaluable knowledge systems, innovative approaches, and context-specific solutions essential for addressing our shared planetary challenges. This topic will be dedicated to exploring how we can shift from viewing the Global South primarily as a recipient of Northern expertise to embracing genuine partnership characterized by mutual learning, co-creation of knowledge, and equitable benefit sharing.",
+        "mainObjective": "To foster genuinely equitable collaboration between Global North and Global South researchers, practitioners and emerging professionals in the field of green infrastructure and nature-based solutions, moving beyond the uncritical transfer of Northern frameworks to embrace co-design, mutual learning and shared knowledge production. To document and amplify innovative GI and NbS approaches developed in resource-constrained Global South contexts that are largely absent from mainstream literature.",
+        "specificObjectives": [
+          "To establish an operational framework for equitable North-South GI collaboration grounded in co-design, explicit power analysis, context sensitivity, hybrid knowledge systems and mutual capacity building.",
+          "To co-produce a manifesto at WGIC26 in Barcelona advocating for structural change in how GI knowledge is produced, published and recognised globally."
+        ],
+        "caseStudies": [
+          {
+            "title": "Case study 1 — Street-level green experience in Lucknow, India",
+            "body": "Eye-level green pixel analysis, behavioural observation and structured perception surveys were applied across contrasting urban streets in Lucknow, India to evaluate greenery as experienced urban infrastructure rather than statistical green cover. Findings demonstrated that the quality of the green experience at street level matters more than quantitative canopy coverage alone, with shaded and visually enclosed environments showing significantly higher pedestrian activity. The framework is scalable and transferable to other rapidly urbanising cities in the global South and the Global North.",
+            "id": "lucknow"
+          },
+          {
+            "title": "Case study 2 — Community-Led NbS Regeneration (Latin America)",
+            "body": "Projects from Medellin, São Paulo, Buenos Aires and Chile demonstrate how GI can function as a multifunctional response to overlapping urban crises under conditions of resource scarcity and socio-spatial inequality. NbS effectiveness depends as much on social appropriation, community participation and local adaptation as on technical performance. Solutions cannot be transferred as standardised models from the Global North.",
+            "id": "latin-america"
+          },
+          {
+            "title": "Case study 3 — Vertical Greening for Informal Settlements (Kibera, Kenya)",
+            "body": "Kibera, Nairobi’s largest informal settlement, houses up to 750,000 people across 2.5 km² under conditions of extreme resource scarcity, critically limited ground-level space, intense heat stress, perennial flooding and high poverty. Low-cost living walls and green roofs made from upcycled locally available materials were shown to deliver thermal comfort, urban farming capacity and flood resilience simultaneously, without demanding scarce ground space. The use of schools as anchor points for scaling NbS was identified as a particularly important strategy, as school buildings are recognised as shared community assets and tend to be preserved even during episodes of deliberate destruction. Kibera illustrates innovation under pressure and the urgency of cross-regional collaboration that learns from the Global South rather than imposing Northern solutions.",
+            "id": "kibera"
+          },
+          {
+            "title": "Case study 4 — Teto Verde Favela, Rio de Janeiro",
+            "body": "A socio-environmental initiative created in 2014 in Benfica (North Zone of Rio). The project transforms rooftops into green roofs to mitigate the urban heat island effect, improve air quality, and make the favela a more pleasant place to live.",
+            "link": "https://wikifavelas.com.br/index.php/Teto_Verde_Favela#Contato",
+            "id": "teto-verde"
+          }
+        ],
+        "proposal": "A participatory, open session co-producing the first full draft of the manifesto on equitable GI and NbS collaboration with a broad international audience. The session builds on the blueprint developed during the Global Minds workshop in Antwerp (May 2026) and will be structured around six thematic clusters: (1) knowledge equity and access to information; (2) funding gaps and support for early-career researchers; (3) policy engagement and making NbS visible to governments; (4) community empowerment and informal settlements; (5) education, capacity building and North-South exchange; (6) strategic North-South partnerships and active CEP hubs. The session will result in an agreed set of commitments to be published as the WGIN-CEP Global South Manifesto. Following the co-production session, the manifesto will be published through WGIN-CEP channels and shared with participants, keynote speakers, and the broader GI and NbS community. The manifesto will advocate for structural change in how GI knowledge is produced, published, funded and recognised globally, with a specific focus on equity, informal settlements, and the recognition of Global South innovation.",
+        "keynoteSpeaker": "The congress will feature Dorothy Asuza Aseyo (Green Belt Movement), a leading voice at the intersection of ecological restoration and social justice. The Green Belt Movement (GBM) demonstrates how Nature-based Solutions can transform both landscapes and communities: large-scale reforestation and ecosystem restoration; women’s empowerment through environmental action; development of sustainable livelihoods; environmental education and community mobilisation; climate action with both local and global impact.",
+        "leadershipName": "Bert Belmans",
+        "leadershipAffiliation": "University of Antwerp"
       },
       "health": {
-        "title": "Green infrastructure vs health and well-being",
-        "description": "Exploring the connection between green infrastructure and public health through nature-based solutions."
+        "title": "Bridging the Gap — Health and Wellbeing as the Heart of Green Infrastructure",
+        "description": "Exploring how green infrastructure — from urban forests to living roofs and walls — supports mental and physical health and helps prevent non-communicable diseases.",
+        "leadership": "David Brasfield - World Green Infrastructure Network",
+        "workingGroup": [
+          "Silvia Solé Cases - University of Lleida",
+          "Laura Herrera Diez - University of Lleida",
+          "Elsa Punset - Punset Terraviva Foundation",
+          "Rocio Varela de Seijas Sapia - VASE arquitectos",
+          "Lucía Gómez Rodríguez - VASE arquitectos"
+        ],
+        "why": "Can our cities actually heal us? The World Green Infrastructure Network (WGIN) advocates for the optimal use of green infrastructure to support the health and wellbeing of both people and the planet. However, there is a recognized gap in the attention given to the specific human health benefits of urban greening. The World Green Infrastructure Congress 2026 (WGIC26) in Barcelona aims to bridge this divide between urban planning and public health. We explore how 'Green Infrastructure' — from urban forests to living roofs and walls — is a prerequisite for mental and physical flourishing and the prevention of non-communicable diseases (NCDs). Nature in the city acts as the ultimate preventive medicine, lowering cortisol levels, improving air quality, supporting the human microbiome, and mitigating extreme heat to create resilient environments where people can thrive. This thematic track will foster interdisciplinary collaboration and highlight key areas of focus: The Science of Connection — examining how nature exposure reduces chronic disease and boosts mental health; Urban Design as Therapy — strategies for transforming 'gray' spaces into functional 'healing landscapes'; Success Stories — showcasing global cities that are leading the way in health-centric sustainability; and a Call to Action for the Health Community — through stronger interdisciplinary collaboration, we can foster greater recognition for the relevance of building-integrated green infrastructure in health research, policy, and practice.",
+        "goals": [
+          "Improve human health and well-being through optimal uptake and design of green infrastructure in urban areas.",
+          "Facilitate better collaboration between the community of practice for green infrastructure and the health sector.",
+          "Offer specific examples, concepts and design elements that can be incorporated in health facilities and urban developments in Barcelona and BIG4LIFE participating municipalities.",
+          "Improve green infrastructure advocacy through deeper understanding of the health and well-being benefits of human contact with nature.",
+          "Identify main measurement variables in these kinds of interventions."
+        ],
+        "caseStudies": [
+          {
+            "title": "Therapeutic Garden in Cancer Institute of Catalonia",
+            "link": "https://arquitopia.com/portfolio/reforma-del-patio-del-instituto-catalan-de-oncologia-ardi-platejat/",
+            "id": "catalan-oncology"
+          },
+          {
+            "title": "Therapeutic garden in Hospital de Sant Pau, Barcelona",
+            "link": "https://www.santpau.cat/en/comunic-actualitat/-/asset_publisher/0n2ILqhO4yy6/content/lhospital-de-sant-pau-estrena-jardins-terapeutics?_assetEntryId=803018",
+            "id": "sant-pau"
+          },
+          {
+            "title": "Therapeutic Gardens, October 12th Hospital",
+            "link": "https://vasearq.com/proyecto/jardines-terapeuticos-12-octubre/",
+            "id": "hospital-12-octubre"
+          },
+          {
+            "title": "Fundación Juegaterapia: therapeutic gardens on the roof of Hospital la Paz, Gregorio and 12 de Octubre in Madrid and Hospital la Fe in Valencia",
+            "link": "https://www.juegaterapia.org/proyectos-solidarios-cancer-infantil/el-jardin-de-mi-hospi-12-de-octubre/",
+            "id": "juegaterapia"
+          },
+          {
+            "title": "Tres Roures Forest, next to Olot Hospital",
+            "link": "https://hospiolot.com/lhospital-dolot-inaugura-el-bosc-dels-tres-roures/",
+            "id": "tres-roures"
+          },
+          {
+            "title": "Therapeutic Garden in Hospital de Santa Creu I Sant Pau",
+            "link": "https://fundaciosantpau.cat/es/news/lhospital-estrena-jardins-terapeutics",
+            "id": "santa-creu"
+          },
+          {
+            "title": "Maggies Yorkshire Palliative Cancer Care Facility, Leeds UK. Heatherwick Studio",
+            "link": "https://heatherwick.com/project/maggies/",
+            "id": "maggies-yorkshire"
+          },
+          {
+            "title": "Rehabilitation Hospital in Basel, Switzerland. Herzog & de Meuron Architects",
+            "link": "https://www.herzogdemeuron.com/projects/165-rehab-clinic-for-neurorehabilitation-and-paraplegiology/",
+            "id": "rehab-basel"
+          }
+        ],
+        "leadershipName": "David Brasfield",
+        "leadershipAffiliation": "World Green Infrastructure Network"
       },
       "recovery": {
-        "title": "Green infrastructure vs post-conflict recovery",
-        "description": "Examining the role of green infrastructure in the recovery of societies and places after conflict or disaster contexts."
+        "title": "Green Infrastructure as Recovery Infrastructure: Community Recovery, Damage Assessment and Resilient Reconstruction",
+        "description": "Positioning green infrastructure as a measurable, investable and implementation-ready component of post-conflict and post-disaster recovery.",
+        "leadership": "Oleksandra Strashok – Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; National University of Life and Environmental Sciences of Ukraine, Department of Phytodesign and Landscape Architecture; Ukrainian Association of Green Infrastructure; World Green Infrastructure Network",
+        "workingGroup": [
+          "David Brasfield – Norwegian Association for Green Infrastructure; World Green Infrastructure Network",
+          "Marta Weber – Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; Polish Green Roofs Association; World Green Infrastructure Network",
+          "Selim Bayraktar – İstanbul University-Cerrahpaşa, Faculty of Forestry, Department of Landscape Architecture",
+          "Maria Gabriella Trovato – Norwegian University of Life Sciences; International Federation of Landscape Architects",
+          "Audrey Timm – International Association of Horticultural Producers",
+          "Zoë Avery – Associate Director of Design (Urban Planning), School of Architecture and Planning, University of Auckland; Director of The Urbanist; Chair of Design for Nature; Australasian Green Infrastructure Network; World Green Infrastructure Network"
+        ],
+        "why": "Cities recovering from conflicts and disasters face a common challenge and opportunity: not only rebuilding what was lost, but using recovery processes to create safer, more resilient, environmentally sustainable and socially inclusive urban environments through the strategic integration of green and grey infrastructure. Recovery programmes traditionally focus on housing, transport, energy systems and public utilities. However, parks, urban forests, street trees, private gardens, green roofs, public open spaces and other forms of GI are rarely considered essential recovery assets despite their proven contribution to public health, climate adaptation, ecosystem restoration and community well-being. International experience demonstrates that GI can serve as more than an environmental amenity. It can function as recovery infrastructure by supporting social cohesion, facilitating community participation, improving mental health outcomes, restoring ecosystem services and reducing long-term climate vulnerability. At the same time, significant challenges remain. Damage to GI is rarely quantified, ecosystem losses are seldom incorporated into compensation frameworks, and funding mechanisms for green recovery remain limited. Landscape architects, planners and ecologists are often underrepresented in damage assessments and recovery decision-making processes. This Featured Topic explores how GI can become a measurable, investable and implementation-ready component of post-conflict and post-disaster recovery.",
+        "mainObjective": "To position GI as a strategic component of urban recovery and resilience-building, capable of delivering social, environmental and economic benefits throughout post-conflict and post-disaster reconstruction processes.",
+        "specificObjectives": [
+          "Explore international experiences where GI contributed to recovery and resilience.",
+          "Discuss how GI losses can be better recognized within recovery assessments and planning processes.",
+          "Investigate the role of community participation in shaping recovery outcomes.",
+          "Explore the evolving role of landscape architects in recovery governance and implementation.",
+          "Identify barriers and opportunities for financing green recovery initiatives.",
+          "Co-produce recommendations for integrating green infrastructure into recovery frameworks."
+        ],
+        "caseStudies": [
+          {
+            "title": "Case Study 1 — Community-Led Recovery and Adaptation in New Zealand",
+            "body": "New Zealand provides internationally recognized examples of community-centered recovery and resilience planning. Following the Christchurch earthquakes, initiatives such as Greening the Rubble and Gap Filler transformed vacant sites into temporary public spaces that supported social recovery, community participation and place-making long before permanent reconstruction was completed. More recently, experiences from Far North communities have demonstrated how local communities, planners and decision-makers are working together to address increasing climate risks, including managed retreat, relocation planning and nature-based adaptation strategies. Together, these examples illustrate how community engagement can shape recovery outcomes and how green infrastructure can support both recovery and long-term resilience.",
+            "link": "https://www.gehlpeople.com/projects/christchurch-redevelopment-plan/",
+            "id": "new-zealand"
+          },
+          {
+            "title": "Case Study 2 — Green Infrastructure Damage Assessment and Recovery Planning in Ukraine",
+            "body": "The recovery of Ukrainian cities presents a unique opportunity to rethink the role of GI within reconstruction frameworks. While significant progress has been made in assessing damage to buildings and technical infrastructure, methodologies for evaluating losses to urban forests, parks, street trees and ecosystem services remain limited. Emerging approaches based on remote sensing, ecosystem service valuation and spatial analysis provide opportunities for developing evidence-based methods to assess green infrastructure damage and support recovery planning. The Ukrainian case highlights the need for practical approaches to quantify ecosystem losses, prioritise green recovery investments and integrate climate resilience into reconstruction strategies.",
+            "link": "https://www.gettyimages.com/editorial-images/news/event/kyiv-suburbs-begin-cleanup-and-commemorate-their-dead-after-war-shifts-away-from-capital/775803516",
+            "id": "ukraine"
+          }
+        ],
+        "proposal": "The workshop will be organised as an interactive World Café session combining short expert introductions with facilitated round-table discussions. Participants will rotate between four thematic discussion tables, each led by a member of the working group and supported by practical examples from the case studies. The workshop aims to facilitate dialogue between researchers, policymakers, practitioners, investors and community representatives while generating practical recommendations for integrating green infrastructure into recovery processes.",
+        "expectedOutcomes": [
+          "Identification of key barriers and opportunities for integrating GI into recovery processes.",
+          "Exchange of international experiences from New Zealand, Ukraine and other recovery contexts.",
+          "Shared understanding of how community engagement, landscape architecture and GI contribute to resilient recovery.",
+          "Initial recommendations for improving the recognition of GI within recovery planning, assessment and funding frameworks.",
+          "Identification of priority areas for future research, policy development and international collaboration."
+        ],
+        "leadershipName": "Oleksandra Strashok",
+        "leadershipAffiliation": "Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; National University of Life and Environmental Sciences of Ukraine, Department of Phytodesign and Landscape Architecture; Ukrainian Association of Green Infrastructure; World Green Infrastructure Network"
       }
     }
   },

@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import { KeyDatesTable } from "@/components/KeyDatesTable";
 import { FileText } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "Be a Speaker | WGIC26 Barcelona-Lleida",
+  description:
+    "Submit your paper or poster to WGIC26, the leading green infrastructure conference 2026, and present your research to a global audience in Barcelona.",
+};
 
 const Speakers = async () => {
   const t = await getTranslations("speakersPage");
@@ -16,49 +24,20 @@ const Speakers = async () => {
     t("steps.s8"),
   ];
 
-  const keyDates = [
-    {
-      milestone: t("keyDates.abstracts"),
-      date: t("dateValues.abstracts"),
-    },
-    {
-      milestone: t("keyDates.acceptance"),
-      date: t("dateValues.acceptance"),
-    },
-    {
-      milestone: t("keyDates.firstDraft"),
-      date: t("dateValues.firstDraft"),
-    },
-    {
-      milestone: t("keyDates.revision"),
-      date: t("dateValues.revision"),
-    },
-    {
-      milestone: t("keyDates.finalPaper"),
-      date: t("dateValues.finalPaper"),
-    },
-    {
-      milestone: t("keyDates.finalProgram"),
-      date: t("dateValues.finalProgram"),
-    },
-    {
-      milestone: t("keyDates.earlyBird"),
-      date: t("dateValues.earlyBird"),
-      highlight: true,
-    },
-    {
-      milestone: t("keyDates.registrationOpen"),
-      date: t("dateValues.registrationOpen"),
-    },
-    {
-      milestone: t("keyDates.partners"),
-      date: t("dateValues.partners"),
-    },
-    {
-      milestone: t("keyDates.sponsors"),
-      date: t("dateValues.sponsors"),
-    },
-  ];
+  const keyDatesRows = [
+    { key: "abstracts", isoDate: "2026-05-31" },
+    { key: "acceptance", isoDate: "2026-05-15" },
+    { key: "firstDraft", isoDate: "2026-06-15" },
+    { key: "revision", isoDate: "2026-07-31" },
+    { key: "finalPaper", isoDate: "2026-08-31" },
+    { key: "finalProgram", isoDate: "2026-07-31" },
+    { key: "posterSubmission", isoDate: "2026-09-30" },
+  ].map(({ key, isoDate }) => ({
+    key,
+    isoDate,
+    milestone: t(`keyDates.${key}`),
+    date: t(`dateValues.${key}`),
+  }));
 
   return (
     <div>
@@ -109,46 +88,14 @@ const Speakers = async () => {
             <p>{t("calloutP3")}</p>
 
             {/* Key Dates */}
-            <div className="bg-monstera/20 border border-monstera/30 rounded-lg  w-full">
-              <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-6">
-                {t("keyDatesTitle")}
-              </h2>
-
-              <div className="overflow-x-auto w-full">
-                <table className="min-w-full w-full border-collapse border border-white/20">
-                  <thead>
-                    <tr className="bg-monstera/20">
-                      <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base w-2/3">
-                        {t("keyDatesHeaders.milestone")}
-                      </th>
-                      <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base w-1/3">
-                        {t("keyDatesHeaders.date")}
-                      </th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    {keyDates.map((item) => (
-                      <tr
-                        key={`${item.milestone}-${item.date}`}
-                        className={`hover:bg-white/5 ${item.highlight ? "bg-cactus/10" : ""}`}
-                      >
-                        <td
-                          className={`border border-white/20 px-4 py-3 text-base text-justify ${item.highlight ? "text-white font-medium" : "text-white/80"}`}
-                        >
-                          {item.milestone}
-                        </td>
-                        <td
-                          className={`border border-white/20 px-4 py-3 text-base text-center ${item.highlight ? "text-white font-medium" : "text-white/80"}`}
-                        >
-                          {item.date}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <KeyDatesTable
+              title={t("keyDatesTitle")}
+              headers={{
+                milestone: t("keyDatesHeaders.milestone"),
+                date: t("keyDatesHeaders.date"),
+              }}
+              rows={keyDatesRows}
+            />
 
             <div className="bg-white/5 border border-white/10 rounded-md p-4">
               <h3 className="font-medium text-white">{t("stepsTitle")}</h3>

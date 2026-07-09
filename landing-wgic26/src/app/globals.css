@@ -294,5 +294,22 @@
     font-weight: 500;
   }
 
+}
 
+@keyframes supporter-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-supporter-scroll {
+  animation: supporter-scroll linear infinite;
+}
+
+.animate-supporter-scroll:hover,
+.animate-supporter-scroll:focus-within {
+  animation-play-state: paused;
 }

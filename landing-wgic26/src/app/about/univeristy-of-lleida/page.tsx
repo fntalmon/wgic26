@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "University of Lleida | WGIC26 Barcelona-Lleida",
+  description:
+    "The Universitat de Lleida co-organises WGIC26, hosting a dedicated research and innovation day as part of this nature-based solutions conference.",
+};
 
 const UniversityOfLleida = async () => {
   const t = await getTranslations("aboutUniversity");

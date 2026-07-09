@@ -3,11 +3,12 @@ import { ReactNode } from "react";
 import Script from "next/script";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { SocialSidebar } from "@/components/SocialSidebar";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
 export const metadata = {
-  title: "WGIC26 Barcelona",
+  title: "WGIC26 Barcelona-Lleida",
   description: "World Green Infrastructure Congress 2026 - Barcelona",
   icons: {
     icon: [
@@ -50,7 +51,8 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
       <body className="bg-monstera text-white font-light" style={{ fontFamily: "Century Gothic, sans-serif" }}>
         <NextIntlClientProvider messages={messages}>
           <Navigation />
-          <main className="flex flex-col gap-10 mt-28 lg:mt-40 mb-24 min-h-screen">
+          <SocialSidebar />
+          <main className="flex flex-col gap-10 mt-16 lg:mt-24 mb-24 min-h-screen">
             {children}
           </main>
           <Footer />

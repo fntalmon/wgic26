@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import TextImage from "@/components/TextImage";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "Gaudí Year 2026 | WGIC26 Barcelona-Lleida",
+  description:
+    "WGIC26 celebrates Barcelona's Gaudí Year 2026, connecting Gaudí's architectural legacy with modern nature-based solutions and green infrastructure.",
+};
 
 const Gaudi = async () => {
     const t = await getTranslations("gaudiYearPage");

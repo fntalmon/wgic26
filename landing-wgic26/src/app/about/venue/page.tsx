@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
+export const metadata: Metadata = {
+  title: "Venue: CCIB Barcelona | WGIC26",
+  description:
+    "WGIC26 is held at the International Convention Centre of Barcelona (CCIB) — the venue for this urban sustainability congress in Barcelona, Spain.",
+};
 
 const Venue = async () => {
     const t = await getTranslations("venuePage");

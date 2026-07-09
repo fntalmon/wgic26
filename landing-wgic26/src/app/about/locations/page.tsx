@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "Congress Locations: Barcelona & Lleida | WGIC26",
+  description:
+    "WGIC26 takes place across Barcelona and Lleida, Spain — explore the venues hosting this green infrastructure conference 2026 and urban sustainability congress.",
+};
 
 const Locations = async () => {
   const t = await getTranslations("aboutLocations");

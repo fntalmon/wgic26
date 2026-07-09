@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import { Download } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "Congress Agenda | WGIC26 Barcelona-Lleida",
+  description:
+    "View the WGIC26 agenda — sessions, keynotes and technical visits scheduled across this urban sustainability congress in Barcelona.",
+};
 
 const Agenda = async () => {
     const t = await getTranslations("programAgendaPage");

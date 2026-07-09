@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "Congress Committee | WGIC26 Barcelona-Lleida",
+  description:
+    "Meet the scientific committee behind WGIC26, reviewing research for this nature-based solutions conference bringing together green infrastructure experts from around the world.",
+};
 
 const CongressCommittee = async () => {
   const t = await getTranslations("aboutCongressCommittee");
