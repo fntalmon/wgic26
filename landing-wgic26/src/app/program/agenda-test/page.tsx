@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import { getTranslations } from "next-intl/server";
 import AgendaTestClient from "./AgendaTestClient";
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 const API_BASE = "https://networking.barter.es/programapi";
 const TOKEN = "25f36345610469a7d054a2eed6952303";

@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, FileText } from "lucide-react";
+import { KeyDatesTable } from "@/components/KeyDatesTable";
+import { FileText } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "Be a Speaker | WGIC26 Barcelona-Lleida",
+  description:
+    "Submit your paper or poster to WGIC26, the leading green infrastructure conference 2026, and present your research to a global audience in Barcelona.",
+};
 
 const Speakers = async () => {
   const t = await getTranslations("speakersPage");
@@ -17,44 +24,20 @@ const Speakers = async () => {
     t("steps.s8"),
   ];
 
-  const keyDates = [
-    {
-      milestone: t("keyDates.abstracts"),
-      date: t("dateValues.abstracts"),
-    },
-    {
-      milestone: t("keyDates.acceptance"),
-      date: t("dateValues.acceptance"),
-    },
-    {
-      milestone: t("keyDates.firstDraft"),
-      date: t("dateValues.firstDraft"),
-    },
-    {
-      milestone: t("keyDates.revision"),
-      date: t("dateValues.revision"),
-    },
-    {
-      milestone: t("keyDates.finalPaper"),
-      date: t("dateValues.finalPaper"),
-    },
-    {
-      milestone: t("keyDates.finalProgram"),
-      date: t("dateValues.finalProgram"),
-    },
-    {
-      milestone: t("keyDates.registrationOpen"),
-      date: t("dateValues.registrationOpen"),
-    },
-    {
-      milestone: t("keyDates.partners"),
-      date: t("dateValues.partners"),
-    },
-    {
-      milestone: t("keyDates.sponsors"),
-      date: t("dateValues.sponsors"),
-    },
-  ];
+  const keyDatesRows = [
+    { key: "abstracts", isoDate: "2026-05-31" },
+    { key: "acceptance", isoDate: "2026-05-15" },
+    { key: "firstDraft", isoDate: "2026-06-15" },
+    { key: "revision", isoDate: "2026-07-31" },
+    { key: "finalPaper", isoDate: "2026-08-31" },
+    { key: "finalProgram", isoDate: "2026-07-31" },
+    { key: "posterSubmission", isoDate: "2026-09-30" },
+  ].map(({ key, isoDate }) => ({
+    key,
+    isoDate,
+    milestone: t(`keyDates.${key}`),
+    date: t(`dateValues.${key}`),
+  }));
 
   return (
     <div>
@@ -68,58 +51,51 @@ const Speakers = async () => {
       />
       <section className="w-full justify-start text-xs">
         <div className="w-full max-w-7xl px-0 py-12 flex flex-col gap-12">
+          <div
+            id="paper-submission"
+            className="bg-cactus/20 border border-cactus/30 rounded-lg p-6 flex flex-col sm:flex-row items-start justify-between gap-6"
+          >
+            <div className="flex-1">
+              <h2 className="text-2xl lg:text-3xl font-semibold text-white">
+                {t("calloutTitle")}
+              </h2>
+              <p className="mt-2 text-white/80 leading-relaxed text-justify">
+                {t("calloutP1")}
+              </p>
+              <p className="mt-3 text-white/70 text-justify">
+                {t("calloutP2")}
+              </p>
+            </div>
+            <div className="flex-shrink-0 flex flex-col gap-3">
+              <a
+                href="https://panel.helice.app/w/wgic26/214757/papers"
+                className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium"
+              >
+                {t("submissionButton")}
+              </a>
+              <a
+                href="https://docs.google.com/document/d/1X_aNCsK5tu56rAlhRSx2sXcMt_8PgUze/export?format=docx"
+                className="inline-flex items-center gap-2 rounded-md border border-white/20 px-4 py-2 text-white"
+              >
+                {t("templateButton")}
+              </a>
+            </div>
+          </div>
+
           <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
             <p>{t("bodyP1")}</p>
             <p>{t("bodyP2")}</p>
             <p>{t("calloutP3")}</p>
-            <Button asChild variant="yellow">
-              <a
-                href="https://panel.helice.app/w/wgic26/214757/papers"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ExternalLink size={18} />
-                {t("managePapersButton")}
-              </a>
-            </Button>
 
             {/* Key Dates */}
-            <div className="bg-monstera/20 border border-monstera/30 rounded-lg  w-full">
-              <h2 className="text-2xl lg:text-3xl font-semibold text-white mb-6">
-                {t("keyDatesTitle")}
-              </h2>
-
-              <div className="overflow-x-auto w-full">
-                <table className="min-w-full w-full border-collapse border border-white/20">
-                  <thead>
-                    <tr className="bg-monstera/20">
-                      <th className="border border-white/20 px-4 py-3 text-left text-white font-medium text-base w-2/3">
-                        {t("keyDatesHeaders.milestone")}
-                      </th>
-                      <th className="border border-white/20 px-4 py-3 text-center text-white font-medium text-base w-1/3">
-                        {t("keyDatesHeaders.date")}
-                      </th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    {keyDates.map((item) => (
-                      <tr
-                        key={`${item.milestone}-${item.date}`}
-                        className="hover:bg-white/5"
-                      >
-                        <td className="border border-white/20 px-4 py-3 text-base text-justify text-white/80">
-                          {item.milestone}
-                        </td>
-                        <td className="border border-white/20 px-4 py-3 text-base text-center text-white/80">
-                          {item.date}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <KeyDatesTable
+              title={t("keyDatesTitle")}
+              headers={{
+                milestone: t("keyDatesHeaders.milestone"),
+                date: t("keyDatesHeaders.date"),
+              }}
+              rows={keyDatesRows}
+            />
 
             <div className="bg-white/5 border border-white/10 rounded-md p-4">
               <h3 className="font-medium text-white">{t("stepsTitle")}</h3>
@@ -178,6 +154,33 @@ const Speakers = async () => {
               </div>
             </div>
 
+            <div className="mt-6">
+              <div
+                role="region"
+                aria-label={t("regionAriaLabel")}
+                className="rounded-md bg-white/5 border border-white/10 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+              >
+                <div className="flex items-start gap-4">
+                  <FileText size={20} className="text-white/80 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-white">
+                      {t("finalCardTitle")}
+                    </p>
+                    <p className="text-white/80 text-sm">
+                      {t("finalCardDescription")}
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="https://panel.helice.app/w/wgic26/214757/papers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md bg-yellow-600 text-black px-4 py-2 font-medium"
+                >
+                  {t("submissionButton")}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

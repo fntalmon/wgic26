@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "Technical Visits | WGIC26 Barcelona-Lleida",
+  description:
+    "Join guided technical visits to real green infrastructure projects in Barcelona and Lleida as part of WGIC26, the urban sustainability congress.",
+};
 
 const TechnicalVisits = async () => {
     const t = await getTranslations("technicalVisitsPage");

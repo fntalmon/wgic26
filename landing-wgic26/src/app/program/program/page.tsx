@@ -14,6 +14,13 @@ import programDataEn from "@/data/program-en.json";
 import programDataEs from "@/data/program-es.json";
 import programDataCa from "@/data/program-ca.json";
 import { getTranslations, getLocale } from "next-intl/server";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Congress Programme | WGIC26 Barcelona-Lleida",
+  description:
+    "Discover the full programme for WGIC26, the green infrastructure conference 2026 bringing together plenaries, workshops and technical visits in Barcelona.",
+};
 
 const Program = async () => {
     const t = await getTranslations("programPage");

@@ -84,6 +84,12 @@
     "keynoteSpeakersIntro": "Coneix les veus líders en infraestructura verda confirmades per a WGIC26.",
     "viewAllSpeakers": "Veure tots els ponents magistrals",
     "earlyBirdBanner": "Early bird fins al setembre de 2026 — registra't ara i estalvia",
+    "earlyBirdPopupEyebrow": "Oferta per temps limitat",
+    "earlyBirdPopupTitle": "La tarifa early bird acaba el setembre de 2026",
+    "earlyBirdPopupBody": "Assegura la teva plaça a WGIC26 ara i estalvia en la teva inscripció abans que pugin els preus.",
+    "earlyBirdPopupCta": "Registrar-se ara",
+    "earlyBirdPopupDismiss": "Potser més tard",
+    "earlyBirdPopupClose": "Tancar",
     "registerNow": "Registrar-se ara",
     "registerForEvent": "Registrar-se a l'esdeveniment",
     "socialProof": {
@@ -277,10 +283,11 @@
     "keyDates": {
       "abstracts": "Període d'enviament de resums",
       "acceptance": "Notificació d'acceptació (decisió Oral/Pòster)",
-      "firstDraft": "Primer esborrany d'article/pòster",
-      "revision": "Lliurament de revisió d'article/pòster",
-      "finalPaper": "Lliurament final d'article/pòster",
+      "firstDraft": "Primer esborrany d'article",
+      "revision": "Lliurament de revisió d'article",
+      "finalPaper": "Lliurament final d'article",
       "finalProgram": "Programa final",
+      "posterSubmission": "Data límit d'enviament de pòsters",
       "earlyBird": "Data límit d'inscripció anticipada",
       "registrationOpen": "Inscripció oberta",
       "partners": "Socis i expositors",
@@ -293,6 +300,7 @@
       "revision": "Abans del 31 de juliol de 2026",
       "finalPaper": "Abans del 31 d'agost de 2026",
       "finalProgram": "31 de juliol de 2026",
+      "posterSubmission": "Abans del 30 de setembre de 2026",
       "registrationOpen": "Abans del 30 de setembre de 2026",
       "partners": "Abans del 30 de setembre de 2026",
       "sponsors": "Abans del 30 de setembre de 2026"
@@ -311,7 +319,8 @@
       "poster": "Pòster (A1)",
       "students": "Estudiants",
       "companions": "Acompanyants",
-      "galaDinner": "Sopar de gala"
+      "galaDinner": "Sopar de gala",
+      "dividerLabel": "QUOTES D'INSCRIPCIÓ"
     },
     "notes": {
       "author": "Cada autor inscrit pot presentar un article (inclosa presentació oral). Per a un segon article, es requereix una quota de 200 EUR.",
@@ -350,7 +359,34 @@
       "invoice": {
         "question": "Necessito factura?",
         "answer": "Pots sol·licitar la factura al formulari de pagament d'Helice. Si necessites ajuda, escriu a wgic2026.economics@udl.cat o a inquiry@wgic26.org."
+      },
+      "dividerLabel": "PREGUNTES FREQÜENTS"
+    },
+    "countdown": {
+      "title": "EARLY BIRD FINS AL SETEMBRE DE 2026",
+      "cta": "REGISTRA'T ARA I ESTALVIA",
+      "days": "DIES",
+      "hours": "HORES",
+      "minutes": "MIN"
+    },
+    "steps": {
+      "title": "PROCÉS D'INSCRIPCIÓ",
+      "step1": {
+        "title": "TRIA LA TEVA QUOTA",
+        "description": "Selecciona la categoria d'inscripció que s'ajusta al teu perfil a la taula de preus."
+      },
+      "step2": {
+        "title": "ACCEPTA LA POLÍTICA DE PRIVACITAT",
+        "description": "Llegeix i accepta els termes de protecció de dades per continuar amb la teva inscripció."
+      },
+      "step3": {
+        "title": "COMPLETA A HELICE",
+        "description": "Fes clic al botó per completar les teves dades a la plataforma d'inscripció Helice."
       }
+    },
+    "dataProtection": {
+      "title": "PROTECCIÓ DE DADES",
+      "heliceNote": "La inscripció es gestiona a través de la nostra plataforma externa Helice. Els següents consentiments també s'han de configurar al formulari d'Helice, ja que és allà on es recullen les dades personals."
     }
   },
   "speakersPage": {
@@ -373,10 +409,11 @@
     "keyDates": {
       "abstracts": "Període d'enviament de resums",
       "acceptance": "Notificació d'acceptació (decisió Oral/Pòster)",
-      "firstDraft": "Primer esborrany d'article/pòster",
-      "revision": "Lliurament de revisió d'article/pòster",
-      "finalPaper": "Lliurament final d'article/pòster",
+      "firstDraft": "Primer esborrany d'article",
+      "revision": "Lliurament de revisió d'article",
+      "finalPaper": "Lliurament final d'article",
       "finalProgram": "Programa final",
+      "posterSubmission": "Data límit d'enviament de pòsters",
       "earlyBird": "Data límit d'inscripció anticipada",
       "registrationOpen": "Inscripció oberta",
       "partners": "Socis i expositors",
@@ -389,6 +426,7 @@
       "revision": "Abans del 31 de juliol de 2026",
       "finalPaper": "Abans del 31 d'agost de 2026",
       "finalProgram": "31 de juliol de 2026",
+      "posterSubmission": "Abans del 30 de setembre de 2026",
       "registrationOpen": "Abans del 30 de setembre de 2026",
       "partners": "Abans del 30 de setembre de 2026",
       "sponsors": "Abans del 30 de setembre de 2026"

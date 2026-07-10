@@ -8,7 +8,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
 export const metadata = {
-  title: "WGIC26 Barcelona",
+  title: "WGIC26 Barcelona-Lleida",
   description: "World Green Infrastructure Congress 2026 - Barcelona",
   icons: {
     icon: [
@@ -52,7 +52,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
         <NextIntlClientProvider messages={messages}>
           <Navigation />
           <SocialSidebar />
-          <main className="flex flex-col gap-10 mt-28 lg:mt-40 mb-24 min-h-screen">
+          <main className="flex flex-col gap-10 mt-16 lg:mt-24 mb-24 min-h-screen">
             {children}
           </main>
           <Footer />

@@ -1,8 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { ExternalLink, AlertCircle } from "lucide-react";
 import Link from "next/link";
+
+const CACTUS = "#1a3d2e";
+const CEMENT = "#e8e8e6";
+const POTUS = "#a8e06c";
 
 interface RegistrationConsentProps {
   heliceUrl: string;
@@ -17,6 +22,33 @@ interface RegistrationConsentProps {
     continueButton: string;
     privacyPolicy: string;
   };
+}
+
+function Toggle({
+  checked,
+  onChange,
+}: {
+  checked: boolean;
+  onChange: (v: boolean) => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={() => onChange(!checked)}
+      className="relative w-10 h-5 rounded-full transition-colors duration-300 flex-shrink-0"
+      style={{
+        backgroundColor: checked ? `${POTUS}40` : `${CEMENT}12`,
+        border: `1px solid ${checked ? POTUS : `${CEMENT}20`}`,
+      }}
+    >
+      <motion.div
+        animate={{ x: checked ? 20 : 2 }}
+        transition={{ type: "spring", stiffness: 500, damping: 30 }}
+        className="absolute top-0.5 w-3.5 h-3.5 rounded-full"
+        style={{ backgroundColor: checked ? POTUS : `${CEMENT}40` }}
+      />
+    </button>
+  );
 }
 
 export default function RegistrationConsent({
@@ -36,64 +68,135 @@ export default function RegistrationConsent({
   };
 
   return (
-    <div className="border border-white/20 rounded-lg p-6 md:p-8 flex flex-col gap-6">
-      <h3 className="text-xl font-semibold text-white">
-        {labels.legalNoticeTitle}
-      </h3>
-      <p className="text-white/80 leading-relaxed text-sm">
-        {labels.legalNoticeIntro}
-      </p>
-
-      <div className="bg-yellow-600/10 border border-yellow-600/30 rounded-md p-4 text-sm text-yellow-200">
-        {labels.legalNoticeHeliceNote}
+    <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-3">
+        <h3
+          className="text-xl lg:text-2xl font-normal tracking-wide leading-tight"
+          style={{
+            color: CEMENT,
+            fontFamily: "'Century Gothic', 'Segoe UI', sans-serif",
+            textTransform: "uppercase",
+          }}
+        >
+          {labels.legalNoticeTitle}
+        </h3>
+        <p
+          className="text-xs leading-relaxed max-w-3xl"
+          style={{ color: CEMENT, opacity: 0.5 }}
+        >
+          {labels.legalNoticeIntro}
+        </p>
       </div>
 
-      <div className="flex flex-col gap-4">
-        <label className="flex items-start gap-3 text-sm text-white/80 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={mandatoryConsent}
-            onChange={(e) => {
-              setMandatoryConsent(e.target.checked);
-              if (e.target.checked) setShowError(false);
-            }}
-            className="mt-0.5 h-4 w-4 rounded border-white/40 text-cactus focus:ring-cactus"
-          />
-          <span className="leading-snug">{labels.checkboxMandatory}</span>
-        </label>
+      <div
+        className="flex gap-3 p-4"
+        style={{
+          backgroundColor: `${POTUS}08`,
+          border: `1px solid ${POTUS}15`,
+        }}
+      >
+        <span
+          className="text-[11px] leading-relaxed"
+          style={{ color: CEMENT, opacity: 0.5 }}
+        >
+          {labels.legalNoticeHeliceNote}
+        </span>
+      </div>
 
-        <label className="flex items-start gap-3 text-sm text-white/80 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={optionalConsent}
-            onChange={(e) => setOptionalConsent(e.target.checked)}
-            className="mt-0.5 h-4 w-4 rounded border-white/40 text-cactus focus:ring-cactus"
+      <div className="h-px w-full" style={{ backgroundColor: `${CEMENT}08` }} />
+
+      <div className="flex flex-col gap-5">
+        <div className="flex items-start gap-4">
+          <Toggle
+            checked={mandatoryConsent}
+            onChange={(v) => {
+              setMandatoryConsent(v);
+              if (v) setShowError(false);
+            }}
           />
-          <span className="leading-snug">{labels.checkboxOptional}</span>
-        </label>
+          <button
+            type="button"
+            onClick={() => {
+              setMandatoryConsent(!mandatoryConsent);
+              if (!mandatoryConsent) setShowError(false);
+            }}
+            className="text-xs leading-relaxed text-left cursor-pointer"
+            style={{ color: CEMENT, opacity: 0.6 }}
+          >
+            {labels.checkboxMandatory}
+          </button>
+        </div>
+
+        <div className="flex items-start gap-4">
+          <Toggle
+            checked={optionalConsent}
+            onChange={setOptionalConsent}
+          />
+          <button
+            type="button"
+            onClick={() => setOptionalConsent(!optionalConsent)}
+            className="text-xs leading-relaxed text-left cursor-pointer"
+            style={{ color: CEMENT, opacity: 0.5 }}
+          >
+            {labels.checkboxOptional}
+          </button>
+        </div>
       </div>
 
       {showError && (
-        <div className="inline-flex items-center gap-2 text-sm bg-red-50 text-red-800 border border-red-200 px-3 py-2 rounded-md">
-          <AlertCircle className="w-4 h-4" />
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="inline-flex items-center gap-2 text-xs px-3 py-2"
+          style={{
+            backgroundColor: "#f43f5e10",
+            color: "#f43f5e",
+            border: "1px solid #f43f5e30",
+          }}
+        >
+          <AlertCircle className="w-4 h-4 shrink-0" />
           <span className="leading-tight">{labels.checkboxRequiredError}</span>
-        </div>
+        </motion.div>
       )}
 
-      <p className="text-white/60 text-xs leading-relaxed">
-        {labels.rightsNote}{" "}
-        <Link href="/privacy" className="text-potus hover:underline">
-          {labels.privacyPolicy}
-        </Link>
-      </p>
+      <div className="h-px w-full" style={{ backgroundColor: `${CEMENT}08` }} />
 
-      <button
-        type="button"
-        onClick={handleContinue}
-        className="inline-flex items-center justify-center gap-2 rounded-md bg-yellow-600 hover:bg-yellow-500 text-black px-8 py-3 font-medium transition-colors w-full sm:w-auto"
-      >
-        {labels.continueButton} <ExternalLink className="w-4 h-4" />
-      </button>
+      <div className="flex flex-col gap-4">
+        <p
+          className="text-[10px] leading-relaxed max-w-3xl"
+          style={{ color: CEMENT, opacity: 0.35 }}
+        >
+          {labels.rightsNote}{" "}
+          <Link
+            href="/privacy"
+            className="hover:opacity-80 transition-opacity"
+            style={{
+              color: POTUS,
+              textDecoration: "underline",
+              textDecorationColor: `${POTUS}40`,
+            }}
+          >
+            {labels.privacyPolicy}
+          </Link>
+        </p>
+
+        <motion.button
+          type="button"
+          onClick={handleContinue}
+          whileHover={{ scale: mandatoryConsent ? 1.01 : 1 }}
+          whileTap={{ scale: mandatoryConsent ? 0.98 : 1 }}
+          className="flex items-center justify-center gap-3 py-4 px-8 text-[11px] font-medium tracking-[0.2em] transition-all duration-300 w-full"
+          style={{
+            backgroundColor: mandatoryConsent ? POTUS : `${POTUS}12`,
+            color: mandatoryConsent ? CACTUS : `${CEMENT}40`,
+            cursor: mandatoryConsent ? "pointer" : "not-allowed",
+            border: `1px solid ${mandatoryConsent ? POTUS : `${POTUS}15`}`,
+          }}
+        >
+          {labels.continueButton}
+          <ExternalLink size={13} />
+        </motion.button>
+      </div>
     </div>
   );
 }

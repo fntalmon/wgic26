@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "Journal Special Issues | WGIC26 Barcelona-Lleida",
+  description:
+    "Top papers presented at WGIC26 are fast-tracked to special issues in leading journals — part of this nature-based solutions conference's research programme.",
+};
 
 const SpecialIssues = async () => {
     const t = await getTranslations("programSpecialIssuesPage");

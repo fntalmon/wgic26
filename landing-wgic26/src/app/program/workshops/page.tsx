@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import { getTranslations } from "next-intl/server";
 import {
@@ -33,6 +34,12 @@ type CardTranslator = {
     (key: string): string;
     raw(key: string): unknown;
     has(key: string): boolean;
+};
+
+export const metadata: Metadata = {
+  title: "Workshops | WGIC26 Barcelona-Lleida",
+  description:
+    "Join hands-on workshops at WGIC26 covering global south partnerships, health and post-conflict recovery through nature-based solutions.",
 };
 
 const workshopMeta: Record<

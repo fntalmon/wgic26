@@ -16,6 +16,13 @@ import {
 } from "@/components/ui/accordion";
 import "./topics.css";
 import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Main Topics | WGIC26 Barcelona-Lleida",
+  description:
+    "Explore the core topics at WGIC26, from urban biodiversity to climate resilience — key themes of this nature-based solutions conference.",
+};
 
 const Topics = async () => {
     const t = await getTranslations("topicsPage");

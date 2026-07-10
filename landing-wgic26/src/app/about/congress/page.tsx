@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import TextImage from "@/components/TextImage";
 import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "About the Congress | WGIC26 Barcelona-Lleida",
+  description:
+    "Discover WGIC26, the urban sustainability congress Barcelona is hosting in 2026 — bringing together researchers, planners and policymakers shaping the future of green infrastructure.",
+};
 
 const Congress = async () => {
   const t = await getTranslations("aboutCongress");

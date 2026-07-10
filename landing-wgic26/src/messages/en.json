@@ -84,6 +84,12 @@
     "keynoteSpeakersIntro": "Meet the leading voices in green infrastructure confirmed for WGIC26.",
     "viewAllSpeakers": "View all keynote speakers",
     "earlyBirdBanner": "Early bird ends September 2026 — register now and save",
+    "earlyBirdPopupEyebrow": "Limited-time offer",
+    "earlyBirdPopupTitle": "Early bird pricing ends September 2026",
+    "earlyBirdPopupBody": "Secure your spot at WGIC26 now and save on your registration before prices go up.",
+    "earlyBirdPopupCta": "Register now",
+    "earlyBirdPopupDismiss": "Maybe later",
+    "earlyBirdPopupClose": "Close",
     "registerNow": "Register now",
     "registerForEvent": "Register for the event",
     "socialProof": {
@@ -287,7 +293,8 @@
       "invoice": {
         "question": "Do I need an invoice?",
         "answer": "You can request an invoice in the Helice checkout form. If you need assistance, email wgic2026.economics@udl.cat or inquiry@wgic26.org."
-      }
+      },
+      "dividerLabel": "FREQUENTLY ASKED QUESTIONS"
     },
     "keyDatesTitle": "Key dates",
     "keyDatesHeaders": {
@@ -297,10 +304,11 @@
     "keyDates": {
       "abstracts": "Abstract submission period",
       "acceptance": "Acceptance notification (Oral/Poster decision)",
-      "firstDraft": "First draft paper/poster",
-      "revision": "Paper/poster revision submission",
-      "finalPaper": "Final paper/poster submission",
+      "firstDraft": "First draft paper",
+      "revision": "Paper revision submission",
+      "finalPaper": "Final paper submission",
       "finalProgram": "Final program",
+      "posterSubmission": "Poster submission deadline",
       "earlyBird": "Early-bird registration deadline",
       "registrationOpen": "Registration open",
       "partners": "Partners and exhibitors",
@@ -313,6 +321,7 @@
       "revision": "Before July 31, 2026",
       "finalPaper": "Before August 31, 2026",
       "finalProgram": "July 31, 2026",
+      "posterSubmission": "Before September 30, 2026",
       "registrationOpen": "Before September 30, 2026",
       "partners": "Before September 30, 2026",
       "sponsors": "Before September 30, 2026"
@@ -331,7 +340,8 @@
       "poster": "Poster (A1)",
       "students": "Students",
       "companions": "Companions",
-      "galaDinner": "Gala dinner"
+      "galaDinner": "Gala dinner",
+      "dividerLabel": "REGISTRATION FEES"
     },
     "notes": {
       "author": "Each registered author may present one paper (including oral presentation). For a second paper, an additional fee of 200 EUR is required.",
@@ -351,7 +361,33 @@
     "checkboxOptional": "I wish to receive electronic communications, news, newsletters and commercial information related to WGIC26 and future activities (Optional).",
     "checkboxRequiredError": "You must accept the Privacy Policy to continue with the registration.",
     "rightsNote": "You may exercise your rights of access, rectification, erasure and restriction by writing to the entities indicated in the Privacy Policy.",
-    "continueButton": "Continue to Helice registration form"
+    "continueButton": "Continue to Helice registration form",
+    "countdown": {
+      "title": "EARLY BIRD ENDS SEPTEMBER 2026",
+      "cta": "REGISTER NOW AND SAVE",
+      "days": "DAYS",
+      "hours": "HOURS",
+      "minutes": "MIN"
+    },
+    "steps": {
+      "title": "REGISTRATION PROCESS",
+      "step1": {
+        "title": "CHOOSE YOUR FEE",
+        "description": "Select the registration category that matches your profile from the pricing table below."
+      },
+      "step2": {
+        "title": "ACCEPT THE PRIVACY POLICY",
+        "description": "Read and accept the data protection terms to proceed with your registration."
+      },
+      "step3": {
+        "title": "COMPLETE ON HELICE",
+        "description": "Click the button below to fill in your details on the Helice registration platform."
+      }
+    },
+    "dataProtection": {
+      "title": "DATA PROTECTION",
+      "heliceNote": "Registration is managed through our external Helice platform. The following consents must also be configured in the Helice form, as that is where personal data is collected."
+    }
   },
   "speakersPage": {
     "title": "Be a speaker",
@@ -373,10 +409,11 @@
     "keyDates": {
       "abstracts": "Abstract submission period",
       "acceptance": "Acceptance notification (Oral/Poster decision)",
-      "firstDraft": "First draft paper/poster",
-      "revision": "Paper/poster revision submission",
-      "finalPaper": "Final paper/poster submission",
+      "firstDraft": "First draft paper",
+      "revision": "Paper revision submission",
+      "finalPaper": "Final paper submission",
       "finalProgram": "Final program",
+      "posterSubmission": "Poster submission deadline",
       "earlyBird": "Early-bird registration deadline",
       "registrationOpen": "Registration open",
       "partners": "Partners and exhibitors",
@@ -389,6 +426,7 @@
       "revision": "Before July 31, 2026",
       "finalPaper": "Before August 31, 2026",
       "finalProgram": "July 31, 2026",
+      "posterSubmission": "Before September 30, 2026",
       "registrationOpen": "Before September 30, 2026",
       "partners": "Before September 30, 2026",
       "sponsors": "Before September 30, 2026"

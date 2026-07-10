@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import { getTranslations } from "next-intl/server";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | WGIC26 Barcelona-Lleida",
+  description:
+    "Read the WGIC26 privacy policy and data protection information for the World Green Infrastructure Congress 2026 in Barcelona.",
+};
 
 const Privacy = async () => {
     const t = await getTranslations("legalPages");

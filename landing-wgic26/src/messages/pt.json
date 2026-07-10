@@ -54,8 +54,8 @@
     "congress": "Congresso",
     "workshops": "Oficinas",
     "visits": "Visitas",
-    "sponsorsPartners": "Patrocinadores e Parceiros",
-    "organizedBy": "Organizado por",
+    "sponsorsPartners": "Sponsors & Partners",
+    "organizedBy": "Organized by",
     "newsletterTitle": "Mantenha-se atualizado",
     "newsletterSubtitle": "Cadastre-se em nosso boletim informativo",
     "newsletterEmailPlaceholder": "Endereço de email",
@@ -72,18 +72,24 @@
     "newsletterConsentLabel": "Concordo em receber comunicações eletrônicas, newsletters e informações sobre o WGIC26 de acordo com a Política de Privacidade.",
     "newsletterConsentError": "Você deve aceitar a Política de Privacidade para assinar.",
     "newsletterPrivacyNotice": "Ao se inscrever, você concorda que processamos seus dados de acordo com o {privacyLink}. Controlador: Društvo WGIN. Processador: Universitat de Lleida.",
-    "elitePartners": "Parceiros Esmeralda",
-    "gardenBigExhibitors": "Grandes Expositores de Jardim",
-    "gardenMediumExhibitors": "Expositores Médios de Jardim",
-    "flowerExhibitors": "Expositores de Flores",
-    "mediaPartners": "Parceiros de mídia",
-    "withTheSupportOf": "Com o apoio de",
-    "comingSoon": "Em breve",
-    "eventPartners": "Parceiros de eventos",
+    "elitePartners": "Emerald Partners",
+    "gardenBigExhibitors": "Garden Big Exhibitors",
+    "gardenMediumExhibitors": "Garden Medium Exhibitors",
+    "flowerExhibitors": "Flower Exhibitors",
+    "mediaPartners": "Media Partners",
+    "withTheSupportOf": "With the Support of",
+    "comingSoon": "Coming soon",
+    "eventPartners": "Event Partners",
     "keynoteSpeakersTitle": "Palestrantes principais",
     "keynoteSpeakersIntro": "Conheça as principais vozes em infraestrutura verde confirmadas para o WGIC26.",
     "viewAllSpeakers": "Veja todos os palestrantes principais",
     "earlyBirdBanner": "Early bird até setembro de 2026 — inscreva-se agora e economize",
+    "earlyBirdPopupEyebrow": "Oferta por tempo limitado",
+    "earlyBirdPopupTitle": "A tarifa early bird termina em setembro de 2026",
+    "earlyBirdPopupBody": "Garanta já a sua vaga no WGIC26 e economize na sua inscrição antes do aumento dos preços.",
+    "earlyBirdPopupCta": "Inscreva-se agora",
+    "earlyBirdPopupDismiss": "Talvez mais tarde",
+    "earlyBirdPopupClose": "Fechar",
     "registerNow": "Inscreva-se agora",
     "registerForEvent": "Inscrever-se no evento",
     "socialProof": {
@@ -277,10 +283,11 @@
     "keyDates": {
       "abstracts": "Período de submissão de resumos",
       "acceptance": "Notificação de aceitação (decisão oral/pôster)",
-      "firstDraft": "Primeiro rascunho do artigo/poster",
-      "revision": "Envio de revisão de artigo/pôster",
-      "finalPaper": "Envio de trabalho final/pôster",
+      "firstDraft": "Primeiro rascunho do artigo",
+      "revision": "Envio de revisão do artigo",
+      "finalPaper": "Envio do trabalho final",
       "finalProgram": "Programa final",
+      "posterSubmission": "Prazo de submissão de posters",
       "earlyBird": "Prazo de inscrição antecipada",
       "registrationOpen": "Inscrições abertas",
       "partners": "Parceiros e expositores",
@@ -293,6 +300,7 @@
       "revision": "Antes de 31 de julho de 2026",
       "finalPaper": "Antes de 31 de agosto de 2026",
       "finalProgram": "31 de julho de 2026",
+      "posterSubmission": "Antes de 30 de setembro de 2026",
       "registrationOpen": "Antes de 30 de setembro de 2026",
       "partners": "Antes de 30 de setembro de 2026",
       "sponsors": "Antes de 30 de setembro de 2026"
@@ -311,7 +319,8 @@
       "poster": "Pôster (A1)",
       "students": "Alunos",
       "companions": "Companheiros",
-      "galaDinner": "Jantar de gala"
+      "galaDinner": "Jantar de gala",
+      "dividerLabel": "TAXAS DE INSCRIÇÃO"
     },
     "notes": {
       "author": "Cada autor inscrito poderá apresentar um artigo (incluindo apresentação oral). Para um segundo artigo, é necessária uma taxa adicional de 200 EUR.",
@@ -350,7 +359,34 @@
       "invoice": {
         "question": "Preciso de fatura?",
         "answer": "Pode solicitar a fatura no formulário de pagamento da Helice. Se precisar de ajuda, envie um e-mail para wgic2026.economics@udl.cat ou inquiry@wgic26.org."
+      },
+      "dividerLabel": "PERGUNTAS FREQUENTES"
+    },
+    "countdown": {
+      "title": "EARLY BIRD ATÉ SETEMBRO DE 2026",
+      "cta": "INSCREVA-SE AGORA E ECONOMIZE",
+      "days": "DIAS",
+      "hours": "HORAS",
+      "minutes": "MIN"
+    },
+    "steps": {
+      "title": "PROCESSO DE INSCRIÇÃO",
+      "step1": {
+        "title": "ESCOLHA A SUA TAXA",
+        "description": "Selecione a categoria de inscrição que corresponde ao seu perfil na tabela de preços abaixo."
+      },
+      "step2": {
+        "title": "ACEITE A POLÍTICA DE PRIVACIDADE",
+        "description": "Leia e aceite os termos de proteção de dados para prosseguir com a sua inscrição."
+      },
+      "step3": {
+        "title": "COMPLETE NA HELICE",
+        "description": "Clique no botão abaixo para preencher os seus dados na plataforma de inscrição Helice."
       }
+    },
+    "dataProtection": {
+      "title": "PROTEÇÃO DE DADOS",
+      "heliceNote": "O registro é gerenciado através de nossa plataforma externa Helice. Os seguintes consentimentos também devem ser configurados no formulário Helice, pois é onde os dados pessoais são coletados."
     }
   },
   "speakersPage": {
@@ -373,10 +409,11 @@
     "keyDates": {
       "abstracts": "Período de submissão de resumos",
       "acceptance": "Notificação de aceitação (decisão oral/pôster)",
-      "firstDraft": "Primeiro rascunho do artigo/poster",
-      "revision": "Envio de revisão de artigo/pôster",
-      "finalPaper": "Envio de trabalho final/pôster",
+      "firstDraft": "Primeiro rascunho do artigo",
+      "revision": "Envio de revisão do artigo",
+      "finalPaper": "Envio do trabalho final",
       "finalProgram": "Programa final",
+      "posterSubmission": "Prazo de submissão de posters",
       "earlyBird": "Prazo de inscrição antecipada",
       "registrationOpen": "Inscrições abertas",
       "partners": "Parceiros e expositores",
@@ -389,6 +426,7 @@
       "revision": "Antes de 31 de julho de 2026",
       "finalPaper": "Antes de 31 de agosto de 2026",
       "finalProgram": "31 de julho de 2026",
+      "posterSubmission": "Antes de 30 de setembro de 2026",
       "registrationOpen": "Antes de 30 de setembro de 2026",
       "partners": "Antes de 30 de setembro de 2026",
       "sponsors": "Antes de 30 de setembro de 2026"

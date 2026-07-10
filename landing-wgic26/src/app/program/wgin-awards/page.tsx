@@ -12,6 +12,13 @@ import {
     ExternalLink
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "WGIN Awards | WGIC26 Barcelona-Lleida",
+  description:
+    "The WGIN Awards recognise outstanding green infrastructure projects and research, presented at WGIC26 in Barcelona.",
+};
 
 const Awards = async () => {
     const t = await getTranslations("wginAwardsPage");

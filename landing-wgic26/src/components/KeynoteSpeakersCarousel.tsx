@@ -15,6 +15,7 @@ export function KeynoteSpeakersCarousel({ speakers }: { speakers: Speaker[] }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
     containScroll: "trimSnaps",
+    slidesToScroll: 1,
   });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
@@ -43,13 +44,13 @@ export function KeynoteSpeakersCarousel({ speakers }: { speakers: Speaker[] }) {
           {speakers.map((speaker) => (
             <div
               key={speaker.id}
-              className="group relative shrink-0 grow-0 basis-[62%] sm:basis-[36%] md:basis-[28%] lg:basis-[22%] aspect-3/4 overflow-hidden rounded-md"
+              className="group relative shrink-0 grow-0 min-w-0 basis-full sm:basis-[calc((100%-1*1.5rem)/2)] lg:basis-[calc((100%-3*1.5rem)/4)] aspect-3/4 overflow-hidden rounded-md"
             >
               <Image
                 src={speaker.image}
                 alt={speaker.name}
                 fill
-                sizes="(min-width: 1024px) 22vw, (min-width: 768px) 28vw, (min-width: 640px) 36vw, 62vw"
+                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                 className="object-cover grayscale transition-all duration-500 ease-out group-hover:grayscale-0 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/20 to-transparent" />

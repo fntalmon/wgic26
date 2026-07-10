@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect } from "react";
 
 interface Supporter {
   href: string;
@@ -13,13 +14,25 @@ interface SupportersCarouselProps {
   supporters: Supporter[];
   visibleCount?: number;
   secondsPerItem?: number;
+  variant?: "dark" | "light";
 }
 
 export function SupportersCarousel({
   supporters,
   visibleCount = 5,
   secondsPerItem = 3,
+  variant = "dark",
 }: SupportersCarouselProps) {
+  // Precargar logos para evitar que aparezcan vacíos al inicio.
+  useEffect(() => {
+    supporters.forEach((supporter) => {
+      const img = new window.Image();
+      img.src = supporter.src;
+    });
+  }, [supporters]);
+
+  const isLight = variant === "light";
+
   if (supporters.length <= visibleCount) {
     return (
       <div className="flex justify-center items-center gap-6 md:gap-10 lg:gap-12">
@@ -36,6 +49,7 @@ export function SupportersCarousel({
               alt={supporter.alt}
               width={280}
               height={200}
+              loading="eager"
               className={`${supporter.heightClass} w-auto object-contain`}
             />
           </a>
@@ -44,14 +58,18 @@ export function SupportersCarousel({
     );
   }
 
-  const track = [...supporters, ...supporters];
+  const track = [...supporters, ...supporters, ...supporters];
   const duration = supporters.length * secondsPerItem;
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden min-h-[80px]">
       <div
-        className="flex items-center gap-6 md:gap-10 lg:gap-12 animate-supporter-scroll"
-        style={{ animationDuration: `${duration}s`, width: "max-content" }}
+        className={`flex items-center gap-6 md:gap-10 lg:gap-12 animate-supporter-scroll will-change-transform ${isLight ? "hover:[animation-play-state:paused]" : ""}`}
+        style={{
+          animationDuration: `${duration}s`,
+          width: "max-content",
+          backfaceVisibility: "hidden",
+        }}
       >
         {track.map((supporter, i) => (
           <a
@@ -66,6 +84,7 @@ export function SupportersCarousel({
               alt={supporter.alt}
               width={280}
               height={200}
+              loading="eager"
               className={`${supporter.heightClass} w-auto object-contain`}
             />
           </a>
