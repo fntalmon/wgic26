@@ -2,7 +2,7 @@
 title: "WGIC26 at REBUILD 2026: Green Infrastructure in Hospitality Spaces"
 date: "2026-04-28"
 excerpt: "Gabriel Pérez, Chair of WGIC26, participated in REBUILD 2026 alongside Jeffrey Brock of Moneo Brock, exploring how green infrastructure enhances hospitality environments."
-coverImage: "/img/1540649732256.webp"
+coverImage: "/img/Banquet Hall.1.jpg"
 author: "WGIC26 Editorial Team"
 category: "Events"
 tags: ["rebuild 2026", "events", "hospitality", "gabriel perez", "industry"]
