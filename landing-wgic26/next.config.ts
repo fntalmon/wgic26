@@ -4,6 +4,13 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 const nextConfig: NextConfig = {
+  // public/ is served as static assets by Vercel's CDN and is never read at
+  // runtime by any server function — exclude it from function bundles so a
+  // dynamic fs path anywhere doesn't accidentally drag ~400MB of images/docs
+  // into a serverless function (see: blog/[slug] size limit incident).
+  outputFileTracingExcludes: {
+    "*": ["./public/**"],
+  },
 
   images: {
     unoptimized: true,

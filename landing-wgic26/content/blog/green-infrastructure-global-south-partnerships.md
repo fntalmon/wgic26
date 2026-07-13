@@ -2,7 +2,7 @@
 title: "Green Infrastructure and Nature-based Solutions: Advancing Equitable Global Partnerships"
 date: "2026-05-08"
 excerpt: "The World Green Infrastructure Network has long recognized that the climate crisis, biodiversity loss, and interconnected sustainability challenges we face today transcend borders and affect all nations, albeit with profound unequal impacts and responsibilities."
-coverImage: "/img/hero.jpg"
+coverImage: "/img/catalonia-best.jpg"
 author: "Gabriel Perez"
 category: "Research"
 tags: ["global south", "partnerships", "nature-based solutions", "equity", "WGIC26"]

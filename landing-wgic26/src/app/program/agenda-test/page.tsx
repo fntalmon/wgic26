@@ -8,14 +8,25 @@ export const metadata: Metadata = {
 };
 
 const API_BASE = "https://networking.barter.es/programapi";
-const TOKEN = "25f36345610469a7d054a2eed6952303";
-const EVENT_ID = "246";
+const TOKEN = "3a10b5a8a9c3c728dd5ac31703c7095a";
+const EVENT_ID = "562";
 
 async function getSessions() {
-  const url = `${API_BASE}/sessions.php?idevent=${EVENT_ID}&token=${TOKEN}&items=50`;
-  const res = await fetch(url, { next: { revalidate: 60 } });
-  if (!res.ok) throw new Error("Failed to fetch sessions");
-  return res.json();
+  const baseUrl = `${API_BASE}/sessions.php?idevent=${EVENT_ID}&token=${TOKEN}&items=50`;
+  const firstRes = await fetch(`${baseUrl}&pag=1`, { next: { revalidate: 60 } });
+  if (!firstRes.ok) throw new Error("Failed to fetch sessions");
+  const firstData = await firstRes.json();
+  const allSessions = [...(firstData.sessions || [])];
+  const pages = parseInt(firstData.paginate?.pages ?? "1", 10);
+
+  for (let page = 2; page <= pages; page++) {
+    const res = await fetch(`${baseUrl}&pag=${page}`, { next: { revalidate: 60 } });
+    if (!res.ok) throw new Error(`Failed to fetch sessions page ${page}`);
+    const data = await res.json();
+    allSessions.push(...(data.sessions || []));
+  }
+
+  return { ...firstData, sessions: allSessions };
 }
 
 async function getEventConfig() {
@@ -32,8 +43,9 @@ export default async function AgendaTestPage() {
     getEventConfig(),
   ]);
 
+  const tracks = eventData.tracks || [];
+
   const translations = {
-    allDays: t("allDays"),
     allRooms: t("allRooms"),
     allTracks: t("allTracks"),
     allTypes: t("allTypes"),
@@ -41,8 +53,6 @@ export default async function AgendaTestPage() {
     clearFilters: t("clearFilters"),
     showAll: t("showAll"),
     noSessions: t("noSessions"),
-    moreInfo: t("moreInfo"),
-    lessInfo: t("lessInfo"),
     time: t("time"),
     room: t("room"),
     track: t("track"),
@@ -52,6 +62,10 @@ export default async function AgendaTestPage() {
     daysCount: t("daysCount"),
     roomsCount: t("roomsCount"),
     tracksCount: t("tracksCount"),
+    sessionDetails: t("sessionDetails"),
+    duration: t("duration"),
+    speakers: t("speakers"),
+    noDescription: t("noDescription"),
   };
 
   return (
@@ -64,8 +78,7 @@ export default async function AgendaTestPage() {
       <AgendaTestClient
         sessions={sessionsData.sessions || []}
         facets={sessionsData.facets || {}}
-        eventConfig={eventData}
-        tracks={eventData.tracks || []}
+        tracks={tracks}
         translations={translations}
       />
     </div>

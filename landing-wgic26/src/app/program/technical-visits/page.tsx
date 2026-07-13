@@ -13,27 +13,27 @@ const TechnicalVisits = async () => {
     const t = await getTranslations("technicalVisitsPage");
 
     const itineraryA = [
-        { name: "Plaça de les Dones", image: "/img/visits/Plaça_de_les_dones_Residential.jpeg" },
-        { name: "Almirall", image: "/img/visits/Almirall - Offices.jpg" },
-        { name: "Manuel de Falla", image: "/img/visits/Manuel de Falla-Residential.jpg" },
-        { name: "Jardí Tarradellas", image: "/img/visits/Façana_Tarradellas_Residential.jpg" },
-        { name: "Pérez Iborra", image: "/img/visits/Perez Iborra-School.jpg" },
+        { name: "Plaça de les dones - Residential", image: "/img/visits/Plaça_de_les_dones_Residential.jpeg" },
+        { name: "Almirall - Offices", image: "/img/visits/Almirall - Offices.jpg" },
+        { name: "Manuel de Falla - Residential", image: "/img/visits/Manuel de Falla-Residential.jpg" },
+        { name: "Façana Tarradellas - Residential", image: "/img/visits/Façana_Tarradellas_Residential.jpg" },
+        { name: "Pérez Iborra - School", image: "/img/visits/Perez Iborra-School.jpg" },
     ];
 
     const itineraryB = [
-        { name: "Urbaser", image: "/img/visits/Urbaser_Offices.jpg" },
-        { name: "H Sant Pau", image: "/img/visits/Sant Pau - Hospital.jpg" },
-        { name: "Pere IV", image: "/img/visits/Pere IV-Offices.jpg" },
-        { name: "Edifici Platinum @22", image: "/img/visits/Platinum @22 - Offices.jpg" },
-        { name: "Torre Telefónica", image: "/img/visits/Torre Diagonal One-Offices.jpg" },
+        { name: "Urbaser - Offices", image: "/img/visits/Urbaser_Offices.jpg" },
+        { name: "Sant Pau - Hospital", image: "/img/visits/Sant Pau - Hospital.jpg" },
+        { name: "Pere IV - Offices", image: "/img/visits/Pere IV-Offices.jpg" },
+        { name: "Platinum @22 - Offices", image: "/img/visits/Platinum @22 - Offices.jpg" },
+        { name: "Torre Diagonal One - Offices", image: "/img/visits/Torre Diagonal One-Offices.jpg" },
     ];
 
     const itineraryC = [
-        { name: "H10 Urquinaona Plaza", image: "/img/visits/H10 Urquinaona Plaza - Hotel.webp" },
-        { name: "IEC", image: "/img/visits/IEC-Historic.jpg" },
-        { name: "COAC", image: "/img/visits/COAC-Offices.jpg" },
-        { name: "Porxos d'en Xifré", image: "/img/visits/Porxos d'en Xifré- Residential.jpg" },
-        { name: "Sofitel", image: "/img/visits/Sofitel - Hotel.webp" },
+        { name: "H10 Cubik - Hotel", image: "/img/visits/H10 Cubik - Hotel.jpg" },
+        { name: "IEC - Historic", image: "/img/visits/IEC-Historic.jpg" },
+        { name: "COAC - Offices", image: "/img/visits/COAC-Offices.jpg" },
+        { name: "Porxos d'en Xifré - Residential", image: "/img/visits/Porxos d'en Xifré- Residential.jpg" },
+        { name: "Sofitel - Hotel", image: "/img/visits/Sofitel - Hotel.webp" },
     ];
 
     const itineraries = [

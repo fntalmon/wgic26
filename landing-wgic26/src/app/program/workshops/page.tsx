@@ -19,6 +19,8 @@ import {
     MapPin,
     Lightbulb,
     Mic,
+    MessageCircle,
+    Mail,
 } from "lucide-react";
 
 type WorkshopKey = "globalSouth" | "health" | "recovery";
@@ -28,6 +30,20 @@ interface CaseStudy {
     title: string;
     body?: string;
     link?: string;
+}
+
+interface WhySection {
+    heading: string;
+    body: string;
+    bullets?: string[];
+}
+
+interface JoinConversation {
+    heading: string;
+    body: string;
+    contactIntro?: string;
+    contactLabel?: string;
+    contactEmail?: string;
 }
 
 type CardTranslator = {
@@ -160,6 +176,12 @@ const Workshops = async () => {
                                 const expectedOutcomes = ct.has("expectedOutcomes")
                                     ? (ct.raw("expectedOutcomes") as string[])
                                     : [];
+                                const whySections = ct.has("whySections")
+                                    ? (ct.raw("whySections") as WhySection[])
+                                    : [];
+                                const joinConversation = ct.has("joinConversation")
+                                    ? (ct.raw("joinConversation") as JoinConversation)
+                                    : undefined;
 
                                 return (
                                     <AccordionItem
@@ -191,7 +213,26 @@ const Workshops = async () => {
                                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                                                     <div className="flex flex-col gap-4">
                                                         <Section icon={HelpCircle} label={t("labels.why")}>
-                                                            <p>{ct("why")}</p>
+                                                            {ct.has("whyIntro") ? (
+                                                                <div className="flex flex-col gap-4">
+                                                                    <p>{ct("whyIntro")}</p>
+                                                                    {whySections.map((section, index) => (
+                                                                        <div key={index}>
+                                                                            <h5 className="text-white font-medium mb-2">{section.heading}</h5>
+                                                                            <p>{section.body}</p>
+                                                                            {section.bullets && section.bullets.length > 0 && (
+                                                                                <ul className="list-disc list-inside space-y-2 text-white/80 mt-2">
+                                                                                    {section.bullets.map((bullet, bulletIndex) => (
+                                                                                        <li key={bulletIndex}>{bullet}</li>
+                                                                                    ))}
+                                                                                </ul>
+                                                                            )}
+                                                                        </div>
+                                                                    ))}
+                                                                </div>
+                                                            ) : (
+                                                                <p>{ct("why")}</p>
+                                                            )}
                                                         </Section>
 
                                                         <Section icon={User} label={t("labels.leadership")}>
@@ -286,6 +327,34 @@ const Workshops = async () => {
                                                             <h4 className="text-xs uppercase text-potus font-medium tracking-wide">{t("labels.keynoteSpeaker")}</h4>
                                                         </div>
                                                         <p className="text-white/90 text-sm leading-relaxed">{ct("keynoteSpeaker")}</p>
+                                                    </div>
+                                                )}
+
+                                                {/* Join the conversation */}
+                                                {joinConversation && (
+                                                    <div className="bg-potus/10 border border-potus/30 rounded-lg p-5 flex flex-col gap-3">
+                                                        <div className="flex items-center gap-2">
+                                                            <MessageCircle size={18} className="text-potus" />
+                                                            <h4 className="text-xs uppercase text-potus font-medium tracking-wide">{joinConversation.heading}</h4>
+                                                        </div>
+                                                        <p className="text-white/90 text-sm leading-relaxed">{joinConversation.body}</p>
+                                                        {joinConversation.contactIntro && (
+                                                            <p className="text-white/80 text-sm leading-relaxed">{joinConversation.contactIntro}</p>
+                                                        )}
+                                                        {joinConversation.contactEmail && (
+                                                            <div className="flex items-center gap-2 text-sm">
+                                                                <Mail size={16} className="text-potus" />
+                                                                {joinConversation.contactLabel && (
+                                                                    <span className="text-white/70">{joinConversation.contactLabel}</span>
+                                                                )}
+                                                                <a
+                                                                    href={`mailto:${joinConversation.contactEmail}`}
+                                                                    className="text-potus hover:underline"
+                                                                >
+                                                                    {joinConversation.contactEmail}
+                                                                </a>
+                                                            </div>
+                                                        )}
                                                     </div>
                                                 )}
 

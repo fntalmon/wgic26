@@ -466,6 +466,7 @@
   },
   "legalPages": {
     "privacyTitle": "politique de confidentialité",
+    "termsTitle": "Conditions générales",
     "comingSoon": "À venir",
     "contactEmail": "hola@wgic26.barcelona",
     "lastUpdated": "Dernière mise à jour",
@@ -520,6 +521,15 @@
     "p1": "Les activités du WGIC26 sont conçues pour combiner les échanges scientifiques, le réseautage professionnel et l'apprentissage pratique dans le secteur des infrastructures vertes.",
     "p2": "Les détails de la session, les formats et les directives de participation seront publiés lorsque le programme final sera confirmé."
   },
+  "programSpeakersPage": {
+    "title": "Intervenants",
+    "description": "Rencontrez les experts qui rejoignent WGIC26.",
+    "noSpeakers": "Aucun intervenant disponible pour le moment.",
+    "moreInfo": "Plus d'infos",
+    "lessInfo": "Moins d'infos",
+    "linkedin": "LinkedIn",
+    "speakersCount": "Intervenants"
+  },
   "programAgendaPage": {
     "title": "Ordre du jour",
     "description": "Suivez les sessions et les étapes clés tout au long de toutes les journées du congrès.",
@@ -536,6 +546,10 @@
     "noSessions": "Aucune session ne correspond aux filtres sélectionnés.",
     "moreInfo": "Plus d'informations",
     "lessInfo": "Moins d'infos",
+    "sessionDetails": "Details de la seance",
+    "duration": "Duree",
+    "speakers": "Intervenants",
+    "noDescription": "Aucune description disponible.",
     "time": "Temps",
     "room": "Chambre",
     "track": "Piste",
@@ -629,7 +643,7 @@
   "technicalVisitsPage": {
     "title": "Visites techniques",
     "intro1": "Visitez les toits verts et les façades vertes les plus emblématiques de Barcelone. Vous explorerez des toits verts uniques qui ne sont normalement pas ouverts au public. Un coordinateur accompagnera le groupe tout au long de l'itinéraire, tandis qu'un guide spécialisé fournira des explications détaillées à chaque endroit.",
-    "intro2": "Les groupes seront limités à un maximum de 10 participants, avec un maximum de 5 groupes par itinéraire. L'horaire se déroulera de 9h00 à 17h00 et les transports en commun ainsi qu'un panier-repas seront inclus.",
+    "intro2": "Les groupes seront limités à un maximum de 10 participants, avec un maximum de 5 groupes par itinéraire. L'horaire se déroulera de 9h00 à 16h00 et les déplacements se feront entièrement à pied et en métro.",
     "intro3": "Les modalités d’inscription et les tarifs seront publiés dans les semaines à venir.",
     "itineraryA": "Itinéraire A",
     "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
@@ -819,8 +833,8 @@
         "leadershipAffiliation": "Université d'Anvers"
       },
       "health": {
-        "title": "Combler le fossé — La santé et le bien-être au cœur de l’infrastructure verte",
-        "description": "Explorer comment les infrastructures vertes – des forêts urbaines aux toits et murs vivants – soutiennent la santé mentale et physique et contribuent à prévenir les maladies non transmissibles.",
+        "title": "Infrastructures vertes pour une transformation positive pour la nature des hôpitaux et établissements de santé",
+        "description": "Alors que les systèmes de santé subissent une pression croissante liée au changement climatique et au besoin grandissant d'environnements de convalescence centrés sur le patient, l'intégration des infrastructures vertes (IV) et des solutions fondées sur la nature (SfN) n'est plus un luxe : c'est une nécessité clinique.",
         "leadership": "David Brasfield - Réseau mondial d'infrastructures vertes",
         "workingGroup": [
           "Cas Silvia Solé - Université de Lleida",
@@ -829,7 +843,29 @@
           "Rocio Varela de Seijas Sapia - VASE arquitectos",
           "Lucía Gómez Rodríguez - VASE arquitectos"
         ],
-        "why": "Nos villes peuvent-elles réellement nous guérir ? Le Réseau mondial des infrastructures vertes (WGIN) plaide pour une utilisation optimale des infrastructures vertes pour soutenir la santé et le bien-être des personnes et de la planète. Cependant, il existe une lacune reconnue dans l’attention accordée aux avantages spécifiques du verdissement urbain pour la santé humaine. Le Congrès mondial des infrastructures vertes 2026 (WGIC26) à Barcelone vise à combler ce fossé entre l'urbanisme et la santé publique. Nous explorons comment les « infrastructures vertes » – des forêts urbaines aux toits et murs vivants – sont une condition préalable à l'épanouissement mental et physique et à la prévention des maladies non transmissibles (MNT). La nature en ville agit comme le remède préventif ultime, réduisant les niveaux de cortisol, améliorant la qualité de l’air, soutenant le microbiome humain et atténuant la chaleur extrême pour créer des environnements résilients dans lesquels les gens peuvent s’épanouir. Ce volet thématique favorisera la collaboration interdisciplinaire et mettra en évidence les principaux domaines d'intérêt : La science de la connexion – examiner comment l'exposition à la nature réduit les maladies chroniques et améliore la santé mentale ; Le design urbain comme thérapie — stratégies pour transformer les espaces « gris » en « paysages de guérison » fonctionnels ; Histoires de réussite — présentant des villes mondiales qui ouvrent la voie en matière de durabilité centrée sur la santé ; et un appel à l’action pour la communauté de la santé – grâce à une collaboration interdisciplinaire plus étroite, nous pouvons favoriser une plus grande reconnaissance de la pertinence des infrastructures vertes intégrées aux bâtiments dans la recherche, les politiques et les pratiques en matière de santé.",
+        "whyIntro": "Rejoignez-nous au World Green Infrastructure Congress (WGIC26) pour un design charrette interactif. Cet atelier fait le lien entre la communauté experte en infrastructures vertes et le secteur de la santé. Nous réunissons architectes, architectes paysagistes, urbanistes, écologues, cliniciens et administrateurs de systèmes de santé pour réimaginer ensemble l'hôpital comme un paysage thérapeutique et résilient.",
+        "whySections": [
+          {
+            "heading": "Le Design Charrette",
+            "body": "Plutôt qu'une conférence traditionnelle, cette session est structurée comme un design charrette interactif et multidisciplinaire, centré sur une étude de cas réelle d'un hôpital de la région de Catalogne. Les participants seront répartis en groupes multidisciplinaires pour traiter des zones d'intervention spécifiques au sein du campus hospitalier. En s'appuyant sur les principes de la conception salutogénique — l'étude de la manière dont la conception peut soutenir de façon proactive le bien-être physique et mental — vous travaillerez avec vos pairs pour :",
+            "bullets": [
+              "Faire émerger des idées de services écosystémiques : identifier comment les aménagements fondés sur la nature peuvent apporter rafraîchissement, gestion des eaux pluviales et confort acoustique.",
+              "Développer des éléments de conception et des propositions : esquisser des interventions en 2D ou 3D favorisant le contact direct avec la nature pour les patients et le personnel, et offrant d'autres co-bénéfices des SfN.",
+              "Faire le lien entre politique et pratique : explorer comment les SfN peuvent s'aligner avec les objectifs institutionnels d'adaptation climatique et de qualité des soins."
+            ]
+          },
+          {
+            "heading": "Pourquoi participer ?",
+            "body": "Que vous soyez un professionnel de santé à la recherche de solutions de conception fondées sur des preuves, ou un expert environnemental souhaitant appliquer vos compétences au secteur clinique, cet atelier offre une occasion rare de produire des idées concrètes à fort impact. L'atelier offre l'opportunité unique de développer et de partager des idées transversales et innovantes avec des experts et des représentants de haut niveau du secteur de la santé et de la communauté mondiale de pratique en infrastructures vertes. Les résultats de la session seront compilés dans un rapport partagé avec les administrateurs de systèmes de santé, les chercheurs universitaires et les instances politiques compétentes telles que l'OMS, afin que vos contributions aient une portée au-delà du congrès."
+          }
+        ],
+        "joinConversation": {
+          "heading": "Rejoignez la conversation",
+          "body": "Cet atelier sera limité à 50 participants afin de garantir une expérience collaborative de haute qualité. Une préinscription est requise, et 10 places gratuites seront ouvertes spécifiquement au personnel de santé et aux acteurs cliniques afin d'assurer une représentation diversifiée.",
+          "contactIntro": "Intéressé·e à participer ou vous avez des questions sur l'atelier ? Notre groupe de travail finalise actuellement l'équipe du projet et les documents. Nous vous invitons à nous contacter directement pour en savoir plus sur le programme de l'atelier, les prérequis du projet, ou pour exprimer votre intérêt à rejoindre l'une de nos équipes de conception multidisciplinaires.",
+          "contactLabel": "Contactez le responsable du groupe de travail :",
+          "contactEmail": "david.v.brasfield@gmail.com"
+        },
         "goals": [
           "Améliorer la santé et le bien-être humains grâce à l’adoption et à la conception optimales d’infrastructures vertes dans les zones urbaines.",
           "Faciliter une meilleure collaboration entre la communauté de pratique des infrastructures vertes et le secteur de la santé.",

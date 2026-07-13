@@ -466,6 +466,7 @@
   },
   "legalPages": {
     "privacyTitle": "Privacy Policy",
+    "termsTitle": "Terms and Conditions",
     "comingSoon": "Coming soon",
     "contactEmail": "hola@wgic26.barcelona",
     "lastUpdated": "Last updated",
@@ -520,6 +521,15 @@
     "p1": "WGIC26 activities are designed to combine scientific exchange, professional networking, and practical learning across the green infrastructure sector.",
     "p2": "Session details, formats, and participation guidelines will be published when the final program is confirmed."
   },
+  "programSpeakersPage": {
+    "title": "Speakers",
+    "description": "Meet the experts joining WGIC26.",
+    "noSpeakers": "No speakers available yet.",
+    "moreInfo": "More info",
+    "lessInfo": "Less info",
+    "linkedin": "LinkedIn",
+    "speakersCount": "Speakers"
+  },
   "programAgendaPage": {
     "title": "Agenda",
     "description": "Follow the key sessions and milestones throughout all congress days.",
@@ -536,6 +546,10 @@
     "noSessions": "No sessions match the selected filters.",
     "moreInfo": "More info",
     "lessInfo": "Less info",
+    "sessionDetails": "Session details",
+    "duration": "Duration",
+    "speakers": "Speakers",
+    "noDescription": "No description available.",
     "time": "Time",
     "room": "Room",
     "track": "Track",
@@ -629,7 +643,7 @@
   "technicalVisitsPage": {
     "title": "Technical Visits",
     "intro1": "Visit the most iconic green roofs and green façades of Barcelona. You will explore unique green roofs that are not normally open to the public. A coordinator will accompany the group throughout the itinerary, while a specialized guide will provide detailed explanations at each location.",
-    "intro2": "Groups will be limited to a maximum of 10 participants, with up to 5 groups per itinerary. The schedule will run from 9:00 to 17:00, and public transportation as well as a packed lunch will be included.",
+    "intro2": "Groups will be limited to a maximum of 10 participants, with up to 5 groups per itinerary. The schedule will run from 9:00 to 16:00, and travel is entirely on foot and by metro.",
     "intro3": "Registration details and pricing will be published in the coming weeks.",
     "itineraryA": "Itinerary A",
     "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
@@ -819,8 +833,8 @@
         "leadershipAffiliation": "University of Antwerp"
       },
       "health": {
-        "title": "Bridging the Gap — Health and Wellbeing as the Heart of Green Infrastructure",
-        "description": "Exploring how green infrastructure — from urban forests to living roofs and walls — supports mental and physical health and helps prevent non-communicable diseases.",
+        "title": "Green Infrastructure for Nature-positive Transformation of Hospitals and Health Facilities",
+        "description": "As healthcare systems face increasing pressure from climate change and the growing need for patient-centered recovery environments, the integration of Green Infrastructure (GI) and Nature-Based Solutions (NBS) is no longer a luxury—it is a clinical necessity.",
         "leadership": "David Brasfield - World Green Infrastructure Network",
         "workingGroup": [
           "Silvia Solé Cases - University of Lleida",
@@ -829,7 +843,29 @@
           "Rocio Varela de Seijas Sapia - VASE arquitectos",
           "Lucía Gómez Rodríguez - VASE arquitectos"
         ],
-        "why": "Can our cities actually heal us? The World Green Infrastructure Network (WGIN) advocates for the optimal use of green infrastructure to support the health and wellbeing of both people and the planet. However, there is a recognized gap in the attention given to the specific human health benefits of urban greening. The World Green Infrastructure Congress 2026 (WGIC26) in Barcelona aims to bridge this divide between urban planning and public health. We explore how 'Green Infrastructure' — from urban forests to living roofs and walls — is a prerequisite for mental and physical flourishing and the prevention of non-communicable diseases (NCDs). Nature in the city acts as the ultimate preventive medicine, lowering cortisol levels, improving air quality, supporting the human microbiome, and mitigating extreme heat to create resilient environments where people can thrive. This thematic track will foster interdisciplinary collaboration and highlight key areas of focus: The Science of Connection — examining how nature exposure reduces chronic disease and boosts mental health; Urban Design as Therapy — strategies for transforming 'gray' spaces into functional 'healing landscapes'; Success Stories — showcasing global cities that are leading the way in health-centric sustainability; and a Call to Action for the Health Community — through stronger interdisciplinary collaboration, we can foster greater recognition for the relevance of building-integrated green infrastructure in health research, policy, and practice.",
+        "whyIntro": "Join us at the World Green Infrastructure Congress (WGIC26) for an interactive design charrette. This workshop bridges the gap between the expert Green Infrastructure community and the Health Sector. We are convening architects, landscape architects, urban planners, ecologists, clinicians, and health system administrators to collaboratively reimagine the hospital as a therapeutic, resilient landscape.",
+        "whySections": [
+          {
+            "heading": "The Design Charrette",
+            "body": "Instead of a traditional lecture, this session is structured as an interactive, multidisciplinary design charrette focused on a real-world case study from a hospital in the Catalonia region. Participants will be divided into multidisciplinary groups to address specific areas of intervention within the hospital campus. Using the principles of salutogenic design—the study of how design can proactively support physical and mental well-being—you will work with peers to:",
+            "bullets": [
+              "Brainstorm Ecosystem Deliveries: Identify how nature-based features can provide essential cooling, stormwater management, and acoustic comfort.",
+              "Develop Design Elements and Proposals: Sketch 2D or 3D interventions that promote direct nature contact for patients and staff and offer other NBS co-benefits.",
+              "Bridge Policy and Practice: Explore how NBS can align with institutional goals for climate adaptation and quality of care."
+            ]
+          },
+          {
+            "heading": "Why Participate?",
+            "body": "Whether you are a health professional seeking evidence-based design solutions or an environmental expert looking to apply your skills to the clinical sector, this workshop offers a rare opportunity to produce actionable, high-impact ideas. The workshop provides a unique opportunity to develop and share cross cutting ideas and innovation with experts and high-level representatives in the health sector and the Green Infrastructure global community of practice. Results from the session will be compiled into a report shared with health system administrators, academic researchers, and relevant policy bodies like the WHO, ensuring that your contributions have a life beyond the congress."
+          }
+        ],
+        "joinConversation": {
+          "heading": "Join the Conversation",
+          "body": "We are limiting this workshop to 50 participants to ensure a high-quality, collaborative experience. Pre-registration is required, and we are opening 10 free spots specifically for healthcare staff and clinical stakeholders to ensure diverse representation.",
+          "contactIntro": "Interested in joining or have questions about the workshop? Our working group is currently finalizing the project team and materials. We invite you to contact us directly to learn more about the workshop agenda, project requirements, or to express your interest in joining one of our multidisciplinary design teams.",
+          "contactLabel": "Contact the Working Group Leader:",
+          "contactEmail": "david.v.brasfield@gmail.com"
+        },
         "goals": [
           "Improve human health and well-being through optimal uptake and design of green infrastructure in urban areas.",
           "Facilitate better collaboration between the community of practice for green infrastructure and the health sector.",

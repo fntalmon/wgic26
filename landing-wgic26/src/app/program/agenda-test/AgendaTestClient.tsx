@@ -1,7 +1,13 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { MapPin, Tag, ChevronDown } from "lucide-react";
+import { MapPin, Tag, Clock, Calendar } from "lucide-react";
+import { cn } from "@/lib/utils";
+import {
+  Sheet,
+  SheetContent,
+  SheetTitle,
+} from "@/components/ui/sheet";
 
 interface Session {
   idsession: string;
@@ -42,13 +48,7 @@ interface TrackConfig {
   color?: string;
 }
 
-interface EventConfig {
-  startdate?: number;
-  enddate?: number;
-}
-
 interface Translations {
-  allDays: string;
   allRooms: string;
   allTracks: string;
   allTypes: string;
@@ -56,8 +56,6 @@ interface Translations {
   clearFilters: string;
   showAll: string;
   noSessions: string;
-  moreInfo: string;
-  lessInfo: string;
   time: string;
   room: string;
   track: string;
@@ -67,12 +65,15 @@ interface Translations {
   daysCount: string;
   roomsCount: string;
   tracksCount: string;
+  sessionDetails: string;
+  duration: string;
+  speakers: string;
+  noDescription: string;
 }
 
 interface Props {
   sessions: Session[];
   facets: Facets;
-  eventConfig: EventConfig;
   tracks: TrackConfig[];
   translations: Translations;
 }
@@ -81,13 +82,43 @@ function formatDate(dateStr: string) {
   const year = dateStr.slice(0, 4);
   const month = dateStr.slice(4, 6);
   const day = dateStr.slice(6, 8);
-  const date = new Date(`${year}-${month}-${day}`);
-  return date.toLocaleDateString("es-ES", {
+  const date = new Date(`${year}-${month}-${day}T12:00:00`);
+  return date.toLocaleDateString("en-GB", {
     weekday: "long",
     day: "numeric",
     month: "long",
   });
 }
+
+function formatDayLabel(dateStr: string) {
+  const year = dateStr.slice(0, 4);
+  const month = dateStr.slice(4, 6);
+  const day = dateStr.slice(6, 8);
+  const date = new Date(`${year}-${month}-${day}T12:00:00`);
+  return date.toLocaleDateString("en-GB", {
+    weekday: "short",
+    day: "numeric",
+  });
+}
+
+function parseTime(time: string) {
+  const [hours, minutes] = time.split(":").map(Number);
+  return hours * 60 + (minutes || 0);
+}
+
+function durationBetween(start: string, end: string) {
+  const diff = parseTime(end) - parseTime(start);
+  if (diff <= 0) return "";
+  const h = Math.floor(diff / 60);
+  const m = diff % 60;
+  return `${h}h${m ? ` ${m}m` : ""}`;
+}
+
+const typeStyles: Record<string, string> = {
+  Opening: "bg-potus text-black",
+  Keynote: "bg-yellow-500 text-black",
+  Roundtable: "bg-white/10 text-white",
+};
 
 export default function AgendaTestClient({
   sessions,
@@ -95,67 +126,95 @@ export default function AgendaTestClient({
   tracks,
   translations: t,
 }: Props) {
-  const [filterDate, setFilterDate] = useState<string>("all");
+  const dates = useMemo(
+    () => [...(facets.dates || [])].sort((a, b) => (a.date || "").localeCompare(b.date || "")),
+    [facets.dates]
+  );
+
+  const [selectedDate, setSelectedDate] = useState<string>(dates[0]?.date || "all");
   const [filterRoom, setFilterRoom] = useState<string>("all");
   const [filterTrack, setFilterTrack] = useState<string>("all");
   const [filterType, setFilterType] = useState<string>("all");
-  const [expandedSession, setExpandedSession] = useState<string | null>(null);
+  const [selectedSession, setSelectedSession] = useState<Session | null>(null);
 
-  const dates = facets.dates || [];
   const rooms = facets.rooms || [];
   const trackFacets = facets.tracks || [];
   const sessiontypes = facets.sessiontypes || [];
 
-  const filteredSessions = useMemo(() => {
-    return sessions.filter((s) => {
-      if (filterDate !== "all" && s.date !== filterDate) return false;
-      if (filterRoom !== "all" && s.idroom !== filterRoom) return false;
-      if (filterTrack !== "all" && s.idtrack !== filterTrack) return false;
-      if (filterType !== "all" && s.idsessiontype !== filterType) return false;
-      return true;
+  const trackColorMap = useMemo(() => {
+    const map: Record<string, string> = {};
+    tracks.forEach((tr) => {
+      map[tr.idtrack] = tr.color || "#3e793e";
     });
-  }, [sessions, filterDate, filterRoom, filterTrack, filterType]);
+    return map;
+  }, [tracks]);
 
-  const groupedByDate = useMemo(() => {
+  const filteredSessions = useMemo(() => {
+    return sessions
+      .filter((s) => {
+        if (selectedDate !== "all" && s.date !== selectedDate) return false;
+        if (filterRoom !== "all" && s.idroom !== filterRoom) return false;
+        if (filterTrack !== "all" && s.idtrack !== filterTrack) return false;
+        if (filterType !== "all" && s.idsessiontype !== filterType) return false;
+        return true;
+      })
+      .sort((a, b) => parseTime(a.start) - parseTime(b.start));
+  }, [sessions, selectedDate, filterRoom, filterTrack, filterType]);
+
+  const groupedByTime = useMemo(() => {
     const groups: Record<string, Session[]> = {};
     filteredSessions.forEach((s) => {
-      if (!groups[s.date]) groups[s.date] = [];
-      groups[s.date].push(s);
+      if (!groups[s.start]) groups[s.start] = [];
+      groups[s.start].push(s);
     });
-    const sortedDates = Object.keys(groups).sort();
-    sortedDates.forEach((d) => {
-      groups[d].sort((a, b) => {
-        const timeA = a.start.replace(":", "");
-        const timeB = b.start.replace(":", "");
-        return parseInt(timeA) - parseInt(timeB);
-      });
-    });
-    return { sortedDates, groups };
+    const times = Object.keys(groups).sort((a, b) => parseTime(a) - parseTime(b));
+    return { times, groups };
   }, [filteredSessions]);
 
-  const hasFilters =
-    filterDate !== "all" ||
-    filterRoom !== "all" ||
-    filterTrack !== "all" ||
-    filterType !== "all";
+  const hasFilters = filterRoom !== "all" || filterTrack !== "all" || filterType !== "all";
+
+  const clearFilters = () => {
+    setFilterRoom("all");
+    setFilterTrack("all");
+    setFilterType("all");
+  };
 
   return (
     <section className="w-full justify-start text-xs">
-      <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-12">
+      <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-10">
+        {/* Day tabs */}
+        <div className="flex gap-2 overflow-x-auto pb-2">
+          {dates.map((d) => {
+            const active = selectedDate === d.date;
+            return (
+              <button
+                key={d.date}
+                onClick={() => setSelectedDate(d.date || "all")}
+                className={cn(
+                  "flex items-center gap-2 px-4 py-2 rounded-full text-sm whitespace-nowrap border transition-colors",
+                  active
+                    ? "bg-potus text-black border-potus"
+                    : "bg-white/5 text-white/70 border-white/10 hover:bg-white/10 hover:text-white"
+                )}
+              >
+                <span className="uppercase tracking-wider">
+                  {d.date ? formatDayLabel(d.date) : "—"}
+                </span>
+                <span className="text-xs opacity-70">({d.count ?? 0})</span>
+              </button>
+            );
+          })}
+        </div>
+
         {/* Filters */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4">
           <div className="flex items-center justify-between">
             <span className="text-xs uppercase text-white/50 tracking-wider">
               {t.filters}
             </span>
             {hasFilters && (
               <button
-                onClick={() => {
-                  setFilterDate("all");
-                  setFilterRoom("all");
-                  setFilterTrack("all");
-                  setFilterType("all");
-                }}
+                onClick={clearFilters}
                 className="text-xs uppercase text-potus hover:text-white transition-colors tracking-wider"
               >
                 {t.clearFilters}
@@ -163,20 +222,7 @@ export default function AgendaTestClient({
             )}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <select
-              value={filterDate}
-              onChange={(e) => setFilterDate(e.target.value)}
-              className="bg-black/30 border border-white/20 rounded-lg px-4 py-3 text-white text-sm focus:border-potus focus:outline-none transition-colors"
-            >
-              <option value="all">{t.allDays}</option>
-              {dates.map((d) => (
-                <option key={d.date} value={d.date}>
-                  {formatDate(d.date!)} ({d.count})
-                </option>
-              ))}
-            </select>
-
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <select
               value={filterRoom}
               onChange={(e) => setFilterRoom(e.target.value)}
@@ -218,19 +264,14 @@ export default function AgendaTestClient({
           </div>
         </div>
 
-        {/* Agenda list */}
-        <div className="flex flex-col gap-16">
-          {groupedByDate.sortedDates.length === 0 ? (
+        {/* Session list as a timeline */}
+        <div className="flex flex-col gap-12">
+          {groupedByTime.times.length === 0 ? (
             <div className="text-white/50 text-center py-20 border border-white/10">
               <p className="text-base">{t.noSessions}</p>
               {hasFilters && (
                 <button
-                  onClick={() => {
-                    setFilterDate("all");
-                    setFilterRoom("all");
-                    setFilterTrack("all");
-                    setFilterType("all");
-                  }}
+                  onClick={clearFilters}
                   className="text-potus text-sm mt-4 hover:text-white transition-colors"
                 >
                   {t.showAll}
@@ -238,95 +279,68 @@ export default function AgendaTestClient({
               )}
             </div>
           ) : (
-            groupedByDate.sortedDates.map((date) => (
-              <div key={date} className="flex flex-col gap-8">
-                {/* Day header */}
-                <div className="border-b border-white/20 pb-4">
-                  <h2 className="text-2xl text-white uppercase font-light tracking-wide">
-                    {formatDate(date)}
-                  </h2>
-                </div>
+            groupedByTime.times.map((time, timeIndex) => {
+              const isLast = timeIndex === groupedByTime.times.length - 1;
+              return (
+                <div key={time} className="flex gap-6">
+                  {/* Time column */}
+                  <div className="flex flex-col items-center w-14 flex-shrink-0 pt-1">
+                    <span className="text-white/80 text-sm font-light tabular-nums">
+                      {time}
+                    </span>
+                    {!isLast && (
+                      <div className="w-px flex-1 bg-gradient-to-b from-white/20 to-transparent min-h-[1.5rem] mt-2" />
+                    )}
+                  </div>
 
-                {/* Sessions */}
-                <div className="flex flex-col gap-4">
-                  {groupedByDate.groups[date].map((session) => {
-                    const isExpanded = expandedSession === session.idsession;
-
-                    return (
-                      <div
-                        key={session.idsession}
-                        className={`group flex flex-col md:flex-row gap-6 md:gap-10 p-6 md:p-8 rounded-lg bg-white/[0.02] border border-white/[0.06] hover:bg-white/[0.04] hover:border-white/10 transition-all duration-300`}
-                      >
-                        {/* Time column */}
-                        <div className="md:w-28 flex-shrink-0">
-                          <div className="flex md:flex-col items-baseline md:items-start gap-2 md:gap-1">
-                            <span className="text-white text-lg font-light tracking-wide">
-                              {session.start}
-                            </span>
-                            <span className="text-white/30 text-xs uppercase tracking-wider">
-                              {session.end}
-                            </span>
-                          </div>
-                        </div>
-
-                        {/* Content column */}
-                        <div className="flex-1 flex flex-col gap-3">
-                          <div className="flex flex-wrap items-start justify-between gap-4">
-                            <h3 className="text-white text-base md:text-lg font-light leading-snug max-w-2xl">
+                  {/* Sessions column */}
+                  <div className="flex-1 flex flex-col gap-4 pb-2">
+                    {groupedByTime.groups[time].map((session) => {
+                      const trackColor = trackColorMap[session.idtrack] || "#3e793e";
+                      return (
+                        <button
+                          key={session.idsession}
+                          onClick={() => setSelectedSession(session)}
+                          className="text-left group flex flex-col gap-4 p-5 rounded-lg bg-white/[0.02] border border-white/[0.06] hover:bg-white/[0.04] hover:border-white/10 transition-all duration-300"
+                        >
+                          <div className="flex flex-wrap items-start justify-between gap-3">
+                            <h3 className="text-white text-base font-light leading-snug flex-1">
                               {session.title}
                             </h3>
-                            <span className="px-3 py-1 bg-white/[0.06] text-white/50 text-xs uppercase tracking-wider flex-shrink-0 rounded-full">
+                            <span
+                              className={cn(
+                                "px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wider flex-shrink-0",
+                                typeStyles[session.sessiontype] || "bg-white/10 text-white"
+                              )}
+                            >
                               {session.sessiontype}
                             </span>
                           </div>
 
-                          <div className="flex flex-wrap items-center gap-4 text-white/40 text-sm">
-                            <span className="flex items-center gap-1.5">
-                              <MapPin size={13} className="text-white/30" />
+                          <div className="flex flex-wrap gap-2">
+                            <span className="inline-flex items-center gap-1.5 text-xs text-white/60 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+                              <MapPin size={12} className="text-white/40" />
                               {session.room}
                             </span>
-                            <span className="flex items-center gap-1.5">
-                              <Tag size={13} className="text-white/30" />
-                              {session.track}
+                            <span
+                              className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-white/5 border border-white/10"
+                              style={{ borderColor: `${trackColor}80` }}
+                            >
+                              <Tag size={12} style={{ color: trackColor }} />
+                              <span className="text-white/70">{session.track}</span>
+                            </span>
+                            <span className="inline-flex items-center gap-1.5 text-xs text-white/60 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+                              <Clock size={12} className="text-white/40" />
+                              {durationBetween(session.start, session.end)}
                             </span>
                           </div>
-
-                          {session.description && (
-                            <div className="mt-2">
-                              <button
-                                onClick={() =>
-                                  setExpandedSession(
-                                    isExpanded ? null : session.idsession
-                                  )
-                                }
-                                className="inline-flex items-center gap-1.5 text-white/40 text-xs uppercase tracking-wider hover:text-potus transition-colors"
-                              >
-                                {isExpanded ? t.lessInfo : t.moreInfo}
-                                <ChevronDown
-                                  size={12}
-                                  className={`transition-transform duration-300 ${isExpanded ? "rotate-180" : ""}`}
-                                />
-                              </button>
-
-                              {isExpanded && (
-                                <div className="mt-4 pt-4 border-t border-white/10">
-                                  <div
-                                    className="text-white/60 text-sm leading-relaxed"
-                                    dangerouslySetInnerHTML={{
-                                      __html: session.description,
-                                    }}
-                                  />
-                                </div>
-                              )}
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    );
-                  })}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            ))
+              );
+            })
           )}
         </div>
 
@@ -346,6 +360,68 @@ export default function AgendaTestClient({
           </span>
         </div>
       </div>
+
+      {/* Session detail drawer */}
+      <Sheet open={!!selectedSession} onOpenChange={(open) => !open && setSelectedSession(null)}>
+        <SheetContent
+          side="right"
+          className="bg-black border-l border-white/10 w-full sm:max-w-md px-6 py-10"
+        >
+          {selectedSession && (
+            <div className="flex flex-col h-full gap-6">
+              <SheetTitle className="sr-only">{t.sessionDetails}</SheetTitle>
+
+              <span
+                className={cn(
+                  "self-start px-3 py-1 rounded-full text-xs uppercase tracking-wider",
+                  typeStyles[selectedSession.sessiontype] || "bg-white/10 text-white"
+                )}
+              >
+                {selectedSession.sessiontype}
+              </span>
+
+              <h2 className="text-2xl text-white font-light leading-snug">
+                {selectedSession.title}
+              </h2>
+
+              <div className="flex flex-col gap-2 text-sm text-white/60">
+                <span className="inline-flex items-center gap-2">
+                  <Calendar size={14} className="text-white/40" />
+                  {formatDate(selectedSession.date)}
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <Clock size={14} className="text-white/40" />
+                  {selectedSession.start} – {selectedSession.end}
+                  {durationBetween(selectedSession.start, selectedSession.end) && (
+                    <span className="text-white/40 text-xs">
+                      ({durationBetween(selectedSession.start, selectedSession.end)})
+                    </span>
+                  )}
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <MapPin size={14} className="text-white/40" />
+                  {selectedSession.room}
+                </span>
+                <span className="inline-flex items-center gap-2">
+                  <Tag size={14} className="text-white/40" />
+                  {selectedSession.track}
+                </span>
+              </div>
+
+              <div className="border-t border-white/10 pt-6">
+                {selectedSession.description ? (
+                  <div
+                    className="text-white/70 text-sm leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: selectedSession.description }}
+                  />
+                ) : (
+                  <p className="text-white/40 italic text-sm">{t.noDescription}</p>
+                )}
+              </div>
+            </div>
+          )}
+        </SheetContent>
+      </Sheet>
     </section>
   );
 }
