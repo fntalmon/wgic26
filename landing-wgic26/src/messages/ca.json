@@ -466,6 +466,7 @@
   },
   "legalPages": {
     "privacyTitle": "Política de privacitat",
+    "termsTitle": "Termes i condicions",
     "comingSoon": "Pròximament",
     "contactEmail": "hola@wgic26.barcelona",
     "lastUpdated": "Ultima actualitzacio",
@@ -520,6 +521,15 @@
     "p1": "Les activitats de WGIC26 estan dissenyades per combinar intercanvi científic, networking professional i aprenentatge pràctic en tot el sector d'infraestructura verda.",
     "p2": "Els detalls de sessions, formats i pautes de participació es publicaran quan es confirmi el programa final."
   },
+  "programSpeakersPage": {
+    "title": "Ponents",
+    "description": "Coneix els experts que participaran al WGIC26.",
+    "noSpeakers": "Encara no hi ha ponents disponibles.",
+    "moreInfo": "Més info",
+    "lessInfo": "Menys info",
+    "linkedin": "LinkedIn",
+    "speakersCount": "Ponents"
+  },
   "programAgendaPage": {
     "title": "Agenda",
     "description": "Segueix les sessions clau i les fites durant tots els dies del congrés.",
@@ -536,6 +546,10 @@
     "noSessions": "No hi ha sessions que coincideixin amb els filtres.",
     "moreInfo": "Mes info",
     "lessInfo": "Menys info",
+    "sessionDetails": "Detalls de la sessio",
+    "duration": "Durada",
+    "speakers": "Ponents",
+    "noDescription": "No hi ha descripcio disponible.",
     "time": "Hora",
     "room": "Sala",
     "track": "Track",
@@ -629,7 +643,7 @@
   "technicalVisitsPage": {
     "title": "Visites tècniques",
     "intro1": "Visita les cobertes verdes i les façanes vegetals més icòniques de Barcelona. Exploraràs cobertes verdes úniques que normalment no estan obertes al públic. Un coordinador acompanyarà el grup durant tot l'itinerari, mentre que un guia especialitzat oferirà explicacions detallades a cada lloc.",
-    "intro2": "Els grups estaran limitats a un màxim de 10 participants, amb fins a 5 grups per itinerari. L'horari serà de 9:00 a 17:00, i inclourà transport públic i un dinar per emportar.",
+    "intro2": "Els grups estaran limitats a un màxim de 10 participants, amb fins a 5 grups per itinerari. L'horari serà de 9:00 a 16:00, i els desplaçaments es faran íntegrament a peu i en metro.",
     "intro3": "Els detalls d'inscripció i preus es publicaran les properes setmanes.",
     "itineraryA": "Itinerari A",
     "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
@@ -819,8 +833,8 @@
         "leadershipAffiliation": "University of Antwerp"
       },
       "health": {
-        "title": "Superant la bretxa — Salut i benestar com el cor de la infraestructura verda",
-        "description": "Explorar com la infraestructura verda, des de boscos urbans fins a cobertes i murs verds, dóna suport a la salut mental i física i ajuda a prevenir malalties no transmissibles.",
+        "title": "Infraestructura verda per a la transformació positiva amb la natura d'hospitals i centres de salut",
+        "description": "A mesura que els sistemes de salut afronten una pressió creixent pel canvi climàtic i la necessitat creixent d'entorns de recuperació centrats en el pacient, la integració de la Infraestructura Verda (IV) i les Solucions basades en la Natura (SbN) ja no és un luxe: és una necessitat clínica.",
         "leadership": "David Brasfield - World Green Infrastructure Network",
         "workingGroup": [
           "Silvia Solé Cases - University of Lleida",
@@ -829,7 +843,29 @@
           "Rocío Varela de Seijas Sapia - VASE arquitectos",
           "Lucía Gómez Rodríguez - VASE arquitectos"
         ],
-        "why": "Les nostres ciutats realment poden curar-nos? La World Green Infrastructure Network (WGIN) advoca per l'ús òptim de la infraestructura verda per donar suport a la salut i el benestar tant de les persones com del planeta. Tanmateix, existeix una bretxa reconeguda en l'atenció dedicada als beneficis específics per a la salut humana de la urbanització verda. El World Green Infrastructure Congress 2026 (WGIC26) a Barcelona té com a objectiu superar aquesta divisió entre el planejament urbà i la salut pública. Explorem com la 'infraestructura verda', des de boscos urbans fins a cobertes i murs verds, és un requisit previ per al floreixement mental i físic i la prevenció de malalties no transmissibles (NCDs). La natura a la ciutat actua com la medicina preventiva definitiva, reduint els nivells de cortisol, millorant la qualitat de l'aire, donant suport al microbioma humà i mitigant la calor extrema per crear entorns resilients on les persones puguin prosperar. Aquest eix temàtic fomentarà la col·laboració interdisciplinària i posarà de relleu àrees clau d'atenció: La ciència de la connexió, examinar com l'exposició a la natura redueix les malalties cròniques i potencia la salut mental; El disseny urbà com a teràpia, estratègies per transformar espais 'grisos' en 'paisatges terapèutics' funcionals; Històries d'èxit, mostrar ciutats globals que lideren el camí cap a una sostenibilitat centrada en la salut; i una Crida a l'acció per a la comunitat de la salut, a través d'una col·laboració interdisciplinària més forta, podem fomentar un major reconeixement de la rellevància de la infraestructura verda integrada en l'edificació en la recerca, les polítiques i la pràctica en salut.",
+        "whyIntro": "Uneix-te a nosaltres al World Green Infrastructure Congress (WGIC26) per a un design charrette interactiu. Aquest taller tendeix un pont entre la comunitat experta en infraestructura verda i el sector salut. Convoquem arquitectes, arquitectes paisatgistes, urbanistes, ecòlegs, clínics i administradors de sistemes de salut per reimaginar junts l'hospital com un paisatge terapèutic i resilient.",
+        "whySections": [
+          {
+            "heading": "El Design Charrette",
+            "body": "En lloc d'una xerrada tradicional, aquesta sessió s'estructura com un design charrette interactiu i multidisciplinari centrat en un cas d'estudi real d'un hospital de la regió de Catalunya. Els participants es dividiran en grups multidisciplinaris per abordar àrees específiques d'intervenció dins el campus hospitalari. Utilitzant els principis del disseny salutogènic —l'estudi de com el disseny pot afavorir de manera proactiva el benestar físic i mental— treballareu amb els companys per a:",
+            "bullets": [
+              "Generar idees sobre serveis ecosistèmics: identificar com els elements basats en la natura poden aportar refrigeració, gestió d'aigües pluvials i confort acústic.",
+              "Desenvolupar elements de disseny i propostes: esbossar intervencions 2D o 3D que afavoreixin el contacte directe amb la natura per a pacients i personal, i aportin altres beneficis de les SbN.",
+              "Connectar política i pràctica: explorar com les SbN poden alinear-se amb els objectius institucionals d'adaptació climàtica i qualitat assistencial."
+            ]
+          },
+          {
+            "heading": "Per què participar?",
+            "body": "Tant si ets un professional de la salut que busca solucions de disseny basades en l'evidència, com un expert ambiental que vol aplicar els seus coneixements al sector clínic, aquest taller ofereix una oportunitat única de generar idees pràctiques i d'alt impacte. El taller ofereix l'oportunitat de desenvolupar i compartir idees innovadores i transversals juntament amb experts i representants d'alt nivell del sector salut i de la comunitat global d'infraestructura verda. Els resultats de la sessió es recopilaran en un informe que es compartirà amb administradors de sistemes de salut, investigadors acadèmics i organismes de política rellevants com l'OMS, garantint que les vostres aportacions tinguin vida més enllà del congrés."
+          }
+        ],
+        "joinConversation": {
+          "heading": "Uneix-te a la conversa",
+          "body": "Aquest taller estarà limitat a 50 participants per garantir una experiència col·laborativa d'alta qualitat. Cal preinscriure's, i es reservaran 10 places gratuïtes específicament per a personal sanitari i actors clínics, per tal d'assegurar una representació diversa.",
+          "contactIntro": "T'interessa participar o tens preguntes sobre el taller? El nostre grup de treball està finalitzant l'equip del projecte i els materials. T'convidem a contactar-nos directament per conèixer més sobre l'agenda del taller, els requisits del projecte, o per expressar el teu interès a unir-te a un dels nostres equips de disseny multidisciplinaris.",
+          "contactLabel": "Contacta amb el responsable del grup de treball:",
+          "contactEmail": "david.v.brasfield@gmail.com"
+        },
         "goals": [
           "Millorar la salut i el benestar humans mitjançant l'adopció i el disseny òptims de la infraestructura verda en àrees urbanes.",
           "Facilitar una millor col·laboració entre la comunitat de pràctica d'infraestructura verda i el sector de la salut.",

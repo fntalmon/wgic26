@@ -466,6 +466,7 @@
   },
   "legalPages": {
     "privacyTitle": "política de Privacidade",
+    "termsTitle": "Termos e condições",
     "comingSoon": "Em breve",
     "contactEmail": "hola@wgic26.barcelona",
     "lastUpdated": "Última atualização",
@@ -520,6 +521,15 @@
     "p1": "As atividades do WGIC26 são concebidas para combinar intercâmbio científico, networking profissional e aprendizagem prática em todo o setor de infraestruturas verdes.",
     "p2": "Detalhes da sessão, formatos e diretrizes de participação serão publicados quando o programa final for confirmado."
   },
+  "programSpeakersPage": {
+    "title": "Oradores",
+    "description": "Conheça os especialistas que participarão do WGIC26.",
+    "noSpeakers": "Ainda não há oradores disponíveis.",
+    "moreInfo": "Mais info",
+    "lessInfo": "Menos info",
+    "linkedin": "LinkedIn",
+    "speakersCount": "Oradores"
+  },
   "programAgendaPage": {
     "title": "Agenda",
     "description": "Acompanhe as principais sessões e marcos ao longo de todos os dias do congresso.",
@@ -536,6 +546,10 @@
     "noSessions": "Nenhuma sessão corresponde aos filtros selecionados.",
     "moreInfo": "Mais informações",
     "lessInfo": "Menos informações",
+    "sessionDetails": "Detalhes da sessao",
+    "duration": "Duracao",
+    "speakers": "Oradores",
+    "noDescription": "Nenhuma descricao disponivel.",
     "time": "Tempo",
     "room": "Sala",
     "track": "Acompanhar",
@@ -629,7 +643,7 @@
   "technicalVisitsPage": {
     "title": "Visitas Técnicas",
     "intro1": "Visite os telhados verdes e fachadas verdes mais emblemáticos de Barcelona. Você explorará telhados verdes exclusivos que normalmente não são abertos ao público. Um coordenador acompanhará o grupo durante todo o roteiro, enquanto um guia especializado dará explicações detalhadas em cada local.",
-    "intro2": "Os grupos serão limitados a um máximo de 10 participantes, com até 5 grupos por itinerário. O horário funcionará das 9h00 às 17h00, e estarão incluídos transporte público e almoço embalado.",
+    "intro2": "Os grupos serão limitados a um máximo de 10 participantes, com até 5 grupos por itinerário. O horário funcionará das 9h00 às 16h00, e os deslocamentos serão feitos inteiramente a pé e de metrô.",
     "intro3": "Detalhes de inscrição e preços serão publicados nas próximas semanas.",
     "itineraryA": "Itinerário A",
     "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
@@ -819,8 +833,8 @@
         "leadershipAffiliation": "Universidade de Antuérpia"
       },
       "health": {
-        "title": "Preenchendo a lacuna — Saúde e bem-estar como o coração da infraestrutura verde",
-        "description": "Explorar como as infraestruturas verdes — desde florestas urbanas a telhados e paredes vivas — apoiam a saúde mental e física e ajudam a prevenir doenças não transmissíveis.",
+        "title": "Infraestrutura verde para a transformação positiva com a natureza de hospitais e unidades de saúde",
+        "description": "À medida que os sistemas de saúde enfrentam uma pressão crescente devido às mudanças climáticas e à crescente necessidade de ambientes de recuperação centrados no paciente, a integração da Infraestrutura Verde (IV) e das Soluções Baseadas na Natureza (SbN) deixou de ser um luxo — é uma necessidade clínica.",
         "leadership": "David Brasfield - Rede Mundial de Infraestrutura Verde",
         "workingGroup": [
           "Casos Silvia Solé - Universidade de Lleida",
@@ -829,7 +843,29 @@
           "Rocio Varela de Seijas Sapia - VASE arquitectos",
           "Lucía Gómez Rodríguez - VASE arquitetos"
         ],
-        "why": "Nossas cidades podem realmente nos curar? A Rede Mundial de Infraestruturas Verdes (WGIN) defende a utilização otimizada das infraestruturas verdes para apoiar a saúde e o bem-estar das pessoas e do planeta. No entanto, existe uma lacuna reconhecida na atenção dada aos benefícios específicos da ecologização urbana para a saúde humana. O Congresso Mundial de Infraestruturas Verdes 2026 (WGIC26) em Barcelona pretende colmatar esta divisão entre o planeamento urbano e a saúde pública. Exploramos como a 'Infraestrutura Verde' - desde florestas urbanas até telhados e paredes vivas - é um pré-requisito para o florescimento mental e físico e a prevenção de doenças não transmissíveis (DNT). A natureza na cidade atua como o melhor remédio preventivo, reduzindo os níveis de cortisol, melhorando a qualidade do ar, apoiando o microbioma humano e mitigando o calor extremo para criar ambientes resilientes onde as pessoas possam prosperar. Esta faixa temática promoverá a colaboração interdisciplinar e destacará as principais áreas de foco: A Ciência da Conexão — examinando como a exposição à natureza reduz as doenças crônicas e melhora a saúde mental; Design Urbano como Terapia — estratégias para transformar espaços “cinzentos” em “paisagens curativas” funcionais; Histórias de sucesso — apresentando cidades globais que estão na vanguarda da sustentabilidade centrada na saúde; e um apelo à acção para a comunidade da saúde — através de uma colaboração interdisciplinar mais forte, podemos promover um maior reconhecimento da relevância da construção de infra-estruturas verdes integradas na investigação, políticas e práticas em saúde.",
+        "whyIntro": "Junte-se a nós no World Green Infrastructure Congress (WGIC26) para um design charrette interativo. Este workshop faz a ponte entre a comunidade especialista em infraestrutura verde e o setor da saúde. Estamos reunindo arquitetos, arquitetos paisagistas, urbanistas, ecologistas, clínicos e administradores de sistemas de saúde para reimaginar juntos o hospital como uma paisagem terapêutica e resiliente.",
+        "whySections": [
+          {
+            "heading": "O Design Charrette",
+            "body": "Em vez de uma palestra tradicional, esta sessão está estruturada como um design charrette interativo e multidisciplinar, centrado num estudo de caso real de um hospital na região da Catalunha. Os participantes serão divididos em grupos multidisciplinares para abordar áreas específicas de intervenção dentro do campus hospitalar. Usando os princípios do design salutogénico — o estudo de como o design pode apoiar proativamente o bem-estar físico e mental — irão trabalhar com os colegas para:",
+            "bullets": [
+              "Gerar ideias sobre serviços ecossistémicos: identificar como elementos baseados na natureza podem proporcionar arrefecimento, gestão de águas pluviais e conforto acústico.",
+              "Desenvolver elementos de design e propostas: esboçar intervenções 2D ou 3D que promovam o contacto direto com a natureza para pacientes e equipa, e ofereçam outros co-benefícios das SbN.",
+              "Ligar política e prática: explorar como as SbN podem alinhar-se com os objetivos institucionais de adaptação climática e qualidade dos cuidados."
+            ]
+          },
+          {
+            "heading": "Porquê participar?",
+            "body": "Quer seja um profissional de saúde à procura de soluções de design baseadas em evidência, ou um especialista ambiental que quer aplicar as suas competências ao setor clínico, este workshop oferece uma oportunidade rara de produzir ideias acionáveis e de alto impacto. O workshop proporciona uma oportunidade única de desenvolver e partilhar ideias transversais e inovadoras com especialistas e representantes de alto nível do setor da saúde e da comunidade global de infraestrutura verde. Os resultados da sessão serão compilados num relatório partilhado com administradores de sistemas de saúde, investigadores académicos e organismos de política relevantes como a OMS, garantindo que os seus contributos tenham vida para além do congresso."
+          }
+        ],
+        "joinConversation": {
+          "heading": "Junte-se à conversa",
+          "body": "Este workshop será limitado a 50 participantes para garantir uma experiência colaborativa de alta qualidade. É necessária pré-inscrição, e serão abertas 10 vagas gratuitas especificamente para profissionais de saúde e atores clínicos, para garantir uma representação diversificada.",
+          "contactIntro": "Interessado em participar ou tem dúvidas sobre o workshop? O nosso grupo de trabalho está a finalizar a equipa do projeto e os materiais. Convidamo-lo a contactar-nos diretamente para saber mais sobre a agenda do workshop, os requisitos do projeto, ou para expressar o seu interesse em juntar-se a uma das nossas equipas de design multidisciplinares.",
+          "contactLabel": "Contacte o responsável do grupo de trabalho:",
+          "contactEmail": "david.v.brasfield@gmail.com"
+        },
         "goals": [
           "Melhorar a saúde e o bem-estar humanos através da adoção e conceção otimizadas de infraestruturas verdes nas zonas urbanas.",
           "Facilitar uma melhor colaboração entre a comunidade de prática em infra-estruturas verdes e o sector da saúde.",
