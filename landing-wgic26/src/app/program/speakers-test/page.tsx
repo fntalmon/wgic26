@@ -3,14 +3,20 @@ import { getTranslations } from "next-intl/server";
 import SpeakersTestClient from "./SpeakersTestClient";
 
 const API_BASE = "https://networking.barter.es/programapi";
-const TOKEN = "25f36345610469a7d054a2eed6952303";
-const EVENT_ID = "246";
+const TOKEN = "3a10b5a8a9c3c728dd5ac31703c7095a";
+const EVENT_ID = "562";
 
 async function getSpeakers() {
   const url = `${API_BASE}/speakers.php?idevent=${EVENT_ID}&token=${TOKEN}&items=50`;
   const res = await fetch(url, { next: { revalidate: 60 } });
   if (!res.ok) throw new Error("Failed to fetch speakers");
-  return res.json();
+  const data = await res.json();
+  // Barter uses fake.jpg as a placeholder; treat it as no photo.
+  const speakers = (data.speakers || []).map((speaker: { photo: string; urlphoto: string }) => ({
+    ...speaker,
+    urlphoto: speaker.photo === "fake.jpg" ? "" : speaker.urlphoto,
+  }));
+  return { ...data, speakers };
 }
 
 export default async function SpeakersTestPage() {
