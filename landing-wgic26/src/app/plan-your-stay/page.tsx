@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import { MapPin, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Plan Your Stay | WGIC26 Barcelona-Lleida",
@@ -103,6 +104,49 @@ const PlanYourStay = async () => {
                                     {t("gastronomy")}
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Hotels Section */}
+            <section className="container mx-auto py-16 px-4">
+                <div className="max-w-5xl mx-auto">
+                    <div className="mb-10">
+                        <h2 className="text-3xl font-bold text-white mb-4">{t("hotelsTitle")}</h2>
+                        <p className="text-white/70 text-lg leading-relaxed">{t("hotelsIntro")}</p>
+                    </div>
+
+                    <div className="group flex flex-col gap-0 rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-cactus/10 hover:bg-cactus/20 transition-colors duration-300">
+                        <div className="relative aspect-[21/9] overflow-hidden">
+                            <Image
+                                src="/img/hotels/intercontinental-hero.jpg"
+                                alt={t("intercontinentalName")}
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                        </div>
+                        <div className="p-8 md:p-10">
+                            <h3 className="text-2xl font-bold text-white mb-3">{t("intercontinentalName")}</h3>
+                            <div className="flex items-start gap-2 text-white/70 mb-4">
+                                <MapPin className="w-5 h-5 mt-0.5 shrink-0 text-cactus" />
+                                <span>{t("intercontinentalAddress")}</span>
+                            </div>
+                            <p className="text-white/70 mb-4 leading-relaxed">
+                                {t("intercontinentalDescription")}
+                            </p>
+                            <p className="text-white/60 text-sm italic mb-6 leading-relaxed">
+                                {t("intercontinentalRatesNote")}
+                            </p>
+                            <a
+                                href="https://barcelona.intercontinental.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center gap-2 bg-cactus hover:bg-cactus/80 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+                            >
+                                <ExternalLink className="w-4 h-4" />
+                                {t("intercontinentalWebsite")}
+                            </a>
                         </div>
                     </div>
                 </div>

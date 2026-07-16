@@ -1,5 +1,6 @@
 "use client";
 
+import { AttendeeProfiles } from "@/components/AttendeeProfiles";
 import Countdown from "@/components/Countdown";
 import { EarlyBirdBanner } from "@/components/EarlyBirdBanner";
 import { EarlyBirdPopup } from "@/components/EarlyBirdPopup";
@@ -16,12 +17,12 @@ import { useTranslations } from "next-intl";
 
 const keynoteSpeakerSlots = [
   { id: "speaker1", image: "/img/speakers/marcosros.jpg" },
+  { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
   { id: "speaker2", image: "/img/speakers/salvadorrueda.jpg" },
+  { id: "speaker7", image: "/img/speakers/dorothyaseyo.jpg" },
   { id: "speaker3", image: "/img/speakers/vicenteguallart.jpg" },
   { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },
   { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
-  { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
-  { id: "speaker7", image: "/img/speakers/dorothyaseyo.jpg" },
 ] as const;
 
 const supporters = [
@@ -169,7 +170,7 @@ export default function HomeClient() {
   return (
     <div>
       <EarlyBirdPopup />
-      <section className="flex flex-col gap-0 pt-8 md:pt-10 lg:pt-16">
+      <section className="flex flex-col gap-0 pt-4 md:pt-6 lg:pt-8">
         <HomeBannerSlider
           slides={[
             {
@@ -190,98 +191,34 @@ export default function HomeClient() {
           ]}
         />
       </section>
-      <section className="lg:flex-row lg:items-start lg:justify-between">
-        <div className="uppercase text-3xl sm:text-4xl pr-8 md:text-5xl w-full lg:text-5xl lg:w-3/5 xl:text-6xl leading-tight tracking-tight">
+      <section className="lg:flex-row lg:items-start lg:justify-between pt-3 md:pt-4">
+        <div className="uppercase text-xl sm:text-2xl pr-8 md:text-3xl w-full lg:text-3xl lg:w-3/5 xl:text-4xl leading-tight tracking-tight">
           {t("heroTitle")}
         </div>
-        <div className="flex flex-col h-auto content-between gap-8 w-full lg:w-2/5">
-          <div className="w-full pt-7 border-t-1 border-white/50">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-              <h6 className="text-lg sm:text-xl">{t("date1")}</h6>
-              <p className="text-sm sm:text-lg text-white/80 sm:text-right">
+        <div className="flex flex-col h-auto content-between gap-2 w-full lg:w-2/5">
+          <div className="w-full pt-2 border-t-1 border-white/50">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+              <h6 className="text-sm sm:text-base">{t("date1")}</h6>
+              <p className="text-xs sm:text-sm text-white/80 sm:text-right">
                 {t("date1Location")}
               </p>
             </div>
           </div>
 
-          <div className="w-full pt-7 border-t-1 border-white/50">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-              <h6 className="text-lg sm:text-xl">{t("date2")}</h6>
-              <p className="text-sm sm:text-lg text-white/80 sm:text-right">
+          <div className="w-full pt-2 border-t-1 border-white/50">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+              <h6 className="text-sm sm:text-base">{t("date2")}</h6>
+              <p className="text-xs sm:text-sm text-white/80 sm:text-right">
                 {t("date2Location")}
               </p>
-            </div>
-          </div>
-
-          <div className="w-full pt-7 border-t-1 border-white/50">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-
             </div>
           </div>
         </div>
       </section>
       <Countdown />
-      <EarlyBirdBanner />
-      <section className="flex flex-col gap-0">
-        <div
-          id="banner"
-          className="bg-cement text-mortar w-full py-12 pl-6 pr-6"
-        >
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 items-start">
-            <div className="flex-1 prose prose-invert max-w-none text-lg sm:text-xl leading-relaxed md:max-h-[420px] overflow-y-auto pr-4 text-justify">
-              <h2 className="uppercase text-3xl md:text-5xl lg:text-6xl mb-3">
-                {t("bannerTitle")}
-              </h2>
-              <p>{t("introP1")}</p>
-              <p>{t("introP2")}</p>
-              <p>{t("introP3")}</p>
-              <p>{t("introP4")}</p>
-              <p>{t("introP5")}</p>
-              <p>{t("introP6")}</p>
-              <p>{t("introP7")}</p>
-              <p>{t("introP8")}</p>
-
-              <p className="mt-6">{t("introClosing")}</p>
-
-              <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                <div className="flex flex-col sm:flex-row gap-8">
-                  <div>
-                    <div className="font-medium text-black">
-                      Professor Gabriel Pérez
-                    </div>
-                    <div className="text-black/70 text-sm">
-                      {t("chairRole")}
-                    </div>
-                  </div>
-                  <div>
-                    <div className="font-medium text-black">Steven Peck</div>
-                    <div className="text-black/70 text-sm">
-                      {t("presidentRole")}
-                    </div>
-                  </div>
-                </div>
-                <Image
-                  src="/img/wgic26_logo/wgic26_logo.svg"
-                  alt={"WGIC26_logo"}
-                  width={180}
-                  height={72}
-                  className="max-h-20"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <SocialProof />
-      <section className="w-full justify-start">
-        <div className="flex justify-center">
-          <Link href="/registration">
-            <Button variant="default" size="lg">
-              {t("registerNow")}
-            </Button>
-          </Link>
-        </div>
-      </section>
+      <AttendeeProfiles />
+      <EarlyBirdBanner />
       <section id="keynote-speakers" className="flex flex-col gap-6 mt-16">
         <div className="bg-cactus rounded-2xl p-6 sm:p-10 lg:p-14 flex flex-col gap-8">
           <div className="flex flex-col gap-4 max-w-4xl">

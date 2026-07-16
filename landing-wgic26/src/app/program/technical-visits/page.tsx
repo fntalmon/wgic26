@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import { RegisterCTA } from "@/components/RegisterCTA";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 
 const TechnicalVisits = async () => {
     const t = await getTranslations("technicalVisitsPage");
+    const home = await getTranslations("home");
 
     const itineraryA = [
         { name: "Plaça de les dones - Residential", image: "/img/visits/Plaça_de_les_dones_Residential.jpeg" },
@@ -81,6 +83,11 @@ const TechnicalVisits = async () => {
                         </div>
                     ))}
 
+                    <RegisterCTA
+                        title={home("ctaJoinTitle")}
+                        subtitle={home("ctaJoinSubtitle")}
+                        buttonLabel={home("registerNow")}
+                    />
                 </div>
             </section>
         </div>

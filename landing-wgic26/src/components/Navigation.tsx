@@ -232,6 +232,7 @@ const Navigation = () => {
       ],
     },
     { title: t("newsletters"), url: "/newsletters" },
+    { title: t("blog"), url: "/blog" },
     { title: t("keyNoteSpeakers"), url: "/key-note-speakers" },
     // { title: t("speakers"), url: "/speakers" },
     // { title: t("registration"), url: "/registration", disabled: true },

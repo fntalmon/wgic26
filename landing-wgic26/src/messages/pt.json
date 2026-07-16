@@ -16,6 +16,7 @@
     "wginAwards": "Prêmios WGIN",
     "keyNoteSpeakers": "Palestrantes principais",
     "newsletters": "Boletins informativos",
+    "blog": "Blog",
     "speakers": "Alto-falantes",
     "registration": "Cadastro",
     "partnersExhibitors": "Parceiros e Expositores",
@@ -71,7 +72,7 @@
     "newsletterError": "Ocorreu um erro, tente novamente.",
     "newsletterConsentLabel": "Concordo em receber comunicações eletrônicas, newsletters e informações sobre o WGIC26 de acordo com a Política de Privacidade.",
     "newsletterConsentError": "Você deve aceitar a Política de Privacidade para assinar.",
-    "newsletterPrivacyNotice": "Ao se inscrever, você concorda que processamos seus dados de acordo com o {privacyLink}. Controlador: Društvo WGIN. Processador: Universitat de Lleida.",
+    "newsletterPrivacyNotice": "Ao se inscrever, você concorda que processamos seus dados de acordo com a <privacyLink>Política de Privacidade</privacyLink>. Controlador: Društvo WGIN. Processador: Universitat de Lleida.",
     "elitePartners": "Emerald Partners",
     "gardenBigExhibitors": "Garden Big Exhibitors",
     "gardenMediumExhibitors": "Garden Medium Exhibitors",
@@ -92,11 +93,22 @@
     "earlyBirdPopupClose": "Fechar",
     "registerNow": "Inscreva-se agora",
     "registerForEvent": "Inscrever-se no evento",
+    "ctaJoinTitle": "Junte-se a nós em Barcelona",
+    "ctaJoinSubtitle": "27–30 de outubro de 2026 — CCIB, Barcelona",
+    "newsletterCtaTeaser": "Receba as últimas novidades do WGIC26, prazos e anúncios de palestrantes no seu e-mail.",
     "socialProof": {
       "papers": "trabalhos submetidos",
       "attendees": "participantes esperados",
       "countries": "países",
-      "edition": "edição"
+      "edition": "edição",
+      "topCountriesLabel": "Principais países representados",
+      "topCountries": ["Espanha", "Áustria", "Bélgica", "Itália", "EUA"]
+    },
+    "attendeeProfiles": {
+      "title": "Quem participa no WGIC26?",
+      "subtitle": "Reunimos os profissionais que estão a moldar o futuro da infraestrutura verde, de Espanha e de todo o mundo.",
+      "internationalBadge": "Perfis nacionais e internacionais",
+      "profiles": ["Técnicos municipais", "Arquitetos", "Paisagistas", "Engenheiros civis", "Agrónomos"]
     }
   },
   "footer": {
@@ -108,16 +120,22 @@
     "program": "Programa",
     "workshops": "Oficinas",
     "technicalVisits": "Visitas Técnicas",
+    "blog": "Blog",
     "letsTalk": "Vamos conversar",
     "infoEmail": "info@wgic26.barcelona",
-    "registrationEmail": "registro@wgic26.barcelona",
-    "sponsorshipEmail": "patrocínio@wgic26.barcelona",
+    "registrationEmail": "registration@wgic26.barcelona",
+    "sponsorshipEmail": "sponsorship@wgic26.barcelona",
     "keyDates": "Datas importantes",
     "stayUpdated": "Fique atualizado",
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
     "privacyPolicy": "política de Privacidade",
     "copyright": "WGIC 2026 - Todos os direitos reservados"
+  },
+  "blogPage": {
+    "eyebrow": "Blog",
+    "title": "O Blog do WGIC26",
+    "subtitle": "Notícias, destaques de palestrantes e novidades dos bastidores do World Green Infrastructure Congress 2026."
   },
   "aboutCongress": {
     "title": "O Congresso",
@@ -265,7 +283,14 @@
     "cataloniaTitle": "Agência Catalã de Turismo",
     "cataloniaDescription": "Descubra o Grand Tour da Catalunha e a melhor gastronomia do mundo.",
     "grandTour": "Grande Tour pela Catalunha",
-    "gastronomy": "Gastronomia na Catalunha"
+    "gastronomy": "Gastronomia na Catalunha",
+    "hotelsTitle": "Hotéis recomendados",
+    "hotelsIntro": "Abaixo estão opções de hospedagem para sua estadia durante o WGIC26. Observe que as tarifas são definidas diretamente por cada hotel.",
+    "intercontinentalName": "InterContinental Barcelona",
+    "intercontinentalAddress": "Avenida Rius y Taulet 1-3, 08004 Barcelona, Espanha",
+    "intercontinentalDescription": "Um moderno hotel de luxo localizado perto da Plaza de España e Montjuïc, com vista do terraço, restaurantes, spa e espaços para eventos.",
+    "intercontinentalRatesNote": "As tarifas são as publicadas no site do hotel. Tarifas especiais para grupos e bloqueio de quartos não estão disponíveis.",
+    "intercontinentalWebsite": "Visitar site do hotel"
   },
   "registrationPage": {
     "title": "Cadastro",
@@ -635,7 +660,7 @@
       },
       "speaker8": {
         "name": "María Buhigas",
-        "bio": "María Buhigas é a Arquiteta-Chefe da Câmara Municipal de Barcelona. Arquiteta e urbanista, tem ampla experiência em estratégia urbana, espaço público, habitação e transformação da cidade. O seu trabalho centra-se no papel do planejamento urbano e da arquitetura na resposta aos desafios sociais, ambientais e territoriais atuais, com forte ênfase na criação de cidades mais habitáveis, inclusivas e resilientes."
+        "bio": "María Buhigas é a Arquiteta-Chefe da Câmara Municipal de Barcelona. Arquiteta e urbanista, possui ampla experiência em estratégia urbana, espaço público, habitação e transformação urbana, com foco na criação de cidades mais habitáveis, inclusivas e resilientes."
       }
     },
     "closing": "Este primeiro grupo de oradores sublinha a ambição, profundidade e visão multidisciplinar do WGIC 2026, posicionando-o como um fórum chave para o debate urbano global."
@@ -1061,6 +1086,26 @@
       "april2026Newsletter3": {
         "title": "Boletim informativo de abril",
         "date": "abril"
+      },
+      "june2026Newsletter7": {
+        "title": "Boletim Informativo de Junho #2",
+        "date": "Junho de 2026"
+      },
+      "july2026Newsletter10": {
+        "title": "Boletim Informativo de Julho #3",
+        "date": "Julho de 2026"
+      },
+      "july2026Newsletter9": {
+        "title": "Boletim Informativo de Julho #2",
+        "date": "Julho de 2026"
+      },
+      "july2026Newsletter8": {
+        "title": "Boletim informativo de julho",
+        "date": "Julho de 2026"
+      },
+      "june2026Newsletter6": {
+        "title": "Boletim informativo de junho",
+        "date": "Junho de 2026"
       },
       "may2026Newsletter5": {
         "title": "Boletim Informativo de Maio #2",

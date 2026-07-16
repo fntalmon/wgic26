@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import { RegisterCTA } from "@/components/RegisterCTA";
+import { NewsletterCTA } from "@/components/NewsletterCTA";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
@@ -30,6 +32,7 @@ const getInitials = (name: string) =>
 
 const KeyNoteSpeakers = async () => {
   const t = await getTranslations("keyNoteSpeakersPage");
+  const home = await getTranslations("home");
 
   return (
     <div>
@@ -82,6 +85,17 @@ const KeyNoteSpeakers = async () => {
 
             <p className="text-white/60 text-center mt-6">{t("closing")}</p>
           </div>
+
+          <RegisterCTA
+            title={home("ctaJoinTitle")}
+            subtitle={home("ctaJoinSubtitle")}
+            buttonLabel={home("registerNow")}
+          />
+          <NewsletterCTA
+            title={home("newsletterTitle")}
+            subtitle={home("newsletterCtaTeaser")}
+            buttonLabel={home("newsletterSubmit")}
+          />
         </div>
       </section>
     </div>

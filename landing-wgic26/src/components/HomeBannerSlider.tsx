@@ -57,7 +57,7 @@ export function HomeBannerSlider({
 
   return (
     <div
-      className="relative w-full h-[300px] sm:h-[400px] md:h-[550px] lg:h-[700px] overflow-hidden bg-black rounded-b-2xl md:rounded-b-[2rem]"
+      className="relative w-full h-52 sm:h-64 md:h-80 lg:h-96 overflow-hidden bg-black rounded-b-2xl md:rounded-b-[2rem]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       role="region"

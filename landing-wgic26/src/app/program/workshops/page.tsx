@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import { RegisterCTA } from "@/components/RegisterCTA";
 import { getTranslations } from "next-intl/server";
 import {
     Accordion,
@@ -130,6 +131,7 @@ const LeadershipCard = ({ name, affiliation, image }: { name: string; affiliatio
 
 const Workshops = async () => {
     const t = await getTranslations("workshopsPage");
+    const home = await getTranslations("home");
     const tCard: Record<WorkshopKey, CardTranslator> = {
         globalSouth: (await getTranslations("workshopsPage.cards.globalSouth")) as unknown as CardTranslator,
         health: (await getTranslations("workshopsPage.cards.health")) as unknown as CardTranslator,
@@ -366,6 +368,11 @@ const Workshops = async () => {
                         </Accordion>
                     </div>
 
+                    <RegisterCTA
+                        title={home("ctaJoinTitle")}
+                        subtitle={home("ctaJoinSubtitle")}
+                        buttonLabel={home("registerNow")}
+                    />
                 </div>
             </section>
         </div>

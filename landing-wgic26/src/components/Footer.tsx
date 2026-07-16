@@ -12,6 +12,7 @@ const Footer = async () => {
     { label: t("program"), href: "/program/program" },
     { label: t("workshops"), href: "/program/workshops" },
     { label: t("technicalVisits"), href: "/program/technical-visits" },
+    { label: t("blog"), href: "/blog" },
   ];
 
   const talkLinks = [

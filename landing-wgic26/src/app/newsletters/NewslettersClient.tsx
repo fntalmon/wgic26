@@ -35,6 +35,8 @@ const monthColors: Record<string, { stripe: string; monthText: string }> = {
   march:    { stripe: "#6b9b7a", monthText: "#7db88e" },
   april:    { stripe: "#6b8f9b", monthText: "#7daab8" },
   may:      { stripe: "#b8a96e", monthText: "#d4c47a" },
+  june:     { stripe: "#9b8a6b", monthText: "#b8a67d" },
+  july:     { stripe: "#7a9b6b", monthText: "#8cb87d" },
 };
 
 /* ───────── Tarjeta magazine individual ───────── */
@@ -56,13 +58,10 @@ function NewsletterCard({
     newsletter.languages.find((l) => l.code === selectedLang) ||
     newsletter.languages[0];
 
-  const monthKey = newsletter.id.toLowerCase().includes("february")
-    ? "february"
-    : newsletter.id.toLowerCase().includes("april")
-      ? "april"
-      : newsletter.id.toLowerCase().includes("march")
-        ? "march"
-        : "may";
+  const monthKey =
+    ["february", "march", "april", "may", "june", "july"].find((m) =>
+      newsletter.id.toLowerCase().includes(m)
+    ) || "may";
   const colors = monthColors[monthKey] || monthColors.may;
 
   const monthShort =
@@ -282,6 +281,76 @@ export default function NewslettersClient() {
   const t = useTranslations("newslettersPage");
 
   const newsletters: Newsletter[] = [
+    {
+      id: "july2026-newsletter10",
+      title: t("items.july2026Newsletter10.title"),
+      date: t("items.july2026Newsletter10.date"),
+      publishedAt: "2026-07-09",
+      languages: [
+        { language: t("languages.en"), code: "en", slug: "july2026-newsletter10-en", pdfUrl: "/newsletters/Newsletter10Ingles.pdf", canReadOnline: true },
+        { language: t("languages.es"), code: "es", slug: "july2026-newsletter10-es", pdfUrl: "/newsletters/Newsletter10Espanol.pdf", canReadOnline: true },
+        { language: t("languages.it"), code: "it", slug: "july2026-newsletter10-it", pdfUrl: "/newsletters/Newsletter10Italiano.pdf", canReadOnline: true },
+        { language: t("languages.fr"), code: "fr", slug: "july2026-newsletter10-fr", pdfUrl: "/newsletters/Newsletter10Frances.pdf", canReadOnline: true },
+        { language: t("languages.pt"), code: "pt", slug: "july2026-newsletter10-pt", pdfUrl: "/newsletters/Newsletter10Portugues.pdf", canReadOnline: true },
+        { language: t("languages.ar"), code: "ar", slug: "july2026-newsletter10-ar", pdfUrl: "/newsletters/Newsletter10Arabe.pdf", canReadOnline: true },
+      ],
+    },
+    {
+      id: "july2026-newsletter9",
+      title: t("items.july2026Newsletter9.title"),
+      date: t("items.july2026Newsletter9.date"),
+      publishedAt: "2026-07-02",
+      languages: [
+        { language: t("languages.en"), code: "en", slug: "july2026-newsletter9-en", pdfUrl: "/newsletters/Newsletter9Ingles.pdf", canReadOnline: true },
+        { language: t("languages.es"), code: "es", slug: "july2026-newsletter9-es", pdfUrl: "/newsletters/Newsletter9Espanol.pdf", canReadOnline: true },
+        { language: t("languages.it"), code: "it", slug: "july2026-newsletter9-it", pdfUrl: "/newsletters/Newsletter9Italiano.pdf", canReadOnline: true },
+        { language: t("languages.fr"), code: "fr", slug: "july2026-newsletter9-fr", pdfUrl: "/newsletters/Newsletter9Frances.pdf", canReadOnline: true },
+        { language: t("languages.pt"), code: "pt", slug: "july2026-newsletter9-pt", pdfUrl: "/newsletters/Newsletter9Portugues.pdf", canReadOnline: true },
+        { language: t("languages.ar"), code: "ar", slug: "july2026-newsletter9-ar", pdfUrl: "/newsletters/Newsletter9Arabe.pdf", canReadOnline: true },
+      ],
+    },
+    {
+      id: "july2026-newsletter8",
+      title: t("items.july2026Newsletter8.title"),
+      date: t("items.july2026Newsletter8.date"),
+      publishedAt: "2026-06-25",
+      languages: [
+        { language: t("languages.en"), code: "en", slug: "july2026-newsletter8-en", pdfUrl: "/newsletters/Newsletter8Ingles.pdf", canReadOnline: true },
+        { language: t("languages.es"), code: "es", slug: "july2026-newsletter8-es", pdfUrl: "/newsletters/Newsletter8Espanol.pdf", canReadOnline: true },
+        { language: t("languages.it"), code: "it", slug: "july2026-newsletter8-it", pdfUrl: "/newsletters/Newsletter8Italiano.pdf", canReadOnline: true },
+        { language: t("languages.fr"), code: "fr", slug: "july2026-newsletter8-fr", pdfUrl: "/newsletters/Newsletter8Frances.pdf", canReadOnline: true },
+        { language: t("languages.pt"), code: "pt", slug: "july2026-newsletter8-pt", pdfUrl: "/newsletters/Newsletter8Portugues.pdf", canReadOnline: true },
+        { language: t("languages.ar"), code: "ar", slug: "july2026-newsletter8-ar", pdfUrl: "/newsletters/Newsletter8Arabe.pdf", canReadOnline: true },
+      ],
+    },
+    {
+      id: "june2026-newsletter7",
+      title: t("items.june2026Newsletter7.title"),
+      date: t("items.june2026Newsletter7.date"),
+      publishedAt: "2026-06-18",
+      languages: [
+        { language: t("languages.en"), code: "en", slug: "july2026-newsletter7-en", pdfUrl: "/newsletters/Newsletter7Ingles.pdf", canReadOnline: true },
+        { language: t("languages.es"), code: "es", slug: "july2026-newsletter7-es", pdfUrl: "/newsletters/Newsletter7Espanol.pdf", canReadOnline: true },
+        { language: t("languages.it"), code: "it", slug: "july2026-newsletter7-it", pdfUrl: "/newsletters/Newsletter7Italiano.pdf", canReadOnline: true },
+        { language: t("languages.fr"), code: "fr", slug: "july2026-newsletter7-fr", pdfUrl: "/newsletters/Newsletter7Frances.pdf", canReadOnline: true },
+        { language: t("languages.pt"), code: "pt", slug: "july2026-newsletter7-pt", pdfUrl: "/newsletters/Newsletter7Portugues.pdf", canReadOnline: true },
+        { language: t("languages.ar"), code: "ar", slug: "july2026-newsletter7-ar", pdfUrl: "/newsletters/Newsletter7Arabe.pdf", canReadOnline: true },
+      ],
+    },
+    {
+      id: "june2026-newsletter6",
+      title: t("items.june2026Newsletter6.title"),
+      date: t("items.june2026Newsletter6.date"),
+      publishedAt: "2026-06-11",
+      languages: [
+        { language: t("languages.en"), code: "en", slug: "july2026-newsletter6-en", pdfUrl: "/newsletters/Newsletter6Ingles.pdf", canReadOnline: true },
+        { language: t("languages.es"), code: "es", slug: "july2026-newsletter6-es", pdfUrl: "/newsletters/Newsletter6Espanol.pdf", canReadOnline: true },
+        { language: t("languages.it"), code: "it", slug: "july2026-newsletter6-it", pdfUrl: "/newsletters/Newsletter6Italiano.pdf", canReadOnline: true },
+        { language: t("languages.fr"), code: "fr", slug: "july2026-newsletter6-fr", pdfUrl: "/newsletters/Newsletter6Frances.pdf", canReadOnline: true },
+        { language: t("languages.pt"), code: "pt", slug: "july2026-newsletter6-pt", pdfUrl: "/newsletters/Newsletter6Portugues.pdf", canReadOnline: true },
+        { language: t("languages.ar"), code: "ar", slug: "july2026-newsletter6-ar", pdfUrl: "/newsletters/Newsletter6Arabe.pdf", canReadOnline: true },
+      ],
+    },
     {
       id: "may2026-newsletter5",
       title: t("items.may2026Newsletter5.title"),

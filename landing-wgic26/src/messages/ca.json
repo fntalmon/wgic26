@@ -16,6 +16,7 @@
     "wginAwards": "Premis WGIN",
     "keyNoteSpeakers": "Oradors",
     "newsletters": "Butlletins",
+    "blog": "Blog",
     "speakers": "Oradors",
     "registration": "Registre",
     "partnersExhibitors": "Expositors",
@@ -71,7 +72,7 @@
     "newsletterError": "Ha ocorregut un error, si us plau intenta-ho de nou.",
     "newsletterConsentLabel": "Accepto rebre comunicacions electroniques, newsletters i informacio sobre WGIC26 segons la Política de Privacitat.",
     "newsletterConsentError": "Has d'acceptar la Política de Privacitat per subscriure't.",
-    "newsletterPrivacyNotice": "En subscriure't, acceptes que tractem les teves dades conformement a la {privacyLink}. Responsable: Društvo WGIN. Encarregat: Universitat de Lleida.",
+    "newsletterPrivacyNotice": "En subscriure't, acceptes que tractem les teves dades conformement a la <privacyLink>Política de Privacitat</privacyLink>. Responsable: Društvo WGIN. Encarregat: Universitat de Lleida.",
     "elitePartners": "Emerald Partners",
     "gardenBigExhibitors": "Garden Big Exhibitors",
     "gardenMediumExhibitors": "Garden Medium Exhibitors",
@@ -92,11 +93,22 @@
     "earlyBirdPopupClose": "Tancar",
     "registerNow": "Registrar-se ara",
     "registerForEvent": "Registrar-se a l'esdeveniment",
+    "ctaJoinTitle": "Uneix-te a nosaltres a Barcelona",
+    "ctaJoinSubtitle": "27–30 d'octubre de 2026 — CCIB, Barcelona",
+    "newsletterCtaTeaser": "Rep les últimes novetats del WGIC26, terminis i anuncis de ponents al teu correu.",
     "socialProof": {
       "papers": "comunicacions presentades",
       "attendees": "assistents esperats",
       "countries": "països",
-      "edition": "edició"
+      "edition": "edició",
+      "topCountriesLabel": "Principals països representats",
+      "topCountries": ["Espanya", "Àustria", "Bèlgica", "Itàlia", "EUA"]
+    },
+    "attendeeProfiles": {
+      "title": "Qui assisteix al WGIC26?",
+      "subtitle": "Reunim els professionals que donen forma al futur de la infraestructura verda, d'Espanya i d'arreu del món.",
+      "internationalBadge": "Perfils nacionals i internacionals",
+      "profiles": ["Tècnics municipals", "Arquitectes", "Paisatgistes", "Enginyers civils", "Agrònoms"]
     }
   },
   "footer": {
@@ -108,6 +120,7 @@
     "program": "Programa",
     "workshops": "Workshops",
     "technicalVisits": "Visitas tècniques",
+    "blog": "Blog",
     "letsTalk": "Parlem",
     "infoEmail": "info@wgic26.barcelona",
     "registrationEmail": "registration@wgic26.barcelona",
@@ -118,6 +131,11 @@
     "instagram": "Instagram",
     "privacyPolicy": "Política de privacitat",
     "copyright": "WGIC 2026 - Tots els drets reservats"
+  },
+  "blogPage": {
+    "eyebrow": "Blog",
+    "title": "El Blog de WGIC26",
+    "subtitle": "Notícies, entrevistes amb ponents i novetats de darrere l'escenari del World Green Infrastructure Congress 2026."
   },
   "aboutCongress": {
     "title": "El Congrés",
@@ -265,7 +283,14 @@
     "cataloniaTitle": "Agència Catalana de Turisme",
     "cataloniaDescription": "Descobreix el Grand Tour de Catalunya i la millor gastronomia del món.",
     "grandTour": "Grand Tour de Catalunya",
-    "gastronomy": "Gastronomia a Catalunya"
+    "gastronomy": "Gastronomia a Catalunya",
+    "hotelsTitle": "Hotels recomanats",
+    "hotelsIntro": "A continuació trobaràs opcions d'allotjament per a la teva estada durant el WGIC26. Tingues en compte que les tarifes les estableix directament cada hotel.",
+    "intercontinentalName": "InterContinental Barcelona",
+    "intercontinentalAddress": "Avinguda Rius i Taulet 1-3, 08004 Barcelona, Espanya",
+    "intercontinentalDescription": "Un modern hotel de luxe situat a prop de la Plaça d'Espanya i Montjuïc, amb vistes des de la terrassa, restaurants, spa i espais per a esdeveniments.",
+    "intercontinentalRatesNote": "Les tarifes són les publicades al web de l'hotel. No hi ha tarifes especials per a grups ni bloqueig d'habitacions disponible.",
+    "intercontinentalWebsite": "Visitar web de l'hotel"
   },
   "registrationPage": {
     "title": "Inscripció",
@@ -635,7 +660,7 @@
       },
       "speaker8": {
         "name": "María Buhigas",
-        "bio": "María Buhigas és l'Arquitecta en Cap de l'Ajuntament de Barcelona. Arquitecta i urbanista, té una àmplia experiència en estratègia urbana, espai públic, habitatge i transformació de la ciutat. La seva feina se centra en el paper de la planificació urbanística i l'arquitectura per respondre als reptes socials, ambientals i territorials actuals, amb un fort èmfasi en crear ciutats més habitables, inclusives i resilients."
+        "bio": "María Buhigas és l'Arquitecta en Cap de l'Ajuntament de Barcelona. Arquitecta i urbanista, compta amb una àmplia experiència en estratègia urbana, espai públic, habitatge i transformació de les ciutats, amb l'objectiu de crear ciutats més habitables, inclusives i resilients."
       }
     },
     "closing": "Aquest primer grup d'oradors subratlla l'ambició, profunditat i visió multidisciplinar de WGIC 2026, posicionant-lo com un fòrum clau per al debat urbà global."
@@ -1061,6 +1086,26 @@
       "april2026Newsletter3": {
         "title": "Butlletí d'Abril",
         "date": "Abril"
+      },
+      "june2026Newsletter7": {
+        "title": "Butlletí de Juny #2",
+        "date": "Juny 2026"
+      },
+      "july2026Newsletter10": {
+        "title": "Butlletí de Juliol #3",
+        "date": "Juliol 2026"
+      },
+      "july2026Newsletter9": {
+        "title": "Butlletí de Juliol #2",
+        "date": "Juliol 2026"
+      },
+      "july2026Newsletter8": {
+        "title": "Butlletí de Juliol",
+        "date": "Juliol 2026"
+      },
+      "june2026Newsletter6": {
+        "title": "Butlletí de Juny",
+        "date": "Juny 2026"
       },
       "may2026Newsletter5": {
         "title": "Butlletí de Maig #2",

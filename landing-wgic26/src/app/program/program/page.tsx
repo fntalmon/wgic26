@@ -1,5 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import TextImage from "@/components/TextImage";
+import { RegisterCTA } from "@/components/RegisterCTA";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import {
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
 
 const Program = async () => {
     const t = await getTranslations("programPage");
+    const home = await getTranslations("home");
     const locale = await getLocale();
     
     // Select the program JSON file based on locale
@@ -176,6 +178,14 @@ const Program = async () => {
                     </Tabs>
                     <div className="mt-8 text-sm text-white/60 italic">
                         {t("footerNote")}
+                    </div>
+
+                    <div className="mt-10">
+                        <RegisterCTA
+                            title={home("ctaJoinTitle")}
+                            subtitle={home("ctaJoinSubtitle")}
+                            buttonLabel={home("registerNow")}
+                        />
                     </div>
                 </div>
             </section>

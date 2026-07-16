@@ -8,6 +8,7 @@ import {
   getAuthor,
   getRelatedPosts,
 } from "@/lib/blog";
+import { NewsletterCTA } from "@/components/NewsletterCTA";
 import { Calendar, Clock, ArrowLeft, ArrowRight, User } from "lucide-react";
 
 interface Props {
@@ -248,6 +249,14 @@ export default async function BlogPostPage({ params }: Props) {
               <ArrowRight size={14} />
             </Link>
           </div>
+        </section>
+
+        <section className="pt-0 max-w-5xl xl:max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <NewsletterCTA
+            title="Stay up to date"
+            subtitle="Get the latest WGIC26 news, deadlines and speaker announcements in your inbox."
+            buttonLabel="Subscribe"
+          />
         </section>
       </div>
     </>

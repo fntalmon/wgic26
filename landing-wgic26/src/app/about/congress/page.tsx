@@ -14,6 +14,7 @@ const Congress = async () => {
   const t = await getTranslations("aboutCongress");
   const nav = await getTranslations("navigation");
   const registration = await getTranslations("registrationPage.dateValues");
+  const home = await getTranslations("home");
   const locale = await getLocale();
 
   const videoIds: Record<string, string> = {
@@ -25,15 +26,15 @@ const Congress = async () => {
   const videoId = videoIds[locale] || videoIds.en;
 
   const keyDates = [
-    { who: t("dates.authors"), what: t("dates.abstracts"), when: registration("abstracts") },
-    { who: t("dates.scientificCommittee"), what: t("dates.acceptance"), when: registration("acceptance") },
-    { who: t("dates.authors"), what: t("dates.firstDraft"), when: registration("firstDraft") },
-    { who: t("dates.scientificCommittee"), what: t("dates.revisionR2"), when: registration("revision") },
-    { who: t("dates.authors"), what: t("dates.finalPaper"), when: registration("finalPaper") },
-    { who: t("dates.organizingCommittee"), what: t("dates.finalProgram"), when: registration("finalProgram") },
-    { who: t("dates.attendees"), what: t("dates.registration"), when: registration("registrationOpen") },
-    { who: t("dates.partners"), what: t("dates.registration"), when: registration("partners") },
-    { who: t("dates.sponsors"), what: t("dates.registration"), when: registration("sponsors") },
+    { who: t("dates.authors"), what: t("dates.abstracts"), when: registration("abstracts"), isoDate: "2026-05-31" },
+    { who: t("dates.scientificCommittee"), what: t("dates.acceptance"), when: registration("acceptance"), isoDate: "2026-05-15" },
+    { who: t("dates.authors"), what: t("dates.firstDraft"), when: registration("firstDraft"), isoDate: "2026-06-15" },
+    { who: t("dates.scientificCommittee"), what: t("dates.revisionR2"), when: registration("revision"), isoDate: "2026-07-31" },
+    { who: t("dates.authors"), what: t("dates.finalPaper"), when: registration("finalPaper"), isoDate: "2026-08-31" },
+    { who: t("dates.organizingCommittee"), what: t("dates.finalProgram"), when: registration("finalProgram"), isoDate: "2026-07-31" },
+    { who: t("dates.attendees"), what: t("dates.registration"), when: registration("registrationOpen"), isoDate: "2026-09-30" },
+    { who: t("dates.partners"), what: t("dates.registration"), when: registration("partners"), isoDate: "2026-09-30" },
+    { who: t("dates.sponsors"), what: t("dates.registration"), when: registration("sponsors"), isoDate: "2026-09-30" },
   ];
 
   return (
@@ -140,17 +141,87 @@ const Congress = async () => {
                 </tr>
               </thead>
               <tbody>
-                {keyDates.map((item) => (
-                  <tr key={`${item.who}-${item.what}-${item.when}`} className="hover:bg-white/5">
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{item.who}</td>
-                    <td className="border border-white/20 px-4 py-3 text-white/80 text-base">{item.what}</td>
-                    <td className="border border-white/20 px-4 py-3 text-potus font-medium text-base text-center">{item.when}</td>
-                  </tr>
-                ))}
+                {keyDates.map((item) => {
+                  const isPast = new Date(item.isoDate) < new Date();
+                  return (
+                    <tr key={`${item.who}-${item.what}-${item.when}`} className="hover:bg-white/5">
+                      <td
+                        className={`border border-white/20 px-4 py-3 text-base ${
+                          isPast ? "text-white/40 line-through" : "text-white/80"
+                        }`}
+                      >
+                        {item.who}
+                      </td>
+                      <td
+                        className={`border border-white/20 px-4 py-3 text-base ${
+                          isPast ? "text-white/40 line-through" : "text-white/80"
+                        }`}
+                      >
+                        {item.what}
+                      </td>
+                      <td
+                        className={`border border-white/20 px-4 py-3 font-medium text-base text-center ${
+                          isPast ? "text-white/40 line-through" : "text-potus"
+                        }`}
+                      >
+                        {item.when}
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
         </section>
+
+        <div
+          id="banner"
+          className="bg-cement text-mortar w-full py-12 px-6 rounded-lg"
+        >
+          <div className="flex flex-col gap-8 items-start">
+            <div className="flex-1 prose prose-invert max-w-none text-lg sm:text-xl leading-relaxed text-justify">
+              <h2 className="uppercase text-3xl md:text-5xl lg:text-6xl mb-3">
+                {home("bannerTitle")}
+              </h2>
+              <p>{home("introP1")}</p>
+              <p>{home("introP2")}</p>
+              <p>{home("introP3")}</p>
+              <p>{home("introP4")}</p>
+              <p>{home("introP5")}</p>
+              <p>{home("introP6")}</p>
+              <p>{home("introP7")}</p>
+              <p>{home("introP8")}</p>
+
+              <p className="mt-6">{home("introClosing")}</p>
+
+              <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div className="flex flex-col sm:flex-row gap-8">
+                  <div>
+                    <div className="font-medium text-black">
+                      Professor Gabriel Pérez
+                    </div>
+                    <div className="text-black/70 text-sm">
+                      {home("chairRole")}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="font-medium text-black">Steven Peck</div>
+                    <div className="text-black/70 text-sm">
+                      {home("presidentRole")}
+                    </div>
+                  </div>
+                </div>
+                <Image
+                  src="/img/wgic26_logo/wgic26_logo.svg"
+                  alt={"WGIC26_logo"}
+                  width={180}
+                  height={72}
+                  className="max-h-20"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>

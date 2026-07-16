@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getAllPosts } from "@/lib/blog";
+import { NewsletterCTA } from "@/components/NewsletterCTA";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
 export const metadata = {
   title: "Blog | WGIC26",
@@ -9,6 +11,7 @@ export const metadata = {
 };
 
 export default async function BlogIndexPage() {
+  const t = await getTranslations("blogPage");
   const posts = await getAllPosts();
   const featuredPost = posts.find((p) => p.featured) ?? posts[0];
   const remainingPosts = posts.filter((p) => p.slug !== featuredPost.slug);
@@ -18,14 +21,13 @@ export default async function BlogIndexPage() {
       {/* Header */}
       <section className="pt-0">
         <div className="text-xs uppercase w-full border-b border-white/50 py-2 tracking-wider text-potus">
-          Blog
+          {t("eyebrow")}
         </div>
         <h1 className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase">
-          News & Updates
+          {t("title")}
         </h1>
         <p className="mt-4 text-white/70 max-w-2xl">
-          Discover the latest stories, speaker highlights, and behind-the-scenes
-          updates from the World Green Infrastructure Congress 2026.
+          {t("subtitle")}
         </p>
       </section>
 
@@ -193,6 +195,14 @@ export default async function BlogIndexPage() {
           </div>
         </section>
       )}
+
+      <section className="pt-0">
+        <NewsletterCTA
+          title="Stay up to date"
+          subtitle="Get the latest WGIC26 news, deadlines and speaker announcements in your inbox."
+          buttonLabel="Subscribe"
+        />
+      </section>
     </div>
   );
 }

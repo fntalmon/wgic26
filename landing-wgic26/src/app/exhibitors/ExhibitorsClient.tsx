@@ -2,10 +2,11 @@
 
 import PageHeader from "@/components/PageHeader";
 import Carousel from "@/components/Carousel";
+import { RegisterCTA } from "@/components/RegisterCTA";
 import Image from "next/image";
 import { useState } from "react";
 import { FileText, Loader2, Presentation, CheckCircle } from "lucide-react";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const copy = {
   en: {
@@ -1322,6 +1323,7 @@ const copy = {
 
 const ExhibitorsClient = () => {
   const locale = useLocale();
+  const home = useTranslations("home");
   const t =
     locale === "es"
       ? copy.es
@@ -1334,8 +1336,8 @@ const ExhibitorsClient = () => {
             : copy.en;
   const pptHref =
     locale === "es"
-      ? "/docs/WGIC26_SponsorshipBrochure_v0.4_spanish.pptx"
-      : "/docs/WGIC26_SponsorshipBrochure_v0.4.pptx";
+      ? "/docs/WGIC26_SponsorshipBrochure_v0.5Spanish.pptx"
+      : "/docs/WGIC26_SponsorshipBrochure_v0.5.pptx";
   // Download form state (reserved for future use)
   // const [downloadStep, setDownloadStep] = useState<
   //   "initial" | "form" | "success"
@@ -2697,11 +2699,17 @@ const ExhibitorsClient = () => {
                                   className="h-20 w-auto object-contain"
                                 />
                               </a>
-                
+
               </div>
             </div>
           </div>
         </div>
+
+        <RegisterCTA
+          title={home("ctaJoinTitle")}
+          subtitle={home("ctaJoinSubtitle")}
+          buttonLabel={home("registerNow")}
+        />
       </section>
     </div>
   );
