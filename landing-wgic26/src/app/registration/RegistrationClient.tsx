@@ -329,6 +329,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
    ═══════════════════════════════════════ */
 export default function RegistrationClient() {
   const t = useTranslations("registrationPage");
+  const tLegal = useTranslations("legalPages");
 
   const pricingData = [
     {
@@ -490,6 +491,7 @@ export default function RegistrationClient() {
                 legalNoticeTitle: t("legalNoticeTitle"),
                 legalNoticeIntro: t("legalNoticeIntro"),
                 legalNoticeHeliceNote: t("dataProtection.heliceNote"),
+                legalClauseText: tLegal("legalClauseText"),
                 checkboxMandatory: t("checkboxMandatory"),
                 checkboxOptional: t("checkboxOptional"),
                 checkboxRequiredError: t("checkboxRequiredError"),

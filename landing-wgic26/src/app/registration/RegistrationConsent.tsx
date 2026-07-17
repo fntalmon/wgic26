@@ -15,6 +15,7 @@ interface RegistrationConsentProps {
     legalNoticeTitle: string;
     legalNoticeIntro: string;
     legalNoticeHeliceNote: string;
+    legalClauseText: string;
     checkboxMandatory: string;
     checkboxOptional: string;
     checkboxRequiredError: string;
@@ -86,6 +87,21 @@ export default function RegistrationConsent({
         >
           {labels.legalNoticeIntro}
         </p>
+      </div>
+
+      <div
+        className="flex gap-3 p-4"
+        style={{
+          backgroundColor: `${POTUS}08`,
+          border: `1px solid ${POTUS}15`,
+        }}
+      >
+        <span
+          className="text-[11px] leading-relaxed"
+          style={{ color: CEMENT, opacity: 0.5 }}
+        >
+          {labels.legalClauseText}
+        </span>
       </div>
 
       <div

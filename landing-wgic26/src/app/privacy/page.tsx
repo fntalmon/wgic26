@@ -54,6 +54,16 @@ const Privacy = async () => {
                                 </ul>
                             </div>
                             <p>{t("processingAgreement")}</p>
+                            <p>{t("controllerContact")}</p>
+                            <p>{t("processorContact")}</p>
+                            <div>
+                                <strong className="text-white">{t("subprocessorsTitle")}</strong>
+                                <p className="mt-1">{t("subprocessorsIntro")}</p>
+                                <ul className="list-disc pl-5 mt-1 space-y-1">
+                                    <li>{t("subprocessorWebText")}</li>
+                                    <li>{t("subprocessorVisitsText")}</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -64,9 +74,9 @@ const Privacy = async () => {
                         </h2>
                         <p className="text-sm leading-relaxed">{t("purposesIntro")}</p>
                         <ul className="list-disc pl-5 text-sm leading-relaxed space-y-2">
-                            <li>{t("purposeRegistration")}</li>
-                            <li>{t("purposeAgenda")}</li>
-                            <li>{t("purposeCommunications")}</li>
+                            {t.raw("purposesList").map((item: string, i: number) => (
+                                <li key={i}>{item}</li>
+                            ))}
                         </ul>
                     </div>
 
@@ -86,7 +96,15 @@ const Privacy = async () => {
                         <p className="text-sm leading-relaxed">{t("legalBasisText")}</p>
                     </div>
 
-                    {/* 5. Derechos */}
+                    {/* 5. Destinatarios */}
+                    <div className="flex flex-col gap-4">
+                        <h2 className="text-xl uppercase text-white font-normal">
+                            {t("recipientsTitle")}
+                        </h2>
+                        <p className="text-sm leading-relaxed">{t("recipientsText")}</p>
+                    </div>
+
+                    {/* 6. Derechos */}
                     <div className="flex flex-col gap-4">
                         <h2 className="text-xl uppercase text-white font-normal">
                             {t("rightsTitle")}
@@ -94,13 +112,14 @@ const Privacy = async () => {
                         <p className="text-sm leading-relaxed">
                             {t("rightsText")}{" "}
                             <a
-                                href="mailto:wgic2026.economics@udl.cat"
+                                href="mailto:dpd@udl.cat"
                                 className="text-potus hover:underline"
                             >
                                 {t("rightsEmail")}
                             </a>
                             .
                         </p>
+                        <p className="text-sm leading-relaxed">{t("rightsComplaint")}</p>
                     </div>
 
                     {/* Resumen corto */}
@@ -116,6 +135,7 @@ const Privacy = async () => {
                             <li>{t("shortNoticeLegalBasis")}</li>
                             <li>{t("shortNoticeRecipients")}</li>
                             <li>{t("shortNoticeRights")}</li>
+                            <li>{t("shortNoticeDpo")}</li>
                             <li>{t("shortNoticeMoreInfo")}</li>
                         </ul>
                     </div>

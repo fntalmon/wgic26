@@ -11,18 +11,21 @@ Este documento complementa los cambios realizados en la web (`landing-wgic26/`).
 ### Dónde iría
 Al final del formulario de inscripción, **justo debajo del botón de envío/pago**, y justo encima o debajo de la casilla de aceptación obligatoria.
 
-### Texto recomendado (español)
+### Texto recomendado (español) — cláusula básica oficial (Fundació UdL)
 
 ```
-Información básica sobre protección de datos:
-• Responsable: Društvo WGIN (Trata 31, 4220 Škofja Loka, Eslovenia).
-• Encargado del Tratamiento: Universitat de Lleida (Pl. Víctor Siurana 1, 25003 Lleida, España).
-• Finalidad: Gestión de la inscripción al congreso WGIC26, envío de comunicaciones informativas, novedades del evento y gestión de actividades asociadas.
-• Legitimación: Consentimiento del interesado al suscribirse o registrarse.
-• Destinatarios: No se cederán datos a terceros salvo obligación legal o necesidad estricta para la ejecución del evento.
-• Derechos: Puede acceder, rectificar, limitar y suprimir sus datos, así como ejercer otros derechos dirigiéndose por escrito a las direcciones de las entidades responsables.
-• Información adicional: Puede consultar la política de privacidad completa en https://www.wgic26.barcelona/privacy
+Los datos recogidos serán incorporados y tratados en la actividad de tratamiento "Organización de
+Congresos-UdL", de la cual es responsable Društvo WGIN (Trata 31, 4220 Škofja Loka, Eslovenia),
+actuando como encargada del tratamiento la Universitat de Lleida (Pl. Víctor Siurana 1, 25003 Lleida,
+España), ante quien podrá ejercer sus derechos. La finalidad del tratamiento es la gestión de su
+participación integral en el congreso. El tratamiento queda legitimado por su consentimiento, en
+virtud del art. 6.1.a del RGPD. Los datos no se comunicarán a terceros, salvo en los supuestos
+previstos en el ordenamiento jurídico. Tiene derecho a acceder a los datos, rectificarlos, suprimirlos,
+solicitar su portabilidad, oponerse al tratamiento y solicitar su limitación. Correo electrónico de
+contacto del Delegado de Protección de Datos: dpd@udl.cat. INFORMACIÓN DETALLADA en el siguiente enlace.
 ```
+
+> Este es el texto exacto que ya está publicado en `https://www.wgic26.barcelona/registration` (encima de los checkboxes) y en `/privacy`. Usalo tal cual en Helice para que sea consistente en los dos sitios.
 
 ### Configuración sugerida en Helice
 - Usar un campo tipo **"Texto informativo / Disclaimer"** o **"HTML libre"** si lo permite Helice.
@@ -81,29 +84,47 @@ Si Helice exige una página de privacidad propia (algunas plataformas lo piden),
 Ver `/privacy` en la web o el punto 2 del documento original:
 
 ```
-POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS – WGIC26
+INFORMACIÓN DETALLADA SOBRE PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL – WGIC26
 
-En cumplimiento del Reglamento (UE) 2016/679 (RGPD), se informa a los usuarios y participantes del World Green Infrastructure Congress 2026 (WGIC26) sobre el tratamiento de sus datos personales:
+Tratamiento: Organización de Congresos-UdL
 
-1. ¿Quiénes son los responsables del tratamiento de sus datos?
-   • Responsable Principal (Data Controller): Društvo WGIN, con domicilio en Trata 31, 4220 Škofja Loka, Eslovenia, y NIF SI84998911.
-   • Encargado de la Gestión (Data Processor): UNIVERSITAT DE LLEIDA, con domicilio en Pl. Víctor Siurana 1, 25003 Lleida, España, y NIF Q7550001G.
-   Ambos organismos actúan bajo un contrato de encargo de tratamiento de datos conforme al artículo 28 del RGPD.
+1. Responsable y otros intervinientes en el tratamiento
+   • Responsable: Društvo WGIN, Trata 31, 4220 Škofja Loka, Eslovenia, NIF SI84998911. jure.sumi@wgin.org
+   • Encargado del tratamiento: Universitat de Lleida (UdL), Pl. Víctor Siurana 1, 25003 Lleida, España. dpd@udl.cat
+     (encargo de tratamiento formalizado el 30 de abril de 2026, art. 28.3 RGPD)
+   • Subencargado — registros web del congreso: UTE World Green Conference, Carrer Mallorca 346, 4t 1a,
+     08013 Barcelona (España). info@wgic2026.org
+   • Subencargado — visitas técnicas y talleres (incluida la inscripción a estas actividades): Fundació UdL,
+     Carrer Pere de Cabrera 5, 25001 Lleida (España). fundacio@udl.cat
 
-2. ¿Con qué finalidad tratamos sus datos?
-   • Gestionar la inscripción, asistencia, facturación y control de accesos al evento WGIC26.
-   • Coordinar las agendas, ponencias (calls for papers/speakers) y actividades comerciales o de promoción del congreso.
-   • Enviar newsletters y comunicaciones electrónicas relacionadas con el evento.
+2. Finalidad del tratamiento
+   Gestión de su participación en el WGIC26: inscripciones, visitas técnicas, emisión de certificados o
+   justificantes, envío de un resumen (abstract), etc. Específicamente: gestión de clientes/contabilidad/
+   fiscalidad/administración, publicidad y prospección comercial, certificación electrónica, actividades
+   asociativas/culturales/recreativas/deportivas/sociales, educación, videovigilancia, prevención de
+   riesgos laborales, cumplimiento de obligaciones monetarias, comunicaciones electrónicas, seguridad y
+   control de acceso a edificios.
 
-3. ¿Por cuánto tiempo conservaremos sus datos?
-   Los datos personales proporcionados se conservarán mientras se mantenga la relación con el evento, durante los plazos legales para atender posibles responsabilidades y hasta que el interesado solicite su supresión.
+3. Destinatarios
+   No se comunicarán datos a terceros, sin perjuicio de lo que establezca el ordenamiento jurídico.
 
-4. ¿Cuál es la legitimación para el tratamiento?
-   La base legal es el consentimiento del usuario al registrarse en el formulario, enviar un resumen (abstract) o suscribirse a nuestros boletines informativos.
+4. Legitimación
+   El consentimiento del interesado o de sus representantes legales (art. 6.1.a RGPD).
 
-5. ¿Cuáles son sus derechos?
-   Cualquier persona tiene derecho a obtener confirmación sobre si estamos tratando sus datos personales. Los interesados pueden ejercer sus derechos de acceso, rectificación, supresión, limitación, oposición y portabilidad enviando una comunicación por escrito a las direcciones postales de Društvo WGIN o de la Universitat de Lleida especificadas en el punto 1 o enviando un email a wgic2026.economics@udl.cat.
+5. Plazo de conservación
+   Los datos se conservarán en tanto que subsista su valor probatorio (art. 55 de la Ley 16/1985, de 25 de
+   junio, del Patrimonio Histórico Español).
+
+6. Derechos
+   Puede acceder a sus datos, rectificarlos o suprimirlos, solicitar su portabilidad, oponerse al
+   tratamiento, solicitar su limitación o retirar el consentimiento, enviando una instancia genérica a la
+   Universitat de Lleida (Secretaría General) o presencialmente en el Registro General de la UdL, Pl. de
+   Víctor Siurana 1, 25003 Lleida. También puede contactar al Delegado de Protección de Datos: dpd@udl.cat.
+   Si considera que sus derechos no se han atendido adecuadamente, puede reclamar ante la Autoridad
+   Catalana de Protección de Datos.
 ```
+
+> Este texto es el que ya está desglosado en la web (`/privacy`), sección por sección. Si Helice te permite pegar un bloque único, usá este; si te pide campos separados, mapealo a las secciones 1 a 6.
 
 ---
 
@@ -115,7 +136,7 @@ Las newsletters de WGIC26 también tienen versión online en `https://www.wgic26
 - Un enlace visible a `https://www.wgic26.barcelona/privacy`.
 - Texto adaptado al idioma de la newsletter (es, en, it, fr, pt, el, ar).
 
-Esto ya está implementado en `landing-wgic26/` mediante el componente `NewsletterFooter.tsx`.
+> ⚠️ Nota: este componente `NewsletterFooter.tsx` **no existe todavía** en `landing-wgic26/` — queda pendiente de implementar en el sitio, no está hecho.
 
 ### Texto modelo para el pie de newsletters web (español)
 
@@ -153,15 +174,20 @@ Los datos personales se tratan conforme a la Política de Privacidad de WGIC26 d
 ### c) Página de login / área de usuario (si Helice la tiene)
 Si los inscritos acceden a un área privada para modificar datos, incluir un enlace visible a la política de privacidad.
 
-### d) Formularios adicionales en Helice
-Si existen otros formularios (subida de abstracts, workshops, visitas técnicas, etc.), replicar el mismo patrón:
-- Texto corto legal.
+### d) Formulario de subida de papers/abstracts (prioridad, igual que el de inscripción)
+Ese formulario también recoge datos personales (nombre, email, afiliación de los autores) y el propio
+documento de la Fundació UdL menciona explícitamente "enviar un resumen (abstract)" como parte de la
+misma actividad de tratamiento. Hay que replicar el mismo patrón que en el registro:
+- Texto corto legal (cláusula básica, punto 1 de esta guía).
 - Checkbox obligatorio de aceptación de política de privacidad.
 - Checkbox opcional de comunicaciones comerciales.
 
+### e) Otros formularios adicionales en Helice
+Si existen más formularios (workshops, visitas técnicas, etc.), replicar el mismo patrón que en d).
+
 ---
 
-## 5. Configuraciones técnicas recomendadas en Helice
+## 6. Configuraciones técnicas recomendadas en Helice
 
 | Configuración | Valor recomendado |
 |---|---|
@@ -175,7 +201,7 @@ Si existen otros formularios (subida de abstracts, workshops, visitas técnicas,
 
 ---
 
-## 6. Flujo ideal de registro (web + Helice)
+## 7. Flujo ideal de registro (web + Helice)
 
 1. Usuario llega a `/registration` en la web.
 2. Lee el aviso legal y marca los checkboxes.
@@ -188,23 +214,26 @@ Si existen otros formularios (subida de abstracts, workshops, visitas técnicas,
 
 ---
 
-## 7. Contactos para dudas legales
+## 8. Contactos para dudas legales
 
-- **Responsable:** Društvo WGIN — Trata 31, 4220 Škofja Loka, Eslovenia
-- **Encargado:** Universitat de Lleida — Pl. Víctor Siurana 1, 25003 Lleida, España
-- **Email para ejercer derechos:** `wgic2026.economics@udl.cat`
+- **Responsable:** Društvo WGIN — Trata 31, 4220 Škofja Loka, Eslovenia — jure.sumi@wgin.org
+- **Encargado / Delegado de Protección de Datos:** Universitat de Lleida — Pl. Víctor Siurana 1, 25003 Lleida, España — dpd@udl.cat
+- **Subencargado (registros web):** UTE World Green Conference — info@wgic2026.org
+- **Subencargado (visitas técnicas y talleres):** Fundació UdL — fundacio@udl.cat
 
 ---
 
-## 8. Checklist antes de publicar
+## 9. Checklist antes de publicar
 
+- [x] Texto corto (cláusula básica oficial) y checkboxes ya publicados en `/registration` de la web.
+- [x] Texto detallado (con subencargados, finalidades, plazo de conservación y derecho a reclamar ante la APDCAT) ya publicado en `/privacy` de la web.
 - [ ] Texto corto añadido en el formulario de registro de Helice.
+- [ ] Texto corto y checkboxes añadidos también en el formulario de subida de papers/abstracts de Helice.
 - [ ] Enlace a `/privacy` funciona y es clickeable.
 - [ ] Checkbox obligatorio configurado como requerido.
 - [ ] Checkbox opcional de marketing desmarcado por defecto.
 - [ ] Valores de los checkboxes se guardan en el registro.
 - [ ] Email de confirmación incluye aviso legal y enlace a `/privacy`.
 - [ ] Facturas/comprobantes incluyen enlace a `/privacy`.
-- [ ] Texto extenso publicado y accesible en `https://www.wgic26.barcelona/privacy`.
-- [ ] Pies legales añadidos a las versiones web de todas las newsletters.
+- [ ] Pies legales añadidos a las versiones web de todas las newsletters (pendiente de implementar `NewsletterFooter.tsx` en la web).
 - [ ] Los emails de newsletter incluyen enlace a política de privacidad y opción de baja.
