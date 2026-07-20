@@ -3,11 +3,11 @@
 import { AttendeeProfiles } from "@/components/AttendeeProfiles";
 import Countdown from "@/components/Countdown";
 import { EarlyBirdBanner } from "@/components/EarlyBirdBanner";
-import { EarlyBirdPopup } from "@/components/EarlyBirdPopup";
 import { HomeBannerSlider } from "@/components/HomeBannerSlider";
 import { KeynoteSpeakersCarousel } from "@/components/KeynoteSpeakersCarousel";
 import { SocialProof } from "@/components/SocialProof";
 import { SupportersCarousel } from "@/components/SupportersCarousel";
+import { supporters } from "@/data/supporters";
 import { MapPin, CheckCircle, AlertCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,57 +24,6 @@ const keynoteSpeakerSlots = [
   { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },
   { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
 ] as const;
-
-const supporters = [
-  {
-    href: "https://asescuve.org",
-    src: "/img/logos/Asescuve-logo-24a.webp",
-    alt: "ASESCUVE",
-    heightClass: "h-14",
-  },
-  {
-    href: "https://parcagrobiotech.com/arboretum/",
-    src: "/img/logos/arboretum.png",
-    alt: "Arboretum",
-    heightClass: "h-14",
-  },
-  {
-    href: "https://pronatur.chil.me/",
-    src: "/img/logos/pronaturlogo.jpg",
-    alt: "Pronatur",
-    heightClass: "h-24",
-  },
-  {
-    href: "https://agronoms.cat/",
-    src: "/img/logos/eadc.png",
-    alt: "EADC",
-    heightClass: "h-24",
-  },
-  {
-    href: "https://www.idaea.csic.es/",
-    src: "/img/logos/IDAEA.png",
-    alt: "IDAEA",
-    heightClass: "h-14",
-  },
-  {
-    href: "https://www.csic.es/es",
-    src: "/img/logos/CSIC.svg",
-    alt: "CSIC",
-    heightClass: "h-14",
-  },
-  {
-    href: "https://www.gremijardineria.cat/",
-    src: "/img/logos/gremi.png",
-    alt: "Gremi de Jardineria de Catalunya",
-    heightClass: "h-20",
-  },
-  {
-    href: "https://vilesflorides.cat/",
-    src: "/img/logos/VilesFlorides.png",
-    alt: "Viles Florides",
-    heightClass: "h-20",
-  },
-];
 
 export default function HomeClient() {
   const t = useTranslations("home");
@@ -169,7 +118,6 @@ export default function HomeClient() {
 
   return (
     <div>
-      <EarlyBirdPopup />
       <section className="flex flex-col gap-0 pt-4 md:pt-6 lg:pt-8">
         <HomeBannerSlider
           slides={[

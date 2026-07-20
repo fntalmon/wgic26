@@ -75,6 +75,12 @@ const Footer = async () => {
           {/* Stay Updated */}
           <div className="flex flex-col gap-4">
             <div className="uppercase text-xs text-white/40">{t("stayUpdated")}</div>
+            <Link
+              href="/#newsletter"
+              className="inline-flex w-fit items-center justify-center bg-potus px-4 py-2.5 text-xs font-bold uppercase tracking-[2px] text-black transition-colors hover:bg-potus/80"
+            >
+              {t("registerNewsletter")}
+            </Link>
             <ul className="flex flex-col gap-3 text-xs">
               {socialLinks.map((link) => (
                 <li key={link.href}>

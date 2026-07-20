@@ -3,6 +3,8 @@
 import PageHeader from "@/components/PageHeader";
 import Carousel from "@/components/Carousel";
 import { RegisterCTA } from "@/components/RegisterCTA";
+import { SupportersCarousel } from "@/components/SupportersCarousel";
+import { supporters } from "@/data/supporters";
 import Image from "next/image";
 import { useState } from "react";
 import { FileText, Loader2, Presentation, CheckCircle } from "lucide-react";
@@ -2585,122 +2587,7 @@ const ExhibitorsClient = () => {
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 {t.withTheSupportOf}
               </h3>
-              <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24">
-                <a
-                  href="https://asescuve.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/Asescuve-logo-24a.webp"
-                    alt="ASESCUVE"
-                    width={300}
-                    height={220}
-                    className="h-14 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://parcagrobiotech.com/arboretum/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  <Image
-                    src="/img/logos/arboretum.png"
-                    alt="Arboretum"
-                    width={300}
-                    height={220}
-                    className="h-14 w-auto object-contain"
-                  />
-                </a>
-
-                
-                <a
-                  href="https://pronatur.chil.me/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/pronaturlogo.jpg"
-                    alt="Logo pronatur"
-                    width={320}
-                    height={240}
-                    className="h-24 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://agronoms.cat/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                <Image
-                  src="/img/logos/eadc.png"
-                  alt="Logo eadc"
-                  width={320}
-                  height={240}
-                  className="h-24 w-auto object-contain"
-                />
-                </a>
-
-                              <a
-                                href="https://www.idaea.csic.es/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <Image
-                                  src="/img/logos/IDAEA.png"
-                                  alt="Logo IDAEA"
-                                  width={320}
-                                  height={240}
-                                  className="h-14 w-auto object-contain"
-                                />
-                              </a>
-              
-                              <a
-                                href="https://www.csic.es/es"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <Image
-                                  src="/img/logos/CSIC.svg"
-                                  alt="Logo eadc"
-                                  width={320}
-                                  height={240}
-                                  className="h-14 w-auto object-contain"
-                                />
-                              </a>
-
-                              <a
-                                href="https://www.gremijardineria.cat/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <Image
-                                  src="/img/logos/gremi.png"
-                                  alt="Gremi de Jardineria de Catalunya"
-                                  width={300}
-                                  height={220}
-                                  className="h-20 w-auto object-contain"
-                                />
-                              </a>
-
-                              <a
-                                href="https://vilesflorides.cat/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <Image
-                                  src="/img/logos/VilesFlorides.png"
-                                  alt="Viles Florides"
-                                  width={300}
-                                  height={220}
-                                  className="h-20 w-auto object-contain"
-                                />
-                              </a>
-
-              </div>
+              <SupportersCarousel supporters={supporters} visibleCount={5} />
             </div>
           </div>
         </div>

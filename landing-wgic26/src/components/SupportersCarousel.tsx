@@ -2,13 +2,7 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
-
-interface Supporter {
-  href: string;
-  src: string;
-  alt: string;
-  heightClass: string;
-}
+import type { Supporter } from "@/data/supporters";
 
 interface SupportersCarouselProps {
   supporters: Supporter[];

@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import Script from "next/script";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { PopupManager } from "@/components/PopupManager";
 import { SocialSidebar } from "@/components/SocialSidebar";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
@@ -56,6 +57,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
             {children}
           </main>
           <Footer />
+          <PopupManager />
         </NextIntlClientProvider>
       </body>
     </html>
