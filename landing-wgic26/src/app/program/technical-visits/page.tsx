@@ -57,6 +57,14 @@ const TechnicalVisits = async () => {
                         <p>{t("intro3")}</p>
                     </div>
 
+                    <RegisterCTA
+                        title={t("registerCtaTitle")}
+                        subtitle={t("registerCtaSubtitle")}
+                        buttonLabel={t("registerCtaButton")}
+                        href="https://publicalt.xeria.es/technical_visits_wgic_2026/en/register/Registerpage/RegistrationForms"
+                        external
+                    />
+
                     {itineraries.map((itinerary) => (
                         <div key={itinerary.label} className="space-y-5">
                             <div>
