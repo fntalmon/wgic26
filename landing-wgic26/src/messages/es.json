@@ -20,6 +20,8 @@
     "speakers": "Ponentes",
     "registration": "Registro",
     "partnersExhibitors": "Expositores",
+    "sponsors": "Patrocinadores",
+    "becomeSponsor": "Conviértete en Sponsor",
     "planYourStay": "Tu estancia",
     "travel": "Viaje",
     "tickets": "Entradas",
@@ -56,6 +58,7 @@
     "workshops": "Talleres",
     "visits": "Visitas",
     "sponsorsPartners": "Partners and Sponsors",
+    "viewAllSponsors": "Ver todos los sponsors",
     "organizedBy": "Organized by",
     "newsletterTitle": "Mantente al dia",
     "newsletterSubtitle": "Registrate a nuestro newsletter",
@@ -654,7 +657,7 @@
   "keyNoteSpeakersPage": {
     "title": "Ponentes magistrales",
     "description": "Conoce las voces lideres en infraestructura verde. WGIC 2026 contara con expertos internacionales, innovadores y referentes que impulsan el futuro de las infraestructuras verdes y las ciudades sostenibles.",
-    "p1": "WGIC26 contara con hasta 12 ponentes magistrales de todo el mundo, situados en la vanguardia de la investigacion, innovacion e implementacion en infraestructura verde.",
+    "p1": "WGIC26 contara con hasta 19 ponentes magistrales de todo el mundo, situados en la vanguardia de la investigacion, innovacion e implementacion en infraestructura verde.",
     "p2": "Nos complace anunciar que los primeros ponentes de WGIC 2026 ya estan confirmados.",
     "speakers": {
       "speaker1": {
@@ -688,6 +691,50 @@
       "speaker8": {
         "name": "María Buhigas",
         "bio": "María Buhigas es la Arquitecta Jefa del Ayuntamiento de Barcelona. Arquitecta y urbanista, cuenta con una amplia experiencia en estrategia urbana, espacio público, vivienda y transformación de las ciudades, con el objetivo de crear ciudades más habitables, inclusivas y resilientes."
+      },
+      "speaker9": {
+        "name": "Jesús Pérez",
+        "bio": "Jesús Pérez representa a One Health España en el WGIC26."
+      },
+      "speaker10": {
+        "name": "M. Àngels Balsells",
+        "bio": "Rectora de la Universitat de Lleida, coorganizadora del WGIC26."
+      },
+      "speaker12": {
+        "name": "Cristina Martínez",
+        "bio": "Jefa del Área de Ciudades en MITECO – Fundación Biodiversidad."
+      },
+      "speaker13": {
+        "name": "Victoria Pérez",
+        "bio": "Coordinadora del Área de Ciudades en MITECO – Fundación Biodiversidad."
+      },
+      "speaker14": {
+        "name": "Loredana Scuto",
+        "bio": "Biografía próximamente."
+      },
+      "speaker15": {
+        "name": "Júlia López",
+        "bio": "Directora regional para Europa de C40 Cities Climate Leadership Group."
+      },
+      "speaker16": {
+        "name": "Sergio Carratalà",
+        "bio": "Representa a MataAlta en el WGIC26."
+      },
+      "speaker17": {
+        "name": "Luigi Petito",
+        "bio": "Luigi Petito lidera el Capítulo Europeo de la World Green Infrastructure Network (WGIN)."
+      },
+      "speaker18": {
+        "name": "Benjamin Rolles",
+        "bio": "Benjamin Rolles trabaja en la Dirección General de Medio Ambiente (DG ENV) de la Comisión Europea."
+      },
+      "speaker19": {
+        "name": "Gabriel Pérez",
+        "bio": "Chair del WGIC26."
+      },
+      "speaker20": {
+        "name": "Steven Peck",
+        "bio": "Presidente de la World Green Infrastructure Network (WGIN)."
       }
     },
     "closing": "Este primer grupo de ponentes subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
@@ -696,13 +743,16 @@
     "title": "Visitas técnicas",
     "intro1": "Visita las cubiertas verdes y fachadas vegetales más icónicas de Barcelona. Explorarás cubiertas verdes únicas que normalmente no están abiertas al público. Un coordinador acompañará al grupo durante todo el itinerario, mientras que un guía especializado ofrecerá explicaciones detalladas en cada lugar.",
     "intro2": "Los grupos estarán limitados a un máximo de 10 participantes, con hasta 5 grupos por itinerario. El horario será de 9:00 a 16:00, y los desplazamientos se realizarán íntegramente a pie y en metro.",
-    "intro3": "Los detalles de inscripción y precios se publicarán en las próximas semanas.",
+    "intro3": "La inscripción ya está abierta a través de la plataforma oficial.",
     "itineraryA": "Itinerario A",
     "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
     "itineraryB": "Itinerario B",
     "itineraryBSubtitle": "Sant Martí · Horta · Sant Andreu",
     "itineraryC": "Itinerario C",
-    "itineraryCSubtitle": "Ciutat Vella · Born"
+    "itineraryCSubtitle": "Ciutat Vella · Born",
+    "registerCtaTitle": "Inscripción abierta",
+    "registerCtaSubtitle": "Plazas limitadas a 10 participantes por grupo — reserva con antelación.",
+    "registerCtaButton": "Inscripción a las visitas técnicas"
   },
   "programPage": {
     "title": "Programa",
@@ -766,22 +816,17 @@
     "strategiesPoliciesFunding": "Estrategias – Políticas – Programas de financiación",
     "technologiesMarketStandards": "Tecnologías – Mercado – Sector GI/NBS – Normativas",
     "projectsDesign": "Proyectos – Diseño",
-    "executionMaintenanceQuality": "Ejecución – Mantenimiento – Calidad",
-    "educationTraining": "Educación – Formación",
+    "executionMaintenance": "Ejecución – Mantenimiento",
+    "education": "Educación",
     "impacts": "Impactos",
     "impactClimateResilience": "a) Resiliencia climática",
     "impactWaterManagement": "b) Gestión del agua",
-    "impactNaturalClimateHazards": "c) Riesgos naturales y climáticos",
     "impactGreenSpaceManagement": "d) Gestión de espacios verdes",
     "impactBiodiversity": "e) Biodiversidad",
     "impactAirQuality": "f) Calidad del aire",
     "impactPlaceRegeneration": "g) Regeneración de espacios",
-    "impactKnowledgeCapacity": "h) Conocimiento y fortalecimiento de capacidades sociales para la transformación urbana sostenible",
     "impactParticipatoryPlanning": "i) Planificación participativa y gobernanza",
-    "impactSocialJustice": "j) Equidad social y cohesión social",
     "impactHealthWellbeing": "k) Salud y bienestar",
-    "impactEconomicOpportunities": "l) Nuevas oportunidades económicas y empleos verdes",
-    "impactMiscellaneous": "Impactos: Miscelánea",
     "workshopsTitle": "Talleres",
     "workshopGlobalSouth": "Taller Infraestructura verda vs Sur Global",
     "workshopHealthWellbeing": "Taller Infraestructura verda vs Salud y bienestar",
@@ -1161,5 +1206,14 @@
         "date": "Marzo"
       }
     }
+  },
+  "sponsorsPage": {
+    "title": "Sponsors y Partners",
+    "description": "Conoce a las organizaciones, empresas e instituciones que hacen posible el WGIC26: desde partners fundadores hasta expositores y media partners.",
+    "statsLabel": "Organizaciones que apoyan el WGIC26",
+    "ctaBecomeTitle": "¿Quieres sumarte?",
+    "ctaBecomeSubtitle": "Descubre los paquetes de patrocinio, stands de exposición y complementos para el WGIC26.",
+    "ctaBecomeButton": "Conviértete en Sponsor",
+    "visitWebsite": "Visitar sitio web"
   }
 }

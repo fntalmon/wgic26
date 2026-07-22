@@ -20,6 +20,8 @@
     "speakers": "Speakers",
     "registration": "Registration",
     "partnersExhibitors": "Partners & Exhibitors",
+    "sponsors": "Sponsors",
+    "becomeSponsor": "Become a Sponsor",
     "planYourStay": "Plan your stay",
     "travel": "Travel",
     "tickets": "Tickets",
@@ -56,6 +58,7 @@
     "workshops": "Workshops",
     "visits": "Visits",
     "sponsorsPartners": "Sponsors & Partners",
+    "viewAllSponsors": "View all sponsors",
     "organizedBy": "Organized by",
     "newsletterTitle": "Stay up to date",
     "newsletterSubtitle": "Register to our Newsletter",
@@ -654,7 +657,7 @@
   "keyNoteSpeakersPage": {
     "title": "Keynote Speakers",
     "description": "Meet the leading voices in green infrastructure. WGIC 2026 will feature international experts, innovators, and thought leaders driving the future of green infrastructure and sustainable cities.",
-    "p1": "WGIC26 will feature up to 12 keynote speakers from around the world, positioned at the forefront of research, innovation, and implementation in green infrastructure.",
+    "p1": "WGIC26 will feature up to 19 keynote speakers from around the world, positioned at the forefront of research, innovation, and implementation in green infrastructure.",
     "p2": "We are pleased to announce that the first speakers for WGIC 2026 are now confirmed.",
     "speakers": {
       "speaker1": {
@@ -688,6 +691,50 @@
       "speaker8": {
         "name": "María Buhigas",
         "bio": "María Buhigas is the Chief Architect of Barcelona City Council. An architect and urban planner, she brings extensive experience in urban strategy, public space, housing and city transformation, with a focus on creating more liveable, inclusive and resilient cities."
+      },
+      "speaker9": {
+        "name": "Jesús Pérez",
+        "bio": "Jesús Pérez represents One Health España at WGIC26."
+      },
+      "speaker10": {
+        "name": "M. Àngels Balsells",
+        "bio": "Rector of the Universitat de Lleida, co-organiser of WGIC26."
+      },
+      "speaker12": {
+        "name": "Cristina Martínez",
+        "bio": "Head of the Cities Area at MITECO – Fundación Biodiversidad."
+      },
+      "speaker13": {
+        "name": "Victoria Pérez",
+        "bio": "Cities Area Coordinator at MITECO – Fundación Biodiversidad."
+      },
+      "speaker14": {
+        "name": "Loredana Scuto",
+        "bio": "Speaker bio coming soon."
+      },
+      "speaker15": {
+        "name": "Júlia López",
+        "bio": "Regional Director for Europe at C40 Cities Climate Leadership Group."
+      },
+      "speaker16": {
+        "name": "Sergio Carratalà",
+        "bio": "Represents MataAlta at WGIC26."
+      },
+      "speaker17": {
+        "name": "Luigi Petito",
+        "bio": "Luigi Petito leads the European Chapter of the World Green Infrastructure Network (WGIN)."
+      },
+      "speaker18": {
+        "name": "Benjamin Rolles",
+        "bio": "Benjamin Rolles works at the European Commission's Directorate-General for Environment (DG ENV)."
+      },
+      "speaker19": {
+        "name": "Gabriel Pérez",
+        "bio": "Chair of WGIC26."
+      },
+      "speaker20": {
+        "name": "Steven Peck",
+        "bio": "President of the World Green Infrastructure Network (WGIN)."
       }
     },
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."
@@ -696,13 +743,16 @@
     "title": "Technical Visits",
     "intro1": "Visit the most iconic green roofs and green façades of Barcelona. You will explore unique green roofs that are not normally open to the public. A coordinator will accompany the group throughout the itinerary, while a specialized guide will provide detailed explanations at each location.",
     "intro2": "Groups will be limited to a maximum of 10 participants, with up to 5 groups per itinerary. The schedule will run from 9:00 to 16:00, and travel is entirely on foot and by metro.",
-    "intro3": "Registration details and pricing will be published in the coming weeks.",
+    "intro3": "Registration is now open through the official platform.",
     "itineraryA": "Itinerary A",
     "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
     "itineraryB": "Itinerary B",
     "itineraryBSubtitle": "Sant Martí · Horta · Sant Andreu",
     "itineraryC": "Itinerary C",
-    "itineraryCSubtitle": "Ciutat Vella · Born"
+    "itineraryCSubtitle": "Ciutat Vella · Born",
+    "registerCtaTitle": "Registration now open",
+    "registerCtaSubtitle": "Places are limited to 10 participants per group — book your spot early.",
+    "registerCtaButton": "Register for technical visits"
   },
   "programPage": {
     "title": "Program",
@@ -766,22 +816,17 @@
     "strategiesPoliciesFunding": "Strategies – Policies – Funding programs",
     "technologiesMarketStandards": "Technologies – Market – GI/NBS sector – Standards",
     "projectsDesign": "Projects – Design",
-    "executionMaintenanceQuality": "Execution – Maintenance – Quality",
-    "educationTraining": "Education – Training",
+    "executionMaintenance": "Execution – Maintenance",
+    "education": "Education",
     "impacts": "Impacts",
     "impactClimateResilience": "a) Climate resilience",
     "impactWaterManagement": "b) Water management",
-    "impactNaturalClimateHazards": "c) Natural and Climate Hazards",
     "impactGreenSpaceManagement": "d) Green Space Management",
     "impactBiodiversity": "e) Biodiversity",
     "impactAirQuality": "f) Air Quality",
     "impactPlaceRegeneration": "g) Place Regeneration",
-    "impactKnowledgeCapacity": "h) Knowledge and Social Capacity Building for Sustainable Urban Transformation",
     "impactParticipatoryPlanning": "i) Participatory Planning and Governance",
-    "impactSocialJustice": "j) Social Justice and Social Cohesion",
     "impactHealthWellbeing": "k) Health and Well-being",
-    "impactEconomicOpportunities": "l) New Economic Opportunities and Green Jobs",
-    "impactMiscellaneous": "Impacts: Miscellaneous",
     "workshopsTitle": "Workshops",
     "workshopGlobalSouth": "Workshop Green Infrastructure vs Global South",
     "workshopHealthWellbeing": "Workshop Green Infrastructure vs Health and Well-being",
@@ -1143,5 +1188,14 @@
         "date": "May "
       }
     }
+  },
+  "sponsorsPage": {
+    "title": "Sponsors & Partners",
+    "description": "Meet the organizations, companies and institutions making WGIC26 possible — from founding partners to exhibitors and media partners.",
+    "statsLabel": "Organizations supporting WGIC26",
+    "ctaBecomeTitle": "Want to join them?",
+    "ctaBecomeSubtitle": "Discover sponsorship packages, exhibition stands and add-ons for WGIC26.",
+    "ctaBecomeButton": "Become a Sponsor",
+    "visitWebsite": "Visit website"
   }
 }
