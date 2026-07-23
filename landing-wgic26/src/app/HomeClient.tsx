@@ -9,7 +9,7 @@ import { SocialProof } from "@/components/SocialProof";
 import { SupportersCarousel } from "@/components/SupportersCarousel";
 import { supporters } from "@/data/supporters";
 import { sponsorTiers } from "@/data/sponsors";
-import { MapPin, CheckCircle, AlertCircle } from "lucide-react";
+import { MapPin, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -40,6 +40,10 @@ const keynoteSpeakerSlots = [
 
 export default function HomeClient() {
   const t = useTranslations("home");
+  const tSocial = useTranslations("home.socialProof");
+  const tNav = useTranslations("navigation");
+  const tVisits = useTranslations("technicalVisitsPage");
+  const tSpeakers = useTranslations("speakersPage");
   const tKeynoteSpeakers = useTranslations("keyNoteSpeakersPage");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -129,52 +133,118 @@ export default function HomeClient() {
     }
   };
 
+  const bannerEyebrowClass =
+    "inline-block w-fit text-xs sm:text-sm uppercase tracking-widest bg-white/15 backdrop-blur-sm border border-white/30 rounded-full px-4 py-1.5 text-white";
+  const bannerCtaClass =
+    "mt-2 inline-flex items-center gap-1.5 w-fit text-xs sm:text-sm uppercase tracking-wider bg-potus text-monstera px-4 py-2 sm:px-5 sm:py-3 rounded-md font-medium hover:bg-potus/90 transition-colors";
+
   return (
     <div>
-      <section className="flex flex-col gap-0 pt-4 md:pt-6 lg:pt-8">
+      <section className="flex flex-col gap-0 px-0 pt-4 md:pt-6 lg:pt-8">
         <HomeBannerSlider
           slides={[
             {
-              desktop: "/img/Tibidabo3.jpg",
-              mobile: "/img/Tibidabo3.jpg",
-              alt: "WGIC26 Barcelona skyline",
+              desktop: "/img/banners/green-roof-living-wall.jpg",
+              mobile: "/img/banners/green-roof-living-wall.jpg",
+              alt: "Green roof and living wall by Sempergreen",
+              content: (
+                <div className="flex flex-col gap-4 sm:gap-5 text-white drop-shadow-md">
+                  <span className={bannerEyebrowClass}>{t("bannerTitle")}</span>
+                  <div className="uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight font-medium">
+                    {t("heroTitle")}
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <div>
+                      <div className="text-base sm:text-xl md:text-2xl font-semibold leading-tight">
+                        {t("date1")}
+                      </div>
+                      <div className="text-xs sm:text-sm text-white/85">
+                        {t("date1Location")}
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-base sm:text-xl md:text-2xl font-semibold leading-tight">
+                        {t("date2")}
+                      </div>
+                      <div className="text-xs sm:text-sm text-white/85">
+                        {t("date2Location")}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ),
             },
             {
-              desktop: "/img/ccib.jpg",
-              mobile: "/img/ccib.jpg",
-              alt: "WGIC26 CCIB venue",
+              desktop: "/img/banners/green-rooftop-aerial.webp",
+              mobile: "/img/banners/green-rooftop-aerial.webp",
+              alt: "Aerial view of green rooftops in a dense urban development",
+              contentAlign: "right",
+              content: (
+                <div className="flex flex-col items-end gap-3 sm:gap-4 text-right text-white drop-shadow-md">
+                  <span className={bannerEyebrowClass}>{t("bannerTitle")}</span>
+                  <div className="flex gap-5 sm:gap-8">
+                    <div>
+                      <div className="text-xl sm:text-2xl md:text-3xl font-semibold leading-tight">
+                        1000+
+                      </div>
+                      <div className="text-xs sm:text-sm text-white/85">
+                        {tSocial("attendees")}
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-xl sm:text-2xl md:text-3xl font-semibold leading-tight">
+                        35+
+                      </div>
+                      <div className="text-xs sm:text-sm text-white/85">
+                        {tSocial("countries")}
+                      </div>
+                    </div>
+                  </div>
+                  <Link href="/registration" className={bannerCtaClass}>
+                    {t("registerNow")}
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+              ),
             },
             {
-              desktop: "/img/univ_lleida.jpg",
-              mobile: "/img/univ_lleida.jpg",
-              alt: "WGIC26 University of Lleida",
+              desktop: "/img/banners/green-facade-immobel.jpg",
+              mobile: "/img/banners/green-facade-immobel.jpg",
+              alt: "Green vertical facade on a residential tower",
+              scrimSide: "left",
+              content: (
+                <div className="flex flex-col gap-3 sm:gap-4 text-white drop-shadow-md">
+                  <span className={bannerEyebrowClass}>{tSpeakers("title")}</span>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-semibold leading-tight">
+                    {tSpeakers("calloutTitle")}
+                  </div>
+                  <p className="text-xs sm:text-sm text-white/85">
+                    {t("date1Location")}
+                  </p>
+                  <Link href="/speakers" className={bannerCtaClass}>
+                    {tNav("papersProjects")}
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+              ),
+            },
+            {
+              desktop: "/img/banners/urbaser-green-roof-barcelona.jpg",
+              mobile: "/img/banners/urbaser-green-roof-barcelona.jpg",
+              alt: "Biodiverse green roof overlooking Barcelona",
+              scrimSide: "top",
+              content: (
+                <div className="flex flex-col gap-3 sm:gap-4 text-white drop-shadow-md">
+                  <span className={bannerEyebrowClass}>{tVisits("title")}</span>
+                  <Link href="/program/technical-visits" className={bannerCtaClass}>
+                    {tVisits("registerCtaButton")}
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+              ),
             },
           ]}
         />
-      </section>
-      <section className="lg:flex-row lg:items-start lg:justify-between pt-3 md:pt-4">
-        <div className="uppercase text-xl sm:text-2xl pr-8 md:text-3xl w-full lg:text-3xl lg:w-3/5 xl:text-4xl leading-tight tracking-tight">
-          {t("heroTitle")}
-        </div>
-        <div className="flex flex-col h-auto content-between gap-2 w-full lg:w-2/5">
-          <div className="w-full pt-2 border-t-1 border-white/50">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-              <h6 className="text-sm sm:text-base">{t("date1")}</h6>
-              <p className="text-xs sm:text-sm text-white/80 sm:text-right">
-                {t("date1Location")}
-              </p>
-            </div>
-          </div>
-
-          <div className="w-full pt-2 border-t-1 border-white/50">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-              <h6 className="text-sm sm:text-base">{t("date2")}</h6>
-              <p className="text-xs sm:text-sm text-white/80 sm:text-right">
-                {t("date2Location")}
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
       <Countdown />
       <SocialProof />
