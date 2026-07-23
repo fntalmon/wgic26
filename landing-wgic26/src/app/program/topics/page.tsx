@@ -145,11 +145,11 @@ const Topics = async () => {
                                     </TableRow>
                                     <TableRow className="border-white/10 hover:bg-white/5">
                                         <TableCell className="font-medium text-base text-white/80 p-4">4</TableCell>
-                                        <TableCell className="text-base text-white/70 p-4">{t("executionMaintenanceQuality")}</TableCell>
+                                        <TableCell className="text-base text-white/70 p-4">{t("executionMaintenance")}</TableCell>
                                     </TableRow>
                                     <TableRow className="border-white/10 hover:bg-white/5">
                                         <TableCell className="font-medium text-base text-white/80 p-4">5</TableCell>
-                                        <TableCell className="text-base text-white/70 p-4">{t("educationTraining")}</TableCell>
+                                        <TableCell className="text-base text-white/70 p-4">{t("education")}</TableCell>
                                     </TableRow>
                                     <TableRow className="border-white/10 bg-white/5">
                                         <TableCell className="font-medium text-base text-white/80 p-4">6</TableCell>
@@ -162,10 +162,6 @@ const Topics = async () => {
                                     <TableRow className="border-white/10 hover:bg-white/5">
                                         <TableCell className="p-4"></TableCell>
                                         <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactWaterManagement")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactNaturalClimateHazards")}</TableCell>
                                     </TableRow>
                                     <TableRow className="border-white/10 hover:bg-white/5">
                                         <TableCell className="p-4"></TableCell>
@@ -185,27 +181,11 @@ const Topics = async () => {
                                     </TableRow>
                                     <TableRow className="border-white/10 hover:bg-white/5">
                                         <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactKnowledgeCapacity")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
                                         <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactParticipatoryPlanning")}</TableCell>
                                     </TableRow>
                                     <TableRow className="border-white/10 hover:bg-white/5">
                                         <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactSocialJustice")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
                                         <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactHealthWellbeing")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactEconomicOpportunities")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8 italic">{t("impactMiscellaneous")}</TableCell>
                                     </TableRow>
                                     <TableRow className="border-white/10 bg-white/5">
                                         <TableCell className="p-4"></TableCell>

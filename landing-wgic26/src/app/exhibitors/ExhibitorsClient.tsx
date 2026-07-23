@@ -2539,7 +2539,7 @@ const ExhibitorsClient = () => {
                 >
                   <Image
                     src="/img/logos/LePrieure.jpg"
-                    alt="Le Prieuré 1840"
+                    alt="Le Prieuré"
                     width={200}
                     height={200}
                     loading="eager"

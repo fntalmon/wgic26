@@ -236,7 +236,24 @@ const Navigation = () => {
     { title: t("keyNoteSpeakers"), url: "/key-note-speakers" },
     // { title: t("speakers"), url: "/speakers" },
     // { title: t("registration"), url: "/registration", disabled: true },
-    { title: t("partnersExhibitors"), url: "/exhibitors" },
+    {
+      title: t("partnersExhibitors"),
+      url: "/exhibitors",
+      items: [
+        {
+          title: t("sponsors"),
+          url: "/sponsors",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: t("becomeSponsor"),
+          url: "/exhibitors",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+      ],
+    },
     { title: t("planYourStay"), url: "/plan-your-stay" },
 
     // { title: t("travel"), url: "/travel" },

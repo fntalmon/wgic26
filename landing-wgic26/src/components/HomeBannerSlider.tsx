@@ -91,6 +91,9 @@ export function HomeBannerSlider({
                 sizes="100vw"
               />
             </div>
+            {/* Tinte de marca: unifica el tono de las 3 fotos y mejora contraste con los controles. */}
+            <div className="absolute inset-0 bg-cactus/40 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-black/10" />
           </>
         );
 

@@ -20,6 +20,18 @@ const speakerSlots = [
   { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
   { id: "speaker7", image: "/img/speakers/dorothyaseyo.jpg" },
   { id: "speaker8", image: "/img/speakers/buhigas_maria.jpg" },
+  { id: "speaker9", image: "/img/speakers/JesusPerez.jpeg" },
+  { id: "speaker10", image: "/img/speakers/Balsells.png" },
+
+  { id: "speaker12", image: "/img/speakers/martinez.jpeg" },
+  { id: "speaker13", image: "/img/speakers/VictoriaPerez.png" },
+  { id: "speaker14", image: "/img/speakers/scuto.png" },
+  { id: "speaker15", image: "/img/speakers/lopez.png" },
+  { id: "speaker16", image: "/img/speakers/carratala.jpeg" },
+  { id: "speaker17", image: "/img/speakers/petito.png" },
+  { id: "speaker18", image: "" },
+  { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
+  { id: "speaker20", image: "/img/speakers/peck.png" },
 ] as const;
 
 const getInitials = (name: string) =>
@@ -66,7 +78,7 @@ const KeyNoteSpeakers = async () => {
                         alt={name}
                         width={144}
                         height={144}
-                        className="rounded-full object-cover mb-4"
+                        className="w-36 h-36 rounded-full object-cover mb-4"
                       />
                     ) : (
                       <div className="w-36 h-36 rounded-full mb-4 bg-white/10 border border-white/20 grid place-items-center text-3xl font-semibold text-white/80">

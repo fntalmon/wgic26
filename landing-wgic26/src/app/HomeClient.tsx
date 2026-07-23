@@ -8,6 +8,7 @@ import { KeynoteSpeakersCarousel } from "@/components/KeynoteSpeakersCarousel";
 import { SocialProof } from "@/components/SocialProof";
 import { SupportersCarousel } from "@/components/SupportersCarousel";
 import { supporters } from "@/data/supporters";
+import { sponsorTiers } from "@/data/sponsors";
 import { MapPin, CheckCircle, AlertCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,6 +24,18 @@ const keynoteSpeakerSlots = [
   { id: "speaker3", image: "/img/speakers/vicenteguallart.jpg" },
   { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },
   { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
+  { id: "speaker8", image: "/img/speakers/buhigas_maria.jpg" },
+  { id: "speaker9", image: "/img/speakers/JesusPerez.jpeg" },
+  { id: "speaker10", image: "/img/speakers/Balsells.png" },
+  { id: "speaker12", image: "/img/speakers/martinez.jpeg" },
+  { id: "speaker13", image: "/img/speakers/VictoriaPerez.png" },
+  { id: "speaker14", image: "/img/speakers/scuto.png" },
+  { id: "speaker15", image: "/img/speakers/lopez.png" },
+  { id: "speaker16", image: "/img/speakers/carratala.jpeg" },
+  { id: "speaker17", image: "/img/speakers/petito.png" },
+  { id: "speaker18", image: "" },
+  { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
+  { id: "speaker20", image: "/img/speakers/peck.png" },
 ] as const;
 
 export default function HomeClient() {
@@ -271,75 +284,22 @@ export default function HomeClient() {
                 {t("organizedBy")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                <a
-                  href="https://worldgreeninfrastructurenetwork.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/WGIN-logo.png"
-                    alt="WGI Network"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="http://udl.cat"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/Logo-de-la-Universitat-de-Lleida.png"
-                    alt="Universitat de Lleida"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://cinea.ec.europa.eu/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/logo-life.jpg"
-                    alt="LIFE - European Climate, Infrastructure and Environment Executive Agency"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://it4s.cat/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/it4s.png"
-                    alt="it4s – Innovative Technologies for Sustainability"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="http://big4life.eu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/Footer_logo_BIG4LIFE_144.png"
-                    alt="BIG4LIFE"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </a>
+                {sponsorTiers[0].logos.map((logo) => (
+                  <a
+                    key={logo.href}
+                    href={logo.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={logo.width}
+                      height={logo.height}
+                      className={logo.className}
+                    />
+                  </a>
+                ))}
               </div>
             </div>
 
@@ -349,19 +309,22 @@ export default function HomeClient() {
                 {t("elitePartners")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
-                <a
-                  href="https://www.sempergreen.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/sempergreen_urban-grey_green_22112023164728.jpg"
-                    alt="Semper Green"
-                    width={400}
-                    height={300}
-                    className="h-30 w-auto object-contain"
-                  />
-                </a>
+                {sponsorTiers[1].logos.map((logo) => (
+                  <a
+                    key={logo.href}
+                    href={logo.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={logo.width}
+                      height={logo.height}
+                      className={logo.className}
+                    />
+                  </a>
+                ))}
               </div>
             </div>
 
@@ -378,47 +341,22 @@ export default function HomeClient() {
                 {t("gardenBigExhibitors")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
-                <a
-                  href="https://www.jardinmovil.com/es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/jardinMovil.png"
-                    alt="JardinMovil"
-                    width={330}
-                    height={230}
-                    className="h-20 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://eixverd.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/eixverd.svg"
-                    alt="Eixverd"
-                    width={330}
-                    height={230}
-                    className="h-36 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://zinco-cubiertas-ecologicas.es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/zinco.svg"
-                    alt="Zinco"
-                    width={400}
-                    height={300}
-                    className="h-22 w-auto object-contain"
-                  />
-                </a>
+                {sponsorTiers[2].logos.map((logo) => (
+                  <a
+                    key={logo.href}
+                    href={logo.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={logo.width}
+                      height={logo.height}
+                      className={logo.className}
+                    />
+                  </a>
+                ))}
               </div>
             </div>
 
@@ -427,61 +365,22 @@ export default function HomeClient() {
                 {t("gardenMediumExhibitors")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
-                <a
-                  href="https://verdtical.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/verdtical.webp"
-                    alt="Verdtical"
-                    width={300}
-                    height={200}
-                    className="h-8 w-auto object-contain "
-                  />
-                </a>
-
-                <a
-                  href="https://www.hunterirrigation.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/Hunter.svg"
-                    alt="Hunter"
-                    width={300}
-                    height={200}
-                    className="h-8 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://www.projar.es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/projar.jpg"
-                    alt="Projar"
-                    width={330}
-                    height={230}
-                    className="h-30 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://leprieure1840.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/LePrieure.jpg"
-                    alt="Le Prieuré 1840"
-                    width={200}
-                    height={200}
-                    className="h-24 w-auto object-contain"
-                  />
-                </a>
+                {sponsorTiers[3].logos.map((logo) => (
+                  <a
+                    key={logo.href}
+                    href={logo.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={logo.width}
+                      height={logo.height}
+                      className={logo.className}
+                    />
+                  </a>
+                ))}
               </div>
             </div>
 
@@ -502,19 +401,22 @@ export default function HomeClient() {
                 {t("mediaPartners")}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                <a
-                  href="https://greenroofs.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/greenroofsnuevo.png"
-                    alt="Greenroofs.com"
-                    width={280}
-                    height={200}
-                    className="h-17 w-auto object-contain"
-                  />
-                </a>
+                {sponsorTiers[4].logos.map((logo) => (
+                  <a
+                    key={logo.href}
+                    href={logo.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={logo.width}
+                      height={logo.height}
+                      className={logo.className}
+                    />
+                  </a>
+                ))}
               </div>
             </div>
 
@@ -525,6 +427,13 @@ export default function HomeClient() {
               </h3>
               <SupportersCarousel supporters={supporters} visibleCount={5} />
             </div>
+
+            <Link
+              href="/sponsors"
+              className="inline-flex items-center gap-2 text-sm uppercase tracking-wider font-medium text-gray-800 border-b border-gray-800/40 hover:border-gray-800 transition-colors pb-0.5"
+            >
+              {t("viewAllSponsors")}
+            </Link>
           </div>
         </div>
       </section>
