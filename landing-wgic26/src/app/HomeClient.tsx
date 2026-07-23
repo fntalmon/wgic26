@@ -236,6 +236,12 @@ export default function HomeClient() {
               content: (
                 <div className="flex flex-col gap-3 sm:gap-4 text-white drop-shadow-md">
                   <span className={bannerEyebrowClass}>{tVisits("title")}</span>
+                  <div className="text-xl sm:text-2xl md:text-3xl font-semibold leading-tight">
+                    {tVisits("registerCtaTitle")}
+                  </div>
+                  <p className="text-xs sm:text-sm text-white/85">
+                    {tVisits("registerCtaSubtitle")}
+                  </p>
                   <Link href="/program/technical-visits" className={bannerCtaClass}>
                     {tVisits("registerCtaButton")}
                     <ArrowRight size={14} />
