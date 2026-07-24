@@ -29,7 +29,7 @@ const speakerSlots = [
   { id: "speaker15", image: "/img/speakers/lopez.png" },
   { id: "speaker16", image: "/img/speakers/carratala.jpeg" },
   { id: "speaker17", image: "/img/speakers/petito.png" },
-  { id: "speaker18", image: "" },
+  { id: "speaker18", image: "/img/speakers/rolles.png" },
   { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
   { id: "speaker20", image: "/img/speakers/peck.png" },
 ] as const;

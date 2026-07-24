@@ -33,7 +33,7 @@ const keynoteSpeakerSlots = [
   { id: "speaker15", image: "/img/speakers/lopez.png" },
   { id: "speaker16", image: "/img/speakers/carratala.jpeg" },
   { id: "speaker17", image: "/img/speakers/petito.png" },
-  { id: "speaker18", image: "" },
+  { id: "speaker18", image: "/img/speakers/rolles.png" },
   { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
   { id: "speaker20", image: "/img/speakers/peck.png" },
 ] as const;
@@ -168,6 +168,14 @@ export default function HomeClient() {
                       </div>
                       <div className="text-xs sm:text-sm text-white/85">
                         {t("date2Location")}
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-base sm:text-xl md:text-2xl font-semibold leading-tight">
+                        {t("date3")}
+                      </div>
+                      <div className="text-xs sm:text-sm text-white/85">
+                        {t("date3Location")}
                       </div>
                     </div>
                   </div>
