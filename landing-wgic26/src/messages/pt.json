@@ -13,6 +13,7 @@
     "mainTopics": "Tópicos principais",
     "workshops": "Oficinas",
     "technicalVisits": "Visitas Técnicas",
+    "innovationDay": "Innovation Day",
     "wginAwards": "Prêmios WGIN",
     "keyNoteSpeakers": "Palestrantes principais",
     "newsletters": "Boletins informativos",
@@ -767,6 +768,21 @@
     "registerCtaTitle": "Inscrições abertas",
     "registerCtaSubtitle": "Vagas limitadas a 10 participantes por grupo — reserve com antecedência.",
     "registerCtaButton": "Inscreva-se nas visitas técnicas"
+  },
+  "innovationDayPage": {
+    "title": "Innovation Day",
+    "intro1": "Como parte do Innovation Day no Parc Agrobiotech de Lleida, os participantes poderão escolher entre duas oficinas práticas centradas em diferentes aspectos da infraestrutura verde urbana.",
+    "intro2": "A participação está limitada a 50 pessoas. Será disponibilizado um serviço de autocarro de ida e volta entre Barcelona e Lleida para os participantes inscritos.",
+    "intro3": "O programa decorrerá das 10h00 às 18h00 e inclui as oficinas, o almoço, uma visita guiada a La Seu Vella — o monumento histórico mais emblemático de Lleida — e a entrada no Museu de Lleida.",
+    "workshop1Title": "Workshop 1: Insetos, cidades e coberturas verdes",
+    "workshop1Languages": "Inglês - Espanhol",
+    "workshop1Description": "Pequenas criaturas. Grande impacto. Descubra o mundo oculto acima das nossas cidades. Onde a ecologia urbana encontra a ação real. Aprenda como os artrópodes contribuem para cidades mais saudáveis, verdes e resilientes, enquanto descobre a ciência e a prática por trás da biodiversidade urbana sustentável. Junte-se a especialistas para explorar como os insetos, a biodiversidade e as coberturas verdes estão a transformar os ambientes urbanos em ecossistemas prósperos.",
+    "workshop2Title": "Workshop 2: Boas práticas e manutenção de infraestrutura verde",
+    "workshop2Languages": "Espanhol - Inglês",
+    "workshop2Description": "Aprenda na prática, junto de empresas líderes, instaladores e especialistas do setor, para entender o que torna os projetos de infraestrutura verde bem-sucedidos e duradouros. Este workshop partilhará experiência prática sobre as melhores formas de instalar, construir e manter sistemas de infraestrutura verde, utilizando métodos construtivos comprovados, materiais inovadores e as soluções mais recentes disponíveis no mercado. Os participantes aprenderão o que funciona, que erros evitar, e como uma instalação e manutenção adequadas garantem melhor desempenho e durabilidade.",
+    "registerCtaTitle": "Inscrições abertas",
+    "registerCtaSubtitle": "Vagas limitadas a 50 participantes — inclui serviço de autocarro a partir de Barcelona.",
+    "registerCtaButton": "Inscreva-se no Innovation Day"
   },
   "programPage": {
     "title": "Programa",

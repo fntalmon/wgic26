@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback, type ReactNode } from "react";
+import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -14,12 +14,6 @@ export interface BannerSlide {
   alt: string;
   /** Si se define, el slide será clickeable. */
   href?: string;
-  /** Contenido (texto/CTA) superpuesto a la imagen. */
-  content?: ReactNode;
-  /** Lado de la imagen donde ubicar el contenido (según la zona "tranquila" de la foto). */
-  contentAlign?: "left" | "right";
-  /** Agrega un velo oscuro extra de ese lado (o arriba), para fotos sin zona tranquila natural o con cielo muy claro. */
-  scrimSide?: "left" | "right" | "top";
 }
 
 interface HomeBannerSliderProps {
@@ -63,7 +57,7 @@ export function HomeBannerSlider({
 
   return (
     <div
-      className="relative w-full h-[calc(100dvh-5rem)] min-h-120 md:h-[calc(100dvh-5.5rem)] lg:h-[calc(100dvh-8rem)] overflow-hidden bg-black rounded-b-2xl md:rounded-b-4xl"
+      className="relative w-full aspect-640/816 min-[414px]:aspect-2700/1208 overflow-hidden bg-white rounded-b-2xl md:rounded-b-4xl"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       role="region"
@@ -75,41 +69,28 @@ export function HomeBannerSlider({
 
         const images = (
           <>
-            {/* Desktop: cover, anclado arriba para preservar la zona "tranquila" de cada foto donde va el texto. */}
+            {/* Desktop / tablet crop, banner ya trae su propio texto y logos. */}
             <div className="hidden min-[414px]:block absolute inset-0">
               <Image
                 src={encodeURI(slide.desktop)}
                 alt={slide.alt}
                 fill
                 priority={i === 0}
-                className="object-cover object-top"
+                className="object-contain"
                 sizes="100vw"
               />
             </div>
-            {/* Mobile: cover también, para llenar el banner a pantalla completa sin huecos. */}
+            {/* Crop dedicado para mobile. */}
             <div className="absolute inset-0 block min-[414px]:hidden">
               <Image
                 src={encodeURI(slide.mobile)}
                 alt={slide.alt}
                 fill
                 priority={i === 0}
-                className="object-cover object-top"
+                className="object-contain"
                 sizes="100vw"
               />
             </div>
-            {/* Tinte de marca: unifica el tono de las 3 fotos y mejora contraste con los controles. */}
-            <div className="absolute inset-0 bg-cactus/15 mix-blend-multiply" />
-            <div className="absolute inset-0 bg-linear-to-t from-black/35 via-transparent to-transparent" />
-            {/* Velo extra para fotos sin zona tranquila natural donde apoyar el texto. */}
-            {slide.scrimSide === "left" && (
-              <div className="absolute inset-0 bg-linear-to-r from-black/60 via-black/10 to-transparent" />
-            )}
-            {slide.scrimSide === "right" && (
-              <div className="absolute inset-0 bg-linear-to-l from-black/60 via-black/10 to-transparent" />
-            )}
-            {slide.scrimSide === "top" && (
-              <div className="absolute inset-0 bg-linear-to-b from-black/55 via-black/10 to-transparent" />
-            )}
           </>
         );
 
@@ -132,21 +113,6 @@ export function HomeBannerSlider({
             ) : (
               images
             )}
-
-            {slide.content && (
-              <div
-                className={cn(
-                  "absolute inset-0 z-10 flex items-start px-6 py-6 sm:px-14 sm:py-10 md:px-20 md:py-14 lg:px-24 lg:py-16",
-                  slide.contentAlign === "right"
-                    ? "justify-end text-right"
-                    : "justify-start text-left",
-                )}
-              >
-                <div className="max-w-72 sm:max-w-sm md:max-w-lg lg:max-w-xl">
-                  {slide.content}
-                </div>
-              </div>
-            )}
           </div>
         );
       })}
@@ -158,7 +124,7 @@ export function HomeBannerSlider({
             type="button"
             onClick={prev}
             aria-label="Previous slide"
-            className="hidden sm:flex absolute z-20 left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white items-center justify-center transition-colors"
+            className="hidden sm:flex absolute z-20 left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-black/10 hover:bg-black/20 backdrop-blur-sm text-monstera items-center justify-center transition-colors"
           >
             <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
           </button>
@@ -166,13 +132,13 @@ export function HomeBannerSlider({
             type="button"
             onClick={next}
             aria-label="Next slide"
-            className="hidden sm:flex absolute z-20 right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white items-center justify-center transition-colors"
+            className="hidden sm:flex absolute z-20 right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-black/10 hover:bg-black/20 backdrop-blur-sm text-monstera items-center justify-center transition-colors"
           >
             <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
           </button>
 
           {/* Dots inferiores */}
-          <div className="absolute z-20 flex space-x-3 -translate-x-1/2 bottom-[30px] left-1/2">
+          <div className="absolute z-20 flex space-x-3 -translate-x-1/2 bottom-3.5 left-1/2">
             {slides.map((_, i) => (
               <button
                 key={i}
@@ -183,8 +149,8 @@ export function HomeBannerSlider({
                 className={cn(
                   "w-3 h-3 rounded-full transition-colors",
                   i === current
-                    ? "bg-white"
-                    : "bg-white/50 hover:bg-white/80",
+                    ? "bg-potus"
+                    : "bg-black/20 hover:bg-black/40",
                 )}
               />
             ))}

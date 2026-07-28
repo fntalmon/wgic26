@@ -224,6 +224,12 @@ const Navigation = () => {
           icon: <ArrowRight />,
         },
         {
+          title: t("innovationDay"),
+          url: "/program/innovation-day",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
           title: t("wginAwards"),
           url: "/program/wgin-awards",
           description: "...",

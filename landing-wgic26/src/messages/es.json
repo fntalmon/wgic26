@@ -13,6 +13,7 @@
     "mainTopics": "Temas principales",
     "workshops": "Talleres",
     "technicalVisits": "Visitas tecnicas",
+    "innovationDay": "Innovation Day",
     "wginAwards": "Premios WGIN",
     "keyNoteSpeakers": "Ponentes",
     "newsletters": "Boletines",
@@ -755,6 +756,21 @@
     "registerCtaTitle": "Inscripción abierta",
     "registerCtaSubtitle": "Plazas limitadas a 10 participantes por grupo — reserva con antelación.",
     "registerCtaButton": "Inscripción a las visitas técnicas"
+  },
+  "innovationDayPage": {
+    "title": "Innovation Day",
+    "intro1": "Como parte del Innovation Day en el Parc Agrobiotech de Lleida, los participantes podrán elegir entre dos talleres prácticos centrados en distintos aspectos de la infraestructura verde urbana.",
+    "intro2": "La participación está limitada a 50 asistentes. Se ofrecerá un servicio de autobús de ida y vuelta entre Barcelona y Lleida para los participantes inscritos.",
+    "intro3": "El programa se desarrollará de 10:00 a 18:00 e incluye los talleres, el almuerzo, una visita guiada a La Seu Vella —el monumento histórico más emblemático de Lleida— y la entrada al Museu de Lleida.",
+    "workshop1Title": "Taller 1: Bichos, ciudades y cubiertas verdes",
+    "workshop1Languages": "Inglés - Español",
+    "workshop1Description": "Pequeñas criaturas. Gran impacto. Descubre el mundo oculto sobre nuestras ciudades. Donde la ecología urbana se encuentra con la acción real. Aprende cómo los artrópodos contribuyen a ciudades más saludables, verdes y resilientes, mientras descubres la ciencia y la práctica detrás de la biodiversidad urbana sostenible. Únete a expertos para explorar cómo los insectos, la biodiversidad y las cubiertas verdes están transformando los entornos urbanos en ecosistemas prósperos.",
+    "workshop2Title": "Taller 2: Buenas prácticas y mantenimiento de infraestructura verde",
+    "workshop2Languages": "Español - Inglés",
+    "workshop2Description": "Aprende haciendo junto a empresas líderes, instaladores y expertos del sector para entender qué hace que los proyectos de infraestructura verde tengan éxito y perduren en el tiempo. Este taller compartirá experiencia práctica sobre las mejores formas de instalar, construir y mantener sistemas de infraestructura verde, utilizando métodos constructivos probados, materiales innovadores y las últimas soluciones disponibles en el mercado. Los participantes aprenderán qué funciona, qué errores evitar y cómo una correcta instalación y mantenimiento garantizan mejor rendimiento y durabilidad.",
+    "registerCtaTitle": "Inscripción abierta",
+    "registerCtaSubtitle": "Plazas limitadas a 50 participantes — incluye servicio de autobús desde Barcelona.",
+    "registerCtaButton": "Inscripción al Innovation Day"
   },
   "programPage": {
     "title": "Programa",

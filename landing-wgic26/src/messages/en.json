@@ -13,6 +13,7 @@
     "mainTopics": "Main Topics",
     "workshops": "Workshops",
     "technicalVisits": "Technical Visits",
+    "innovationDay": "Innovation Day",
     "wginAwards": "WGIN Awards",
     "keyNoteSpeakers": "Keynote Speakers",
     "newsletters": "Newsletters",
@@ -755,6 +756,21 @@
     "registerCtaTitle": "Registration now open",
     "registerCtaSubtitle": "Places are limited to 10 participants per group — book your spot early.",
     "registerCtaButton": "Register for technical visits"
+  },
+  "innovationDayPage": {
+    "title": "Innovation Day",
+    "intro1": "As part of the Innovation Day at Parc Agrobiotech Lleida, participants can choose between two hands-on workshops focused on different aspects of urban green infrastructure.",
+    "intro2": "Participation is limited to 50 attendees. A bus service from Barcelona to Lleida and back will be available for registered participants.",
+    "intro3": "The programme will run from 10:00 to 18:00, and includes the workshops, lunch, a guided visit to La Seu Vella — Lleida's most iconic historical landmark — and admission to the Museu de Lleida.",
+    "workshop1Title": "Workshop 1: Bugs, Cities and Green Roofs",
+    "workshop1Languages": "English - Spanish",
+    "workshop1Description": "Small creatures. Big impact. Discover the hidden world above our cities. Where urban ecology meets real-world action. Learn how arthropods shape healthier, greener and more resilient cities, while discovering the science and practice behind sustainable urban biodiversity. Join experts to explore how insects, biodiversity and green roofs are transforming urban environments into thriving ecosystems.",
+    "workshop2Title": "Workshop 2: Best Practices and Maintenance for Green Infrastructure",
+    "workshop2Languages": "Spanish - English",
+    "workshop2Description": "Learn by doing with leading companies, installers, and industry experts to understand what makes green infrastructure projects successful and long-lasting. This workshop will share practical experience on the best ways to install, build, and maintain green infrastructure systems, using proven construction methods, innovative materials, and the latest solutions available on the market. Participants will learn what works, what mistakes to avoid, and how proper installation and maintenance can ensure better performance and durability.",
+    "registerCtaTitle": "Registration now open",
+    "registerCtaSubtitle": "Places limited to 50 participants — bus service from Barcelona included.",
+    "registerCtaButton": "Register for Innovation Day"
   },
   "programPage": {
     "title": "Program",
