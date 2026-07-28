@@ -6,9 +6,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export interface BannerSlide {
-  /** Imagen para desktop / tablet (≥414 px). */
+  /** Imagen para desktop / tablet (≥640 px). */
   desktop: string;
-  /** Imagen para mobile (<414 px). */
+  /** Imagen para mobile (<640 px). */
   mobile: string;
   /** Texto alternativo accesible. */
   alt: string;
@@ -57,7 +57,7 @@ export function HomeBannerSlider({
 
   return (
     <div
-      className="relative w-full aspect-640/816 min-[414px]:aspect-2700/1208 overflow-hidden bg-white rounded-b-2xl md:rounded-b-4xl"
+      className="relative w-full aspect-640/816 sm:aspect-2700/1208 overflow-hidden bg-white rounded-b-2xl md:rounded-b-4xl"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       role="region"
@@ -70,7 +70,7 @@ export function HomeBannerSlider({
         const images = (
           <>
             {/* Desktop / tablet crop, banner ya trae su propio texto y logos. */}
-            <div className="hidden min-[414px]:block absolute inset-0">
+            <div className="hidden sm:block absolute inset-0">
               <Image
                 src={encodeURI(slide.desktop)}
                 alt={slide.alt}
@@ -81,7 +81,7 @@ export function HomeBannerSlider({
               />
             </div>
             {/* Crop dedicado para mobile. */}
-            <div className="absolute inset-0 block min-[414px]:hidden">
+            <div className="absolute inset-0 block sm:hidden">
               <Image
                 src={encodeURI(slide.mobile)}
                 alt={slide.alt}
