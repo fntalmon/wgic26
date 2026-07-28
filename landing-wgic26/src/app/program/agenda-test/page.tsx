@@ -11,6 +11,27 @@ const API_BASE = "https://networking.barter.es/programapi";
 const TOKEN = "3a10b5a8a9c3c728dd5ac31703c7095a";
 const EVENT_ID = "562";
 
+async function getSessionSpeakers(idsession: string) {
+  try {
+    const res = await fetch(
+      `${API_BASE}/session.php?idsession=${idsession}&idevent=${EVENT_ID}&token=${TOKEN}`,
+      { next: { revalidate: 60 } }
+    );
+    if (!res.ok) return [];
+    const detail = await res.json();
+    const all = [
+      ...(detail.speakers || []),
+      ...(detail.presenters || []),
+      ...(detail.moderators || []),
+    ];
+    return all.filter(
+      (s, i) => all.findIndex((x) => x.idspeaker === s.idspeaker) === i
+    );
+  } catch {
+    return [];
+  }
+}
+
 async function getSessions() {
   const baseUrl = `${API_BASE}/sessions.php?idevent=${EVENT_ID}&token=${TOKEN}&items=50`;
   const firstRes = await fetch(`${baseUrl}&pag=1`, { next: { revalidate: 60 } });
@@ -26,7 +47,16 @@ async function getSessions() {
     allSessions.push(...(data.sessions || []));
   }
 
-  return { ...firstData, sessions: allSessions };
+  // The list endpoint does not include speakers; attach them from each
+  // session detail (cached per URL like the rest of the fetches).
+  const sessionsWithSpeakers = await Promise.all(
+    allSessions.map(async (session) => ({
+      ...session,
+      speakers: await getSessionSpeakers(session.idsession),
+    }))
+  );
+
+  return { ...firstData, sessions: sessionsWithSpeakers };
 }
 
 async function getEventConfig() {

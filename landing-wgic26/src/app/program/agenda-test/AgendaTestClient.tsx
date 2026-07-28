@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import { MapPin, Tag, Clock, Calendar } from "lucide-react";
+import { useState, useMemo, useEffect } from "react";
+import { MapPin, Tag, Clock, Calendar, User } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
   Sheet,
@@ -22,6 +22,18 @@ interface Session {
   track: string;
   idsessiontype: string;
   sessiontype: string;
+  speakers?: Speaker[];
+}
+
+interface Speaker {
+  idspeaker: string;
+  title?: string;
+  name: string;
+  surname?: string;
+  photo?: string;
+  urlphoto?: string;
+  company?: string | null;
+  jobposition?: string | null;
 }
 
 interface FacetItem {
@@ -114,6 +126,10 @@ function durationBetween(start: string, end: string) {
   return `${h}h${m ? ` ${m}m` : ""}`;
 }
 
+function speakerLabel(speaker: Speaker) {
+  return `${speaker.name} ${speaker.surname || ""}`.replace(/\s+/g, " ").trim();
+}
+
 const typeStyles: Record<string, string> = {
   Opening: "bg-potus text-black",
   Keynote: "bg-yellow-500 text-black",
@@ -136,6 +152,43 @@ export default function AgendaTestClient({
   const [filterTrack, setFilterTrack] = useState<string>("all");
   const [filterType, setFilterType] = useState<string>("all");
   const [selectedSession, setSelectedSession] = useState<Session | null>(null);
+  const [detailSpeakers, setDetailSpeakers] = useState<Speaker[]>([]);
+  const [loadingSpeakers, setLoadingSpeakers] = useState(false);
+
+  // The sessions list endpoint does not include speakers; fetch the session
+  // detail lazily when the drawer opens.
+  useEffect(() => {
+    if (!selectedSession) {
+      setDetailSpeakers([]);
+      return;
+    }
+
+    const controller = new AbortController();
+    setLoadingSpeakers(true);
+    setDetailSpeakers([]);
+
+    fetch(`/api/program/session?id=${selectedSession.idsession}`, {
+      signal: controller.signal,
+    })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (!data) return;
+        const all: Speaker[] = [
+          ...(data.speakers || []),
+          ...(data.presenters || []),
+          ...(data.moderators || []),
+        ];
+        const unique = all.filter(
+          (speaker, index) =>
+            all.findIndex((s) => s.idspeaker === speaker.idspeaker) === index
+        );
+        setDetailSpeakers(unique);
+      })
+      .catch(() => {})
+      .finally(() => setLoadingSpeakers(false));
+
+    return () => controller.abort();
+  }, [selectedSession]);
 
   const rooms = facets.rooms || [];
   const trackFacets = facets.tracks || [];
@@ -333,6 +386,12 @@ export default function AgendaTestClient({
                               <Clock size={12} className="text-white/40" />
                               {durationBetween(session.start, session.end)}
                             </span>
+                            {session.speakers && session.speakers.length > 0 && (
+                              <span className="inline-flex items-center gap-1.5 text-xs text-white/60 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+                                <User size={12} className="text-white/40 flex-shrink-0" />
+                                {session.speakers.map(speakerLabel).join(", ")}
+                              </span>
+                            )}
                           </div>
                         </button>
                       );
@@ -407,6 +466,63 @@ export default function AgendaTestClient({
                   {selectedSession.track}
                 </span>
               </div>
+
+              {(loadingSpeakers || detailSpeakers.length > 0) && (
+                <div className="border-t border-white/10 pt-6">
+                  <h3 className="text-xs uppercase text-white/50 tracking-wider mb-4">
+                    {t.speakers}
+                  </h3>
+                  {loadingSpeakers ? (
+                    <div className="flex flex-col gap-3">
+                      {[0, 1].map((i) => (
+                        <div key={i} className="flex items-center gap-3 animate-pulse">
+                          <div className="w-10 h-10 rounded-full bg-white/10 flex-shrink-0" />
+                          <div className="flex flex-col gap-1.5 flex-1">
+                            <div className="h-3 bg-white/10 rounded w-2/3" />
+                            <div className="h-2.5 bg-white/5 rounded w-1/2" />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="flex flex-col gap-4">
+                      {detailSpeakers.map((speaker) => {
+                        const hasPhoto = speaker.urlphoto && speaker.photo !== "fake.jpg";
+                        return (
+                          <div key={speaker.idspeaker} className="flex items-center gap-3">
+                            {hasPhoto ? (
+                              // eslint-disable-next-line @next/next/no-img-element
+                              <img
+                                src={speaker.urlphoto}
+                                alt={`${speaker.name} ${speaker.surname || ""}`.trim()}
+                                className="w-10 h-10 rounded-full object-cover flex-shrink-0 border border-white/10"
+                              />
+                            ) : (
+                              <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                                <User size={16} className="text-white/40" />
+                              </div>
+                            )}
+                            <div className="flex flex-col">
+                              <span className="text-white text-sm">
+                                {[speaker.title, speaker.name, speaker.surname]
+                                  .filter(Boolean)
+                                  .join(" ")
+                                  .replace(/\s+/g, " ")
+                                  .trim()}
+                              </span>
+                              {speaker.company && (
+                                <span className="text-white/50 text-xs leading-snug">
+                                  {speaker.company}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              )}
 
               <div className="border-t border-white/10 pt-6">
                 {selectedSession.description ? (
