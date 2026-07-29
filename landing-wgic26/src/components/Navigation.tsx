@@ -206,6 +206,12 @@ const Navigation = () => {
           icon: <ArrowRight />,
         },
         {
+          title: t("programCongress"),
+          url: "/program/congress",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
           title: t("specialIssues"),
           url: "/program/special-issues",
           description: "...",

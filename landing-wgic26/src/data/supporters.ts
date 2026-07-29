@@ -61,4 +61,10 @@ export const supporters: Supporter[] = [
     alt: "One Health",
     heightClass: "h-14",
   },
+  {
+    href: "https://aepjp.es",
+    src: "/img/logos/aepjp.png",
+    alt: "AEPJP",
+    heightClass: "h-18",
+  },
 ];

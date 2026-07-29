@@ -1,159 +1,104 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import TextImage from "@/components/TextImage";
-import { RegisterCTA } from "@/components/RegisterCTA";
+import { ArrowRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import AgendaTestClient from "../agenda-test/AgendaTestClient";
 
 export const metadata: Metadata = {
-  title: "Congress Programme | WGIC26 Barcelona-Lleida",
+  title: "Programme Overview | WGIC26 Barcelona-Lleida",
   description:
-    "Discover the full programme for WGIC26, the green infrastructure conference 2026 bringing together plenaries, workshops and technical visits in Barcelona.",
+    "A quick map of the WGIC26 four-day programme: Congress, Workshops, Technical Visits and Innovation Day, in Barcelona and Lleida.",
 };
 
-const API_BASE = "https://networking.barter.es/programapi";
-const TOKEN = "3a10b5a8a9c3c728dd5ac31703c7095a";
-const EVENT_ID = "562";
-
-async function getSessionSpeakers(idsession: string) {
-  try {
-    const res = await fetch(
-      `${API_BASE}/session.php?idsession=${idsession}&idevent=${EVENT_ID}&token=${TOKEN}`,
-      { next: { revalidate: 60 } }
-    );
-    if (!res.ok) return [];
-    const detail = await res.json();
-    const all = [
-      ...(detail.speakers || []),
-      ...(detail.presenters || []),
-      ...(detail.moderators || []),
-    ];
-    return all.filter(
-      (s, i) => all.findIndex((x) => x.idspeaker === s.idspeaker) === i
-    );
-  } catch {
-    return [];
-  }
-}
-
-async function getSessions() {
-  const baseUrl = `${API_BASE}/sessions.php?idevent=${EVENT_ID}&token=${TOKEN}&items=50`;
-  const firstRes = await fetch(`${baseUrl}&pag=1`, { next: { revalidate: 60 } });
-  if (!firstRes.ok) throw new Error("Failed to fetch sessions");
-  const firstData = await firstRes.json();
-  const allSessions = [...(firstData.sessions || [])];
-  const pages = parseInt(firstData.paginate?.pages ?? "1", 10);
-
-  for (let page = 2; page <= pages; page++) {
-    const res = await fetch(`${baseUrl}&pag=${page}`, { next: { revalidate: 60 } });
-    if (!res.ok) throw new Error(`Failed to fetch sessions page ${page}`);
-    const data = await res.json();
-    allSessions.push(...(data.sessions || []));
-  }
-
-  // The list endpoint does not include speakers; attach them from each
-  // session detail (cached per URL like the rest of the fetches).
-  const sessionsWithSpeakers = await Promise.all(
-    allSessions.map(async (session) => ({
-      ...session,
-      speakers: await getSessionSpeakers(session.idsession),
-    }))
-  );
-
-  return { ...firstData, sessions: sessionsWithSpeakers };
-}
-
-async function getEventConfig() {
-  const url = `${API_BASE}/event.php?idevent=${EVENT_ID}&token=${TOKEN}`;
-  const res = await fetch(url, { next: { revalidate: 60 } });
-  if (!res.ok) throw new Error("Failed to fetch event config");
-  return res.json();
-}
-
-export default async function ProgramPage() {
+const ProgramOverview = async () => {
   const t = await getTranslations("programPage");
-  const ta = await getTranslations("programAgendaPage");
-  const home = await getTranslations("home");
+  const o = await getTranslations("programOverviewPage");
+  const nav = await getTranslations("navigation");
+  const workshops = await getTranslations("workshopsPage");
+  const technicalVisits = await getTranslations("technicalVisitsPage");
+  const innovationDay = await getTranslations("innovationDayPage");
+  const wginAwards = await getTranslations("wginAwardsPage");
+  const gaudiYear = await getTranslations("gaudiYearPage");
 
-  const [sessionsData, eventData] = await Promise.all([
-    getSessions(),
-    getEventConfig(),
-  ]);
+  const days = [
+    {
+      dayLabel: o("congressDayLabel"),
+      title: nav("programCongress"),
+      description: o("congressDescription"),
+      href: "/program/congress",
+    },
+    {
+      dayLabel: o("workshopsDayLabel"),
+      title: workshops("title"),
+      description: o("workshopsDescription"),
+      href: "/program/workshops",
+    },
+    {
+      dayLabel: o("technicalVisitsDayLabel"),
+      title: technicalVisits("title"),
+      description: o("technicalVisitsDescription"),
+      href: "/program/technical-visits",
+    },
+    {
+      dayLabel: o("innovationDayDayLabel"),
+      title: innovationDay("title"),
+      description: o("innovationDayDescription"),
+      href: "/program/innovation-day",
+    },
+  ];
 
-  const tracks = eventData.tracks || [];
-
-  const translations = {
-    allRooms: ta("allRooms"),
-    allTracks: ta("allTracks"),
-    allTypes: ta("allTypes"),
-    filters: ta("filters"),
-    clearFilters: ta("clearFilters"),
-    showAll: ta("showAll"),
-    noSessions: ta("noSessions"),
-    time: ta("time"),
-    room: ta("room"),
-    track: ta("track"),
-    type: ta("type"),
-    date: ta("date"),
-    sessionsCount: ta("sessionsCount"),
-    daysCount: ta("daysCount"),
-    roomsCount: ta("roomsCount"),
-    tracksCount: ta("tracksCount"),
-    sessionDetails: ta("sessionDetails"),
-    duration: ta("duration"),
-    speakers: ta("speakers"),
-    noDescription: ta("noDescription"),
-  };
+  const moreInfo = [
+    { label: wginAwards("title"), href: "/program/wgin-awards" },
+    { label: gaudiYear("title"), href: "/program/gaudi-year-2026" },
+  ];
 
   return (
     <div>
-      <PageHeader
-        title={t("title")}
-        description={t("description")}
-        section="program"
-      />
-      <section className="container mx-auto py-12 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-12 space-y-8 text-white/80">
-            <TextImage imageSrc="/img/Tibidabo 1.jpg" imageAlt={t("img1Alt")} imagePosition="right">
-              <p className="text-justify">
-                {t("p1")}
-              </p>
-              <p className="text-justify">
-                {t("p2")}
-              </p>
-            </TextImage>
+      <PageHeader title={t("title")} description={o("description")} section="program" />
 
-            <TextImage imageSrc="/img/Exterior_15.jpg" imageAlt={t("img2Alt")} imagePosition="left">
-              <p className="text-justify">
-                {t("p3")}
-              </p>
-              <p className="text-justify">
-                {t("p4")}
-              </p>
-            </TextImage>
+      <section className="w-full py-12 px-4 md:px-8 lg:px-16">
+        <div className="space-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {days.map((day) => (
+              <Link
+                key={day.href}
+                href={day.href}
+                className="group flex flex-col gap-3 rounded-xl border border-white/10 bg-white/5 p-6 transition-colors hover:border-white/30"
+              >
+                <span className="text-xs uppercase tracking-wide text-potus">
+                  {day.dayLabel}
+                </span>
+                <h2 className="text-xl font-semibold uppercase text-white tracking-wide">
+                  {day.title}
+                </h2>
+                <p className="text-white/70 leading-relaxed">{day.description}</p>
+                <span className="mt-2 inline-flex items-center gap-2 text-sm text-white/80 group-hover:text-white">
+                  {o("viewDetails")} <ArrowRight size={16} />
+                </span>
+              </Link>
+            ))}
           </div>
 
-          <AgendaTestClient
-            sessions={sessionsData.sessions || []}
-            facets={sessionsData.facets || {}}
-            tracks={tracks}
-            translations={translations}
-          />
-
-          <div className="mt-8 text-sm text-white/60 italic">
-            {t("footerNote")}
-          </div>
-
-          <div className="mt-10">
-            <RegisterCTA
-              title={home("ctaJoinTitle")}
-              subtitle={home("ctaJoinSubtitle")}
-              buttonLabel={home("registerNow")}
-            />
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold uppercase text-white tracking-wide">
+              {o("moreInfoTitle")}
+            </h3>
+            <div className="flex flex-wrap gap-4">
+              {moreInfo.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2 text-sm text-white/80 hover:border-white/40 hover:text-white transition-colors"
+                >
+                  {item.label} <ArrowRight size={14} />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
     </div>
   );
-}
+};
+
+export default ProgramOverview;

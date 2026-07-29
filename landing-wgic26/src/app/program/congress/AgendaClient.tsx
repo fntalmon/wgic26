@@ -136,7 +136,7 @@ const typeStyles: Record<string, string> = {
   Roundtable: "bg-white/10 text-white",
 };
 
-export default function AgendaTestClient({
+export default function AgendaClient({
   sessions,
   facets,
   tracks,

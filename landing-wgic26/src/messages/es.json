@@ -8,6 +8,7 @@
     "organisationCommittee": "Comite organizador",
     "congressCommittee": "Comite cientifico",
     "program": "Programa",
+    "programCongress": "Congreso",
     "specialIssues": "Ediciones especiales",
     "gaudiYear": "Año Gaudi 2026",
     "mainTopics": "Temas principales",
@@ -790,6 +791,19 @@
     "learnMore": "Más información",
     "detailsSoon": "Se proporcionara informacion detallada proximamente.",
     "footerNote": "La informacion detallada sobre los talleres de innovacion e investigacion en Lleida y el proceso de inscripcion se publicara proximamente."
+  },
+  "programOverviewPage": {
+    "description": "Un mapa rapido de los cuatro dias del congreso: que ocurre cada dia, donde y de que tipo de actividad se trata.",
+    "congressDayLabel": "Dias 1-2 · Barcelona",
+    "congressDescription": "Sesiones plenarias, keynotes y salas paralelas durante los dos dias principales del congreso.",
+    "workshopsDayLabel": "Durante el Congreso · Barcelona",
+    "workshopsDescription": "Sesiones interactivas sobre los temas clave de WGIC26, que se desarrollan junto con el programa del congreso.",
+    "technicalVisitsDayLabel": "Dia 3 · Barcelona",
+    "technicalVisitsDescription": "Itinerarios guiados por cubiertas y fachadas verdes emblematicas de Barcelona.",
+    "innovationDayDayLabel": "Dia 4 · Lleida",
+    "innovationDayDescription": "Talleres practicos sobre innovacion e investigacion en infraestructura verde en el Parc Agrobiotech de Lleida.",
+    "viewDetails": "Ver detalles",
+    "moreInfoTitle": "Mas informacion"
   },
   "topicsPage": {
     "title": "Temas principales",

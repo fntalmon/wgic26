@@ -158,6 +158,14 @@ export const sponsorTiers: SponsorTier[] = [
         height: 200,
         className: "h-17 w-auto object-contain",
       },
+      {
+        href: "https://scalae.net",
+        src: "/img/logos/SCALAE_LOGO.png",
+        alt: "Scalae",
+        width: 280,
+        height: 200,
+        className: "h-17 w-auto object-contain",
+      },
     ],
   },
 ];
