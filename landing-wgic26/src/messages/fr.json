@@ -345,9 +345,9 @@
       "sponsors": "Commanditaires"
     },
     "dateValues": {
-      "abstracts": "15 décembre 2025 - 31 mai 2026",
-      "acceptance": "Avant le 15 mai 2026",
-      "firstDraft": "Avant le 15 juin 2026",
+      "abstracts": "15 décembre 2025 - 31 mai 2026 (Clos)",
+      "acceptance": "Avant le 15 mai 2026 (Clos)",
+      "firstDraft": "Avant le 15 juin 2026 (Clos)",
       "revision": "Avant le 31 juillet 2026",
       "finalPaper": "Avant le 31 août 2026",
       "finalProgram": "31 juillet 2026",
@@ -392,6 +392,7 @@
     "checkboxRequiredError": "Vous devez accepter la politique de confidentialité pour poursuivre l'inscription.",
     "rightsNote": "Vous pouvez accéder, rectifier ou supprimer vos données, en demander la portabilité, vous opposer au traitement ou le limiter, et déposer une réclamation auprès de l'Autorité Catalane de Protection des Données. Contact du Délégué à la Protection des Données : dpd@udl.cat. Consultez la Politique de Confidentialité complète pour plus de détails.",
     "continueButton": "Continuer vers le formulaire d'inscription Hélice",
+    "redirectNote": "Les inscriptions au WGIC26 sont gérées via Helice, la plateforme d'inscription sécurisée de l'Universitat de Lleida. Le formulaire s'ouvre dans un nouvel onglet.",
     "ctaTitle": "Inscrivez-vous maintenant",
     "ctaIntro": "Finalisez votre inscription en trois étapes simples. Si vous avez besoin d'une facture, vous pouvez la demander lors du processus de paiement.",
     "ctaStep1": "Choisissez le tarif correspondant à votre profil dans le tableau ci-dessous.",
@@ -471,9 +472,9 @@
       "sponsors": "Commanditaires"
     },
     "dateValues": {
-      "abstracts": "15 décembre 2025 - 31 mai 2026",
-      "acceptance": "Avant le 15 mai 2026",
-      "firstDraft": "Avant le 15 juin 2026",
+      "abstracts": "15 décembre 2025 - 31 mai 2026 (Clos)",
+      "acceptance": "Avant le 15 mai 2026 (Clos)",
+      "firstDraft": "Avant le 15 juin 2026 (Clos)",
       "revision": "Avant le 31 juillet 2026",
       "finalPaper": "Avant le 31 août 2026",
       "finalProgram": "31 juillet 2026",
@@ -714,7 +715,7 @@
       },
       "speaker10": {
         "name": "M. Àngels Balsells",
-        "bio": "M. Àngels Balsells Bailón est rectrice et professeure titulaire de Pédagogie à l'Universitat de Lleida (UdL), où elle a mené l'essentiel de sa carrière d'enseignante, de chercheuse et de gestionnaire. Elle a été la première doyenne de la Faculté d'Éducation et la première professeure titulaire de Pédagogie de l'Université. Forte de plus de 30 ans d'expérience dans l'enseignement, elle a joué un rôle clé dans la consolidation de formations telles que la Licence en Éducation Sociale, le Master en Psychopédagogie et le programme doctoral Éducation, Société et Qualité de Vie."
+        "bio": "M. Àngels Balsells Bailón est rectrice et professeure titulaire de Pédagogie à l'UdL. Elle a été la première doyenne de la Faculté d'Éducation et la première professeure titulaire de Pédagogie de l'Université. Forte de plus de 30 ans d'expérience dans l'enseignement, elle a contribué à consolider des formations clés en éducation, psychopédagogie et doctorat."
       },
       "speaker12": {
         "name": "Cristina Martínez",
@@ -865,12 +866,12 @@
     "impacts": "Impacts",
     "impactClimateResilience": "a) Résilience climatique",
     "impactWaterManagement": "b) Gestion de l'eau",
-    "impactGreenSpaceManagement": "d) Gestion des espaces verts",
-    "impactBiodiversity": "e) Biodiversité",
-    "impactAirQuality": "f) Qualité de l'air",
-    "impactPlaceRegeneration": "g) Placer la régénération",
-    "impactParticipatoryPlanning": "i) Planification et gouvernance participative",
-    "impactHealthWellbeing": "k) Santé et bien-être",
+    "impactGreenSpaceManagement": "c) Gestion des espaces verts",
+    "impactBiodiversity": "d) Biodiversité",
+    "impactAirQuality": "e) Qualité de l'air",
+    "impactPlaceRegeneration": "f) Placer la régénération",
+    "impactParticipatoryPlanning": "g) Planification et gouvernance participative",
+    "impactHealthWellbeing": "h) Santé et bien-être",
     "workshopsTitle": "Ateliers",
     "workshopGlobalSouth": "Atelier Infrastructures vertes vs pays du Sud",
     "workshopHealthWellbeing": "Atelier Infrastructure verte vs santé et bien-être",

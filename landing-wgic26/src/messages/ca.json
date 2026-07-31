@@ -333,9 +333,9 @@
       "sponsors": "Patrocinadors"
     },
     "dateValues": {
-      "abstracts": "15 de desembre de 2025 - 31 de maig de 2026",
-      "acceptance": "Abans del 15 de maig de 2026",
-      "firstDraft": "Abans del 15 de juny de 2026",
+      "abstracts": "15 de desembre de 2025 - 31 de maig de 2026 (Tancat)",
+      "acceptance": "Abans del 15 de maig de 2026 (Tancat)",
+      "firstDraft": "Abans del 15 de juny de 2026 (Tancat)",
       "revision": "Abans del 31 de juliol de 2026",
       "finalPaper": "Abans del 31 d'agost de 2026",
       "finalProgram": "31 de juliol de 2026",
@@ -380,6 +380,7 @@
     "checkboxRequiredError": "Has d'acceptar la Política de Privacitat per continuar amb el registre.",
     "rightsNote": "Pot accedir, rectificar o suprimir les seves dades, sol·licitar-ne la portabilitat, oposar-se al tractament o limitar-lo, i presentar una reclamació davant l'Autoritat Catalana de Protecció de Dades. Contacte del Delegat de Protecció de Dades: dpd@udl.cat. Consulti la Política de Privacitat completa per a més detall.",
     "continueButton": "Continuar al formulari d'Helice",
+    "redirectNote": "La inscripció al WGIC26 es gestiona a través d'Helice, la plataforma segura d'inscripció de la Universitat de Lleida. El formulari s'obre en una pestanya nova.",
     "ctaTitle": "Inscriu-te ara",
     "ctaIntro": "Completa la teva inscripció en tres passos senzills. Si necessites factura, la podràs sol·licitar durant el procés de pagament.",
     "ctaStep1": "Tria la quota que s'ajusta al teu perfil a la taula d'abaix.",
@@ -459,9 +460,9 @@
       "sponsors": "Patrocinadors"
     },
     "dateValues": {
-      "abstracts": "15 de desembre de 2025 - 31 de maig de 2026",
-      "acceptance": "Abans del 15 de maig de 2026",
-      "firstDraft": "Abans del 15 de juny de 2026",
+      "abstracts": "15 de desembre de 2025 - 31 de maig de 2026 (Tancat)",
+      "acceptance": "Abans del 15 de maig de 2026 (Tancat)",
+      "firstDraft": "Abans del 15 de juny de 2026 (Tancat)",
       "revision": "Abans del 31 de juliol de 2026",
       "finalPaper": "Abans del 31 d'agost de 2026",
       "finalProgram": "31 de juliol de 2026",
@@ -702,7 +703,7 @@
       },
       "speaker10": {
         "name": "M. Àngels Balsells",
-        "bio": "M. Àngels Balsells Bailón és rectora i catedràtica de Pedagogia a la UdL, on ha desenvolupat gran part de la seva trajectòria docent, investigadora i de gestió. Va ser la primera degana de la Facultat d'Educació i la primera catedràtica de Pedagogia de la Universitat. Amb més de 30 anys d'experiència docent, ha estat clau en la consolidació de titulacions com el Grau d'Educació Social, el Màster de Psicopedagogia i el programa de doctorat Educació, Societat i Qualitat de Vida."
+        "bio": "M. Àngels Balsells Bailón és rectora i catedràtica de Pedagogia a la UdL. Va ser la primera degana de la Facultat d'Educació i la primera catedràtica de Pedagogia de la Universitat. Amb més de 30 anys d'experiència docent, ha contribuït a consolidar titulacions clau en educació, psicopedagogia i doctorat."
       },
       "speaker12": {
         "name": "Cristina Martínez",
@@ -853,12 +854,12 @@
     "impacts": "Impactes",
     "impactClimateResilience": "a) Resiliència climàtica",
     "impactWaterManagement": "b) Gestió de l'aigua",
-    "impactGreenSpaceManagement": "d) Gestió d'espais verds",
-    "impactBiodiversity": "e) Biodiversitat",
-    "impactAirQuality": "f) Qualitat de l'aire",
-    "impactPlaceRegeneration": "g) Regeneració d'espais",
-    "impactParticipatoryPlanning": "i) Planificació participativa i governança",
-    "impactHealthWellbeing": "k) Salut i benestar",
+    "impactGreenSpaceManagement": "c) Gestió d'espais verds",
+    "impactBiodiversity": "d) Biodiversitat",
+    "impactAirQuality": "e) Qualitat de l'aire",
+    "impactPlaceRegeneration": "f) Regeneració d'espais",
+    "impactParticipatoryPlanning": "g) Planificació participativa i governança",
+    "impactHealthWellbeing": "h) Salut i benestar",
     "workshopsTitle": "Tallers",
     "workshopGlobalSouth": "Taller Infraestructura verda vs Sud Global",
     "workshopHealthWellbeing": "Taller Infraestructura verda vs Salut i benestar",

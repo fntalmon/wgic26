@@ -354,9 +354,9 @@
       "sponsors": "Patrocinadores"
     },
     "dateValues": {
-      "abstracts": "15 de diciembre de 2025 - 31 de mayo de 2026",
-      "acceptance": "Antes del 15 de mayo de 2026",
-      "firstDraft": "Antes del 15 de junio de 2026",
+      "abstracts": "15 de diciembre de 2025 - 31 de mayo de 2026 (Cerrado)",
+      "acceptance": "Antes del 15 de mayo de 2026 (Cerrado)",
+      "firstDraft": "Antes del 15 de junio de 2026 (Cerrado)",
       "revision": "Antes del 31 de julio de 2026",
       "finalPaper": "Antes del 31 de agosto de 2026",
       "finalProgram": "31 de julio de 2026",
@@ -401,6 +401,7 @@
     "checkboxRequiredError": "Debes aceptar la Politica de Privacidad para continuar con el registro.",
     "rightsNote": "Puede acceder, rectificar o suprimir sus datos, solicitar su portabilidad, oponerse al tratamiento o limitarlo, y presentar una reclamación ante la Autoridad Catalana de Protección de Datos. Contacto del Delegado de Protección de Datos: dpd@udl.cat. Consulte la Política de Privacidad completa para más detalle.",
     "continueButton": "Continuar al formulario de Helice",
+    "redirectNote": "La inscripción a WGIC26 se gestiona a través de Helice, la plataforma segura de inscripción de la Universitat de Lleida. El formulario se abre en una pestaña nueva.",
     "countdown": {
       "title": "EARLY BIRD HASTA SEPTIEMBRE DE 2026",
       "cta": "REGÍSTRATE AHORA Y AHORRA",
@@ -459,9 +460,9 @@
       "sponsors": "Patrocinadores"
     },
     "dateValues": {
-      "abstracts": "15 de diciembre de 2025 - 31 de mayo de 2026",
-      "acceptance": "Antes del 15 de mayo de 2026",
-      "firstDraft": "Antes del 15 de junio de 2026",
+      "abstracts": "15 de diciembre de 2025 - 31 de mayo de 2026 (Cerrado)",
+      "acceptance": "Antes del 15 de mayo de 2026 (Cerrado)",
+      "firstDraft": "Antes del 15 de junio de 2026 (Cerrado)",
       "revision": "Antes del 31 de julio de 2026",
       "finalPaper": "Antes del 31 de agosto de 2026",
       "finalProgram": "31 de julio de 2026",
@@ -702,7 +703,7 @@
       },
       "speaker10": {
         "name": "M. Àngels Balsells",
-        "bio": "M. Àngels Balsells Bailón es rectora y catedrática de Pedagogía en la UdL , donde ha desarrollado gran parte de su trayectoria docente, investigadora y de gestión. Fue la primera decana de la Facultad de Educación y la primera catedrática de Pedagogía de la Universidad. Con más de 30 años de experiencia docente, ha sido clave en la consolidación de titulaciones como el Grado de Educación Social, el Máster de Psicopedagogía y el programa de doctorado Educación, Sociedad y Calidad de Vida."
+        "bio": "M. Àngels Balsells Bailón es rectora y catedrática de Pedagogía en la UdL. Fue la primera decana de la Facultad de Educación y la primera catedrática de Pedagogía de la Universidad. Con más de 30 años de experiencia docente, ha contribuido a consolidar titulaciones clave en educación, psicopedagogía y doctorado."
       },
       "speaker12": {
         "name": "Cristina Martínez",
@@ -853,12 +854,12 @@
     "impacts": "Impactos",
     "impactClimateResilience": "a) Resiliencia climática",
     "impactWaterManagement": "b) Gestión del agua",
-    "impactGreenSpaceManagement": "d) Gestión de espacios verdes",
-    "impactBiodiversity": "e) Biodiversidad",
-    "impactAirQuality": "f) Calidad del aire",
-    "impactPlaceRegeneration": "g) Regeneración de espacios",
-    "impactParticipatoryPlanning": "i) Planificación participativa y gobernanza",
-    "impactHealthWellbeing": "k) Salud y bienestar",
+    "impactGreenSpaceManagement": "c) Gestión de espacios verdes",
+    "impactBiodiversity": "d) Biodiversidad",
+    "impactAirQuality": "e) Calidad del aire",
+    "impactPlaceRegeneration": "f) Regeneración de espacios",
+    "impactParticipatoryPlanning": "g) Planificación participativa y gobernanza",
+    "impactHealthWellbeing": "h) Salud y bienestar",
     "workshopsTitle": "Talleres",
     "workshopGlobalSouth": "Taller Infraestructura verda vs Sur Global",
     "workshopHealthWellbeing": "Taller Infraestructura verda vs Salud y bienestar",

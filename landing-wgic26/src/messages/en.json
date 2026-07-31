@@ -354,9 +354,9 @@
       "sponsors": "Sponsors"
     },
     "dateValues": {
-      "abstracts": "December 15, 2025 - May 31, 2026",
-      "acceptance": "Before May 15, 2026",
-      "firstDraft": "Before June 15, 2026",
+      "abstracts": "December 15, 2025 - May 31, 2026 (Closed)",
+      "acceptance": "Before May 15, 2026 (Closed)",
+      "firstDraft": "Before June 15, 2026 (Closed)",
       "revision": "Before July 31, 2026",
       "finalPaper": "Before August 31, 2026",
       "finalProgram": "July 31, 2026",
@@ -401,6 +401,7 @@
     "checkboxRequiredError": "You must accept the Privacy Policy to continue with the registration.",
     "rightsNote": "You may access, rectify, delete or port your data, object to or restrict its processing, and lodge a complaint with the Catalan Data Protection Authority. Data Protection Officer contact: dpd@udl.cat. See the full Privacy Policy for details.",
     "continueButton": "Continue to Helice registration form",
+    "redirectNote": "WGIC26 registrations are managed through Helice, the Universitat de Lleida's secure registration platform. The form opens in a new tab.",
     "countdown": {
       "title": "EARLY BIRD ENDS SEPTEMBER 2026",
       "cta": "REGISTER NOW AND SAVE",
@@ -459,9 +460,9 @@
       "sponsors": "Sponsors"
     },
     "dateValues": {
-      "abstracts": "December 15, 2025 - May 31, 2026",
-      "acceptance": "Before May 15, 2026",
-      "firstDraft": "Before June 15, 2026",
+      "abstracts": "December 15, 2025 - May 31, 2026 (Closed)",
+      "acceptance": "Before May 15, 2026 (Closed)",
+      "firstDraft": "Before June 15, 2026 (Closed)",
       "revision": "Before July 31, 2026",
       "finalPaper": "Before August 31, 2026",
       "finalProgram": "July 31, 2026",
@@ -702,7 +703,7 @@
       },
       "speaker10": {
         "name": "M. Àngels Balsells",
-        "bio": "M. Àngels Balsells Bailón is Rector and Chair Professor of Education at the Universitat de Lleida (UdL), where she has built most of her teaching, research, and management career. She was the university's first Dean of the Faculty of Education and its first Chair Professor of Education. With more than 30 years of teaching experience, she has been key to consolidating degree programmes such as the Bachelor's in Social Education, the Master's in Educational Psychology, and the doctoral programme in Education, Society and Quality of Life."
+        "bio": "M. Àngels Balsells Bailón is Rector and Chair Professor of Education at the UdL. She was the university's first Dean of the Faculty of Education and its first Chair Professor of Education. With more than 30 years of teaching experience, she has helped consolidate key degree programmes in education, educational psychology, and doctoral studies."
       },
       "speaker12": {
         "name": "Cristina Martínez",
@@ -853,12 +854,12 @@
     "impacts": "Impacts",
     "impactClimateResilience": "a) Climate resilience",
     "impactWaterManagement": "b) Water management",
-    "impactGreenSpaceManagement": "d) Green Space Management",
-    "impactBiodiversity": "e) Biodiversity",
-    "impactAirQuality": "f) Air Quality",
-    "impactPlaceRegeneration": "g) Place Regeneration",
-    "impactParticipatoryPlanning": "i) Participatory Planning and Governance",
-    "impactHealthWellbeing": "k) Health and Well-being",
+    "impactGreenSpaceManagement": "c) Green Space Management",
+    "impactBiodiversity": "d) Biodiversity",
+    "impactAirQuality": "e) Air Quality",
+    "impactPlaceRegeneration": "f) Place Regeneration",
+    "impactParticipatoryPlanning": "g) Participatory Planning and Governance",
+    "impactHealthWellbeing": "h) Health and Well-being",
     "workshopsTitle": "Workshops",
     "workshopGlobalSouth": "Workshop Green Infrastructure vs Global South",
     "workshopHealthWellbeing": "Workshop Green Infrastructure vs Health and Well-being",
