@@ -15,11 +15,11 @@ const TechnicalVisits = async () => {
     const home = await getTranslations("home");
 
     const itineraryA = [
-        { name: "Plaça de les dones - Residential", image: "/img/visits/Plaça_de_les_dones_Residential.jpeg" },
+        { name: "Caixa Forum Barcelona - Cultural", image: "/img/visits/Caixa Forum Barcelona - Cultural.jpg" },
+        { name: "Pérez Iborra - School", image: "/img/visits/Perez Iborra-School.jpg" },
         { name: "Almirall - Offices", image: "/img/visits/Almirall - Offices.jpg" },
         { name: "Manuel de Falla - Residential", image: "/img/visits/Manuel de Falla-Residential.jpg" },
         { name: "Façana Tarradellas - Residential", image: "/img/visits/Façana_Tarradellas_Residential.jpg" },
-        { name: "Pérez Iborra - School", image: "/img/visits/Perez Iborra-School.jpg" },
     ];
 
     const itineraryB = [

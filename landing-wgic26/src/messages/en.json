@@ -745,7 +745,7 @@
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."
   },
   "technicalVisitsPage": {
-    "title": "Technical Visits",
+    "title": "Technical Visits - 29 October",
     "intro1": "Visit the most iconic green roofs and green façades of Barcelona. You will explore unique green roofs that are not normally open to the public. A coordinator will accompany the group throughout the itinerary, while a specialized guide will provide detailed explanations at each location.",
     "intro2": "Groups will be limited to a maximum of 10 participants, with up to 5 groups per itinerary. The schedule will run from 9:00 to 16:00, and travel is entirely on foot and by metro.",
     "intro3": "Registration is now open through the official platform.",
@@ -760,7 +760,7 @@
     "registerCtaButton": "Register for technical visits"
   },
   "innovationDayPage": {
-    "title": "Innovation Day",
+    "title": "Innovation Day - 30 October",
     "intro1": "As part of the Innovation Day at Parc Agrobiotech Lleida, participants can choose between two hands-on workshops focused on different aspects of urban green infrastructure.",
     "intro2": "Participation is limited to 50 attendees. A bus service from Barcelona to Lleida and back will be available for registered participants.",
     "intro3": "The programme will run from 10:00 to 18:00, and includes the workshops, lunch, a guided visit to La Seu Vella — Lleida's most iconic historical landmark — and admission to the Museu de Lleida.",
@@ -770,6 +770,7 @@
     "workshop2Title": "Workshop 2: Best Practices and Maintenance for Green Infrastructure",
     "workshop2Languages": "Spanish - English",
     "workshop2Description": "Learn by doing with leading companies, installers, and industry experts to understand what makes green infrastructure projects successful and long-lasting. This workshop will share practical experience on the best ways to install, build, and maintain green infrastructure systems, using proven construction methods, innovative materials, and the latest solutions available on the market. Participants will learn what works, what mistakes to avoid, and how proper installation and maintenance can ensure better performance and durability.",
+    "culturalVisitsTitle": "Cultural Visits",
     "registerCtaTitle": "Registration now open",
     "registerCtaSubtitle": "Places limited to 50 participants — bus service from Barcelona included.",
     "registerCtaButton": "Register for Innovation Day"

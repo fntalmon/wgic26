@@ -757,7 +757,7 @@
     "closing": "Ce premier groupe d'intervenants souligne l'ambition, la profondeur et la vision multidisciplinaire du WGIC 2026, le positionnant comme un forum clé du débat urbain mondial."
   },
   "technicalVisitsPage": {
-    "title": "Visites techniques",
+    "title": "Visites techniques - 29 octobre",
     "intro1": "Visitez les toits verts et les façades vertes les plus emblématiques de Barcelone. Vous explorerez des toits verts uniques qui ne sont normalement pas ouverts au public. Un coordinateur accompagnera le groupe tout au long de l'itinéraire, tandis qu'un guide spécialisé fournira des explications détaillées à chaque endroit.",
     "intro2": "Les groupes seront limités à un maximum de 10 participants, avec un maximum de 5 groupes par itinéraire. L'horaire se déroulera de 9h00 à 16h00 et les déplacements se feront entièrement à pied et en métro.",
     "intro3": "Les inscriptions sont désormais ouvertes via la plateforme officielle.",
@@ -772,7 +772,7 @@
     "registerCtaButton": "S'inscrire aux visites techniques"
   },
   "innovationDayPage": {
-    "title": "Innovation Day",
+    "title": "Innovation Day - 30 octobre",
     "intro1": "Dans le cadre de l'Innovation Day au Parc Agrobiotech de Lleida, les participants pourront choisir entre deux ateliers pratiques consacrés à différents aspects de l'infrastructure verte urbaine.",
     "intro2": "La participation est limitée à 50 personnes. Un service de bus aller-retour entre Barcelone et Lleida sera proposé aux participants inscrits.",
     "intro3": "Le programme se déroulera de 10h00 à 18h00 et comprend les ateliers, le déjeuner, une visite guidée de La Seu Vella — le monument historique le plus emblématique de Lleida — et l'entrée au Museu de Lleida.",
@@ -782,6 +782,7 @@
     "workshop2Title": "Atelier 2 : Bonnes pratiques et entretien des infrastructures vertes",
     "workshop2Languages": "Espagnol - Anglais",
     "workshop2Description": "Apprenez en pratiquant, aux côtés d'entreprises leaders, d'installateurs et d'experts du secteur, pour comprendre ce qui fait la réussite et la durabilité des projets d'infrastructure verte. Cet atelier partagera une expérience pratique sur les meilleures façons d'installer, de construire et d'entretenir des systèmes d'infrastructure verte, en utilisant des méthodes de construction éprouvées, des matériaux innovants et les dernières solutions disponibles sur le marché. Les participants apprendront ce qui fonctionne, les erreurs à éviter, et comment une installation et un entretien adéquats garantissent de meilleures performances et une plus grande durabilité.",
+    "culturalVisitsTitle": "Visites culturelles",
     "registerCtaTitle": "Inscriptions ouvertes",
     "registerCtaSubtitle": "Places limitées à 50 participants — service de bus depuis Barcelone inclus.",
     "registerCtaButton": "S'inscrire à l'Innovation Day"

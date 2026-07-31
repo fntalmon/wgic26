@@ -745,7 +745,7 @@
     "closing": "Este primer grupo de ponentes subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
   },
   "technicalVisitsPage": {
-    "title": "Visitas técnicas",
+    "title": "Visitas técnicas - 29 de octubre",
     "intro1": "Visita las cubiertas verdes y fachadas vegetales más icónicas de Barcelona. Explorarás cubiertas verdes únicas que normalmente no están abiertas al público. Un coordinador acompañará al grupo durante todo el itinerario, mientras que un guía especializado ofrecerá explicaciones detalladas en cada lugar.",
     "intro2": "Los grupos estarán limitados a un máximo de 10 participantes, con hasta 5 grupos por itinerario. El horario será de 9:00 a 16:00, y los desplazamientos se realizarán íntegramente a pie y en metro.",
     "intro3": "La inscripción ya está abierta a través de la plataforma oficial.",
@@ -760,7 +760,7 @@
     "registerCtaButton": "Inscripción a las visitas técnicas"
   },
   "innovationDayPage": {
-    "title": "Innovation Day",
+    "title": "Innovation Day - 30 de octubre",
     "intro1": "Como parte del Innovation Day en el Parc Agrobiotech de Lleida, los participantes podrán elegir entre dos talleres prácticos centrados en distintos aspectos de la infraestructura verde urbana.",
     "intro2": "La participación está limitada a 50 asistentes. Se ofrecerá un servicio de autobús de ida y vuelta entre Barcelona y Lleida para los participantes inscritos.",
     "intro3": "El programa se desarrollará de 10:00 a 18:00 e incluye los talleres, el almuerzo, una visita guiada a La Seu Vella —el monumento histórico más emblemático de Lleida— y la entrada al Museu de Lleida.",
@@ -770,6 +770,7 @@
     "workshop2Title": "Taller 2: Buenas prácticas y mantenimiento de infraestructura verde",
     "workshop2Languages": "Español - Inglés",
     "workshop2Description": "Aprende haciendo junto a empresas líderes, instaladores y expertos del sector para entender qué hace que los proyectos de infraestructura verde tengan éxito y perduren en el tiempo. Este taller compartirá experiencia práctica sobre las mejores formas de instalar, construir y mantener sistemas de infraestructura verde, utilizando métodos constructivos probados, materiales innovadores y las últimas soluciones disponibles en el mercado. Los participantes aprenderán qué funciona, qué errores evitar y cómo una correcta instalación y mantenimiento garantizan mejor rendimiento y durabilidad.",
+    "culturalVisitsTitle": "Visitas culturales",
     "registerCtaTitle": "Inscripción abierta",
     "registerCtaSubtitle": "Plazas limitadas a 50 participantes — incluye servicio de autobús desde Barcelona.",
     "registerCtaButton": "Inscripción al Innovation Day"

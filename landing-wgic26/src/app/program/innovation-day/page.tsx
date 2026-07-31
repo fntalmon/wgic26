@@ -20,8 +20,8 @@ const InnovationDay = async () => {
             languages: t("workshop1Languages"),
             description: t("workshop1Description"),
             images: [
-                "/img/innovation-day/workshop1-biodiversity-1.jpeg",
-                "/img/innovation-day/workshop1-biodiversity-2.jpeg",
+                { src: "/img/innovation-day/workshop1-biodiversity-1.jpeg" },
+                { src: "/img/innovation-day/workshop1-biodiversity-2.jpeg" },
             ],
         },
         {
@@ -29,10 +29,16 @@ const InnovationDay = async () => {
             languages: t("workshop2Languages"),
             description: t("workshop2Description"),
             images: [
-                "/img/innovation-day/workshop2-maintenance-1.jpeg",
-                "/img/innovation-day/workshop2-maintenance-2.jpeg",
+                { src: "/img/innovation-day/workshop2-maintenance-1.jpeg" },
+                { src: "/img/innovation-day/workshop2-maintenance-2.jpeg", objectPosition: "75% 30%" },
             ],
         },
+    ];
+
+    const culturalVisits = [
+        { name: "Parc Agrobiotech", image: "/img/innovation-day/cultural-visits/Parc Agrobiotech.jpeg" },
+        { name: "Seu Vella", image: "/img/innovation-day/cultural-visits/Seu Vella.jpg" },
+        { name: "Museu de Lleida", image: "/img/innovation-day/cultural-visits/Museu de Lleida.jpg" },
     ];
 
     return (
@@ -61,12 +67,13 @@ const InnovationDay = async () => {
                             <div key={workshop.title} className="space-y-4">
                                 <div className="grid grid-cols-2 gap-2">
                                     {workshop.images.map((image) => (
-                                        <div key={image} className="relative w-full aspect-square overflow-hidden rounded-lg">
+                                        <div key={image.src} className="relative w-full aspect-square overflow-hidden rounded-lg">
                                             <Image
-                                                src={image}
+                                                src={image.src}
                                                 alt={workshop.title}
                                                 fill
                                                 className="object-cover"
+                                                style={image.objectPosition ? { objectPosition: image.objectPosition } : undefined}
                                             />
                                         </div>
                                     ))}
@@ -80,6 +87,27 @@ const InnovationDay = async () => {
                                 <p className="text-white/80 leading-relaxed">{workshop.description}</p>
                             </div>
                         ))}
+                    </div>
+
+                    <div className="space-y-5">
+                        <h2 className="text-2xl font-semibold uppercase text-white tracking-wide">
+                            {t("culturalVisitsTitle")}
+                        </h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            {culturalVisits.map((visit) => (
+                                <div key={visit.image} className="flex flex-col gap-2">
+                                    <div className="relative w-full aspect-square overflow-hidden rounded-lg">
+                                        <Image
+                                            src={visit.image}
+                                            alt={visit.name}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                    <p className="text-white/80 text-center text-sm">{visit.name}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     <RegisterCTA
