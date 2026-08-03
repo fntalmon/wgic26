@@ -140,6 +140,8 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  const month = t("octAbbrev");
+
   const menu: MenuItem[] = [
     {
       title: t("about"),
@@ -181,36 +183,6 @@ const Navigation = () => {
           description: "...",
           icon: <ArrowRight />,
         },
-      ],
-    },
-    {
-      title: t("program"),
-      url: "/program",
-      items: [
-        {
-          title: t("gaudiYear"),
-          url: "/program/gaudi-year-2026",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: t("mainTopics"),
-          url: "/program/topics",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: t("program"),
-          url: "/program/program",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: t("programCongress"),
-          url: "/program/congress",
-          description: "...",
-          icon: <ArrowRight />,
-        },
         {
           title: t("specialIssues"),
           url: "/program/special-issues",
@@ -218,26 +190,50 @@ const Navigation = () => {
           icon: <ArrowRight />,
         },
         {
-          title: t("workshops"),
+          title: t("wginAwards"),
+          url: "/program/wgin-awards",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+      ],
+    },
+    {
+      title: t("program"),
+      url: "/program",
+      items: [
+        {
+          title: `${t("program")} · 27-30 ${month}`,
+          url: "/program/program",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: `${t("programCongress")} · 27-28 ${month}`,
+          url: "/program/congress",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: `${t("workshops")} · 27-28 ${month}`,
           url: "/program/workshops",
           description: "...",
           icon: <ArrowRight />,
         },
         {
-          title: t("technicalVisits"),
+          title: `${t("technicalVisits")} · 29 ${month}`,
           url: "/program/technical-visits",
           description: "...",
           icon: <ArrowRight />,
         },
         {
-          title: t("innovationDay"),
+          title: `${t("innovationDay")} · 30 ${month}`,
           url: "/program/innovation-day",
           description: "...",
           icon: <ArrowRight />,
         },
         {
-          title: t("wginAwards"),
-          url: "/program/wgin-awards",
+          title: t("mainTopics"),
+          url: "/program/topics",
           description: "...",
           icon: <ArrowRight />,
         },
@@ -266,7 +262,24 @@ const Navigation = () => {
         },
       ],
     },
-    { title: t("planYourStay"), url: "/plan-your-stay" },
+    {
+      title: t("planYourStay"),
+      url: "/plan-your-stay",
+      items: [
+        {
+          title: t("planYourStay"),
+          url: "/plan-your-stay",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: t("gaudiYear"),
+          url: "/program/gaudi-year-2026",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+      ],
+    },
 
     // { title: t("travel"), url: "/travel" },
   ];

@@ -17,8 +17,6 @@ const ProgramOverview = async () => {
   const workshops = await getTranslations("workshopsPage");
   const technicalVisits = await getTranslations("technicalVisitsPage");
   const innovationDay = await getTranslations("innovationDayPage");
-  const wginAwards = await getTranslations("wginAwardsPage");
-  const gaudiYear = await getTranslations("gaudiYearPage");
 
   const days = [
     {
@@ -47,11 +45,6 @@ const ProgramOverview = async () => {
     },
   ];
 
-  const moreInfo = [
-    { label: wginAwards("title"), href: "/program/wgin-awards" },
-    { label: gaudiYear("title"), href: "/program/gaudi-year-2026" },
-  ];
-
   return (
     <div>
       <PageHeader title={t("title")} description={o("description")} section="program" />
@@ -77,23 +70,6 @@ const ProgramOverview = async () => {
                 </span>
               </Link>
             ))}
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="text-xl font-semibold uppercase text-white tracking-wide">
-              {o("moreInfoTitle")}
-            </h3>
-            <div className="flex flex-wrap gap-4">
-              {moreInfo.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2 text-sm text-white/80 hover:border-white/40 hover:text-white transition-colors"
-                >
-                  {item.label} <ArrowRight size={14} />
-                </Link>
-              ))}
-            </div>
           </div>
         </div>
       </section>
