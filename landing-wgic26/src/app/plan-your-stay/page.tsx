@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { MapPin, ExternalLink } from "lucide-react";
+import { getProgrammePdfUrl } from "@/lib/programme-pdf";
 
 export const metadata: Metadata = {
   title: "Plan Your Stay | WGIC26 Barcelona-Lleida",
@@ -12,6 +13,9 @@ export const metadata: Metadata = {
 
 const PlanYourStay = async () => {
     const t = await getTranslations("planYourStayPage");
+    const pd = await getTranslations("programmeDownload");
+    const locale = await getLocale();
+    const programmePdfUrl = getProgrammePdfUrl(locale);
 
     return (
         <div>
@@ -19,6 +23,9 @@ const PlanYourStay = async () => {
                 title={t("title")}
                 description={t("description")}
                 section="plan-your-stay"
+                buttonText={pd("buttonLabel")}
+                buttonUrl={programmePdfUrl}
+                buttonNote={pd("note")}
             />
 
             <section className="container mx-auto py-16 px-4">

@@ -1250,5 +1250,10 @@
     "ctaBecomeSubtitle": "Descubre los paquetes de patrocinio, stands de exposición y complementos para el WGIC26.",
     "ctaBecomeButton": "Conviértete en Sponsor",
     "visitWebsite": "Visitar sitio web"
+  },
+  "programmeDownload": {
+    "buttonLabel": "Descargar Programa (PDF)",
+    "footerLabel": "Programa (PDF)",
+    "note": "Versión provisional — última actualización: 8 de agosto"
   }
 }

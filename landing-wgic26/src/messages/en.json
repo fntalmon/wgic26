@@ -1232,5 +1232,10 @@
     "ctaBecomeSubtitle": "Discover sponsorship packages, exhibition stands and add-ons for WGIC26.",
     "ctaBecomeButton": "Become a Sponsor",
     "visitWebsite": "Visit website"
+  },
+  "programmeDownload": {
+    "buttonLabel": "Download Programme (PDF)",
+    "footerLabel": "Programme (PDF)",
+    "note": "Provisional version — last updated: 8 August"
   }
 }

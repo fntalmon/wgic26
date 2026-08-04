@@ -1244,5 +1244,10 @@
     "ctaBecomeSubtitle": "Découvrez les formules de parrainage, les stands d'exposition et les options complémentaires pour le WGIC26.",
     "ctaBecomeButton": "Devenir Sponsor",
     "visitWebsite": "Visiter le site"
+  },
+  "programmeDownload": {
+    "buttonLabel": "Télécharger le Programme (PDF)",
+    "footerLabel": "Programme (PDF)",
+    "note": "Version provisoire — dernière mise à jour : 8 août"
   }
 }

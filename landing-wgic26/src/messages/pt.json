@@ -1244,5 +1244,10 @@
     "ctaBecomeSubtitle": "Conheça os pacotes de patrocínio, estandes de exposição e complementos para o WGIC26.",
     "ctaBecomeButton": "Torne-se Patrocinador",
     "visitWebsite": "Visitar site"
+  },
+  "programmeDownload": {
+    "buttonLabel": "Descarregar o Programa (PDF)",
+    "footerLabel": "Programa (PDF)",
+    "note": "Versão provisória — última atualização: 8 de agosto"
   }
 }

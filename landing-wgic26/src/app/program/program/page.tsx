@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import { ArrowRight } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+import { getProgrammePdfUrl } from "@/lib/programme-pdf";
 
 export const metadata: Metadata = {
   title: "Programme Overview | WGIC26 Barcelona-Lleida",
@@ -17,6 +18,9 @@ const ProgramOverview = async () => {
   const workshops = await getTranslations("workshopsPage");
   const technicalVisits = await getTranslations("technicalVisitsPage");
   const innovationDay = await getTranslations("innovationDayPage");
+  const pd = await getTranslations("programmeDownload");
+  const locale = await getLocale();
+  const programmePdfUrl = getProgrammePdfUrl(locale);
 
   const days = [
     {
@@ -47,7 +51,14 @@ const ProgramOverview = async () => {
 
   return (
     <div>
-      <PageHeader title={t("title")} description={o("description")} section="program" />
+      <PageHeader
+        title={t("title")}
+        description={o("description")}
+        section="program"
+        buttonText={pd("buttonLabel")}
+        buttonUrl={programmePdfUrl}
+        buttonNote={pd("note")}
+      />
 
       <section className="w-full py-12 px-4 md:px-8 lg:px-16">
         <div className="space-y-16">

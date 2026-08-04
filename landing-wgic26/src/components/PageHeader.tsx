@@ -11,6 +11,7 @@ interface PageHeaderProps {
     buttonUrl?: string
     buttonIcon?: React.ReactNode
     buttonVariant?: "blue" | "yellow" | "red" | "purple" | "inverse" | "secondary" | "default"
+    buttonNote?: string
 }
 
 const PageHeader: React.FC<PageHeaderProps> = ({
@@ -21,6 +22,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
     buttonUrl,
     buttonIcon,
     buttonVariant = "yellow", // Default to "yellow" if none is provided
+    buttonNote,
 }) => {
     const showButton = buttonText && buttonUrl
 
@@ -38,17 +40,22 @@ const PageHeader: React.FC<PageHeaderProps> = ({
                             {title}
                         </div>
                         {showButton && (
-                            <Link
-                                href={buttonUrl}
-                                passHref
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                download
-                            >
-                                <Button variant={buttonVariant}>
-                                    {buttonIcon || <Download size={20} />} {buttonText}
-                                </Button>
-                            </Link>
+                            <div className="flex flex-col gap-1.5">
+                                <Link
+                                    href={buttonUrl}
+                                    passHref
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    download
+                                >
+                                    <Button variant={buttonVariant}>
+                                        {buttonIcon || <Download size={20} />} {buttonText}
+                                    </Button>
+                                </Link>
+                                {buttonNote && (
+                                    <span className="text-xs text-white/50">{buttonNote}</span>
+                                )}
+                            </div>
                         )}
                     </div>
                     <div className="flex flex-col sm:items-end gap-2 w-full sm:w-2/3">

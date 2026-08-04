@@ -1250,5 +1250,10 @@
     "ctaBecomeSubtitle": "Descobreix els paquets de patrocini, stands d'exposició i complements per al WGIC26.",
     "ctaBecomeButton": "Converteix-te en Patrocinador",
     "visitWebsite": "Visitar lloc web"
+  },
+  "programmeDownload": {
+    "buttonLabel": "Descarregar el Programa (PDF)",
+    "footerLabel": "Programa (PDF)",
+    "note": "Versió provisional — última actualització: 8 d'agost"
   }
 }
