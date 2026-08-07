@@ -12,6 +12,8 @@ import {
     Globe,
     Heart,
     TreePine,
+    Building2,
+    Clock,
     User,
     Users,
     HelpCircle,
@@ -24,7 +26,7 @@ import {
     Mail,
 } from "lucide-react";
 
-type WorkshopKey = "globalSouth" | "health" | "recovery";
+type WorkshopKey = "globalSouth" | "health" | "recovery" | "lifeBauhaus";
 
 interface CaseStudy {
     id: string;
@@ -47,6 +49,24 @@ interface JoinConversation {
     contactEmail?: string;
 }
 
+interface Leader {
+    name: string;
+    affiliation: string;
+}
+
+interface Project {
+    id: string;
+    name: string;
+    description: string;
+    link?: string;
+}
+
+interface StructurePart {
+    heading: string;
+    body?: string;
+    bullets?: string[];
+}
+
 type CardTranslator = {
     (key: string): string;
     raw(key: string): unknown;
@@ -66,6 +86,7 @@ const workshopMeta: Record<
     globalSouth: { icon: Globe, gradient: "from-emerald-500/20 to-teal-500/10" },
     health: { icon: Heart, gradient: "from-rose-500/20 to-orange-500/10" },
     recovery: { icon: TreePine, gradient: "from-lime-500/20 to-emerald-500/10" },
+    lifeBauhaus: { icon: Building2, gradient: "from-sky-500/20 to-indigo-500/10" },
 };
 
 // Non-translatable images: leadership photos and case-study visuals.
@@ -73,6 +94,34 @@ const leadershipImages: Record<WorkshopKey, string> = {
     globalSouth: "/images/workshops/image2.jpeg",
     health: "/images/workshops/image23.jpeg",
     recovery: "/images/workshops/image24.jpeg",
+    lifeBauhaus: "/images/workshops/life-bauhaus-piedad-ribas.jpeg",
+};
+
+// Photos for workshops led by more than one person, in the same order as
+// the "leadershipTeam" array in the messages files.
+const leadershipTeamImages: Partial<Record<WorkshopKey, string[]>> = {
+    lifeBauhaus: [
+        "/images/workshops/life-bauhaus-piedad-ribas.jpeg",
+        "/images/workshops/life-bauhaus-gabriel-perez.jpeg",
+    ],
+};
+
+// Programme logos shown at the top of the workshop detail.
+const headerImages: Partial<Record<WorkshopKey, string[]>> = {
+    lifeBauhaus: ["/images/workshops/life-logo.png", "/images/workshops/neb-logo.png"],
+};
+
+// Logos for the LIFE Bauhaus participating projects, keyed by project id.
+const projectLogos: Record<string, string> = {
+    bewooden: "/images/workshops/life-bewooden.jpeg",
+    "bauhausing-europe": "/images/workshops/life-bauhausing-europe.png",
+    seedneb: "/images/workshops/life-seedneb.png",
+    help: "/images/workshops/life-logo.png",
+    greenme5: "/images/workshops/life-greenme5.png",
+    biomatine: "/images/workshops/life-biomatine.png",
+    panelka: "/images/workshops/life-panelka.png",
+    levels: "/images/workshops/life-levels.png",
+    big4life: "/images/workshops/big4life.png",
 };
 
 const caseStudyImages: Record<WorkshopKey, Record<string, string>> = {
@@ -86,6 +135,7 @@ const caseStudyImages: Record<WorkshopKey, Record<string, string>> = {
         "new-zealand": "/images/workshops/image25.jpg",
         ukraine: "/images/workshops/image26.jpg",
     },
+    lifeBauhaus: {},
 };
 
 interface SectionProps {
@@ -136,12 +186,14 @@ const Workshops = async () => {
         globalSouth: (await getTranslations("workshopsPage.cards.globalSouth")) as unknown as CardTranslator,
         health: (await getTranslations("workshopsPage.cards.health")) as unknown as CardTranslator,
         recovery: (await getTranslations("workshopsPage.cards.recovery")) as unknown as CardTranslator,
+        lifeBauhaus: (await getTranslations("workshopsPage.cards.lifeBauhaus")) as unknown as CardTranslator,
     };
 
     const workshops: { key: WorkshopKey; id: string }[] = [
         { key: "globalSouth", id: "global-south" },
         { key: "health", id: "health" },
         { key: "recovery", id: "recovery" },
+        { key: "lifeBauhaus", id: "life-bauhaus" },
     ];
 
     return (
@@ -170,7 +222,9 @@ const Workshops = async () => {
                                 const ct = tCard[key];
 
                                 const workingGroup = ct.raw("workingGroup") as string[];
-                                const caseStudies = (ct.raw("caseStudies") as CaseStudy[] | undefined) ?? [];
+                                const caseStudies = ct.has("caseStudies")
+                                    ? (ct.raw("caseStudies") as CaseStudy[])
+                                    : [];
                                 const goals = ct.has("goals") ? (ct.raw("goals") as string[]) : [];
                                 const specificObjectives = ct.has("specificObjectives")
                                     ? (ct.raw("specificObjectives") as string[])
@@ -184,6 +238,21 @@ const Workshops = async () => {
                                 const joinConversation = ct.has("joinConversation")
                                     ? (ct.raw("joinConversation") as JoinConversation)
                                     : undefined;
+                                const leadershipTeam = ct.has("leadershipTeam")
+                                    ? (ct.raw("leadershipTeam") as Leader[])
+                                    : [];
+                                const whyParagraphs = ct.has("whyParagraphs")
+                                    ? (ct.raw("whyParagraphs") as string[])
+                                    : [];
+                                const mainObjectiveBullets = ct.has("mainObjectiveBullets")
+                                    ? (ct.raw("mainObjectiveBullets") as string[])
+                                    : [];
+                                const projects = ct.has("projects")
+                                    ? (ct.raw("projects") as Project[])
+                                    : [];
+                                const structure = ct.has("structure")
+                                    ? (ct.raw("structure") as StructurePart[])
+                                    : [];
 
                                 return (
                                     <AccordionItem
@@ -211,6 +280,18 @@ const Workshops = async () => {
                                         <AccordionContent className="text-white/80 text-sm leading-relaxed pb-6 px-4 sm:px-6">
                                             <div className="flex flex-col gap-6 pt-2">
 
+                                                {/* Programme logos */}
+                                                {headerImages[key] && (
+                                                    <div className="flex flex-wrap items-center gap-4">
+                                                        {headerImages[key].map((src) => (
+                                                            <div key={src} className="bg-white rounded-lg p-2 flex items-center justify-center">
+                                                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                                                <img src={src} alt="" className="h-14 w-auto object-contain" />
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                )}
+
                                                 {/* Two-column grid */}
                                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                                                     <div className="flex flex-col gap-4">
@@ -232,17 +313,36 @@ const Workshops = async () => {
                                                                         </div>
                                                                     ))}
                                                                 </div>
+                                                            ) : whyParagraphs.length > 0 ? (
+                                                                <div className="flex flex-col gap-3">
+                                                                    {whyParagraphs.map((paragraph, index) => (
+                                                                        <p key={index}>{paragraph}</p>
+                                                                    ))}
+                                                                </div>
                                                             ) : (
                                                                 <p>{ct("why")}</p>
                                                             )}
                                                         </Section>
 
                                                         <Section icon={User} label={t("labels.leadership")}>
-                                                            <LeadershipCard
-                                                                name={ct("leadershipName")}
-                                                                affiliation={ct("leadershipAffiliation")}
-                                                                image={leadershipImages[key]}
-                                                            />
+                                                            {leadershipTeam.length > 0 ? (
+                                                                <div className="flex flex-col gap-4">
+                                                                    {leadershipTeam.map((leader, index) => (
+                                                                        <LeadershipCard
+                                                                            key={index}
+                                                                            name={leader.name}
+                                                                            affiliation={leader.affiliation}
+                                                                            image={leadershipTeamImages[key]?.[index] ?? leadershipImages[key]}
+                                                                        />
+                                                                    ))}
+                                                                </div>
+                                                            ) : (
+                                                                <LeadershipCard
+                                                                    name={ct("leadershipName")}
+                                                                    affiliation={ct("leadershipAffiliation")}
+                                                                    image={leadershipImages[key]}
+                                                                />
+                                                            )}
                                                         </Section>
 
                                                         {workingGroup.length > 0 && (
@@ -256,6 +356,14 @@ const Workshops = async () => {
                                                         {ct.has("mainObjective") && (
                                                             <Section icon={Target} label={t("labels.mainObjective")}>
                                                                 <p>{ct("mainObjective")}</p>
+                                                                {mainObjectiveBullets.length > 0 && (
+                                                                    <div className="mt-3">
+                                                                        <BulletList items={mainObjectiveBullets} />
+                                                                    </div>
+                                                                )}
+                                                                {ct.has("mainObjectiveFooter") && (
+                                                                    <p className="mt-3">{ct("mainObjectiveFooter")}</p>
+                                                                )}
                                                             </Section>
                                                         )}
 
@@ -310,6 +418,61 @@ const Workshops = async () => {
                                                                     </div>
                                                                 );
                                                             })}
+                                                        </div>
+                                                    </Section>
+                                                )}
+
+                                                {/* Participating projects */}
+                                                {projects.length > 0 && (
+                                                    <Section icon={Building2} label={t("labels.participatingProjects")}>
+                                                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-1">
+                                                            {projects.map((project) => (
+                                                                <div key={project.id} className="bg-white/[0.05] border border-white/10 rounded-lg p-4 flex flex-col gap-3">
+                                                                    {projectLogos[project.id] && (
+                                                                        <div className="bg-white rounded-lg p-2 h-16 flex items-center justify-center">
+                                                                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                                                                            <img
+                                                                                src={projectLogos[project.id]}
+                                                                                alt={project.name}
+                                                                                className="max-h-12 w-auto object-contain"
+                                                                            />
+                                                                        </div>
+                                                                    )}
+                                                                    <h5 className="text-white font-medium">{project.name}</h5>
+                                                                    <p className="text-white/70 text-sm leading-relaxed">{project.description}</p>
+                                                                    {project.link && (
+                                                                        <a
+                                                                            href={project.link}
+                                                                            target="_blank"
+                                                                            rel="noopener noreferrer"
+                                                                            className="text-potus hover:underline break-words text-xs mt-auto inline-block"
+                                                                        >
+                                                                            {project.link}
+                                                                        </a>
+                                                                    )}
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                    </Section>
+                                                )}
+
+                                                {/* Workshop structure */}
+                                                {structure.length > 0 && (
+                                                    <Section icon={Clock} label={t("labels.structure")}>
+                                                        <div className="flex flex-col gap-4 mt-1">
+                                                            {structure.map((part, index) => (
+                                                                <div key={index}>
+                                                                    <h5 className="text-white font-medium mb-2">{part.heading}</h5>
+                                                                    {part.body && <p>{part.body}</p>}
+                                                                    {part.bullets && part.bullets.length > 0 && (
+                                                                        <ul className="list-disc list-inside space-y-2 text-white/80 mt-2">
+                                                                            {part.bullets.map((bullet, bulletIndex) => (
+                                                                                <li key={bulletIndex}>{bullet}</li>
+                                                                            ))}
+                                                                        </ul>
+                                                                    )}
+                                                                </div>
+                                                            ))}
                                                         </div>
                                                     </Section>
                                                 )}

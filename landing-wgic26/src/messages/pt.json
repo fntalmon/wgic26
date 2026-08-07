@@ -711,7 +711,7 @@
         "bio": "María Buhigas é a Arquiteta-Chefe da Câmara Municipal de Barcelona. Arquiteta e urbanista, possui ampla experiência em estratégia urbana, espaço público, habitação e transformação urbana, com foco na criação de cidades mais habitáveis, inclusivas e resilientes."
       },
       "speaker9": {
-        "name": "Jesús Pérez",
+        "name": "Jesús Pérez Gil",
         "bio": "Vice-presidente da POH (Plataforma One Health) em representação da Conferência Espanhola de Decanos de Biologia (CEDB) e catedrático da Faculdade de Biologia da Universidad Complutense de Madrid."
       },
       "speaker10": {
@@ -920,7 +920,9 @@
       "proposal": "O que propomos para o workshop",
       "keynoteSpeaker": "Palestrante principal em destaque no WGIC26",
       "goals": "Metas",
-      "expectedOutcomes": "Resultados esperados"
+      "expectedOutcomes": "Resultados esperados",
+      "participatingProjects": "Projetos participantes",
+      "structure": "Estrutura do workshop"
     },
     "cards": {
       "globalSouth": {
@@ -1108,6 +1110,111 @@
         ],
         "leadershipName": "Oleksandra Strashok",
         "leadershipAffiliation": "Universidade de Ciências Ambientais e da Vida de Wroclaw, Departamento de Arquitetura Paisagista; Universidade Nacional de Ciências da Vida e Ambientais da Ucrânia, Departamento de Fitodesign e Arquitetura Paisagista; Associação Ucraniana de Infraestrutura Verde; Rede Mundial de Infraestrutura Verde"
+      },
+      "lifeBauhaus": {
+        "title": "LIFE Bauhaus. Projetos LIFE que constroem o Novo Bauhaus Europeu",
+        "description": "Nove projetos LIFE mostram como os valores do Novo Bauhaus Europeu — sustentabilidade, estética e inclusão — se tornam soluções práticas para cidades mais resilientes, sustentáveis e habitáveis.",
+        "leadershipTeam": [
+          {
+            "name": "Piedad Ribas",
+            "affiliation": "Comissão Europeia"
+          },
+          {
+            "name": "Gabriel Pérez",
+            "affiliation": "Universidade de Lleida, Espanha"
+          }
+        ],
+        "workingGroup": [
+          "Marta Casanova (Universidade de Génova, Itália)",
+          "Carlos Egio (Departamento de Ambiente, EuroVértice, Espanha)",
+          "Gabriel Pérez (Universidade de Lleida, Espanha)",
+          "Laura Herrera (Universidade de Lleida, Espanha)"
+        ],
+        "whyParagraphs": [
+          "O Programa LIFE tem desempenhado um papel fundamental na implementação do Novo Bauhaus Europeu (NBE), ao financiar projetos de demonstração que traduzem os seus valores essenciais de sustentabilidade, estética e inclusão em soluções práticas.",
+          "Através do apoio a soluções baseadas na natureza, reabilitação sustentável de edifícios, economia circular e abordagens participativas, o LIFE tem ajudado a validar metodologias inovadoras e a promover a sua replicação em toda a Europa, contribuindo para os objetivos da UE em matéria de clima, biodiversidade e desenvolvimento urbano sustentável.",
+          "Ao fazê-lo, o LIFE está a ajudar a dar vida aos princípios do Novo Bauhaus Europeu em municípios e comunidades de toda a Europa, possibilitando a implementação de soluções inovadoras para ambientes urbanos mais resilientes, sustentáveis e habitáveis, ao mesmo tempo que reforça a colaboração, os laços sociais e as comunidades locais."
+        ],
+        "mainObjective": "Este workshop pretende mostrar o impacto real de nove projetos LIFE que apoiam a iniciativa NBE, abordando de forma participativa os desafios futuros para alcançar um ambiente construído justo, saudável e belo. Durante o workshop serão abordados os seguintes aspetos-chave:",
+        "mainObjectiveBullets": [
+          "Impactos positivos dos projetos LIFE na formulação e implementação de políticas, cooperação com autoridades locais, cidadãos, regiões autónomas, etc.",
+          "Como podem os projetos LIFE passar de ações-piloto bem-sucedidas para mudanças duradouras e escaláveis? Que condições e ações são necessárias para garantir o seu impacto a longo prazo?",
+          "Como podem os projetos superar as principais barreiras à colaboração eficaz com os setores económicos e criar valor ambiental, social e económico partilhado?",
+          "Como pode ser reforçada a cooperação com as autoridades públicas para que as soluções inovadoras sejam integradas nas políticas, nos processos de planeamento e nos contratos públicos?",
+          "Como podem as partes interessadas e as comunidades locais ser envolvidas de forma significativa ao longo de todo o processo, e como podem os resultados inesperados ser transformados em aprendizagem e impacto mais amplos?",
+          "Exemplos de projetos LIFE de cidades verdes/Novo Bauhaus Europeu, incluindo soluções baseadas na natureza; abordagens arquitetónicas e urbanísticas inovadoras face às alterações climáticas; exemplos de arquitetura e planeamento urbano que tornam as cidades mais verdes: saúde, poluição do ar, mobilidade, combate às ondas de calor, etc."
+        ],
+        "mainObjectiveFooter": "Estes exemplos serão compilados numa ficha informativa que apresenta projetos LIFE inovadores de referência que contribuíram para mudanças transformadoras no ambiente urbano.",
+        "projects": [
+          {
+            "id": "bewooden",
+            "name": "LIFE BE-WoodEN",
+            "description": "Promove a construção sustentável em madeira através da educação, da inovação e de abordagens de co-design, apoiando bairros climaticamente neutros, sustentáveis e inclusivos, alinhados com os princípios do Novo Bauhaus Europeu.",
+            "link": "https://lifebewooden.unige.it"
+          },
+          {
+            "id": "bauhausing-europe",
+            "name": "LIFEBauhausingEurope",
+            "description": "Demonstra como a abordagem do Novo Bauhaus Europeu pode apoiar a transformação de edifícios públicos e bairros através da participação cidadã, da inovação social e da regeneração sustentável.",
+            "link": "https://eurovertice.eu/en/projects/life-bauhausing-europe/"
+          },
+          {
+            "id": "seedneb",
+            "name": "LIFE SeedNEB",
+            "description": "Desenvolve e testa soluções baseadas na natureza para melhorar a biodiversidade, a resiliência climática e a qualidade de vida nos bairros urbanos, contribuindo para lugares mais sustentáveis e inclusivos.",
+            "link": "https://eurovertice.eu/en/projects/life-seedneb/"
+          },
+          {
+            "id": "help",
+            "name": "LIFE HELP",
+            "description": "Apoia os municípios no desenvolvimento de abordagens integradas de governação ambiental, reforçando os processos de planeamento, a monitorização e a colaboração entre os atores locais."
+          },
+          {
+            "id": "greenme5",
+            "name": "LIFE GreenMe5",
+            "description": "Ajuda os municípios a implementar estratégias urbanas sustentáveis através da cooperação e de ações-piloto que abordam desafios ambientais como a biodiversidade, a qualidade do ar, a água e a gestão de resíduos.",
+            "link": "https://greenme5.fmrm.es/en/"
+          },
+          {
+            "id": "biomatine",
+            "name": "LIFE BIOMATINE",
+            "description": "Demonstra a utilização de materiais de isolamento inovadores de base biológica para melhorar o desempenho energético dos edifícios, reduzindo simultaneamente os impactos ambientais do setor da construção.",
+            "link": "https://openresearch.amsterdam/nl/page/125683/life-biomatine"
+          },
+          {
+            "id": "panelka",
+            "name": "LIFE Panelka 2.0",
+            "description": "Desenvolve soluções de reabilitação circulares e energeticamente eficientes para edifícios residenciais pré-fabricados, combinando materiais sustentáveis e abordagens construtivas inovadoras.",
+            "link": "https://build-up.ec.europa.eu/en/resources-and-tools/links/life23-pre-fr-panelka-20-project"
+          },
+          {
+            "id": "levels",
+            "name": "More LIFE to Level(s)",
+            "description": "Apoia a implementação do quadro europeu Level(s) para avaliar e melhorar o desempenho de sustentabilidade dos edifícios ao longo de todo o seu ciclo de vida.",
+            "link": "https://www.ogni.at/more-life-2-levels?cn-reloaded=1"
+          },
+          {
+            "id": "big4life",
+            "name": "BIG4LIFE",
+            "description": "Promove a sustentabilidade a longo prazo dos sistemas de vegetação integrada em edifícios através de estratégias melhoradas de manutenção, monitorização e gestão colaborativa em cidades mediterrânicas.",
+            "link": "https://www.big4life.eu"
+          }
+        ],
+        "structure": [
+          {
+            "heading": "Primeira parte (1h). Impacto dos projetos LIFE-Bauhaus",
+            "body": "Nesta sessão, cada um dos projetos participantes fará uma breve apresentação do seu impacto na formulação e implementação de políticas, cooperação com autoridades locais, cidadãos, regiões autónomas, etc."
+          },
+          {
+            "heading": "Segunda parte (1h). Desafios futuros",
+            "body": "Sessão participativa — Método World Café",
+            "bullets": [
+              "4 mesas · 4 rondas de 10 min · os participantes rodam · o anfitrião permanece fixo · cada grupo visita as 4 mesas",
+              "Representantes dos projetos LIFE Bauhaus a liderar os grupos",
+              "1–2 moderadores da sessão"
+            ]
+          }
+        ]
       }
     }
   },

@@ -448,6 +448,25 @@ export default function RegistrationClient() {
         {/* ── COUNTDOWN ── */}
         <CountdownBanner />
 
+        {/* ── PRICING ── */}
+        <div>
+          <Divider label={t("fees.dividerLabel")} />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {pricingData.map((item, i) => (
+              <PricingCard key={item.category} {...item} index={i} />
+            ))}
+          </div>
+
+          <div className="mt-10" style={{ borderTop: `1px solid ${CEMENT}08` }}>
+            {notesData.map((note) => (
+              <InfoNote key={note.key} icon={note.icon}>
+                {t(`notes.${note.key}`)}
+              </InfoNote>
+            ))}
+          </div>
+        </div>
+
         {/* ── STEPS ── */}
         <div>
           <Divider label={t("steps.title")} />
@@ -486,7 +505,7 @@ export default function RegistrationClient() {
             }}
           >
             <RegistrationConsent
-              heliceUrl="https://panel.helice.app/w/wgic26/214760/registration?preview=1"
+              heliceUrl="https://panel.helice.app/w/wgic26/214760/registration"
               labels={{
                 legalNoticeTitle: t("legalNoticeTitle"),
                 legalNoticeIntro: t("legalNoticeIntro"),
@@ -497,29 +516,11 @@ export default function RegistrationClient() {
                 checkboxRequiredError: t("checkboxRequiredError"),
                 rightsNote: t("rightsNote"),
                 continueButton: t("continueButton"),
+                redirectNote: t("redirectNote"),
                 privacyPolicy: t("privacyPolicy"),
               }}
             />
           </motion.div>
-        </div>
-
-        {/* ── PRICING ── */}
-        <div>
-          <Divider label={t("fees.dividerLabel")} />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {pricingData.map((item, i) => (
-              <PricingCard key={item.category} {...item} index={i} />
-            ))}
-          </div>
-
-          <div className="mt-10" style={{ borderTop: `1px solid ${CEMENT}08` }}>
-            {notesData.map((note) => (
-              <InfoNote key={note.key} icon={note.icon}>
-                {t(`notes.${note.key}`)}
-              </InfoNote>
-            ))}
-          </div>
         </div>
 
         {/* ── FAQ ── */}

@@ -40,13 +40,17 @@ const monthColors: Record<string, { stripe: string; monthText: string }> = {
 };
 
 /* ───────── Tarjeta magazine individual ───────── */
+const ROMAN_NUMERALS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
+
 function NewsletterCard({
   newsletter,
   index,
+  total,
   isLatest,
 }: {
   newsletter: Newsletter;
   index: number;
+  total: number;
   isLatest: boolean;
 }) {
   const [selectedLang, setSelectedLang] = useState(
@@ -66,7 +70,8 @@ function NewsletterCard({
 
   const monthShort =
     newsletter.date.split(" ")[0]?.substring(0, 3).toUpperCase() || "";
-  const volumeNum = ["I", "II", "III", "IV", "V"][index] || String(index + 1);
+  // La más antigua es Vol. I y la más reciente el volumen más alto.
+  const volumeNum = ROMAN_NUMERALS[total - 1 - index] || String(total - index);
 
   return (
     <motion.article
@@ -452,6 +457,7 @@ export default function NewslettersClient() {
               key={newsletter.id}
               newsletter={newsletter}
               index={index}
+              total={sorted.length}
               isLatest={index === 0}
             />
           ))}

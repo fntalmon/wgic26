@@ -23,6 +23,8 @@ export function PopupManager() {
 
   useEffect(() => {
     if (shownForPath.current === pathname) return;
+    // Nunca interrumpir el embudo de registro con pop-ups.
+    if (pathname.startsWith("/registration")) return;
 
     const earlyBirdShown = localStorage.getItem(EARLY_BIRD_KEY);
     const newsletterShown = localStorage.getItem(NEWSLETTER_KEY);

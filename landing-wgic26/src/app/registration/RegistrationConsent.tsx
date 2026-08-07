@@ -21,6 +21,7 @@ interface RegistrationConsentProps {
     checkboxRequiredError: string;
     rightsNote: string;
     continueButton: string;
+    redirectNote: string;
     privacyPolicy: string;
   };
 }
@@ -196,17 +197,23 @@ export default function RegistrationConsent({
           </Link>
         </p>
 
+        <p
+          className="text-[11px] leading-relaxed max-w-3xl"
+          style={{ color: CEMENT, opacity: 0.55 }}
+        >
+          {labels.redirectNote}
+        </p>
+
         <motion.button
           type="button"
           onClick={handleContinue}
-          whileHover={{ scale: mandatoryConsent ? 1.01 : 1 }}
-          whileTap={{ scale: mandatoryConsent ? 0.98 : 1 }}
-          className="flex items-center justify-center gap-3 py-4 px-8 text-[11px] font-medium tracking-[0.2em] transition-all duration-300 w-full"
+          whileHover={{ scale: 1.01 }}
+          whileTap={{ scale: 0.98 }}
+          className="flex items-center justify-center gap-3 py-4 px-8 text-[11px] font-medium tracking-[0.2em] transition-all duration-300 w-full cursor-pointer"
           style={{
-            backgroundColor: mandatoryConsent ? POTUS : `${POTUS}12`,
-            color: mandatoryConsent ? CACTUS : `${CEMENT}40`,
-            cursor: mandatoryConsent ? "pointer" : "not-allowed",
-            border: `1px solid ${mandatoryConsent ? POTUS : `${POTUS}15`}`,
+            backgroundColor: POTUS,
+            color: CACTUS,
+            border: `1px solid ${POTUS}`,
           }}
         >
           {labels.continueButton}
