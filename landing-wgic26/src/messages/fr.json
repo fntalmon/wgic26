@@ -273,7 +273,10 @@
     "it4sHeading": "Groupe de recherche IT4S",
     "it4sP1": "Le groupe de recherche IT4S de l'Université de Lleida est une équipe de recherche consolidée dédiée à l'exploration et à la promotion de technologies innovantes visant la durabilité et le développement durable dans les domaines de l'architecture et de l'ingénierie. Ils travaillent dans une variété de domaines allant de la conception de bâtiments durables et économes en énergie, à l'urbanisme et aux infrastructures vertes (comme les toits verts, les façades vertes, les systèmes de végétalisation verticaux) à l'agriculture, au paysage et à l'industrie durables, toujours avec une approche multidisciplinaire combinant l'ingénierie, l'architecture, les sciences de l'environnement et plus encore.",
     "it4sP2": "Grâce à la recherche, au conseil, à la diffusion des connaissances et aux collaborations avec des partenaires publics et privés, IT4S cherche à contribuer à des solutions respectueuses de l'environnement, économes en ressources et socialement responsables pour les bâtiments, les villes et les processus industriels.",
-    "visitIt4s": "Visitez le site Web IT4S"
+    "visitIt4s": "Visitez le site Web IT4S",
+    "big4lifeHeading": "Projet BIG4LIFE",
+    "big4lifeP1": "BIG4LIFE est un projet LIFE cofinancé par l'Union européenne axé sur l'intégration du végétal dans les bâtiments (toits verts, façades végétales et jardins urbains). Il réunit des centres de recherche, des municipalités et des entreprises pour promouvoir la transformation urbaine durable.",
+    "visitBig4life": "Visitez le site Web BIG4LIFE"
   },
   "aboutLocations": {
     "title": "Emplacements",

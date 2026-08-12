@@ -55,6 +55,24 @@ const UniversityOfLleida = async () => {
             </div>
           </div>
         </section>
+
+        <div className="w-full h-px bg-white/10"></div>
+
+        <section className="flex flex-col lg:flex-row gap-12 items-start">
+          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+            <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-2">{t("big4lifeHeading")}</h2>
+
+            <p>{t("big4lifeP1")}</p>
+
+            <div className="pt-4">
+              <Button asChild variant="yellow" className="w-fit">
+                <a href="https://www.big4life.eu" target="_blank" rel="noopener noreferrer">
+                  <Globe className="mr-2 h-4 w-4" /> {t("visitBig4life")}
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
