@@ -9,6 +9,7 @@ interface Speaker {
   id: string;
   image: string;
   name: string;
+  bio?: string;
 }
 
 const DEFAULT_AUTOPLAY_DELAY = 3000;
@@ -144,6 +145,11 @@ export function KeynoteSpeakersCarousel({
                 <span className="uppercase text-sm sm:text-base font-semibold text-white leading-tight block">
                   {speaker.name}
                 </span>
+                {speaker.bio && (
+                  <span className="mt-1 block text-xs text-white/70 leading-snug line-clamp-3">
+                    {speaker.bio}
+                  </span>
+                )}
               </div>
             </div>
           ))}

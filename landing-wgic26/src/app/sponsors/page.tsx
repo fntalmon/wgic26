@@ -30,6 +30,15 @@ const tierIcons: Record<string, React.ComponentType<{ className?: string; size?:
   mediaPartners: Newspaper,
 };
 
+// Escala descendente por tier, igual criterio que en la home: refleja el nivel/importancia de cada categoría.
+const tierLogoBox: Record<string, string> = {
+  organizedBy: "h-24 w-40",
+  elitePartners: "h-20 w-36",
+  gardenBigExhibitors: "h-16 w-32",
+  gardenMediumExhibitors: "h-12 w-28",
+  mediaPartners: "h-9 w-24",
+};
+
 const Sponsors = async () => {
   const t = await getTranslations("sponsorsPage");
   const home = await getTranslations("home");
@@ -115,7 +124,12 @@ const Sponsors = async () => {
                   </div>
                   <div className="flex flex-wrap justify-center gap-6">
                     {tier.logos.map((logo) => (
-                      <SponsorCard key={logo.href} logo={logo} visitLabel={t("visitWebsite")} />
+                      <SponsorCard
+                        key={logo.href}
+                        logo={logo}
+                        visitLabel={t("visitWebsite")}
+                        logoBoxClassName={tierLogoBox[tier.key]}
+                      />
                     ))}
                   </div>
                 </div>
@@ -132,7 +146,12 @@ const Sponsors = async () => {
                   {home("withTheSupportOf")}
                 </h2>
               </div>
-              <SupportersCarousel supporters={supporters} visibleCount={5} variant="light" />
+              <SupportersCarousel
+                supporters={supporters}
+                visibleCount={5}
+                variant="light"
+                logoBoxClassName={tierLogoBox.mediaPartners}
+              />
             </div>
           </div>
 

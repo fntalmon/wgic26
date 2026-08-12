@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { ArrowRight, FileUp, Menu, Ticket } from "lucide-react";
+import { ArrowRight, Menu, Ticket } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -154,44 +154,26 @@ const Navigation = () => {
           icon: <ArrowRight />,
         },
         {
+          title: t("theOrganisers"),
+          url: "/about/univeristy-of-lleida",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
           title: t("wgiNetwork"),
           url: "/about/wgi-network",
           description: "...",
           icon: <ArrowRight />,
         },
         {
-          title: t("universityLleida"),
-          url: "/about/univeristy-of-lleida",
+          title: t("committees"),
+          url: "/about/committees",
           description: "...",
           icon: <ArrowRight />,
         },
         {
-          title: t("locations"),
+          title: t("barcelonaLleida"),
           url: "/about/locations",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: t("organisationCommittee"),
-          url: "/about/organisation-committee",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: t("congressCommittee"),
-          url: "/about/congress-committee",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: t("specialIssues"),
-          url: "/program/special-issues",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: t("wginAwards"),
-          url: "/program/wgin-awards",
           description: "...",
           icon: <ArrowRight />,
         },
@@ -202,14 +184,14 @@ const Navigation = () => {
       url: "/program",
       items: [
         {
-          title: `${t("program")} · 27-30 ${month}`,
-          url: "/program/program",
+          title: `${t("fullProgramme")} · 27-30 ${month}`,
+          url: "/program/congress",
           description: "...",
           icon: <ArrowRight />,
         },
         {
-          title: `${t("programCongress")} · 27-28 ${month}`,
-          url: "/program/congress",
+          title: t("mainTopics"),
+          url: "/program/topics",
           description: "...",
           icon: <ArrowRight />,
         },
@@ -232,15 +214,31 @@ const Navigation = () => {
           icon: <ArrowRight />,
         },
         {
-          title: t("mainTopics"),
-          url: "/program/topics",
+          title: t("wginAwards"),
+          url: "/program/wgin-awards",
           description: "...",
           icon: <ArrowRight />,
         },
       ],
     },
-    { title: t("newsletters"), url: "/newsletters" },
-    { title: t("blog"), url: "/blog" },
+    {
+      title: t("news"),
+      url: "/blog",
+      items: [
+        {
+          title: t("blog"),
+          url: "/blog",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: t("newsletters"),
+          url: "/newsletters",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+      ],
+    },
     { title: t("keyNoteSpeakers"), url: "/key-note-speakers" },
     // { title: t("speakers"), url: "/speakers" },
     // { title: t("registration"), url: "/registration", disabled: true },
@@ -286,6 +284,17 @@ const Navigation = () => {
 
   return (
     <div className="fixed px-0 lg:px-4 lg:pt-1 top-0 lg:left-0 w-full z-50 transition-all duration-350 ease-in-out transform">
+      {/* Franja permanente: nombre completo, fechas y sede del congreso */}
+      <div
+        className={`w-full bg-cactus/90 backdrop-blur-xl px-4 lg:px-6 py-1.5 flex items-center justify-between gap-4 text-[9px] lg:text-[11px] uppercase tracking-[0.15em] text-white/80 transition-all duration-350 ${
+          showNavbar ? "translate-y-0" : "-translate-y-[200%]"
+        }`}
+      >
+        <span className="truncate">{t("stripName")}</span>
+        <span className="hidden sm:block whitespace-nowrap">
+          27–30 {month} · Barcelona &amp; Lleida
+        </span>
+      </div>
       <nav
         className={`w-full px-4 py-3 transition-all duration-350 ease-in-out transform border-0 border-white/0 ${
           showNavbar ? "translate-y-0" : "-translate-y-[160%]"
@@ -306,19 +315,17 @@ const Navigation = () => {
           </NavigationMenu>
           <div className="flex gap-2 items-center flex-shrink-0">
             <LanguageSwitcher />
-            <div className="flex gap-1 items-center">
-              <Button asChild variant="yellow" size="sm" className="text-[10px] 2xl:text-xs px-2 py-1 h-8 2xl:px-3">
-                <a href="/speakers">
-                  <FileUp size={16} />
-                  <span className="hidden 2xl:inline ml-1">{t("papersProjects")}</span>
-                </a>
-              </Button>
+            <div className="flex flex-col items-center gap-0.5">
               <Button asChild variant="default" size="sm" className="text-[10px] 2xl:text-xs px-2 py-1 h-8 2xl:px-3">
                 <a href="/registration">
                   <Ticket size={16} />
                   <span className="hidden 2xl:inline ml-1">{t("tickets")}</span>
                 </a>
               </Button>
+              {/* Tip de urgencia early bird: eliminar cuando termine la oferta (30/9) */}
+              <span className="text-[8px] 2xl:text-[9px] uppercase tracking-wider text-potus">
+                {t("ticketsUrgency")}
+              </span>
             </div>
           </div>
         </div>
@@ -334,49 +341,34 @@ const Navigation = () => {
             />
           </Link>
           <div className="flex gap-1 sm:gap-1.5">
-            <div className="flex gap-1 sm:gap-2">
-              <Button
-                asChild
-                variant="yellow"
-                size="lg"
-                className="hidden sm:flex"
-              >
-                <a href="/speakers">
-                  <FileUp size={24} />
-                  {t("papersProjects")}
-                </a>
-              </Button>
-              <Button
-                asChild
-                className="sm:hidden"
-                variant="yellow"
-                size="icon"
-              >
-                <a href="/speakers">
-                  <FileUp size={24} />
-                </a>
-              </Button>
-              <Button
-                asChild
-                variant="default"
-                size="lg"
-                className="hidden sm:flex"
-              >
-                <a href="/registration">
-                  <Ticket size={24} />
-                  {t("tickets")}
-                </a>
-              </Button>
-              <Button
-                asChild
-                className="sm:hidden"
-                variant="default"
-                size="icon"
-              >
-                <a href="/registration">
-                  <Ticket size={24} />
-                </a>
-              </Button>
+            <div className="flex flex-col items-center gap-0.5">
+              <div className="flex gap-1 sm:gap-2">
+                <Button
+                  asChild
+                  variant="default"
+                  size="lg"
+                  className="hidden sm:flex"
+                >
+                  <a href="/registration">
+                    <Ticket size={24} />
+                    {t("tickets")}
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  className="sm:hidden"
+                  variant="default"
+                  size="icon"
+                >
+                  <a href="/registration">
+                    <Ticket size={24} />
+                  </a>
+                </Button>
+              </div>
+              {/* Tip de urgencia early bird: eliminar cuando termine la oferta (30/9) */}
+              <span className="hidden sm:block text-[9px] uppercase tracking-wider text-potus">
+                {t("ticketsUrgency")}
+              </span>
             </div>
             <Sheet>
               <SheetTrigger asChild>
@@ -400,12 +392,6 @@ const Navigation = () => {
                   </Accordion>
                   <div className="flex flex-col gap-3 items-center pb-12">
                     <LanguageSwitcher />
-                    <Button asChild variant="yellow" size="lg">
-                      <a href="/speakers">
-                        <FileUp size={24} />
-                        {t("papersProjects")}
-                      </a>
-                    </Button>
                     <Button asChild variant="default" size="lg">
                       <a href="/registration">
                         <Ticket size={24} />

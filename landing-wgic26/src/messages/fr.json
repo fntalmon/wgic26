@@ -31,7 +31,14 @@
     "papersProjects": "Articles et projets",
     "language": "Langue",
     "mobileMenuTitle": "Menu de navigation",
-    "mobileMenuDescription": "Menu de navigation mobile pour WGIC26"
+    "mobileMenuDescription": "Menu de navigation mobile pour WGIC26",
+    "committees": "Comités",
+    "barcelonaLleida": "Barcelona & Lleida",
+    "ticketsUrgency": "-15% jusqu'au 30/9",
+    "stripName": "World Green Infrastructure Congress 2026",
+    "theOrganisers": "Les organisateurs",
+    "fullProgramme": "Programme complet",
+    "news": "Actualités"
   },
   "countdown": {
     "startingIn": "À partir de :"
@@ -65,8 +72,8 @@
     "sponsorsPartners": "Sponsors & Partners",
     "viewAllSponsors": "Voir tous les sponsors",
     "organizedBy": "Organized by",
-    "newsletterTitle": "Restez à jour",
-    "newsletterSubtitle": "Inscrivez-vous à notre newsletter",
+    "newsletterTitle": "Restez informé",
+    "newsletterSubtitle": "Actualités du programme, annonces de keynotes et dates limites d'inscription, directement dans votre boîte mail.",
     "newsletterEmailPlaceholder": "Adresse email",
     "newsletterFirstNamePlaceholder": "Prénom",
     "newsletterLastNamePlaceholder": "Nom de famille",
@@ -135,7 +142,31 @@
         "Ingénieurs civils",
         "Agronomes"
       ]
-    }
+    },
+    "introBlockTitle": "L'infrastructure verte est passée du projet pilote à la politique urbaine",
+    "introBlockP1": "Pendant des années, les toits verts, les forêts urbaines et les solutions fondées sur la nature étaient des choses que les villes expérimentaient. Aujourd'hui, elles figurent dans les codes du bâtiment, les budgets municipaux et les stratégies de santé publique du monde entier.",
+    "introBlockP2": "WGIC26 réunit celles et ceux qui écrivent ces règles et celles et ceux qui livrent les résultats : décideurs, chercheurs, architectes, ingénieurs, entrepreneurs et techniciens municipaux, pendant quatre jours à Barcelone et Lleida.",
+    "featuredSpeakersEyebrow": "Intervenants à la une",
+    "featuredSpeakersTitle": "Des voix internationales qui redéfinissent la vie des villes avec la nature",
+    "seeAllSpeakers": "Voir tous les intervenants",
+    "whereEyebrow": "Où cela se passe",
+    "whereTitle": "Quatre jours, deux villes, trois façons de participer",
+    "whereCongressDate": "27–28 octobre",
+    "whereCongressTitle": "Congrès",
+    "whereCongressText": "Keynotes, cinq sessions parallèles et +100 présentations orales sur deux journées complètes.",
+    "whereCongressPlace": "CCIB — Parc del Fòrum, Barcelone",
+    "whereVisitsDate": "29 octobre",
+    "whereVisitsTitle": "Visites techniques",
+    "whereVisitsText": "Trois itinéraires guidés à travers les toits verts, façades végétales et jardins urbains de Barcelone, expliqués sur site par les équipes qui les ont réalisés.",
+    "whereVisitsPlace": "Dans toute Barcelone · Petits groupes",
+    "whereWorkshopsDate": "30 octobre",
+    "whereWorkshopsTitle": "Ateliers",
+    "whereWorkshopsText": "Une journée de recherche et d'innovation à l'Universitat de Lleida, autour du projet BIG4LIFE sur le végétal intégré au bâtiment.",
+    "whereWorkshopsPlace": "Universitat de Lleida — Lleida",
+    "postersTitle": "Votre recherche, devant 30 pays.",
+    "postersText": "Les posters sont exposés pendant les quatre jours, avec des créneaux dédiés pour que les auteurs présentent leur travail. Les soumissions acceptées sont publiées dans les actes du congrès.",
+    "postersDeadline": "Clôture le 30 septembre",
+    "postersCta": "Soumettre votre poster"
   },
   "footer": {
     "title": "Congrès mondial des infrastructures vertes 2026 Barcelone-Lleida",
@@ -386,7 +417,7 @@
     "cancellationBody": "Après dépôt bancaire, les remboursements ne sont pas possibles.",
     "privacyPolicy": "politique de confidentialité",
     "legalNoticeTitle": "Informations sur la protection des données",
-    "legalNoticeIntro": "L'inscription est gérée via notre plateforme externe Helice. Avant de continuer, assurez-vous d'avoir lu et accepté ce qui suit :",
+    "legalNoticeIntro": "L'inscription est gérée via la plateforme externe Helice, où vos données personnelles sont collectées et où les consentements correspondants vous seront demandés. Vous pouvez consulter ci-dessous les informations sur la protection des données.",
     "legalNoticeHeliceNote": "Les consentements suivants doivent également être paramétrés dans le formulaire Helice, car c'est là que les données personnelles sont collectées.",
     "checkboxMandatory": "J'accepte la Politique de Confidentialité pour la gestion de mon inscription à un événement (Obligatoire).",
     "checkboxOptional": "Je souhaite recevoir des communications électroniques, des actualités, des newsletters et des informations commerciales liées au WGIC26 et aux activités futures (facultatif).",
@@ -401,6 +432,10 @@
     "ctaStep3": "Cliquez sur le bouton pour compléter vos informations sur la plateforme Helice.",
     "faqTitle": "Questions fréquemment posées",
     "faq": {
+      "included": {
+        "question": "Que comprend mon inscription ?",
+        "answer": "Tous les tarifs incluent l'accès aux sessions plénières et parallèles, à la zone d'exposition, aux pauses-café et aux déjeuners pendant le congrès, ainsi qu'au certificat de participation. Le dîner de gala nécessite un billet séparé."
+      },
       "cancel": {
         "question": "Puis-je annuler ou obtenir un remboursement?",
         "answer": "Une fois le paiement effectué, les remboursements ne sont pas possibles. En cas de situation exceptionnelle, contactez-nous à inquiry@wgic26.org."
@@ -413,7 +448,11 @@
         "question": "Ai-je besoin d'une facture?",
         "answer": "Vous pouvez demander une facture dans le formulaire de paiement Helice. Si vous avez besoin d'aide, écrivez à wgic2026.economics@udl.cat ou inquiry@wgic26.org."
       },
-      "dividerLabel": "QUESTIONS FRÉQUEMMENT POSÉES"
+      "dividerLabel": "QUESTIONS FRÉQUEMMENT POSÉES",
+      "presenting": {
+        "question": "Je présente un article — dois-je quand même m'inscrire ?",
+        "answer": "Oui. Les auteurs qui présentent un article ou un poster doivent s'inscrire avec le tarif Oral presentation ou Poster, qui inclut l'accès complet au congrès. Au moins un auteur par article doit être inscrit avant la date limite pour que l'article figure dans le programme et les actes."
+      }
     },
     "countdown": {
       "title": "EARLY BIRD JUSQU'EN SEPTEMBRE 2026",
@@ -440,7 +479,20 @@
     "dataProtection": {
       "title": "PROTECTION DES DONNÉES",
       "heliceNote": "L'inscription est gérée via notre plateforme externe Helice. Les consentements suivants doivent également être paramétrés dans le formulaire Helice, car c'est là que les données personnelles sont collectées."
-    }
+    },
+    "earlyBirdTag": "-15% early bird",
+    "earlyBirdUntil": "early bird · jusqu'au 30 sept",
+    "bestValue": "Meilleure option",
+    "congressIncluded": "Accès au congrès inclus",
+    "proofEnrolment": "Justificatif d'inscription requis",
+    "galaAddon": "À ajouter lors de l'inscription",
+    "feesSelect": "Sélectionner",
+    "chooseOption": "Choisissez votre option",
+    "feesIncludeNote": "Tous les tarifs incluent l'accès aux keynotes, aux sessions parallèles, à la zone d'exposition, aux pauses-café et au certificat de participation.",
+    "readyTitle": "Prêt(e) ?",
+    "readyText": "L'inscription prend environ trois minutes sur notre plateforme d'inscription, Helice.",
+    "readyButton": "S'inscrire maintenant",
+    "readyNote": "Paiement sécurisé · Facture disponible · Confirmation par email"
   },
   "speakersPage": {
     "title": "Soyez un orateur",
@@ -1356,5 +1408,19 @@
     "buttonLabel": "Télécharger le Programme (PDF)",
     "footerLabel": "Programme (PDF)",
     "note": "Version provisoire — dernière mise à jour : 8 août"
+  },
+  "committeesPage": {
+    "title": "Comités",
+    "description": "Les personnes et institutions qui façonnent le WGIC26.",
+    "introP1": "Le WGIC26 réunit 27 chercheurs et praticiens de 17 pays, aux côtés des institutions qui accueillent le congrès à Barcelone et Lleida.",
+    "introP2": "Des chercheurs, concepteurs et professionnels du secteur du monde entier examinent chaque soumission, président les sessions thématiques et façonnent le programme scientifique. Leur diversité — du végétal intégré au bâtiment à l'écologie urbaine, en passant par la gestion de l'eau et la santé publique — maintient le congrès connecté à la recherche actuelle comme à la pratique construite.",
+    "honourTitle": "Comité d'Honneur",
+    "honourSubtitle": "Les institutions qui accueillent et soutiennent le WGIC26",
+    "organisingTitle": "Comité d'Organisation",
+    "organisingSubtitle": "L'équipe qui réalise le congrès",
+    "scientificTitle": "Comité Scientifique",
+    "scientificSubtitle": "Évaluation par les pairs et programme scientifique",
+    "professionalTitle": "Comité Professionnel",
+    "professionalSubtitle": "Pratique du secteur et perspective du marché"
   }
 }

@@ -11,39 +11,54 @@ import {
   Award,
   Clock,
   Check,
+  ExternalLink,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import RegistrationConsent from "./RegistrationConsent";
+import Link from "next/link";
 
 /* ───────── Colores oficiales WGIC26 ───────── */
 const MONSTERA = "#234a38";
+const CACTUS = "#1a3d2e";
 const CEMENT = "#e8e8e6";
 const POTUS = "#a8e06c";
+const EARLY_BIRD_DEADLINE = new Date("2026-09-30T23:59:59Z").getTime();
+
+/* ───────── Configuración ─────────
+   EARLY_BIRD_ACTIVE: poner a `false` cuando termine el early bird
+   (30 sept 2026). Desaparecen la etiqueta -15% y las referencias
+   "early bird" de las tarjetas sin tocar nada más. */
+const EARLY_BIRD_ACTIVE = Date.now() < EARLY_BIRD_DEADLINE;
+const HELICE_URL = "https://panel.helice.app/w/wgic26/214760/registration";
+
+function openHelice() {
+  window.open(HELICE_URL, "_blank", "noopener,noreferrer");
+}
 
 /* ───────── Countdown Banner ───────── */
 function CountdownBanner() {
   const t = useTranslations("registrationPage");
-  const deadline = new Date("2026-09-30T23:59:59").getTime();
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, mins: 0 });
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, mins: 0, secs: 0 });
 
   useEffect(() => {
     const tick = () => {
-      const diff = Math.max(0, deadline - Date.now());
+      const diff = Math.max(0, EARLY_BIRD_DEADLINE - Date.now());
       setTimeLeft({
         days: Math.floor(diff / (1000 * 60 * 60 * 24)),
         hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
         mins: Math.floor((diff / (1000 * 60)) % 60),
+        secs: Math.floor((diff / 1000) % 60),
       });
     };
     tick();
-    const id = setInterval(tick, 60000);
+    const id = setInterval(tick, 1000);
     return () => clearInterval(id);
-  }, [deadline]);
+  }, []);
 
   const units = [
     { value: timeLeft.days, label: t("countdown.days") },
     { value: timeLeft.hours, label: t("countdown.hours") },
     { value: timeLeft.mins, label: t("countdown.minutes") },
+    { value: timeLeft.secs, label: "SEC" },
   ];
 
   return (
@@ -112,58 +127,26 @@ function CountdownBanner() {
   );
 }
 
-/* ───────── Timeline Step ───────── */
-function Step({
-  number,
-  title,
-  description,
-}: {
-  number: number;
-  title: string;
-  description: string;
-}) {
+/* ───────── Botón principal de registro (directo a Helice) ───────── */
+function RegisterButton({ label, large = false }: { label: string; large?: boolean }) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: number * 0.12 }}
-      className="flex gap-5"
+    <motion.button
+      type="button"
+      onClick={openHelice}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      className={`inline-flex items-center justify-center gap-3 font-medium tracking-[0.2em] transition-all duration-300 cursor-pointer ${
+        large ? "py-4 px-10 text-xs" : "py-3 px-6 text-[11px]"
+      }`}
+      style={{
+        backgroundColor: POTUS,
+        color: CACTUS,
+        border: `1px solid ${POTUS}`,
+      }}
     >
-      <div className="flex flex-col items-center">
-        <div
-          className="w-10 h-10 flex items-center justify-center text-sm font-light"
-          style={{
-            backgroundColor: `${POTUS}18`,
-            color: POTUS,
-            border: `1px solid ${POTUS}30`,
-          }}
-        >
-          {number}
-        </div>
-        {number < 3 && (
-          <div
-            className="w-px flex-1 min-h-[24px] mt-2"
-            style={{ backgroundColor: `${CEMENT}10` }}
-          />
-        )}
-      </div>
-
-      <div className="pb-6">
-        <h4
-          className="text-sm font-medium tracking-wide"
-          style={{ color: CEMENT }}
-        >
-          {title}
-        </h4>
-        <p
-          className="text-xs leading-relaxed mt-1.5 max-w-sm"
-          style={{ color: CEMENT, opacity: 0.45 }}
-        >
-          {description}
-        </p>
-      </div>
-    </motion.div>
+      {label}
+      <ExternalLink size={large ? 15 : 13} />
+    </motion.button>
   );
 }
 
@@ -172,16 +155,16 @@ function PricingCard({
   category,
   early,
   standard,
-  onsite,
+  note,
+  highlight = false,
   index,
-  icon,
 }: {
   category: string;
   early: string;
   standard: string;
-  onsite: string;
+  note?: string;
+  highlight?: boolean;
   index: number;
-  icon: React.ReactNode;
 }) {
   const t = useTranslations("registrationPage");
   const [hovered, setHovered] = useState(false);
@@ -194,7 +177,12 @@ function PricingCard({
       transition={{ duration: 0.5, delay: index * 0.08 }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="relative"
+      className="relative flex flex-col"
+      style={
+        highlight
+          ? { outline: `1px solid ${POTUS}`, outlineOffset: "0px" }
+          : { border: `1px solid ${CEMENT}10` }
+      }
     >
       <motion.div
         animate={{
@@ -203,73 +191,74 @@ function PricingCard({
             : `0 2px 12px rgba(0,0,0,0.15)`,
         }}
         transition={{ duration: 0.3 }}
+        className="flex flex-col flex-1"
       >
-        <motion.div
-          className="h-0.5 w-full"
-          style={{ backgroundColor: POTUS }}
-          animate={{ opacity: hovered ? 0.8 : 0.3 }}
-        />
-
-        <div className="p-6" style={{ backgroundColor: MONSTERA }}>
-          <div className="flex items-center gap-3 mb-6">
-            <div style={{ color: POTUS, opacity: 0.6 }}>{icon}</div>
+        <div className="p-6 flex flex-col flex-1" style={{ backgroundColor: MONSTERA }}>
+          <div className="flex items-start justify-between gap-3 mb-4">
             <span
-              className="text-xs tracking-[0.2em] font-medium"
-              style={{ color: CEMENT }}
+              className="text-xs tracking-[0.2em] font-medium uppercase"
+              style={{ color: highlight ? POTUS : CEMENT }}
             >
               {category}
             </span>
+            {EARLY_BIRD_ACTIVE && (
+              <span
+                className="text-[9px] tracking-[0.15em] font-bold uppercase px-2 py-1 whitespace-nowrap"
+                style={{ backgroundColor: POTUS, color: CACTUS }}
+              >
+                {t("earlyBirdTag")}
+              </span>
+            )}
           </div>
 
-          <div className="space-y-4">
-            <div className="flex items-baseline justify-between">
-              <span
-                className="text-[10px] tracking-[0.2em]"
-                style={{ color: CEMENT, opacity: 0.4 }}
-              >
-                {t("feesHeaders.early")}
-              </span>
-              <span className="text-lg font-light" style={{ color: POTUS }}>
-                {early}
-              </span>
+          <div className="mb-1">
+            <span className="text-3xl font-light" style={{ color: POTUS }}>
+              {early}
+            </span>
+          </div>
+          <div
+            className="text-[10px] tracking-[0.15em] uppercase mb-3"
+            style={{ color: CEMENT, opacity: 0.45 }}
+          >
+            {EARLY_BIRD_ACTIVE
+              ? t("earlyBirdUntil")
+              : t("feesHeaders.standard")}
+          </div>
+
+          <div
+            className="text-xs mb-4"
+            style={{ color: CEMENT, opacity: 0.55 }}
+          >
+            {standard}
+          </div>
+
+          {note && (
+            <div
+              className="text-xs mb-4"
+              style={{ color: POTUS, opacity: 0.85 }}
+            >
+              {note}
             </div>
+          )}
 
-            <div className="h-px w-full" style={{ backgroundColor: `${CEMENT}08` }} />
-
-            <div className="flex items-baseline justify-between">
-              <span
-                className="text-[10px] tracking-[0.2em]"
-                style={{ color: CEMENT, opacity: 0.35 }}
-              >
-                {t("feesHeaders.standard")}
-              </span>
-              <span
-                className="text-sm font-light"
-                style={{ color: CEMENT, opacity: 0.7 }}
-              >
-                {standard}
-              </span>
-            </div>
-
-            {onsite !== "-" && (
-              <>
-                <div className="h-px w-full" style={{ backgroundColor: `${CEMENT}08` }} />
-                <div className="flex items-baseline justify-between">
-                  <span
-                    className="text-[10px] tracking-[0.2em]"
-                    style={{ color: CEMENT, opacity: 0.3 }}
-                  >
-                    {t("feesHeaders.onsite")}
-                  </span>
-                  <span
-                    className="text-sm font-light"
-                    style={{ color: CEMENT, opacity: 0.5 }}
-                  >
-                    {onsite}
-                  </span>
-                </div>
-              </>
-            )}
+          <div className="mt-auto pt-2">
+            <button
+              type="button"
+              onClick={openHelice}
+              className="w-full flex items-center justify-center gap-2 py-3 text-[11px] tracking-[0.2em] font-medium uppercase transition-all duration-300 cursor-pointer hover:brightness-110"
+              style={
+                highlight
+                  ? { backgroundColor: POTUS, color: CACTUS }
+                  : {
+                      backgroundColor: "transparent",
+                      color: POTUS,
+                      border: `1px solid ${POTUS}60`,
+                    }
+              }
+            >
+              {t("feesSelect")}
+              <ExternalLink size={12} />
+            </button>
           </div>
         </div>
       </motion.div>
@@ -285,7 +274,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <div style={{ borderBottom: `1px solid ${CEMENT}08` }}>
       <button
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between py-5 text-left group"
+        className="w-full flex items-center justify-between py-5 text-left group cursor-pointer"
       >
         <span
           className="text-sm tracking-wide font-medium transition-opacity duration-300"
@@ -324,69 +313,174 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
   );
 }
 
+/* ───────── Data Protection: desplegable (la aceptación va después, en Helice) ───────── */
+function DataProtectionAccordion() {
+  const t = useTranslations("registrationPage");
+  const tLegal = useTranslations("legalPages");
+  const [open, setOpen] = useState(false);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      style={{
+        backgroundColor: MONSTERA,
+        border: `1px solid ${CEMENT}10`,
+      }}
+    >
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between p-6 lg:p-8 text-left cursor-pointer"
+      >
+        <span
+          className="text-sm tracking-wide font-medium"
+          style={{ color: CEMENT, opacity: open ? 1 : 0.7 }}
+        >
+          {t("legalNoticeTitle")}
+        </span>
+        <motion.span
+          animate={{ rotate: open ? 45 : 0 }}
+          transition={{ duration: 0.3 }}
+          className="text-xl font-light"
+          style={{ color: POTUS, opacity: open ? 1 : 0.5 }}
+        >
+          +
+        </motion.span>
+      </button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.35 }}
+            className="overflow-hidden"
+          >
+            <div className="px-6 lg:px-8 pb-8 flex flex-col gap-5">
+              <p
+                className="text-xs leading-relaxed max-w-3xl"
+                style={{ color: CEMENT, opacity: 0.5 }}
+              >
+                {t("legalNoticeIntro")}
+              </p>
+
+              <div
+                className="flex gap-3 p-4"
+                style={{
+                  backgroundColor: `${POTUS}08`,
+                  border: `1px solid ${POTUS}15`,
+                }}
+              >
+                <span
+                  className="text-[11px] leading-relaxed"
+                  style={{ color: CEMENT, opacity: 0.5 }}
+                >
+                  {tLegal("legalClauseText")}
+                </span>
+              </div>
+
+              <div
+                className="flex gap-3 p-4"
+                style={{
+                  backgroundColor: `${POTUS}08`,
+                  border: `1px solid ${POTUS}15`,
+                }}
+              >
+                <span
+                  className="text-[11px] leading-relaxed"
+                  style={{ color: CEMENT, opacity: 0.5 }}
+                >
+                  {t("dataProtection.heliceNote")}
+                </span>
+              </div>
+
+              <p
+                className="text-[10px] leading-relaxed max-w-3xl"
+                style={{ color: CEMENT, opacity: 0.35 }}
+              >
+                {t("rightsNote")}{" "}
+                <Link
+                  href="/privacy"
+                  className="hover:opacity-80 transition-opacity"
+                  style={{
+                    color: POTUS,
+                    textDecoration: "underline",
+                    textDecorationColor: `${POTUS}40`,
+                  }}
+                >
+                  {t("privacyPolicy")}
+                </Link>
+              </p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}
+
 /* ═══════════════════════════════════════
    COMPONENTE PRINCIPAL
    ═══════════════════════════════════════ */
 export default function RegistrationClient() {
   const t = useTranslations("registrationPage");
-  const tLegal = useTranslations("legalPages");
 
   const pricingData = [
     {
       category: t("fees.registrationTwoDays"),
       early: "400 EUR",
       standard: "460 EUR",
-      onsite: "520 EUR",
-      icon: <Users size={16} />,
+      note: t("bestValue"),
+      highlight: true,
     },
     {
       category: t("fees.registrationOneDay"),
       early: "200 EUR",
       standard: "230 EUR",
-      onsite: "260 EUR",
-      icon: <Calendar size={16} />,
     },
     {
       category: t("fees.oralPresentations"),
       early: "600 EUR",
       standard: "690 EUR",
-      onsite: "-",
-      icon: <FileText size={16} />,
+      note: t("congressIncluded"),
     },
     {
       category: t("fees.poster"),
       early: "500 EUR",
       standard: "575 EUR",
-      onsite: "-",
-      icon: <FileText size={16} />,
+      note: t("congressIncluded"),
     },
     {
       category: t("fees.students"),
       early: "150 EUR",
       standard: "173 EUR",
-      onsite: "195 EUR",
-      icon: <GraduationCap size={16} />,
+      note: t("proofEnrolment"),
     },
     {
       category: t("fees.companions"),
       early: "150 EUR",
       standard: "173 EUR",
-      onsite: "195 EUR",
-      icon: <Users size={16} />,
     },
     {
       category: t("fees.galaDinner"),
       early: "150 EUR",
       standard: "150 EUR",
-      onsite: "-",
-      icon: <Award size={16} />,
+      note: t("galaAddon"),
     },
   ];
 
   const faqData = [
-    { question: t("faq.cancel.question"), answer: t("faq.cancel.answer") },
+    { question: t("faq.included.question"), answer: t("faq.included.answer") },
     { question: t("faq.meals.question"), answer: t("faq.meals.answer") },
+    { question: t("faq.cancel.question"), answer: t("faq.cancel.answer") },
     { question: t("faq.invoice.question"), answer: t("faq.invoice.answer") },
+    {
+      question: t("faq.presenting.question"),
+      answer: t("faq.presenting.answer"),
+    },
   ];
 
   const notesData = [
@@ -428,7 +522,7 @@ export default function RegistrationClient() {
       style={{ borderBottom: `1px solid ${CEMENT}08` }}
     >
       <div
-        className="flex-shrink-0 mt-0.5"
+        className="shrink-0 mt-0.5"
         style={{ color: POTUS, opacity: 0.5 }}
       >
         {icon}
@@ -446,11 +540,61 @@ export default function RegistrationClient() {
     <section className="w-full justify-start text-xs">
       <div className="w-full max-w-6xl px-6 py-12 lg:py-20 flex flex-col gap-16 lg:gap-24 sm:px-4 lg:px-0 mx-auto">
         {/* ── COUNTDOWN ── */}
-        <CountdownBanner />
+        {EARLY_BIRD_ACTIVE && <CountdownBanner />}
 
-        {/* ── PRICING ── */}
+        {/* ── PRIMERA ENTRADA: REGISTRO DIRECTO ── */}
+        <div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="p-8 lg:p-12 flex flex-col items-center text-center gap-6"
+            style={{
+              backgroundColor: MONSTERA,
+              border: `1px solid ${CEMENT}10`,
+            }}
+          >
+            <h2
+              className="text-xl lg:text-2xl font-normal tracking-wide uppercase"
+              style={{ color: CEMENT }}
+            >
+              {t("platformTitle")}
+            </h2>
+            <p
+              className="text-sm leading-relaxed max-w-2xl"
+              style={{ color: CEMENT, opacity: 0.55 }}
+            >
+              {t("platformDescription")}
+            </p>
+            <RegisterButton label={t("platformButton")} large />
+            <p
+              className="text-[11px] leading-relaxed max-w-2xl"
+              style={{ color: CEMENT, opacity: 0.4 }}
+            >
+              {t("redirectNote")}
+            </p>
+          </motion.div>
+        </div>
+
+        {/* ── SEGUNDA ENTRADA: TARIFAS CON SELECT ── */}
         <div>
           <Divider label={t("fees.dividerLabel")} />
+
+          <div className="mb-10 flex flex-col gap-3">
+            <h3
+              className="text-2xl lg:text-3xl font-light"
+              style={{ color: CEMENT }}
+            >
+              {t("chooseOption")}
+            </h3>
+            <p
+              className="text-sm leading-relaxed max-w-3xl"
+              style={{ color: CEMENT, opacity: 0.5 }}
+            >
+              {t("feesIncludeNote")}
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {pricingData.map((item, i) => (
@@ -465,62 +609,6 @@ export default function RegistrationClient() {
               </InfoNote>
             ))}
           </div>
-        </div>
-
-        {/* ── STEPS ── */}
-        <div>
-          <Divider label={t("steps.title")} />
-          <div className="max-w-lg">
-            <Step
-              number={1}
-              title={t("steps.step1.title")}
-              description={t("steps.step1.description")}
-            />
-            <Step
-              number={2}
-              title={t("steps.step2.title")}
-              description={t("steps.step2.description")}
-            />
-            <Step
-              number={3}
-              title={t("steps.step3.title")}
-              description={t("steps.step3.description")}
-            />
-          </div>
-        </div>
-
-        {/* ── DATA PROTECTION ── */}
-        <div>
-          <Divider label={t("dataProtection.title")} />
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="p-8 lg:p-10"
-            style={{
-              backgroundColor: MONSTERA,
-              border: `1px solid ${CEMENT}10`,
-            }}
-          >
-            <RegistrationConsent
-              heliceUrl="https://panel.helice.app/w/wgic26/214760/registration"
-              labels={{
-                legalNoticeTitle: t("legalNoticeTitle"),
-                legalNoticeIntro: t("legalNoticeIntro"),
-                legalNoticeHeliceNote: t("dataProtection.heliceNote"),
-                legalClauseText: tLegal("legalClauseText"),
-                checkboxMandatory: t("checkboxMandatory"),
-                checkboxOptional: t("checkboxOptional"),
-                checkboxRequiredError: t("checkboxRequiredError"),
-                rightsNote: t("rightsNote"),
-                continueButton: t("continueButton"),
-                redirectNote: t("redirectNote"),
-                privacyPolicy: t("privacyPolicy"),
-              }}
-            />
-          </motion.div>
         </div>
 
         {/* ── FAQ ── */}
@@ -543,6 +631,44 @@ export default function RegistrationClient() {
             ))}
           </motion.div>
         </div>
+
+        {/* ── CTA FINAL "READY?" ── */}
+        <div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="p-8 lg:p-12 flex flex-col items-center text-center gap-5"
+            style={{
+              backgroundColor: MONSTERA,
+              border: `1px solid ${CEMENT}10`,
+            }}
+          >
+            <h2
+              className="text-2xl lg:text-3xl font-light"
+              style={{ color: CEMENT }}
+            >
+              {t("readyTitle")}
+            </h2>
+            <p
+              className="text-sm leading-relaxed max-w-xl"
+              style={{ color: CEMENT, opacity: 0.55 }}
+            >
+              {t("readyText")}
+            </p>
+            <RegisterButton label={t("readyButton")} large />
+            <p
+              className="text-[11px] tracking-wide"
+              style={{ color: CEMENT, opacity: 0.4 }}
+            >
+              {t("readyNote")}
+            </p>
+          </motion.div>
+        </div>
+
+        {/* ── PROTECCIÓN DE DATOS (desplegable; la aceptación se hace en Helice) ── */}
+        <DataProtectionAccordion />
       </div>
     </section>
   );

@@ -115,6 +115,13 @@ export default async function CongressPage() {
       />
       <section className="container mx-auto py-12 px-4">
         <div className="max-w-7xl mx-auto">
+          <AgendaClient
+            sessions={sessionsData.sessions || []}
+            facets={sessionsData.facets || {}}
+            tracks={tracks}
+            translations={translations}
+          />
+
           <div className="mb-12 space-y-8 text-white/80">
             <TextImage imageSrc="/img/Tibidabo 1.jpg" imageAlt={t("img1Alt")} imagePosition="right">
               <p className="text-justify">
@@ -134,13 +141,6 @@ export default async function CongressPage() {
               </p>
             </TextImage>
           </div>
-
-          <AgendaClient
-            sessions={sessionsData.sessions || []}
-            facets={sessionsData.facets || {}}
-            tracks={tracks}
-            translations={translations}
-          />
 
           <div className="mt-8 text-sm text-white/60 italic">
             {t("footerNote")}

@@ -2492,8 +2492,8 @@ const ExhibitorsClient = () => {
                   <Image
                     src="/img/logos/verdtical.webp"
                     alt="Verdtical"
-                    width={300}
-                    height={200}
+                    width={150}
+                    height={100}
                     loading="eager"
                     className="h-8 w-auto object-contain"
                   />

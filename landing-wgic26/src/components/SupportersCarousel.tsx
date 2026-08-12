@@ -9,6 +9,8 @@ interface SupportersCarouselProps {
   visibleCount?: number;
   secondsPerItem?: number;
   variant?: "dark" | "light";
+  // Caja fija del logo (alto + ancho). Por defecto, igual al tier "Media Partners".
+  logoBoxClassName?: string;
 }
 
 export function SupportersCarousel({
@@ -16,6 +18,7 @@ export function SupportersCarousel({
   visibleCount = 5,
   secondsPerItem = 3,
   variant = "dark",
+  logoBoxClassName = "h-9 w-20 md:h-12 md:w-24",
 }: SupportersCarouselProps) {
   // Precargar logos para evitar que aparezcan vacíos al inicio.
   useEffect(() => {
@@ -36,7 +39,7 @@ export function SupportersCarousel({
             href={supporter.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 flex items-center justify-center"
+            className={`shrink-0 flex items-center justify-center ${logoBoxClassName}`}
           >
             <Image
               src={supporter.src}
@@ -44,7 +47,7 @@ export function SupportersCarousel({
               width={280}
               height={200}
               loading="eager"
-              className={`${supporter.heightClass} w-auto object-contain`}
+              className="max-h-full max-w-full w-auto h-auto object-contain"
             />
           </a>
         ))}
@@ -71,7 +74,7 @@ export function SupportersCarousel({
             href={supporter.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 flex items-center justify-center"
+            className={`shrink-0 flex items-center justify-center ${logoBoxClassName}`}
           >
             <Image
               src={supporter.src}
@@ -79,7 +82,7 @@ export function SupportersCarousel({
               width={280}
               height={200}
               loading="eager"
-              className={`${supporter.heightClass} w-auto object-contain`}
+              className="max-h-full max-w-full w-auto h-auto object-contain"
             />
           </a>
         ))}
