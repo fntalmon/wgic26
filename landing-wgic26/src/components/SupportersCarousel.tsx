@@ -47,7 +47,7 @@ export function SupportersCarousel({
               width={280}
               height={200}
               loading="eager"
-              className="max-h-full max-w-full w-auto h-auto object-contain"
+              className={`h-full w-full object-contain ${supporter.imageClassName ?? ""}`}
             />
           </a>
         ))}
@@ -82,7 +82,7 @@ export function SupportersCarousel({
               width={280}
               height={200}
               loading="eager"
-              className="max-h-full max-w-full w-auto h-auto object-contain"
+              className={`h-full w-full object-contain ${supporter.imageClassName ?? ""}`}
             />
           </a>
         ))}
