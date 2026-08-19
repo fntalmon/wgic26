@@ -166,6 +166,22 @@ export const sponsorTiers: SponsorTier[] = [
         height: 200,
         className: "h-12 md:h-14 w-auto object-contain",
       },
+            {
+        href: "https://construnews.com/",
+        src: "/img/logos/construnews.jpg",
+        alt: "Scalae",
+        width: 280,
+        height: 200,
+        className: "h-12 md:h-14 w-auto object-contain",
+      },
+          {
+        href: "https://arquiterra.net",
+        src: "/img/logos/arquiterra.jpg",
+        alt: "Arquiterra",
+        width: 280,
+        height: 200,
+        className: "h-12 md:h-14 w-auto object-contain",
+      },
     ],
   },
 ];
