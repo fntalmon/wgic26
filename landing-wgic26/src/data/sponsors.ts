@@ -175,7 +175,7 @@ export const sponsorTiers: SponsorTier[] = [
         className: "h-12 md:h-14 w-auto object-contain",
       },
           {
-        href: "https://arquiterra.net",
+        href: "https://www.facebook.com/groups/arqui.terra/",
         src: "/img/logos/arquiterra.jpg",
         alt: "Arquiterra",
         width: 280,
