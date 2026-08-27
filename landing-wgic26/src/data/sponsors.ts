@@ -76,6 +76,14 @@ export const sponsorTiers: SponsorTier[] = [
         height: 300,
         className: "h-20 md:h-24 w-auto object-contain",
       },
+            {
+        href: "https://www.soprema.es/soluciones/cubiertas-verdes",
+        src: "/img/logos/Soprema.png",
+        alt: "Soprema",
+        width: 400,
+        height: 300,
+        className: "h-20 md:h-24 w-auto object-contain",
+      },
     ],
   },
   {
