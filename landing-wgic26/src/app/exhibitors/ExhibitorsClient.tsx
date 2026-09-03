@@ -1486,17 +1486,17 @@ const ExhibitorsClient = () => {
           <div className="flex flex-col gap-6">
             {/* ... rest of the content ... */}
             <h3 className="text-xl text-white uppercase">{t.partnerTitle}</h3>
-            <p className="text-white/80 text-justify">{t.partnerP1}</p>
-            <p className="text-white/80 text-justify">{t.partnerP2}</p>
+            <p className="text-white/80 text-left">{t.partnerP1}</p>
+            <p className="text-white/80 text-left">{t.partnerP2}</p>
 
             <h3 className="text-xl text-white uppercase">{t.sponsorTitle}</h3>
-            <p className="text-white/80 text-justify">{t.sponsorP1}</p>
+            <p className="text-white/80 text-left">{t.sponsorP1}</p>
 
             <div className="mt-6">
               <h3 className="text-xl text-white uppercase mb-6">
                 {t.exhibitorsTitle}
               </h3>
-              <p className="text-white/80 mb-4 text-justify">
+              <p className="text-white/80 mb-4 text-left">
                 {t.exhibitorsP1}
               </p>
             </div>
@@ -1980,7 +1980,7 @@ const ExhibitorsClient = () => {
 
             <div className="my-8">
               <h3 className="text-xl text-white uppercase mb-4">{t.sponsorship.standsTitle}</h3>
-              <p className="text-white/80 mb-4 text-justify">{t.sponsorship.standsConcept}</p>
+              <p className="text-white/80 mb-4 text-left">{t.sponsorship.standsConcept}</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                 <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col gap-3">
                   <div className="flex items-center justify-between">
@@ -2038,9 +2038,9 @@ const ExhibitorsClient = () => {
               <h4 className="text-lg text-white uppercase mb-3">
                 {t.venueTitle}
               </h4>
-              <p className="text-white/80 mb-4 text-justify">{t.venueP1}</p>
-              <p className="text-white/80 mb-4 text-justify">{t.venueP2}</p>
-              <p className="text-white/80 mb-4 text-justify">{t.venueP3}</p>
+              <p className="text-white/80 mb-4 text-left">{t.venueP1}</p>
+              <p className="text-white/80 mb-4 text-left">{t.venueP2}</p>
+              <p className="text-white/80 mb-4 text-left">{t.venueP3}</p>
               <Carousel
                 images={[
                   "/img/1.Exterior.jpg",

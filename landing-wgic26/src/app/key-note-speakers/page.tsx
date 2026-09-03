@@ -11,27 +11,27 @@ export const metadata: Metadata = {
     "Meet the keynote speakers confirmed for WGIC26, international experts and innovators leading this nature-based solutions conference in Barcelona.",
 };
 
+// Orden alfabético por apellido
 const speakerSlots = [
+  { id: "speaker7", image: "/img/speakers/dorothyaseyo.jpg" },
+  { id: "speaker10", image: "/img/speakers/Balsells.png" },
+  { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
+  { id: "speaker8", image: "/img/speakers/buhigas_maria.jpg" },
+  { id: "speaker16", image: "/img/speakers/carratala.jpeg" },
+  { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
+  { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },
+  { id: "speaker3", image: "/img/speakers/vicenteguallart.jpg" },
+  { id: "speaker15", image: "/img/speakers/lopez.png" },
+  { id: "speaker12", image: "/img/speakers/martinez.jpeg" },
+  { id: "speaker20", image: "/img/speakers/peck.png" },
+  { id: "speaker17", image: "/img/speakers/petito.png" },
+  { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
+  { id: "speaker13", image: "/img/speakers/VictoriaPerez.png" },
+  { id: "speaker9", image: "/img/speakers/JesusPerez.jpeg" },
+  { id: "speaker18", image: "/img/speakers/rolles.png" },
   { id: "speaker1", image: "/img/speakers/marcosros.jpg" },
   { id: "speaker2", image: "/img/speakers/salvadorrueda.jpg" },
-  { id: "speaker3", image: "/img/speakers/vicenteguallart.jpg" },
-  { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },
-  { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
-  { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
-  { id: "speaker7", image: "/img/speakers/dorothyaseyo.jpg" },
-  { id: "speaker8", image: "/img/speakers/buhigas_maria.jpg" },
-  { id: "speaker9", image: "/img/speakers/JesusPerez.jpeg" },
-  { id: "speaker10", image: "/img/speakers/Balsells.png" },
-
-  { id: "speaker12", image: "/img/speakers/martinez.jpeg" },
-  { id: "speaker13", image: "/img/speakers/VictoriaPerez.png" },
   { id: "speaker14", image: "/img/speakers/scuto.png" },
-  { id: "speaker15", image: "/img/speakers/lopez.png" },
-  { id: "speaker16", image: "/img/speakers/carratala.jpeg" },
-  { id: "speaker17", image: "/img/speakers/petito.png" },
-  { id: "speaker18", image: "/img/speakers/rolles.png" },
-  { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
-  { id: "speaker20", image: "/img/speakers/peck.png" },
 ] as const;
 
 const getInitials = (name: string) =>
@@ -55,11 +55,6 @@ const KeyNoteSpeakers = async () => {
       />
       <section className="w-full justify-start text-xs">
         <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-12">
-          <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base">
-            <p>{t("p1")}</p>
-            <p className="mt-4">{t("p2")}</p>
-          </div>
-
           {/* Speakers Grid */}
           <div className="w-full flex flex-col gap-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
@@ -87,7 +82,7 @@ const KeyNoteSpeakers = async () => {
                     )}
 
                     <h3 className="font-semibold text-lg">{name}</h3>
-                    <p className="text-sm text-white/60 mt-1 text-left leading-relaxed max-w-[45ch]">
+                    <p className="text-base md:text-lg text-white/70 mt-2 text-left leading-relaxed max-w-[45ch]">
                       {bio}
                     </p>
                   </article>

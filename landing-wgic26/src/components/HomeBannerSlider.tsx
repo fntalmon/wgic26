@@ -14,6 +14,11 @@ export interface BannerSlide {
   alt: string;
   /** Si se define, el slide será clickeable. */
   href?: string;
+  /** Texto superpuesto (traducido por idioma). Si se define, se renderiza
+      sobre el panel en blanco del banner limpio. */
+  title?: string;
+  subtitle?: string;
+  cta?: string;
 }
 
 interface HomeBannerSliderProps {
@@ -69,7 +74,7 @@ export function HomeBannerSlider({
 
         const images = (
           <>
-            {/* Desktop / tablet crop, banner ya trae su propio texto y logos. */}
+            {/* Desktop / tablet crop, banner limpio (foto + panel en blanco). */}
             <div className="hidden sm:block absolute inset-0">
               <Image
                 src={encodeURI(slide.desktop)}
@@ -94,6 +99,45 @@ export function HomeBannerSlider({
           </>
         );
 
+        const overlay = slide.title ? (
+          <>
+            {/* Panel de texto desktop (panel izquierdo del banner). */}
+            <div className="hidden sm:flex absolute inset-y-0 left-0 w-[52.26%] flex-col justify-center px-[4%]">
+              <p className="text-cactus font-bold leading-[1.08] tracking-tight text-[clamp(1.2rem,2.55vw,3.2rem)]">
+                {slide.title}
+              </p>
+              {slide.subtitle && (
+                <p className="text-neutral-600 leading-snug mt-[1.2em] text-[clamp(0.8rem,1.35vw,1.55rem)]">
+                  {slide.subtitle}
+                </p>
+              )}
+              {slide.cta && (
+                <span className="mt-[1.8em] inline-flex w-fit items-center gap-2 bg-potus text-cactus font-bold uppercase tracking-wide px-[1.4em] py-[0.75em] text-[clamp(0.75rem,1.15vw,1.3rem)]">
+                  {slide.cta}
+                  <span aria-hidden="true">→</span>
+                </span>
+              )}
+            </div>
+            {/* Panel de texto mobile (panel inferior del banner). */}
+            <div className="flex sm:hidden absolute inset-x-0 bottom-0 top-[35.6%] flex-col px-[7%] pt-[5%]">
+              <p className="text-cactus font-bold leading-[1.12] tracking-tight text-[clamp(1.35rem,6vw,2.1rem)]">
+                {slide.title}
+              </p>
+              {slide.subtitle && (
+                <p className="text-neutral-600 leading-snug mt-[0.7em] text-[clamp(0.95rem,3.9vw,1.3rem)]">
+                  {slide.subtitle}
+                </p>
+              )}
+              {slide.cta && (
+                <span className="mt-[1em] inline-flex w-fit items-center gap-2 bg-potus text-cactus font-bold uppercase tracking-wide px-[1.4em] py-[0.8em] text-[clamp(0.85rem,3.6vw,1.15rem)]">
+                  {slide.cta}
+                  <span aria-hidden="true">→</span>
+                </span>
+              )}
+            </div>
+          </>
+        ) : null;
+
         return (
           <div
             key={i}
@@ -109,9 +153,13 @@ export function HomeBannerSlider({
                 aria-label={slide.alt}
               >
                 {images}
+                {overlay}
               </a>
             ) : (
-              images
+              <>
+                {images}
+                {overlay}
+              </>
             )}
           </div>
         );

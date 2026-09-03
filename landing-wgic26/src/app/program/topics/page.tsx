@@ -1,20 +1,5 @@
 import PageHeader from "@/components/PageHeader";
-import TextImage from "@/components/TextImage";
-import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-} from "@/components/ui/table";
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion";
-import "./topics.css";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 
@@ -27,8 +12,33 @@ export const metadata: Metadata = {
 const Topics = async () => {
     const t = await getTranslations("topicsPage");
 
+    const mainTopics = [
+        { n: "1", label: t("strategiesPoliciesFunding") },
+        { n: "2", label: t("technologiesMarketStandards") },
+        { n: "3", label: t("projectsDesign") },
+        { n: "4", label: t("executionMaintenance") },
+        { n: "5", label: t("education") },
+    ];
+
+    const impacts = [
+        t("impactClimateResilience"),
+        t("impactWaterManagement"),
+        t("impactGreenSpaceManagement"),
+        t("impactBiodiversity"),
+        t("impactAirQuality"),
+        t("impactPlaceRegeneration"),
+        t("impactParticipatoryPlanning"),
+        t("impactHealthWellbeing"),
+    ];
+
+    const workshops = [
+        t("workshopGlobalSouth"),
+        t("workshopHealthWellbeing"),
+        t("workshopPostConflict"),
+    ];
+
     return (
-        <div className="justify-text">
+        <div>
             <PageHeader
                 title={t("title")}
                 description={t("description")}
@@ -38,173 +48,86 @@ const Topics = async () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="mb-12 space-y-8 text-white/80">
 
-                        <TextImage imageSrc="/img/varias/01 Bilbao_BCN.jpg" imageAlt={t("img1Alt")} imagePosition="right">
-                            <p>
-                                {t("p1")}
-                            </p>
-                        </TextImage>
+                        {/* Cover image: green roof with Barcelona Cathedral */}
+                        <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl">
+                            <Image
+                                src="/img/varias/01 IMG_20250827_114013.jpg"
+                                alt={t("img4Alt")}
+                                fill
+                                priority
+                                className="object-cover"
+                            />
+                        </div>
 
-                        <TextImage imageSrc="/img/varias/02 Porxos_BCN_02.jpg" imageAlt={t("img2Alt")} imagePosition="left">
-                            <p>
-                                {t("p2")}
-                            </p>
-                        </TextImage>
-
-                        <TextImage imageSrc="/img/varias/03 Moritz_BCN.jpg" imageAlt={t("img3Alt")} imagePosition="right">
-                            <p>
-                                {t("p3")}
-                            </p>
-                        </TextImage>
-
-                        <TextImage imageSrc="/img/varias/01 IMG_20250827_114013.jpg" imageAlt={t("img4Alt")} imagePosition="left">
-                            <p>
-                                {t("p4")}
-                            </p>
-                        </TextImage>
+                        <div className="space-y-6 leading-relaxed">
+                            <p>{t("p1")}</p>
+                            <p>{t("p2")}</p>
+                            <p>{t("p3")}</p>
+                            <p>{t("p4")}</p>
+                        </div>
 
                     </div>
 
-                    {/* Key Topics Accordion */}
+                    {/* Main Topics — validated list */}
                     <div className="mt-12 mb-12">
-                        <h3 className="text-2xl font-semibold text-white mb-6 uppercase">{t("accordionTitle")}</h3>
-                        <Accordion type="single" collapsible className="w-full">
-                            <AccordionItem value="topic1">
-                                <AccordionTrigger className="text-white text-lg hover:no-underline">
-                                    {t("accordion.topic1.title")}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-white/80 text-base leading-relaxed">
-                                    {t("accordion.topic1.description")}
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="topic2">
-                                <AccordionTrigger className="text-white text-lg hover:no-underline">
-                                    {t("accordion.topic2.title")}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-white/80 text-base leading-relaxed">
-                                    {t("accordion.topic2.description")}
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="topic3">
-                                <AccordionTrigger className="text-white text-lg hover:no-underline">
-                                    {t("accordion.topic3.title")}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-white/80 text-base leading-relaxed">
-                                    {t("accordion.topic3.description")}
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="topic4">
-                                <AccordionTrigger className="text-white text-lg hover:no-underline">
-                                    {t("accordion.topic4.title")}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-white/80 text-base leading-relaxed">
-                                    {t("accordion.topic4.description")}
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="topic5">
-                                <AccordionTrigger className="text-white text-lg hover:no-underline">
-                                    {t("accordion.topic5.title")}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-white/80 text-base leading-relaxed">
-                                    {t("accordion.topic5.description")}
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="topic6">
-                                <AccordionTrigger className="text-white text-lg hover:no-underline">
-                                    {t("accordion.topic6.title")}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-white/80 text-base leading-relaxed">
-                                    {t("accordion.topic6.description")}
-                                </AccordionContent>
-                            </AccordionItem>
-                        </Accordion>
-                    </div>
+                        <h3 className="text-2xl font-semibold text-white mb-8 uppercase flex items-center gap-4">
+                            <span className="w-10 h-px bg-potus"></span>
+                            {t("tableTitle")}
+                        </h3>
 
-                    {/* Unified Topics Table */}
-                    <div className="mt-6">
-                        <h3 className="text-base font-semibold text-white mb-4">{t("tableTitle")}</h3>
-                        <div className="overflow-x-auto">
-                            <Table className="w-full border-collapse border border-white/10">
-                                <TableHeader className="bg-monstera/30 border-b border-white/20">
-                                    <TableRow className="border-white/10 hover:bg-transparent">
-                                        <TableHead className="w-[50px] md:w-[80px] text-white font-bold">#</TableHead>
-                                        <TableHead className="text-white font-bold">{t("topicCategory")}</TableHead>
-                                    </TableRow>
-                                </TableHeader>
-                                <TableBody>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="font-medium text-base text-white/80 p-4">1</TableCell>
-                                        <TableCell className="text-base text-white/70 p-4">{t("strategiesPoliciesFunding")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="font-medium text-base text-white/80 p-4">2</TableCell>
-                                        <TableCell className="text-base text-white/70 p-4">{t("technologiesMarketStandards")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="font-medium text-base text-white/80 p-4">3</TableCell>
-                                        <TableCell className="text-base text-white/70 p-4">{t("projectsDesign")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="font-medium text-base text-white/80 p-4">4</TableCell>
-                                        <TableCell className="text-base text-white/70 p-4">{t("executionMaintenance")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="font-medium text-base text-white/80 p-4">5</TableCell>
-                                        <TableCell className="text-base text-white/70 p-4">{t("education")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 bg-white/5">
-                                        <TableCell className="font-medium text-base text-white/80 p-4">6</TableCell>
-                                        <TableCell className="text-base font-bold text-white p-4">{t("impacts")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactClimateResilience")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactWaterManagement")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactGreenSpaceManagement")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactBiodiversity")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactAirQuality")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactPlaceRegeneration")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactParticipatoryPlanning")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("impactHealthWellbeing")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base font-bold text-white p-4">{t("workshopsTitle")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("workshopGlobalSouth")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("workshopHealthWellbeing")}</TableCell>
-                                    </TableRow>
-                                    <TableRow className="border-white/10 hover:bg-white/5">
-                                        <TableCell className="p-4"></TableCell>
-                                        <TableCell className="text-base text-white/70 p-4 pl-8">{t("workshopPostConflict")}</TableCell>
-                                    </TableRow>
-                                </TableBody>
-                            </Table>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {mainTopics.map((topic) => (
+                                <div
+                                    key={topic.n}
+                                    className="group rounded-2xl border border-white/10 bg-white/5 p-6 flex items-center gap-5 hover:border-potus/40 hover:bg-white/[0.07] transition-all duration-300"
+                                >
+                                    <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-potus/15 text-potus text-xl font-bold group-hover:bg-potus group-hover:text-black transition-colors">
+                                        {topic.n}
+                                    </span>
+                                    <p className="text-white font-medium text-base leading-snug">
+                                        {topic.label}
+                                    </p>
+                                </div>
+                            ))}
+
+                            {/* Impacts */}
+                            <div className="rounded-2xl border border-potus/30 bg-potus/5 p-6 md:col-span-2 lg:col-span-3">
+                                <div className="flex items-center gap-5 mb-5">
+                                    <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-potus text-black text-xl font-bold">
+                                        6
+                                    </span>
+                                    <p className="text-white font-bold text-lg uppercase tracking-wide">
+                                        {t("impacts")}
+                                    </p>
+                                </div>
+                                <div className="flex flex-wrap gap-3">
+                                    {impacts.map((impact) => (
+                                        <span
+                                            key={impact}
+                                            className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80"
+                                        >
+                                            {impact}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Workshops */}
+                            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 md:col-span-2 lg:col-span-3">
+                                <p className="text-white font-bold text-lg uppercase tracking-wide mb-5">
+                                    {t("workshopsTitle")}
+                                </p>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    {workshops.map((workshop) => (
+                                        <div
+                                            key={workshop}
+                                            className="rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 text-sm text-white/80 leading-snug"
+                                        >
+                                            {workshop}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
 

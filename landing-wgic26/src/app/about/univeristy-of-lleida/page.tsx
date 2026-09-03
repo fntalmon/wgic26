@@ -20,7 +20,7 @@ const UniversityOfLleida = async () => {
 
       <div className="w-full max-w-7xl px-0 py-12 flex flex-col gap-20">
         <section className="flex flex-col lg:flex-row gap-12 items-start">
-          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
             <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-2">{t("udlHeading")}</h2>
 
             <p>{t("udlP1")}</p>
@@ -28,7 +28,7 @@ const UniversityOfLleida = async () => {
             <p>{t("udlP3")}</p>
 
             <div className="pt-4">
-              <Button asChild variant="yellow" className="w-fit">
+              <Button asChild variant="default" className="w-fit">
                 <a href="https://www.udl.cat/ca/" target="_blank" rel="noopener noreferrer">
                   <Globe className="mr-2 h-4 w-4" /> {t("visitUdl")}
                 </a>
@@ -40,14 +40,14 @@ const UniversityOfLleida = async () => {
         <div className="w-full h-px bg-white/10"></div>
 
         <section className="flex flex-col lg:flex-row gap-12 items-start">
-          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
             <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-2">{t("it4sHeading")}</h2>
 
             <p>{t("it4sP1")}</p>
             <p>{t("it4sP2")}</p>
 
             <div className="pt-4">
-              <Button asChild variant="yellow" className="w-fit">
+              <Button asChild variant="default" className="w-fit">
                 <a href="https://it4s.cat/" target="_blank" rel="noopener noreferrer">
                   <Globe className="mr-2 h-4 w-4" /> {t("visitIt4s")}
                 </a>
@@ -59,13 +59,13 @@ const UniversityOfLleida = async () => {
         <div className="w-full h-px bg-white/10"></div>
 
         <section className="flex flex-col lg:flex-row gap-12 items-start">
-          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
             <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-2">{t("big4lifeHeading")}</h2>
 
             <p>{t("big4lifeP1")}</p>
 
             <div className="pt-4">
-              <Button asChild variant="yellow" className="w-fit">
+              <Button asChild variant="default" className="w-fit">
                 <a href="https://www.big4life.eu" target="_blank" rel="noopener noreferrer">
                   <Globe className="mr-2 h-4 w-4" /> {t("visitBig4life")}
                 </a>

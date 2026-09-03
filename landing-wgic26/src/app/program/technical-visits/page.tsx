@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 
 const TechnicalVisits = async () => {
     const t = await getTranslations("technicalVisitsPage");
-    const home = await getTranslations("home");
 
     const itineraryA = [
         { name: "Caixa Forum Barcelona - Cultural", image: "/img/visits/Caixa Forum Barcelona - Cultural.jpg" },
@@ -54,7 +53,6 @@ const TechnicalVisits = async () => {
                     <div className="space-y-4 text-white/80 leading-relaxed">
                         <p>{t("intro1")}</p>
                         <p>{t("intro2")}</p>
-                        <p>{t("intro3")}</p>
                     </div>
 
                     <RegisterCTA
@@ -90,12 +88,6 @@ const TechnicalVisits = async () => {
                             </div>
                         </div>
                     ))}
-
-                    <RegisterCTA
-                        title={home("ctaJoinTitle")}
-                        subtitle={home("ctaJoinSubtitle")}
-                        buttonLabel={home("registerNow")}
-                    />
                 </div>
             </section>
         </div>

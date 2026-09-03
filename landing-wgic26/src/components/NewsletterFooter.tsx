@@ -2,6 +2,7 @@ import Link from "next/link";
 
 interface NewsletterFooterProps {
   language?: "es" | "en" | "ca" | "it" | "fr" | "pt" | "el" | "ar";
+  light?: boolean;
 }
 
 const content: Record<
@@ -119,8 +120,30 @@ const content: Record<
   },
 };
 
-const NewsletterFooter = ({ language = "en" }: NewsletterFooterProps) => {
+const NewsletterFooter = ({ language = "en", light = false }: NewsletterFooterProps) => {
   const langContent = content[language] || content.en;
+
+  if (light) {
+    return (
+      <div className="mx-6 sm:mx-10 mt-0 mb-8 pt-8 border-t border-neutral-200 text-neutral-500 text-xs leading-relaxed">
+        <h4 className="text-sm font-semibold text-neutral-700 mb-3 uppercase tracking-wide">
+          {langContent.title}
+        </h4>
+        <ul className="list-disc pl-4 space-y-1 mb-3">
+          {langContent.items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+        <p>
+          {langContent.moreInfo}{" "}
+          <Link href="/privacy" className="text-cactus font-medium hover:underline">
+            {langContent.privacyLink}
+          </Link>
+          .
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="mt-10 pt-8 border-t border-white/10 text-white/60 text-xs leading-relaxed">

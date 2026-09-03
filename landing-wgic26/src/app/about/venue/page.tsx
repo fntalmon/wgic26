@@ -24,13 +24,13 @@ const Venue = async () => {
                     <div className="flex flex-col lg:flex-row">
                         <div className="uppercase text-3xl md:text-5xl lg:text-6xl bg-sansiviera p-6 md:p-10 lg:p-16 leading-snug flex justify-center text-white">{t("barcelonaLabel1")}<br />{t("barcelonaLabel2")}<br />{t("barcelonaLabel3")}</div>
                         <div className="flex flex-col gap-8 p-8 lg:p-12">
-                            <div className="leading-loose text-base text-justify">
+                            <div className="leading-loose text-base text-left">
                                 {t("barcelonaP1")}
                             </div>
-                            <div className="leading-loose text-base text-justify">
+                            <div className="leading-loose text-base text-left">
                                 {t("barcelonaP2")}
                             </div>
-                            <div className="leading-loose text-base text-justify">
+                            <div className="leading-loose text-base text-left">
                                 {t("barcelonaP3")}
                             </div>
                         </div>
@@ -46,13 +46,13 @@ const Venue = async () => {
                 <div className="flex flex-col gap-0 text-white/80">
                     <div className="flex flex-col-reverse lg:flex-row">
                         <div className="flex flex-col gap-8 p-8 lg:p-12 mb-8">
-                            <div className="leading-loose text-base text-justify">
+                            <div className="leading-loose text-base text-left">
                                 {t("ccibP1")}
                             </div>
-                            <div className="leading-loose text-base text-justify">
+                            <div className="leading-loose text-base text-left">
                                 {t("ccibP2")}
                             </div>
-                            <div className="leading-loose text-base text-justify">
+                            <div className="leading-loose text-base text-left">
                                 {t("ccibP3")}
                             </div>
                         </div>

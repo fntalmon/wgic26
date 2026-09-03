@@ -11,22 +11,36 @@ const April2026Newsletter3FrenchNewsletter = () => {
         section="newsletters"
       />
 
-      <section className="container mx-auto py-12 px-4">
-        <div className="max-w-4xl mx-auto space-y-8 text-white/80">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-2">
+      <section className="w-full py-10 px-4">
+        <div className="max-w-[640px] mx-auto bg-white text-neutral-700 shadow-2xl">
+          <div className="px-6 sm:px-10 pt-8 pb-6 border-b border-neutral-200">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/newsletters/img/wgic26-logo.png"
+              alt="WGIC26"
+              className="h-14 w-auto mb-4"
+            />
+            <h2 className="text-2xl font-bold text-cactus">
               Newsletter d&apos;Avril 2026
             </h2>
           </div>
+          <div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/newsletters/img/nl3/photo-1.jpg"
+              alt=""
+              className="w-full block"
+            />
+          </div>
 
-          <div className="space-y-6">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
             <p className="text-lg leading-relaxed">
               Le 12e{" "}
               <a
                 href="https://www.wgic26.barcelona/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 Congrès Mondial sur l&apos;Infrastructure Verte{" "}
               </a>
@@ -35,11 +49,11 @@ const April2026Newsletter3FrenchNewsletter = () => {
             </p>
           </div>
 
-          <div className="space-y-6 pt-8 border-t border-white/10">
-            <h3 className="text-2xl font-bold text-white mb-2">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               Point fort de la session :
             </h3>
-            <h4 className="text-xl font-semibold text-white">
+            <h4 className="text-xl font-semibold text-neutral-800">
               Luigi Petito en tant que modérateur
             </h4>
             <p className="text-lg leading-relaxed">
@@ -65,15 +79,15 @@ const April2026Newsletter3FrenchNewsletter = () => {
                 href="https://www.wgic26.barcelona/program/program"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 Découvrez le programme complet de WGIC26.
               </a>
             </p>
           </div>
 
-          <div className="space-y-6 pt-8 border-t border-white/10">
-            <h3 className="text-2xl font-semibold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               Numéro spécial dans une revue Elsevier
             </h3>
             <p className="text-lg leading-relaxed">
@@ -95,8 +109,8 @@ const April2026Newsletter3FrenchNewsletter = () => {
             </p>
           </div>
 
-          <div className="space-y-6 pt-8 border-t border-white/10">
-            <h3 className="text-2xl font-semibold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               WGIC26 à REBUILD 2026
             </h3>
             <p className="text-lg leading-relaxed">
@@ -125,15 +139,15 @@ const April2026Newsletter3FrenchNewsletter = () => {
                 href="https://www.wgic26.barcelona/congress-committee"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 Découvrez qui compose le comité du congrès.
               </a>
             </p>
           </div>
 
-          <div className="space-y-6 pt-8 border-t border-white/10">
-            <h3 className="text-2xl font-semibold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               Restez connecté avec WGIC26
             </h3>
             <p>Nos canaux officiels sont désormais en ligne.</p>
@@ -143,7 +157,7 @@ const April2026Newsletter3FrenchNewsletter = () => {
                 href="https://www.linkedin.com/company/wgic"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 LinkedIn
               </a>
@@ -152,7 +166,7 @@ const April2026Newsletter3FrenchNewsletter = () => {
                 href="https://www.instagram.com/wgic2026/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 Instagram
               </a>{' '}
@@ -166,22 +180,30 @@ const April2026Newsletter3FrenchNewsletter = () => {
             </p>
           </div>
 
-          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/newsletters/img/nl3/photo-5.jpg"
+              alt=""
+              className="w-full block"
+            />
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-6 sm:px-10 py-8">
             <a
               href="https://www.wgic26.barcelona/exhibitors"
-              className="inline-block border border-white/20 text-white px-6 py-3 rounded-lg hover:bg-white/5 transition"
+              className="inline-block bg-cactus text-white font-semibold px-6 py-3 rounded hover:bg-monstera transition"
             >
               Devenez notre sponsor
             </a>
             <Link
               href="https://wgic26.barcelona/#newsletter"
-              className="inline-block bg-potus text-black font-semibold px-6 py-3 rounded-lg hover:opacity-95 transition"
+              className="inline-block bg-potus text-cactus font-semibold px-6 py-3 rounded hover:brightness-95 transition"
             >
               Abonnez-vous à la newsletter
             </Link>
           </div>
         
-          <NewsletterFooter language="fr" />
+          <NewsletterFooter language="fr" light />
         </div>
         </section>
     </div>

@@ -123,22 +123,17 @@ const SubMenuLink = ({ item }: { item: MenuItem }) => {
 
 const Navigation = () => {
   const t = useTranslations("navigation");
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  // La barra queda siempre fija y visible; solo cambia el fondo al hacer scroll.
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      setScrolled(currentScrollY > 80);
-      setShowNavbar(!(currentScrollY > 1400 && currentScrollY > lastScrollY));
-      setLastScrollY(currentScrollY);
+      setScrolled(window.scrollY > 80);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, []);
 
   const month = t("octAbbrev");
 
@@ -184,7 +179,7 @@ const Navigation = () => {
       url: "/program",
       items: [
         {
-          title: `${t("fullProgramme")} · 27-30 ${month}`,
+          title: `${t("fullProgramme")} · 27-28 ${month}`,
           url: "/program/congress",
           description: "...",
           icon: <ArrowRight />,
@@ -221,6 +216,7 @@ const Navigation = () => {
         },
       ],
     },
+    { title: t("keyNoteSpeakers"), url: "/key-note-speakers" },
     {
       title: t("news"),
       url: "/blog",
@@ -239,7 +235,6 @@ const Navigation = () => {
         },
       ],
     },
-    { title: t("keyNoteSpeakers"), url: "/key-note-speakers" },
     // { title: t("speakers"), url: "/speakers" },
     // { title: t("registration"), url: "/registration", disabled: true },
     {
@@ -284,21 +279,28 @@ const Navigation = () => {
 
   return (
     <div className="fixed px-0 lg:px-4 lg:pt-1 top-0 lg:left-0 w-full z-50 transition-all duration-350 ease-in-out transform">
-      {/* Franja permanente: nombre completo, fechas y sede del congreso */}
+      {/* Franja permanente: nombre completo, fechas y sede del congreso + early bird */}
       <div
-        className={`w-full bg-cactus/90 backdrop-blur-xl px-4 lg:px-6 py-1.5 flex items-center justify-between gap-4 text-[9px] lg:text-[11px] uppercase tracking-[0.15em] text-white/80 transition-all duration-350 ${
-          showNavbar ? "translate-y-0" : "-translate-y-[200%]"
-        }`}
+        className={`w-full bg-cactus/90 backdrop-blur-xl px-4 lg:px-6 py-1.5 flex items-center justify-between gap-4 text-[9px] lg:text-[11px] uppercase tracking-[0.15em] text-white/80 transition-all duration-350 translate-y-0`}
       >
         <span className="truncate">{t("stripName")}</span>
-        <span className="hidden sm:block whitespace-nowrap">
-          27–30 {month} · Barcelona &amp; Lleida
-        </span>
+        <div className="flex items-center gap-4 whitespace-nowrap">
+          <span className="hidden xl:inline">
+            27–30 {month} · Barcelona &amp; Lleida
+          </span>
+          {/* Early bird: eliminar cuando termine la oferta (30/9) */}
+          <a
+            href="https://panel.helice.app/w/wgic26/214760/registration"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-potus font-semibold hover:underline"
+          >
+            {t("stripCta")}
+          </a>
+        </div>
       </div>
       <nav
-        className={`w-full px-4 py-3 transition-all duration-350 ease-in-out transform border-0 border-white/0 ${
-          showNavbar ? "translate-y-0" : "-translate-y-[160%]"
-        } ${
+        className={`w-full px-4 py-3 transition-all duration-350 ease-in-out transform border-0 border-white/0 translate-y-0 ${
           scrolled
             ? "bg-cactus/50 backdrop-blur-xl pl-4 lg:pr-6 lg:py-1 py-4 lg:rounded-2xl border-white/8-1 lg:border-1 border-white/8"
             : "bg-transparent"
@@ -306,7 +308,7 @@ const Navigation = () => {
       >
         <div className="hidden lg:flex justify-between items-center w-full">
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <AnimatedLogo scrolled={scrolled} visible={showNavbar} />
+            <AnimatedLogo scrolled={scrolled} visible />
           </Link>
           <NavigationMenu className="flex-1">
             <NavigationMenuList className="flex 2xl:gap-1 xl:gap-0 gap-0 justify-center">
@@ -315,17 +317,26 @@ const Navigation = () => {
           </NavigationMenu>
           <div className="flex gap-2 items-center flex-shrink-0">
             <LanguageSwitcher />
-            <div className="flex flex-col items-center gap-0.5">
-              <Button asChild variant="default" size="sm" className="text-[10px] 2xl:text-xs px-2 py-1 h-8 2xl:px-3">
-                <a href="/registration">
-                  <Ticket size={16} />
-                  <span className="hidden 2xl:inline ml-1">{t("tickets")}</span>
+            <div className="flex items-center gap-2">
+              <Button asChild variant="default" size="lg" className="text-xs 2xl:text-sm px-4 2xl:px-5 h-10">
+                <a
+                  href="https://panel.helice.app/w/wgic26/214760/registration"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Ticket size={18} />
+                  <span className="ml-1">{t("tickets")}</span>
                 </a>
               </Button>
-              {/* Tip de urgencia early bird: eliminar cuando termine la oferta (30/9) */}
-              <span className="text-[8px] 2xl:text-[9px] uppercase tracking-wider text-potus">
+              {/* Badge early bird: eliminar cuando termine la oferta (30/9) */}
+              <a
+                href="https://panel.helice.app/w/wgic26/214760/registration"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden 2xl:inline-flex items-center bg-potus text-black text-[10px] font-bold uppercase tracking-wider rounded-full px-3 py-1.5 animate-pulse hover:animate-none"
+              >
                 {t("ticketsUrgency")}
-              </span>
+              </a>
             </div>
           </div>
         </div>
@@ -341,34 +352,36 @@ const Navigation = () => {
             />
           </Link>
           <div className="flex gap-1 sm:gap-1.5">
-            <div className="flex flex-col items-center gap-0.5">
-              <div className="flex gap-1 sm:gap-2">
-                <Button
-                  asChild
-                  variant="default"
-                  size="lg"
-                  className="hidden sm:flex"
+            <div className="flex gap-1 sm:gap-2">
+              <Button
+                asChild
+                variant="default"
+                size="lg"
+                className="hidden sm:flex"
+              >
+                <a
+                  href="https://panel.helice.app/w/wgic26/214760/registration"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <a href="/registration">
-                    <Ticket size={24} />
-                    {t("tickets")}
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  className="sm:hidden"
-                  variant="default"
-                  size="icon"
+                  <Ticket size={24} />
+                  {t("tickets")}
+                </a>
+              </Button>
+              <Button
+                asChild
+                className="sm:hidden"
+                variant="default"
+                size="icon"
+              >
+                <a
+                  href="https://panel.helice.app/w/wgic26/214760/registration"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <a href="/registration">
-                    <Ticket size={24} />
-                  </a>
-                </Button>
-              </div>
-              {/* Tip de urgencia early bird: eliminar cuando termine la oferta (30/9) */}
-              <span className="hidden sm:block text-[9px] uppercase tracking-wider text-potus">
-                {t("ticketsUrgency")}
-              </span>
+                  <Ticket size={24} />
+                </a>
+              </Button>
             </div>
             <Sheet>
               <SheetTrigger asChild>
@@ -393,7 +406,11 @@ const Navigation = () => {
                   <div className="flex flex-col gap-3 items-center pb-12">
                     <LanguageSwitcher />
                     <Button asChild variant="default" size="lg">
-                      <a href="/registration">
+                      <a
+                        href="https://panel.helice.app/w/wgic26/214760/registration"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Ticket size={24} />
                         {t("tickets")}
                       </a>

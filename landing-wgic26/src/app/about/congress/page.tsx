@@ -58,23 +58,23 @@ const Congress = async () => {
       </section>
 
       <div className="w-full max-w-7xl px-0 py-12 flex flex-col gap-20">
-        <section className="flex flex-col gap-8 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+        <section className="flex flex-col gap-8 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
           <TextImage imageSrc="/img/varias/02 Porxos_BCN_02 (1).jpg" imageAlt={t("img1Alt")} imagePosition="right">
-            <p className="text-justify">{t("mainP1")}</p>
-            <p className="text-justify">{t("mainP2")}</p>
+            <p className="text-left">{t("mainP1")}</p>
+            <p className="text-left">{t("mainP2")}</p>
           </TextImage>
 
           <TextImage imageSrc="/img/varias/01 IMG_20250827_114013.jpg" imageAlt={t("img2Alt")} imagePosition="left">
-            <p className="text-justify">{t("mainP3")}</p>
-            <p className="text-justify">{t("mainP4")}</p>
+            <p className="text-left">{t("mainP3")}</p>
+            <p className="text-left">{t("mainP4")}</p>
           </TextImage>
         </section>
 
         <div className="w-full h-px bg-white/10 my-6"></div>
 
-        <section className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+        <section className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
           <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-2">{t("historyTitle")}</h2>
-          <p className="text-justify">{t("historyP1")}</p>
+          <p className="text-left">{t("historyP1")}</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
             <div className="flex flex-col items-center gap-4">
@@ -112,7 +112,7 @@ const Congress = async () => {
 
         <div className="w-full h-px bg-white/10"></div>
 
-        <section className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+        <section className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
           <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-2">{t("wgicTitle")}</h2>
 
           <div className="bg-cactus/20 border border-cactus/30 rounded-lg p-6 mb-6">
@@ -179,7 +179,7 @@ const Congress = async () => {
           className="bg-cement text-mortar w-full py-12 px-6 rounded-lg"
         >
           <div className="flex flex-col gap-8 items-start">
-            <div className="flex-1 prose prose-invert max-w-none text-lg sm:text-xl leading-relaxed text-justify">
+            <div className="flex-1 prose prose-invert max-w-none text-lg sm:text-xl leading-relaxed text-left">
               <h2 className="uppercase text-3xl md:text-5xl lg:text-6xl mb-3">
                 {home("bannerTitle")}
               </h2>

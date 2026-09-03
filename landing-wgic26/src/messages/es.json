@@ -27,7 +27,7 @@
     "becomeSponsor": "Conviértete en Sponsor",
     "planYourStay": "Tu estancia",
     "travel": "Viaje",
-    "tickets": "Entradas",
+    "tickets": "Inscríbete ahora",
     "papersProjects": "Ponencias",
     "language": "Idioma",
     "mobileMenuTitle": "Menu de navegacion",
@@ -37,8 +37,9 @@
     "ticketsUrgency": "-15% hasta el 30/9",
     "stripName": "World Green Infrastructure Congress 2026",
     "theOrganisers": "Los organizadores",
-    "fullProgramme": "Programa completo",
-    "news": "Noticias"
+    "fullProgramme": "Programa",
+    "news": "Noticias",
+    "stripCta": "Inscríbete antes del 30 de septiembre y ahorra un 15%"
   },
   "countdown": {
     "startingIn": "Comienza en:"
@@ -99,7 +100,7 @@
     "keynoteSpeakersTitle": "Ponentes magistrales",
     "keynoteSpeakersIntro": "Conoce las voces lideres en infraestructura verde confirmadas para WGIC26.",
     "viewAllSpeakers": "Ver todos los ponentes magistrales",
-    "earlyBirdBanner": "Early bird hasta septiembre de 2026 — regístrate ahora y ahorra",
+    "earlyBirdBanner": "Inscríbete antes del 30 de septiembre y ahorra un 15%",
     "earlyBirdPopupEyebrow": "Oferta por tiempo limitado",
     "earlyBirdPopupTitle": "La tarifa early bird termina en septiembre de 2026",
     "earlyBirdPopupBody": "Asegura tu lugar en WGIC26 ahora y ahorra en tu inscripción antes de que suban los precios.",
@@ -166,13 +167,25 @@
     "postersTitle": "Tu investigación, ante 30 países.",
     "postersText": "Los pósters se exponen durante los cuatro días, con franjas dedicadas para que los autores presenten su trabajo. Las propuestas aceptadas se publican en las actas del congreso.",
     "postersDeadline": "Cierre: 30 de septiembre",
-    "postersCta": "Envía tu póster"
+    "postersCta": "Envía tu póster",
+    "slide1Title": "World Green Infrastructure Congress 2026",
+    "slide1Subtitle": "Los investigadores, diseñadores y urbanistas que construyen ciudades más verdes se reúnen en Barcelona y Lleida. Inscríbete antes del 30 de septiembre y ahorra un 15%.",
+    "slide1Cta": "Consigue tu entrada early bird",
+    "slide2Title": "Resiliencia climática. Agua. Salud. Biodiversidad. Empleo verde.",
+    "slide2Subtitle": "137 artículos de 31 países reunidos en torno a una pregunta: cómo la infraestructura verde construye un futuro urbano más saludable y seguro.",
+    "slide2Cta": "Explora los temas principales",
+    "slide3Title": "Dos días de congreso, un día por Barcelona y un día de investigación en Lleida",
+    "slide3Subtitle": "Seis keynotes a dúo, cinco sesiones paralelas y 98 presentaciones orales de 31 países.",
+    "slide3Cta": "Explora el programa",
+    "slide4Title": "Barcelona es el caso de estudio. Recórrela.",
+    "slide4Subtitle": "Visitas técnicas exclusivas a cubiertas vegetales y jardines verticales, guiadas por los equipos que los construyeron. Plazas limitadas.",
+    "slide4Cta": "Descubre las visitas técnicas"
   },
   "footer": {
     "title": "Congreso Mundial de Infraestructura Verde 2026 Barcelona-Lleida",
     "date": "27-30 OCT 2026",
     "usefulLinks": "Links utiles",
-    "tickets": "Entradas",
+    "tickets": "Inscríbete ahora",
     "papersProjects": "Papers and Projects",
     "program": "Programa",
     "workshops": "Workshops",
@@ -193,7 +206,7 @@
   "blogPage": {
     "eyebrow": "Blog",
     "title": "El Blog de WGIC26",
-    "subtitle": "Noticias, entrevistas con ponentes y novedades detrás de escena del World Green Infrastructure Congress 2026."
+    "subtitle": "Cubiertas verdes, calles inundadas, biodiversidad que no cuadra sobre el papel. Los debates que impulsan el WGIC26, antes de que abra el congreso."
   },
   "aboutCongress": {
     "title": "El Congreso",
@@ -341,8 +354,8 @@
     "barcelonaDescription": "Explora las maravillas arquitectonicas y la vibrante vida cultural de Barcelona.",
     "visitWebsite": "Visitar web",
     "cataloniaImgAlt": "Vista de Cataluña",
-    "cataloniaTitle": "Agencia Catalana de Turismo",
-    "cataloniaDescription": "Descubre el Grand Tour de Cataluña y la mejor gastronomia del mundo.",
+    "cataloniaTitle": "Siente nuestra cultura. Vive Cataluña.",
+    "cataloniaDescription": "Cataluña da forma a su paisaje tanto como su paisaje da forma a Cataluña. De las formas orgánicas de Gaudí a la costa mediterránea, del tejido urbano histórico al diseño contemporáneo, tradición e innovación crecen aquí lado a lado. Un patrimonio vivo que sigue inspirando la manera en que construimos e imaginamos el espacio.",
     "grandTour": "Grand Tour de Cataluña",
     "gastronomy": "Gastronomia en Cataluña",
     "hotelsTitle": "Hoteles recomendados",
@@ -351,12 +364,13 @@
     "intercontinentalAddress": "Avenida Rius y Taulet 1-3, 08004 Barcelona, España",
     "intercontinentalDescription": "Un moderno hotel de lujo situado cerca de Plaza de España y Montjuïc, con vistas desde la azotea, restaurantes, spa y espacios para eventos.",
     "intercontinentalRatesNote": "Las tarifas son las publicadas en la web del hotel. No hay tarifas especiales para grupos ni bloqueo de habitaciones disponible.",
-    "intercontinentalWebsite": "Visitar web del hotel"
+    "intercontinentalWebsite": "Visitar web del hotel",
+    "culturalTourism": "Turismo cultural en Cataluña"
   },
   "registrationPage": {
     "title": "Inscripcion",
     "description": "Unete al Congreso Mundial de Infraestructura Verde 2026. Registrate ahora para asegurar tu plaza.",
-    "earlyBirdBanner": "Early bird hasta septiembre de 2026 — regístrate ahora y ahorra",
+    "earlyBirdBanner": "Inscríbete antes del 30 de septiembre y ahorra un 15%",
     "platformTitle": "Plataforma de inscripcion",
     "platformDescription": "La inscripcion se gestiona a traves de nuestra plataforma colaboradora externa, Helice. La cuota de inscripcion cubre los costes durante el periodo del congreso, incluyendo almuerzos y pausas cafe. No incluye viaje ni alojamiento.",
     "platformButton": "Registrarse en plataforma Helice",
@@ -729,7 +743,7 @@
   },
   "keyNoteSpeakersPage": {
     "title": "Ponentes magistrales",
-    "description": "Conoce las voces lideres en infraestructura verde. WGIC 2026 contara con expertos internacionales, innovadores y referentes que impulsan el futuro de las infraestructuras verdes y las ciudades sostenibles.",
+    "description": "Conoce a las voces líderes en infraestructura verde: un elenco internacional de arquitectos, ingenieros, ecólogos y responsables de políticas, cada uno abordando las cuestiones que más importan a los profesionales que dan forma a las ciudades del mañana.",
     "p1": "WGIC26 contara con hasta 19 ponentes magistrales de todo el mundo, situados en la vanguardia de la investigacion, innovacion e implementacion en infraestructura verde.",
     "p2": "Nos complace anunciar que los primeros ponentes de WGIC 2026 ya estan confirmados.",
     "speakers": {
@@ -942,7 +956,7 @@
     "p1": "WGIC26 incluira talleres tematicos en paralelo a las sesiones de presentacion oral durante los dias uno y dos.",
     "thematicTitle": "Talleres tematicos",
     "expandHint": "Haz clic en cada taller para ver mas detalles",
-    "seeMore": "Ver mas",
+    "seeMore": "Ver más",
     "seeLess": "Ver menos",
     "day4Title": "Dia 4: Talleres de innovacion en la Universidad de Lleida",
     "day4Description": "Se ha previsto un cuarto dia adicional centrado especificamente en innovacion e investigacion dentro del sector de infraestructura verde.",
@@ -1274,6 +1288,9 @@
     }
   },
   "wginAwardsPage": {
+    "intro1": "Los World Green Infrastructure Awards reconocen los mejores proyectos, políticas e investigaciones de infraestructura verde del mundo.",
+    "intro2a": "Presentados por",
+    "intro2b": "los ganadores se anunciarán en directo en el WGIC26.",
     "title": "Premios WGIN",
     "description": "World Green Infrastructure Awards 2026",
     "nominationsTitle": "Nominaciones abiertas",
@@ -1281,7 +1298,7 @@
     "submitNomination": "Enviar nominacion",
     "p1": "World Green Infrastructure Network (WGIN) abre nominaciones para los World Green Infrastructure Awards 2026.",
     "p2": "Los WGIN Awards son referentes en infraestructura verde por su amplitud de categorias y su compromiso con la excelencia.",
-    "categoriesTitle": "Nueve categorias clave",
+    "categoriesTitle": "Los ganadores de los WGIN Awards 2026 se reconocen en nueve categorías clave.",
     "p3": "Las nominaciones podran presentarse hasta junio de 2026 a traves del sitio oficial de los premios. Las personas ganadoras se anunciaran durante WGIC 2026 en Barcelona.",
     "moreInfo": "Para mas informacion sobre los World Green Infrastructure Awards 2026 y enviar una nominacion, visita:",
     "joinTitle": "Sumate a la excelencia",
@@ -1290,39 +1307,39 @@
     "categories": {
       "greenRoofs": {
         "title": "Cubiertas verdes",
-        "description": "Reconoce proyectos ejemplares de cubiertas vegetadas."
+        "description": "Todo tipo de cubiertas construidas sobre espacios edificados, parcial o totalmente cubiertas de vegetación y un medio de cultivo, plantadas sobre una membrana impermeable."
       },
       "greenWalls": {
         "title": "Muros verdes",
-        "description": "Premia fachadas y soluciones destacadas de enverdecimiento integrado."
+        "description": "Proyectos terminados que incorporan vegetación vertical (una construcción con trepadoras directamente sobre las fachadas, celosías o sistemas modulares), tanto en interiores como en exteriores."
       },
       "greenNeighborhood": {
         "title": "Barrio verde",
-        "description": "Reconoce proyectos urbanos con diseno vegetativo multifuncional."
+        "description": "Iniciativas centradas en integrar la vegetación en entornos urbanos de acceso público o comunitarios, con amplios beneficios ambientales y sociales."
       },
       "policy": {
         "title": "Politica de infraestructura verde",
-        "description": "Destaca politicas publicas o privadas que aceleran la adopcion de infraestructura verde urbana."
+        "description": "Liderazgo individual o en equipo que desarrolla e implementa políticas y/o programas que aceleran la infraestructura verde urbana."
       },
       "researchAcademic": {
         "title": "Investigacion en infraestructura verde (Trabajo academico)",
-        "description": "Reconoce excelencia en investigacion y proyectos academicos relacionados."
+        "description": "Actividades y proyectos en sectores públicos o privados relacionados con la investigación en arquitectura y socioeconomía."
       },
       "researchStudent": {
         "title": "Investigacion en infraestructura verde (Posters estudiantiles)",
-        "description": "Reconoce ideas y proyectos innovadores del estudiantado."
+        "description": "Pósters de estudiantes que presentan investigación original, casos de estudio o diseños conceptuales relacionados con la infraestructura verde."
       },
       "livingSystems": {
         "title": "Sistemas vivos innovadores",
-        "description": "Premia proyectos que integran sistemas vivos en envolventes arquitectonicas."
+        "description": "Proyectos realizados con integración de sistemas vivos (por ejemplo, plantas, hongos o algas) sobre o dentro de la envolvente de un edificio."
       },
       "unintended": {
         "title": "Vegetacion no intencionada",
-        "description": "Reconoce el valor de la vegetacion natural no planificada y su evolucion."
+        "description": "Casos de vegetación no planificada que contribuyen a ecosistemas urbanos saludables, aportan belleza, calidad biofílica, resiliencia climática y más."
       },
       "champion": {
         "title": "Campeon de infraestructura verde",
-        "description": "Reconoce entidades con aportaciones significativas al sector."
+        "description": "Categoría que reconoce a personas, empresas u otras entidades que han hecho una contribución significativa a la industria de la infraestructura verde."
       }
     }
   },

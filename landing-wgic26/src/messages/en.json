@@ -27,18 +27,19 @@
     "becomeSponsor": "Become a Sponsor",
     "planYourStay": "Plan your stay",
     "travel": "Travel",
-    "tickets": "Tickets",
+    "tickets": "Register now",
     "papersProjects": "Papers and Projects",
     "language": "Language",
     "mobileMenuTitle": "Navigation Menu",
     "mobileMenuDescription": "Mobile navigation menu for WGIC26",
     "committees": "Committees",
     "barcelonaLleida": "Barcelona & Lleida",
-    "ticketsUrgency": "-15% until 30/9",
+    "ticketsUrgency": "-15% until Sept 30",
     "stripName": "World Green Infrastructure Congress 2026",
     "theOrganisers": "The Organisers",
-    "fullProgramme": "Full Programme",
-    "news": "News"
+    "fullProgramme": "Program",
+    "news": "News",
+    "stripCta": "Register before September 30 and save 15%"
   },
   "countdown": {
     "startingIn": "Starting in:"
@@ -73,7 +74,7 @@
     "viewAllSponsors": "View all sponsors",
     "organizedBy": "Organized by",
     "newsletterTitle": "Stay in the loop",
-    "newsletterSubtitle": "Programme updates, keynote announcements and registration deadlines, straight to your inbox.",
+    "newsletterSubtitle": "Program updates, keynote announcements and registration deadlines, straight to your inbox.",
     "newsletterEmailPlaceholder": "Email address",
     "newsletterFirstNamePlaceholder": "First name",
     "newsletterLastNamePlaceholder": "Last name",
@@ -99,7 +100,7 @@
     "keynoteSpeakersTitle": "Keynote Speakers",
     "keynoteSpeakersIntro": "Meet the leading voices in green infrastructure confirmed for WGIC26.",
     "viewAllSpeakers": "View all keynote speakers",
-    "earlyBirdBanner": "Early bird ends September 2026 — register now and save",
+    "earlyBirdBanner": "Register before September 30 and save 15%",
     "earlyBirdPopupEyebrow": "Limited-time offer",
     "earlyBirdPopupTitle": "Early bird pricing ends September 2026",
     "earlyBirdPopupBody": "Secure your spot at WGIC26 now and save on your registration before prices go up.",
@@ -166,13 +167,25 @@
     "postersTitle": "Your research, in front of 30 countries.",
     "postersText": "Posters go on display for all four days, with dedicated slots for authors to present their work. Accepted submissions are published in the congress proceedings.",
     "postersDeadline": "Closes 30 September",
-    "postersCta": "Submit your poster"
+    "postersCta": "Submit your poster",
+    "slide1Title": "World Green Infrastructure Congress 2026",
+    "slide1Subtitle": "The researchers, designers and city-makers building greener cities meet in Barcelona and Lleida. Register before September 30 and save 15%.",
+    "slide1Cta": "Get your early bird ticket",
+    "slide2Title": "Climate resilience. Water. Health. Biodiversity. Green jobs.",
+    "slide2Subtitle": "137 papers from 31 countries, gathered around one question: how green infrastructure builds a healthier and safer urban future.",
+    "slide2Cta": "Explore the main topics",
+    "slide3Title": "Two days of congress, one day across Barcelona, one day of research in Lleida",
+    "slide3Subtitle": "Six duet keynotes, five parallel tracks and 98 oral presentations from 31 countries.",
+    "slide3Cta": "Explore the programme",
+    "slide4Title": "Barcelona is the case study. Walk through it.",
+    "slide4Subtitle": "Exclusive technical visits to green roofs and vertical gardens, guided by the teams that built them. Limited places.",
+    "slide4Cta": "Discover the technical visits"
   },
   "footer": {
     "title": "World Green Infrastructure Congress 2026 Barcelona-Lleida",
     "date": "27-30 OCT 2026",
     "usefulLinks": "Useful Links",
-    "tickets": "Tickets",
+    "tickets": "Register now",
     "papersProjects": "Papers and Projects",
     "program": "Program",
     "workshops": "Workshops",
@@ -193,7 +206,7 @@
   "blogPage": {
     "eyebrow": "Blog",
     "title": "The WGIC26 Blog",
-    "subtitle": "News, speaker highlights, and behind-the-scenes updates from the World Green Infrastructure Congress 2026."
+    "subtitle": "Green roofs, flooded streets, biodiversity that doesn't add up on paper. The debates driving WGIC26, before the congress opens."
   },
   "aboutCongress": {
     "title": "The Congress",
@@ -341,8 +354,8 @@
     "barcelonaDescription": "Explore the architectural wonders and vibrant cultural life of Barcelona.",
     "visitWebsite": "Visit website",
     "cataloniaImgAlt": "View of Catalonia",
-    "cataloniaTitle": "Catalan Tourism Agency",
-    "cataloniaDescription": "Discover the Grand Tour of Catalonia and the world's best gastronomy.",
+    "cataloniaTitle": "Feel our culture. Live Catalonia.",
+    "cataloniaDescription": "Catalonia shapes its landscape as much as its landscape shapes Catalonia. From Gaudí's organic forms to the Mediterranean coastline, from historic urban fabric to contemporary design, tradition and innovation grow side by side here. A living heritage that keeps inspiring the way we build and imagine space.",
     "grandTour": "Grand Tour of Catalonia",
     "gastronomy": "Gastronomy in Catalonia",
     "hotelsTitle": "Recommended hotels",
@@ -351,12 +364,13 @@
     "intercontinentalAddress": "Avenida Rius y Taulet 1-3, 08004 Barcelona, Spain",
     "intercontinentalDescription": "A modern luxury hotel located near Plaza de España and Montjuïc, with rooftop views, restaurants, spa and event spaces.",
     "intercontinentalRatesNote": "Rates are those published on the hotel website. Special group rates and room blocks are not available.",
-    "intercontinentalWebsite": "Visit hotel website"
+    "intercontinentalWebsite": "Visit hotel website",
+    "culturalTourism": "Cultural tourism in Catalonia"
   },
   "registrationPage": {
     "title": "Registration",
     "description": "Join the World Green Infrastructure Congress 2026. Register now to secure your place.",
-    "earlyBirdBanner": "Early bird ends September 2026 — register now and save",
+    "earlyBirdBanner": "Register before September 30 and save 15%",
     "platformTitle": "Registration platform",
     "platformDescription": "Registration is managed through our external partner platform, Helice. The registration fee covers costs during the congress period, including lunches and coffee breaks. It does not include travel or accommodation.",
     "platformButton": "Register on Helice platform",
@@ -387,7 +401,7 @@
       "dividerLabel": "FREQUENTLY ASKED QUESTIONS",
       "presenting": {
         "question": "I'm presenting — do I still need to register?",
-        "answer": "Yes. Authors presenting a paper or poster must register with the Oral presentation or Poster fee, which includes full congress access. At least one author per paper must register before the deadline for the paper to appear in the programme and proceedings."
+        "answer": "Yes. Authors presenting a paper or poster must register with the Oral presentation or Poster fee, which includes full congress access. At least one author per paper must register before the deadline for the paper to appear in the program and proceedings."
       }
     },
     "keyDatesTitle": "Key dates",
@@ -729,7 +743,7 @@
   },
   "keyNoteSpeakersPage": {
     "title": "Keynote Speakers",
-    "description": "Meet the leading voices in green infrastructure. WGIC 2026 will feature international experts, innovators, and thought leaders driving the future of green infrastructure and sustainable cities.",
+    "description": "Meet the leading voices in green infrastructure: an international line-up of architects, engineers, ecologists and policymakers, each addressing the questions that matter most to the professionals shaping tomorrow's cities.",
     "p1": "WGIC26 will feature up to 19 keynote speakers from around the world, positioned at the forefront of research, innovation, and implementation in green infrastructure.",
     "p2": "We are pleased to announce that the first speakers for WGIC 2026 are now confirmed.",
     "speakers": {
@@ -831,7 +845,7 @@
     "title": "Innovation Day - 30 October",
     "intro1": "As part of the Innovation Day at Parc Agrobiotech Lleida, participants can choose between two hands-on workshops focused on different aspects of urban green infrastructure.",
     "intro2": "Participation is limited to 50 attendees. A bus service from Barcelona to Lleida and back will be available for registered participants.",
-    "intro3": "The programme will run from 10:00 to 18:00, and includes the workshops, lunch, a guided visit to La Seu Vella — Lleida's most iconic historical landmark — and admission to the Museu de Lleida.",
+    "intro3": "The program will run from 10:00 to 18:00, and includes the workshops, lunch, a guided visit to La Seu Vella — Lleida's most iconic historical landmark — and admission to the Museu de Lleida.",
     "workshop1Title": "Workshop 1: Bugs, Cities and Green Roofs",
     "workshop1Languages": "English - Spanish",
     "workshop1Description": "Small creatures. Big impact. Discover the hidden world above our cities. Where urban ecology meets real-world action. Learn how arthropods shape healthier, greener and more resilient cities, while discovering the science and practice behind sustainable urban biodiversity. Join experts to explore how insects, biodiversity and green roofs are transforming urban environments into thriving ecosystems.",
@@ -867,7 +881,7 @@
     "congressDayLabel": "Days 1–2 · Barcelona",
     "congressDescription": "Plenary sessions, keynotes and parallel rooms across the two main congress days.",
     "workshopsDayLabel": "During the Congress · Barcelona",
-    "workshopsDescription": "Interactive sessions on key WGIC26 topics, held alongside the congress programme.",
+    "workshopsDescription": "Interactive sessions on key WGIC26 topics, held alongside the congress program.",
     "technicalVisitsDayLabel": "Day 3 · Barcelona",
     "technicalVisitsDescription": "Guided itineraries to iconic green roofs and green façades across Barcelona.",
     "innovationDayDayLabel": "Day 4 · Lleida",
@@ -1274,6 +1288,9 @@
     }
   },
   "wginAwardsPage": {
+    "intro1": "The World Green Infrastructure Awards recognise the world's best green infrastructure projects, policies and research.",
+    "intro2a": "Presented by",
+    "intro2b": "the winners will be announced live at WGIC26.",
     "title": "WGIN Awards",
     "description": "World Green Infrastructure Awards 2026",
     "nominationsTitle": "Nominations open",
@@ -1281,7 +1298,7 @@
     "submitNomination": "Submit nomination",
     "p1": "World Green Infrastructure Network (WGIN) opens nominations for the World Green Infrastructure Awards 2026.",
     "p2": "The WGIN Awards are benchmarks in green infrastructure for their breadth of categories and their commitment to excellence.",
-    "categoriesTitle": "Nine key categories",
+    "categoriesTitle": "The winners of the WGIN Awards 2026 are recognised in nine key categories.",
     "p3": "Nominations may be submitted until June 2026 through the official awards website. Winners will be announced during WGIC 2026 in Barcelona.",
     "moreInfo": "For more information about the World Green Infrastructure Awards 2026 and to submit a nomination, visit:",
     "joinTitle": "Join excellence",
@@ -1290,39 +1307,39 @@
     "categories": {
       "greenRoofs": {
         "title": "Green Roofs",
-        "description": "Recognizes exemplary vegetated roof projects."
+        "description": "All types of roofs constructed over built spaces, partially or completely covered with vegetation and a growing medium, planted over a waterproofing membrane."
       },
       "greenWalls": {
         "title": "Green Walls",
-        "description": "Rewards outstanding facades and integrated greening solutions."
+        "description": "Completed projects featuring vertical greenery (a construction with climbers directly on the facades, trellises, or as modular systems), inside and outside buildings."
       },
       "greenNeighborhood": {
-        "title": "Green Neighborhood",
-        "description": "Recognizes urban projects with multifunctional vegetative design."
+        "title": "Green Neighbourhood",
+        "description": "Initiatives focused on integrating greenery into publicly accessible or community urban environments with comprehensive environmental and social benefits."
       },
       "policy": {
         "title": "Green Infrastructure Policy",
-        "description": "Highlights public or private policies that accelerate the adoption of urban green infrastructure."
+        "description": "Individual or team leadership that develops and implements policies and/or programmes which result in the acceleration of urban green infrastructure."
       },
       "researchAcademic": {
-        "title": "Green Infrastructure Research (Academic Work)",
-        "description": "Recognizes excellence in research and related academic projects."
+        "title": "Green Infrastructure Research: Academic Work",
+        "description": "Activities and projects in public or private sectors that are related to architecture and socioeconomics research."
       },
       "researchStudent": {
-        "title": "Green Infrastructure Research (Student Posters)",
-        "description": "Recognizes innovative ideas and projects from students."
+        "title": "Green Infrastructure Research: Student Posters",
+        "description": "Student posters that present original research, case studies, or conceptual designs related to green infrastructure."
       },
       "livingSystems": {
         "title": "Innovative Living Systems",
-        "description": "Rewards projects that integrate living systems into architectural envelopes."
+        "description": "Realised projects with integration of living systems (for example, plants, fungi or algae) on or within a building envelope."
       },
       "unintended": {
-        "title": "Unintended Vegetation",
-        "description": "Recognizes the value of unplanned natural vegetation and its evolution."
+        "title": "Unintended Greenery",
+        "description": "Incidences of unintended greenery which contribute to healthy urban ecosystems, add beauty, biophilic quality, climate resilience, and more."
       },
       "champion": {
         "title": "Green Infrastructure Champion",
-        "description": "Recognizes entities with significant contributions to the sector."
+        "description": "Category honouring individuals, companies, or others that have made a significant contribution to the green infrastructure industry."
       }
     }
   },
@@ -1408,21 +1425,21 @@
     "visitWebsite": "Visit website"
   },
   "programmeDownload": {
-    "buttonLabel": "Download Programme (PDF)",
-    "footerLabel": "Programme (PDF)",
+    "buttonLabel": "Download Program (PDF)",
+    "footerLabel": "Program (PDF)",
     "note": "Provisional version — last updated: 8 August"
   },
   "committeesPage": {
     "title": "Committees",
     "description": "The people and institutions shaping WGIC26.",
     "introP1": "WGIC26 is shaped by 27 researchers and practitioners from 17 countries, alongside the institutions hosting the congress in Barcelona and Lleida.",
-    "introP2": "Researchers, designers and industry practitioners from across the world review every submission, chair the thematic sessions and shape the scientific programme. Their range — from building-integrated greenery to urban ecology, water management and public health — is what keeps the congress connected to both current research and built practice.",
+    "introP2": "Researchers, designers and industry practitioners from across the world review every submission, chair the thematic sessions and shape the scientific program. Their range — from building-integrated greenery to urban ecology, water management and public health — is what keeps the congress connected to both current research and built practice.",
     "honourTitle": "Honour Committee",
     "honourSubtitle": "The institutions hosting and supporting WGIC26",
     "organisingTitle": "Organising Committee",
     "organisingSubtitle": "The team delivering the congress",
     "scientificTitle": "Scientific Committee",
-    "scientificSubtitle": "Peer review and scientific programme",
+    "scientificSubtitle": "Peer review and scientific program",
     "professionalTitle": "Professional Committee",
     "professionalSubtitle": "Industry practice and market perspective"
   }

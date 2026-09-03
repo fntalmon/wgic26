@@ -19,7 +19,7 @@ const Locations = async () => {
 
       <div className="w-full max-w-7xl px-0 py-12 flex flex-col gap-20">
         <section className="flex flex-col lg:flex-row gap-12 items-center">
-          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
             <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-2">{t("barcelonaTitle")}</h2>
 
             <p>{t("barcelonaP1")}</p>
@@ -60,7 +60,7 @@ const Locations = async () => {
         <div className="w-full h-px bg-white/10"></div>
 
         <section className="flex flex-col lg:flex-row gap-12 items-center">
-          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
             <h2 className="text-2xl lg:text-3xl font-medium text-white uppercase mb-2">{t("lleidaTitle")}</h2>
 
             <p>{t("lleidaP1")}</p>

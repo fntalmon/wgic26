@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import TextImage from "@/components/TextImage";
 import { RegisterCTA } from "@/components/RegisterCTA";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+import { getProgrammePdfUrl } from "@/lib/programme-pdf";
 import AgendaClient from "./AgendaClient";
 
 export const metadata: Metadata = {
-  title: "Congress Programme | WGIC26 Barcelona-Lleida",
+  title: "Congress Program | WGIC26 Barcelona-Lleida",
   description:
-    "Discover the full programme for WGIC26, the green infrastructure conference 2026 bringing together plenaries, workshops and technical visits in Barcelona.",
+    "Discover the full program for WGIC26, the green infrastructure conference 2026 bringing together plenaries, workshops and technical visits in Barcelona.",
 };
 
 const API_BASE = "https://networking.barter.es/programapi";
@@ -75,6 +76,9 @@ export default async function CongressPage() {
   const ta = await getTranslations("programAgendaPage");
   const home = await getTranslations("home");
   const nav = await getTranslations("navigation");
+  const pd = await getTranslations("programmeDownload");
+  const locale = await getLocale();
+  const programmePdfUrl = getProgrammePdfUrl(locale);
 
   const [sessionsData, eventData] = await Promise.all([
     getSessions(),
@@ -112,6 +116,10 @@ export default async function CongressPage() {
         title={nav("programCongress")}
         description={t("description")}
         section="program"
+        buttonText={pd("buttonLabel")}
+        buttonUrl={programmePdfUrl}
+        buttonVariant="default"
+        buttonNote={pd("note")}
       />
       <section className="container mx-auto py-12 px-4">
         <div className="max-w-7xl mx-auto">
@@ -124,19 +132,19 @@ export default async function CongressPage() {
 
           <div className="mb-12 space-y-8 text-white/80">
             <TextImage imageSrc="/img/Tibidabo 1.jpg" imageAlt={t("img1Alt")} imagePosition="right">
-              <p className="text-justify">
+              <p className="text-left">
                 {t("p1")}
               </p>
-              <p className="text-justify">
+              <p className="text-left">
                 {t("p2")}
               </p>
             </TextImage>
 
             <TextImage imageSrc="/img/Exterior_15.jpg" imageAlt={t("img2Alt")} imagePosition="left">
-              <p className="text-justify">
+              <p className="text-left">
                 {t("p3")}
               </p>
-              <p className="text-justify">
+              <p className="text-left">
                 {t("p4")}
               </p>
             </TextImage>

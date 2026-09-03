@@ -1,0 +1,205 @@
+Buenos días, Federico, 
+
+
+Ya hemos visto los cambios aplicados en la web. Muchas gracias. 
+
+
+Algunos detalles y te paso también la revisión de las páginas interiores que faltaba. 
+
+
+HOME
+.- Hemos visto que nos han dejado programme en los textos cuando en la arquitectura de navegación pone program. Podrías unificarlo todo con program? 
+CTA de una slide
+en el módulo de la newsletter
+en el footer
+y en el menú desplegable de program
+y allá donde salga de la página para que salga todo igual? 
+
+
+.- El registro de la parte superior le falta un poco de fuerza. 
+Analizando en busca de virus...
+Agregar a Drive
+Guardar en Fotos
+
+
+
+
+¿Puede ser más grande? También estaría bien cambiar Tickets por Register now. 
+¿El descuento podría ser más destacado? Se ve poco y tendría que destacar más. ¿Podemos utilizar algun recursos visual, como cuando hay una oferta? 
+Tal como te he comentado en el anterior correo, enlacemos aquí directamente a la plataforma Hélice.
+
+
+.- Tendríamos que poner en todos los textos donde sale el early bird, la fecha que acaba para que sea más claro.
+En el footer que hemos dejado fijo, pondríamos algo tipo: 
+Register before 30 September and save 15%
+Así es más clara la fecha y el ahorro. Allá donde aparezca, utiliza también esta frase. 
+Enlacemos también directamente al registro a Hélice. 
+
+
+.- Colores de los CTAS. Queda un poco extraño que unos vayan en verde y otros en amarillo, de hecho los amarillos destacan más que los verdes, pero no quedan tan integrados. ¿Puedes poner el CTA de los ponentes y el de los posters en verde, todos iguales? 
+Y si hay en otras páginas, también, para que todo quede más coherente visualmente. 
+
+
+Descargar
+Agregar a Drive
+Guardar en Fotos
+
+
+.-La relación entre los tamaños de las tipografías es muy exagerada. No sé si lo marca la plantilla o podemos modificarlo. 
+El título es muy grande y además en mayúscula y en cambio, las bios de los ponentes tienen un tamaño diminuto, cuesta leerlo. En general en toda la web, si la relación entre títulos y textos puede ser más equilibrada –que el texto se lea bien–, mejor. 
+
+
+.- Footer
+Descargar
+Agregar a Drive
+Guardar en Fotos
+
+
+Primera columna, donde pone Ticket, poner: Register now
+Donde pone Programme poner Program
+Stay updated: quitar el CTA del registro a la newsletter. Ponerlo en letra normal. Es demasiado grande y compite con el CTA del footer que llama al registro. Ahora nos interesa que se registren. 
+
+
+PROGRAM
+Analizando en busca de virus...
+Agregar a Drive
+Guardar en Fotos
+
+
+.- Veo que en la página del Full Programme no aparecen los workshops, las visitas técnicas, etc. Si no van a aparecer en esta página, tendríamos que poner en el submenú solo Program 27-28 OCT
+Pon aquí el CTA para descargar el programa, que lo he quitado del 'Plan your stay'. Yo lo pondría en la parte superior a la derecha, donde veas que se integra mejor y en verde. 
+
+
+Main topics
+.- Al poner poquito texto con tanta foto pequeña, dificulta la lectura. 
+Podríamos poner una foto bonita, tipo la última que se ve una cubierta vegetal con el fondo de la Catedral de Barcelona y ponerla al principio? ¿Con todo el texto seguido después y eliminar el resto de fotos? 
+Respecto a los main topics, tal como está puesto, despista un poco al usuario. Ya he quedado con Gabriel que desarrollaríamos unos copys para la segunda parte de temas que aparecen y eliminaremos la otra parte. Cuando tenga los copys validados por Gabriel, te los paso para modificar. 
+
+
+Workshops
+.- Sé que hay mucha información fuera y que queda mejor con esta estructura, pero visualmente queda poco atractiva. 
+¿Podríamos hacer como un módulo de 2+2 con una foto de las que salen dentro y debajo el copy que se ve ahora? 
+Por cierto, en la versión catalana, tendría que ser: Veure'n més (el botón del desplegable). 
+
+
+Descargar
+Agregar a Drive
+Guardar en Fotos
+
+
+.- En esta página hay ahora 3CTA's para el registro. Yo eliminaría el módulo que hay bajo los workshops.
+
+
+
+Visites tècniques
+Descargar
+Agregar a Drive
+Guardar en Fotos
+.- De la parte anterior a la galería de las visitas, eliminar la última frase: Registration is now open through the official platform.
+Porque ya lo indica en el módulo de abajo. 
+
+
+.- Después de las galerías, como en la otra página, eliminaría esta llamada al registro porque desorienta un poco, ya que arriba le pedimos que se registre a las visitas. 
+
+
+
+
+.- Por cierto, en esta página la parte superior de la web no queda fija y no se ve el CTA de registro en la parte superior de la página cuando haces scroll. 
+
+
+
+Innovation Day
+Descargar
+Agregar a Drive
+Guardar en Fotos
+
+
+.- ¿Podemos cambiar una de las fotos del Workshop 1? Se ven muy iguales. Y si no tienes más, se pueden eliminar las dos fotos de cada workshop y poner solo una horizontal, la que sea más atractiva. 
+El texto no lo pongas justificado, que resulta más difícil de leer. En general, todos los textos de la web tendrían que aparecer solo justificados a la izquierda. 
+
+
+
+
+.- Eliminamos también este módulo.
+
+
+WGIN Awards
+
+
+Descargar
+Agregar a Drive
+Guardar en Fotos
+
+
+.- La presentación de candidaturas ya está cerrada. Eliminemos este módulo y ponemos: 
+The World Green Infrastructure Awards recognise the world's best green infrastructure projects, policies and research. Presented by WGIN, the winners will be announced live at WGIC26.
+.- De momento, dejamos las categorías. Estamos preparando unos textos breves para validar con Gabriel, con una foto, para que visualmente sea más atractivo. Pero la parte de arriba, que está caducada, la eliminamos. 
+Y el enlace a la página oficial, lo ponemos en el copy, cuando ponemos WGIN. 
+
+
+Descargar
+Agregar a Drive
+Guardar en Fotos
+.- Eliminamos este módulo.
+
+
+Blog
+.- Cambiamos el copy: 
+The WGIC26 Blog
+Green roofs, flooded streets, biodiversity that doesn't add up on paper. The debates driving WGIC26, before the congress opens.
+
+
+Descargar
+Agregar a Drive
+Guardar en Fotos
+.- Esta foto es incorrecta, no cuadra con el texto de dentro. 
+.- Por cierto, más allá de la noticia o el artículo destacado, ¿podríamos hacer que las fotos de todas las entradas del blog tengan el mismo tamaño? Tal como aparecen, de diferentes tamaños, genera un poco de desorden. 
+
+
+Newsletter
+.- Diría que faltan newsletters por incorporar. 
+.- ¿Podrían aparecer con el mismo formato con el que se envían? Solo texto, queda muy aburrido. 
+
+
+Keynote Speakers
+.- En el menú de navegación, pondría esta página antes que News, al lado de Program. 
+.- Cambiaría el copy y lo pondría en la parte de arriba: 
+Keynote speakers
+Meet the leading voices in green infrastructure: an international line-up of architects, engineers, ecologists and policymakers, each addressing the questions that matter most to the professionals shaping tomorrow's cities.
+
+
+.- Eliminar este texto y que aparezcan directamente los speakers. 
+
+.- A no ser que aparezcan en este orden por algún motivo concreto, ¿podrían aparecer en orden alfabético (por el apellido)?
+.- La tipografía de la descripción de la bio, ¿puede ser un poco más grande? Cuesta leer con el fondo en verde. 
+
+
+Plan your stay
+Queda pendiente ver qué ponemos en esta página, que entiendo que debe ser un poco más práctica, cómo las direcciones del congreso, el transporte público y las FAQS. Pero eso tengo que acabar de concretarlo. 
+De momento, no sé con quién habláis de la Agencia Catalana de Turismo. Son clientes nuestros para el content y la campaña que tienen ahora en marcha es la del turismo cultural. Tiene mucho más sentido ponerla –está vinculado al Año Gaudí 2026– que el Grand Tour de Catalunya o la campaña de enogastro. Te paso el enlace de la landing de la campaña en inglés (https://www.catalunya.com/en/cultural-tourism-in-catalonia) y una intro: 
+
+Feel our culture. Live Catalonia.
+
+Catalonia shapes its landscape as much as its landscape shapes Catalonia. From Gaudí's organic forms to the Mediterranean coastline, from historic urban fabric to contemporary design, tradition and innovation grow side by side here. A living heritage that keeps inspiring the way we build and imagine space.
+
+
+
+
+
+.- Quitaría el programa de aquí, ya que le estamos hablando de programar la visita a Cataluña, tendría más sentido ponerlo donde el programa, pero simplemente pondría el CTA a la derecha y en color verde para que no atraiga más la atención que la información. 
+DOWNLOAD PROGRAM
+
+
+Y de momento, sería esto. 
+Cualquier duda o cosa que creas que no cuadra, me avisas. 
+
+
+Saludos cordiales, 
+--
+
+Mònica Galindo
+Alpinista Samurai
+alpinistasamurai.com
+Travessera de Gràcia, 62, 3r-8a
+08006 Barcelona
+T. 93 177 17 47

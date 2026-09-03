@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
-import { getLocale, getTranslations } from "next-intl/server";
-import { getProgrammePdfUrl } from "@/lib/programme-pdf";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Plan Your Stay | WGIC26 Barcelona-Lleida",
@@ -12,9 +11,6 @@ export const metadata: Metadata = {
 
 const PlanYourStay = async () => {
     const t = await getTranslations("planYourStayPage");
-    const pd = await getTranslations("programmeDownload");
-    const locale = await getLocale();
-    const programmePdfUrl = getProgrammePdfUrl(locale);
 
     return (
         <div>
@@ -22,9 +18,6 @@ const PlanYourStay = async () => {
                 title={t("title")}
                 description={t("description")}
                 section="plan-your-stay"
-                buttonText={pd("buttonLabel")}
-                buttonUrl={programmePdfUrl}
-                buttonNote={pd("note")}
             />
 
             <section className="container mx-auto py-16 px-4">
@@ -93,21 +86,13 @@ const PlanYourStay = async () => {
                                 {t("cataloniaDescription")}
                             </p>
                             <div className="flex flex-col gap-3">
-                                <a 
-                                    href="https://act.gencat.cat/en/programes/grand-tour-de-catalunya/" 
-                                    target="_blank" 
+                                <a
+                                    href="https://www.catalunya.com/en/cultural-tourism-in-catalonia"
+                                    target="_blank"
                                     rel="noopener noreferrer"
-                                    className="block bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-lg transition-colors border border-white/10 text-center"
+                                    className="block bg-cactus hover:bg-cactus/80 text-white font-medium py-3 px-6 rounded-lg transition-colors text-center"
                                 >
-                                    {t("grandTour")}
-                                </a>
-                                <a 
-                                    href="https://www.catalunya.com/en/catalonia-the-best-gastronomy-in-the-world" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="block bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-6 rounded-lg transition-colors border border-white/10 text-center"
-                                >
-                                    {t("gastronomy")}
+                                    {t("culturalTourism")}
                                 </a>
                             </div>
                         </div>

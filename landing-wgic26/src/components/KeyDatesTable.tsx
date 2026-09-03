@@ -36,7 +36,7 @@ export function KeyDatesTable({ title, headers, rows }: KeyDatesTableProps) {
               return (
                 <tr key={row.key} className="hover:bg-white/5">
                   <td
-                    className={`border border-white/20 px-4 py-3 text-base text-justify ${
+                    className={`border border-white/20 px-4 py-3 text-base text-left ${
                       isPast ? "text-white/40 line-through" : "text-white/80"
                     }`}
                   >

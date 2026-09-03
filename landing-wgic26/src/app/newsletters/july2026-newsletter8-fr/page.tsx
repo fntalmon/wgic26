@@ -11,17 +11,23 @@ const July2026Newsletter8French = () => {
         section="newsletters"
       />
 
-      <section className="container mx-auto py-12 px-4">
-        <div className="max-w-4xl mx-auto space-y-8 text-white/80">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-2">
+      <section className="w-full py-10 px-4">
+        <div className="max-w-[640px] mx-auto bg-white text-neutral-700 shadow-2xl">
+          <div className="px-6 sm:px-10 pt-8 pb-6 border-b border-neutral-200">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/newsletters/img/wgic26-logo.png"
+              alt="WGIC26"
+              className="h-14 w-auto mb-4"
+            />
+            <h2 className="text-2xl font-bold text-cactus">
               Bulletin de juillet 2026 #3
             </h2>
           </div>
 
           {/* Maria Buhigas rejoint WGIC26 ! */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               Maria Buhigas rejoint WGIC26 !
             </h3>
             <p className="text-lg leading-relaxed">Nous sommes heureux d&apos;annoncer Maria Buhigas en tant qu&apos;intervenante au Congrès Mondial sur les Infrastructures Vertes 2026 (WGIC26).</p>
@@ -33,16 +39,32 @@ const July2026Newsletter8French = () => {
                 href="https://www.wgic26.barcelona/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 Découvrez les intervenants confirmés ici.
               </a>
             </p>
+            <div className="-mx-6 sm:-mx-10 -mb-8 mt-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/newsletters/img/nl8/photo-5.jpg"
+                alt=""
+                className="w-full block"
+              />
+            </div>
+            <div className="-mx-6 sm:-mx-10 -mb-8 mt-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/newsletters/img/nl8/photo-6.jpg"
+                alt=""
+                className="w-full block"
+              />
+            </div>
           </div>
 
           {/* Ce que révèlent les documents  */}
-          <div className="space-y-6 pt-8 border-t border-white/10">
-            <h3 className="text-2xl font-bold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               Ce que révèlent les documents : la résilience climatique mène la conversation
             </h3>
             <p className="text-lg leading-relaxed">L&apos;analyse des documents soumis au WGIC26 confirme une tendance claire : la résilience climatique est l&apos;une des priorités majeures pour la communauté internationale des infrastructures vertes.</p>
@@ -54,16 +76,24 @@ const July2026Newsletter8French = () => {
                 href="https://www.wgic26.barcelona/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 Explorez les principaux sujets qui façonnent le WGIC26 ici.
               </a>
             </p>
+            <div className="-mx-6 sm:-mx-10 -mb-8 mt-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/newsletters/img/nl8/photo-7.jpg"
+                alt=""
+                className="w-full block"
+              />
+            </div>
           </div>
 
           {/* Les billets sont maintenant di */}
-          <div className="space-y-6 pt-8 border-t border-white/10">
-            <h3 className="text-2xl font-bold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               Les billets sont maintenant disponibles : réservez votre place au WGIC26
             </h3>
             <p className="text-lg leading-relaxed">Les inscriptions sont désormais ouvertes pour le Congrès Mondial sur les Infrastructures Vertes 2026.</p>
@@ -73,10 +103,10 @@ const July2026Newsletter8French = () => {
             <p className="text-lg leading-relaxed">30 oct | Université de Lleida - Lleida (Espagne)</p>
             <p className="text-lg leading-relaxed">
               <a
-                href="https://www.wgic26.barcelona/registration"
+                href="https://panel.helice.app/w/wgic26/214760/registration"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 Réservez votre billet et découvrez les options d&apos;inscription ici.
               </a>
@@ -84,30 +114,30 @@ const July2026Newsletter8French = () => {
           </div>
 
           {/* Restez connecté avec WGIC26 */}
-          <div className="space-y-6 pt-8 border-t border-white/10">
-            <h3 className="text-2xl font-bold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               Restez connecté avec WGIC26
             </h3>
             <p className="text-lg leading-relaxed">Nos canaux officiels sont désormais actifs. Suivez WGIC26 sur LinkedIn et Instagram pour rester informé des dernières annonces, des intervenants, des mises à jour du programme et des étapes clés menant au congrès. Participez à la conversation et faites partie de la communauté mondiale qui façonne l&apos;avenir de l&apos;infrastructure verte et des solutions basées sur la nature.</p>
           </div>
 
           {/* CTA Buttons */}
-          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 border-t border-white/10">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-6 sm:px-10 py-8">
             <a
-              href="https://www.wgic26.barcelona/registration"
-              className="inline-block border border-white/20 text-white px-6 py-3 rounded-lg hover:bg-white/5 transition"
+              href="https://panel.helice.app/w/wgic26/214760/registration"
+              className="inline-block bg-cactus text-white font-semibold px-6 py-3 rounded hover:bg-monstera transition"
             >
               Achetez votre billet anticipé
             </a>
             <Link
               href="https://wgic26.barcelona/#newsletter"
-              className="inline-block bg-potus text-black font-semibold px-6 py-3 rounded-lg hover:opacity-95 transition"
+              className="inline-block bg-potus text-cactus font-semibold px-6 py-3 rounded hover:brightness-95 transition"
             >
               Abonnez-vous à la newsletter
             </Link>
           </div>
 
-          <NewsletterFooter language="fr" />
+          <NewsletterFooter language="fr" light />
         </div>
       </section>
     </div>

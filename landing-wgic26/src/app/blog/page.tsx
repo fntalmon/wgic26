@@ -49,7 +49,7 @@ export default async function BlogIndexPage() {
                     src={featuredPost.coverImage}
                     alt={featuredPost.title}
                     fill
-                    className="object-contain transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-cactus to-monstera" />
@@ -137,7 +137,7 @@ export default async function BlogIndexPage() {
                         src={post.coverImage}
                         alt={post.title}
                         fill
-                        className="object-contain transition-transform duration-500 group-hover:scale-105"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-cactus to-monstera" />

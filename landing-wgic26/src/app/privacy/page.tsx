@@ -27,7 +27,7 @@ const Privacy = async () => {
                         {t("lastUpdated")}: 2026
                     </p>
 
-                    <p className="text-base leading-relaxed text-justify">
+                    <p className="text-base leading-relaxed text-left">
                         {t("privacyIntro")}
                     </p>
 

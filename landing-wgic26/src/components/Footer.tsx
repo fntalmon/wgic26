@@ -11,9 +11,13 @@ const Footer = async () => {
   const programmePdfUrl = getProgrammePdfUrl(locale);
 
   const usefulLinks = [
-    { label: t("tickets"), href: "/registration" },
+    {
+      label: t("tickets"),
+      href: "https://panel.helice.app/w/wgic26/214760/registration",
+      external: true,
+    },
     { label: t("papersProjects"), href: "/speakers" },
-    { label: t("program"), href: "/program/program" },
+    { label: t("program"), href: "/program/congress" },
     { label: t("workshops"), href: "/program/workshops" },
     { label: t("technicalVisits"), href: "/program/technical-visits" },
     { label: t("blog"), href: "/blog" },
@@ -51,8 +55,8 @@ const Footer = async () => {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    target={link.download ? "_blank" : undefined}
-                    rel={link.download ? "noopener noreferrer" : undefined}
+                    target={link.download || link.external ? "_blank" : undefined}
+                    rel={link.download || link.external ? "noopener noreferrer" : undefined}
                     download={link.download}
                     className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus"
                   >
@@ -85,7 +89,7 @@ const Footer = async () => {
             <div className="uppercase text-xs text-white/40">{t("stayUpdated")}</div>
             <Link
               href="/#newsletter"
-              className="inline-flex w-fit items-center justify-center bg-potus px-4 py-2.5 text-xs font-bold uppercase tracking-[2px] text-black transition-colors hover:bg-potus/80"
+              className="w-fit text-xs hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus"
             >
               {t("registerNewsletter")}
             </Link>

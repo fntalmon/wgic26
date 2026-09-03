@@ -11,17 +11,23 @@ const July2026Newsletter6English = () => {
         section="newsletters"
       />
 
-      <section className="container mx-auto py-12 px-4">
-        <div className="max-w-4xl mx-auto space-y-8 text-white/80">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-2">
+      <section className="w-full py-10 px-4">
+        <div className="max-w-[640px] mx-auto bg-white text-neutral-700 shadow-2xl">
+          <div className="px-6 sm:px-10 pt-8 pb-6 border-b border-neutral-200">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/newsletters/img/wgic26-logo.png"
+              alt="WGIC26"
+              className="h-14 w-auto mb-4"
+            />
+            <h2 className="text-2xl font-bold text-cactus">
               July 2026 Newsletter
             </h2>
           </div>
 
           {/* Thank you for your submissions */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               Thank you for your submissions: the review process begins
             </h3>
             <p className="text-lg leading-relaxed">The WGIC26 Call for Papers &amp; Projects has now concluded. We would like to thank all researchers, practitioners, designers, and professionals who shared their work with us.</p>
@@ -31,16 +37,32 @@ const July2026Newsletter6English = () => {
                 href="https://www.wgic26.barcelona/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 Discover the submission guidelines and access the platform here.
               </a>
             </p>
+            <div className="-mx-6 sm:-mx-10 -mb-8 mt-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/newsletters/img/nl6/photo-1.jpg"
+                alt=""
+                className="w-full block"
+              />
+            </div>
+            <div className="-mx-6 sm:-mx-10 -mb-8 mt-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/newsletters/img/nl6/photo-5.jpg"
+                alt=""
+                className="w-full block"
+              />
+            </div>
           </div>
 
           {/* A global response from 32 coun */}
-          <div className="space-y-6 pt-8 border-t border-white/10">
-            <h3 className="text-2xl font-bold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               A global response from 32 countries
             </h3>
             <p className="text-lg leading-relaxed">WGIC26 has received papers and projects from authors representing 32 countries across Europe, Asia, North America, South America, and Oceania.</p>
@@ -62,16 +84,24 @@ const July2026Newsletter6English = () => {
                 href="https://www.wgic26.barcelona/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 Discover more about the international community gathering at WGIC26 here.
               </a>
             </p>
+            <div className="-mx-6 sm:-mx-10 -mb-8 mt-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/newsletters/img/nl6/photo-6.jpg"
+                alt=""
+                className="w-full block"
+              />
+            </div>
           </div>
 
           {/* Discover the CCIB: the main ve */}
-          <div className="space-y-6 pt-8 border-t border-white/10">
-            <h3 className="text-2xl font-bold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               Discover the CCIB: the main venue for WGIC26
             </h3>
             <p className="text-lg leading-relaxed">From 27 to 29 October, WGIC26 will take place at the International Barcelona Convention Centre (CCIB), located in Parc del Fòrum.</p>
@@ -82,16 +112,24 @@ const July2026Newsletter6English = () => {
                 href="https://www.wgic26.barcelona/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-potus"
+                className="text-cactus font-semibold underline underline-offset-2 hover:text-monstera"
               >
                 Plan your visit to Barcelona and discover more about the destination here.
               </a>
             </p>
+            <div className="-mx-6 sm:-mx-10 -mb-8 mt-6">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/newsletters/img/nl6/photo-7.jpg"
+                alt=""
+                className="w-full block"
+              />
+            </div>
           </div>
 
           {/* Stay connected with WGIC26 */}
-          <div className="space-y-6 pt-8 border-t border-white/10">
-            <h3 className="text-2xl font-bold text-white">
+          <div className="px-6 sm:px-10 py-8 space-y-5">
+            <h3 className="bg-cactus text-white text-xl sm:text-2xl font-bold px-6 sm:px-10 py-4 -mx-6 sm:-mx-10 -mt-8 mb-2">
               Stay connected with WGIC26
             </h3>
             <p className="text-lg leading-relaxed">Our official channels are now live.</p>
@@ -100,22 +138,22 @@ const July2026Newsletter6English = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 border-t border-white/10">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-6 sm:px-10 py-8">
             <a
-              href="https://www.wgic26.barcelona/registration"
-              className="inline-block border border-white/20 text-white px-6 py-3 rounded-lg hover:bg-white/5 transition"
+              href="https://panel.helice.app/w/wgic26/214760/registration"
+              className="inline-block bg-cactus text-white font-semibold px-6 py-3 rounded hover:bg-monstera transition"
             >
               Buy your early bird ticket
             </a>
             <Link
               href="https://wgic26.barcelona/#newsletter"
-              className="inline-block bg-potus text-black font-semibold px-6 py-3 rounded-lg hover:opacity-95 transition"
+              className="inline-block bg-potus text-cactus font-semibold px-6 py-3 rounded hover:brightness-95 transition"
             >
               Subscribe to newsletter
             </Link>
           </div>
 
-          <NewsletterFooter language="en" />
+          <NewsletterFooter language="en" light />
         </div>
       </section>
     </div>

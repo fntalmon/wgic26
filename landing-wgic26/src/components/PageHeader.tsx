@@ -21,7 +21,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
     buttonText,
     buttonUrl,
     buttonIcon,
-    buttonVariant = "yellow", // Default to "yellow" if none is provided
+    buttonVariant = "default", // Verde por defecto
     buttonNote,
 }) => {
     const showButton = buttonText && buttonUrl
@@ -60,7 +60,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
                     </div>
                     <div className="flex flex-col sm:items-end gap-2 w-full sm:w-2/3">
                         {description && (
-                            <p className="text-base text-white/70 leading-relaxed text-justify">{description}</p>
+                            <p className="text-base text-white/70 leading-relaxed text-left">{description}</p>
                         )}
                     </div>
                 </div>

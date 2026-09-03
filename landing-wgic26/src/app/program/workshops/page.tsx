@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
-import { RegisterCTA } from "@/components/RegisterCTA";
 import { getTranslations } from "next-intl/server";
 import {
     Accordion,
@@ -87,6 +86,14 @@ const workshopMeta: Record<
     health: { icon: Heart, gradient: "from-rose-500/20 to-orange-500/10" },
     recovery: { icon: TreePine, gradient: "from-lime-500/20 to-emerald-500/10" },
     lifeBauhaus: { icon: Building2, gradient: "from-sky-500/20 to-indigo-500/10" },
+};
+
+// Cover photo for each workshop card in the 2+2 grid.
+const coverImages: Record<WorkshopKey, string> = {
+    globalSouth: "/images/workshops/image22.png",
+    health: "/images/workshops/image8.jpeg",
+    recovery: "/images/workshops/image25.jpg",
+    lifeBauhaus: "/images/workshops/image10.jpeg",
 };
 
 // Non-translatable images: leadership photos and case-study visuals.
@@ -181,7 +188,6 @@ const LeadershipCard = ({ name, affiliation, image }: { name: string; affiliatio
 
 const Workshops = async () => {
     const t = await getTranslations("workshopsPage");
-    const home = await getTranslations("home");
     const tCard: Record<WorkshopKey, CardTranslator> = {
         globalSouth: (await getTranslations("workshopsPage.cards.globalSouth")) as unknown as CardTranslator,
         health: (await getTranslations("workshopsPage.cards.health")) as unknown as CardTranslator,
@@ -215,7 +221,7 @@ const Workshops = async () => {
                                 {t("expandHint")}
                             </p>
                         </div>
-                        <Accordion type="multiple" className="w-full space-y-4">
+                        <Accordion type="multiple" className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                             {workshops.map(({ key, id }) => {
                                 const meta = workshopMeta[key];
                                 const WorkshopIcon = meta.icon;
@@ -262,15 +268,23 @@ const Workshops = async () => {
                                     >
                                         {/* Trigger */}
                                         <AccordionTrigger className="text-white hover:no-underline px-4 py-4 sm:px-6 sm:py-5 group">
-                                            <div className="flex items-start sm:items-center gap-3 sm:gap-4 text-left w-full">
-                                                <div className={`flex size-10 sm:size-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${meta.gradient} border border-white/10 group-hover:border-white/30 transition-colors`}>
-                                                    <WorkshopIcon size={22} className="text-white" />
+                                            <div className="flex flex-col gap-4 text-left w-full">
+                                                <div className="relative w-full aspect-video overflow-hidden rounded-lg border border-white/10">
+                                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                                    <img
+                                                        src={coverImages[key]}
+                                                        alt={ct("title")}
+                                                        className="w-full h-full object-cover"
+                                                    />
                                                 </div>
-                                                <div className="flex flex-col gap-1 pr-2 sm:pr-4 flex-1">
+                                                <div className="flex items-center gap-3 sm:gap-4 pr-2 sm:pr-4">
+                                                    <div className={`flex size-10 sm:size-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${meta.gradient} border border-white/10 group-hover:border-white/30 transition-colors`}>
+                                                        <WorkshopIcon size={22} className="text-white" />
+                                                    </div>
                                                     <span className="text-lg font-semibold leading-snug">{ct("title")}</span>
-                                                    <span className="text-sm text-white/70 font-normal leading-relaxed">{ct("description")}</span>
                                                 </div>
-                                                <span className="hidden sm:inline-flex shrink-0 items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 text-white/70 text-xs font-medium group-hover:bg-potus/20 group-hover:text-potus transition-colors">
+                                                <span className="text-sm text-white/70 font-normal leading-relaxed pr-2 sm:pr-4">{ct("description")}</span>
+                                                <span className="inline-flex self-start items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 text-white/70 text-xs font-medium group-hover:bg-potus/20 group-hover:text-potus transition-colors">
                                                     {t("seeMore")}
                                                 </span>
                                             </div>
@@ -530,12 +544,6 @@ const Workshops = async () => {
                             })}
                         </Accordion>
                     </div>
-
-                    <RegisterCTA
-                        title={home("ctaJoinTitle")}
-                        subtitle={home("ctaJoinSubtitle")}
-                        buttonLabel={home("registerNow")}
-                    />
                 </div>
             </section>
         </div>

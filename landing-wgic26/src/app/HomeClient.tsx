@@ -219,7 +219,7 @@ export default function HomeClient() {
             <div className="text-xs uppercase tracking-[0.3em] text-white/60">
               {t("featuredSpeakersEyebrow")}
             </div>
-            <h2 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+            <h2 className="uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
               {t("featuredSpeakersTitle")}
             </h2>
           </div>
@@ -235,7 +235,7 @@ export default function HomeClient() {
 
           <div className="flex flex-col sm:flex-row gap-4 self-start">
             <Link href="/key-note-speakers">
-              <Button variant="yellow" size="lg">
+              <Button variant="default" size="lg">
                 {t("seeAllSpeakers")}
               </Button>
             </Link>
@@ -302,7 +302,7 @@ export default function HomeClient() {
               {t("postersDeadline")}
             </span>
             <Link href="/speakers">
-              <Button variant="yellow" size="lg">
+              <Button variant="default" size="lg">
                 <FileUp size={18} />
                 {t("postersCta")}
               </Button>

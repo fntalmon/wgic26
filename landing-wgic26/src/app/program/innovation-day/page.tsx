@@ -12,26 +12,19 @@ export const metadata: Metadata = {
 
 const InnovationDay = async () => {
     const t = await getTranslations("innovationDayPage");
-    const home = await getTranslations("home");
 
     const workshops = [
         {
             title: t("workshop1Title"),
             languages: t("workshop1Languages"),
             description: t("workshop1Description"),
-            images: [
-                { src: "/img/innovation-day/workshop1-biodiversity-1.jpeg" },
-                { src: "/img/innovation-day/workshop1-biodiversity-2.jpeg" },
-            ],
+            image: { src: "/img/innovation-day/workshop1-biodiversity-1.jpeg" },
         },
         {
             title: t("workshop2Title"),
             languages: t("workshop2Languages"),
             description: t("workshop2Description"),
-            images: [
-                { src: "/img/innovation-day/workshop2-maintenance-1.jpeg" },
-                { src: "/img/innovation-day/workshop2-maintenance-2.jpeg", objectPosition: "75% 30%" },
-            ],
+            image: { src: "/img/innovation-day/workshop2-maintenance-1.jpeg" },
         },
     ];
 
@@ -65,18 +58,13 @@ const InnovationDay = async () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {workshops.map((workshop) => (
                             <div key={workshop.title} className="space-y-4">
-                                <div className="grid grid-cols-2 gap-2">
-                                    {workshop.images.map((image) => (
-                                        <div key={image.src} className="relative w-full aspect-square overflow-hidden rounded-lg">
-                                            <Image
-                                                src={image.src}
-                                                alt={workshop.title}
-                                                fill
-                                                className="object-cover"
-                                                style={image.objectPosition ? { objectPosition: image.objectPosition } : undefined}
-                                            />
-                                        </div>
-                                    ))}
+                                <div className="relative w-full aspect-video overflow-hidden rounded-lg">
+                                    <Image
+                                        src={workshop.image.src}
+                                        alt={workshop.title}
+                                        fill
+                                        className="object-cover"
+                                    />
                                 </div>
                                 <div>
                                     <h2 className="text-2xl font-semibold uppercase text-white tracking-wide">
@@ -109,12 +97,6 @@ const InnovationDay = async () => {
                             ))}
                         </div>
                     </div>
-
-                    <RegisterCTA
-                        title={home("ctaJoinTitle")}
-                        subtitle={home("ctaJoinSubtitle")}
-                        buttonLabel={home("registerNow")}
-                    />
                 </div>
             </section>
         </div>

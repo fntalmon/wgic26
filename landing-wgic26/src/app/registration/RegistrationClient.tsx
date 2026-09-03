@@ -71,7 +71,7 @@ function CountdownBanner() {
         <div className="flex items-center gap-4">
           <Clock size={20} style={{ color: POTUS, opacity: 0.7 }} />
           <span
-            className="text-[11px] tracking-[0.3em] font-medium"
+            className="text-xs tracking-[0.3em] font-medium"
             style={{ color: CEMENT, opacity: 0.6 }}
           >
             {t("countdown.title")}
@@ -113,7 +113,7 @@ function CountdownBanner() {
         />
 
         <span
-          className="text-[10px] tracking-[0.25em]"
+          className="text-xs tracking-[0.25em]"
           style={{ color: CEMENT, opacity: 0.4 }}
         >
           {t("countdown.cta")}
@@ -134,7 +134,7 @@ function RegisterButton({ label, large = false }: { label: string; large?: boole
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       className={`inline-flex items-center justify-center gap-3 font-medium tracking-[0.2em] transition-all duration-300 cursor-pointer ${
-        large ? "py-4 px-10 text-xs" : "py-3 px-6 text-[11px]"
+        large ? "py-4 px-10 text-xs" : "py-3 px-6 text-xs"
       }`}
       style={{
         backgroundColor: POTUS,
@@ -215,7 +215,7 @@ function PricingCard({
             </span>
           </div>
           <div
-            className="text-[10px] tracking-[0.15em] uppercase mb-3"
+            className="text-xs tracking-[0.15em] uppercase mb-3"
             style={{ color: CEMENT, opacity: 0.45 }}
           >
             {EARLY_BIRD_ACTIVE
@@ -243,7 +243,7 @@ function PricingCard({
             <button
               type="button"
               onClick={openHelice}
-              className="w-full flex items-center justify-center gap-2 py-3 text-[11px] tracking-[0.2em] font-medium uppercase transition-all duration-300 cursor-pointer hover:brightness-110"
+              className="w-full flex items-center justify-center gap-2 py-3 text-xs tracking-[0.2em] font-medium uppercase transition-all duration-300 cursor-pointer hover:brightness-110"
               style={
                 highlight
                   ? { backgroundColor: POTUS, color: CACTUS }
@@ -373,7 +373,7 @@ function DataProtectionAccordion() {
                 }}
               >
                 <span
-                  className="text-[11px] leading-relaxed"
+                  className="text-xs leading-relaxed"
                   style={{ color: CEMENT, opacity: 0.5 }}
                 >
                   {tLegal("legalClauseText")}
@@ -388,7 +388,7 @@ function DataProtectionAccordion() {
                 }}
               >
                 <span
-                  className="text-[11px] leading-relaxed"
+                  className="text-xs leading-relaxed"
                   style={{ color: CEMENT, opacity: 0.5 }}
                 >
                   {t("dataProtection.heliceNote")}
@@ -396,7 +396,7 @@ function DataProtectionAccordion() {
               </div>
 
               <p
-                className="text-[10px] leading-relaxed max-w-3xl"
+                className="text-xs leading-relaxed max-w-3xl"
                 style={{ color: CEMENT, opacity: 0.35 }}
               >
                 {t("rightsNote")}{" "}
@@ -496,7 +496,7 @@ export default function RegistrationClient() {
       className="flex items-center gap-6 mb-12"
     >
       <span
-        className="text-[10px] tracking-[0.35em] font-medium whitespace-nowrap"
+        className="text-xs tracking-[0.35em] font-medium whitespace-nowrap"
         style={{ color: CEMENT, opacity: 0.35 }}
       >
         {label}
@@ -567,7 +567,7 @@ export default function RegistrationClient() {
             </p>
             <RegisterButton label={t("platformButton")} large />
             <p
-              className="text-[11px] leading-relaxed max-w-2xl"
+              className="text-xs leading-relaxed max-w-2xl"
               style={{ color: CEMENT, opacity: 0.4 }}
             >
               {t("redirectNote")}
@@ -657,7 +657,7 @@ export default function RegistrationClient() {
             </p>
             <RegisterButton label={t("readyButton")} large />
             <p
-              className="text-[11px] tracking-wide"
+              className="text-xs tracking-wide"
               style={{ color: CEMENT, opacity: 0.4 }}
             >
               {t("readyNote")}

@@ -29,7 +29,7 @@ const Network = async () => {
 
       <div className="w-full max-w-7xl px-0 py-12 flex flex-col gap-12">
         <section className="flex flex-col lg:flex-row gap-12 items-start">
-          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+          <div className="flex-1 flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
             <div className="flex flex-col lg:flex-row gap-8 items-start">
               <div className="inline-flex items-center justify-center min-w-fit flex-shrink-0">
                 <Image
@@ -45,15 +45,15 @@ const Network = async () => {
             </div>
 
             <TextImage imageSrc="/img/varias/02 IMG_20241204_153528.jpg" imageAlt={t("img1Alt")} imagePosition="right">
-              <p className="text-justify">{t("p1")}</p>
+              <p className="text-left">{t("p1")}</p>
             </TextImage>
             <TextImage imageSrc="/img/varias/03 IMG_20250310_130100.jpg" imageAlt={t("img2Alt")} imagePosition="left">
-              <p className="text-justify">{t("p2")}</p>
+              <p className="text-left">{t("p2")}</p>
             </TextImage>
-            <p className="text-justify">{t("p3")}</p>
+            <p className="text-left">{t("p3")}</p>
 
             <div className="pt-4">
-              <Button asChild variant="yellow" className="w-fit">
+              <Button asChild variant="default" className="w-fit">
                 <a href="https://worldgreeninfrastructurenetwork.org/" target="_blank" rel="noopener noreferrer">
                   <Globe className="mr-2 h-4 w-4" /> {t("visitWebsite")}
                 </a>
@@ -91,7 +91,7 @@ const Network = async () => {
                 <div className="uppercase w-full lg:w-1/2 text-lg">
                   <strong>{value.id}</strong> {value.title}
                 </div>
-                <div className="w-full lg:w-1/2 text-white/70 text-base text-justify">{value.description}</div>
+                <div className="w-full lg:w-1/2 text-white/70 text-base text-left">{value.description}</div>
               </div>
             ))}
           </div>

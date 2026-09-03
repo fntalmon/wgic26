@@ -2,34 +2,41 @@
 
 Contexto: la cabecera de la web ahora es fija y muestra siempre el nombre completo
 del congreso, las fechas (27–30 Oct) y el lugar (Barcelona & Lleida), más el botón
-de registro. Por eso las imágenes del slider ya no necesitan repetir esa información.
+de registro. Además, **el texto de las slides ahora se genera en la web (HTML) y se
+traduce automáticamente a los 5 idiomas** — ya no va dentro de la imagen.
 
 Archivos afectados (en `public/img/banners/`, cada uno en versión desktop y mobile):
-`banner-congress-*`, `banner-impact-*`, `banner-programme-*`, `banner-visits-*`,
-`banner-register-*`.
+`banner-congress-*`, `banner-impact-*`, `banner-programme-*`, `banner-visits-*`.
 
-## Cambios generales (todas las slides)
+## Qué necesitamos ahora: solo la foto, sin texto
 
-1. **Quitar el logo WGIC26 de cada slide.** Ya aparece fijo arriba en la cabecera
-   (y abajo en el bloque "Organized by"). Repetido 3 veces queda redundante.
-2. **Quitar el nombre del congreso, fechas y lugar de cada slide.** Ahora van en la
-   franja fija superior de la web.
-3. **Quitar los números/estadísticas superpuestos en las fotos** (120+ papers,
-   1000+ attendees, 35+ countries, 12th edition…). Complican la lectura y tapan las
-   fotos de los espacios verdes. Esos datos ya se muestran en el cuerpo de la página.
-4. Dejar en cada slide **solo el mensaje y un CTA claro**.
+Para cada slide, la imagen final debe ser **únicamente la composición visual**:
 
-## Copys por slide
+1. **Sin texto de ningún tipo**: ni título, ni subtítulo, ni CTA — todo eso lo pone
+   la web encima del panel, traducido por idioma.
+2. **Sin logo WGIC26** (ya aparece fijo en la cabecera y en "Organized by").
+3. **Sin fechas ni lugar** (van en la franja fija superior).
+4. **Sin números/estadísticas superpuestos** (120+ papers, 1000+ attendees…).
+   Esos datos ya se muestran en el cuerpo de la página.
+5. Mantener la estructura actual: desktop = panel en blanco a la izquierda (~52%)
+   + foto a la derecha; mobile = foto arriba (~36%) + panel en blanco abajo.
+   El texto se renderiza sobre ese panel en blanco.
 
-### Slide 1 — `banner-congress` (lleva además el mensaje "best rate", antes en la slide 5)
+> Mientras llegan las nuevas, la web ya usa versiones "limpias" generadas a partir
+> de los banners actuales (misma foto, panel en blanco) con el texto traducido
+> encima. Si las nuevas imágenes tardan, no hay bloqueo.
+
+## Copys de referencia (los renderiza la web, NO van en la imagen)
+
+### Slide 1 — `banner-congress`
 > **World Green Infrastructure Congress 2026**
 > The researchers, designers and city-makers building greener cities meet in
-> Barcelona and Lleida. Register before 30 September and save 15%.
+> Barcelona and Lleida. Register before September 30 and save 15%.
 
 CTA: **GET YOUR EARLY BIRD TICKET →**
 
 ### Slide 2 — `banner-impact`
-> **Climate resilience. Water. Health. Biodiversity. Green jobs**
+> **Climate resilience. Water. Health. Biodiversity. Green jobs.**
 > 137 papers from 31 countries, gathered around one question: how green
 > infrastructure builds a healthier and safer urban future.
 
@@ -47,8 +54,8 @@ CTA: **EXPLORE THE PROGRAMME →**
 > it rarely reaches.
 
 CTA: **SEE THE FEATURED WORKSHOPS →**
-(Necesita imagen nueva, desktop + mobile. En cuanto esté, la añadimos al slider
-con enlace a /program/workshops.)
+(Necesita imagen nueva: composición como las demás — panel en blanco + foto,
+sin texto. En cuanto esté, la añadimos al slider con enlace a /program/workshops.)
 
 ### Slide 5 — `banner-visits`
 > **Barcelona is the case study. Walk through it.**
@@ -64,6 +71,6 @@ CTA: **DISCOVER THE TECHNICAL VISITS →**
 
 ## Formato
 
-Mantener los mismos tamaños/formatos actuales: `banner-*-desktop.jpg` y
-`banner-*-mobile.jpg`. Al reemplazar los archivos con el mismo nombre, la web los
-usa automáticamente sin tocar código.
+Mantener los mismos tamaños/formatos actuales: `banner-*-desktop.jpg` (2700×1208)
+y `banner-*-mobile.jpg` (640×816). Al reemplazar los archivos con el mismo nombre,
+la web los usa automáticamente sin tocar código.

@@ -6,9 +6,9 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { getProgrammePdfUrl } from "@/lib/programme-pdf";
 
 export const metadata: Metadata = {
-  title: "Programme Overview | WGIC26 Barcelona-Lleida",
+  title: "Program Overview | WGIC26 Barcelona-Lleida",
   description:
-    "A quick map of the WGIC26 four-day programme: Congress, Workshops, Technical Visits and Innovation Day, in Barcelona and Lleida.",
+    "A quick map of the WGIC26 four-day program: Congress, Workshops, Technical Visits and Innovation Day, in Barcelona and Lleida.",
 };
 
 const ProgramOverview = async () => {

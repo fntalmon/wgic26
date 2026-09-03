@@ -5,7 +5,7 @@ import { getTranslations } from "next-intl/server";
 export const metadata: Metadata = {
   title: "Congress Activities | WGIC26 Barcelona-Lleida",
   description:
-    "Explore the full activities programme at WGIC26, including sessions, workshops and networking at this green infrastructure conference 2026.",
+    "Explore the full activities program at WGIC26, including sessions, workshops and networking at this green infrastructure conference 2026.",
 };
 
 const Activities = async () => {

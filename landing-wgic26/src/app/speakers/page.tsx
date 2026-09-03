@@ -59,10 +59,10 @@ const Speakers = async () => {
               <h2 className="text-2xl lg:text-3xl font-semibold text-white">
                 {t("calloutTitle")}
               </h2>
-              <p className="mt-2 text-white/80 leading-relaxed text-justify">
+              <p className="mt-2 text-white/80 leading-relaxed text-left">
                 {t("calloutP1")}
               </p>
-              <p className="mt-3 text-white/70 text-justify">
+              <p className="mt-3 text-white/70 text-left">
                 {t("calloutP2")}
               </p>
             </div>
@@ -82,7 +82,7 @@ const Speakers = async () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+          <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
             <p>{t("bodyP1")}</p>
             <p>{t("bodyP2")}</p>
             <p>{t("calloutP3")}</p>

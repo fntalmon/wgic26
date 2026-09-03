@@ -51,7 +51,7 @@ const CongressCommittee = async () => {
 
       <section className="w-full justify-start text-sm">
         <div className="w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-12">
-          <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-justify">
+          <div className="flex flex-col gap-6 text-white/80 font-light leading-relaxed text-sm lg:text-base text-left">
             <p>{t("introP1")}</p>
             <p>{t("introP2")}</p>
           </div>

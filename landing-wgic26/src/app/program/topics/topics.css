@@ -1,5 +1,0 @@
-/* Apply text justification to all content within the Topics page */
-
-.justify-text p {
-    text-align: justify;
-}
