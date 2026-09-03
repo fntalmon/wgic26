@@ -13,28 +13,28 @@ const Topics = async () => {
     const t = await getTranslations("topicsPage");
 
     const mainTopics = [
-        { n: "1", label: t("strategiesPoliciesFunding") },
-        { n: "2", label: t("technologiesMarketStandards") },
-        { n: "3", label: t("projectsDesign") },
-        { n: "4", label: t("executionMaintenance") },
-        { n: "5", label: t("education") },
+        { n: "1", label: t("strategiesPoliciesFunding"), desc: t("topic1Desc") },
+        { n: "2", label: t("technologiesMarketStandards"), desc: t("topic2Desc") },
+        { n: "3", label: t("projectsDesign"), desc: t("topic3Desc") },
+        { n: "4", label: t("executionMaintenance"), desc: t("topic4Desc") },
+        { n: "5", label: t("education"), desc: t("topic5Desc") },
     ];
 
     const impacts = [
-        t("impactClimateResilience"),
-        t("impactWaterManagement"),
-        t("impactGreenSpaceManagement"),
-        t("impactBiodiversity"),
-        t("impactAirQuality"),
-        t("impactPlaceRegeneration"),
-        t("impactParticipatoryPlanning"),
-        t("impactHealthWellbeing"),
+        { label: t("impactClimateResilience"), desc: t("impactClimateResilienceDesc") },
+        { label: t("impactWaterManagement"), desc: t("impactWaterManagementDesc") },
+        { label: t("impactGreenSpaceManagement"), desc: t("impactGreenSpaceManagementDesc") },
+        { label: t("impactBiodiversity"), desc: t("impactBiodiversityDesc") },
+        { label: t("impactAirQuality"), desc: t("impactAirQualityDesc") },
+        { label: t("impactPlaceRegeneration"), desc: t("impactPlaceRegenerationDesc") },
+        { label: t("impactParticipatoryPlanning"), desc: t("impactParticipatoryPlanningDesc") },
+        { label: t("impactHealthWellbeing"), desc: t("impactHealthWellbeingDesc") },
     ];
 
     const workshops = [
-        t("workshopGlobalSouth"),
-        t("workshopHealthWellbeing"),
-        t("workshopPostConflict"),
+        { label: t("workshopGlobalSouth"), desc: t("workshopGlobalSouthDesc") },
+        { label: t("workshopHealthWellbeing"), desc: t("workshopHealthWellbeingDesc") },
+        { label: t("workshopPostConflict"), desc: t("workshopPostConflictDesc") },
     ];
 
     return (
@@ -79,20 +79,25 @@ const Topics = async () => {
                             {mainTopics.map((topic) => (
                                 <div
                                     key={topic.n}
-                                    className="group rounded-2xl border border-white/10 bg-white/5 p-6 flex items-center gap-5 hover:border-potus/40 hover:bg-white/[0.07] transition-all duration-300"
+                                    className="group rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col gap-4 hover:border-potus/40 hover:bg-white/[0.07] transition-all duration-300"
                                 >
-                                    <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-potus/15 text-potus text-xl font-bold group-hover:bg-potus group-hover:text-black transition-colors">
-                                        {topic.n}
-                                    </span>
-                                    <p className="text-white font-medium text-base leading-snug">
-                                        {topic.label}
+                                    <div className="flex items-center gap-5">
+                                        <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-potus/15 text-potus text-xl font-bold group-hover:bg-potus group-hover:text-black transition-colors">
+                                            {topic.n}
+                                        </span>
+                                        <p className="text-white font-medium text-base leading-snug">
+                                            {topic.label}
+                                        </p>
+                                    </div>
+                                    <p className="text-white/60 text-sm leading-relaxed">
+                                        {topic.desc}
                                     </p>
                                 </div>
                             ))}
 
                             {/* Impacts */}
                             <div className="rounded-2xl border border-potus/30 bg-potus/5 p-6 md:col-span-2 lg:col-span-3">
-                                <div className="flex items-center gap-5 mb-5">
+                                <div className="flex items-center gap-5 mb-2">
                                     <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-potus text-black text-xl font-bold">
                                         6
                                     </span>
@@ -100,14 +105,22 @@ const Topics = async () => {
                                         {t("impacts")}
                                     </p>
                                 </div>
-                                <div className="flex flex-wrap gap-3">
+                                <p className="text-white/70 text-sm leading-relaxed mb-6 md:pl-[4.25rem]">
+                                    {t("impactsIntro")}
+                                </p>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                                     {impacts.map((impact) => (
-                                        <span
-                                            key={impact}
-                                            className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80"
+                                        <div
+                                            key={impact.label}
+                                            className="rounded-xl border border-white/15 bg-white/5 px-4 py-3"
                                         >
-                                            {impact}
-                                        </span>
+                                            <p className="text-white text-sm font-medium mb-1.5">
+                                                {impact.label}
+                                            </p>
+                                            <p className="text-white/60 text-xs leading-relaxed">
+                                                {impact.desc}
+                                            </p>
+                                        </div>
                                     ))}
                                 </div>
                             </div>
@@ -120,10 +133,15 @@ const Topics = async () => {
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                                     {workshops.map((workshop) => (
                                         <div
-                                            key={workshop}
-                                            className="rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 text-sm text-white/80 leading-snug"
+                                            key={workshop.label}
+                                            className="rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4"
                                         >
-                                            {workshop}
+                                            <p className="text-white text-sm font-medium mb-1.5 leading-snug">
+                                                {workshop.label}
+                                            </p>
+                                            <p className="text-white/60 text-xs leading-relaxed">
+                                                {workshop.desc}
+                                            </p>
                                         </div>
                                     ))}
                                 </div>

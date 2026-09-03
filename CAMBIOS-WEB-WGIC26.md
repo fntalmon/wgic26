@@ -60,7 +60,7 @@ Estado al 3 de septiembre de 2026. Todo está aplicado en el código, **pendient
 
 **11. Estructura y contenido**
 - ANTES: varias fotos pequeñas intercaladas con el texto + acordeón "Key Topics" con 6 temas propios (Green Building Systems, Urban Planning, Water and Climate, Health and Biophilia, Global Challenges, Policy and Economy) + tabla.
-- DESPUÉS: una sola foto hero arriba + todo el texto introductorio seguido + la lista validada por Gabriel en formato visual de tarjetas numeradas: 1) Strategies – Policies – Funding programs, 2) Technologies – Market – GI/NBS – Standards, 3) Projects – Design, 4) Execution – Maintenance, 5) Education, 6) Impacts (tarjeta destacada con los 8 subtemas como chips) + los 3 Workshops. Traducido a los 5 idiomas.
+- DESPUÉS: una sola foto hero arriba + todo el texto introductorio seguido + la lista validada por Gabriel **con las descripciones completas de cada tema** (copy de Mònica) en formato visual de tarjetas numeradas: 1) Strategies – Policies – Funding programmes, 2) Technologies – Market – GI/NBS – Standards, 3) Projects – Design, 4) Execution – Maintenance, 5) Education, 6) Impacts (tarjeta destacada con intro + los 8 subtemas, cada uno con su descripción) + los 3 Workshops con sus descripciones. Traducido a los 5 idiomas.
 
 ---
 
