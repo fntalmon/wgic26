@@ -153,7 +153,7 @@
     "whereEyebrow": "Where it happens",
     "whereTitle": "Four days, two cities, three ways to take part",
     "whereCongressDate": "27–28 October",
-    "whereCongressTitle": "Congress",
+    "whereCongressTitle": "Congress & Workshops",
     "whereCongressText": "Keynotes, five parallel tracks and +100 oral presentations across two full days.",
     "whereCongressPlace": "CCIB — Parc del Fòrum, Barcelona",
     "whereVisitsDate": "29 October",
@@ -161,7 +161,7 @@
     "whereVisitsText": "Three guided itineraries through Barcelona's green roofs, living façades and urban gardens, explained on site by the teams behind them.",
     "whereVisitsPlace": "Across Barcelona · Small groups",
     "whereWorkshopsDate": "30 October",
-    "whereWorkshopsTitle": "Workshops",
+    "whereWorkshopsTitle": "Innovation Day",
     "whereWorkshopsText": "A research and innovation day at the Universitat de Lleida, built around the BIG4LIFE project on building-integrated greenery.",
     "whereWorkshopsPlace": "Universitat de Lleida — Lleida",
     "postersTitle": "Your research, in front of 30 countries.",
@@ -396,7 +396,7 @@
       },
       "invoice": {
         "question": "Do I need an invoice?",
-        "answer": "You can request an invoice in the Helice checkout form. If you need assistance, email wgic2026.economics@udl.cat or inquiry@wgic26.org."
+        "answer": "You can request an invoice in the Helice checkout form. If you need assistance, email wgic26.economics@udl.cat or inquiry@wgic26.org."
       },
       "dividerLabel": "FREQUENTLY ASKED QUESTIONS",
       "presenting": {

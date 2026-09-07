@@ -96,9 +96,9 @@ const Topics = async () => {
                             ))}
 
                             {/* Impacts */}
-                            <div className="rounded-2xl border border-potus/30 bg-potus/5 p-6 md:col-span-2 lg:col-span-3">
+                            <div className="group rounded-2xl border border-white/10 bg-white/5 p-6 md:col-span-2 lg:col-span-3 hover:border-potus/40 hover:bg-white/[0.07] transition-all duration-300">
                                 <div className="flex items-center gap-5 mb-2">
-                                    <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-potus text-black text-xl font-bold">
+                                    <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-potus/15 text-potus text-xl font-bold group-hover:bg-potus group-hover:text-black transition-colors">
                                         6
                                     </span>
                                     <p className="text-white font-bold text-lg uppercase tracking-wide">

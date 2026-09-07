@@ -153,7 +153,7 @@
     "whereEyebrow": "Où cela se passe",
     "whereTitle": "Quatre jours, deux villes, trois façons de participer",
     "whereCongressDate": "27–28 octobre",
-    "whereCongressTitle": "Congrès",
+    "whereCongressTitle": "Congrès et Ateliers",
     "whereCongressText": "Keynotes, cinq sessions parallèles et +100 présentations orales sur deux journées complètes.",
     "whereCongressPlace": "CCIB — Parc del Fòrum, Barcelone",
     "whereVisitsDate": "29 octobre",
@@ -161,7 +161,7 @@
     "whereVisitsText": "Trois itinéraires guidés à travers les toits verts, façades végétales et jardins urbains de Barcelone, expliqués sur site par les équipes qui les ont réalisés.",
     "whereVisitsPlace": "Dans toute Barcelone · Petits groupes",
     "whereWorkshopsDate": "30 octobre",
-    "whereWorkshopsTitle": "Ateliers",
+    "whereWorkshopsTitle": "Journée de l'Innovation",
     "whereWorkshopsText": "Une journée de recherche et d'innovation à l'Universitat de Lleida, autour du projet BIG4LIFE sur le végétal intégré au bâtiment.",
     "whereWorkshopsPlace": "Universitat de Lleida — Lleida",
     "postersTitle": "Votre recherche, devant 30 pays.",
@@ -463,7 +463,7 @@
       },
       "invoice": {
         "question": "Ai-je besoin d'une facture?",
-        "answer": "Vous pouvez demander une facture dans le formulaire de paiement Helice. Si vous avez besoin d'aide, écrivez à wgic2026.economics@udl.cat ou inquiry@wgic26.org."
+        "answer": "Vous pouvez demander une facture dans le formulaire de paiement Helice. Si vous avez besoin d'aide, écrivez à wgic26.economics@udl.cat ou inquiry@wgic26.org."
       },
       "dividerLabel": "QUESTIONS FRÉQUEMMENT POSÉES",
       "presenting": {

@@ -153,7 +153,7 @@
     "whereEyebrow": "Dónde sucede",
     "whereTitle": "Cuatro días, dos ciudades, tres formas de participar",
     "whereCongressDate": "27–28 de octubre",
-    "whereCongressTitle": "Congreso",
+    "whereCongressTitle": "Congreso y Talleres",
     "whereCongressText": "Keynotes, cinco sesiones paralelas y +100 presentaciones orales a lo largo de dos días completos.",
     "whereCongressPlace": "CCIB — Parc del Fòrum, Barcelona",
     "whereVisitsDate": "29 de octubre",
@@ -161,7 +161,7 @@
     "whereVisitsText": "Tres itinerarios guiados por cubiertas verdes, fachadas vegetales y jardines urbanos de Barcelona, explicados in situ por los equipos que los construyeron.",
     "whereVisitsPlace": "Por toda Barcelona · Grupos reducidos",
     "whereWorkshopsDate": "30 de octubre",
-    "whereWorkshopsTitle": "Talleres",
+    "whereWorkshopsTitle": "Día de Innovación",
     "whereWorkshopsText": "Una jornada de investigación e innovación en la Universitat de Lleida, en torno al proyecto BIG4LIFE sobre vegetación integrada en la edificación.",
     "whereWorkshopsPlace": "Universitat de Lleida — Lleida",
     "postersTitle": "Tu investigación, ante 30 países.",
@@ -396,7 +396,7 @@
       },
       "invoice": {
         "question": "¿Necesito factura?",
-        "answer": "Puedes solicitar la factura en el formulario de pago de Helice. Si necesitas ayuda, escribe a wgic2026.economics@udl.cat o a inquiry@wgic26.org."
+        "answer": "Puedes solicitar la factura en el formulario de pago de Helice. Si necesitas ayuda, escribe a wgic26.economics@udl.cat o a inquiry@wgic26.org."
       },
       "dividerLabel": "PREGUNTAS FRECUENTES",
       "presenting": {
