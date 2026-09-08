@@ -8,6 +8,7 @@ import { supporters } from "@/data/supporters";
 import { getTranslations } from "next-intl/server";
 import {
   Building2,
+  Crown,
   Gem,
   Trees,
   Leaf,
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
 
 const tierIcons: Record<string, React.ComponentType<{ className?: string; size?: number }>> = {
   organizedBy: Building2,
+  platinumPartners: Crown,
   elitePartners: Gem,
   gardenBigExhibitors: Trees,
   gardenMediumExhibitors: Leaf,
@@ -33,6 +35,7 @@ const tierIcons: Record<string, React.ComponentType<{ className?: string; size?:
 // Escala descendente por tier, igual criterio que en la home: refleja el nivel/importancia de cada categoría.
 const tierLogoBox: Record<string, string> = {
   organizedBy: "h-24 w-40",
+  platinumPartners: "h-[5.5rem] w-[9.5rem]",
   elitePartners: "h-20 w-36",
   gardenBigExhibitors: "h-16 w-32",
   gardenMediumExhibitors: "h-12 w-28",

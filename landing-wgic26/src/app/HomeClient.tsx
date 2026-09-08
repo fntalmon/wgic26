@@ -38,6 +38,7 @@ const keynoteSpeakerSlots = [
 // Escala descendente con salto marcado entre tiers, según su nivel/importancia.
 const homeSponsorTierBox = {
   organizedBy: "h-24 w-48 md:h-28 md:w-56",
+  platinumPartners: "h-[5.5rem] w-44 md:h-[6.5rem] md:w-52",
   elitePartners: "h-20 w-40 md:h-24 md:w-48",
   gardenBigExhibitors: "h-16 w-32 md:h-20 md:w-40",
   gardenMediumExhibitors: "h-12 w-24 md:h-16 md:w-32",
@@ -473,13 +474,39 @@ export default function HomeClient() {
             </div>
           </div>
 
+          {/* PLATINUM PARTNERS */}
+          <div className="bg-white rounded-3xl border border-white/10 p-6 md:p-8">
+            <h3 className="text-center text-base font-bold mb-5 text-gray-800 uppercase tracking-wider">
+              {t("platinumPartners")}
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+              {sponsorTiers[1].logos.map((logo) => (
+                <a
+                  key={logo.href}
+                  href={logo.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center justify-center ${homeSponsorTierBox.platinumPartners}`}
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    className="max-h-full max-w-full w-auto h-auto object-contain"
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+
           {/* ELITE PARTNERS */}
           <div className="bg-white rounded-3xl border border-white/10 p-6 md:p-8">
             <h3 className="text-center text-base font-bold mb-5 text-gray-800 uppercase tracking-wider">
               {t("elitePartners")}
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
-              {sponsorTiers[1].logos.map((logo) => (
+              {sponsorTiers[2].logos.map((logo) => (
                 <a
                   key={logo.href}
                   href={logo.href}
@@ -505,7 +532,7 @@ export default function HomeClient() {
               {t("gardenBigExhibitors")}
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 min-h-[60px]">
-              {sponsorTiers[2].logos.map((logo) => (
+              {sponsorTiers[3].logos.map((logo) => (
                 <a
                   key={logo.href}
                   href={logo.href}
@@ -531,7 +558,7 @@ export default function HomeClient() {
               {t("gardenMediumExhibitors")}
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 min-h-[60px]">
-              {sponsorTiers[3].logos.map((logo) => (
+              {sponsorTiers[4].logos.map((logo) => (
                 <a
                   key={logo.href}
                   href={logo.href}
@@ -557,7 +584,7 @@ export default function HomeClient() {
               {t("mediaPartners")}
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
-              {sponsorTiers[4].logos.map((logo) => (
+              {sponsorTiers[5].logos.map((logo) => (
                 <a
                   key={logo.href}
                   href={logo.href}
