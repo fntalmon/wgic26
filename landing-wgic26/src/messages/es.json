@@ -396,7 +396,7 @@
       },
       "invoice": {
         "question": "¿Necesito factura?",
-        "answer": "Puedes solicitar la factura en el formulario de pago de Helice. Si necesitas ayuda, escribe a wgic26.economics@udl.cat o a inquiry@wgic26.org."
+        "answer": "Puedes solicitar la factura en el formulario de pago de Helice. Si necesitas ayuda, escribe a wgic2026.economics@udl.cat o a inquiry@wgic26.org."
       },
       "dividerLabel": "PREGUNTAS FRECUENTES",
       "presenting": {
@@ -771,10 +771,7 @@
         "name": "Wendy Y. Chen",
         "bio": "Profesora en la Universidad de Hong Kong, Wendy Y. Chen se especializa en infraestructura verde-azul urbana, enfocándose en cómo las soluciones basadas en la naturaleza mejoran la sostenibilidad urbana, la planificación y la calidad de vida."
       },
-      "speaker7": {
-        "name": "Dorothy Aseyo",
-        "bio": "Directora Ejecutiva del Movimiento Cinturón Verde, Dorothy Aseyo trabaja en conservación ambiental, empoderamiento comunitario, medios de vida sostenibles y resiliencia climática, promoviendo soluciones basadas en la naturaleza y acción de base para construir sociedades más resilientes e inclusivas."
-      },
+
       "speaker8": {
         "name": "María Buhigas",
         "bio": "María Buhigas es la Arquitecta Jefa del Ayuntamiento de Barcelona. Arquitecta y urbanista, cuenta con una amplia experiencia en estrategia urbana, espacio público, vivienda y transformación de las ciudades, con el objetivo de crear ciudades más habitables, inclusivas y resilientes."
@@ -800,8 +797,8 @@
         "bio": "Loredana Scuto es Senior Programme Officer - Urban en la IUCN. Especialista en patrimonio y desarrollo sostenible, impulsa iniciativas globales para integrar la naturaleza y la biodiversidad en el diseño urbano mediante soluciones basadas en la naturaleza."
       },
       "speaker15": {
-        "name": "Júlia López",
-        "bio": "Júlia López Ventura es Directora Regional para Europa en C40 Cities. Desde 2015 apoya a líderes locales en la lucha contra la crisis climática, impulsando la sostenibilidad urbana, la diplomacia de ciudades y la integración de la acción climática en megaciudades europeas."
+        "name": "Job Mwangi",
+        "bio": "Job Mwangi es Advocacy Manager de The Green Belt Movement, además de abogado y profesional de la comunicación keniano. Con más de 10 años de experiencia en comunicación estratégica y advocacy, su trabajo se centra en la gobernanza ambiental, la protección de los bosques, la restauración de paisajes y la participación comunitaria, promoviendo una mayor protección ambiental y un desarrollo más resiliente frente al cambio climático en Kenia."
       },
       "speaker16": {
         "name": "Sergio Carratalà",

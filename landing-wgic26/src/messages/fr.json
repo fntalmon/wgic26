@@ -463,7 +463,7 @@
       },
       "invoice": {
         "question": "Ai-je besoin d'une facture?",
-        "answer": "Vous pouvez demander une facture dans le formulaire de paiement Helice. Si vous avez besoin d'aide, écrivez à wgic26.economics@udl.cat ou inquiry@wgic26.org."
+        "answer": "Vous pouvez demander une facture dans le formulaire de paiement Helice. Si vous avez besoin d'aide, écrivez à wgic2026.economics@udl.cat ou inquiry@wgic26.org."
       },
       "dividerLabel": "QUESTIONS FRÉQUEMMENT POSÉES",
       "presenting": {
@@ -771,10 +771,7 @@
         "name": "Wendy Y. Chen",
         "bio": "Professeur à l'Université de Hong Kong, Wendy Y. Chen se spécialise dans les infrastructures urbaines vert-bleu, en se concentrant sur la manière dont les solutions basées sur la nature améliorent la durabilité, la planification et la qualité de vie urbaines."
       },
-      "speaker7": {
-        "name": "Dorothy Aseyo",
-        "bio": "Directrice exécutive du Green Belt Movement, Dorothy Aseyo travaille sur la conservation de l'environnement, l'autonomisation des communautés, les moyens de subsistance durables et la résilience climatique, en promouvant des solutions fondées sur la nature et des actions locales pour construire des sociétés plus résilientes et inclusives."
-      },
+
       "speaker8": {
         "name": "María Buhigas",
         "bio": "María Buhigas est l'architecte en chef de la Ville de Barcelone. Architecte et urbaniste, elle possède une vaste expérience en stratégie urbaine, en espace public, en logement et en transformation des villes, avec pour objectif de créer des villes plus agréables à vivre, inclusives et résilientes."
@@ -800,8 +797,8 @@
         "bio": "Loredana Scuto est Senior Programme Officer - Urban à l'UICN. Spécialiste du patrimoine et du développement durable, elle porte des initiatives mondiales visant à intégrer la nature et la biodiversité dans la conception urbaine grâce à des solutions fondées sur la nature."
       },
       "speaker15": {
-        "name": "Júlia López",
-        "bio": "Júlia López Ventura est Directrice régionale pour l'Europe au sein de C40 Cities. Depuis 2015, elle accompagne les dirigeants locaux dans la lutte contre la crise climatique, en favorisant la durabilité urbaine, la diplomatie des villes et l'intégration de l'action climatique dans les mégapoles européennes."
+        "name": "Job Mwangi",
+        "bio": "Job Mwangi est responsable du plaidoyer au sein de The Green Belt Movement, ainsi qu’avocat et professionnel de la communication kényan. Fort de plus de 10 ans d’expérience en communication stratégique et en plaidoyer, son travail se concentre sur la gouvernance environnementale, la protection des forêts, la restauration des paysages et l’engagement communautaire, en faveur d’une protection environnementale renforcée et d’un développement plus résilient face au changement climatique au Kenya."
       },
       "speaker16": {
         "name": "Sergio Carratalà",
