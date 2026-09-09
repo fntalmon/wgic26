@@ -1196,12 +1196,12 @@
         "leadershipAffiliation": "Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; National University of Life and Environmental Sciences of Ukraine, Department of Phytodesign and Landscape Architecture; Ukrainian Association of Green Infrastructure; World Green Infrastructure Network"
       },
       "lifeBauhaus": {
-        "title": "LIFE Bauhaus. LIFE projects that build the New European Bauhaus",
-        "description": "Nine LIFE projects show how the New European Bauhaus values of sustainability, aesthetics and inclusion become practical solutions for more resilient, sustainable and liveable cities.",
+        "title": "Greening European Cities with LIFE: Inspiring Urban Transformation in Europe",
+        "description": "Join us to discover how 9 LIFE projects are helping cities and neighbourhoods across Europe become greener, healthier and more inclusive.",
         "leadershipTeam": [
           {
-            "name": "Piedad Ribas",
-            "affiliation": "European Commission"
+            "name": "Piedad Rivas",
+            "affiliation": "European Commission — CINEA (European Climate, Infrastructure and Environment Executive Agency), LIFE Environment"
           },
           {
             "name": "Gabriel Pérez",
@@ -1215,27 +1215,28 @@
           "Laura Herrera (University of Lleida, Spain)"
         ],
         "whyParagraphs": [
-          "The LIFE Programme has played a key role in implementing the New European Bauhaus (NEB) by funding demonstration projects that translate its core values of sustainability, aesthetics, and inclusion into practical solutions.",
-          "Through support for nature-based solutions, sustainable building renovation, circular economy, and participatory approaches, LIFE has helped validate innovative methodologies and promote their replication across Europe, contributing to the EU's climate, biodiversity, and sustainable urban development goals.",
-          "In doing so, LIFE is helping bring the principles of the New European Bauhaus to life in municipalities and communities across Europe, enabling the implementation of innovative solutions for more resilient, sustainable, and liveable urban environments while strengthening collaboration, social ties, and local communities."
+          "The LIFE Programme plays a key role in greening cities and advancing the New European Bauhaus (NEB) by funding demonstration projects that turn its core values — sustainability, aesthetics and inclusion — into practical, visible solutions on the ground.",
+          "By supporting nature-based solutions, sustainable building renovation, circular economy approaches, and participatory governance, the LIFE Programme has helped test and validate innovative methods that can be replicated across Europe. In doing so, it contributes directly to the EU's objectives on climate neutrality, biodiversity protection, and sustainable urban development.",
+          "The LIFE Programme is also helping bring the principles of the New European Bauhaus to life in municipalities and communities across Europe. It enables the implementation of innovative solutions for more resilient, sustainable and liveable urban environments, while also strengthening social cohesion, local cooperation and community engagement."
         ],
-        "mainObjective": "This workshop aims to show the real impact of nine LIFE projects that support the NEB initiative, while addressing in a participatory way future challenges for achieving a fair, healthy and beautiful built environment. During the workshop the following key aspects will be addressed:",
+        "goals": [
+          "Inspiring examples from 9 LIFE-supported urban projects.",
+          "Practical solutions for greener urban areas and better quality of life in cities.",
+          "Insights into the LIFE Programme's contribution to the New European Bauhaus.",
+          "Exchange with experts and stakeholders.",
+          "Information on relevant funding opportunities."
+        ],
+        "mainObjective": "This workshop aims to demonstrate the concrete impact of nine LIFE projects supporting the New European Bauhaus initiative, while addressing, in a participatory way, the future challenges of achieving a fairer, healthier and more beautiful built environment. In particular, the workshop will explore:",
         "mainObjectiveBullets": [
-          "Positive impacts of LIFE projects on policymaking and implementation, cooperation with local authorities, citizens, autonomous regions, etc.",
-          "How can LIFE projects move from successful pilot actions to lasting and scalable change? What conditions and actions are needed to secure their long-term impact?",
-          "How can projects overcome the main barriers to effective collaboration with economic sectors and create shared environmental, social and economic value?",
-          "How can cooperation with public authorities be strengthened so that innovative solutions are embedded in policies, planning processes and public procurement?",
-          "How can stakeholders and local communities be meaningfully engaged throughout the process, and how can unexpected outcomes be transformed into wider learning and impact?",
-          "Examples of LIFE green cities/New European Bauhaus projects, including nature-based solutions; innovative architectural and urbanisation approaches to climate change; examples of architecture and urban planning greening cities: health, air pollution, mobility, fighting heat waves, etc."
+          "The positive impact of LIFE projects on policy development and implementation, including cooperation with local authorities, citizens and regional administrations.",
+          "How LIFE projects can move from successful pilot actions to lasting and scalable change, and which conditions are needed to ensure their long-term impact.",
+          "How projects can overcome barriers to effective collaboration with economic actors and create shared environmental, social and economic value.",
+          "How cooperation with public authorities can be strengthened so that innovative solutions are integrated into policies, planning processes and public procurement.",
+          "How stakeholders and local communities can be meaningfully involved throughout the process, and how unexpected results can be transformed into broader learning and impact.",
+          "Examples of LIFE projects contributing to greener cities and the New European Bauhaus: nature-based solutions; innovative architectural and urban development approaches to climate change; and examples of architecture and urban planning that improve health, reduce air pollution, support sustainable mobility, and help cities respond to heatwaves and other climate-related challenges."
         ],
-        "mainObjectiveFooter": "These examples will be compiled in a fact-sheet showcasing remarkable innovative LIFE projects which have contributed to transformational changes in the urban environment.",
+        "mainObjectiveFooter": "These examples will be compiled in a factsheet presenting remarkable and innovative LIFE projects that have contributed to transformational change in the urban environment in Europe.",
         "projects": [
-          {
-            "id": "bewooden",
-            "name": "LIFE BE-WoodEN",
-            "description": "Promotes sustainable timber construction through education, innovation, and co-design approaches, supporting climate-neutral, sustainable, and inclusive neighbourhoods aligned with New European Bauhaus principles.",
-            "link": "https://lifebewooden.unige.it"
-          },
           {
             "id": "bauhausing-europe",
             "name": "LIFEBauhausingEurope",
@@ -1249,6 +1250,30 @@
             "link": "https://eurovertice.eu/en/projects/life-seedneb/"
           },
           {
+            "id": "big4life",
+            "name": "BIG4LIFE",
+            "description": "Promotes the long-term sustainability of Building-Integrated Greenery systems through improved maintenance, monitoring, and collaborative management strategies in Mediterranean cities.",
+            "link": "https://www.big4life.eu"
+          },
+          {
+            "id": "bewooden",
+            "name": "LIFE BE-WoodEN",
+            "description": "Promotes sustainable timber construction through education, innovation, and co-design approaches, supporting climate-neutral, sustainable, and inclusive neighbourhoods aligned with New European Bauhaus principles.",
+            "link": "https://lifebewooden.unige.it"
+          },
+          {
+            "id": "biomatine",
+            "name": "LIFE BIOMATINE",
+            "description": "Demonstrates the use of innovative bio-based insulation materials to improve the energy performance of buildings while reducing environmental impacts from the construction sector.",
+            "link": "https://openresearch.amsterdam/nl/page/125683/life-biomatine"
+          },
+          {
+            "id": "teplo",
+            "name": "LIFE TEPLO",
+            "description": "Supports the sustainable reconstruction and energy renovation of war-damaged buildings in Ukraine, demonstrating resilient, low-carbon solutions for post-conflict urban recovery.",
+            "link": "https://www.teplo-project.in.ua/en"
+          },
+          {
             "id": "help",
             "name": "LIFE HELP",
             "description": "Supports municipalities in developing integrated environmental governance approaches, strengthening planning processes, monitoring, and collaboration among local stakeholders."
@@ -1260,44 +1285,38 @@
             "link": "https://greenme5.fmrm.es/en/"
           },
           {
-            "id": "biomatine",
-            "name": "LIFE BIOMATINE",
-            "description": "Demonstrates the use of innovative bio-based insulation materials to improve the energy performance of buildings while reducing environmental impacts from the construction sector.",
-            "link": "https://openresearch.amsterdam/nl/page/125683/life-biomatine"
-          },
-          {
-            "id": "panelka",
-            "name": "LIFE Panelka 2.0",
-            "description": "Develops circular and energy-efficient renovation solutions for prefabricated residential buildings, combining sustainable materials and innovative construction approaches.",
-            "link": "https://build-up.ec.europa.eu/en/resources-and-tools/links/life23-pre-fr-panelka-20-project"
-          },
-          {
             "id": "levels",
             "name": "More LIFE to Level(s)",
             "description": "Supports the implementation of the European Level(s) framework to assess and improve the sustainability performance of buildings throughout their life cycle.",
             "link": "https://www.ogni.at/more-life-2-levels?cn-reloaded=1"
-          },
-          {
-            "id": "big4life",
-            "name": "BIG4LIFE",
-            "description": "Promotes the long-term sustainability of Building-Integrated Greenery systems through improved maintenance, monitoring, and collaborative management strategies in Mediterranean cities.",
-            "link": "https://www.big4life.eu"
           }
         ],
         "structure": [
           {
-            "heading": "Part one (1h). Impact of LIFE-Bauhaus projects",
-            "body": "In this session, each of the participating projects will make a brief presentation of their impact on policymaking and implementation, cooperation with local authorities, citizens, autonomous regions, etc."
+            "heading": "Workshop goals and structure",
+            "body": "This event will showcase how 9 LIFE projects are helping to green European cities through concrete action, cooperation and innovation. In the first part, the 9 projects will present their experience and impact, focusing on policymaking, implementation, collaboration with local and regional authorities, and citizen engagement. In the second part, participants will join a World Café session to discuss the main future challenges for urban transformation in Europe, from scaling up successful solutions and strengthening governance to ensuring inclusion, financing and long-term sustainability."
+          },
+          {
+            "heading": "Part one (1h). Impact of LIFE projects in greening cities",
+            "body": "Greening European Cities with LIFE: 9 inspiring urban transformation stories. In this session, each of the participating projects will make a brief presentation of their impact on policymaking and implementation, cooperation with local authorities, citizens, autonomous regions, etc."
           },
           {
             "heading": "Part two (1h). Future challenges",
             "body": "Participatory session — World Café Method",
             "bullets": [
+              "This session moves from \"what has been achieved\" to \"what is needed next\".",
+              "Participants will discuss practical and strategic questions linked to scaling up urban transformation in Europe.",
               "4 tables · 4 rounds of 10 min · participants rotate · host stays fixed · each group visits all 4 tables",
-              "Representatives of LIFE Bauhaus projects leading the groups",
+              "Representatives of LIFE projects leading the groups",
               "1–2 session moderators"
             ]
           }
+        ],
+        "expectedOutcomes": [
+          "Discover inspiring examples of urban transformation supported by LIFE.",
+          "Learn how projects are influencing policy and practice.",
+          "Exchange on future challenges and opportunities.",
+          "Contribute ideas for scaling up green, inclusive and beautiful urban solutions across Europe."
         ]
       }
     }

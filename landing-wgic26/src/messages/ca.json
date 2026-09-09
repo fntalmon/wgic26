@@ -1195,12 +1195,12 @@
         "leadershipAffiliation": "Wroclaw University of Environmental and Life Sciences, Department of Landscape Architecture; National University of Life and Environmental Sciences of Ukraine, Department of Phytodesign and Landscape Architecture; Ukrainian Association of Green Infrastructure; World Green Infrastructure Network"
       },
       "lifeBauhaus": {
-        "title": "LIFE Bauhaus. Projectes LIFE que construeixen la Nova Bauhaus Europea",
-        "description": "Nou projectes LIFE mostren com els valors de sostenibilitat, estètica i inclusió de la Nova Bauhaus Europea es converteixen en solucions pràctiques per a ciutats més resilients, sostenibles i habitables.",
+        "title": "Reverdir les ciutats europees amb LIFE: inspirant la transformació urbana a Europa",
+        "description": "Descobreix com 9 projectes LIFE estan ajudant que ciutats i barris de tot Europa siguin més verds, saludables i inclusius.",
         "leadershipTeam": [
           {
-            "name": "Piedad Ribas",
-            "affiliation": "Comissió Europea"
+            "name": "Piedad Rivas",
+            "affiliation": "Comissió Europea — CINEA (Agència Executiva Europea de Clima, Infraestructures i Medi Ambient), LIFE Environment"
           },
           {
             "name": "Gabriel Pérez",
@@ -1214,27 +1214,28 @@
           "Laura Herrera (Universitat de Lleida, Espanya)"
         ],
         "whyParagraphs": [
-          "El Programa LIFE ha tingut un paper clau en la implementació de la Nova Bauhaus Europea (NEB) finançant projectes de demostració que tradueixen els seus valors fonamentals de sostenibilitat, estètica i inclusió en solucions pràctiques.",
-          "Mitjançant el suport a solucions basades en la natura, la rehabilitació sostenible d'edificis, l'economia circular i els enfocaments participatius, LIFE ha contribuït a validar metodologies innovadores i a promoure la seva replicació a tota Europa, contribuint als objectius de la UE en matèria de clima, biodiversitat i desenvolupament urbà sostenible.",
-          "D'aquesta manera, LIFE està ajudant a donar vida als principis de la Nova Bauhaus Europea en municipis i comunitats d'arreu d'Europa, fent possible la implementació de solucions innovadores per a entorns urbans més resilients, sostenibles i habitables, alhora que enforteix la col·laboració, els vincles socials i les comunitats locals."
+          "El Programa LIFE té un paper clau a l'hora de reverdir les ciutats i fer avançar la Nova Bauhaus Europea (NEB) finançant projectes de demostració que tradueixen els seus valors fonamentals —sostenibilitat, estètica i inclusió— en solucions pràctiques i visibles sobre el terreny.",
+          "Mitjançant el suport a solucions basades en la natura, la rehabilitació sostenible d'edificis, els enfocaments d'economia circular i la governança participativa, el Programa LIFE ha ajudat a provar i validar mètodes innovadors que es poden replicar a tota Europa. D'aquesta manera, contribueix directament als objectius de la UE en matèria de neutralitat climàtica, protecció de la biodiversitat i desenvolupament urbà sostenible.",
+          "El Programa LIFE també està ajudant a donar vida als principis de la Nova Bauhaus Europea en municipis i comunitats d'arreu d'Europa. Fa possible la implementació de solucions innovadores per a entorns urbans més resilients, sostenibles i habitables, alhora que enforteix la cohesió social, la cooperació local i la participació comunitària."
         ],
-        "mainObjective": "Aquest taller té com a objectiu mostrar l'impacte real de nou projectes LIFE que donen suport a la iniciativa NEB, alhora que aborda de manera participativa els reptes futurs per aconseguir un entorn construït just, saludable i bell. Durant el taller s'abordaran els aspectes clau següents:",
+        "goals": [
+          "Exemples inspiradors de 9 projectes urbans donats suport per LIFE.",
+          "Solucions pràctiques per a zones urbanes més verdes i una millor qualitat de vida a les ciutats.",
+          "Perspectives sobre la contribució del Programa LIFE a la Nova Bauhaus Europea.",
+          "Intercanvi amb persones expertes i parts interessades.",
+          "Informació sobre oportunitats de finançament rellevants."
+        ],
+        "mainObjective": "Aquest taller té com a objectiu demostrar l'impacte concret de nou projectes LIFE que donen suport a la iniciativa de la Nova Bauhaus Europea, alhora que aborda, de manera participativa, els reptes futurs per aconseguir un entorn construït més just, saludable i bell. En particular, el taller explorarà:",
         "mainObjectiveBullets": [
-          "Impactes positius dels projectes LIFE en l'elaboració i la implementació de polítiques, la cooperació amb les autoritats locals, la ciutadania, les regions autònomes, etc.",
-          "Com poden els projectes LIFE passar d'accions pilot reeixides a un canvi durador i escalable? Quines condicions i accions calen per garantir-ne l'impacte a llarg termini?",
-          "Com poden els projectes superar les principals barreres per a una col·laboració eficaç amb els sectors econòmics i crear valor ambiental, social i econòmic compartit?",
-          "Com es pot enfortir la cooperació amb les administracions públiques perquè les solucions innovadores quedin integrades en les polítiques, els processos de planificació i la contractació pública?",
-          "Com es poden implicar de manera significativa les parts interessades i les comunitats locals al llarg de tot el procés, i com es poden transformar els resultats inesperats en un aprenentatge i un impacte més amplis?",
-          "Exemples de projectes LIFE de ciutats verdes/Nova Bauhaus Europea, incloent-hi solucions basades en la natura; enfocaments arquitectònics i d'urbanització innovadors davant el canvi climàtic; exemples d'arquitectura i planificació urbana que enverdeixen les ciutats: salut, contaminació de l'aire, mobilitat, lluita contra les onades de calor, etc."
+          "L'impacte positiu dels projectes LIFE en l'elaboració i la implementació de polítiques, incloent-hi la cooperació amb autoritats locals, la ciutadania i les administracions regionals.",
+          "Com poden els projectes LIFE passar d'accions pilot reeixides a un canvi durador i escalable, i quines condicions calen per garantir-ne l'impacte a llarg termini.",
+          "Com poden els projectes superar les barreres per a una col·laboració eficaç amb els agents econòmics i crear valor ambiental, social i econòmic compartit.",
+          "Com es pot enfortir la cooperació amb les administracions públiques perquè les solucions innovadores s'integrin en les polítiques, els processos de planificació i la contractació pública.",
+          "Com es poden implicar de manera significativa les parts interessades i les comunitats locals al llarg de tot el procés, i com es poden transformar els resultats inesperats en un aprenentatge i un impacte més amplis.",
+          "Exemples de projectes LIFE que contribueixen a ciutats més verdes i a la Nova Bauhaus Europea: solucions basades en la natura; enfocaments arquitectònics i de desenvolupament urbà innovadors davant el canvi climàtic; i exemples d'arquitectura i planificació urbana que milloren la salut, redueixen la contaminació de l'aire, afavoreixen la mobilitat sostenible i ajuden les ciutats a respondre a les onades de calor i altres reptes relacionats amb el clima."
         ],
-        "mainObjectiveFooter": "Aquests exemples es recolliran en una fitxa informativa que mostrarà projectes LIFE innovadors destacats que han contribuït a canvis transformadors en l'entorn urbà.",
+        "mainObjectiveFooter": "Aquests exemples es recolliran en una fitxa informativa que presentarà projectes LIFE innovadors i destacats que han contribuït a canvis transformadors en l'entorn urbà a Europa.",
         "projects": [
-          {
-            "id": "bewooden",
-            "name": "LIFE BE-WoodEN",
-            "description": "Promou la construcció sostenible amb fusta mitjançant l'educació, la innovació i els enfocaments de codisseny, donant suport a barris climàticament neutres, sostenibles i inclusius alineats amb els principis de la Nova Bauhaus Europea.",
-            "link": "https://lifebewooden.unige.it"
-          },
           {
             "id": "bauhausing-europe",
             "name": "LIFEBauhausingEurope",
@@ -1248,6 +1249,30 @@
             "link": "https://eurovertice.eu/en/projects/life-seedneb/"
           },
           {
+            "id": "big4life",
+            "name": "BIG4LIFE",
+            "description": "Promou la sostenibilitat a llarg termini dels sistemes de vegetació integrada en edificis mitjançant estratègies millorades de manteniment, seguiment i gestió col·laborativa a les ciutats mediterrànies.",
+            "link": "https://www.big4life.eu"
+          },
+          {
+            "id": "bewooden",
+            "name": "LIFE BE-WoodEN",
+            "description": "Promou la construcció sostenible amb fusta mitjançant l'educació, la innovació i els enfocaments de codisseny, donant suport a barris climàticament neutres, sostenibles i inclusius alineats amb els principis de la Nova Bauhaus Europea.",
+            "link": "https://lifebewooden.unige.it"
+          },
+          {
+            "id": "biomatine",
+            "name": "LIFE BIOMATINE",
+            "description": "Demostra l'ús de materials aïllants innovadors de base biològica per millorar el rendiment energètic dels edificis, alhora que redueix els impactes ambientals del sector de la construcció.",
+            "link": "https://openresearch.amsterdam/nl/page/125683/life-biomatine"
+          },
+          {
+            "id": "teplo",
+            "name": "LIFE TEPLO",
+            "description": "Dona suport a la reconstrucció sostenible i la rehabilitació energètica d'edificis danyats per la guerra a Ucraïna, demostrant solucions resilients i baixes en carboni per a la recuperació urbana després del conflicte.",
+            "link": "https://www.teplo-project.in.ua/en"
+          },
+          {
             "id": "help",
             "name": "LIFE HELP",
             "description": "Dona suport als municipis en el desenvolupament d'enfocaments integrats de governança ambiental, enfortint els processos de planificació, el seguiment i la col·laboració entre els agents locals."
@@ -1259,44 +1284,38 @@
             "link": "https://greenme5.fmrm.es/en/"
           },
           {
-            "id": "biomatine",
-            "name": "LIFE BIOMATINE",
-            "description": "Demostra l'ús de materials aïllants innovadors de base biològica per millorar el rendiment energètic dels edificis, alhora que redueix els impactes ambientals del sector de la construcció.",
-            "link": "https://openresearch.amsterdam/nl/page/125683/life-biomatine"
-          },
-          {
-            "id": "panelka",
-            "name": "LIFE Panelka 2.0",
-            "description": "Desenvolupa solucions de rehabilitació circulars i energèticament eficients per a edificis residencials prefabricats, combinant materials sostenibles i enfocaments constructius innovadors.",
-            "link": "https://build-up.ec.europa.eu/en/resources-and-tools/links/life23-pre-fr-panelka-20-project"
-          },
-          {
             "id": "levels",
             "name": "More LIFE to Level(s)",
             "description": "Dona suport a la implementació del marc europeu Level(s) per avaluar i millorar el rendiment de sostenibilitat dels edificis al llarg de tot el seu cicle de vida.",
             "link": "https://www.ogni.at/more-life-2-levels?cn-reloaded=1"
-          },
-          {
-            "id": "big4life",
-            "name": "BIG4LIFE",
-            "description": "Promou la sostenibilitat a llarg termini dels sistemes de vegetació integrada en edificis mitjançant estratègies millorades de manteniment, seguiment i gestió col·laborativa a les ciutats mediterrànies.",
-            "link": "https://www.big4life.eu"
           }
         ],
         "structure": [
           {
-            "heading": "Primera part (1 h). Impacte dels projectes LIFE-Bauhaus",
-            "body": "En aquesta sessió, cadascun dels projectes participants farà una breu presentació del seu impacte en l'elaboració i la implementació de polítiques, la cooperació amb les autoritats locals, la ciutadania, les regions autònomes, etc."
+            "heading": "Objectius i estructura del taller",
+            "body": "Aquest esdeveniment mostrarà com 9 projectes LIFE estan ajudant a reverdir les ciutats europees a través de l'acció concreta, la cooperació i la innovació. A la primera part, els 9 projectes presentaran la seva experiència i impacte, centrant-se en l'elaboració i la implementació de polítiques, la col·laboració amb autoritats locals i regionals, i la participació ciutadana. A la segona part, les persones participants s'uniran a una sessió World Café per debatre els principals reptes futurs de la transformació urbana a Europa, des de l'ampliació de solucions reeixides i l'enfortiment de la governança fins a garantir la inclusió, el finançament i la sostenibilitat a llarg termini."
+          },
+          {
+            "heading": "Primera part (1 h). Impacte dels projectes LIFE en el reverdiment de les ciutats",
+            "body": "Reverdir les ciutats europees amb LIFE: 9 històries inspiradores de transformació urbana. En aquesta sessió, cadascun dels projectes participants farà una breu presentació del seu impacte en l'elaboració i la implementació de polítiques, la cooperació amb les autoritats locals, la ciutadania, les regions autònomes, etc."
           },
           {
             "heading": "Segona part (1 h). Reptes de futur",
             "body": "Sessió participativa — Mètode Cafè del Món",
             "bullets": [
+              "Aquesta sessió passa de \"què s'ha aconseguit\" a \"què cal a continuació\".",
+              "Les persones participants debatran qüestions pràctiques i estratègiques relacionades amb l'ampliació de la transformació urbana a Europa.",
               "4 taules · 4 rondes de 10 min · els participants roten · l'amfitrió es manté fix · cada grup visita les 4 taules",
-              "Representants dels projectes LIFE Bauhaus liderant els grups",
+              "Representants dels projectes LIFE liderant els grups",
               "1–2 moderadors de la sessió"
             ]
           }
+        ],
+        "expectedOutcomes": [
+          "Descobrir exemples inspiradors de transformació urbana donats suport per LIFE.",
+          "Aprendre com els projectes influeixen en les polítiques i la pràctica.",
+          "Intercanviar sobre reptes i oportunitats futures.",
+          "Aportar idees per ampliar solucions urbanes verdes, inclusives i belles a tota Europa."
         ]
       }
     }

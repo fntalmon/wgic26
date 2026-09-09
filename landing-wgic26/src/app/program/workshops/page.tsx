@@ -126,7 +126,6 @@ const projectLogos: Record<string, string> = {
     help: "/images/workshops/life-logo.png",
     greenme5: "/images/workshops/life-greenme5.png",
     biomatine: "/images/workshops/life-biomatine.png",
-    panelka: "/images/workshops/life-panelka.png",
     levels: "/images/workshops/life-levels.png",
     big4life: "/images/workshops/big4life.png",
 };
