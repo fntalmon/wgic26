@@ -150,7 +150,6 @@ const May2026Newsletter4Italian = () => {
                 { name: "Marcos Ros", role: "Architetto, accademico e membro del Parlamento europeo" },
                 { name: "Salvador Rueda", role: "Fondatore della Fondazione Ecologia Urbana e Territoriale (FEUT) e creatore del modello Superblocks" },
                 { name: "Alberto T. Estévez", role: "Fondatore di ESARQ-UIC Barcellona e pioniere nell'architettura biodigitale" },
-                { name: "Vicente Guallart", role: "Fondatore di IAAC e co-fondatore di Urbanitree" },
                 { name: "Enric Batlle", role: "Socio fondatore di Batlleiroig" },
                 { name: "Wendy Y. Chen", role: "Professore all'Università di Hong Kong, specializzato in infrastrutture verdi-blu urbane" },
                 { name: "Dorothy Aseyo", role: "Direttore esecutivo del Green Belt Movement" },

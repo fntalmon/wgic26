@@ -200,23 +200,6 @@ const JanuaryNewsletter = () => {
                 </p>
               </div>
 
-              <div className="bg-monstera/10 p-6 rounded-lg border border-white/5 hover:bg-monstera/20 transition-colors">
-                <h4 className="text-lg font-bold text-potus mb-2">
-                  <a
-                    href="https://www.linkedin.com/in/vicente-guallart-49a94315/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {" "}
-                    Vicente Guallart{" "}
-                  </a>
-                </h4>
-                <p className="text-sm text-white/70">
-                  Architect and urbanist, Co‑founder of Urbanitree and Founder
-                  of the Institute for Advanced Architecture of Catalonia.
-                </p>
-              </div>
-
               <div className="bg-sansiviera/10 p-6 rounded-lg border border-white/5 hover:bg-sansiviera/20 transition-colors">
                 <h4 className="text-lg font-bold text-potus mb-2">
                   <a

@@ -144,7 +144,6 @@ const May2026Newsletter4Arabic = () => {
                 { name: "Marcos Ros", role: "مهندس معماري وأكاديمي وعضو في البرلمان الأوروبي" },
                 { name: "Salvador Rueda", role: "مؤسس مؤسسة علم البيئة الحضري والإقليمي (FEUT) ومنشئ نموذج المربعات السوبر" },
                 { name: "Alberto T. Estévez", role: "مؤسس ESARQ-UIC برشلونة ورائد في العمارة البيولوجية الرقمية" },
-                { name: "Vicente Guallart", role: "مؤسس IAAC والشريك المؤسس لـ Urbanitree" },
                 { name: "Enric Batlle", role: "الشريك المؤسس لـ Batlleiroig" },
                 { name: "Wendy Y. Chen", role: "أستاذة في جامعة هونغ كونغ، متخصصة في البنية التحتية الخضراء-الزرقاء الحضرية" },
                 { name: "Dorothy Aseyo", role: "المديرة التنفيذية لحركة الحزام الأخضر" },

@@ -267,24 +267,6 @@ const March2026SpanishNewsletter = () => {
               <div className="bg-neutral-50 p-6 rounded-lg border border-neutral-200">
                 <h4 className="text-lg font-bold text-cactus mb-2">
                   <a
-                    href="https://www.linkedin.com/in/vicente-guallart-49a94315/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Vicente Guallart
-                  </a>
-                </h4>
-                <p className="text-sm text-neutral-600">
-                  Arquitecto y urbanista, cofundador de Urbanitree y fundador
-                  del Instituto de Arquitectura Avanzada de Cataluña, reconocido
-                  internacionalmente por su innovación urbana basada en la
-                  investigación.
-                </p>
-              </div>
-
-              <div className="bg-neutral-50 p-6 rounded-lg border border-neutral-200">
-                <h4 className="text-lg font-bold text-cactus mb-2">
-                  <a
                     href="https://www.linkedin.com/in/alberto-t-est%C3%A9vez-17319876/"
                     target="_blank"
                     rel="noopener noreferrer"

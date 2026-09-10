@@ -17,7 +17,6 @@ const keynoteSpeakerSlots = [
   { id: "speaker1", image: "/img/speakers/marcosros.jpg" },
   { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
   { id: "speaker2", image: "/img/speakers/salvadorrueda.jpg" },
-  { id: "speaker3", image: "/img/speakers/vicenteguallart.jpg" },
   { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },
   { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
   { id: "speaker8", image: "/img/speakers/buhigas_maria.jpg" },

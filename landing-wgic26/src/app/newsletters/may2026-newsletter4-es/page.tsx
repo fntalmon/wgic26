@@ -151,7 +151,6 @@ const May2026Newsletter4Spanish = () => {
                 { name: "Marcos Ros", role: "Arquitecto, académico y miembro del Parlamento Europeo" },
                 { name: "Salvador Rueda", role: "Fundador de la Fundación de Ecología Urbana y Territorial (FEUT) y creador del modelo de Supermanzanas" },
                 { name: "Alberto T. Estévez", role: "Fundador de ESARQ-UIC Barcelona y pionero en arquitectura biodigital" },
-                { name: "Vicente Guallart", role: "Fundador de IAAC y cofundador de Urbanitree" },
                 { name: "Enric Batlle", role: "Socio fundador de Batlleiroig" },
                 { name: "Wendy Y. Chen", role: "Profesora en la Universidad de Hong Kong, especializada en infraestructura verde azul urbana" },
                 { name: "Dorothy Aseyo", role: "Directora Ejecutiva del Movimiento Cinturón Verde" },
