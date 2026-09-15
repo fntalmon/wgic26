@@ -28,7 +28,7 @@ const keynoteSpeakerSlots = [
   { id: "speaker15", image: "/img/speakers/JobMwangi.png" },
   { id: "speaker16", image: "/img/speakers/carratala.jpeg" },
   { id: "speaker17", image: "/img/speakers/petito.png" },
-  { id: "speaker18", image: "/img/speakers/rolles.png" },
+
   { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
   { id: "speaker20", image: "/img/speakers/peck.png" },
   { id: "speaker21", image: "/img/speakers/CamilleTallon.png" },
