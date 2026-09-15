@@ -31,6 +31,8 @@ const keynoteSpeakerSlots = [
   { id: "speaker18", image: "/img/speakers/rolles.png" },
   { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
   { id: "speaker20", image: "/img/speakers/peck.png" },
+  { id: "speaker21", image: "/img/speakers/CamilleTallon.png" },
+  { id: "speaker22", image: "/img/speakers/PalomaAbaGarrote.png" },
 ] as const;
 
 // Contenedores de tamaño fijo por tier: evita que la resolución/ratio de cada logo desbalancee el tamaño visual.
