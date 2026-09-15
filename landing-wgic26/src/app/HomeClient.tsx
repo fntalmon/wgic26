@@ -35,6 +35,21 @@ const keynoteSpeakerSlots = [
   { id: "speaker22", image: "/img/speakers/PalomaAbaGarrote.png" },
 ] as const;
 
+// Extrae la primera frase sin cortar en iniciales tipo "Wendy Y. Chen".
+const firstSentence = (text: string) => {
+  const parts = text.split(". ");
+  let sentence = parts[0];
+  let index = 0;
+  while (
+    index < parts.length - 1 &&
+    /^[A-ZÀ-Ž]$/.test(sentence.trim().split(/\s+/).pop() ?? "")
+  ) {
+    index += 1;
+    sentence += ". " + parts[index];
+  }
+  return sentence;
+};
+
 // Contenedores de tamaño fijo por tier: evita que la resolución/ratio de cada logo desbalancee el tamaño visual.
 // Escala descendente con salto marcado entre tiers, según su nivel/importancia.
 const homeSponsorTierBox = {
