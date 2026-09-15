@@ -245,7 +245,7 @@ export default function HomeClient() {
               id: speaker.id,
               image: speaker.image,
               name: tKeynoteSpeakers(`speakers.${speaker.id}.name`),
-              bio: tKeynoteSpeakers(`speakers.${speaker.id}.bio`).split(". ")[0],
+              bio: firstSentence(tKeynoteSpeakers(`speakers.${speaker.id}.bio`)),
             }))}
           />
 
