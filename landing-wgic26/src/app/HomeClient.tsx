@@ -490,10 +490,10 @@ export default function HomeClient() {
             </div>
           </div>
 
-          {/* PLATINUM PARTNERS */}
+          {/* ELITE PARTNERS */}
           <div className="bg-white rounded-3xl border border-white/10 p-6 md:p-8">
             <h3 className="text-center text-base font-bold mb-5 text-gray-800 uppercase tracking-wider">
-              {t("platinumPartners")}
+              {t("elitePartners")}
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
               {sponsorTiers[1].logos.map((logo) => (
@@ -502,7 +502,7 @@ export default function HomeClient() {
                   href={logo.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex items-center justify-center ${homeSponsorTierBox.platinumPartners}`}
+                  className={`flex items-center justify-center ${homeSponsorTierBox.elitePartners}`}
                 >
                   <Image
                     src={logo.src}
@@ -516,10 +516,10 @@ export default function HomeClient() {
             </div>
           </div>
 
-          {/* ELITE PARTNERS */}
+          {/* PLATINUM PARTNERS */}
           <div className="bg-white rounded-3xl border border-white/10 p-6 md:p-8">
             <h3 className="text-center text-base font-bold mb-5 text-gray-800 uppercase tracking-wider">
-              {t("elitePartners")}
+              {t("platinumPartners")}
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
               {sponsorTiers[2].logos.map((logo) => (
@@ -528,7 +528,7 @@ export default function HomeClient() {
                   href={logo.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex items-center justify-center ${homeSponsorTierBox.elitePartners}`}
+                  className={`flex items-center justify-center ${homeSponsorTierBox.platinumPartners}`}
                 >
                   <Image
                     src={logo.src}

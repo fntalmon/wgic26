@@ -65,20 +65,6 @@ export const sponsorTiers: SponsorTier[] = [
     ],
   },
   {
-    key: "platinumPartners",
-    titleKey: "platinumPartners",
-    logos: [
-      {
-        href: "https://zoldfeluletitanusitvany.hu/",
-        src: "/img/logos/MKA_GSC_logo.png",
-        alt: "Magyar Kertörökség Alapítvány",
-        width: 400,
-        height: 300,
-        className: "h-24 md:h-28 w-auto object-contain",
-      },
-    ],
-  },
-  {
     key: "elitePartners",
     titleKey: "elitePartners",
     logos: [
@@ -97,6 +83,20 @@ export const sponsorTiers: SponsorTier[] = [
         width: 400,
         height: 300,
         className: "h-20 md:h-24 w-auto object-contain",
+      },
+    ],
+  },
+  {
+    key: "platinumPartners",
+    titleKey: "platinumPartners",
+    logos: [
+      {
+        href: "https://zoldfeluletitanusitvany.hu/",
+        src: "/img/logos/MKA_GSC_logo.png",
+        alt: "Magyar Kertörökség Alapítvány",
+        width: 400,
+        height: 300,
+        className: "h-24 md:h-28 w-auto object-contain",
       },
     ],
   },
