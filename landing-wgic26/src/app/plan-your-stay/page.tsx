@@ -99,6 +99,46 @@ const PlanYourStay = async () => {
                     </div>
                 </div>
             </section>
+
+            <section className="container mx-auto py-16 px-4">
+                <div className="max-w-5xl mx-auto">
+                    <h2 className="text-3xl font-bold text-white mb-4">{t("hotelsTitle")}</h2>
+                    <p className="text-white/70 mb-10 text-lg leading-relaxed">{t("hotelsIntro")}</p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 bg-cactus/10 rounded-2xl border border-white/10 overflow-hidden">
+                        <div className="relative min-h-[300px]">
+                            <iframe
+                                src="https://www.google.com/maps?q=Passeig+de+Garcia+Faria+69,+08019+Barcelona&output=embed"
+                                className="absolute inset-0 w-full h-full border-0"
+                                loading="lazy"
+                                title={t("frontmaritimName")}
+                            ></iframe>
+                        </div>
+                        <div className="p-8 flex flex-col justify-center gap-4">
+                            <h3 className="text-2xl font-bold text-white">{t("frontmaritimName")}</h3>
+                            <p className="text-white/60 text-sm">{t("frontmaritimAddress")}</p>
+                            <p className="text-white/70 leading-relaxed">{t("frontmaritimDescription")}</p>
+                            <p className="text-white/70">
+                                <span className="font-semibold text-white">{t("frontmaritimRoomTypeLabel")}: </span>
+                                {t("frontmaritimRoomType")}
+                            </p>
+                            <div className="bg-potus/10 border border-potus/30 rounded-lg p-4">
+                                <p className="text-white/80 text-sm mb-1">{t("frontmaritimDiscountLabel")}</p>
+                                <p className="text-2xl font-bold text-potus tracking-widest">WGIC26</p>
+                                <p className="text-white/60 text-xs mt-2">{t("frontmaritimDiscountNote")}</p>
+                            </div>
+                            <a
+                                href="https://www.besthotels.es/en/destinations-and-hotels/best-front-maritim.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block bg-cactus hover:bg-cactus/80 text-center font-medium py-3 px-6 rounded-lg transition-colors w-full mt-2"
+                            >
+                                {t("frontmaritimWebsite")}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
