@@ -6,6 +6,17 @@ import remarkHtml from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "content", "blog");
 
+export const BLOG_LOCALES = ["en", "es", "ca", "fr", "pt"] as const;
+export type BlogLocale = (typeof BLOG_LOCALES)[number];
+
+function localizedPath(slug: string, locale: BlogLocale): string {
+  if (locale !== "en") {
+    const localized = path.join(postsDirectory, `${slug}.${locale}.md`);
+    if (fs.existsSync(localized)) return localized;
+  }
+  return path.join(postsDirectory, `${slug}.md`);
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -37,14 +48,25 @@ function getAuthors(): Record<string, Author> {
 
 export function getPostSlugs(): string[] {
   if (!fs.existsSync(postsDirectory)) return [];
-  return fs
+  const localeSuffixes = BLOG_LOCALES.filter((l) => l !== "en").map((l) => `.${l}`);
+  const slugs = fs
     .readdirSync(postsDirectory)
     .filter((f) => f.endsWith(".md"))
     .map((f) => f.replace(/\.md$/, ""));
+  const baseSlugs = slugs.map((s) => {
+    for (const suffix of localeSuffixes) {
+      if (s.endsWith(suffix)) return s.slice(0, -suffix.length);
+    }
+    return s;
+  });
+  return [...new Set(baseSlugs)];
 }
 
-export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
-  const fullPath = path.join(postsDirectory, `${slug}.md`);
+export async function getPostBySlug(
+  slug: string,
+  locale: BlogLocale = "en"
+): Promise<BlogPost | null> {
+  const fullPath = localizedPath(slug, locale);
   if (!fs.existsSync(fullPath)) return null;
 
   const fileContents = fs.readFileSync(fullPath, "utf-8");
@@ -72,9 +94,9 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
   };
 }
 
-export async function getAllPosts(): Promise<BlogPost[]> {
+export async function getAllPosts(locale: BlogLocale = "en"): Promise<BlogPost[]> {
   const slugs = getPostSlugs();
-  const posts = await Promise.all(slugs.map((slug) => getPostBySlug(slug)));
+  const posts = await Promise.all(slugs.map((slug) => getPostBySlug(slug, locale)));
   return posts
     .filter((p): p is BlogPost => p !== null)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());

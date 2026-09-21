@@ -6,7 +6,7 @@ coverImage: "/img/Tibidabo3.jpg"
 author: "WGIC26 Editorial Team"
 category: "Announcements"
 tags: ["call for papers", "deadline", "submissions", "research"]
-featured: true
+featured: false
 ---
 
 The World Green Infrastructure Congress (WGIC26) has officially extended its Call for Papers & Projects deadline, responding to the significant international interest received in recent weeks.

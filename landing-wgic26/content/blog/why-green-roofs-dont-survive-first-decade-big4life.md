@@ -1,0 +1,42 @@
+---
+title: "Why Most Green Roofs Don't Survive Their First Decade"
+date: "2026-09-21"
+excerpt: "BIG4LIFE, a three-year EU-funded LIFE project, has spent three years measuring what actually keeps a green roof alive — and proving that maintaining it is worth the money. Here's what they found on real rooftops in Lleida, Barcelona and El Prat de Llobregat."
+coverImage: "/img/innovation-day/cultural-visits/Parc Agrobiotech.jpeg"
+author: "WGIC26 Editorial Team"
+category: "Projects"
+tags: ["big4life", "green roofs", "living façades", "life programme", "maintenance", "research"]
+featured: true
+---
+
+Walk past a green roof five years after its ribbon-cutting and you'll often find the same story: patchy vegetation, a broken irrigation line, a maintenance budget that quietly evaporated after year one. It's rarely a design problem. It's what happens after the design — and it's the question the sector has struggled to answer with real numbers, not good intentions.
+
+That's exactly the gap a European research project has spent the last three years trying to close, working on real rooftops in Lleida, Barcelona and El Prat de Llobregat.
+
+## A project built on rooftops, not theory
+
+Since September 2023, **BIG4LIFE** — funded by the EU's LIFE Programme — has focused on Building Integrated Greenery (BIG) systems: green roofs and green façades. Not the pitch-deck version. The version that has to survive drought, budget cuts and a decade of Mediterranean summers.
+
+The project's premise is simple and slightly unsettling: green roofs clearly deliver benefits — better insulation, reduction of the urban heat island, more biodiversity, cleaner air, and real economic value. But those benefits only materialise if the system is properly maintained, and this maintenance is exactly where most such projects quietly fail. So BIG4LIFE set out to measure what actually keeps a green roof alive, and to prove — with a genuine cost-benefit analysis — that keeping it alive is worth the money.
+
+## 7 green roofs and 1 green façade, wired for data
+
+BIG4LIFE didn't just monitor its pilot cases. It instrumented them: weather stations, air-quality sensors, biotrapping cameras to track wildlife, soil moisture sensors, rain gauges. Eight pilot sites across Lleida, Barcelona and El Prat de Llobregat are now generating the kind of long-term performance data the sector has always lacked — the difference between "green roofs are good for cities" and knowing exactly how good, and at what cost.
+
+The results are already tangible. The project has refurbished the green roofs of the Parc Agrobiotech, the Ronda Mercè nursery school and a residential building in Lleida city centre, all in Lleida, and the green roof of the Auditori l'Artesà in El Prat de Llobregat — each one rebuilt not just to look green on opening day, but still to be functioning in fifteen years.
+
+## The part that doesn't show up on a spec sheet
+
+Technology is only half the story. BIG4LIFE also made a commitment to something harder to engineer: getting the people who design, build, manage and use these systems to actually talk to each other. Capacity-building workshops with the University of Genoa, green architecture sessions with high-school students, technical training for landscaping professionals, a workshop with the Catalan Architects' Association (COAC) — all built around one idea: a green roof survives when the people responsible for it are genuinely connected, not just handed a maintenance manual.
+
+The project has since been presented at Construmat, the Green Urban Biodiversity Fair in Igualada, and the Smart City Expo World Congress — sharing, at each stop, the same uncomfortable-but-useful message: good intentions don't keep a roof alive. Data, maintenance and collaboration do.
+
+## Why this matters for WGIC26
+
+BIG4LIFE is one project, in two cities, over three years. Now multiply that by architects, landscape designers, municipal technicians, ecologists and researchers working on the same hard questions — funding, maintenance, biodiversity, water — in dozens of countries. That's the scale of what's coming together at WGIC26 this October, in the same two cities where BIG4LIFE has spent three years testing its ideas on real rooftops.
+
+Four days of real data, real projects and the people who've actually done the maintenance work most conferences skip over. If a single Mediterranean research project can generate this many hard lessons, it's worth seeing what the rest of the sector has learned too.
+
+---
+
+**Register before 30 September and save 15% on your pass.** 👉 [wgic26.barcelona/registration](/registration)

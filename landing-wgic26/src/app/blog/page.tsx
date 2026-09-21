@@ -1,9 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getAllPosts } from "@/lib/blog";
+import { getAllPosts, type BlogLocale } from "@/lib/blog";
 import { NewsletterCTA } from "@/components/NewsletterCTA";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
+
+const DATE_LOCALES: Record<string, string> = {
+  en: "en-US",
+  es: "es-ES",
+  ca: "ca-ES",
+  fr: "fr-FR",
+  pt: "pt-PT",
+};
 
 export const metadata = {
   title: "Blog | WGIC26",
@@ -12,7 +20,9 @@ export const metadata = {
 
 export default async function BlogIndexPage() {
   const t = await getTranslations("blogPage");
-  const posts = await getAllPosts();
+  const locale = (await getLocale()) as BlogLocale;
+  const dateLocale = DATE_LOCALES[locale] ?? "en-US";
+  const posts = await getAllPosts(locale);
   const featuredPost = posts.find((p) => p.featured) ?? posts[0];
   const remainingPosts = posts.filter((p) => p.slug !== featuredPost.slug);
 
@@ -35,7 +45,7 @@ export default async function BlogIndexPage() {
       {featuredPost && (
         <section className="pt-0 gap-8">
           <div className="text-xs uppercase tracking-wider text-white/40 mb-4">
-            Featured
+            {t("featuredLabel")}
           </div>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* Image */}
@@ -66,7 +76,7 @@ export default async function BlogIndexPage() {
                 <span>•</span>
                 <span className="flex items-center gap-1">
                   <Calendar size={12} />
-                  {new Date(featuredPost.date).toLocaleDateString("en-US", {
+                  {new Date(featuredPost.date).toLocaleDateString(dateLocale, {
                     year: "numeric",
                     month: "long",
                     day: "numeric",
@@ -75,7 +85,7 @@ export default async function BlogIndexPage() {
                 <span>•</span>
                 <span className="flex items-center gap-1">
                   <Clock size={12} />
-                  {featuredPost.readingTime} min read
+                  {featuredPost.readingTime} {t("minRead")}
                 </span>
               </div>
 
@@ -107,7 +117,7 @@ export default async function BlogIndexPage() {
                 href={`/blog/${featuredPost.slug}`}
                 className="inline-flex items-center gap-2 text-potus text-sm uppercase tracking-wider mt-2 hover:underline hover:underline-offset-4 hover:decoration-2"
               >
-                Read article
+                {t("readArticle")}
                 <ArrowRight size={14} />
               </Link>
             </div>
@@ -119,7 +129,7 @@ export default async function BlogIndexPage() {
       {remainingPosts.length > 0 && (
         <section className="pt-0 gap-8">
           <div className="text-xs uppercase tracking-wider text-white/40 mb-4">
-            Latest Posts
+            {t("latestLabel")}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {remainingPosts.map((post) => (
@@ -153,7 +163,7 @@ export default async function BlogIndexPage() {
                     <span>•</span>
                     <span className="flex items-center gap-1">
                       <Calendar size={10} />
-                      {new Date(post.date).toLocaleDateString("en-US", {
+                      {new Date(post.date).toLocaleDateString(dateLocale, {
                         year: "numeric",
                         month: "short",
                         day: "numeric",
@@ -162,7 +172,7 @@ export default async function BlogIndexPage() {
                     <span>•</span>
                     <span className="flex items-center gap-1">
                       <Clock size={10} />
-                      {post.readingTime} min
+                      {post.readingTime} {t("minRead")}
                     </span>
                   </div>
 
@@ -198,9 +208,9 @@ export default async function BlogIndexPage() {
 
       <section className="pt-0">
         <NewsletterCTA
-          title="Stay up to date"
-          subtitle="Get the latest WGIC26 news, deadlines and speaker announcements in your inbox."
-          buttonLabel="Subscribe"
+          title={t("newsletterTitle")}
+          subtitle={t("newsletterSubtitle")}
+          buttonLabel={t("newsletterButton")}
         />
       </section>
     </div>

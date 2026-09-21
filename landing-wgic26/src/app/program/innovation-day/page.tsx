@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import { RegisterCTA } from "@/components/RegisterCTA";
+import CollaboratorLogos from "@/components/CollaboratorLogos";
+import {
+  innovationDayWorkshop1Companies,
+  innovationDayWorkshop2Companies,
+} from "@/data/collaborators";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
@@ -9,6 +15,9 @@ export const metadata: Metadata = {
   description:
     "Innovation Day at Parc Agrobiotech Lleida — hands-on workshops on urban green infrastructure as part of WGIC26.",
 };
+
+const REGISTRATION_URL =
+  "https://publicalt.xeria.es/innovation_workshops_at_the_university_of_lleida/en/register/Registerpage/RegistrationForms";
 
 const InnovationDay = async () => {
     const t = await getTranslations("innovationDayPage");
@@ -19,19 +28,33 @@ const InnovationDay = async () => {
             languages: t("workshop1Languages"),
             description: t("workshop1Description"),
             image: { src: "/img/innovation-day/workshop1-biodiversity-1.jpeg" },
+            logos: innovationDayWorkshop1Companies,
         },
         {
             title: t("workshop2Title"),
             languages: t("workshop2Languages"),
             description: t("workshop2Description"),
-            image: { src: "/img/innovation-day/workshop2-maintenance-1.jpeg" },
+            image: { src: "/img/innovation-day/workshop2-maintenance-2.jpeg" },
+            logos: innovationDayWorkshop2Companies,
         },
     ];
 
     const culturalVisits = [
-        { name: "Parc Agrobiotech", image: "/img/innovation-day/cultural-visits/Parc Agrobiotech.jpeg" },
-        { name: "Seu Vella", image: "/img/innovation-day/cultural-visits/Seu Vella.jpg" },
-        { name: "Museu de Lleida", image: "/img/innovation-day/cultural-visits/Museu de Lleida.jpg" },
+        {
+            name: t("culturalVisit1Name"),
+            description: t("culturalVisit1Description"),
+            image: "/img/innovation-day/cultural-visits/Parc Agrobiotech.jpeg",
+        },
+        {
+            name: t("culturalVisit2Name"),
+            description: t("culturalVisit2Description"),
+            image: "/img/innovation-day/cultural-visits/Seu Vella.jpg",
+        },
+        {
+            name: t("culturalVisit3Name"),
+            description: t("culturalVisit3Description"),
+            image: "/img/innovation-day/cultural-visits/Museu de Lleida.jpg",
+        },
     ];
 
     return (
@@ -42,16 +65,26 @@ const InnovationDay = async () => {
                 <div className="space-y-16">
 
                     <div className="space-y-4 text-white/80 leading-relaxed">
-                        <p>{t("intro1")}</p>
+                        <p>
+                            {t.rich("intro1", {
+                                link: (chunks) => (
+                                    <Link
+                                        href="/blog/why-green-roofs-dont-survive-first-decade-big4life"
+                                        className="underline underline-offset-4 hover:text-white"
+                                    >
+                                        {chunks}
+                                    </Link>
+                                ),
+                            })}
+                        </p>
                         <p>{t("intro2")}</p>
-                        <p>{t("intro3")}</p>
                     </div>
 
                     <RegisterCTA
                         title={t("registerCtaTitle")}
                         subtitle={t("registerCtaSubtitle")}
                         buttonLabel={t("registerCtaButton")}
-                        href="https://publicalt.xeria.es/innovation_workshops_at_the_university_of_lleida/en/register/Registerpage/RegistrationForms"
+                        href={REGISTRATION_URL}
                         external
                     />
 
@@ -73,6 +106,17 @@ const InnovationDay = async () => {
                                     <p className="text-white/50 text-sm mt-1">{workshop.languages}</p>
                                 </div>
                                 <p className="text-white/80 leading-relaxed">{workshop.description}</p>
+                                <div className="space-y-3">
+                                    <p className="text-white/50 text-xs uppercase tracking-wide">
+                                        {t("companiesLabel")}
+                                    </p>
+                                    <CollaboratorLogos
+                                        logos={workshop.logos}
+                                        tileClassName="h-16"
+                                        imageHeightRem={2}
+                                        maxImageWidthRem={8}
+                                    />
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -93,10 +137,21 @@ const InnovationDay = async () => {
                                         />
                                     </div>
                                     <p className="text-white/80 text-center text-sm">{visit.name}</p>
+                                    <p className="text-white/50 text-center text-sm leading-relaxed">
+                                        {visit.description}
+                                    </p>
                                 </div>
                             ))}
                         </div>
                     </div>
+
+                    <RegisterCTA
+                        title={t("registrationTitle")}
+                        subtitle={t("registrationSubtitle")}
+                        buttonLabel={t("registerCtaButton")}
+                        href={REGISTRATION_URL}
+                        external
+                    />
                 </div>
             </section>
         </div>

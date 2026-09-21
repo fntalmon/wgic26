@@ -207,7 +207,19 @@
   "blogPage": {
     "eyebrow": "Blog",
     "title": "El Blog de WGIC26",
-    "subtitle": "Cubiertas verdes, calles inundadas, biodiversidad que no cuadra sobre el papel. Los debates que impulsan el WGIC26, antes de que abra el congreso."
+    "subtitle": "Cubiertas verdes, calles inundadas, biodiversidad que no cuadra sobre el papel. Los debates que impulsan el WGIC26, antes de que abra el congreso.",
+    "featuredLabel": "Destacado",
+    "latestLabel": "Últimas publicaciones",
+    "readArticle": "Leer artículo",
+    "minRead": "min de lectura",
+    "backToBlog": "Volver al blog",
+    "relatedLabel": "También te puede interesar",
+    "joinTitle": "Te esperamos en Barcelona",
+    "joinSubtitle": "27–30 de octubre de 2026 — CCIB, Barcelona",
+    "registerNow": "Inscríbete ahora",
+    "newsletterTitle": "Mantente al día",
+    "newsletterSubtitle": "Recibe las últimas noticias de WGIC26, los plazos y los anuncios de ponentes en tu correo.",
+    "newsletterButton": "Suscribirme"
   },
   "aboutCongress": {
     "title": "El Congreso",
@@ -773,8 +785,8 @@
       },
 
       "speaker8": {
-        "name": "María Buhigas",
-        "bio": "María Buhigas es la Arquitecta Jefa del Ayuntamiento de Barcelona. Arquitecta y urbanista, cuenta con una amplia experiencia en estrategia urbana, espacio público, vivienda y transformación de las ciudades, con el objetivo de crear ciudades más habitables, inclusivas y resilientes."
+        "name": "Maria Buhigas",
+        "bio": "Maria Buhigas es la Arquitecta Jefa del Ayuntamiento de Barcelona. Arquitecta y urbanista, cuenta con una amplia experiencia en estrategia urbana, espacio público, vivienda y transformación de las ciudades, con el objetivo de crear ciudades más habitables, inclusivas y resilientes."
       },
       "speaker9": {
         "name": "Jesús Pérez Gil",
@@ -835,29 +847,134 @@
     "intro3": "La inscripción ya está abierta a través de la plataforma oficial.",
     "itineraryA": "Itinerario A",
     "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
+    "itineraryAItems": [
+      {
+        "name": "CaixaForum Barcelona",
+        "title": "Un bosque vertical de 755 m² sobre 45 toneladas de acero",
+        "description": "El bosque vertical del CaixaForum, construido por Babilon, ocupa 755 m² —535 m² de fachada plantada y 220 m² de cerramientos— sobre una estructura autoportante de más de 45 toneladas de acero galvanizado y 22 pórticos tubulares distribuidos en cuatro niveles. Desarrollado y dirigido por Pepa Morán y Oriol Solanes, con escenografía, texturas y esculturas de Gabriel Ruiz Donaire.",
+        "image": "/img/visits/Caixa Forum Barcelona - Cultural.jpg"
+      },
+      {
+        "name": "Laboratorios Almirall",
+        "title": "Un paisaje vivo diseñado para ser contemplado",
+        "description": "Ubicada en un patio interior junto a la Ronda del General Mitre, la cubierta de Laboratorios Almirall combina plantaciones lineales, volúmenes circulares y vegetación en cascada que reflejan la geometría del edificio y se adaptan a su exposición solar. Un sistema subterráneo de retención de agua y riego por goteo optimiza el consumo hídrico. Proyecto y dirección de obra: Espai Qbic Arquitectura.",
+        "image": "/img/visits/Almirall - Offices.jpg"
+      },
+      {
+        "name": "Edificio residencial Manuel de Falla 34",
+        "title": "Una azotea de los años cincuenta convertida en ecosistema",
+        "description": "Construido en 1952 en Sarrià-Sant Gervasi, este edificio reinterpreta la azotea plana de estilo catalán —236 m², soleada y expuesta al viento— como un ecosistema comunitario: 155 m² de vegetación autóctona plantada en dunas, un huerto urbano autogestionado y una instalación fotovoltaica, que dan lugar a nuevos espacios de bienestar urbano. El proyecto es de Huertos in the Sky.",
+        "image": "/img/visits/Manuel de Falla-Residential.jpg"
+      },
+      {
+        "name": "Jardí Tarradellas",
+        "title": "De medianera a pulmón verde",
+        "description": "Promovido por el Ayuntamiento de Barcelona a través del Institut del Paisatge Urbà, este proyecto de Capella Garcia Arquitectura actúa como un pulmón verde al transformar la medianera que quedó al descubierto tras una demolición en un gran jardín vertical, con una estructura metálica y balcones que se recortan sobre un paramento de piedra. La vegetación perenne y florística favorece el asentamiento de la fauna local, especialmente de aves.",
+        "image": "/img/visits/Façana_Tarradellas_Residential.jpg"
+      },
+      {
+        "name": "Escola Pérez Iborra",
+        "title": "Cuando la azotea se convierte en aula al aire libre",
+        "description": "La cubierta conecta terrazas a distintas alturas con un huerto, una zona de ocio con vegetación transitable y un recorrido entre plantas aromáticas. Las especies se eligieron con un fin pedagógico: permiten a los estudiantes observar los ciclos de floración y las relaciones entre plantas e insectos. Proyecto y dirección de obra: Espai Qbic Arquitectura.",
+        "image": "/img/visits/Perez Iborra-School.jpg"
+      }
+    ],
     "itineraryB": "Itinerario B",
     "itineraryBSubtitle": "Sant Martí · Horta · Sant Andreu",
+    "itineraryBItems": [
+      {
+        "name": "Urbaser Central Park",
+        "title": "Biodiversidad industrial en 400 m²",
+        "description": "Esta cubierta intensiva naturalizada de 400 m² se concibe como un pequeño ecosistema dentro de un entorno industrial: vegetación mediterránea de bajo consumo hídrico, un espejo de agua para la fauna beneficiosa y cajas nido para aves urbanas. Se completa con un jardín vertical y una instalación fotovoltaica. Todo el proyecto fue diseñado y ejecutado por Urbaser.",
+        "image": "/img/visits/Urbaser_Offices.jpg"
+      },
+      {
+        "name": "Sant Pau Hospital",
+        "title": "La cubierta verde nacida de un concurso municipal",
+        "description": "Esta cubierta comenzó como la propuesta ganadora del primer concurso de cubiertas verdes del Ayuntamiento de Barcelona, y hoy corona el nuevo edificio de investigación del Hospital de la Santa Creu i Sant Pau. Combina una zona sombreada y accesible con otra no accesible, plantada con vegetación baja y rastrera sobre pavimento drenante. Diseño de Eixverd, construcción de La Cyca.",
+        "image": "/img/visits/Sant Pau - Hospital.jpg"
+      },
+      {
+        "name": "Edificio de oficinas Pere IV",
+        "title": "Cuando la biophilia es la identidad del edificio",
+        "description": "En el nuevo edificio de coworking de Pere IV 62-64, terrazas, patio y cubiertas se convierten en un paisaje continuo que se prolonga en el interior del propio edificio. Árboles, arbustos, plantas perennes y praderas florísticas aportan textura, sombra y estacionalidad, integrados con un sistema de cubierta biosolar. Diseño de MataAlta Studio.",
+        "image": "/img/visits/Pere IV-Offices.jpg"
+      },
+      {
+        "name": "Edificio Platinum@BCN, 22@",
+        "title": "Siete especies, y la hiedra que acabó imponiéndose",
+        "description": "Instalado en 2019 sobre una medianera de 276,52 m² en Poblenou, este jardín vertical comenzó con siete especies distintas. Hoy predomina la hiedra —una prueba de cómo el mantenimiento condiciona el resultado botánico. Construido con el sistema iPanel y gestionado con Verdtical Control, que monitoriza en tiempo real el consumo de agua y las incidencias.",
+        "image": "/img/visits/Platinum @22 - Offices.jpg"
+      },
+      {
+        "name": "Torre Diagonal One (Telefónica)",
+        "title": "Una cubierta que se adapta al ritmo de las oficinas",
+        "description": "Construida directamente sobre la cubierta técnica y alrededor de la vía del gálibo, esta cubierta responde a las necesidades de todo el edificio de oficinas. Alrededor del gálibo se extiende una cubierta verde extensiva; sobre la cubierta técnica, una semintensiva. La solución permite que el mantenimiento técnico de la cubierta coexista con la vida vegetal que alberga. Diseño y ejecución íntegramente por Eixverd.",
+        "image": "/img/visits/Torre Diagonal One-Offices.jpg"
+      }
+    ],
     "itineraryC": "Itinerario C",
     "itineraryCSubtitle": "Ciutat Vella · Born",
+    "itineraryCItems": [
+      {
+        "name": "Hotel 10 Cubik",
+        "title": "Tres patios interiores, reconstruidos desde cero",
+        "description": "Este jardín vertical reúne tres de los patios interiores del hotel. Dos de ellos, abandonados durante la pandemia, fueron sustituidos íntegramente en febrero de 2026 tras una evaluación técnica. Construido con el sistema iPanel y gestionado con Verdtical Control, que permite analizar en tiempo real el consumo de agua, el mantenimiento y las incidencias a lo largo de su vida útil.",
+        "image": "/img/visits/H10 Cubik - Hotel.jpg"
+      },
+      {
+        "name": "Jardí Mercè Rodoreda | IEC",
+        "title": "El jardín que lee la ciudad como Mercè Rodoreda",
+        "description": "En la antigua Casa de Convalescència del Hospital de la Santa Creu, este jardín bebe del universo literario de Mercè Rodoreda, donde la naturaleza se convierte en un paisaje interior impregnado de memoria. La combinación de la perspectiva histórica y simbólica convierte la visita en una experiencia que invita a leer el verde urbano como un texto vivo. El proyecto es de Mateu Barba Arquitectes.",
+        "image": "/img/visits/IEC-Historic.jpg"
+      },
+      {
+        "name": "Col·legi d'Arquitectes de Barcelona (COAC)",
+        "title": "Vistas a la Plaça de la Catedral desde una azotea viva",
+        "description": "El Colegio de Arquitectos de Cataluña transformó la cubierta del edificio que comparte con Arquia en un espacio verde que oscila entre lo extensivo y lo semintensivo. Solo una parte es accesible, con pavimento de madera y una barandilla con vistas a la Plaça de la Catedral. Diseño y ejecución de Eixverd.",
+        "image": "/img/visits/COAC-Offices.jpg"
+      },
+      {
+        "name": "Terrats d'en Xifré",
+        "title": "Un jardín flotante sobre el siglo XIX, premiado en toda Europa",
+        "description": "Asentado sobre un conjunto patrimonial del siglo XIX, este jardín mediterráneo flotante —una muestra de cómo la renaturalización puede transformar el patrimonio— reúne más de 50 especies y cerca de 10.000 plantas, además de estanques, hoteles de insectos y refugios para aves. Recoge agua de lluvia, genera energía solar y compostea la materia orgánica. Ganador del Premio New European Bauhaus 2021. Diseño de MataAlta Studio.",
+        "image": "/img/visits/Porxos d'en Xifré- Residential.jpg"
+      },
+      {
+        "name": "Hotel Sofitel Barcelona Skipper",
+        "title": "32 metros de fachada, 11.400 plantas",
+        "description": "Esta fachada viva reúne 21 especies y cerca de 11.400 plantas que se elevan 32 metros, gestionadas a través de 16 líneas de riego independientes. Construida con el sistema iPanel y gestionada con Verdtical Control, que monitoriza en tiempo real el consumo de agua, el mantenimiento y las incidencias.",
+        "image": "/img/visits/Sofitel - Hotel.webp"
+      }
+    ],
+    "collaboratorsTitle": "Con la colaboración de",
     "registerCtaTitle": "Inscripción abierta",
     "registerCtaSubtitle": "Plazas limitadas a 10 participantes por grupo — reserva con antelación.",
     "registerCtaButton": "Inscripción a las visitas técnicas"
   },
   "innovationDayPage": {
     "title": "Innovation Day - 30 de octubre",
-    "intro1": "Como parte del Innovation Day en el Parc Agrobiotech de Lleida, los participantes podrán elegir entre dos talleres prácticos centrados en distintos aspectos de la infraestructura verde urbana.",
-    "intro2": "La participación está limitada a 50 asistentes. Se ofrecerá un servicio de autobús de ida y vuelta entre Barcelona y Lleida para los participantes inscritos.",
-    "intro3": "El programa se desarrollará de 10:00 a 18:00 e incluye los talleres, el almuerzo, una visita guiada a La Seu Vella —el monumento histórico más emblemático de Lleida— y la entrada al Museu de Lleida.",
+    "intro1": "Pasa un día en uno de los emplazamientos reales de un proyecto de investigación europeo de tres años —no un escenario montado para la ocasión, sino la cubierta verde y los sistemas de monitorización que <link>BIG4LIFE</link> lleva tres años instalando y monitorizando en el Parc Agrobiotech de la Universitat de Lleida.",
+    "intro2": "Las personas participantes podrán elegir entre dos talleres prácticos sobre distintas facetas de la infraestructura verde urbana, seguidos de un almuerzo en el parque y una tarde guiada por el casco histórico de Lleida.",
     "workshop1Title": "Taller 1: Bichos, ciudades y cubiertas verdes",
     "workshop1Languages": "Inglés - Español",
-    "workshop1Description": "Pequeñas criaturas. Gran impacto. Descubre el mundo oculto sobre nuestras ciudades. Donde la ecología urbana se encuentra con la acción real. Aprende cómo los artrópodos contribuyen a ciudades más saludables, verdes y resilientes, mientras descubres la ciencia y la práctica detrás de la biodiversidad urbana sostenible. Únete a expertos para explorar cómo los insectos, la biodiversidad y las cubiertas verdes están transformando los entornos urbanos en ecosistemas prósperos.",
-    "workshop2Title": "Taller 2: Buenas prácticas y mantenimiento de infraestructura verde",
+    "workshop1Description": "Pequeñas criaturas, gran impacto. Descubre el mundo oculto sobre nuestras ciudades, donde la ecología urbana se encuentra con la acción en el mundo real. Aprende cómo los artrópodos ayudan a hacer ciudades más saludables, verdes y resilientes, de la mano de los mismos investigadores que estudian la biodiversidad urbana en las cubiertas monitorizadas de Lleida.",
+    "workshop2Title": "Taller 2: Buenas prácticas y mantenimiento de la infraestructura verde",
     "workshop2Languages": "Español - Inglés",
-    "workshop2Description": "Aprende haciendo junto a empresas líderes, instaladores y expertos del sector para entender qué hace que los proyectos de infraestructura verde tengan éxito y perduren en el tiempo. Este taller compartirá experiencia práctica sobre las mejores formas de instalar, construir y mantener sistemas de infraestructura verde, utilizando métodos constructivos probados, materiales innovadores y las últimas soluciones disponibles en el mercado. Los participantes aprenderán qué funciona, qué errores evitar y cómo una correcta instalación y mantenimiento garantizan mejor rendimiento y durabilidad.",
+    "workshop2Description": "Aprende de forma práctica de la mano de cuatro empresas que instalan y mantienen estos sistemas cada día —no estudios de caso, sino las personas que realmente hacen el trabajo. Descubre qué hace que un proyecto de infraestructura verde tenga éxito y perdure: métodos constructivos probados, materiales innovadores y los errores a evitar, explicados por quienes los han vivido en obra.",
     "culturalVisitsTitle": "Visitas culturales",
+    "culturalVisit1Name": "Parc Agrobiotech",
+    "culturalVisit1Description": "El emplazamiento real de uno de los proyectos de BIG4LIFE, con la cubierta verde que verás durante los talleres.",
+    "culturalVisit2Name": "La Seu Vella",
+    "culturalVisit2Description": "El monumento histórico más emblemático de Lleida, con vistas desde el campanario sobre la ciudad y la planicie.",
+    "culturalVisit3Name": "Museu de Lleida",
+    "culturalVisit3Description": "La principal colección patrimonial de la región.",
     "registerCtaTitle": "Inscripción abierta",
     "registerCtaSubtitle": "Plazas limitadas a 50 participantes — incluye servicio de autobús desde Barcelona.",
-    "registerCtaButton": "Inscripción al Innovation Day"
+    "registerCtaButton": "Inscripción al Innovation Day",
+    "registrationTitle": "Inscripción abierta",
+    "registrationSubtitle": "Plazas limitadas a 50 participantes. La inscripción cuesta 110 € e incluye uno de los dos talleres, el almuerzo, las visitas guiadas y el autobús de ida y vuelta desde Barcelona. La jornada se desarrolla de 10:00 a 18:00 h.",
+    "companiesLabel": "Con la participación de"
   },
   "programPage": {
     "title": "Programa",

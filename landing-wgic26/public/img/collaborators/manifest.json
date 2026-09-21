@@ -1,0 +1,102 @@
+{
+  "urbaser": {
+    "file": "urbaser.png",
+    "width": 800,
+    "height": 154
+  },
+  "almirall": {
+    "file": "almirall.png",
+    "width": 533,
+    "height": 165
+  },
+  "babilon": {
+    "file": "babilon.png",
+    "width": 466,
+    "height": 122
+  },
+  "eixverd": {
+    "file": "eixverd.svg",
+    "width": 842,
+    "height": 595
+  },
+  "espai-qbic": {
+    "file": "espai-qbic.png",
+    "width": 800,
+    "height": 635
+  },
+  "escola-perez-iborra": {
+    "file": "escola-perez-iborra.png",
+    "width": 449,
+    "height": 155
+  },
+  "h10-hotels": {
+    "file": "h10-hotels.png",
+    "width": 785,
+    "height": 259
+  },
+  "ir-sant-pau": {
+    "file": "ir-sant-pau.png",
+    "width": 800,
+    "height": 317
+  },
+  "huertos-in-the-sky": {
+    "file": "huertos-in-the-sky.png",
+    "width": 800,
+    "height": 335
+  },
+  "mataalta": {
+    "file": "mataalta.png",
+    "width": 629,
+    "height": 800
+  },
+  "platinum-bcn": {
+    "file": "platinum-bcn.png",
+    "width": 800,
+    "height": 116
+  },
+  "torre-diagonal-one": {
+    "file": "torre-diagonal-one.png",
+    "width": 800,
+    "height": 579
+  },
+  "verdtical": {
+    "file": "verdtical.png",
+    "width": 800,
+    "height": 167
+  },
+  "botanyxs": {
+    "file": "botanyxs.png",
+    "width": 474,
+    "height": 180
+  },
+  "seldx": {
+    "file": "seldx.png",
+    "width": 800,
+    "height": 166
+  },
+  "sempergreen": {
+    "file": "sempergreen.png",
+    "width": 800,
+    "height": 295
+  },
+  "zinco": {
+    "file": "zinco.png",
+    "width": 420,
+    "height": 800
+  },
+  "iec": {
+    "file": "iec.png",
+    "width": 800,
+    "height": 225
+  },
+  "adalia": {
+    "file": "adalia.png",
+    "width": 361,
+    "height": 329
+  },
+  "agrotecnio": {
+    "file": "agrotecnio.png",
+    "width": 800,
+    "height": 242
+  }
+}

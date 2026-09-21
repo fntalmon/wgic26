@@ -207,7 +207,19 @@
   "blogPage": {
     "eyebrow": "Blog",
     "title": "The WGIC26 Blog",
-    "subtitle": "Green roofs, flooded streets, biodiversity that doesn't add up on paper. The debates driving WGIC26, before the congress opens."
+    "subtitle": "Green roofs, flooded streets, biodiversity that doesn't add up on paper. The debates driving WGIC26, before the congress opens.",
+    "featuredLabel": "Featured",
+    "latestLabel": "Latest Posts",
+    "readArticle": "Read article",
+    "minRead": "min read",
+    "backToBlog": "Back to Blog",
+    "relatedLabel": "You May Also Like",
+    "joinTitle": "Join us in Barcelona",
+    "joinSubtitle": "27–30 October 2026 — CCIB, Barcelona",
+    "registerNow": "Register Now",
+    "newsletterTitle": "Stay up to date",
+    "newsletterSubtitle": "Get the latest WGIC26 news, deadlines and speaker announcements in your inbox.",
+    "newsletterButton": "Subscribe"
   },
   "aboutCongress": {
     "title": "The Congress",
@@ -773,8 +785,8 @@
       },
 
       "speaker8": {
-        "name": "María Buhigas",
-        "bio": "María Buhigas is the Chief Architect of Barcelona City Council. An architect and urban planner, she brings extensive experience in urban strategy, public space, housing and city transformation, with a focus on creating more liveable, inclusive and resilient cities."
+        "name": "Maria Buhigas",
+        "bio": "Maria Buhigas is the Chief Architect of Barcelona City Council. An architect and urban planner, she brings extensive experience in urban strategy, public space, housing and city transformation, with a focus on creating more liveable, inclusive and resilient cities."
       },
       "speaker9": {
         "name": "Jesús Pérez Gil",
@@ -835,29 +847,134 @@
     "intro3": "Registration is now open through the official platform.",
     "itineraryA": "Itinerary A",
     "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
+    "itineraryAItems": [
+      {
+        "name": "CaixaForum Barcelona",
+        "title": "A 755 m² vertical forest on 45 tonnes of steel",
+        "description": "CaixaForum's vertical forest, built by Babilon, spans 755 m² –535 m² of planted façade and 220 m² of enclosures– on a self-supporting structure of over 45 tonnes of galvanised steel and 22 tubular gantries across four levels. Developed and directed by Pepa Morán and Oriol Solanes, with scenography, texturing and sculptures by Gabriel Ruiz Donaire.",
+        "image": "/img/visits/Caixa Forum Barcelona - Cultural.jpg"
+      },
+      {
+        "name": "Laboratorios Almirall",
+        "title": "A living landscape designed to be admired",
+        "description": "Set in an inner courtyard off Ronda del General Mitre, the Laboratorios Almirall roof combines linear plantings, circular volumes and cascading vegetation that echo the building's geometry and adapt to its sun exposure. An underground water-retention and drip-irrigation system optimises water use. Project and site management: Espai Qbic Arquitectura.",
+        "image": "/img/visits/Almirall - Offices.jpg"
+      },
+      {
+        "name": "Manuel de Falla 34 residential building",
+        "title": "A 1950s rooftop turned ecosystem",
+        "description": "Built in 1952 in Sarrià-Sant Gervasi, this building reinterprets the flat Catalan-style roof –236 m², sun-exposed and windswept– as a community ecosystem: 155 m² of native vegetation planted in dunes, a self-managed urban garden and a photovoltaic installation, creating new spaces for urban wellbeing. The project is by Huertos in the Sky.",
+        "image": "/img/visits/Manuel de Falla-Residential.jpg"
+      },
+      {
+        "name": "Jardí Tarradellas",
+        "title": "From party wall to green lung",
+        "description": "Promoted by Barcelona City Council through the Institut del Paisatge Urbà, this Capella Garcia Arquitectura project acts as a green lung by transforming a party wall left behind by a demolition into a large vertical garden, with a metal structure and balconies set against a stone wall. The evergreen, flowering vegetation encourages local wildlife to settle, especially birds.",
+        "image": "/img/visits/Façana_Tarradellas_Residential.jpg"
+      },
+      {
+        "name": "Escola Pérez Iborra",
+        "title": "When the rooftop becomes an open-air classroom",
+        "description": "The roof connects terraces at different levels with a vegetable garden, a leisure area with walkable vegetation, and a path through aromatic plants. Species were chosen with a pedagogical purpose: they let students observe flowering cycles and the relationships between plants and insects. Project and site management: Espai Qbic Arquitectura.",
+        "image": "/img/visits/Perez Iborra-School.jpg"
+      }
+    ],
     "itineraryB": "Itinerary B",
     "itineraryBSubtitle": "Sant Martí · Horta · Sant Andreu",
+    "itineraryBItems": [
+      {
+        "name": "Urbaser Central Park",
+        "title": "Industrial biodiversity in 400 m²",
+        "description": "This 400 m² naturalised intensive roof is conceived as a small ecosystem within an industrial setting: low-water-use Mediterranean vegetation, a water feature for beneficial wildlife, and nesting boxes for urban birds. It's completed with a vertical garden and a photovoltaic installation. The entire project was designed and executed by Urbaser.",
+        "image": "/img/visits/Urbaser_Offices.jpg"
+      },
+      {
+        "name": "Sant Pau Hospital",
+        "title": "The green roof born from a municipal tender",
+        "description": "This roof began as the winning entry in Barcelona City Council's first green roof tender, and today it crowns the new research building at Sant Pau Hospital. It combines a shaded, accessible area with a non-accessible one, planted with low, creeping vegetation over a draining pavement. Design by Eixverd, built by La Cyca.",
+        "image": "/img/visits/Sant Pau - Hospital.jpg"
+      },
+      {
+        "name": "Pere IV office building",
+        "title": "When biophilia is the building's identity",
+        "description": "At the new coworking building at Pere IV 62-64, terraces, courtyard and roofs become a continuous landscape that extends into the building itself. Trees, shrubs, perennials and flowering meadows add texture, shade and seasonality, integrated with a biosolar roof system. Design by MataAlta Studio.",
+        "image": "/img/visits/Pere IV-Offices.jpg"
+      },
+      {
+        "name": "Platinum@BCN building, 22@",
+        "title": "Seven species, and the one ivy that won out",
+        "description": "Installed in 2019 on a 276.52 m² party wall in Poblenou, this vertical garden began with seven different species. Today ivy predominates — proof of how maintenance shapes the botanical outcome. Built with the iPanel system and managed with Verdtical Control, which monitors water use and incidents in real time.",
+        "image": "/img/visits/Platinum @22 - Offices.jpg"
+      },
+      {
+        "name": "Torre Diagonal One (Telefónica)",
+        "title": "A roof that adapts to the rhythm of the offices",
+        "description": "Built directly over the technical decking and around the gondola rail, this roof meets the needs of the entire office building. Around the rail is an extensive green roof; over the decking, semi-intensive. The solution allows for technical maintenance of the roof to coexist with the plant life growing on it. Design and execution entirely by Eixverd.",
+        "image": "/img/visits/Torre Diagonal One-Offices.jpg"
+      }
+    ],
     "itineraryC": "Itinerary C",
     "itineraryCSubtitle": "Ciutat Vella · Born",
+    "itineraryCItems": [
+      {
+        "name": "Hotel 10 Cubik",
+        "title": "Three interior courtyards, rebuilt from scratch",
+        "description": "This vertical garden brings together three of the hotel's interior courtyards. Two of them, left abandoned during the pandemic, were fully replaced in February 2026 following a technical assessment. Built with the iPanel system and managed with Verdtical Control, which allows real-time analysis of water use, maintenance and incidents throughout its service life.",
+        "image": "/img/visits/H10 Cubik - Hotel.jpg"
+      },
+      {
+        "name": "Jardí Mercè Rodoreda | IEC",
+        "title": "The garden that reads the city like Mercè Rodoreda",
+        "description": "At the former Casa de Convalescència of the Hospital de la Santa Creu, this garden draws on the literary universe of Mercè Rodoreda, where nature becomes an interior landscape imbued with memory. The blend of historical and symbolic perspective turns the visit into an experience that invites you to read urban greenery as a living text. The project is by Mateu Barba Arquitectes.",
+        "image": "/img/visits/IEC-Historic.jpg"
+      },
+      {
+        "name": "Col·legi d'Arquitectes de Barcelona (COAC)",
+        "title": "Views of Plaça de la Catedral from a living rooftop",
+        "description": "The Catalan Association of Architects transformed the roof of the building it shares with Arquia into a green space that ranges from extensive to semi-intensive. Only part of it is accessible, with decking and a railing overlooking Plaça de la Catedral. Design and execution by Eixverd.",
+        "image": "/img/visits/COAC-Offices.jpg"
+      },
+      {
+        "name": "Terrats d'en Xifré",
+        "title": "A floating garden over the 19th century, awarded across Europe",
+        "description": "Set above a 19th-century heritage ensemble, this floating Mediterranean garden — a showcase of how renaturalisation can transform heritage — brings together more than 50 species and close to 10,000 plants, along with ponds, insect hotels and bird shelters. It harvests rainwater, generates solar power and composts organic matter. Winner of the New European Bauhaus Prize 2021. Design by MataAlta Studio.",
+        "image": "/img/visits/Porxos d'en Xifré- Residential.jpg"
+      },
+      {
+        "name": "Hotel Sofitel Barcelona Skipper",
+        "title": "32 metres of façade, 11,400 plants",
+        "description": "This living façade brings together 21 species and close to 11,400 plants rising 32 metres, managed through 16 independent irrigation lines. Built with the iPanel system and managed with Verdtical Control, which monitors water use, maintenance and incidents in real time.",
+        "image": "/img/visits/Sofitel - Hotel.webp"
+      }
+    ],
+    "collaboratorsTitle": "With the collaboration of",
     "registerCtaTitle": "Registration now open",
     "registerCtaSubtitle": "Places are limited to 10 participants per group — book your spot early.",
     "registerCtaButton": "Register for technical visits"
   },
   "innovationDayPage": {
     "title": "Innovation Day - 30 October",
-    "intro1": "As part of the Innovation Day at Parc Agrobiotech Lleida, participants can choose between two hands-on workshops focused on different aspects of urban green infrastructure.",
-    "intro2": "Participation is limited to 50 attendees. A bus service from Barcelona to Lleida and back will be available for registered participants.",
-    "intro3": "The program will run from 10:00 to 18:00, and includes the workshops, lunch, a guided visit to La Seu Vella — Lleida's most iconic historical landmark — and admission to the Museu de Lleida.",
+    "intro1": "Spend a day inside one of the real sites of a three-year, EU-funded research project — not a set-up staged for the occasion, but the actual green roof and monitoring systems <link>BIG4LIFE</link> has spent three years installing and monitoring at the Universitat de Lleida's Agrobiotech Park.",
+    "intro2": "Participants can choose between two hands-on workshops covering different facets of urban green infrastructure, followed by lunch at the park and a guided afternoon through Lleida's historic quarter.",
     "workshop1Title": "Workshop 1: Bugs, Cities and Green Roofs",
     "workshop1Languages": "English - Spanish",
-    "workshop1Description": "Small creatures. Big impact. Discover the hidden world above our cities. Where urban ecology meets real-world action. Learn how arthropods shape healthier, greener and more resilient cities, while discovering the science and practice behind sustainable urban biodiversity. Join experts to explore how insects, biodiversity and green roofs are transforming urban environments into thriving ecosystems.",
-    "workshop2Title": "Workshop 2: Best Practices and Maintenance for Green Infrastructure",
+    "workshop1Description": "Small creatures, big impact. Discover the hidden world above our cities, where urban ecology meets real-world action. Learn how arthropods help make cities healthier, greener and more resilient, guided by the very researchers studying urban biodiversity on Lleida's monitored rooftops.",
+    "workshop2Title": "Workshop 2: Good Practices and Maintenance of Green Infrastructure",
     "workshop2Languages": "Spanish - English",
-    "workshop2Description": "Learn by doing with leading companies, installers, and industry experts to understand what makes green infrastructure projects successful and long-lasting. This workshop will share practical experience on the best ways to install, build, and maintain green infrastructure systems, using proven construction methods, innovative materials, and the latest solutions available on the market. Participants will learn what works, what mistakes to avoid, and how proper installation and maintenance can ensure better performance and durability.",
+    "workshop2Description": "Learn hands-on from four companies that install and maintain these systems every day — not case studies, but the people who actually do the work. Discover what makes a green infrastructure project succeed and last: proven construction methods, innovative materials, and the mistakes to avoid, explained by those who've gone through them on site.",
     "culturalVisitsTitle": "Cultural Visits",
+    "culturalVisit1Name": "Agrobiotech Park",
+    "culturalVisit1Description": "The real-world site of one of BIG4LIFE's projects, with the green roof you saw during the workshops.",
+    "culturalVisit2Name": "La Seu Vella",
+    "culturalVisit2Description": "Lleida's most iconic historic monument, with views from the bell tower over the city and the plain below.",
+    "culturalVisit3Name": "Museu de Lleida",
+    "culturalVisit3Description": "The region's leading heritage collection.",
     "registerCtaTitle": "Registration now open",
     "registerCtaSubtitle": "Places limited to 50 participants — bus service from Barcelona included.",
-    "registerCtaButton": "Register for Innovation Day"
+    "registerCtaButton": "Register for Innovation Day",
+    "registrationTitle": "Registration open",
+    "registrationSubtitle": "Places limited to 50 participants. Registration costs €110 and includes one of the two workshops, lunch, guided visits and round-trip bus transport from Barcelona. The day's events run from 10:00 am to 6:00 pm.",
+    "companiesLabel": "With the participation of"
   },
   "programPage": {
     "title": "Program",

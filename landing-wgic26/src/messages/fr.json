@@ -207,7 +207,19 @@
   "blogPage": {
     "eyebrow": "Blog",
     "title": "Le Blog du WGIC26",
-    "subtitle": "Toits végétalisés, rues inondées, biodiversité qui ne s'additionne pas sur le papier. Les débats qui animent le WGIC26, avant l'ouverture du congrès."
+    "subtitle": "Toits végétalisés, rues inondées, biodiversité qui ne s'additionne pas sur le papier. Les débats qui animent le WGIC26, avant l'ouverture du congrès.",
+    "featuredLabel": "À la une",
+    "latestLabel": "Derniers articles",
+    "readArticle": "Lire l'article",
+    "minRead": "min de lecture",
+    "backToBlog": "Retour au blog",
+    "relatedLabel": "Vous aimerez aussi",
+    "joinTitle": "Rejoignez-nous à Barcelone",
+    "joinSubtitle": "27–30 octobre 2026 — CCIB, Barcelone",
+    "registerNow": "Inscrivez-vous",
+    "newsletterTitle": "Restez informé",
+    "newsletterSubtitle": "Recevez les dernières actualités WGIC26, les échéances et les annonces d'intervenants dans votre boîte mail.",
+    "newsletterButton": "S'abonner"
   },
   "aboutCongress": {
     "title": "Le Congrès",
@@ -773,8 +785,8 @@
       },
 
       "speaker8": {
-        "name": "María Buhigas",
-        "bio": "María Buhigas est l'architecte en chef de la Ville de Barcelone. Architecte et urbaniste, elle possède une vaste expérience en stratégie urbaine, en espace public, en logement et en transformation des villes, avec pour objectif de créer des villes plus agréables à vivre, inclusives et résilientes."
+        "name": "Maria Buhigas",
+        "bio": "Maria Buhigas est l'architecte en chef de la Ville de Barcelone. Architecte et urbaniste, elle possède une vaste expérience en stratégie urbaine, en espace public, en logement et en transformation des villes, avec pour objectif de créer des villes plus agréables à vivre, inclusives et résilientes."
       },
       "speaker9": {
         "name": "Jesús Pérez Gil",
@@ -835,29 +847,134 @@
     "intro3": "Les inscriptions sont désormais ouvertes via la plateforme officielle.",
     "itineraryA": "Itinéraire A",
     "itineraryASubtitle": "Gràcia · Sarrià-Sant Gervasi · Les Corts · Eixample",
+    "itineraryAItems": [
+      {
+        "name": "CaixaForum Barcelona",
+        "title": "Une forêt verticale de 755 m² sur 45 tonnes d'acier",
+        "description": "La forêt verticale du CaixaForum, construite par Babilon, s'étend sur 755 m² — 535 m² de façade plantée et 220 m² de clôtures — sur une structure autoportante de plus de 45 tonnes d'acier galvanisé et 22 portiques tubulaires répartis sur quatre niveaux. Conçue et dirigée par Pepa Morán et Oriol Solanes, avec une scénographie, des textures et des sculptures de Gabriel Ruiz Donaire.",
+        "image": "/img/visits/Caixa Forum Barcelona - Cultural.jpg"
+      },
+      {
+        "name": "Laboratorios Almirall",
+        "title": "Un paysage vivant conçu pour être admiré",
+        "description": "Située dans une cour intérieure en retrait de la Ronda del General Mitre, la toiture des Laboratorios Almirall combine des plantations linéaires, des volumes circulaires et une végétation en cascade qui font écho à la géométrie du bâtiment et s'adaptent à son exposition au soleil. Un système souterrain de rétention d'eau et d'irrigation goutte-à-goutte optimise la consommation d'eau. Projet et direction de chantier : Espai Qbic Arquitectura.",
+        "image": "/img/visits/Almirall - Offices.jpg"
+      },
+      {
+        "name": "Immeuble résidentiel Manuel de Falla 34",
+        "title": "Une toiture des années 1950 transformée en écosystème",
+        "description": "Construit en 1952 à Sarrià-Sant Gervasi, cet immeuble réinterprète la toiture plate de style catalan — 236 m², ensoleillée et balayée par le vent — comme un écosystème collectif : 155 m² de végétation autochtone plantée dans des dunes, un jardin urbain autogéré et une installation photovoltaïque, créant de nouveaux espaces de bien-être urbain. Le projet est signé Huertos in the Sky.",
+        "image": "/img/visits/Manuel de Falla-Residential.jpg"
+      },
+      {
+        "name": "Jardí Tarradellas",
+        "title": "D'un mur mitoyen à un poumon vert",
+        "description": "Porté par la Mairie de Barcelone à travers l'Institut del Paisatge Urbà, ce projet de Capella Garcia Arquitectura agit comme un poumon vert en transformant un mur mitoyen laissé vacant après une démolition en un grand jardin vertical, avec une structure métallique et des balcons adossés à un mur de pierre. La végétation à feuilles persistantes et fleurie favorise l'installation de la faune locale, en particulier des oiseaux.",
+        "image": "/img/visits/Façana_Tarradellas_Residential.jpg"
+      },
+      {
+        "name": "Escola Pérez Iborra",
+        "title": "Quand la toiture devient une salle de classe en plein air",
+        "description": "La toiture relie des terrasses situées à différents niveaux grâce à un potager, à un espace de détente à végétation praticable et à un sentier à travers des plantes aromatiques. Les espèces ont été choisies dans un but pédagogique : elles permettent aux élèves d'observer les cycles de floraison et les relations entre les plantes et les insectes. Projet et direction de chantier : Espai Qbic Arquitectura.",
+        "image": "/img/visits/Perez Iborra-School.jpg"
+      }
+    ],
     "itineraryB": "Itinéraire B",
     "itineraryBSubtitle": "Sant Martí · Horta · Sant Andreu",
+    "itineraryBItems": [
+      {
+        "name": "Urbaser Central Park",
+        "title": "Une biodiversité industrielle sur 400 m²",
+        "description": "Cette toiture intensive naturalisée de 400 m² est conçue comme un petit écosystème en milieu industriel : végétation méditerranéenne à faible consommation d'eau, un point d'eau pour la faune utile et des nichoirs pour les oiseaux urbains. Elle est complétée par un jardin vertical et une installation photovoltaïque. L'ensemble du projet a été conçu et réalisé par Urbaser.",
+        "image": "/img/visits/Urbaser_Offices.jpg"
+      },
+      {
+        "name": "Sant Pau Hospital",
+        "title": "La toiture verte née d'un appel d'offres municipal",
+        "description": "Cette toiture est née de la proposition lauréate du premier appel d'offres de la Mairie de Barcelone pour les toitures vertes, et elle couronne aujourd'hui le nouveau bâtiment de recherche du Sant Pau Hospital. Elle combine une zone ombragée et accessible avec une zone non accessible, plantée de végétation basse et rampante sur un revêtement drainant. Conception par Eixverd, réalisation par La Cyca.",
+        "image": "/img/visits/Sant Pau - Hospital.jpg"
+      },
+      {
+        "name": "Immeuble de bureaux Pere IV",
+        "title": "Quand la biophilie est l'identité du bâtiment",
+        "description": "Dans le nouveau bâtiment de coworking du Pere IV 62-64, les terrasses, la cour et les toitures deviennent un paysage continu qui se prolonge à l'intérieur du bâtiment. Arbres, arbustes, vivaces et prairies fleuries apportent de la texture, de l'ombre et du caractère saisonnier, intégrés à un système de toiture biosolaire. Conception par MataAlta Studio.",
+        "image": "/img/visits/Pere IV-Offices.jpg"
+      },
+      {
+        "name": "Immeuble Platinum@BCN, 22@",
+        "title": "Sept espèces, et un seul lierre qui a pris le dessus",
+        "description": "Installé en 2019 sur un mur mitoyen de 276,52 m² à Poblenou, ce jardin vertical a débuté avec sept espèces différentes. Aujourd'hui, le lierre domine — preuve de la manière dont la maintenance façonne le résultat botanique. Construit avec le système iPanel et géré avec Verdtical Control, qui surveille en temps réel la consommation d'eau et les incidents.",
+        "image": "/img/visits/Platinum @22 - Offices.jpg"
+      },
+      {
+        "name": "Torre Diagonal One (Telefónica)",
+        "title": "Une toiture qui s'adapte au rythme des bureaux",
+        "description": "Construite directement sur la terrasse technique et autour du rail de la nacelle, cette toiture répond aux besoins de l'ensemble de l'immeuble de bureaux. Autour du rail se trouve une toiture végétalisée extensive ; au-dessus de la terrasse technique, semi-intensive. La solution permet à la maintenance technique de la toiture de coexister avec la végétation qui s'y développe. Conception et réalisation entièrement par Eixverd.",
+        "image": "/img/visits/Torre Diagonal One-Offices.jpg"
+      }
+    ],
     "itineraryC": "Itinéraire C",
     "itineraryCSubtitle": "Ciutat Vella · Né",
+    "itineraryCItems": [
+      {
+        "name": "Hotel 10 Cubik",
+        "title": "Trois cours intérieures, reconstruites à neuf",
+        "description": "Ce jardin vertical rassemble trois des cours intérieures de l'hôtel. Deux d'entre elles, laissées à l'abandon pendant la pandémie, ont été entièrement remplacées en février 2026 à la suite d'une évaluation technique. Construit avec le système iPanel et géré avec Verdtical Control, qui permet une analyse en temps réel de la consommation d'eau, de la maintenance et des incidents tout au long de sa durée de vie.",
+        "image": "/img/visits/H10 Cubik - Hotel.jpg"
+      },
+      {
+        "name": "Jardí Mercè Rodoreda | IEC",
+        "title": "Le jardin qui lit la ville comme Mercè Rodoreda",
+        "description": "Ancienne Casa de Convalescència de l'Hospital de la Santa Creu, ce jardin puise dans l'univers littéraire de Mercè Rodoreda, où la nature devient un paysage intérieur imprégné de mémoire. L'alliance d'une perspective historique et symbolique transforme la visite en une expérience qui invite à lire le verd urbain comme un texte vivant. Le projet est signé Mateu Barba Arquitectes.",
+        "image": "/img/visits/IEC-Historic.jpg"
+      },
+      {
+        "name": "Col·legi d'Arquitectes de Barcelona (COAC)",
+        "title": "Vue sur la Plaça de la Catedral depuis une toiture vivante",
+        "description": "Le Col·legi d'Arquitectes de Barcelona a transformé la toiture du bâtiment qu'il partage avec Arquia en un espace vert allant du caractère extensif au semi-intensif. Seule une partie est accessible, avec un plancher en bois et une rambarde donnant sur la Plaça de la Catedral. Conception et réalisation par Eixverd.",
+        "image": "/img/visits/COAC-Offices.jpg"
+      },
+      {
+        "name": "Terrats d'en Xifré",
+        "title": "Un jardin suspendu au-dessus du XIXe siècle, primé à travers l'Europe",
+        "description": "Installé au-dessus d'un ensemble patrimonial du XIXe siècle, ce jardin méditerranéen suspendu — une vitrine de la manière dont la renaturation peut transformer le patrimoine — rassemble plus de 50 espèces et près de 10 000 plantes, ainsi que des bassins, des hôtels à insectes et des abris pour oiseaux. Il récupère l'eau de pluie, produit de l'énergie solaire et composte la matière organique. Lauréat du prix New European Bauhaus 2021. Conception par MataAlta Studio.",
+        "image": "/img/visits/Porxos d'en Xifré- Residential.jpg"
+      },
+      {
+        "name": "Hotel Sofitel Barcelona Skipper",
+        "title": "32 mètres de façade, 11 400 plantes",
+        "description": "Cette façade vivante rassemble 21 espèces et près de 11 400 plantes s'élevant sur 32 mètres, gérées par 16 lignes d'irrigation indépendantes. Construite avec le système iPanel et gérée avec Verdtical Control, qui surveille en temps réel la consommation d'eau, la maintenance et les incidents.",
+        "image": "/img/visits/Sofitel - Hotel.webp"
+      }
+    ],
+    "collaboratorsTitle": "Avec la collaboration de",
     "registerCtaTitle": "Inscriptions ouvertes",
     "registerCtaSubtitle": "Places limitées à 10 participants par groupe — réservez à l'avance.",
     "registerCtaButton": "S'inscrire aux visites techniques"
   },
   "innovationDayPage": {
     "title": "Innovation Day - 30 octobre",
-    "intro1": "Dans le cadre de l'Innovation Day au Parc Agrobiotech de Lleida, les participants pourront choisir entre deux ateliers pratiques consacrés à différents aspects de l'infrastructure verte urbaine.",
-    "intro2": "La participation est limitée à 50 personnes. Un service de bus aller-retour entre Barcelone et Lleida sera proposé aux participants inscrits.",
-    "intro3": "Le programme se déroulera de 10h00 à 18h00 et comprend les ateliers, le déjeuner, une visite guidée de La Seu Vella — le monument historique le plus emblématique de Lleida — et l'entrée au Museu de Lleida.",
+    "intro1": "Passez une journée sur l'un des sites réels d'un projet de recherche européen de trois ans — pas un décor monté pour l'occasion, mais la toiture verte et les systèmes de monitoring que <link>BIG4LIFE</link> installe et suit depuis trois ans au Parc Agrobiotech de l'Université de Lleida.",
+    "intro2": "Les participants pourront choisir entre deux ateliers pratiques sur différentes facettes de l'infrastructure verte urbaine, suivis d'un déjeuner au parc et d'une après-midi guidée dans le quartier historique de Lleida.",
     "workshop1Title": "Atelier 1 : Insectes, villes et toits verts",
     "workshop1Languages": "Anglais - Espagnol",
-    "workshop1Description": "Petites créatures. Grand impact. Découvrez le monde caché au-dessus de nos villes. Là où l'écologie urbaine rencontre l'action concrète. Apprenez comment les arthropodes contribuent à des villes plus saines, plus vertes et plus résilientes, tout en découvrant la science et la pratique de la biodiversité urbaine durable. Rejoignez des experts pour explorer comment les insectes, la biodiversité et les toits verts transforment les environnements urbains en écosystèmes florissants.",
-    "workshop2Title": "Atelier 2 : Bonnes pratiques et entretien des infrastructures vertes",
+    "workshop1Description": "Petites créatures, grand impact. Découvrez le monde caché au-dessus de nos villes, où l'écologie urbaine rencontre l'action concrète. Apprenez comment les arthropodes aident à rendre les villes plus saines, plus vertes et plus résilientes, guidés par les chercheurs qui étudient la biodiversité urbaine sur les toitures monitorées de Lleida.",
+    "workshop2Title": "Atelier 2 : Bonnes pratiques et maintenance des infrastructures vertes",
     "workshop2Languages": "Espagnol - Anglais",
-    "workshop2Description": "Apprenez en pratiquant, aux côtés d'entreprises leaders, d'installateurs et d'experts du secteur, pour comprendre ce qui fait la réussite et la durabilité des projets d'infrastructure verte. Cet atelier partagera une expérience pratique sur les meilleures façons d'installer, de construire et d'entretenir des systèmes d'infrastructure verte, en utilisant des méthodes de construction éprouvées, des matériaux innovants et les dernières solutions disponibles sur le marché. Les participants apprendront ce qui fonctionne, les erreurs à éviter, et comment une installation et un entretien adéquats garantissent de meilleures performances et une plus grande durabilité.",
+    "workshop2Description": "Apprenez en pratique aux côtés de quatre entreprises qui installent et entretiennent ces systèmes au quotidien — pas des études de cas, mais les personnes qui font réellement le travail. Découvrez ce qui fait le succès et la durabilité d'un projet d'infrastructure verte : méthodes de construction éprouvées, matériaux innovants et erreurs à éviter, expliquées par celles et ceux qui les ont vécues sur le terrain.",
     "culturalVisitsTitle": "Visites culturelles",
+    "culturalVisit1Name": "Parc Agrobiotech",
+    "culturalVisit1Description": "Le site réel de l'un des projets de BIG4LIFE, avec la toiture verte que vous avez vue pendant les ateliers.",
+    "culturalVisit2Name": "La Seu Vella",
+    "culturalVisit2Description": "Le monument historique le plus emblématique de Lleida, avec des vues depuis le clocher sur la ville et la plaine.",
+    "culturalVisit3Name": "Museu de Lleida",
+    "culturalVisit3Description": "La principale collection patrimoniale de la région.",
     "registerCtaTitle": "Inscriptions ouvertes",
     "registerCtaSubtitle": "Places limitées à 50 participants — service de bus depuis Barcelone inclus.",
-    "registerCtaButton": "S'inscrire à l'Innovation Day"
+    "registerCtaButton": "S'inscrire à l'Innovation Day",
+    "registrationTitle": "Inscriptions ouvertes",
+    "registrationSubtitle": "Places limitées à 50 participants. L'inscription coûte 110 € et comprend l'un des deux ateliers, le déjeuner, les visites guidées et le bus aller-retour depuis Barcelone. La journée se déroule de 10h00 à 18h00.",
+    "companiesLabel": "Avec la participation de"
   },
   "programPage": {
     "title": "Programme",

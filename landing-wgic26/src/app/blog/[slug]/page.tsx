@@ -7,9 +7,19 @@ import {
   getAllPosts,
   getAuthor,
   getRelatedPosts,
+  type BlogLocale,
 } from "@/lib/blog";
 import { NewsletterCTA } from "@/components/NewsletterCTA";
 import { Calendar, Clock, ArrowLeft, ArrowRight, User } from "lucide-react";
+import { getTranslations, getLocale } from "next-intl/server";
+
+const DATE_LOCALES: Record<string, string> = {
+  en: "en-US",
+  es: "es-ES",
+  ca: "ca-ES",
+  fr: "fr-FR",
+  pt: "pt-PT",
+};
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -22,7 +32,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
-  const post = await getPostBySlug(slug);
+  const locale = (await getLocale()) as BlogLocale;
+  const post = await getPostBySlug(slug, locale);
   if (!post) return { title: "Not Found" };
   return {
     metadataBase: new URL("https://wgic26.barcelona"),
@@ -38,10 +49,13 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
-  const post = await getPostBySlug(slug);
+  const t = await getTranslations("blogPage");
+  const locale = (await getLocale()) as BlogLocale;
+  const dateLocale = DATE_LOCALES[locale] ?? "en-US";
+  const post = await getPostBySlug(slug, locale);
   if (!post) notFound();
 
-  const allPosts = await getAllPosts();
+  const allPosts = await getAllPosts(locale);
   const related = getRelatedPosts(post, allPosts, 3);
   const author = getAuthor(post.author);
 
@@ -75,7 +89,7 @@ export default async function BlogPostPage({ params }: Props) {
             className="inline-flex items-center gap-2 text-sm text-white/60 hover:text-potus transition-colors uppercase tracking-wider"
           >
             <ArrowLeft size={14} />
-            Back to Blog
+            {t("backToBlog")}
           </Link>
         </div>
 
@@ -101,7 +115,7 @@ export default async function BlogPostPage({ params }: Props) {
             </span>
             <span className="flex items-center gap-1">
               <Calendar size={12} />
-              {new Date(post.date).toLocaleDateString("en-US", {
+              {new Date(post.date).toLocaleDateString(dateLocale, {
                 year: "numeric",
                 month: "long",
                 day: "numeric",
@@ -109,7 +123,7 @@ export default async function BlogPostPage({ params }: Props) {
             </span>
             <span className="flex items-center gap-1">
               <Clock size={12} />
-              {post.readingTime} min read
+              {post.readingTime} {t("minRead")}
             </span>
           </div>
 
@@ -183,7 +197,7 @@ export default async function BlogPostPage({ params }: Props) {
         {related.length > 0 && (
           <section className="pt-0 max-w-5xl xl:max-w-6xl mx-auto w-full gap-8 px-4 sm:px-6 lg:px-8">
             <div className="text-xs uppercase tracking-wider text-white/40">
-              You May Also Like
+              {t("relatedLabel")}
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {related.map((r) => (
@@ -219,7 +233,7 @@ export default async function BlogPostPage({ params }: Props) {
                     </h4>
                     <div className="text-[10px] text-white/50 flex items-center gap-1">
                       <Calendar size={10} />
-                      {new Date(r.date).toLocaleDateString("en-US", {
+                      {new Date(r.date).toLocaleDateString(dateLocale, {
                         year: "numeric",
                         month: "short",
                         day: "numeric",
@@ -236,16 +250,16 @@ export default async function BlogPostPage({ params }: Props) {
         <section className="pt-0 max-w-5xl xl:max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 rounded-lg bg-cactus/30 border border-white/10">
             <div className="text-center sm:text-left">
-              <div className="text-lg uppercase">Join us in Barcelona</div>
+              <div className="text-lg uppercase">{t("joinTitle")}</div>
               <div className="text-sm text-white/60">
-                27–30 October 2026 — CCIB, Barcelona
+                {t("joinSubtitle")}
               </div>
             </div>
             <Link
               href="/registration"
               className="inline-flex items-center gap-2 px-6 py-3 bg-potus text-monstera rounded-md text-sm uppercase tracking-wider font-medium hover:bg-potus/90 transition-colors"
             >
-              Register Now
+              {t("registerNow")}
               <ArrowRight size={14} />
             </Link>
           </div>
@@ -253,9 +267,9 @@ export default async function BlogPostPage({ params }: Props) {
 
         <section className="pt-0 max-w-5xl xl:max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <NewsletterCTA
-            title="Stay up to date"
-            subtitle="Get the latest WGIC26 news, deadlines and speaker announcements in your inbox."
-            buttonLabel="Subscribe"
+            title={t("newsletterTitle")}
+            subtitle={t("newsletterSubtitle")}
+            buttonLabel={t("newsletterButton")}
           />
         </section>
       </div>

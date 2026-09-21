@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import { RegisterCTA } from "@/components/RegisterCTA";
+import CollaboratorLogos from "@/components/CollaboratorLogos";
+import { technicalVisitsCollaborators } from "@/data/collaborators";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
@@ -10,37 +12,32 @@ export const metadata: Metadata = {
     "Join guided technical visits to real green infrastructure projects in Barcelona and Lleida as part of WGIC26, the urban sustainability congress.",
 };
 
+type VisitItem = {
+  name: string;
+  title: string;
+  description: string;
+  image: string;
+};
+
 const TechnicalVisits = async () => {
     const t = await getTranslations("technicalVisitsPage");
 
-    const itineraryA = [
-        { name: "Caixa Forum Barcelona - Cultural", image: "/img/visits/Caixa Forum Barcelona - Cultural.jpg" },
-        { name: "Pérez Iborra - School", image: "/img/visits/Perez Iborra-School.jpg" },
-        { name: "Almirall - Offices", image: "/img/visits/Almirall - Offices.jpg" },
-        { name: "Manuel de Falla - Residential", image: "/img/visits/Manuel de Falla-Residential.jpg" },
-        { name: "Façana Tarradellas - Residential", image: "/img/visits/Façana_Tarradellas_Residential.jpg" },
-    ];
-
-    const itineraryB = [
-        { name: "Urbaser - Offices", image: "/img/visits/Urbaser_Offices.jpg" },
-        { name: "Sant Pau - Hospital", image: "/img/visits/Sant Pau - Hospital.jpg" },
-        { name: "Pere IV - Offices", image: "/img/visits/Pere IV-Offices.jpg" },
-        { name: "Platinum @22 - Offices", image: "/img/visits/Platinum @22 - Offices.jpg" },
-        { name: "Torre Diagonal One - Offices", image: "/img/visits/Torre Diagonal One-Offices.jpg" },
-    ];
-
-    const itineraryC = [
-        { name: "H10 Cubik - Hotel", image: "/img/visits/H10 Cubik - Hotel.jpg" },
-        { name: "IEC - Historic", image: "/img/visits/IEC-Historic.jpg" },
-        { name: "COAC - Offices", image: "/img/visits/COAC-Offices.jpg" },
-        { name: "Porxos d'en Xifré - Residential", image: "/img/visits/Porxos d'en Xifré- Residential.jpg" },
-        { name: "Sofitel - Hotel", image: "/img/visits/Sofitel - Hotel.webp" },
-    ];
-
     const itineraries = [
-        { label: t("itineraryA"), subtitle: t("itineraryASubtitle"), items: itineraryA },
-        { label: t("itineraryB"), subtitle: t("itineraryBSubtitle"), items: itineraryB },
-        { label: t("itineraryC"), subtitle: t("itineraryCSubtitle"), items: itineraryC },
+        {
+            label: t("itineraryA"),
+            subtitle: t("itineraryASubtitle"),
+            items: t.raw("itineraryAItems") as VisitItem[],
+        },
+        {
+            label: t("itineraryB"),
+            subtitle: t("itineraryBSubtitle"),
+            items: t.raw("itineraryBItems") as VisitItem[],
+        },
+        {
+            label: t("itineraryC"),
+            subtitle: t("itineraryCSubtitle"),
+            items: t.raw("itineraryCItems") as VisitItem[],
+        },
     ];
 
     return (
@@ -71,23 +68,38 @@ const TechnicalVisits = async () => {
                                 </h2>
                                 <p className="text-white/50 text-sm mt-1">{itinerary.subtitle}</p>
                             </div>
-                            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-                                {itinerary.items.map((visit, index) => (
-                                    <div key={index} className="group flex flex-col gap-2">
-                                        <div className="relative w-full aspect-square overflow-hidden rounded-lg">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                {itinerary.items.map((visit) => (
+                                    <div key={visit.image} className="flex flex-col gap-3">
+                                        <div className="relative w-full aspect-[4/3] overflow-hidden rounded-lg">
                                             <Image
                                                 src={visit.image}
                                                 alt={visit.name}
                                                 fill
-                                                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                                                className="object-cover"
                                             />
                                         </div>
-                                        <p className="text-white/80 text-center text-sm">{visit.name}</p>
+                                        <div>
+                                            <p className="text-white/50 text-sm">{visit.name}</p>
+                                            <h3 className="text-lg font-semibold uppercase text-white tracking-wide mt-1">
+                                                {visit.title}
+                                            </h3>
+                                        </div>
+                                        <p className="text-white/70 text-sm leading-relaxed">
+                                            {visit.description}
+                                        </p>
                                     </div>
                                 ))}
                             </div>
                         </div>
                     ))}
+
+                    <div className="space-y-5">
+                        <h2 className="text-2xl font-semibold uppercase text-white tracking-wide">
+                            {t("collaboratorsTitle")}
+                        </h2>
+                        <CollaboratorLogos logos={technicalVisitsCollaborators} />
+                    </div>
                 </div>
             </section>
         </div>
