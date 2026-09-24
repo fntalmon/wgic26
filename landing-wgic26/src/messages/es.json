@@ -773,7 +773,7 @@
       },
       "speaker4": {
         "name": "Alberto Estévez",
-        "bio": "Arquitecto, investigador y fundador de ESARQ-UIC Barcelona, Alberto Estévez es una voz líder en arquitectura biodigital, explorando la convergencia entre diseño, biología, tecnología y sostenibilidad."
+        "bio": "Arquitecto y fundador de ESARQ-UIC Barcelona, Alberto T. Estévez es una voz referente en arquitectura biodigital, explorando la convergencia del diseño, la biología, la tecnología avanzada y la sostenibilidad. albertoestevez.com"
       },
       "speaker5": {
         "name": "Enric Batlle",
@@ -783,7 +783,6 @@
         "name": "Wendy Y. Chen",
         "bio": "Profesora en la Universidad de Hong Kong, Wendy Y. Chen se especializa en infraestructura verde-azul urbana, enfocándose en cómo las soluciones basadas en la naturaleza mejoran la sostenibilidad urbana, la planificación y la calidad de vida."
       },
-
       "speaker8": {
         "name": "Maria Buhigas",
         "bio": "Maria Buhigas es la Arquitecta Jefa del Ayuntamiento de Barcelona. Arquitecta y urbanista, cuenta con una amplia experiencia en estrategia urbana, espacio público, vivienda y transformación de las ciudades, con el objetivo de crear ciudades más habitables, inclusivas y resilientes."
@@ -814,13 +813,12 @@
       },
       "speaker16": {
         "name": "Sergio Carratalá",
-        "bio": "Sergio Carratalá es Ingeniero de Caminos y fundador de MataAlta Studio, un estudio de diseño regenerativo especializado en paisajismo, biofilia e infraestructura verde urbana. Integra soluciones basadas en la naturaleza para renaturalizar las ciudades, restaurar la biodiversidad y crear entornos urbanos sostenibles."
+        "bio": "Tras 15 años como ingeniero de caminos en grandes proyectos de infraestructura, Sergio Carratalá fundó MataAlta en 2018 con la convicción de que la ingeniería también puede contribuir a regenerar el territorio. En MataAlta Estudio, la naturaleza, el paisaje y la ingeniería trabajan juntos para restaurar el equilibrio ecológico y crear espacios más saludables, biodiversos y valiosos para las personas."
       },
       "speaker17": {
         "name": "Luigi Petito",
-        "bio": "Luigi Petito es el director del European Chapter de WGIN. Experto en asuntos públicos afincado en Bruselas, aboga ante las instituciones de la UE por la integración sistemática de la infraestructura verde y las soluciones basadas en la naturaleza en la normativa urbana."
+        "bio": "Luigi Petito, 51 años, es experto en asuntos públicos europeos. Reside en Bruselas, el cruce de caminos de los asuntos internacionales y las instituciones europeas. En 2019 fue invitado a crear y dirigir el Capítulo Europeo de la World Green Infrastructure Network (WGIN). Desde entonces, sigue la evolución de las políticas y normativas de la UE relacionadas con la infraestructura verde y aboga por su integración sistemática en las zonas urbanas. Representa a WGIN en el grupo de expertos de la Comisión Europea sobre la aplicación del Reglamento de Restauración de la Naturaleza."
       },
-
       "speaker19": {
         "name": "Gabriel Pérez",
         "bio": "Gabriel Pérez Luque es Catedrático de Construcciones Arquitectónicas en la Universitat de Lleida (UdL). Doctor en Arquitectura e Ingeniero Agrónomo, centra su investigación en soluciones basadas en la naturaleza, infraestructuras verdes urbanas, cubiertas vegetales y eficiencia energética en la edificación sostenible."
@@ -831,11 +829,19 @@
       },
       "speaker21": {
         "name": "Camille Tallon",
-        "bio": "Arquitecta y urbanista, Camille Tallon lidera el programa Green and Thriving Neighbourhoods de C40, apoyando a las ciudades en el avance de la acción climática local y en la planificación de la vida urbana a escala humana. Antes de incorporarse a C40, formó parte del equipo de investigación de CGLU y trabajó con estudios de arquitectura en Francia y Estados Unidos."
+        "bio": "Camille es Senior Manager de Urban Planning y Ciudad de los 15 Minutos en C40. Arquitecta y urbanista de formación, es responsable del programa Green and Thriving Neighborhoods de C40, que apoya a las ciudades en la planificación y el diseño a escala de barrio basados en modelos de proximidad como los barrios completos y las ciudades de los 15 minutos, y contribuye a generar evidencia sobre sus beneficios climáticos, sociales, económicos y de salud. Antes de incorporarse a C40, Camille formó parte del equipo de investigación de CGLU y trabajó en estudios de arquitectura en Francia y Estados Unidos."
       },
       "speaker22": {
         "name": "Paloma Aba Garrote",
-        "bio": "Paloma Aba Garrote es directora de CINEA, la agencia de la Comisión Europea responsable de aplicar los principales programas de financiación de la UE que apoyan la acción por el clima, las energías limpias, el transporte sostenible, la protección del medio ambiente y la innovación verde. Cuenta con más de 20 años de experiencia en la Comisión Europea, donde ha ocupado varios puestos de dirección relacionados con programas de la UE, finanzas e infraestructuras."
+        "bio": "Desde 2023, Paloma es directora de CINEA, la agencia ejecutiva creada por la Comisión Europea para poner en marcha los programas de financiación de la UE que impulsan el crecimiento verde y la industria limpia en Europa. Su trayectoria abarca más de 20 años en la Comisión Europea. Es MBA por IESE Business School y proviene del mundo de las finanzas y la banca."
+      },
+      "speaker23": {
+        "name": "Chiara Farinea",
+        "bio": "Chiara Farinea es arquitecta, urbanista e investigadora italiana; explora la integración de la naturaleza en las ciudades, con especial atención al diseño más-que-humano e interespecies y a las tecnologías emergentes. Ha desarrollado prototipos urbanos innovadores implementados en diversas ciudades europeas y expuestos internacionalmente, incluida la Bienal de Arquitectura de Venecia. Su obra ha sido publicada en libros y revistas científicas. Es Head of European Projects en el IAAC, donde dirige proyectos de investigación internacionales con financiación de la UE y docencia."
+      },
+      "speaker24": {
+        "name": "David Vernon Brasfield",
+        "bio": "Arquitecto e ingeniero de la edificación que promueve la infraestructura verde desde 2006, David Vernon Brasfield es presidente de la Asociación Noruega de Infraestructura Verde y miembro del consejo y supervisor de la World Green Infrastructure Network (WGIN). Dirige el taller de Salud y Bienestar de WGIC26. Convencido de la necesidad humana de la naturaleza, defiende que el acceso a una relación mutuamente saludable con ella debería reconocerse como un derecho humano universal, y aboga por la práctica ética en la comunidad de infraestructura verde: sostenibilidad ecológica y acceso equitativo."
       }
     },
     "closing": "Este primer grupo de ponentes subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
@@ -850,8 +856,8 @@
     "itineraryAItems": [
       {
         "name": "CaixaForum Barcelona",
-        "title": "Un bosque vertical de 755 m² sobre 45 toneladas de acero",
-        "description": "El bosque vertical del CaixaForum, construido por Babilon, ocupa 755 m² —535 m² de fachada plantada y 220 m² de cerramientos— sobre una estructura autoportante de más de 45 toneladas de acero galvanizado y 22 pórticos tubulares distribuidos en cuatro niveles. Desarrollado y dirigido por Pepa Morán y Oriol Solanes, con escenografía, texturas y esculturas de Gabriel Ruiz Donaire.",
+        "title": "Un bosque vertical de 755 m² pensado para su entorno urbano",
+        "description": "El bosque vertical del CaixaForum, construido por Babilon SL, ocupa 755 m² sobre una estructura autoportante de acero galvanizado con 22 pórticos, adaptada a los eventuales cambios urbanísticos previstos en su lugar de instalación. Desarrollado a partir de una idea original de Babilon SL, cuenta con un equipo pluridisciplinar formado por Pepa Morán, Oriol Solanes, Most Enginyers y Gabriel Ruiz (Gecco 3D studio), y con una selección botánica que investiga las diferentes necesidades hídricas.",
         "image": "/img/visits/Caixa Forum Barcelona - Cultural.jpg"
       },
       {

@@ -13,26 +13,26 @@ export const metadata: Metadata = {
 
 // Orden alfabético por apellido
 const speakerSlots = [
-
+  { id: "speaker22", image: "/img/speakers/aba.png" },
   { id: "speaker10", image: "/img/speakers/Balsells.png" },
   { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
+  { id: "speaker24", image: "/img/speakers/Vernon_David.png" },
   { id: "speaker8", image: "/img/speakers/buhigas_maria.jpg" },
-  { id: "speaker16", image: "/img/speakers/carratala.jpeg" },
+  { id: "speaker16", image: "/img/speakers/Carratala.png" },
   { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
   { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },
-  { id: "speaker22", image: "/img/speakers/PalomaAbaGarrote.png" },
+  { id: "speaker23", image: "/img/speakers/Farinea.png" },
   { id: "speaker12", image: "/img/speakers/martinez.jpeg" },
+  { id: "speaker15", image: "/img/speakers/JobMwangi.png" },
   { id: "speaker20", image: "/img/speakers/peck.png" },
   { id: "speaker17", image: "/img/speakers/petito.png" },
   { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
-  { id: "speaker13", image: "/img/speakers/VictoriaPerez.png" },
   { id: "speaker9", image: "/img/speakers/JesusPerez.jpeg" },
- 
+  { id: "speaker13", image: "/img/speakers/VictoriaPerez.png" },
   { id: "speaker1", image: "/img/speakers/marcosros.jpg" },
   { id: "speaker2", image: "/img/speakers/salvadorrueda.jpg" },
   { id: "speaker14", image: "/img/speakers/scuto.png" },
   { id: "speaker21", image: "/img/speakers/CamilleTallon.png" },
-  { id: "speaker15", image: "/img/speakers/JobMwangi.png" },
 ] as const;
 
 const getInitials = (name: string) =>

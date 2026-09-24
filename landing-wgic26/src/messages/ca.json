@@ -773,7 +773,7 @@
       },
       "speaker4": {
         "name": "Alberto Estévez",
-        "bio": "Arquitecte, investigador i fundador d'ESARQ-UIC Barcelona, Alberto Estévez és una veu líder en arquitectura biodigital, explorant la convergència entre disseny, biologia, tecnologia i sostenibilitat."
+        "bio": "Arquitecte i fundador d'ESARQ-UIC Barcelona, Alberto T. Estévez és una veu de referència en arquitectura biodigital, explorant la convergència del disseny, la biologia, la tecnologia avançada i la sostenibilitat. albertoestevez.com"
       },
       "speaker5": {
         "name": "Enric Batlle",
@@ -813,13 +813,12 @@
       },
       "speaker16": {
         "name": "Sergio Carratalá",
-        "bio": "Sergio Carratalá és Enginyer de Camins i fundador de MataAlta Studio, un estudi de disseny regeneratiu especialitzat en paisatgisme, biofília i infraestructura verda urbana. Integra solucions basades en la natura per renaturalitzar les ciutats, restaurar la biodiversitat i crear entorns urbans sostenibles."
+        "bio": "Després de 15 anys com a enginyer de camins en grans projectes d'infraestructura, Sergio Carratalá va fundar MataAlta el 2018 amb la convicció que l'enginyeria també pot contribuir a regenerar el territori. A MataAlta Estudi, la natura, el paisatge i l'enginyeria treballen junts per restaurar l'equilibri ecològic i crear espais més saludables, biodiversos i valuosos per a les persones."
       },
       "speaker17": {
         "name": "Luigi Petito",
-        "bio": "Luigi Petito és el director del Capítol Europeu de la WGIN. Expert en afers públics establert a Brussel·les, defensa davant les institucions de la UE la integració sistemàtica de la infraestructura verda i les solucions basades en la natura en la normativa urbana."
+        "bio": "Luigi Petito, 51 anys, és expert en afers públics europeus. Resideix a Brussel·les, el punt de trobada dels afers internacionals i les institucions europees. El 2019 va ser convidat a crear i dirigir el Capítol Europeu de la World Green Infrastructure Network (WGIN). Des d'aleshores, segueix l'evolució de les polítiques i normatives de la UE relacionades amb la infraestructura verda i advoca per la seva integració sistemàtica a les zones urbanes. Representa WGIN al grup d'experts de la Comissió Europea sobre l'aplicació del Reglament de Restauració de la Natura."
       },
-
       "speaker19": {
         "name": "Gabriel Pérez",
         "bio": "Gabriel Pérez Luque és Catedràtic de Construccions Arquitectòniques a la Universitat de Lleida (UdL). Doctor en Arquitectura i Enginyer Agrònom, centra la seva recerca en solucions basades en la natura, infraestructures verdes urbanes, cobertes vegetals i eficiència energètica en l'edificació sostenible."
@@ -830,11 +829,19 @@
       },
       "speaker21": {
         "name": "Camille Tallon",
-        "bio": "Arquitecta i urbanista, Camille Tallon lidera el programa Green and Thriving Neighbourhoods de C40, donant suport a les ciutats en l'avanç de l'acció climàtica local i en la planificació de la vida urbana a escala humana. Abans d'incorporar-se a C40, va formar part de l'equip de recerca de CGLU i va treballar amb despatxos d'arquitectura a França i als Estats Units."
+        "bio": "La Camille és Senior Manager d'Urban Planning i de Ciutat dels 15 Minuts a C40. Arquitecta i urbanista de formació, és responsable del programa Green and Thriving Neighborhoods de C40, que dona suport a les ciutats en la planificació i el disseny a escala de barri basats en models de proximitat com els barris complets i les ciutats dels 15 minuts, i ajuda a generar evidència sobre els seus beneficis climàtics, socials, econòmics i de salut. Abans d'incorporar-se a C40, la Camille va formar part de l'equip d'investigació de CGLU i va treballar a despatxos d'arquitectura a França i als Estats Units."
       },
       "speaker22": {
         "name": "Paloma Aba Garrote",
-        "bio": "Paloma Aba Garrote és directora de CINEA, l'agència de la Comissió Europea responsable d'aplicar els principals programes de finançament de la UE que donen suport a l'acció climàtica, les energies netes, el transport sostenible, la protecció del medi ambient i la innovació verda. Compta amb més de 20 anys d'experiència a la Comissió Europea, on ha ocupat diversos càrrecs de direcció relacionats amb programes de la UE, finances i infraestructures."
+        "bio": "Des del 2023, la Paloma és directora de CINEA, l'agència executiva creada per la Comissió Europea per aplicar els programes de finançament de la UE que impulsen el creixement verd i la indústria neta a Europa. La seva trajectòria abasta més de 20 anys a la Comissió Europea. És MBA per IESE Business School i prové del món de les finances i la banca."
+      },
+      "speaker23": {
+        "name": "Chiara Farinea",
+        "bio": "Chiara Farinea és arquitecta, urbanista i investigadora italiana; explora la integració de la natura a les ciutats, amb especial atenció al disseny més-que-humà i interespècies i a les tecnologies emergents. Ha desenvolupat prototips urbans innovadors implementats en diverses ciutats europees i exhibits internacionalment, inclosa la Biennal d'Arquitectura de Venècia. La seva obra ha estat publicada en llibres i revistes científiques. És Head of European Projects a l'IAAC, on dirigeix projectes de recerca internacionals amb finançament de la UE i docència."
+      },
+      "speaker24": {
+        "name": "David Vernon Brasfield",
+        "bio": "Arquitecte i enginyer d'edificació que promou la infraestructura verda des del 2006, David Vernon Brasfield és president de l'Associació Noruega d'Infraestructura Verda i membre del consell i supervisor de la World Green Infrastructure Network (WGIN). Dirigeix el taller de Salut i Benestar de WGIC26. Convençut de la necessitat humana de la natura, defensa que l'accés a una relació mútuament saludable amb ella hauria de reconèixer-se com a dret humà universal, i advoca per la pràctica ètica a la comunitat d'infraestructura verda: sostenibilitat ecològica i accés equitatiu."
       }
     },
     "closing": "Aquest primer grup d'oradors subratlla l'ambició, profunditat i visió multidisciplinar de WGIC 2026, posicionant-lo com un fòrum clau per al debat urbà global."
@@ -849,8 +856,8 @@
     "itineraryAItems": [
       {
         "name": "CaixaForum Barcelona",
-        "title": "Un bosc vertical de 755 m² sobre 45 tones d'acer",
-        "description": "El bosc vertical del CaixaForum, construït per Babilon, té una superfície de 755 m² —535 m² de façana plantada i 220 m² de tancaments— sobre una estructura autoportant de més de 45 tones d'acer galvanitzat i 22 portiques tubulars distribuïts en quatre nivells. Desenvolupat i dirigit per Pepa Morán i Oriol Solanes, amb escenografia, texturització i escultures de Gabriel Ruiz Donaire.",
+        "title": "Un bosc vertical de 755 m² pensat per al seu entorn urbà",
+        "description": "El bosc vertical del CaixaForum, construït per Babilon SL, ocupa 755 m² sobre una estructura autoportant d'acer galvanitzat amb 22 pòrtics, adaptada als eventuals canvis urbanístics previstos al seu lloc d'instal·lació. Desenvolupat a partir d'una idea original de Babilon SL, compta amb un equip pluridisciplinar format per Pepa Morán, Oriol Solanes, Most Enginyers i Gabriel Ruiz (Gecco 3D studio), i amb una selecció botànica que investiga les diferents necessitats hídriques.",
         "image": "/img/visits/Caixa Forum Barcelona - Cultural.jpg"
       },
       {

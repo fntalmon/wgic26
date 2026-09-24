@@ -773,7 +773,7 @@
       },
       "speaker4": {
         "name": "Alberto Estévez",
-        "bio": "Architecte, chercheur et fondateur de l'ESARQ-UIC Barcelone, Alberto Estévez est une voix de premier plan dans le domaine de l'architecture bionumérique, explorant la convergence du design, de la biologie, de la technologie et de la durabilité."
+        "bio": "Architecte et fondateur d'ESARQ-UIC Barcelona, Alberto T. Estévez est une voix de référence en architecture biodigitale, explorant la convergence du design, de la biologie, des technologies avancées et de la durabilité. albertoestevez.com"
       },
       "speaker5": {
         "name": "Enric Batlé",
@@ -783,7 +783,6 @@
         "name": "Wendy Y. Chen",
         "bio": "Professeur à l'Université de Hong Kong, Wendy Y. Chen se spécialise dans les infrastructures urbaines vert-bleu, en se concentrant sur la manière dont les solutions basées sur la nature améliorent la durabilité, la planification et la qualité de vie urbaines."
       },
-
       "speaker8": {
         "name": "Maria Buhigas",
         "bio": "Maria Buhigas est l'architecte en chef de la Ville de Barcelone. Architecte et urbaniste, elle possède une vaste expérience en stratégie urbaine, en espace public, en logement et en transformation des villes, avec pour objectif de créer des villes plus agréables à vivre, inclusives et résilientes."
@@ -814,13 +813,12 @@
       },
       "speaker16": {
         "name": "Sergio Carratalá",
-        "bio": "Sergio Carratalá est Ingénieur des Travaux Publics et fondateur de MataAlta Studio, un atelier de conception régénérative spécialisé dans le paysagisme, la biophilie et les infrastructures vertes urbaines. Il intègre des solutions fondées sur la nature pour renaturer les villes, restaurer la biodiversité et créer des environnements urbains durables."
+        "bio": "Après 15 ans comme ingénieur sur de grands projets d'infrastructure, Sergio Carratalá a fondé MataAlta en 2018, convaincu que l'ingénierie peut aussi contribuer à régénérer le territoire. Au sein de MataAlta Studio, la nature, le paysage et l'ingénierie travaillent ensemble pour restaurer l'équilibre écologique et créer des espaces plus sains, plus biodiverses et plus précieux pour les habitants."
       },
       "speaker17": {
         "name": "Luigi Petito",
-        "bio": "Luigi Petito est directeur du Chapitre européen du WGIN. Expert en affaires publiques basé à Bruxelles, il plaide auprès des institutions de l'UE pour l'intégration systématique des infrastructures vertes et des solutions fondées sur la nature dans la réglementation urbaine."
+        "bio": "Luigi Petito, 51 ans, est expert en affaires publiques européennes. Basé à Bruxelles, carrefour des affaires internationales et des institutions européennes, il a été invité en 2019 à créer et diriger le chapitre européen du World Green Infrastructure Network (WGIN). Depuis, il suit l'évolution des politiques et réglementations de l'UE relatives à l'infrastructure verte et plaide pour son intégration systématique dans les zones urbaines. Il représente le WGIN au sein du groupe d'experts de la Commission européenne sur la mise en œuvre du règlement sur la restauration de la nature."
       },
-
       "speaker19": {
         "name": "Gabriel Pérez",
         "bio": "Gabriel Pérez Luque est professeur titulaire de Constructions Architecturales à l'Universitat de Lleida (UdL). Docteur en Architecture et Ingénieur Agronome, ses recherches portent sur les solutions fondées sur la nature, les infrastructures vertes urbaines, les toitures végétalisées et l'efficacité énergétique dans la construction durable."
@@ -831,11 +829,19 @@
       },
       "speaker21": {
         "name": "Camille Tallon",
-        "bio": "Architecte et urbaniste, Camille Tallon dirige le programme Green and Thriving Neighbourhoods du C40, accompagnant les villes dans l'avancement de l'action climatique locale et la planification de la vie urbaine à l'échelle humaine. Avant de rejoindre le C40, elle a fait partie de l'équipe de recherche de CGLU et a travaillé avec des agences d'architecture en France et aux États-Unis."
+        "bio": "Camille est Senior Manager Urban Planning et Ville du quart d'heure au sein de C40. Architecte et urbaniste de formation, elle est responsable du programme Green and Thriving Neighborhoods de C40, qui aide les villes à planifier et concevoir à l'échelle du quartier selon des modèles de proximité comme les « quartiers complets » et les « villes du quart d'heure », et contribue à démontrer leurs bénéfices climatiques, sociaux, économiques et sanitaires. Avant de rejoindre C40, Camille faisait partie de l'équipe de recherche de CGLU et a travaillé dans des agences d'architecture en France et aux États-Unis."
       },
       "speaker22": {
         "name": "Paloma Aba Garrote",
-        "bio": "Paloma Aba Garrote est directrice de la CINEA, l'agence de la Commission européenne chargée de mettre en œuvre les principaux programmes de financement de l'UE qui soutiennent l'action climatique, les énergies propres, les transports durables, la protection de l'environnement et l'innovation verte. Elle compte plus de 20 ans d'expérience au sein de la Commission européenne, où elle a occupé plusieurs postes de direction liés aux programmes de l'UE, aux finances et aux infrastructures."
+        "bio": "Depuis 2023, Paloma est directrice de la CINEA, l'agence exécutive créée par la Commission européenne pour mettre en œuvre les programmes de financement de l'UE qui stimulent la croissance verte et l'industrie propre en Europe. Sa carrière s'étend sur plus de 20 ans au sein de la Commission européenne. Elle est titulaire d'un MBA de l'IESE Business School et possède une expérience dans la finance et la banque."
+      },
+      "speaker23": {
+        "name": "Chiara Farinea",
+        "bio": "Chiara Farinea est architecte, urbaniste et chercheuse italienne ; elle explore l'intégration de la nature dans les villes, en mettant l'accent sur le design plus-qu'humain et inter-espèces ainsi que sur les technologies émergentes. Elle a développé des prototypes urbains innovants déployés dans plusieurs villes européennes et exposés à l'international, notamment à la Biennale d'architecture de Venise. Ses travaux ont été publiés dans des livres et des revues scientifiques. Elle est Head of European Projects à l'IAAC, où elle dirige des projets de recherche internationaux financés par l'UE et enseigne."
+      },
+      "speaker24": {
+        "name": "David Vernon Brasfield",
+        "bio": "Architecte et ingénieur du bâtiment engagé pour l'infrastructure verte depuis 2006, David Vernon Brasfield est président de l'Association norvégienne pour l'infrastructure verte et membre du conseil ainsi que superviseur du World Green Infrastructure Network (WGIN). Il anime l'atelier WGIC26 sur la santé et le bien-être. Convaincu du besoin humain de nature, il estime que l'accès à une relation mutuellement saine avec celle-ci devrait être reconnu comme un droit humain universel, et prône une pratique éthique au sein de la communauté de l'infrastructure verte : durabilité écologique et accès équitable."
       }
     },
     "closing": "Ce premier groupe d'intervenants souligne l'ambition, la profondeur et la vision multidisciplinaire du WGIC 2026, le positionnant comme un forum clé du débat urbain mondial."
@@ -850,8 +856,8 @@
     "itineraryAItems": [
       {
         "name": "CaixaForum Barcelona",
-        "title": "Une forêt verticale de 755 m² sur 45 tonnes d'acier",
-        "description": "La forêt verticale du CaixaForum, construite par Babilon, s'étend sur 755 m² — 535 m² de façade plantée et 220 m² de clôtures — sur une structure autoportante de plus de 45 tonnes d'acier galvanisé et 22 portiques tubulaires répartis sur quatre niveaux. Conçue et dirigée par Pepa Morán et Oriol Solanes, avec une scénographie, des textures et des sculptures de Gabriel Ruiz Donaire.",
+        "title": "Une forêt verticale de 755 m² pensée pour son environnement urbain",
+        "description": "La forêt verticale du CaixaForum, construite par Babilon SL, s'étend sur 755 m² sur une structure autoportante en acier galvanisé à 22 portiques, adaptée aux éventuels changements d'aménagement urbain prévus sur son site d'installation. Développée à partir d'une idée originale de Babilon SL, elle réunit une équipe pluridisciplinaire — Pepa Morán, Oriol Solanes, Most Enginyers et Gabriel Ruiz (Gecco 3D studio) — et une sélection botanique qui étudie les différents besoins hydriques de chaque espèce.",
         "image": "/img/visits/Caixa Forum Barcelona - Cultural.jpg"
       },
       {

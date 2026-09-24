@@ -26,13 +26,15 @@ const keynoteSpeakerSlots = [
   { id: "speaker13", image: "/img/speakers/VictoriaPerez.png" },
   { id: "speaker14", image: "/img/speakers/scuto.png" },
   { id: "speaker15", image: "/img/speakers/JobMwangi.png" },
-  { id: "speaker16", image: "/img/speakers/carratala.jpeg" },
+  { id: "speaker16", image: "/img/speakers/Carratala.png" },
   { id: "speaker17", image: "/img/speakers/petito.png" },
+  { id: "speaker23", image: "/img/speakers/Farinea.png" },
+  { id: "speaker24", image: "/img/speakers/Vernon_David.png" },
 
   { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
   { id: "speaker20", image: "/img/speakers/peck.png" },
   { id: "speaker21", image: "/img/speakers/CamilleTallon.png" },
-  { id: "speaker22", image: "/img/speakers/PalomaAbaGarrote.png" },
+  { id: "speaker22", image: "/img/speakers/aba.png" },
 ] as const;
 
 // Extrae la primera frase sin cortar en iniciales tipo "Wendy Y. Chen".

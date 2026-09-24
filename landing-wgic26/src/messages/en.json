@@ -773,7 +773,7 @@
       },
       "speaker4": {
         "name": "Alberto Estevez",
-        "bio": "Architect, researcher, and Founder of ESARQ-UIC Barcelona, Alberto Estévez is a leading voice in biodigital architecture, exploring the convergence of design, biology, technology, and sustainability."
+        "bio": "Architect and founder of ESARQ-UIC Barcelona, Alberto T. Estévez is a leading voice in biodigital architecture, exploring the convergence of design, biology, advanced technology and sustainability. albertoestevez.com"
       },
       "speaker5": {
         "name": "Enric Batlle",
@@ -783,7 +783,6 @@
         "name": "Wendy Y. Chen",
         "bio": "Professor at the University of Hong Kong, Wendy Y. Chen specialises in urban green-blue infrastructure, focusing on how nature-based solutions improve urban sustainability, planning, and quality of life."
       },
-
       "speaker8": {
         "name": "Maria Buhigas",
         "bio": "Maria Buhigas is the Chief Architect of Barcelona City Council. An architect and urban planner, she brings extensive experience in urban strategy, public space, housing and city transformation, with a focus on creating more liveable, inclusive and resilient cities."
@@ -814,13 +813,12 @@
       },
       "speaker16": {
         "name": "Sergio Carratalá",
-        "bio": "Sergio Carratalá is a Civil Engineer and founder of MataAlta Studio, a regenerative design studio specialising in landscaping, biophilia, and urban green infrastructure. He integrates nature-based solutions to renaturalise cities, restore biodiversity, and create sustainable urban environments."
+        "bio": "After 15 years as a civil engineer working on major infrastructure projects, Sergio Carratalá founded MataAlta in 2018 with the conviction that engineering can also help regenerate the territory. At MataAlta Studio, nature, landscape and engineering work together to restore ecological balance and create healthier, more biodiverse and more valuable spaces for people."
       },
       "speaker17": {
         "name": "Luigi Petito",
-        "bio": "Luigi Petito is the Director of WGIN's European Chapter. A public affairs expert based in Brussels, he advocates before EU institutions for the systematic integration of green infrastructure and nature-based solutions into urban regulation."
+        "bio": "Luigi Petito, 51, is an expert in European public affairs based in Brussels, the crossroads of international affairs and the European institutions. In 2019 he was invited to establish and lead the European Chapter of the World Green Infrastructure Network (WGIN). Since then, he has followed EU policy and regulatory developments related to green infrastructure and advocated for its systematic integration in urban areas. He represents WGIN in the European Commission expert group on the implementation of the Nature Restoration Regulation."
       },
-
       "speaker19": {
         "name": "Gabriel Pérez",
         "bio": "Gabriel Pérez Luque is Chair Professor of Architectural Construction at the Universitat de Lleida (UdL). A PhD in Architecture and Agronomic Engineer, his research focuses on nature-based solutions, urban green infrastructure, green roofs, and energy efficiency in sustainable building."
@@ -831,11 +829,19 @@
       },
       "speaker21": {
         "name": "Camille Tallon",
-        "bio": "Camille Tallon is an architect and urban planner leading C40's Green and Thriving Neighbourhoods program, supporting cities in advancing local climate action and planning urban life at a human scale. Before joining C40, she was part of the research team at UCLG and worked with architecture firms in France and the United States."
+        "bio": "Camille is C40's Senior Manager for Urban Planning and the 15-Minute City. An architect and urban planner by training, she is responsible for C40's Green and Thriving Neighborhoods programme, which supports cities in neighbourhood-scale planning and design interventions based on proximity models such as complete neighbourhoods and 15-minute cities, and helps build evidence of their climate, social, economic and health benefits. Before joining C40, Camille was part of the research team at UCLG and worked for architecture firms across France and the United States."
       },
       "speaker22": {
         "name": "Paloma Aba Garrote",
-        "bio": "Paloma Aba Garrote is Director of CINEA, the European Commission agency responsible for implementing major EU funding programmes that support climate action, clean energy, sustainable transport, environmental protection, and green innovation. She has more than 20 years of experience within the European Commission, where she has held several management positions related to EU programmes, finance and infrastructure."
+        "bio": "Since 2023, Paloma has served as Director of CINEA, the executive agency established by the European Commission to implement EU funding programmes that boost green growth and clean industry in Europe. Her career spans more than 20 years in the European Commission, and she holds an MBA from IESE Business School, with a background in finance and banking."
+      },
+      "speaker23": {
+        "name": "Chiara Farinea",
+        "bio": "Chiara Farinea is an Italian architect, urban planner and researcher exploring the integration of nature into cities, with a focus on more-than-human and interspecies design and emerging technologies. She has developed innovative urban prototypes implemented across European cities and exhibited internationally, including at the Venice Architecture Biennale. Her work has been published in books and scientific journals. She is Head of European Projects at IAAC, where she leads international EU-funded research projects and teaches."
+      },
+      "speaker24": {
+        "name": "David Vernon Brasfield",
+        "bio": "Architect and building engineer promoting green infrastructure since 2006, David Vernon Brasfield is Chairperson of the Norwegian Association for Green Infrastructure and Board Member and Supervisor of the World Green Infrastructure Network (WGIN). He is leading the WGIC26 workshop on Health and Well-being. A strong believer in the human need for nature, he argues that access to a mutually healthy relationship with nature should be recognised as a universal human right, and champions ethical practice within the green infrastructure community — ecological sustainability and equitable access to green infrastructure."
       }
     },
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."
@@ -850,8 +856,8 @@
     "itineraryAItems": [
       {
         "name": "CaixaForum Barcelona",
-        "title": "A 755 m² vertical forest on 45 tonnes of steel",
-        "description": "CaixaForum's vertical forest, built by Babilon, spans 755 m² –535 m² of planted façade and 220 m² of enclosures– on a self-supporting structure of over 45 tonnes of galvanised steel and 22 tubular gantries across four levels. Developed and directed by Pepa Morán and Oriol Solanes, with scenography, texturing and sculptures by Gabriel Ruiz Donaire.",
+        "title": "A 755 m² vertical forest designed for its urban setting",
+        "description": "CaixaForum's vertical forest, built by Babilon SL, covers 755 m² on a self-supporting galvanised steel structure with 22 portals, adapted to the potential urban-planning changes foreseen for its location. Developed from an original idea by Babilon SL, it brings together a multidisciplinary team — Pepa Morán, Oriol Solanes, Most Enginyers and Gabriel Ruiz (Gecco 3D studio) — and a botanical selection that explores the different water needs of each species.",
         "image": "/img/visits/Caixa Forum Barcelona - Cultural.jpg"
       },
       {
