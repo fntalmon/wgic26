@@ -49,15 +49,20 @@ const Topics = async () => {
                     <div className="mb-12 space-y-8 text-white/80">
 
                         {/* Cover image: green roof with Barcelona Cathedral */}
-                        <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl">
-                            <Image
-                                src="/img/varias/01 IMG_20250827_114013.jpg"
-                                alt={t("img4Alt")}
-                                fill
-                                priority
-                                className="object-cover"
-                            />
-                        </div>
+                        <figure>
+                            <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl">
+                                <Image
+                                    src="/img/varias/01 IMG_20250827_114013.jpg"
+                                    alt={t("img4Alt")}
+                                    fill
+                                    priority
+                                    className="object-cover"
+                                />
+                            </div>
+                            <figcaption className="mt-2 text-right text-xs text-white/50">
+                                {t("img4Credit")}
+                            </figcaption>
+                        </figure>
 
                         <div className="space-y-6 leading-relaxed">
                             <p>{t("p1")}</p>

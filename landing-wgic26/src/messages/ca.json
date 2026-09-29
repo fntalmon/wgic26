@@ -869,7 +869,7 @@
       {
         "name": "Edifici residencial Manuel de Falla 34",
         "title": "Una coberta dels anys cinquanta convertida en ecosistema",
-        "description": "Construït el 1952 a Sarrià-Sant Gervasi, aquest edifici reinterpreta la coberta plana d'estil català —236 m², assolellada i batuda pel vent— com un ecosistema comunitari: 155 m² de vegetació autòctona plantada en dunes, un hort urbà autogestionat i una instal·lació fotovoltaica, que creen nous espais de benestar urbà. El projecte és de Huertos in the Sky.",
+        "description": "Construït el 1952 a Sarrià-Sant Gervasi, aquest edifici reinterpreta la coberta plana d'estil català —236 m², assolellada i batuda pel vent— com un ecosistema comunitari: 155 m² de vegetació autòctona plantada en dunes, un hort urbà autogestionat i una instal·lació fotovoltaica, que creen nous espais de benestar urbà. El projecte està impulsat per Huertos in the Sky en col·laboració amb MataAlta Studio i Eixverd.",
         "image": "/img/visits/Manuel de Falla-Residential.jpg"
       },
       {
@@ -1021,6 +1021,7 @@
     "img2Alt": "Infraestructura verda a Barcelona",
     "img3Alt": "Desenvolupament urbà a Barcelona",
     "img4Alt": "Activitats del congrés",
+    "img4Credit": "Foto: Sandra Jiménez Castillo, coberta del COAC",
     "p1": "El programa del congrés s'ha dissenyat per oferir una experiència completa i participativa, amb ponències magistrals, sessions plenàries, panells, tallers, exposicions i presentacions orals i pòster.",
     "p2": "Les persones participants podran treballar un ampli espectre de temes que abasten polítiques, tecnologies, mercat, estàndards, disseny, execució, manteniment i formació.",
     "p3": "Una part rellevant del congrés se centra en analitzar impactes de la infraestructura verda en societat i medi ambient, incloent resiliència, salut, biodiversitat i cohesió social.",

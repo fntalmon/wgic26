@@ -869,7 +869,7 @@
       {
         "name": "Immeuble résidentiel Manuel de Falla 34",
         "title": "Une toiture des années 1950 transformée en écosystème",
-        "description": "Construit en 1952 à Sarrià-Sant Gervasi, cet immeuble réinterprète la toiture plate de style catalan — 236 m², ensoleillée et balayée par le vent — comme un écosystème collectif : 155 m² de végétation autochtone plantée dans des dunes, un jardin urbain autogéré et une installation photovoltaïque, créant de nouveaux espaces de bien-être urbain. Le projet est signé Huertos in the Sky.",
+        "description": "Construit en 1952 à Sarrià-Sant Gervasi, cet immeuble réinterprète la toiture plate de style catalan — 236 m², ensoleillée et balayée par le vent — comme un écosystème collectif : 155 m² de végétation autochtone plantée dans des dunes, un jardin urbain autogéré et une installation photovoltaïque, créant de nouveaux espaces de bien-être urbain. Le projet est porté par Huertos in the Sky en collaboration avec MataAlta Studio et Eixverd.",
         "image": "/img/visits/Manuel de Falla-Residential.jpg"
       },
       {
@@ -1021,6 +1021,7 @@
     "img2Alt": "Infrastructure verte à Barcelone",
     "img3Alt": "Développement urbain à Barcelone",
     "img4Alt": "Activités du congrès",
+    "img4Credit": "Photo : Sandra Jiménez Castillo, toit du COAC",
     "p1": "Le programme du congrès a été conçu pour offrir une expérience complète et participative, avec des discours d'ouverture, des séances plénières, des panels, des ateliers, des expositions et des présentations orales et par affiches.",
     "p2": "Les participants seront en mesure de travailler sur un large éventail de sujets couvrant les politiques, les technologies, le marché, les normes, la conception, l'exécution, la maintenance et la formation.",
     "p3": "Une partie importante du congrès se concentre sur l'analyse des impacts des infrastructures vertes sur la société et l'environnement, notamment la résilience, la santé, la biodiversité et la cohésion sociale.",

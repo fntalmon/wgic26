@@ -869,7 +869,7 @@
       {
         "name": "Manuel de Falla 34 residential building",
         "title": "A 1950s rooftop turned ecosystem",
-        "description": "Built in 1952 in Sarrià-Sant Gervasi, this building reinterprets the flat Catalan-style roof –236 m², sun-exposed and windswept– as a community ecosystem: 155 m² of native vegetation planted in dunes, a self-managed urban garden and a photovoltaic installation, creating new spaces for urban wellbeing. The project is by Huertos in the Sky.",
+        "description": "Built in 1952 in Sarrià-Sant Gervasi, this building reinterprets the flat Catalan-style roof –236 m², sun-exposed and windswept– as a community ecosystem: 155 m² of native vegetation planted in dunes, a self-managed urban garden and a photovoltaic installation, creating new spaces for urban wellbeing. The project is led by Huertos in the Sky in collaboration with MataAlta Studio and Eixverd.",
         "image": "/img/visits/Manuel de Falla-Residential.jpg"
       },
       {
@@ -1021,6 +1021,7 @@
     "img2Alt": "Green infrastructure in Barcelona",
     "img3Alt": "Urban development in Barcelona",
     "img4Alt": "Congress activities",
+    "img4Credit": "Photo: Sandra Jiménez Castillo, COAC rooftop",
     "p1": "The congress program has been designed to offer a complete and participatory experience, with keynote speeches, plenary sessions, panels, workshops, exhibitions, and oral and poster presentations.",
     "p2": "Participants will be able to work on a broad spectrum of topics covering policies, technologies, market, standards, design, execution, maintenance, and training.",
     "p3": "A significant part of the congress focuses on analyzing the impacts of green infrastructure on society and the environment, including resilience, health, biodiversity, and social cohesion.",
