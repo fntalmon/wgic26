@@ -608,7 +608,11 @@ export default function HomeClient() {
                   href={logo.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex items-center justify-center ${homeSponsorTierBox.mediaPartners}`}
+                  className={`flex items-center justify-center ${
+                    logo.width / logo.height > 4
+                      ? "h-9 w-40 md:h-12 md:w-52"
+                      : homeSponsorTierBox.mediaPartners
+                  }`}
                 >
                   <Image
                     src={logo.src}
