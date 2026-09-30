@@ -279,7 +279,7 @@ const Navigation = () => {
 
   return (
     <div className="fixed px-0 lg:px-4 lg:pt-1 top-0 lg:left-0 w-full z-50 transition-all duration-350 ease-in-out transform">
-      {/* Franja permanente: nombre completo, fechas y sede del congreso + early bird */}
+      {/* Franja permanente: nombre completo, fechas y sede del congreso */}
       <div
         className={`w-full bg-cactus/90 backdrop-blur-xl px-4 lg:px-6 py-1.5 flex items-center justify-between gap-4 text-[9px] lg:text-[11px] uppercase tracking-[0.15em] text-white/80 transition-all duration-350 translate-y-0`}
       >
@@ -288,15 +288,6 @@ const Navigation = () => {
           <span className="hidden xl:inline">
             27–30 {month} · Barcelona &amp; Lleida
           </span>
-          {/* Early bird: eliminar cuando termine la oferta (30/9) */}
-          <a
-            href="https://panel.helice.app/w/wgic26/214760/registration"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-potus font-semibold hover:underline"
-          >
-            {t("stripCta")}
-          </a>
         </div>
       </div>
       <nav
@@ -328,15 +319,6 @@ const Navigation = () => {
                   <span className="ml-1">{t("tickets")}</span>
                 </a>
               </Button>
-              {/* Badge early bird: eliminar cuando termine la oferta (30/9) */}
-              <a
-                href="https://panel.helice.app/w/wgic26/214760/registration"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden 2xl:inline-flex items-center bg-potus text-black text-[10px] font-bold uppercase tracking-wider rounded-full px-3 py-1.5 animate-pulse hover:animate-none"
-              >
-                {t("ticketsUrgency")}
-              </a>
             </div>
           </div>
         </div>

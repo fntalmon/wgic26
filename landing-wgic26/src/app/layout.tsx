@@ -5,7 +5,6 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { PopupManager } from "@/components/PopupManager";
 import { SocialSidebar } from "@/components/SocialSidebar";
-import { EarlyBirdBanner } from "@/components/EarlyBirdBanner";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
@@ -53,7 +52,6 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
       <body className="bg-monstera text-white font-light" style={{ fontFamily: "Century Gothic, sans-serif" }}>
         <NextIntlClientProvider messages={messages}>
           <Navigation />
-          <EarlyBirdBanner compact fixedBottom />
           <SocialSidebar />
           <main className="flex flex-col gap-10 mt-24 lg:mt-32 mb-24 min-h-screen">
             {children}

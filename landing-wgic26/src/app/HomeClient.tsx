@@ -6,7 +6,7 @@ import { SocialProof } from "@/components/SocialProof";
 import { SupportersCarousel } from "@/components/SupportersCarousel";
 import { supporters } from "@/data/supporters";
 import { sponsorTiers } from "@/data/sponsors";
-import { MapPin, CheckCircle, AlertCircle, ArrowRight, FileUp } from "lucide-react";
+import { MapPin, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -187,12 +187,6 @@ export default function HomeClient() {
         <HomeBannerSlider
           slides={[
             {
-              desktop: "/img/banners/banner-congress-desktop.jpg",
-              mobile: "/img/banners/banner-congress-mobile.jpg",
-              alt: "World Green Infrastructure Congress 2026 — The researchers, designers and city-makers building greener cities meet in Barcelona and Lleida. Register before 30 September and save 15%.",
-              href: "/registration",
-            },
-            {
               desktop: "/img/banners/banner-impact-desktop.jpg",
               mobile: "/img/banners/banner-impact-mobile.jpg",
               alt: "Climate resilience. Water. Health. Biodiversity. Green jobs — 137 papers from 31 countries, gathered around one question: how green infrastructure builds a healthier and safer urban future.",
@@ -301,31 +295,6 @@ export default function HomeClient() {
               </div>
             </Link>
           ))}
-        </div>
-      </section>
-
-      {/* CALL FOR POSTERS */}
-      <section id="posters" className="flex flex-col gap-6 mt-16">
-        <div className="rounded-2xl border border-potus/40 bg-cactus/60 p-6 sm:p-10 lg:p-14 flex flex-col lg:flex-row lg:items-center gap-8 justify-between">
-          <div className="flex flex-col gap-4 max-w-3xl">
-            <h2 className="uppercase text-2xl sm:text-3xl md:text-4xl leading-tight">
-              {t("postersTitle")}
-            </h2>
-            <p className="text-white/80 text-sm sm:text-base md:text-lg">
-              {t("postersText")}
-            </p>
-          </div>
-          <div className="flex flex-col items-start lg:items-end gap-4 shrink-0">
-            <span className="text-xs uppercase tracking-[0.25em] text-potus border border-potus/50 rounded-full px-4 py-2">
-              {t("postersDeadline")}
-            </span>
-            <Link href="/speakers">
-              <Button variant="default" size="lg">
-                <FileUp size={18} />
-                {t("postersCta")}
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 

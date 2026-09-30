@@ -34,12 +34,10 @@
     "mobileMenuDescription": "Menú de navegació mòbil de WGIC26",
     "committees": "Comitès",
     "barcelonaLleida": "Barcelona & Lleida",
-    "ticketsUrgency": "-15% fins al 30/9",
     "stripName": "World Green Infrastructure Congress 2026",
     "theOrganisers": "Els organitzadors",
     "fullProgramme": "Programa",
-    "news": "Notícies",
-    "stripCta": "Inscriu-te abans del 30 de setembre i estalvia un 15%"
+    "news": "Notícies"
   },
   "countdown": {
     "startingIn": "Comença en:"
@@ -101,13 +99,6 @@
     "keynoteSpeakersTitle": "Ponents magistrals",
     "keynoteSpeakersIntro": "Coneix les veus líders en infraestructura verda confirmades per a WGIC26.",
     "viewAllSpeakers": "Veure tots els ponents magistrals",
-    "earlyBirdBanner": "Inscriu-te abans del 30 de setembre i estalvia un 15%",
-    "earlyBirdPopupEyebrow": "Oferta per temps limitat",
-    "earlyBirdPopupTitle": "La tarifa early bird acaba el setembre de 2026",
-    "earlyBirdPopupBody": "Assegura la teva plaça a WGIC26 ara i estalvia en la teva inscripció abans que pugin els preus.",
-    "earlyBirdPopupCta": "Registrar-se ara",
-    "earlyBirdPopupDismiss": "Potser més tard",
-    "earlyBirdPopupClose": "Tancar",
     "newsletterPopupEyebrow": "Newsletter",
     "newsletterPopupTitle": "No et perdis res",
     "newsletterPopupBody": "Rep les novetats del WGIC26, anuncis de ponents i dates clau directament al teu correu.",
@@ -165,13 +156,9 @@
     "whereWorkshopsTitle": "Dia d'Innovació",
     "whereWorkshopsText": "Una jornada de recerca i innovació a la Universitat de Lleida, al voltant del projecte BIG4LIFE sobre vegetació integrada en l'edificació.",
     "whereWorkshopsPlace": "Universitat de Lleida — Lleida",
-    "postersTitle": "La teva recerca, davant de 30 països.",
-    "postersText": "Els pòsters s'exposen durant els quatre dies, amb franges dedicades perquè els autors presentin la seva feina. Les propostes acceptades es publiquen a les actes del congrés.",
-    "postersDeadline": "Tancament: 30 de setembre",
-    "postersCta": "Envia el teu pòster",
     "slide1Title": "World Green Infrastructure Congress 2026",
-    "slide1Subtitle": "Els investigadors, dissenyadors i urbanistes que construeixen ciutats més verdes es troben a Barcelona i Lleida. Inscriu-te abans del 30 de setembre i estalvia un 15%.",
-    "slide1Cta": "Aconsegueix la teva entrada early bird",
+    "slide1Subtitle": "Els investigadors, dissenyadors i urbanistas que construeixen ciutats més verdes es troben a Barcelona i Lleida.",
+    "slide1Cta": "Inscriu-te ara",
     "slide2Title": "Resiliència climàtica. Aigua. Salut. Biodiversitat. Ocupació verda.",
     "slide2Subtitle": "137 articles de 31 països reunits al voltant d'una pregunta: com la infraestructura verda construeix un futur urbà més saludable i segur.",
     "slide2Cta": "Explora els temes principals",
@@ -261,7 +248,6 @@
       "revisionR2": "Revisió de l'esborrany R2",
       "finalPaper": "Envio de l'article final",
       "finalProgram": "Programa final",
-      "earlyBird": "Inscripció anticipada (fins a 400 inscripcions)",
       "registration": "Inscripció"
     }
   },
@@ -372,21 +358,18 @@
     "grandTour": "Grand Tour de Catalunya",
     "gastronomy": "Gastronomia a Catalunya",
     "hotelsTitle": "Hotel recomanat",
-    "hotelsIntro": "Hem aconseguit un descompte especial per als assistents al WGIC26 en el següent hotel. Les tarifes i la disponibilitat les gestiona directament l'hotel.",
+    "hotelsIntro": "El nostre hotel recomanat per a la teva estada durant el WGIC26. Les tarifes i la disponibilitat les gestiona directament l'hotel.",
     "frontmaritimName": "Best Front Marítim",
     "frontmaritimAddress": "Passeig de Garcia Faria, 69, 08019 Barcelona, Espanya",
     "frontmaritimDescription": "Un modern hotel de 4 estrelles davant del mar, a la platja de Nova Mar Bella, al districte de Diagonal Mar de Barcelona, amb vistes al mar, spa i gimnàs.",
     "frontmaritimRoomTypeLabel": "Tipus d'habitació",
     "frontmaritimRoomType": "Habitació doble d'ús individual",
-    "frontmaritimDiscountLabel": "Codi de descompte",
-    "frontmaritimDiscountNote": "Fes servir aquest codi en reservar directament amb l'hotel. Vàlid fins al 30 de setembre de 2026.",
     "frontmaritimWebsite": "Visitar web de l'hotel",
     "culturalTourism": "Turisme cultural a Catalunya"
   },
   "registrationPage": {
     "title": "Inscripció",
     "description": "Uneix-te al Congrés Mundial d'Infraestructura Verda 2026. Registra't ara per assegurar la teva plaça.",
-    "earlyBirdBanner": "Inscriu-te abans del 30 de setembre i estalvia un 15%",
     "platformTitle": "Plataforma d'inscripció",
     "platformDescription": "La inscripció es gestiona a través de la nostra plataforma col·laboradora externa, Hèlice. La quota d'inscripció cobreix els costos durant el període del congrés, incloent dinars i pauses cafè. No inclou viatge ni allotjament.",
     "platformButton": "Registrar-se a la plataforma Hèlice",
@@ -403,8 +386,6 @@
       "revision": "Lliurament de revisió d'article",
       "finalPaper": "Lliurament final d'article",
       "finalProgram": "Programa final",
-      "posterSubmission": "Data límit d'enviament de pòsters",
-      "earlyBird": "Data límit d'inscripció anticipada",
       "registrationOpen": "Inscripció oberta",
       "partners": "Socis i expositors",
       "sponsors": "Patrocinadors"
@@ -416,16 +397,14 @@
       "revision": "Abans del 31 de juliol de 2026",
       "finalPaper": "Abans del 31 d'agost de 2026",
       "finalProgram": "31 de juliol de 2026",
-      "posterSubmission": "Abans del 30 de setembre de 2026",
-      "registrationOpen": "Abans del 30 de setembre de 2026",
-      "partners": "Abans del 30 de setembre de 2026",
-      "sponsors": "Abans del 30 de setembre de 2026"
+      "registrationOpen": "Oberta — inscriu-te ara",
+      "partners": "Escriu-nos",
+      "sponsors": "Escriu-nos"
     },
     "feesTitle": "Quotes d'inscripció",
     "feesHeaders": {
       "category": "Categoria",
-      "early": "Anticipada < Setembre",
-      "standard": "Estàndard (+15%)",
+      "standard": "Estàndard",
       "onsite": "In situ (+30%)"
     },
     "fees": {
@@ -487,13 +466,6 @@
         "answer": "Sí. Els autors que presenten un article o un pòster han d'inscriure's amb la tarifa d'Oral presentation o Poster, que inclou l'accés complet al congrés. Almenys un autor per treball ha d'estar inscrit abans de la data límit perquè el treball aparegui al programa i a les actes."
       }
     },
-    "countdown": {
-      "title": "EARLY BIRD FINS AL SETEMBRE DE 2026",
-      "cta": "REGISTRA'T ARA I ESTALVIA",
-      "days": "DIES",
-      "hours": "HORES",
-      "minutes": "MIN"
-    },
     "steps": {
       "title": "PROCÉS D'INSCRIPCIÓ",
       "step1": {
@@ -513,8 +485,6 @@
       "title": "PROTECCIÓ DE DADES",
       "heliceNote": "La inscripció es gestiona a través de la nostra plataforma externa Helice. Els següents consentiments també s'han de configurar al formulari d'Helice, ja que és allà on es recullen les dades personals."
     },
-    "earlyBirdTag": "-15% early bird",
-    "earlyBirdUntil": "early bird · fins al 30 set",
     "bestValue": "Millor opció",
     "congressIncluded": "Accés al congrés inclòs",
     "proofEnrolment": "Cal justificant de matrícula",
@@ -530,13 +500,7 @@
   "speakersPage": {
     "title": "Sigues un Orador",
     "description": "Coneix les veus líders en infraestructura verda. WGIC 2026 comptarà amb experts internacionals, innovadors i referents que impulsen el futur de les ciutats sostenibles.",
-    "calloutTitle": "Envia el teu pòster abans del 30 de setembre de 2026",
-    "calloutP1": "Gràcies pel teu interès a participar en el World Green Infrastructure Congress 2026 Barcelona - Lleida (WGIC 2026). Per enviar un pòster, accedeix i completa les dades a l'aplicació d'enviament a l'enllaç inferior.",
-    "calloutP2": "El 12è World Green Infrastructure Congress se celebrarà a Barcelona, al Centre de Convencions Internacional de Barcelona, del 27 al 30 d'octubre de 2026. WGIC 2026 rep investigacions originals, estudis de cas i aplicacions innovadores presentades en format pòster.",
     "calloutP3": "Els pòsters s'exhibiran durant el congrés, i els autors disposaran de franges horàries designades per explicar la seva feina als assistents.",
-    "submissionButton": "Anar al formulari d'enviament",
-    "templateButton": "Descarregar plantilla d'article",
-    "managePapersButton": "Gestionar les teves ponencies",
     "bodyP1": "WGIC26 rep amb entusiasme enviaments d'investigació original, estudis de cas i aplicacions innovadores, en format d'article curt (màxim 5 pàgines), en format MS Word. Aquesta limitació ajuda a reduir similitud per a articles recomanats posteriorment per a números especials de revistes.",
     "bodyP2": "Tots els articles enviats passen per un procés rigorós de revisió per parells. El comitè científic decideix l'acceptació i si la presentació serà oral o pòster. Els articles acceptats es publicaran en les actes del WGIC2026.",
     "keyDatesTitle": "Dates clau",
@@ -551,8 +515,6 @@
       "revision": "Lliurament de revisió d'article",
       "finalPaper": "Lliurament final d'article",
       "finalProgram": "Programa final",
-      "posterSubmission": "Data límit d'enviament de pòsters",
-      "earlyBird": "Data límit d'inscripció anticipada",
       "registrationOpen": "Inscripció oberta",
       "partners": "Socis i expositors",
       "sponsors": "Patrocinadors"
@@ -564,7 +526,6 @@
       "revision": "Abans del 31 de juliol de 2026",
       "finalPaper": "Abans del 31 d'agost de 2026",
       "finalProgram": "31 de juliol de 2026",
-      "posterSubmission": "Abans del 30 de setembre de 2026",
       "registrationOpen": "Abans del 30 de setembre de 2026",
       "partners": "Abans del 30 de setembre de 2026",
       "sponsors": "Abans del 30 de setembre de 2026"
@@ -597,10 +558,7 @@
         "length": "Els pòsters es muntaran a l'espai obert disponible. El programa especifica franges durant les pauses de dinar perquè els autors expliquin els seus pòsters als assistents.",
         "details": "Format A0 (841 x 1189 mm) vertical. Utilitza la plantilla de pòster d'una sola diapositiva."
       }
-    },
-    "regionAriaLabel": "Enviaments d'articles",
-    "finalCardTitle": "Envia el teu article",
-    "finalCardDescription": "Utilitza l'aplicació online d'enviament per pujar el teu manuscrit i les dades requerides."
+    }
   },
   "legalPages": {
     "privacyTitle": "Política de privacitat",
@@ -861,6 +819,12 @@
         "image": "/img/visits/Caixa Forum Barcelona - Cultural.jpg"
       },
       {
+        "name": "Escola Pérez Iborra",
+        "title": "Quan la coberta es converteix en una aula a l'aire lliure",
+        "description": "La coberta connecta terrasses a diferents nivells amb un hort, una zona d'oci amb vegetació trepitjable i un recorregut entre plantes aromàtiques. Les espècies es van triar amb una finalitat pedagògica: permeten a l'alumnat observar els cicles de floració i les relacions entre plantes i insectes. Projecte i direcció d'obra: Espai Qbic Arquitectura.",
+        "image": "/img/visits/Perez Iborra-School.jpg"
+      },
+      {
         "name": "Laboratorios Almirall",
         "title": "Un paisatge viu dissenyat per ser admirat",
         "description": "Ubicat en un pati interior a la Ronda del General Mitre, la coberta de Laboratorios Almirall combina plantacions lineals, volums circulars i vegetació en cascada que repliquen la geometria de l'edifici i s'adapten a la seva exposició solar. Un sistema subterrani de retenció d'aigua i reg per degoteig optimitza l'ús de l'aigua. Projecte i direcció d'obra: Espai Qbic Arquitectura.",
@@ -877,12 +841,6 @@
         "title": "D'un mitger a un pulmó verd",
         "description": "Promogut per l'Ajuntament de Barcelona a través de l'Institut del Paisatge Urbà, aquest projecte de Capella Garcia Arquitectura actua com un pulmó verd tot transformant una paret mitgera deixada per una demolició en un gran jardí vertical, amb una estructura metàl·lica i balcons sobre una paret de pedra. La vegetació sempreverda i florida convida a establir-se a la fauna local, especialment als ocells.",
         "image": "/img/visits/Façana_Tarradellas_Residential.jpg"
-      },
-      {
-        "name": "Escola Pérez Iborra",
-        "title": "Quan la coberta es converteix en una aula a l'aire lliure",
-        "description": "La coberta connecta terrasses a diferents nivells amb un hort, una zona d'oci amb vegetació trepitjable i un recorregut entre plantes aromàtiques. Les espècies es van triar amb una finalitat pedagògica: permeten a l'alumnat observar els cicles de floració i les relacions entre plantes i insectes. Projecte i direcció d'obra: Espai Qbic Arquitectura.",
-        "image": "/img/visits/Perez Iborra-School.jpg"
       }
     ],
     "itineraryB": "Itinerari B",

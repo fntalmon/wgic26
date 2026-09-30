@@ -1,13 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronDown,
   GraduationCap,
   FileText,
   Award,
-  Clock,
   Check,
   ExternalLink,
 } from "lucide-react";
@@ -19,110 +18,12 @@ const MONSTERA = "#234a38";
 const CACTUS = "#1a3d2e";
 const CEMENT = "#e8e8e6";
 const POTUS = "#a8e06c";
-const EARLY_BIRD_DEADLINE = new Date("2026-09-30T23:59:59Z").getTime();
 
-/* ───────── Configuración ─────────
-   EARLY_BIRD_ACTIVE: poner a `false` cuando termine el early bird
-   (30 sept 2026). Desaparecen la etiqueta -15% y las referencias
-   "early bird" de las tarjetas sin tocar nada más. */
-const EARLY_BIRD_ACTIVE = Date.now() < EARLY_BIRD_DEADLINE;
+/* ───────── Configuración ───────── */
 const HELICE_URL = "https://panel.helice.app/w/wgic26/214760/registration";
 
 function openHelice() {
   window.open(HELICE_URL, "_blank", "noopener,noreferrer");
-}
-
-/* ───────── Countdown Banner ───────── */
-function CountdownBanner() {
-  const t = useTranslations("registrationPage");
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, mins: 0, secs: 0 });
-
-  useEffect(() => {
-    const tick = () => {
-      const diff = Math.max(0, EARLY_BIRD_DEADLINE - Date.now());
-      setTimeLeft({
-        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
-        mins: Math.floor((diff / (1000 * 60)) % 60),
-        secs: Math.floor((diff / 1000) % 60),
-      });
-    };
-    tick();
-    const id = setInterval(tick, 1000);
-    return () => clearInterval(id);
-  }, []);
-
-  const units = [
-    { value: timeLeft.days, label: t("countdown.days") },
-    { value: timeLeft.hours, label: t("countdown.hours") },
-    { value: timeLeft.mins, label: t("countdown.minutes") },
-    { value: timeLeft.secs, label: "SEC" },
-  ];
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7 }}
-      className="relative overflow-hidden"
-      style={{ backgroundColor: MONSTERA, border: `1px solid ${POTUS}25` }}
-    >
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-6 p-8 lg:p-10">
-        <div className="flex items-center gap-4">
-          <Clock size={20} style={{ color: POTUS, opacity: 0.7 }} />
-          <span
-            className="text-xs tracking-[0.3em] font-medium"
-            style={{ color: CEMENT, opacity: 0.6 }}
-          >
-            {t("countdown.title")}
-          </span>
-        </div>
-
-        <div className="flex items-center gap-6">
-          {units.map((u, i) => (
-            <div key={u.label} className="flex items-center gap-6">
-              <div className="text-center">
-                <div
-                  className="text-3xl lg:text-4xl font-light leading-none tabular-nums"
-                  style={{ color: POTUS }}
-                >
-                  {String(u.value).padStart(2, "0")}
-                </div>
-                <div
-                  className="text-[9px] tracking-[0.3em] mt-1.5"
-                  style={{ color: CEMENT, opacity: 0.35 }}
-                >
-                  {u.label}
-                </div>
-              </div>
-              {i < units.length - 1 && (
-                <div
-                  className="text-xl font-light -mt-4"
-                  style={{ color: CEMENT, opacity: 0.15 }}
-                >
-                  :
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div
-          className="hidden lg:block w-px h-10"
-          style={{ backgroundColor: `${CEMENT}12` }}
-        />
-
-        <span
-          className="text-xs tracking-[0.25em]"
-          style={{ color: CEMENT, opacity: 0.4 }}
-        >
-          {t("countdown.cta")}
-        </span>
-      </div>
-
-      <div className="h-px w-full" style={{ backgroundColor: `${POTUS}15` }} />
-    </motion.div>
-  );
 }
 
 /* ───────── Botón principal de registro (directo a Helice) ───────── */
@@ -151,14 +52,12 @@ function RegisterButton({ label, large = false }: { label: string; large?: boole
 /* ───────── Pricing Card ───────── */
 function PricingCard({
   category,
-  early,
   standard,
   note,
   highlight = false,
   index,
 }: {
   category: string;
-  early: string;
   standard: string;
   note?: string;
   highlight?: boolean;
@@ -199,36 +98,20 @@ function PricingCard({
             >
               {category}
             </span>
-            {EARLY_BIRD_ACTIVE && (
-              <span
-                className="text-[9px] tracking-[0.15em] font-bold uppercase px-2 py-1 whitespace-nowrap"
-                style={{ backgroundColor: POTUS, color: CACTUS }}
-              >
-                {t("earlyBirdTag")}
-              </span>
-            )}
           </div>
 
           <div className="mb-1">
             <span className="text-3xl font-light" style={{ color: POTUS }}>
-              {early}
+              {standard}
             </span>
           </div>
           <div
             className="text-xs tracking-[0.15em] uppercase mb-3"
             style={{ color: CEMENT, opacity: 0.45 }}
           >
-            {EARLY_BIRD_ACTIVE
-              ? t("earlyBirdUntil")
-              : t("feesHeaders.standard")}
+            {t("feesHeaders.standard")}
           </div>
 
-          <div
-            className="text-xs mb-4"
-            style={{ color: CEMENT, opacity: 0.55 }}
-          >
-            {standard}
-          </div>
 
           {note && (
             <div
@@ -429,42 +312,35 @@ export default function RegistrationClient() {
   const pricingData = [
     {
       category: t("fees.registrationTwoDays"),
-      early: "400 EUR",
       standard: "460 EUR",
       note: t("bestValue"),
       highlight: true,
     },
     {
       category: t("fees.registrationOneDay"),
-      early: "200 EUR",
       standard: "230 EUR",
     },
     {
       category: t("fees.oralPresentations"),
-      early: "600 EUR",
       standard: "690 EUR",
       note: t("congressIncluded"),
     },
     {
       category: t("fees.poster"),
-      early: "500 EUR",
       standard: "575 EUR",
       note: t("congressIncluded"),
     },
     {
       category: t("fees.students"),
-      early: "150 EUR",
       standard: "173 EUR",
       note: t("proofEnrolment"),
     },
     {
       category: t("fees.companions"),
-      early: "150 EUR",
       standard: "173 EUR",
     },
     {
       category: t("fees.galaDinner"),
-      early: "150 EUR",
       standard: "150 EUR",
       note: t("galaAddon"),
     },
@@ -537,9 +413,6 @@ export default function RegistrationClient() {
   return (
     <section className="w-full justify-start text-xs">
       <div className="w-full max-w-6xl px-6 py-12 lg:py-20 flex flex-col gap-16 lg:gap-24 sm:px-4 lg:px-0 mx-auto">
-        {/* ── COUNTDOWN ── */}
-        {EARLY_BIRD_ACTIVE && <CountdownBanner />}
-
         {/* ── PRIMERA ENTRADA: REGISTRO DIRECTO ── */}
         <div>
           <motion.div

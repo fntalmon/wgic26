@@ -122,11 +122,6 @@ const PlanYourStay = async () => {
                                 <span className="font-semibold text-white">{t("frontmaritimRoomTypeLabel")}: </span>
                                 {t("frontmaritimRoomType")}
                             </p>
-                            <div className="bg-potus/10 border border-potus/30 rounded-lg p-4">
-                                <p className="text-white/80 text-sm mb-1">{t("frontmaritimDiscountLabel")}</p>
-                                <p className="text-2xl font-bold text-potus tracking-widest">WGIC26</p>
-                                <p className="text-white/60 text-xs mt-2">{t("frontmaritimDiscountNote")}</p>
-                            </div>
                             <a
                                 href="https://www.besthotels.es/en/destinations-and-hotels/best-front-maritim.html"
                                 target="_blank"
