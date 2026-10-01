@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import PageHeader from "@/components/PageHeader";
 import { SponsorCard } from "@/components/SponsorCard";
 import { SupportersCarousel } from "@/components/SupportersCarousel";
@@ -7,6 +8,7 @@ import { sponsorTiers } from "@/data/sponsors";
 import { supporters } from "@/data/supporters";
 import { getTranslations } from "next-intl/server";
 import {
+  Award,
   Building2,
   Crown,
   Gem,
@@ -26,6 +28,7 @@ export const metadata: Metadata = {
 const tierIcons: Record<string, React.ComponentType<{ className?: string; size?: number }>> = {
   organizedBy: Building2,
   platinumPartners: Crown,
+  goldPartners: Award,
   elitePartners: Gem,
   gardenBigExhibitors: Trees,
   gardenMediumExhibitors: Leaf,
@@ -36,6 +39,7 @@ const tierIcons: Record<string, React.ComponentType<{ className?: string; size?:
 const tierLogoBox: Record<string, string> = {
   organizedBy: "h-24 w-40",
   platinumPartners: "h-[5.5rem] w-[9.5rem]",
+  goldPartners: "h-20 w-48",
   elitePartners: "h-20 w-36",
   gardenBigExhibitors: "h-16 w-32",
   gardenMediumExhibitors: "h-12 w-28",
@@ -119,20 +123,29 @@ const Sponsors = async () => {
                   id={tierAnchor(tier.key)}
                   className="bg-white rounded-3xl border border-white/10 p-8 md:p-12 scroll-mt-28"
                 >
-                  <div className="flex items-center gap-3 mb-8 justify-center">
+                  <div className={`flex items-center gap-3 justify-center ${tier.subtitleKey ? "mb-2" : "mb-8"}`}>
                     <Icon className="text-monstera" size={22} />
                     <h2 className="text-center text-xl font-bold text-gray-800 uppercase tracking-wider">
                       {home(tier.titleKey)}
                     </h2>
                   </div>
-                  <div className="flex flex-wrap justify-center gap-6">
-                    {tier.logos.map((logo) => (
-                      <SponsorCard
-                        key={logo.href}
-                        logo={logo}
-                        visitLabel={t("visitWebsite")}
-                        logoBoxClassName={tierLogoBox[tier.key]}
-                      />
+                  {tier.subtitleKey && (
+                    <p className="text-center text-xs text-gray-500 uppercase tracking-[0.2em] mb-8">
+                      {home(tier.subtitleKey)}
+                    </p>
+                  )}
+                  <div className="flex flex-wrap justify-center items-center gap-6">
+                    {tier.logos.map((logo, i) => (
+                      <Fragment key={logo.href}>
+                        {tier.subtitleKey && i > 0 && (
+                          <span aria-hidden className="hidden sm:block h-16 w-px bg-gray-300" />
+                        )}
+                        <SponsorCard
+                          logo={logo}
+                          visitLabel={t("visitWebsite")}
+                          logoBoxClassName={tierLogoBox[tier.key]}
+                        />
+                      </Fragment>
                     ))}
                   </div>
                 </div>

@@ -15,6 +15,8 @@ export interface SponsorLogo {
 export interface SponsorTier {
   key: string;
   titleKey: string;
+  // Etiqueta opcional bajo el título: los logos del tier se muestran unidos como un solo grupo.
+  subtitleKey?: string;
   logos: SponsorLogo[];
 }
 
@@ -108,6 +110,31 @@ export const sponsorTiers: SponsorTier[] = [
         height: 196,
         className: "h-16 md:h-20 w-auto object-contain",
         homeBoxClassName: "h-[5.5rem] w-40 md:h-[6.5rem] md:w-44",
+      },
+    ],
+  },
+  {
+    key: "goldPartners",
+    titleKey: "goldPartners",
+    subtitleKey: "coPartners",
+    // Co-partners: deben mostrarse siempre juntos y en orden alfabético.
+    logos: [
+      {
+        href: "https://www.holcim.com/",
+        src: "/img/logos/HOLCIM_Logo_2025_Premium_Blue_CMYK_IsoCV2.png",
+        alt: "Holcim",
+        width: 2048,
+        height: 473,
+        className: "h-12 md:h-14 w-auto object-contain",
+      },
+      {
+        href: "https://iucn.org/",
+        src: "/img/logos/iucn.png",
+        alt: "IUCN",
+        width: 1055,
+        height: 1011,
+        className: "h-12 md:h-14 w-auto object-contain",
+        homeBoxClassName: "h-14 w-14 md:h-[4.5rem] md:w-[4.5rem]",
       },
     ],
   },
