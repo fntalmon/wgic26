@@ -11,7 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const keynoteSpeakerSlots = [
   { id: "speaker1", image: "/img/speakers/marcosros.jpg" },
@@ -65,6 +65,9 @@ const homeSponsorTierBox = {
 
 export default function HomeClient() {
   const t = useTranslations("home");
+  const locale = useLocale();
+  // Los banners del congreso tienen el texto dentro de la imagen, uno por idioma (pt = "pr").
+  const bannerLocale = ({ en: "en", es: "es", ca: "ca", fr: "fr", pt: "pr" } as Record<string, string>)[locale] ?? "en";
   const tKeynoteSpeakers = useTranslations("keyNoteSpeakersPage");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -187,6 +190,12 @@ export default function HomeClient() {
         <HomeBannerSlider
           slides={[
             {
+              desktop: `/img/banners/congress-${bannerLocale}-desktop.webp`,
+              mobile: `/img/banners/congress-${bannerLocale}-mobile.webp`,
+              alt: "World Green Infrastructure Congress 2026 — 27-30 October 2026, Barcelona and Lleida, Spain.",
+              href: "/registration",
+            },
+            {
               desktop: "/img/banners/banner-impact-desktop.jpg",
               mobile: "/img/banners/banner-impact-mobile.jpg",
               alt: "Climate resilience. Water. Health. Biodiversity. Green jobs — 137 papers from 31 countries, gathered around one question: how green infrastructure builds a healthier and safer urban future.",
@@ -201,8 +210,8 @@ export default function HomeClient() {
             {
               desktop: "/img/banners/banner-visits-desktop.jpg",
               mobile: "/img/banners/banner-visits-mobile.jpg",
-              alt: "Barcelona is the case study. Walk through it. — Exclusive technical visits to green roofs and vertical gardens, guided by the teams that built them. Limited places.",
-              href: "/program/technical-visits",
+              alt: "Health, the Global South, and cities rebuilding after disaster — Three featured workshops taking green infrastructure into the conversations it rarely reaches.",
+              href: "/program/workshops",
             },
           ]}
         />
