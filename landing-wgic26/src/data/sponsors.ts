@@ -98,20 +98,20 @@ export const sponsorTiers: SponsorTier[] = [
         height: 300,
         className: "h-24 md:h-28 w-auto object-contain",
       },
+      {
+        href: "https://www.liko-s.com/en",
+        src: "/img/logos/likos.png",
+        alt: "LIKO-S",
+        width: 400,
+        height: 300,
+        className: "h-24 md:h-28 w-auto object-contain",
+      },
     ],
   },
   {
     key: "gardenBigExhibitors",
     titleKey: "gardenBigExhibitors",
     logos: [
-      {
-        href: "https://www.jardinmovil.com/es/",
-        src: "/img/logos/jardinMovil.png",
-        alt: "JardinMovil",
-        width: 330,
-        height: 230,
-        className: "h-16 md:h-18 w-auto object-contain",
-      },
       {
         href: "https://eixverd.com/",
         src: "/img/logos/eixverd.svg",
