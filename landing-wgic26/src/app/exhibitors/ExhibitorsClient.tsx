@@ -2456,9 +2456,9 @@ const ExhibitorsClient = () => {
                   <Image
                     src="/img/logos/eixverd.svg"
                     alt="Eixverd"
-                    width={330}
-                    height={230}
-                    className="h-36 w-auto object-contain"
+                    width={550}
+                    height={195}
+                    className="h-20 w-auto object-contain"
                   />
                 </a>
 

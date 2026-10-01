@@ -18,7 +18,7 @@ export const technicalVisitsCollaborators: CollaboratorLogo[] = [
   logo("Escola Pérez Iborra", "escola-perez-iborra.png", 449, 155),
   logo("Urbaser", "urbaser.png", 800, 154),
   logo("IR Sant Pau", "ir-sant-pau.png", 800, 317),
-  logo("Eixverd", "eixverd.svg", 842, 595),
+  logo("Eixverd", "eixverd.svg", 550, 195),
   logo("MataAlta Studio", "mataalta.png", 629, 800),
   logo("Platinum@BCN", "platinum-bcn.png", 800, 116),
   logo("Torre Diagonal One", "torre-diagonal-one.png", 800, 579),

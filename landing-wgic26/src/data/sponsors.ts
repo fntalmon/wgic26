@@ -5,6 +5,8 @@ export interface SponsorLogo {
   width: number;
   height: number;
   className: string;
+  // Tamaño de la caja en la home (reemplaza al fijo del tier para logos que necesitan más espacio).
+  homeBoxClassName?: string;
   // Completar a medida que marketing consiga el material de cada sponsor.
   description?: string;
   stand?: string;
@@ -102,9 +104,10 @@ export const sponsorTiers: SponsorTier[] = [
         href: "https://www.liko-s.com/en",
         src: "/img/logos/likos.png",
         alt: "LIKO-S",
-        width: 400,
-        height: 300,
-        className: "h-24 md:h-28 w-auto object-contain",
+        width: 621,
+        height: 196,
+        className: "h-16 md:h-20 w-auto object-contain",
+        homeBoxClassName: "h-[5.5rem] w-40 md:h-[6.5rem] md:w-44",
       },
     ],
   },
@@ -116,9 +119,9 @@ export const sponsorTiers: SponsorTier[] = [
         href: "https://eixverd.com/",
         src: "/img/logos/eixverd.svg",
         alt: "Eixverd",
-        width: 330,
-        height: 230,
-        className: "h-16 md:h-18 w-auto object-contain",
+        width: 550,
+        height: 195,
+        className: "h-12 md:h-14 w-auto object-contain",
       },
       {
         href: "https://zinco-cubiertas-ecologicas.es/",
@@ -154,17 +157,19 @@ export const sponsorTiers: SponsorTier[] = [
         href: "https://www.projar.es/",
         src: "/img/logos/projar.jpg",
         alt: "Projar",
-        width: 330,
-        height: 230,
-        className: "h-12 md:h-14 w-auto object-contain",
+        width: 854,
+        height: 293,
+        className: "h-10 md:h-12 w-auto object-contain",
+        homeBoxClassName: "h-14 w-32 md:h-[4.5rem] md:w-40",
       },
       {
         href: "https://leprieure1840.com/",
         src: "/img/logos/LePrieure.jpg",
         alt: "Le Prieuré",
-        width: 200,
-        height: 200,
-        className: "h-12 md:h-14 w-auto object-contain",
+        width: 1747,
+        height: 1778,
+        className: "h-16 md:h-20 w-auto object-contain",
+        homeBoxClassName: "h-16 w-20 md:h-20 md:w-24",
       },
     ],
   },
@@ -210,7 +215,7 @@ export const sponsorTiers: SponsorTier[] = [
         alt: "Green Building Council España",
         width: 800,
         height: 131,
-        className: "h-8 md:h-10 w-auto object-contain",
+        className: "h-6 md:h-8 w-auto object-contain",
       },
     ],
   },

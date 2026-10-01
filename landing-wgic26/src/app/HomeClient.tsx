@@ -508,7 +508,7 @@ export default function HomeClient() {
                   href={logo.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex items-center justify-center ${homeSponsorTierBox.platinumPartners}`}
+                  className={`flex items-center justify-center ${logo.homeBoxClassName ?? homeSponsorTierBox.platinumPartners}`}
                 >
                   <Image
                     src={logo.src}
@@ -560,7 +560,7 @@ export default function HomeClient() {
                   href={logo.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`flex items-center justify-center ${homeSponsorTierBox.gardenMediumExhibitors}`}
+                  className={`flex items-center justify-center ${logo.homeBoxClassName ?? homeSponsorTierBox.gardenMediumExhibitors}`}
                 >
                   <Image
                     src={logo.src}
@@ -588,7 +588,7 @@ export default function HomeClient() {
                   rel="noopener noreferrer"
                   className={`flex items-center justify-center ${
                     logo.width / logo.height > 4
-                      ? "h-9 w-40 md:h-12 md:w-52"
+                      ? "h-8 w-32 md:h-10 md:w-40"
                       : homeSponsorTierBox.mediaPartners
                   }`}
                 >
