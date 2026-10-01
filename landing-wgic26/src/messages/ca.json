@@ -901,16 +901,16 @@
         "image": "/img/visits/COAC-Offices.jpg"
       },
       {
-        "name": "Terrats d'en Xifré",
-        "title": "Un jardí flotant sobre el segle XIX, premiat a tot Europa",
-        "description": "Ubicat sobre un conjunt patrimonial del segle XIX, aquest jardí mediterrani flotant — una mostra de com la renaturalització pot transformar el patrimoni — reuneix més de 50 espècies i prop de 10.000 plantes, a més d'estanys, hotels d'insectes i refugis per a ocells. Recull l'aigua de pluja, genera energia solar i composta la matèria orgànica. Guanyador del Premi New European Bauhaus 2021. Disseny de MataAlta Studio.",
-        "image": "/img/visits/Porxos d'en Xifré- Residential.jpg"
-      },
-      {
         "name": "Hotel Sofitel Barcelona Skipper",
         "title": "32 metres de façana, 11.400 plantes",
         "description": "Aquesta façana viva reuneix 21 espècies i prop de 11.400 plantes que s'alcen fins als 32 metres, gestionades a través de 16 línies de reg independents. Construïda amb el sistema iPanel i gestionada amb Verdtical Control, que monitora en temps real el consum d'aigua, el manteniment i les incidències.",
         "image": "/img/visits/Sofitel - Hotel.webp"
+      },
+      {
+        "name": "Urbit Bcn 22@",
+        "title": "Un cinquè paisatge a la coberta de les oficines",
+        "description": "Gairebé 1.900 m² de coberta enjardinada i transitable converteixen les cobertes tècniques d'aquest complex d'oficines del 22@ en un autèntic \"cinquè paisatge\" — camins, places, prades i àrees de descans plantades amb sedum de baix manteniment. Una gran estructura fotovoltaica dona ombra a l'espai mentre l'edifici recull per separat aigües pluvials i grises. Dissenyat per QID Studio / Fitó Arquitectes i executat per Le Prieuré.",
+        "image": "/img/visits/Urbit Bcn 22-Offices.jpg"
       }
     ],
     "collaboratorsTitle": "Amb la col·laboració de",

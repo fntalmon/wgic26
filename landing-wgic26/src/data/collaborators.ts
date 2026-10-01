@@ -35,7 +35,9 @@ export const innovationDayWorkshop1Companies: CollaboratorLogo[] = [
 
 export const innovationDayWorkshop2Companies: CollaboratorLogo[] = [
   logo("BotanyXS", "botanyxs.png", 474, 180),
+  logo("Hunter", "hunter.svg", 180, 41),
   logo("SELdx", "seldx.png", 800, 166),
   logo("Sempergreen", "sempergreen.png", 800, 295),
+  logo("Soprema", "soprema.png", 1113, 429),
   logo("Zinco", "zinco.png", 420, 800),
 ];
