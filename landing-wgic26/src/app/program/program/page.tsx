@@ -57,7 +57,6 @@ const ProgramOverview = async () => {
         section="program"
         buttonText={pd("buttonLabel")}
         buttonUrl={programmePdfUrl}
-        buttonNote={pd("note")}
       />
 
       <section className="w-full py-12 px-4 md:px-8 lg:px-16">

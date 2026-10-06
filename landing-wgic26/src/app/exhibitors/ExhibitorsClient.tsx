@@ -1338,8 +1338,8 @@ const ExhibitorsClient = () => {
             : copy.en;
   const pptHref =
     locale === "es"
-      ? "/docs/WGIC26_SponsorshipBrochure_v0.5Spanish.pptx"
-      : "/docs/WGIC26_SponsorshipBrochure_v0.5.pptx";
+      ? "/docs/WGIC26_SponsorshipBrochure_v0.8Spanish.pptx"
+      : "/docs/WGIC26_SponsorshipBrochure_v0.8.pptx";
   // Download form state (reserved for future use)
   // const [downloadStep, setDownloadStep] = useState<
   //   "initial" | "form" | "success"

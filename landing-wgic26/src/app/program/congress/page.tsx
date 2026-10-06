@@ -119,7 +119,6 @@ export default async function CongressPage() {
         buttonText={pd("buttonLabel")}
         buttonUrl={programmePdfUrl}
         buttonVariant="default"
-        buttonNote={pd("note")}
       />
       <section className="container mx-auto py-12 px-4">
         <div className="max-w-7xl mx-auto">

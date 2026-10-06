@@ -743,10 +743,6 @@
         "name": "Wendy Y. Chen",
         "bio": "Professeur à l'Université de Hong Kong, Wendy Y. Chen se spécialise dans les infrastructures urbaines vert-bleu, en se concentrant sur la manière dont les solutions basées sur la nature améliorent la durabilité, la planification et la qualité de vie urbaines."
       },
-      "speaker8": {
-        "name": "Maria Buhigas",
-        "bio": "Maria Buhigas est l'architecte en chef de la Ville de Barcelone. Architecte et urbaniste, elle possède une vaste expérience en stratégie urbaine, en espace public, en logement et en transformation des villes, avec pour objectif de créer des villes plus agréables à vivre, inclusives et résilientes."
-      },
       "speaker9": {
         "name": "Jesús Pérez Gil",
         "bio": "Vice-président de la POH (Plateforme One Health) représentant la Conférence espagnole des doyens de biologie (CEDB) et professeur titulaire à la Faculté de biologie de l'Universidad Complutense de Madrid."
@@ -1548,8 +1544,7 @@
   },
   "programmeDownload": {
     "buttonLabel": "Télécharger le Programme (PDF)",
-    "footerLabel": "Programme (PDF)",
-    "note": "Version provisoire — dernière mise à jour : 8 août"
+    "footerLabel": "Programme (PDF)"
   },
   "committeesPage": {
     "title": "Comités",

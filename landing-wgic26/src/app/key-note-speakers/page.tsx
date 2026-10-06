@@ -17,7 +17,6 @@ const speakerSlots = [
   { id: "speaker10", image: "/img/speakers/Balsells.png" },
   { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
   { id: "speaker24", image: "/img/speakers/Vernon_David.png" },
-  { id: "speaker8", image: "/img/speakers/buhigas_maria.jpg" },
   { id: "speaker16", image: "/img/speakers/Carratala.png" },
   { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
   { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },

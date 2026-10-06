@@ -74,6 +74,26 @@ export const supporters: Supporter[] = [
     href: "https://www.diba.cat/",
     src: "/img/logos/diputacion_barcelona.png",
     alt: "Diputació de Barcelona",
-  
-  }
+  },
+  {
+    href: "https://www.ibb.csic.es/es/",
+    src: "/img/logos/ibb.png",
+    alt: "Institut Botànic de Barcelona (IBB)",
+  },
+  {
+    href: "https://www.isep.ipp.pt/",
+    src: "/img/logos/isep.png",
+    alt: "ISEP",
+  },
+  {
+    href: "https://www.arquitectes.cat/",
+    src: "/img/logos/coac.png",
+    alt: "COAC",
+  },
+  {
+    href: "https://gbce.es/",
+    src: "/img/logos/GBCE.png",
+    alt: "Green Building Council España",
+    imageClassName: "scale-150",
+  },
 ];

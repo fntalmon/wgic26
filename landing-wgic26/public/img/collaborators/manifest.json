@@ -108,5 +108,20 @@
     "file": "soprema.png",
     "width": 1113,
     "height": 429
+  },
+  "coac": {
+    "file": "coac.png",
+    "width": 1400,
+    "height": 657
+  },
+  "le-prieure": {
+    "file": "le-prieure.png",
+    "width": 884,
+    "height": 900
+  },
+  "sofitel": {
+    "file": "sofitel.png",
+    "width": 640,
+    "height": 110
   }
 }

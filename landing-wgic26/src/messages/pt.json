@@ -743,10 +743,6 @@
         "name": "Wendy Y. Chen",
         "bio": "Professora da Universidade de Hong Kong, Wendy Y. Chen é especializada em infraestrutura urbana verde-azul, com foco em como as soluções baseadas na natureza melhoram a sustentabilidade urbana, o planejamento e a qualidade de vida."
       },
-      "speaker8": {
-        "name": "Maria Buhigas",
-        "bio": "Maria Buhigas é a Arquiteta-Chefe da Câmara Municipal de Barcelona. Arquiteta e urbanista, possui ampla experiência em estratégia urbana, espaço público, habitação e transformação urbana, com foco na criação de cidades mais habitáveis, inclusivas e resilientes."
-      },
       "speaker9": {
         "name": "Jesús Pérez Gil",
         "bio": "Vice-presidente da POH (Plataforma One Health) em representação da Conferência Espanhola de Decanos de Biologia (CEDB) e catedrático da Faculdade de Biologia da Universidad Complutense de Madrid."
@@ -1548,8 +1544,7 @@
   },
   "programmeDownload": {
     "buttonLabel": "Descarregar o Programa (PDF)",
-    "footerLabel": "Programa (PDF)",
-    "note": "Versão provisória — última atualização: 8 de agosto"
+    "footerLabel": "Programa (PDF)"
   },
   "committeesPage": {
     "title": "Comités",
