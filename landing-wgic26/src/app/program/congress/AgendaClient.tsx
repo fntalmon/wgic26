@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
-import { MapPin, Tag, Clock, Calendar, User } from "lucide-react";
+import { MapPin, Tag, Clock, Calendar, User, Languages } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
   Sheet,
@@ -22,6 +22,7 @@ interface Session {
   track: string;
   idsessiontype: string;
   sessiontype: string;
+  idextra?: string;
   speakers?: Speaker[];
 }
 
@@ -83,8 +84,14 @@ interface Translations {
   noDescription: string;
 }
 
+interface SessionExtra {
+  idextra: string;
+  extra: string;
+}
+
 interface Props {
   sessions: Session[];
+  extras: SessionExtra[];
   facets: Facets;
   tracks: TrackConfig[];
   translations: Translations;
@@ -138,10 +145,17 @@ const typeStyles: Record<string, string> = {
 
 export default function AgendaClient({
   sessions,
+  extras,
   facets,
   tracks,
   translations: t,
 }: Props) {
+  // The program API flags each session's spoken language as an "extra"
+  // (e.g. SESSION IN SPANISH); labels come already localized from event.php.
+  const extraLabels = useMemo(
+    () => Object.fromEntries(extras.map((e) => [e.idextra, e.extra])),
+    [extras]
+  );
   const dates = useMemo(
     () => [...(facets.dates || [])].sort((a, b) => (a.date || "").localeCompare(b.date || "")),
     [facets.dates]
@@ -382,6 +396,12 @@ export default function AgendaClient({
                               <Tag size={12} style={{ color: trackColor }} />
                               <span className="text-white/70">{session.track}</span>
                             </span>
+                            {session.idextra && extraLabels[session.idextra] && (
+                              <span className="inline-flex items-center gap-1.5 text-xs text-white/60 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+                                <Languages size={12} className="text-white/40" />
+                                {extraLabels[session.idextra]}
+                              </span>
+                            )}
                             <span className="inline-flex items-center gap-1.5 text-xs text-white/60 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
                               <Clock size={12} className="text-white/40" />
                               {durationBetween(session.start, session.end)}
@@ -465,6 +485,12 @@ export default function AgendaClient({
                   <Tag size={14} className="text-white/40" />
                   {selectedSession.track}
                 </span>
+                {selectedSession.idextra && extraLabels[selectedSession.idextra] && (
+                  <span className="inline-flex items-center gap-2">
+                    <Languages size={14} className="text-white/40" />
+                    {extraLabels[selectedSession.idextra]}
+                  </span>
+                )}
               </div>
 
               {(loadingSpeakers || detailSpeakers.length > 0) && (

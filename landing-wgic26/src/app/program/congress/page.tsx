@@ -109,6 +109,7 @@ export default async function CongressPage() {
         <div className="max-w-7xl mx-auto">
           <AgendaClient
             sessions={sessionsData.sessions || []}
+            extras={eventData.extras || []}
             facets={sessionsData.facets || {}}
             tracks={tracks}
             translations={translations}
