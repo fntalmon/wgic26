@@ -1,16 +1,10 @@
 import PageHeader from "@/components/PageHeader";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
+import { fetchProgram } from "@/lib/program-api";
 import SpeakersTestClient from "./SpeakersTestClient";
 
-const API_BASE = "https://networking.barter.es/programapi";
-const TOKEN = "3a10b5a8a9c3c728dd5ac31703c7095a";
-const EVENT_ID = "562";
-
-async function getSpeakers() {
-  const url = `${API_BASE}/speakers.php?idevent=${EVENT_ID}&token=${TOKEN}&items=50`;
-  const res = await fetch(url, { next: { revalidate: 60 } });
-  if (!res.ok) throw new Error("Failed to fetch speakers");
-  const data = await res.json();
+async function getSpeakers(locale: string) {
+  const data = await fetchProgram("speakers.php", locale, { items: 50 });
   // Barter uses fake.jpg as a placeholder; treat it as no photo.
   const speakers = (data.speakers || []).map((speaker: { photo: string; urlphoto: string }) => ({
     ...speaker,
@@ -21,7 +15,7 @@ async function getSpeakers() {
 
 export default async function SpeakersTestPage() {
   const t = await getTranslations("programSpeakersPage");
-  const speakersData = await getSpeakers();
+  const speakersData = await getSpeakers(await getLocale());
 
   const translations = {
     noSpeakers: t("noSpeakers"),

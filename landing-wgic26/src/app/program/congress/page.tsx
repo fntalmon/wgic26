@@ -4,6 +4,7 @@ import TextImage from "@/components/TextImage";
 import { RegisterCTA } from "@/components/RegisterCTA";
 import { getLocale, getTranslations } from "next-intl/server";
 import { getProgrammePdfUrl } from "@/lib/programme-pdf";
+import { fetchProgram } from "@/lib/program-api";
 import AgendaClient from "./AgendaClient";
 
 export const metadata: Metadata = {
@@ -12,18 +13,9 @@ export const metadata: Metadata = {
     "Discover the full program for WGIC26, the green infrastructure conference 2026 bringing together plenaries, workshops and technical visits in Barcelona.",
 };
 
-const API_BASE = "https://networking.barter.es/programapi";
-const TOKEN = "3a10b5a8a9c3c728dd5ac31703c7095a";
-const EVENT_ID = "562";
-
-async function getSessionSpeakers(idsession: string) {
+async function getSessionSpeakers(idsession: string, locale: string) {
   try {
-    const res = await fetch(
-      `${API_BASE}/session.php?idsession=${idsession}&idevent=${EVENT_ID}&token=${TOKEN}`,
-      { next: { revalidate: 60 } }
-    );
-    if (!res.ok) return [];
-    const detail = await res.json();
+    const detail = await fetchProgram("session.php", locale, { idsession });
     const all = [
       ...(detail.speakers || []),
       ...(detail.presenters || []),
@@ -37,18 +29,14 @@ async function getSessionSpeakers(idsession: string) {
   }
 }
 
-async function getSessions() {
-  const baseUrl = `${API_BASE}/sessions.php?idevent=${EVENT_ID}&token=${TOKEN}&items=50`;
-  const firstRes = await fetch(`${baseUrl}&pag=1`, { next: { revalidate: 60 } });
-  if (!firstRes.ok) throw new Error("Failed to fetch sessions");
-  const firstData = await firstRes.json();
+async function getSessions(locale: string) {
+  const params = { items: 50 };
+  const firstData = await fetchProgram("sessions.php", locale, { ...params, pag: 1 });
   const allSessions = [...(firstData.sessions || [])];
   const pages = parseInt(firstData.paginate?.pages ?? "1", 10);
 
   for (let page = 2; page <= pages; page++) {
-    const res = await fetch(`${baseUrl}&pag=${page}`, { next: { revalidate: 60 } });
-    if (!res.ok) throw new Error(`Failed to fetch sessions page ${page}`);
-    const data = await res.json();
+    const data = await fetchProgram("sessions.php", locale, { ...params, pag: page });
     allSessions.push(...(data.sessions || []));
   }
 
@@ -57,18 +45,15 @@ async function getSessions() {
   const sessionsWithSpeakers = await Promise.all(
     allSessions.map(async (session) => ({
       ...session,
-      speakers: await getSessionSpeakers(session.idsession),
+      speakers: await getSessionSpeakers(session.idsession, locale),
     }))
   );
 
   return { ...firstData, sessions: sessionsWithSpeakers };
 }
 
-async function getEventConfig() {
-  const url = `${API_BASE}/event.php?idevent=${EVENT_ID}&token=${TOKEN}`;
-  const res = await fetch(url, { next: { revalidate: 60 } });
-  if (!res.ok) throw new Error("Failed to fetch event config");
-  return res.json();
+async function getEventConfig(locale: string) {
+  return fetchProgram("event.php", locale);
 }
 
 export default async function CongressPage() {
@@ -81,8 +66,8 @@ export default async function CongressPage() {
   const programmePdfUrl = getProgrammePdfUrl(locale);
 
   const [sessionsData, eventData] = await Promise.all([
-    getSessions(),
-    getEventConfig(),
+    getSessions(locale),
+    getEventConfig(locale),
   ]);
 
   const tracks = eventData.tracks || [];
