@@ -282,6 +282,12 @@ const Workshops = async () => {
                                                     </div>
                                                     <span className="text-lg font-semibold leading-snug">{ct("title")}</span>
                                                 </div>
+                                                {ct.has("schedule") && (
+                                                    <span className="inline-flex items-center gap-2 text-sm text-potus font-medium">
+                                                        <Clock size={16} aria-hidden="true" />
+                                                        {ct("schedule")}
+                                                    </span>
+                                                )}
                                                 <span className="text-sm text-white/70 font-normal leading-relaxed pr-2 sm:pr-4">{ct("description")}</span>
                                                 <span className="inline-flex self-start items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 text-white/70 text-xs font-medium group-hover:bg-potus/20 group-hover:text-potus transition-colors">
                                                     {t("seeMore")}

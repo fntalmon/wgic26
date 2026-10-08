@@ -345,10 +345,8 @@
     "country": "Pays"
   },
   "planYourStayPage": {
-    "title": "Planifiez votre séjour",
-    "description": "Barcelone et la Catalogne vous attendent.",
-    "heading": "Planifiez votre séjour à Barcelone",
-    "intro": "Découvrez la magie de Barcelone et pourquoi c'est la destination idéale pour votre visite. Regardez notre guide ci-dessous.",
+    "title": "Plan your stay",
+    "description": "Quand, où et comment venir. Quatre jours, deux villes et l'hôtel que nous recommandons.",
     "videoTitle": "Planifiez votre séjour à Barcelone",
     "barcelonaImgAlt": "Sagrada Familia - Gaudi",
     "barcelonaTitle": "Barcelone Tourisme",
@@ -359,15 +357,147 @@
     "cataloniaDescription": "La Catalogne façonne son paysage autant que son paysage façonne la Catalogne. Des formes organiques de Gaudí au littoral méditerranéen, du tissu urbain historique au design contemporain, tradition et innovation y croissent côte à côte. Un patrimoine vivant qui continue d'inspirer notre façon de construire et d'imaginer l'espace.",
     "grandTour": "Grand Tour de Catalogne",
     "gastronomy": "Gastronomie en Catalogne",
-    "hotelsTitle": "Hôtel recommandé",
-    "hotelsIntro": "Notre hôtel recommandé pour votre séjour pendant le WGIC26. Les tarifs et la disponibilité sont gérés directement par l'hôtel.",
     "frontmaritimName": "Best Front Marítim",
-    "frontmaritimAddress": "Passeig de Garcia Faria, 69, 08019 Barcelone, Espagne",
-    "frontmaritimDescription": "Un hôtel moderne 4 étoiles en bord de mer, sur la plage de Nova Mar Bella, dans le quartier Diagonal Mar de Barcelone, avec vue sur mer, spa et salle de sport.",
-    "frontmaritimRoomTypeLabel": "Type de chambre",
-    "frontmaritimRoomType": "Chambre double à usage individuel",
-    "frontmaritimWebsite": "Visiter le site de l'hôtel",
-    "culturalTourism": "Tourisme culturel en Catalogne"
+    "frontmaritimAddress": "Passeig de Garcia Faria, 69, 08019 Barcelone · 4 étoiles",
+    "frontmaritimDescription": "Un hôtel moderne face à la plage de la Nova Mar Bella, dans le quartier de Diagonal Mar. Vue sur la mer, spa et salle de sport. Il se trouve dans le même quartier que le CCIB : vous rejoignez le congrès sans traverser Barcelone.",
+    "culturalTourism": "Tourisme culturel en Catalogne",
+    "glanceEyebrow": "Votre semaine en un coup d'œil",
+    "glanceTitle": "Quatre jours. Deux villes.",
+    "days": [
+      {
+        "num": "27",
+        "weekday": "Mardi",
+        "month": "Octobre",
+        "place": "CCIB, Barcelone",
+        "hours": "09:00–18:00",
+        "text": "Ouverture, conférences plénières, sessions parallèles, ateliers, cérémonie des WGIN Awards et espace d'exposition."
+      },
+      {
+        "num": "28",
+        "weekday": "Mercredi",
+        "month": "Octobre",
+        "place": "CCIB, Barcelone",
+        "hours": "09:00–18:00",
+        "text": "Conférences plénières, sessions parallèles, ateliers, table ronde et espace d'exposition."
+      },
+      {
+        "num": "29",
+        "weekday": "Jeudi",
+        "month": "Octobre",
+        "place": "Visites techniques, Barcelone",
+        "hours": "",
+        "text": "Trois itinéraires pour de petits groupes."
+      },
+      {
+        "num": "30",
+        "weekday": "Vendredi",
+        "month": "Octobre",
+        "place": "Parc Agrobiotech, Lleida",
+        "hours": "10:00–18:00",
+        "text": "Innovation Day : deux ateliers, déjeuner et visites guidées."
+      }
+    ],
+    "whereTitle": "Où être",
+    "ccibDates": "27–28 oct.",
+    "ccibName": "CCIB, Barcelone",
+    "ccibAddress": "Plaça de Willy Brandt 11-14, 08019 Barcelone · Parc del Fòrum",
+    "ccibHours": "09:00–18:00",
+    "ccibMapTitle": "Plan du CCIB, Barcelone",
+    "visitsDate": "Jeudi 29 oct.",
+    "visitsName": "Visites techniques",
+    "visitsText": "Lorsque les groupes de participants inscrits seront constitués, nous vous enverrons un e-mail avec l'heure de départ et le point de rendez-vous.",
+    "agroDate": "Vendredi 30 oct.",
+    "agroName": "Parc Agrobiotech",
+    "agroAddress": "Plaça de les Ciències, Edifici CeDiCo, 1a planta, 25003 Lleida",
+    "agroHours": "10:00–18:00",
+    "agroText": "Le transport de Barcelone à Lleida est inclus dans votre inscription.",
+    "agroMapTitle": "Plan du Parc Agrobiotech, Lleida",
+    "gettingTitle": "Se rendre au CCIB",
+    "gettingSubtitle": "Métro ou tramway. Cinq minutes à pied.",
+    "transport": [
+      {
+        "title": "Métro",
+        "text": "Ligne 4 jusqu'à El Maresme/Fòrum. À moins de 5 minutes à pied. Environ 32 minutes depuis Passeig de Gràcia."
+      },
+      {
+        "title": "Tramway",
+        "text": "T4 jusqu'à l'arrêt Fòrum, juste en face du CCIB. Environ 32 minutes depuis Ciutadella/Vila Olímpica."
+      },
+      {
+        "title": "Depuis l'aéroport",
+        "text": "Environ 25 minutes en taxi (22 km), selon l'heure et la circulation. En transports en commun : train R2 Nord, puis métro ou tramway."
+      },
+      {
+        "title": "Voiture",
+        "text": "Le CCIB n'a pas de parking propre. Des parkings publics (BSM et PARKIA) se trouvent à proximité."
+      },
+      {
+        "title": "Vélo",
+        "text": "Stations Bicing autour de Plaça Catalunya et de la Barceloneta. Environ 32 minutes à vélo."
+      },
+      {
+        "title": "Bus",
+        "text": "Plusieurs lignes de la ville s'arrêtent à moins de 5 minutes à pied. Consultez votre meilleur itinéraire sur le <link>site de TMB</link>."
+      }
+    ],
+    "stayTitle": "Où séjourner",
+    "stayRecommended": "Notre hôtel recommandé",
+    "viewOnMap": "Voir sur la carte",
+    "foodTitle": "Repas et café",
+    "included": "Inclus",
+    "notIncluded": "Non inclus",
+    "lunchTitle": "Déjeuner",
+    "lunchText": "Chaque participant inscrit a le déjeuner les 27 et 28 octobre au CCIB, et le 30 octobre au Parc Agrobiotech à Lleida.",
+    "breakfastTitle": "Petit-déjeuner",
+    "breakfastText": "Les pauses-café proposent du café et du thé.",
+    "breakfastPlaces": "Vous pouvez prendre quelque chose dans l'un des établissements autour du CCIB :",
+    "places": [
+      "Favorit Fresh Bar Coffee",
+      "Granier Bakery",
+      "Starbucks"
+    ],
+    "faqTitle": "FAQ",
+    "faq": [
+      {
+        "q": "J'ai un problème avec mon inscription",
+        "a": "Écrivez à registration@wgic26.org et nous vous aiderons."
+      },
+      {
+        "q": "J'ai besoin d'une facture ou d'un justificatif de paiement",
+        "a": "Si vous avez besoin d'une facture ou d'un justificatif de paiement, écrivez à wgic2026.economics@udl.cat."
+      },
+      {
+        "q": "Les visites techniques sont-elles incluses dans mon inscription au congrès ?",
+        "a": "Non. Elles ont leur propre inscription et coûtent 80 €. Vous choisissez l'un des trois itinéraires, et les groupes sont petits. Lorsque les groupes seront constitués, nous vous enverrons un e-mail avec l'heure de départ et le point de rendez-vous."
+      },
+      {
+        "q": "L'Innovation Day à Lleida est-il inclus dans mon inscription au congrès ?",
+        "a": "Non. Il a sa propre inscription. Le transport de Barcelone à Lleida et le déjeuner sont inclus."
+      },
+      {
+        "q": "Dans quelle langue se déroulent les sessions du congrès ?",
+        "a": "Les sessions sont en anglais, et certaines en espagnol dans l'auditorium principal. Nous publierons la langue de chaque session sur le site. La traduction simultanée apparaît sur les écrans dans tous les cas."
+      },
+      {
+        "q": "Dans quelle langue se déroulent les ateliers de Lleida ?",
+        "a": "L'atelier 1 est en anglais et espagnol. L'atelier 2 est en espagnol et anglais."
+      },
+      {
+        "q": "Le déjeuner est-il inclus ?",
+        "a": "Oui, pour les participants inscrits les 27 et 28 octobre au CCIB, et le 30 octobre à Lleida."
+      },
+      {
+        "q": "Le petit-déjeuner est-il inclus ?",
+        "a": "Les pauses-café proposent du café et du thé."
+      }
+    ],
+    "questionsTitle": "Des questions ?",
+    "contactGeneral": "Général",
+    "contactRegistration": "Inscription",
+    "contactSponsorship": "Parrainage",
+    "registerNowTitle": "Inscrivez-vous",
+    "registerNowSubtitle": "World Green Infrastructure Congress 2026 · 27–30 octobre · Barcelone et Lleida",
+    "registerNowButton": "Inscrivez-vous"
   },
   "registrationPage": {
     "title": "Inscription",
@@ -842,19 +972,13 @@
       }
     ],
     "itineraryB": "Itinéraire B",
-    "itineraryBSubtitle": "Sant Martí · Horta · Sant Andreu",
+    "itineraryBSubtitle": "Sant Martí · Sant Andreu",
     "itineraryBItems": [
       {
         "name": "Urbaser Central Park",
         "title": "Une biodiversité industrielle sur 400 m²",
         "description": "Cette toiture intensive naturalisée de 400 m² est conçue comme un petit écosystème en milieu industriel : végétation méditerranéenne à faible consommation d'eau, un point d'eau pour la faune utile et des nichoirs pour les oiseaux urbains. Elle est complétée par un jardin vertical et une installation photovoltaïque. L'ensemble du projet a été conçu et réalisé par Urbaser.",
         "image": "/img/visits/Urbaser_Offices.jpg"
-      },
-      {
-        "name": "Sant Pau Hospital",
-        "title": "La toiture verte née d'un appel d'offres municipal",
-        "description": "Cette toiture est née de la proposition lauréate du premier appel d'offres de la Mairie de Barcelone pour les toitures vertes, et elle couronne aujourd'hui le nouveau bâtiment de recherche du Sant Pau Hospital. Elle combine une zone ombragée et accessible avec une zone non accessible, plantée de végétation basse et rampante sur un revêtement drainant. Conception par Eixverd, réalisation par La Cyca.",
-        "image": "/img/visits/Sant Pau - Hospital.jpg"
       },
       {
         "name": "Immeuble de bureaux Pere IV",
@@ -867,6 +991,12 @@
         "title": "Sept espèces, et un seul lierre qui a pris le dessus",
         "description": "Installé en 2019 sur un mur mitoyen de 276,52 m² à Poblenou, ce jardin vertical a débuté avec sept espèces différentes. Aujourd'hui, le lierre domine — preuve de la manière dont la maintenance façonne le résultat botanique. Construit avec le système iPanel et géré avec Verdtical Control, qui surveille en temps réel la consommation d'eau et les incidents.",
         "image": "/img/visits/Platinum @22 - Offices.jpg"
+      },
+      {
+        "name": "OneCoWork Poblenou (Llacuna)",
+        "title": "Des arbres méditerranéens au coworking",
+        "description": "Cet espace de coworking du Poblenou apporte la nature dans la journée de travail. Les arbres méditerranéens donnent le ton du lieu, avec des arbustes à faible irrigation plantés à leur pied. Des jardinières intégrées aux espaces de détente gardent les plantes à portée de celles et ceux qui les utilisent. Conçu par Batlle i Roig et réalisé par Eixverd en 2025.",
+        "image": "/img/visits/OneCoWork Llacuna-Offices.jpeg"
       },
       {
         "name": "Torre Diagonal One (Telefónica)",
@@ -1096,6 +1226,7 @@
       "globalSouth": {
         "title": "Esprits mondiaux. Partenariats de recherche du Sud mondial sur les infrastructures vertes",
         "description": "Passer du transfert d’expertise du Nord à un véritable partenariat du Sud, à la co-conception et à la production partagée de connaissances sur les infrastructures vertes et les solutions fondées sur la nature.",
+        "schedule": "Mercredi 28 octobre · 11:00–13:00",
         "leadership": "Bert Belmans – Université d'Anvers",
         "workingGroup": [
           "Francesca Mosca (Université de Gênes, Italie)",
@@ -1149,6 +1280,7 @@
       "health": {
         "title": "Infrastructures vertes pour une transformation positive pour la nature des hôpitaux et établissements de santé",
         "description": "Alors que les systèmes de santé subissent une pression croissante liée au changement climatique et au besoin grandissant d'environnements de convalescence centrés sur le patient, l'intégration des infrastructures vertes (IV) et des solutions fondées sur la nature (SfN) n'est plus un luxe : c'est une nécessité clinique.",
+        "schedule": "Mardi 27 octobre · 15:30–17:30",
         "leadership": "David Brasfield - Réseau mondial d'infrastructures vertes",
         "workingGroup": [
           "Cas Silvia Solé - Université de Lleida",
@@ -1235,6 +1367,7 @@
       "recovery": {
         "title": "L'infrastructure verte comme infrastructure de rétablissement : relèvement communautaire, évaluation des dommages et reconstruction résiliente",
         "description": "Positionner l’infrastructure verte comme une composante mesurable, investissable et prête à être mise en œuvre du relèvement post-conflit et post-catastrophe.",
+        "schedule": "Mercredi 28 octobre · 15:30–17:30",
         "leadership": "Oleksandra Strashok – Université des sciences de l'environnement et de la vie de Wroclaw, Département d'architecture paysagère ; Université nationale des sciences de la vie et de l'environnement d'Ukraine, Département de phytoconception et d'architecture paysagère ; Association ukrainienne des infrastructures vertes ; Réseau mondial d'infrastructures vertes",
         "workingGroup": [
           "David Brasfield – Association norvégienne pour les infrastructures vertes ; Réseau mondial d'infrastructures vertes",
@@ -1282,6 +1415,7 @@
       "lifeBauhaus": {
         "title": "Verdir les villes européennes avec LIFE : inspirer la transformation urbaine en Europe",
         "description": "Découvrez comment 9 projets LIFE aident les villes et les quartiers de toute l'Europe à devenir plus verts, plus sains et plus inclusifs.",
+        "schedule": "Mardi 27 octobre · 11:00–13:00",
         "leadershipTeam": [
           {
             "name": "Piedad Rivas",

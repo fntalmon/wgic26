@@ -345,10 +345,8 @@
     "country": "País"
   },
   "planYourStayPage": {
-    "title": "Planeje sua estadia",
-    "description": "Barcelona e Catalunha esperam por você.",
-    "heading": "Planeje sua estadia em Barcelona",
-    "intro": "Descubra a magia de Barcelona e porque é o destino perfeito para a sua visita. Assista ao nosso guia abaixo.",
+    "title": "Plan your stay",
+    "description": "Quando, onde e como chegar. Quatro dias, duas cidades e o hotel que recomendamos.",
     "videoTitle": "Planeje sua estadia em Barcelona",
     "barcelonaImgAlt": "Sagrada Família - Gaudí",
     "barcelonaTitle": "Turismo em Barcelona",
@@ -359,15 +357,147 @@
     "cataloniaDescription": "A Catalunha molda a sua paisagem tanto como a paisagem molda a Catalunha. Das formas orgânicas de Gaudí à costa mediterrânica, do tecido urbano histórico ao design contemporâneo, tradição e inovação crescem lado a lado. Um património vivo que continua a inspirar a forma como construímos e imaginamos o espaço.",
     "grandTour": "Grande Tour pela Catalunha",
     "gastronomy": "Gastronomia na Catalunha",
-    "hotelsTitle": "Hotel recomendado",
-    "hotelsIntro": "O nosso hotel recomendado para a sua estadia durante o WGIC26. As tarifas e a disponibilidade são geridas diretamente pelo hotel.",
     "frontmaritimName": "Best Front Marítim",
-    "frontmaritimAddress": "Passeig de Garcia Faria, 69, 08019 Barcelona, Espanha",
-    "frontmaritimDescription": "Um moderno hotel de 4 estrelas à beira-mar, na praia de Nova Mar Bella, no bairro de Diagonal Mar em Barcelona, com vista para o mar, spa e ginásio.",
-    "frontmaritimRoomTypeLabel": "Tipo de quarto",
-    "frontmaritimRoomType": "Quarto duplo de uso individual",
-    "frontmaritimWebsite": "Visitar site do hotel",
-    "culturalTourism": "Turismo cultural na Catalunha"
+    "frontmaritimAddress": "Passeig de Garcia Faria, 69, 08019 Barcelona · 4 estrelas",
+    "frontmaritimDescription": "Um hotel moderno junto à praia da Nova Mar Bella, no bairro de Diagonal Mar. Vistas para o mar, spa e ginásio. Fica na mesma zona da cidade do CCIB, pelo que chega ao congresso sem atravessar Barcelona.",
+    "culturalTourism": "Turismo cultural na Catalunha",
+    "glanceEyebrow": "A sua semana num relance",
+    "glanceTitle": "Quatro dias. Duas cidades.",
+    "days": [
+      {
+        "num": "27",
+        "weekday": "Terça-feira",
+        "month": "Outubro",
+        "place": "CCIB, Barcelona",
+        "hours": "09:00–18:00",
+        "text": "Abertura, palestras principais, sessões paralelas, workshops, cerimónia dos WGIN Awards e área de exposição."
+      },
+      {
+        "num": "28",
+        "weekday": "Quarta-feira",
+        "month": "Outubro",
+        "place": "CCIB, Barcelona",
+        "hours": "09:00–18:00",
+        "text": "Palestras principais, sessões paralelas, workshops, mesa-redonda e área de exposição."
+      },
+      {
+        "num": "29",
+        "weekday": "Quinta-feira",
+        "month": "Outubro",
+        "place": "Visitas técnicas, Barcelona",
+        "hours": "",
+        "text": "Três itinerários para grupos pequenos."
+      },
+      {
+        "num": "30",
+        "weekday": "Sexta-feira",
+        "month": "Outubro",
+        "place": "Parc Agrobiotech, Lleida",
+        "hours": "10:00–18:00",
+        "text": "Innovation Day: dois workshops, almoço e visitas guiadas."
+      }
+    ],
+    "whereTitle": "Onde estar",
+    "ccibDates": "27–28 out",
+    "ccibName": "CCIB, Barcelona",
+    "ccibAddress": "Plaça de Willy Brandt 11-14, 08019 Barcelona · Parc del Fòrum",
+    "ccibHours": "09:00–18:00",
+    "ccibMapTitle": "Mapa do CCIB, Barcelona",
+    "visitsDate": "Quinta-feira 29 out",
+    "visitsName": "Visitas técnicas",
+    "visitsText": "Quando os grupos de participantes inscritos estiverem formados, enviaremos um e-mail com a hora de partida e o ponto de encontro.",
+    "agroDate": "Sexta-feira 30 out",
+    "agroName": "Parc Agrobiotech",
+    "agroAddress": "Plaça de les Ciències, Edifici CeDiCo, 1a planta, 25003 Lleida",
+    "agroHours": "10:00–18:00",
+    "agroText": "O transporte de Barcelona para Lleida está incluído na sua inscrição.",
+    "agroMapTitle": "Mapa do Parc Agrobiotech, Lleida",
+    "gettingTitle": "Como chegar ao CCIB",
+    "gettingSubtitle": "Metro ou elétrico. Cinco minutos a pé.",
+    "transport": [
+      {
+        "title": "Metro",
+        "text": "Linha 4 até El Maresme/Fòrum. A menos de 5 minutos a pé. Cerca de 32 minutos desde Passeig de Gràcia."
+      },
+      {
+        "title": "Elétrico",
+        "text": "T4 até à paragem Fòrum, mesmo em frente ao CCIB. Cerca de 32 minutos desde Ciutadella/Vila Olímpica."
+      },
+      {
+        "title": "Do aeroporto",
+        "text": "Cerca de 25 minutos de táxi (22 km), consoante a hora do dia e o trânsito. De transportes públicos: comboio R2 Nord e depois metro ou elétrico."
+      },
+      {
+        "title": "Carro",
+        "text": "O CCIB não tem estacionamento próprio. Há parques de estacionamento públicos (BSM e PARKIA) nas proximidades."
+      },
+      {
+        "title": "Bicicleta",
+        "text": "Estações Bicing em redor de Plaça Catalunya e da Barceloneta. Cerca de 32 minutos de bicicleta."
+      },
+      {
+        "title": "Autocarro",
+        "text": "Várias linhas da cidade param a menos de 5 minutos a pé. Consulte o melhor percurso no <link>site da TMB</link>."
+      }
+    ],
+    "stayTitle": "Onde ficar",
+    "stayRecommended": "O nosso hotel recomendado",
+    "viewOnMap": "Ver no mapa",
+    "foodTitle": "Refeições e café",
+    "included": "Incluído",
+    "notIncluded": "Não incluído",
+    "lunchTitle": "Almoço",
+    "lunchText": "Cada participante inscrito tem almoço nos dias 27 e 28 de outubro no CCIB, e a 30 de outubro no Parc Agrobiotech, em Lleida.",
+    "breakfastTitle": "Pequeno-almoço",
+    "breakfastText": "Nos intervalos de café serve-se café e chá.",
+    "breakfastPlaces": "Pode comer algo num dos locais perto do CCIB:",
+    "places": [
+      "Favorit Fresh Bar Coffee",
+      "Granier Bakery",
+      "Starbucks"
+    ],
+    "faqTitle": "Perguntas frequentes",
+    "faq": [
+      {
+        "q": "Tenho um problema com a minha inscrição",
+        "a": "Escreva para registration@wgic26.org e ajudaremos."
+      },
+      {
+        "q": "Preciso de uma fatura ou de um comprovativo de pagamento",
+        "a": "Se precisar de uma fatura ou de um comprovativo de pagamento, escreva para wgic2026.economics@udl.cat."
+      },
+      {
+        "q": "As visitas técnicas estão incluídas na minha inscrição no congresso?",
+        "a": "Não. Têm inscrição própria e custam 80 €. Escolhe um de três itinerários e os grupos são pequenos. Quando os grupos estiverem formados, enviaremos um e-mail com a hora de partida e o ponto de encontro."
+      },
+      {
+        "q": "O Innovation Day em Lleida está incluído na minha inscrição no congresso?",
+        "a": "Não. Tem inscrição própria. O transporte de Barcelona para Lleida e o almoço estão incluídos."
+      },
+      {
+        "q": "Em que língua são as sessões do congresso?",
+        "a": "As sessões são em inglês, e algumas em espanhol no auditório principal. Publicaremos a língua de cada sessão no site. A tradução simultânea aparece nos ecrãs em todos os casos."
+      },
+      {
+        "q": "Em que língua são os workshops de Lleida?",
+        "a": "O workshop 1 é em inglês e espanhol. O workshop 2 é em espanhol e inglês."
+      },
+      {
+        "q": "O almoço está incluído?",
+        "a": "Sim, para os participantes inscritos nos dias 27 e 28 de outubro no CCIB, e a 30 de outubro em Lleida."
+      },
+      {
+        "q": "O pequeno-almoço está incluído?",
+        "a": "Nos intervalos de café serve-se café e chá."
+      }
+    ],
+    "questionsTitle": "Dúvidas?",
+    "contactGeneral": "Geral",
+    "contactRegistration": "Inscrição",
+    "contactSponsorship": "Patrocínio",
+    "registerNowTitle": "Inscreva-se agora",
+    "registerNowSubtitle": "World Green Infrastructure Congress 2026 · 27–30 de outubro · Barcelona e Lleida",
+    "registerNowButton": "Inscreva-se agora"
   },
   "registrationPage": {
     "title": "Cadastro",
@@ -842,19 +972,13 @@
       }
     ],
     "itineraryB": "Itinerário B",
-    "itineraryBSubtitle": "Sant Martí · Horta · Sant Andreu",
+    "itineraryBSubtitle": "Sant Martí · Sant Andreu",
     "itineraryBItems": [
       {
         "name": "Urbaser Central Park",
         "title": "Biodiversidade industrial em 400 m²",
         "description": "Este telhado intensivo naturalizado de 400 m² é concebido como um pequeno ecossistema num ambiente industrial: vegetação mediterrânica de baixo consumo de água, um ponto de água para a fauna benéfica e caixas de nidificação para aves urbanas. É completado por um jardim vertical e uma instalação fotovoltaica. Todo o projeto foi concebido e executado pela Urbaser.",
         "image": "/img/visits/Urbaser_Offices.jpg"
-      },
-      {
-        "name": "Sant Pau Hospital",
-        "title": "O telhado verde nascido de um concurso municipal",
-        "description": "Este telhado começou como a proposta vencedora do primeiro concurso de telhados verdes do Ayuntamiento de Barcelona e hoje coroa o novo edifício de investigação do Hospital de Sant Pau. Combina uma zona sombreada e acessível com uma zona não acessível, plantada com vegetação rasteira e baixa sobre um pavimento drenante. Projeto da Eixverd, construção da La Cyca.",
-        "image": "/img/visits/Sant Pau - Hospital.jpg"
       },
       {
         "name": "Edifício de escritórios Pere IV",
@@ -867,6 +991,12 @@
         "title": "Sete espécies, e a hera que venceu",
         "description": "Instalado em 2019 numa parede de fogo de 276,52 m² no Poblenou, este jardim vertical começou com sete espécies diferentes. Hoje predomina a hera — prova de como a manutenção molda o resultado botânico. Construído com o sistema iPanel e gerido com o Verdtical Control, que monitoriza em tempo real o consumo de água e as incidências.",
         "image": "/img/visits/Platinum @22 - Offices.jpg"
+      },
+      {
+        "name": "OneCoWork Poblenou (Llacuna)",
+        "title": "Árvores mediterrânicas no coworking",
+        "description": "Este espaço de coworking no Poblenou traz a natureza para o dia de trabalho. As árvores mediterrânicas definem o carácter do espaço envolvente, com arbustos de baixa rega plantados por baixo. Os canteiros integrados nas zonas de lazer mantêm as plantas ao alcance de quem as utiliza. Projetado por Batlle i Roig e executado pela Eixverd em 2025.",
+        "image": "/img/visits/OneCoWork Llacuna-Offices.jpeg"
       },
       {
         "name": "Torre Diagonal One (Telefónica)",
@@ -1096,6 +1226,7 @@
       "globalSouth": {
         "title": "Mentes Globais. Parcerias de Investigação do Sul Global sobre Infraestruturas Verdes",
         "description": "Passar da transferência de conhecimentos especializados do Norte para uma parceria genuína com o Sul Global, co-design e produção partilhada de conhecimentos sobre infra-estruturas verdes e soluções baseadas na natureza.",
+        "schedule": "Quarta-feira, 28 de outubro · 11:00–13:00",
         "leadership": "Bert Belmans – Universidade de Antuérpia",
         "workingGroup": [
           "Francesca Mosca (Universidade de Génova, Itália)",
@@ -1149,6 +1280,7 @@
       "health": {
         "title": "Infraestrutura verde para a transformação positiva com a natureza de hospitais e unidades de saúde",
         "description": "À medida que os sistemas de saúde enfrentam uma pressão crescente devido às mudanças climáticas e à crescente necessidade de ambientes de recuperação centrados no paciente, a integração da Infraestrutura Verde (IV) e das Soluções Baseadas na Natureza (SbN) deixou de ser um luxo — é uma necessidade clínica.",
+        "schedule": "Terça-feira, 27 de outubro · 15:30–17:30",
         "leadership": "David Brasfield - Rede Mundial de Infraestrutura Verde",
         "workingGroup": [
           "Casos Silvia Solé - Universidade de Lleida",
@@ -1235,6 +1367,7 @@
       "recovery": {
         "title": "Infraestrutura Verde como Infraestrutura de Recuperação: Recuperação Comunitária, Avaliação de Danos e Reconstrução Resiliente",
         "description": "Posicionar a infraestrutura verde como um componente mensurável, passível de investimento e pronto para implementação da recuperação pós-conflito e pós-desastre.",
+        "schedule": "Quarta-feira, 28 de outubro · 15:30–17:30",
         "leadership": "Oleksandra Strashok – Universidade de Ciências Ambientais e da Vida de Wroclaw, Departamento de Arquitetura Paisagista; Universidade Nacional de Ciências da Vida e Ambientais da Ucrânia, Departamento de Fitodesign e Arquitetura Paisagista; Associação Ucraniana de Infraestrutura Verde; Rede Mundial de Infraestrutura Verde",
         "workingGroup": [
           "David Brasfield – Associação Norueguesa para Infraestrutura Verde; Rede Mundial de Infraestrutura Verde",
@@ -1282,6 +1415,7 @@
       "lifeBauhaus": {
         "title": "Esverdear as cidades europeias com LIFE: inspirando a transformação urbana na Europa",
         "description": "Descubra como 9 projetos LIFE estão a ajudar cidades e bairros de toda a Europa a tornarem-se mais verdes, saudáveis e inclusivos.",
+        "schedule": "Terça-feira, 27 de outubro · 11:00–13:00",
         "leadershipTeam": [
           {
             "name": "Piedad Rivas",
