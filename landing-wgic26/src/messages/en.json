@@ -37,7 +37,8 @@
     "stripName": "World Green Infrastructure Congress 2026",
     "theOrganisers": "The Organisers",
     "fullProgramme": "Program",
-    "news": "News"
+    "news": "News",
+    "posters": "Posters"
   },
   "countdown": {
     "startingIn": "Starting in:"
@@ -776,7 +777,9 @@
     "moreInfo": "More info",
     "lessInfo": "Less info",
     "linkedin": "LinkedIn",
-    "speakersCount": "Speakers"
+    "speakersCount": "Speakers",
+    "search": "Search speakers",
+    "noResults": "No speakers match your search."
   },
   "programAgendaPage": {
     "title": "Agenda",
@@ -928,6 +931,18 @@
       "speaker24": {
         "name": "David Vernon Brasfield",
         "bio": "Architect and building engineer promoting green infrastructure since 2006, David Vernon Brasfield is Chairperson of the Norwegian Association for Green Infrastructure and Board Member and Supervisor of the World Green Infrastructure Network (WGIN). He is leading the WGIC26 workshop on Health and Well-being. A strong believer in the human need for nature, he argues that access to a mutually healthy relationship with nature should be recognised as a universal human right, and champions ethical practice within the green infrastructure community — ecological sustainability and equitable access to green infrastructure."
+      },
+      "speaker25": {
+        "name": "Linda S. Velazquez",
+        "bio": "Linda S. Velazquez, ASLA, LEED AP, GRP is the Greenroofs.com founder & publisher (1999) presenting the yearly 'Top 10 List of Hot Trends' since 2007. She holds a Bachelor of Landscape Architecture, is published in numerous books & journals & is principal of Sky Gardens Studio."
+      },
+      "speaker26": {
+        "name": "Jon Ajanguiz",
+        "bio": "Architect responsible for the development of the Green Roof Promotion and Implementation Programme at the Barcelona Municipal Institute of Urban Landscape (IMPUiQV)"
+      },
+      "speaker27": {
+        "name": "Bert Belmans",
+        "bio": "Bert Belmans is an engineer-architect with over 15 years of experience in climate-adaptive architecture and nature-based solutions (NbS). As Global President of the World Green Infrastructure Network's Emerging Professionals Chapter, he gives a voice to emerging leaders and bridges the Global North and South. As a professor at Vrije Universiteit Brussel and lecturer and research coordinator at Universiteit Antwerpen, he specializes in building physics and energy performance, advancing passive design strategies that optimize material and energy flows for people and planet."
       }
     },
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."
@@ -981,10 +996,10 @@
         "image": "/img/visits/Urbaser_Offices.jpg"
       },
       {
-        "name": "Pere IV office building",
-        "title": "When biophilia is the building's identity",
-        "description": "At the new coworking building at Pere IV 62-64, terraces, courtyard and roofs become a continuous landscape that extends into the building itself. Trees, shrubs, perennials and flowering meadows add texture, shade and seasonality, integrated with a biosolar roof system. Design by MataAlta Studio.",
-        "image": "/img/visits/Pere IV-Offices.jpg"
+        "name": "Urbit Bcn 22@",
+        "title": "A fifth landscape on the office rooftop",
+        "description": "Almost 1,900 m² of landscaped, walkable roof turn the technical rooftops of this 22@ office complex into a true \"fifth landscape\" — paths, squares, meadows and rest areas planted with low-maintenance sedum. A large photovoltaic structure shades the space while the building separately collects rainwater and greywater. Designed by QID Studio / Fitó Arquitectes and executed by Le Prieuré.",
+        "image": "/img/visits/Urbit Bcn 22-Offices.jpg"
       },
       {
         "name": "Platinum@BCN building, 22@",
@@ -993,13 +1008,13 @@
         "image": "/img/visits/Platinum @22 - Offices.jpg"
       },
       {
-        "name": "OneCoWork Poblenou (Llacuna)",
+        "name": "OneCoWork Poblenou",
         "title": "Mediterranean trees at the coworking",
         "description": "This coworking space in Poblenou brings nature into the working day. Mediterranean trees set the tone of the surroundings, with low-irrigation shrubs planted beneath them. Planters built into the leisure areas keep the plants within reach of the people who use them. Designed by Batlle i Roig and executed by Eixverd in 2025.",
         "image": "/img/visits/OneCoWork Llacuna-Offices.jpeg"
       },
       {
-        "name": "Torre Diagonal One (Telefónica)",
+        "name": "Torre Diagonal One (Torre Telefònica)",
         "title": "A roof that adapts to the rhythm of the offices",
         "description": "Built directly over the technical decking and around the gondola rail, this roof meets the needs of the entire office building. Around the rail is an extensive green roof; over the decking, semi-intensive. The solution allows for technical maintenance of the roof to coexist with the plant life growing on it. Design and execution entirely by Eixverd.",
         "image": "/img/visits/Torre Diagonal One-Offices.jpg"
@@ -1033,10 +1048,10 @@
         "image": "/img/visits/Sofitel - Hotel.webp"
       },
       {
-        "name": "Urbit Bcn 22@",
-        "title": "A fifth landscape on the office rooftop",
-        "description": "Almost 1,900 m² of landscaped, walkable roof turn the technical rooftops of this 22@ office complex into a true \"fifth landscape\" — paths, squares, meadows and rest areas planted with low-maintenance sedum. A large photovoltaic structure shades the space while the building separately collects rainwater and greywater. Designed by QID Studio / Fitó Arquitectes and executed by Le Prieuré.",
-        "image": "/img/visits/Urbit Bcn 22-Offices.jpg"
+        "name": "Pere IV office building",
+        "title": "When biophilia is the building's identity",
+        "description": "At the new coworking building at Pere IV 62-64, terraces, courtyard and roofs become a continuous landscape that extends into the building itself. Trees, shrubs, perennials and flowering meadows add texture, shade and seasonality, integrated with a biosolar roof system. Design by MataAlta Studio.",
+        "image": "/img/visits/Pere IV-Offices.jpg"
       }
     ],
     "collaboratorsTitle": "With the collaboration of",
@@ -1693,5 +1708,23 @@
     "scientificSubtitle": "Peer review and scientific program",
     "professionalTitle": "Professional Committee",
     "professionalSubtitle": "Industry practice and market perspective"
+  },
+  "postersPage": {
+    "title": "Posters",
+    "description": "Poster contributions presented at WGIC26.",
+    "comingSoon": "The list of posters (titles and authors) will be published here once the final classification is confirmed.",
+    "printTitle": "Printing your poster",
+    "printText": "Each author is responsible for printing their own poster and bringing it to the congress. The organisation will not print posters.",
+    "authors": "Authors",
+    "templatesTitle": "Templates",
+    "templatesIntro": "Official templates for oral presentations and posters.",
+    "oralName": "Oral presentation template",
+    "oralDesc": "PowerPoint, 16:9.",
+    "posterName": "Poster template",
+    "posterDesc": "PowerPoint, DIN A0 portrait (84.1 × 118.9 cm).",
+    "download": "Download (PPTX)",
+    "search": "Search by title or author",
+    "noResults": "No posters match your search.",
+    "count": "Posters"
   }
 }

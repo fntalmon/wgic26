@@ -37,7 +37,8 @@
     "stripName": "World Green Infrastructure Congress 2026",
     "theOrganisers": "Els organitzadors",
     "fullProgramme": "Programa",
-    "news": "Notícies"
+    "news": "Notícies",
+    "posters": "Pòsters"
   },
   "countdown": {
     "startingIn": "Comença en:"
@@ -776,7 +777,9 @@
     "moreInfo": "Més info",
     "lessInfo": "Menys info",
     "linkedin": "LinkedIn",
-    "speakersCount": "Ponents"
+    "speakersCount": "Ponents",
+    "search": "Cerca ponents",
+    "noResults": "Cap ponent coincideix amb la teva cerca."
   },
   "programAgendaPage": {
     "title": "Agenda",
@@ -928,6 +931,18 @@
       "speaker24": {
         "name": "David Vernon Brasfield",
         "bio": "Arquitecte i enginyer d'edificació que promou la infraestructura verda des del 2006, David Vernon Brasfield és president de l'Associació Noruega d'Infraestructura Verda i membre del consell i supervisor de la World Green Infrastructure Network (WGIN). Dirigeix el taller de Salut i Benestar de WGIC26. Convençut de la necessitat humana de la natura, defensa que l'accés a una relació mútuament saludable amb ella hauria de reconèixer-se com a dret humà universal, i advoca per la pràctica ètica a la comunitat d'infraestructura verda: sostenibilitat ecològica i accés equitatiu."
+      },
+      "speaker25": {
+        "name": "Linda S. Velazquez",
+        "bio": "Linda S. Velazquez, ASLA, LEED AP, GRP és la fundadora i editora de Greenroofs.com (1999) i presenta des del 2007 la llista anual «Top 10 List of Hot Trends». És llicenciada en Arquitectura del Paisatge, ha publicat en nombrosos llibres i revistes i és directora de Sky Gardens Studio."
+      },
+      "speaker26": {
+        "name": "Jon Ajanguiz",
+        "bio": "Arquitecte responsable del desenvolupament del Programa de Promoció i Implantació de Cobertes Verdes de l'Institut Municipal del Paisatge Urbà i la Qualitat de Vida (IMPUiQV) de l'Ajuntament de Barcelona."
+      },
+      "speaker27": {
+        "name": "Bert Belmans",
+        "bio": "Bert Belmans és enginyer-arquitecte amb més de 15 anys d'experiència en arquitectura adaptada al clima i solucions basades en la natura (NbS). Com a president global del Capítol de Professionals Emergents de la World Green Infrastructure Network, dona veu als líders emergents i fa de pont entre el Nord i el Sud Global. Professor a la Vrije Universiteit Brussel i docent i coordinador de recerca a la Universiteit Antwerpen, s'especialitza en física de l'edificació i rendiment energètic, i impulsa estratègies de disseny passiu que optimitzen els fluxos de materials i energia per a les persones i el planeta."
       }
     },
     "closing": "Aquest primer grup d'oradors subratlla l'ambició, profunditat i visió multidisciplinar de WGIC 2026, posicionant-lo com un fòrum clau per al debat urbà global."
@@ -981,10 +996,10 @@
         "image": "/img/visits/Urbaser_Offices.jpg"
       },
       {
-        "name": "Edifici d'oficines Pere IV",
-        "title": "Quan la biòfila és la identitat de l'edifici",
-        "description": "Al nou edifici de coworking del Pere IV 62-64, les terrasses, el pati i les cobertes es converteixen en un paisatge continu que s'estén fins a l'interior de l'edifici. Arbres, arbusts, plantes perennes i praderies florides aporten textura, ombra i estacionalitat, integrats amb un sistema de coberta biosolar. Disseny de MataAlta Studio.",
-        "image": "/img/visits/Pere IV-Offices.jpg"
+        "name": "Urbit Bcn 22@",
+        "title": "Un cinquè paisatge a la coberta de les oficines",
+        "description": "Gairebé 1.900 m² de coberta enjardinada i transitable converteixen les cobertes tècniques d'aquest complex d'oficines del 22@ en un autèntic \"cinquè paisatge\" — camins, places, prades i àrees de descans plantades amb sedum de baix manteniment. Una gran estructura fotovoltaica dona ombra a l'espai mentre l'edifici recull per separat aigües pluvials i grises. Dissenyat per QID Studio / Fitó Arquitectes i executat per Le Prieuré.",
+        "image": "/img/visits/Urbit Bcn 22-Offices.jpg"
       },
       {
         "name": "Edifici Platinum@BCN, 22@",
@@ -993,13 +1008,13 @@
         "image": "/img/visits/Platinum @22 - Offices.jpg"
       },
       {
-        "name": "OneCoWork Poblenou (Llacuna)",
+        "name": "OneCoWork Poblenou",
         "title": "Arbres mediterranis al coworking",
         "description": "Aquest espai de coworking al Poblenou porta la natura a la jornada laboral. Els arbres mediterranis marquen el caràcter de l'entorn, amb arbusts de baix reg plantats sota seu. Les jardineres integrades a les zones d'esbarjo mantenen les plantes a l'abast de qui les utilitza. Dissenyat per Batlle i Roig i executat per Eixverd el 2025.",
         "image": "/img/visits/OneCoWork Llacuna-Offices.jpeg"
       },
       {
-        "name": "Torre Diagonal One (Telefónica)",
+        "name": "Torre Diagonal One (Torre Telefònica)",
         "title": "Una coberta que s'adapta al ritme de les oficines",
         "description": "Construïda directament sobre el forjat tècnic i al voltant de la via del penell de neteja, aquesta coberta respon a les necessitats de tot l'edifici d'oficines. Al voltant de la via hi ha una coberta verda extensiva; sobre el forjat, semi-intensiva. La solució permet que el manteniment tècnic de la coberta coexisteixi amb la vida vegetal que hi creix. Disseny i execució íntegrament d'Eixverd.",
         "image": "/img/visits/Torre Diagonal One-Offices.jpg"
@@ -1033,10 +1048,10 @@
         "image": "/img/visits/Sofitel - Hotel.webp"
       },
       {
-        "name": "Urbit Bcn 22@",
-        "title": "Un cinquè paisatge a la coberta de les oficines",
-        "description": "Gairebé 1.900 m² de coberta enjardinada i transitable converteixen les cobertes tècniques d'aquest complex d'oficines del 22@ en un autèntic \"cinquè paisatge\" — camins, places, prades i àrees de descans plantades amb sedum de baix manteniment. Una gran estructura fotovoltaica dona ombra a l'espai mentre l'edifici recull per separat aigües pluvials i grises. Dissenyat per QID Studio / Fitó Arquitectes i executat per Le Prieuré.",
-        "image": "/img/visits/Urbit Bcn 22-Offices.jpg"
+        "name": "Edifici d'oficines Pere IV",
+        "title": "Quan la biòfila és la identitat de l'edifici",
+        "description": "Al nou edifici de coworking del Pere IV 62-64, les terrasses, el pati i les cobertes es converteixen en un paisatge continu que s'estén fins a l'interior de l'edifici. Arbres, arbusts, plantes perennes i praderies florides aporten textura, ombra i estacionalitat, integrats amb un sistema de coberta biosolar. Disseny de MataAlta Studio.",
+        "image": "/img/visits/Pere IV-Offices.jpg"
       }
     ],
     "collaboratorsTitle": "Amb la col·laboració de",
@@ -1711,5 +1726,23 @@
     "scientificSubtitle": "Revisió per parells i programa científic",
     "professionalTitle": "Comitè Professional",
     "professionalSubtitle": "Pràctica del sector i perspectiva de mercat"
+  },
+  "postersPage": {
+    "title": "Pòsters",
+    "description": "Contribucions en format pòster presentades a WGIC26.",
+    "comingSoon": "El llistat de pòsters (títols i autors) es publicarà aquí quan es confirmi la classificació final.",
+    "printTitle": "Impressió del pòster",
+    "printText": "Cada autor ha d'imprimir el seu propi pòster i portar-lo al congrés. L'organització no s'encarregarà d'imprimir-los.",
+    "authors": "Autors",
+    "templatesTitle": "Plantilles",
+    "templatesIntro": "Plantilles oficials per a presentacions orals i pòsters.",
+    "oralName": "Plantilla de presentació oral",
+    "oralDesc": "PowerPoint, format 16:9.",
+    "posterName": "Plantilla de pòster",
+    "posterDesc": "PowerPoint, DIN A0 vertical (84,1 × 118,9 cm).",
+    "download": "Descarrega (PPTX)",
+    "search": "Cerca per títol o autor",
+    "noResults": "Cap pòster coincideix amb la teva cerca.",
+    "count": "Pòsters"
   }
 }

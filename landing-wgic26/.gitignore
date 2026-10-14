@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Never publish data exports from public/ (registrations, authors, DB dumps)
+public/**/*.xlsx
+public/**/*.xls
+public/**/*.csv
+public/**/*.sql

@@ -14,8 +14,10 @@ export const metadata: Metadata = {
 // Orden alfabético por apellido
 const speakerSlots = [
   { id: "speaker22", image: "/img/speakers/aba.png" },
+  { id: "speaker26", image: "/img/speakers/ajanguiz_jon.jpg" },
   { id: "speaker10", image: "/img/speakers/Balsells.png" },
   { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
+  { id: "speaker27", image: "/img/speakers/belmans_bert.jpg" },
   { id: "speaker24", image: "/img/speakers/Vernon_David.png" },
   { id: "speaker16", image: "/img/speakers/Carratala.png" },
   { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
@@ -32,6 +34,7 @@ const speakerSlots = [
   { id: "speaker2", image: "/img/speakers/salvadorrueda.jpg" },
   { id: "speaker14", image: "/img/speakers/scuto.png" },
   { id: "speaker21", image: "/img/speakers/CamilleTallon.png" },
+  { id: "speaker25", image: "/img/speakers/velazquez_linda.jpg" },
 ] as const;
 
 const getInitials = (name: string) =>

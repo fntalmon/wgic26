@@ -51,7 +51,7 @@ const Sponsors = async () => {
   const home = await getTranslations("home");
 
   const organizationsCount =
-    sponsorTiers.reduce((acc, tier) => acc + tier.logos.length, 0) + supporters.length;
+    sponsorTiers.reduce((acc, tier) => acc + tier.logos.length + (tier.soloLogos?.length ?? 0), 0) + supporters.length;
 
   const tierAnchor = (key: string) => `tier-${key}`;
 
@@ -143,11 +143,23 @@ const Sponsors = async () => {
                         <SponsorCard
                           logo={logo}
                           visitLabel={t("visitWebsite")}
-                          logoBoxClassName={tierLogoBox[tier.key]}
+                          logoBoxClassName={logo.cardBoxClassName ?? tierLogoBox[tier.key]}
                         />
                       </Fragment>
                     ))}
                   </div>
+                  {tier.soloLogos && (
+                    <div className="flex flex-wrap justify-center items-center gap-6 mt-8">
+                      {tier.soloLogos.map((logo) => (
+                        <SponsorCard
+                          key={logo.href}
+                          logo={logo}
+                          visitLabel={t("visitWebsite")}
+                          logoBoxClassName={logo.cardBoxClassName ?? tierLogoBox[tier.key]}
+                        />
+                      ))}
+                    </div>
+                  )}
                 </div>
               );
             })}

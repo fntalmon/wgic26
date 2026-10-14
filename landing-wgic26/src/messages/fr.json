@@ -37,7 +37,8 @@
     "stripName": "World Green Infrastructure Congress 2026",
     "theOrganisers": "Les organisateurs",
     "fullProgramme": "Programme",
-    "news": "Actualités"
+    "news": "Actualités",
+    "posters": "Posters"
   },
   "countdown": {
     "startingIn": "À partir de :"
@@ -776,7 +777,9 @@
     "moreInfo": "Plus d'infos",
     "lessInfo": "Moins d'infos",
     "linkedin": "LinkedIn",
-    "speakersCount": "Intervenants"
+    "speakersCount": "Intervenants",
+    "search": "Rechercher des intervenants",
+    "noResults": "Aucun intervenant ne correspond à votre recherche."
   },
   "programAgendaPage": {
     "title": "Ordre du jour",
@@ -928,6 +931,18 @@
       "speaker24": {
         "name": "David Vernon Brasfield",
         "bio": "Architecte et ingénieur du bâtiment engagé pour l'infrastructure verte depuis 2006, David Vernon Brasfield est président de l'Association norvégienne pour l'infrastructure verte et membre du conseil ainsi que superviseur du World Green Infrastructure Network (WGIN). Il anime l'atelier WGIC26 sur la santé et le bien-être. Convaincu du besoin humain de nature, il estime que l'accès à une relation mutuellement saine avec celle-ci devrait être reconnu comme un droit humain universel, et prône une pratique éthique au sein de la communauté de l'infrastructure verte : durabilité écologique et accès équitable."
+      },
+      "speaker25": {
+        "name": "Linda S. Velazquez",
+        "bio": "Linda S. Velazquez, ASLA, LEED AP, GRP est la fondatrice et éditrice de Greenroofs.com (1999) et présente depuis 2007 la liste annuelle « Top 10 List of Hot Trends ». Titulaire d'une licence en architecture du paysage, elle a publié dans de nombreux ouvrages et revues et dirige Sky Gardens Studio."
+      },
+      "speaker26": {
+        "name": "Jon Ajanguiz",
+        "bio": "Architecte responsable du développement du Programme de promotion et de mise en œuvre des toitures végétalisées de l'Institut municipal du paysage urbain et de la qualité de vie (IMPUiQV) de la Mairie de Barcelone."
+      },
+      "speaker27": {
+        "name": "Bert Belmans",
+        "bio": "Bert Belmans est ingénieur-architecte et compte plus de 15 ans d'expérience en architecture adaptée au climat et en solutions fondées sur la nature (NbS). En tant que président mondial du Chapitre des professionnels émergents du World Green Infrastructure Network, il donne la parole aux leaders émergents et relie le Nord et le Sud globaux. Professeur à la Vrije Universiteit Brussel, chargé de cours et coordinateur de recherche à l'Universiteit Antwerpen, il est spécialisé en physique du bâtiment et en performance énergétique, et promeut des stratégies de conception passive qui optimisent les flux de matières et d'énergie pour les personnes et la planète."
       }
     },
     "closing": "Ce premier groupe d'intervenants souligne l'ambition, la profondeur et la vision multidisciplinaire du WGIC 2026, le positionnant comme un forum clé du débat urbain mondial."
@@ -981,10 +996,10 @@
         "image": "/img/visits/Urbaser_Offices.jpg"
       },
       {
-        "name": "Immeuble de bureaux Pere IV",
-        "title": "Quand la biophilie est l'identité du bâtiment",
-        "description": "Dans le nouveau bâtiment de coworking du Pere IV 62-64, les terrasses, la cour et les toitures deviennent un paysage continu qui se prolonge à l'intérieur du bâtiment. Arbres, arbustes, vivaces et prairies fleuries apportent de la texture, de l'ombre et du caractère saisonnier, intégrés à un système de toiture biosolaire. Conception par MataAlta Studio.",
-        "image": "/img/visits/Pere IV-Offices.jpg"
+        "name": "Urbit Bcn 22@",
+        "title": "Un cinquième paysage sur le toit des bureaux",
+        "description": "Près de 1 900 m² de toiture végétalisée et accessible transforment les toitures techniques de ce complexe de bureaux du 22@ en un véritable \"cinquième paysage\" — chemins, places, prairies et espaces de repos plantés de sedum à faible entretien. Une grande structure photovoltaïque ombrage l'espace tandis que le bâtiment collecte séparément les eaux de pluie et les eaux grises. Conçu par QID Studio / Fitó Arquitectes et réalisé par Le Prieuré.",
+        "image": "/img/visits/Urbit Bcn 22-Offices.jpg"
       },
       {
         "name": "Immeuble Platinum@BCN, 22@",
@@ -993,20 +1008,20 @@
         "image": "/img/visits/Platinum @22 - Offices.jpg"
       },
       {
-        "name": "OneCoWork Poblenou (Llacuna)",
+        "name": "OneCoWork Poblenou",
         "title": "Des arbres méditerranéens au coworking",
         "description": "Cet espace de coworking du Poblenou apporte la nature dans la journée de travail. Les arbres méditerranéens donnent le ton du lieu, avec des arbustes à faible irrigation plantés à leur pied. Des jardinières intégrées aux espaces de détente gardent les plantes à portée de celles et ceux qui les utilisent. Conçu par Batlle i Roig et réalisé par Eixverd en 2025.",
         "image": "/img/visits/OneCoWork Llacuna-Offices.jpeg"
       },
       {
-        "name": "Torre Diagonal One (Telefónica)",
+        "name": "Torre Diagonal One (Torre Telefònica)",
         "title": "Une toiture qui s'adapte au rythme des bureaux",
         "description": "Construite directement sur la terrasse technique et autour du rail de la nacelle, cette toiture répond aux besoins de l'ensemble de l'immeuble de bureaux. Autour du rail se trouve une toiture végétalisée extensive ; au-dessus de la terrasse technique, semi-intensive. La solution permet à la maintenance technique de la toiture de coexister avec la végétation qui s'y développe. Conception et réalisation entièrement par Eixverd.",
         "image": "/img/visits/Torre Diagonal One-Offices.jpg"
       }
     ],
     "itineraryC": "Itinéraire C",
-    "itineraryCSubtitle": "Ciutat Vella · Né",
+    "itineraryCSubtitle": "Ciutat Vella · El Born",
     "itineraryCItems": [
       {
         "name": "Hotel 10 Cubik",
@@ -1033,10 +1048,10 @@
         "image": "/img/visits/Sofitel - Hotel.webp"
       },
       {
-        "name": "Urbit Bcn 22@",
-        "title": "Un cinquième paysage sur le toit des bureaux",
-        "description": "Près de 1 900 m² de toiture végétalisée et accessible transforment les toitures techniques de ce complexe de bureaux du 22@ en un véritable \"cinquième paysage\" — chemins, places, prairies et espaces de repos plantés de sedum à faible entretien. Une grande structure photovoltaïque ombrage l'espace tandis que le bâtiment collecte séparément les eaux de pluie et les eaux grises. Conçu par QID Studio / Fitó Arquitectes et réalisé par Le Prieuré.",
-        "image": "/img/visits/Urbit Bcn 22-Offices.jpg"
+        "name": "Immeuble de bureaux Pere IV",
+        "title": "Quand la biophilie est l'identité du bâtiment",
+        "description": "Dans le nouveau bâtiment de coworking du Pere IV 62-64, les terrasses, la cour et les toitures deviennent un paysage continu qui se prolonge à l'intérieur du bâtiment. Arbres, arbustes, vivaces et prairies fleuries apportent de la texture, de l'ombre et du caractère saisonnier, intégrés à un système de toiture biosolaire. Conception par MataAlta Studio.",
+        "image": "/img/visits/Pere IV-Offices.jpg"
       }
     ],
     "collaboratorsTitle": "Avec la collaboration de",
@@ -1693,5 +1708,23 @@
     "scientificSubtitle": "Évaluation par les pairs et programme scientifique",
     "professionalTitle": "Comité Professionnel",
     "professionalSubtitle": "Pratique du secteur et perspective du marché"
+  },
+  "postersPage": {
+    "title": "Posters",
+    "description": "Contributions sous forme de poster présentées au WGIC26.",
+    "comingSoon": "La liste des posters (titres et auteurs) sera publiée ici dès que le classement final sera confirmé.",
+    "printTitle": "Impression de votre poster",
+    "printText": "Chaque auteur doit imprimer son propre poster et l'apporter au congrès. L'organisation ne se chargera pas de les imprimer.",
+    "authors": "Auteurs",
+    "templatesTitle": "Modèles",
+    "templatesIntro": "Modèles officiels pour les présentations orales et les posters.",
+    "oralName": "Modèle de présentation orale",
+    "oralDesc": "PowerPoint, format 16:9.",
+    "posterName": "Modèle de poster",
+    "posterDesc": "PowerPoint, DIN A0 portrait (84,1 × 118,9 cm).",
+    "download": "Télécharger (PPTX)",
+    "search": "Rechercher par titre ou auteur",
+    "noResults": "Aucun poster ne correspond à votre recherche.",
+    "count": "Posters"
   }
 }

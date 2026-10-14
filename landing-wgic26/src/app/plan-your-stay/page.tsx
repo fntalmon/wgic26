@@ -3,12 +3,6 @@ import PageHeader from "@/components/PageHeader";
 import { RegisterCTA } from "@/components/RegisterCTA";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion";
 import { MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -19,7 +13,6 @@ export const metadata: Metadata = {
 
 type Day = { num: string; weekday: string; month: string; place: string; hours: string; text: string };
 type Transport = { title: string; text: string };
-type Faq = { q: string; a: string };
 
 const EMAIL_PATTERN = /([\w.+-]+@[\w-]+(?:\.[\w-]+)+)/g;
 
@@ -47,7 +40,6 @@ const PlanYourStay = async () => {
     const days = t.raw("days") as Day[];
     const transport = t.raw("transport") as Transport[];
     const places = t.raw("places") as string[];
-    const faq = t.raw("faq") as Faq[];
 
     return (
         <div>
@@ -223,105 +215,6 @@ const PlanYourStay = async () => {
                             </ul>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            {/* Tourism: not part of the practical-information document, kept as it was */}
-            <section className="container mx-auto py-16 px-4">
-                <div className="max-w-5xl mx-auto">
-                    <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-cactus/30 hover:border-cactus/60 transition-colors duration-300 group">
-                        <div className="absolute inset-0 bg-gradient-to-br from-cactus/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-                        <iframe
-                            width="100%"
-                            height="100%"
-                            src="https://www.youtube.com/embed/eNBACsKDfn4"
-                            title={t("videoTitle")}
-                            className="w-full h-full"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen
-                        ></iframe>
-                    </div>
-                </div>
-            </section>
-
-            <section className="container mx-auto py-16 px-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                    {/* Barcelona Tourism Section */}
-                    <div className="flex flex-col gap-6 group">
-                        <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl border border-white/10">
-                            <Image
-                                src="/img/gaudi-3.png"
-                                alt={t("barcelonaImgAlt")}
-                                fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                            />
-                        </div>
-                        <div className="bg-cactus/10 p-8 rounded-xl border border-white/10 transition-colors group-hover:bg-cactus/20">
-                            <h2 className="text-2xl font-bold text-white mb-4">{t("barcelonaTitle")}</h2>
-                            <p className="text-white/70 mb-6 leading-relaxed">
-                                {t("barcelonaDescription")}
-                            </p>
-                            <a
-                                href="https://www.barcelonaturisme.com/wv3/en/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block bg-cactus hover:bg-cactus/80 text-center font-medium py-3 px-6 rounded-lg transition-colors w-full text-center"
-                            >
-                                {t("visitWebsite")}
-                            </a>
-                        </div>
-                    </div>
-
-                    {/* Catalonia Tourism Section */}
-                    <div className="flex flex-col gap-6 group">
-                        <div className="relative aspect-video rounded-xl overflow-hidden shadow-xl border border-white/10">
-                            <Image
-                                src="/img/catalonia-best.jpg"
-                                alt={t("cataloniaImgAlt")}
-                                fill
-                                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                            />
-                        </div>
-                        <div className="bg-cactus/10 p-8 rounded-xl border border-white/10 transition-colors group-hover:bg-cactus/20">
-                            <h2 className="text-2xl font-bold text-white mb-4">{t("cataloniaTitle")}</h2>
-                            <p className="text-white/70 mb-6 leading-relaxed">
-                                {t("cataloniaDescription")}
-                            </p>
-                            <div className="flex flex-col gap-3">
-                                <a
-                                    href="https://www.catalunya.com/en/cultural-tourism-in-catalonia"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block bg-cactus hover:bg-cactus/80 text-white font-medium py-3 px-6 rounded-lg transition-colors text-center"
-                                >
-                                    {t("culturalTourism")}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* FAQ */}
-            <section className="container mx-auto py-16 px-4">
-                <div className="max-w-4xl mx-auto">
-                    <h2 className="text-3xl font-bold text-white mb-8">{t("faqTitle")}</h2>
-                    <Accordion type="single" collapsible className="w-full flex flex-col gap-3">
-                        {faq.map((item, index) => (
-                            <AccordionItem
-                                key={item.q}
-                                value={`faq-${index}`}
-                                className="bg-white/5 border border-white/10 rounded-xl overflow-hidden data-[state=open]:bg-white/[0.07]"
-                            >
-                                <AccordionTrigger className="text-white hover:no-underline px-4 py-4 sm:px-6 sm:py-5 group text-base">
-                                    {item.q}
-                                </AccordionTrigger>
-                                <AccordionContent className="text-white/70 text-sm leading-relaxed pb-5 px-4 sm:px-6">
-                                    {withMailLinks(item.a)}
-                                </AccordionContent>
-                            </AccordionItem>
-                        ))}
-                    </Accordion>
                 </div>
             </section>
 

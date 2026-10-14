@@ -37,7 +37,8 @@
     "stripName": "World Green Infrastructure Congress 2026",
     "theOrganisers": "Os organizadores",
     "fullProgramme": "Programa",
-    "news": "Notícias"
+    "news": "Notícias",
+    "posters": "Pósteres"
   },
   "countdown": {
     "startingIn": "Começando em:"
@@ -776,7 +777,9 @@
     "moreInfo": "Mais info",
     "lessInfo": "Menos info",
     "linkedin": "LinkedIn",
-    "speakersCount": "Oradores"
+    "speakersCount": "Oradores",
+    "search": "Pesquisar palestrantes",
+    "noResults": "Nenhum palestrante corresponde à sua pesquisa."
   },
   "programAgendaPage": {
     "title": "Agenda",
@@ -928,6 +931,18 @@
       "speaker24": {
         "name": "David Vernon Brasfield",
         "bio": "Arquiteto e engenheiro da construção que promove a infraestrutura verde desde 2006, David Vernon Brasfield é presidente da Associação Norueguesa de Infraestrutura Verde e membro do conselho e supervisor da World Green Infrastructure Network (WGIN). Lidera a oficina de Saúde e Bem-Estar da WGIC26. Convicto de que os seres humanos precisam da natureza, defende que o acesso a uma relação mutuamente saudável com ela deveria ser reconhecido como um direito humano universal, e preconiza a prática ética na comunidade de infraestrutura verde: sustentabilidade ecológica e acesso equitativo."
+      },
+      "speaker25": {
+        "name": "Linda S. Velazquez",
+        "bio": "Linda S. Velazquez, ASLA, LEED AP, GRP é a fundadora e editora da Greenroofs.com (1999) e apresenta desde 2007 a lista anual «Top 10 List of Hot Trends». É licenciada em Arquitetura Paisagista, tem publicações em numerosos livros e revistas e é diretora da Sky Gardens Studio."
+      },
+      "speaker26": {
+        "name": "Jon Ajanguiz",
+        "bio": "Arquiteto responsável pelo desenvolvimento do Programa de Promoção e Implementação de Telhados Verdes do Instituto Municipal da Paisagem Urbana e da Qualidade de Vida (IMPUiQV) da Câmara Municipal de Barcelona."
+      },
+      "speaker27": {
+        "name": "Bert Belmans",
+        "bio": "Bert Belmans é engenheiro-arquiteto com mais de 15 anos de experiência em arquitetura adaptada ao clima e soluções baseadas na natureza (NbS). Como presidente global do Capítulo de Profissionais Emergentes da World Green Infrastructure Network, dá voz aos líderes emergentes e liga o Norte e o Sul Globais. Professor na Vrije Universiteit Brussel e docente e coordenador de investigação na Universiteit Antwerpen, especializa-se em física da construção e desempenho energético, promovendo estratégias de design passivo que otimizam os fluxos de materiais e energia para as pessoas e o planeta."
       }
     },
     "closing": "Este primeiro grupo de oradores sublinha a ambição, profundidade e visão multidisciplinar do WGIC 2026, posicionando-o como um fórum chave para o debate urbano global."
@@ -981,10 +996,10 @@
         "image": "/img/visits/Urbaser_Offices.jpg"
       },
       {
-        "name": "Edifício de escritórios Pere IV",
-        "title": "Quando a biofilia é a identidade do edifício",
-        "description": "No novo edifício de coworking do Pere IV 62-64, terraços, pátio e telhados tornam-se uma paisagem contínua que se estende ao próprio edifício. Árvores, arbustos, plantas perenes e prados floridos acrescentam textura, sombra e sazonalidade, integrados num sistema de telhado biossolar. Projeto do MataAlta Studio.",
-        "image": "/img/visits/Pere IV-Offices.jpg"
+        "name": "Urbit Bcn 22@",
+        "title": "Uma quinta paisagem na cobertura dos escritórios",
+        "description": "Quase 1.900 m² de cobertura ajardinada e transitável transformam as coberturas técnicas deste complexo de escritórios do 22@ numa verdadeira \"quinta paisagem\" — caminhos, praças, prados e áreas de descanso plantadas com sedum de baixa manutenção. Uma grande estrutura fotovoltaica sombreia o espaço enquanto o edifício recolhe separadamente águas pluviais e águas cinzentas. Projetado pela QID Studio / Fitó Arquitectes e executado pela Le Prieuré.",
+        "image": "/img/visits/Urbit Bcn 22-Offices.jpg"
       },
       {
         "name": "Edifício Platinum@BCN, 22@",
@@ -993,20 +1008,20 @@
         "image": "/img/visits/Platinum @22 - Offices.jpg"
       },
       {
-        "name": "OneCoWork Poblenou (Llacuna)",
+        "name": "OneCoWork Poblenou",
         "title": "Árvores mediterrânicas no coworking",
         "description": "Este espaço de coworking no Poblenou traz a natureza para o dia de trabalho. As árvores mediterrânicas definem o carácter do espaço envolvente, com arbustos de baixa rega plantados por baixo. Os canteiros integrados nas zonas de lazer mantêm as plantas ao alcance de quem as utiliza. Projetado por Batlle i Roig e executado pela Eixverd em 2025.",
         "image": "/img/visits/OneCoWork Llacuna-Offices.jpeg"
       },
       {
-        "name": "Torre Diagonal One (Telefónica)",
+        "name": "Torre Diagonal One (Torre Telefònica)",
         "title": "Um telhado que se adapta ao ritmo dos escritórios",
         "description": "Construído diretamente sobre o deck técnico e à volta da calha das gôndolas, este telhado responde às necessidades de todo o edifício de escritórios. Em redor da calha, um telhado verde extensivo; sobre o deck, semintensivo. A solução permite que a manutenção técnica do telhado coexista com a vida vegetal que nele cresce. Projeto e execução inteiramente da Eixverd.",
         "image": "/img/visits/Torre Diagonal One-Offices.jpg"
       }
     ],
     "itineraryC": "Itinerário C",
-    "itineraryCSubtitle": "Cidade Velha · Nascido",
+    "itineraryCSubtitle": "Ciutat Vella · El Born",
     "itineraryCItems": [
       {
         "name": "Hotel 10 Cubik",
@@ -1033,10 +1048,10 @@
         "image": "/img/visits/Sofitel - Hotel.webp"
       },
       {
-        "name": "Urbit Bcn 22@",
-        "title": "Uma quinta paisagem na cobertura dos escritórios",
-        "description": "Quase 1.900 m² de cobertura ajardinada e transitável transformam as coberturas técnicas deste complexo de escritórios do 22@ numa verdadeira \"quinta paisagem\" — caminhos, praças, prados e áreas de descanso plantadas com sedum de baixa manutenção. Uma grande estrutura fotovoltaica sombreia o espaço enquanto o edifício recolhe separadamente águas pluviais e águas cinzentas. Projetado pela QID Studio / Fitó Arquitectes e executado pela Le Prieuré.",
-        "image": "/img/visits/Urbit Bcn 22-Offices.jpg"
+        "name": "Edifício de escritórios Pere IV",
+        "title": "Quando a biofilia é a identidade do edifício",
+        "description": "No novo edifício de coworking do Pere IV 62-64, terraços, pátio e telhados tornam-se uma paisagem contínua que se estende ao próprio edifício. Árvores, arbustos, plantas perenes e prados floridos acrescentam textura, sombra e sazonalidade, integrados num sistema de telhado biossolar. Projeto do MataAlta Studio.",
+        "image": "/img/visits/Pere IV-Offices.jpg"
       }
     ],
     "collaboratorsTitle": "Com a colaboração de",
@@ -1693,5 +1708,23 @@
     "scientificSubtitle": "Revisão por pares e programa científico",
     "professionalTitle": "Comité Profissional",
     "professionalSubtitle": "Prática do setor e perspetiva de mercado"
+  },
+  "postersPage": {
+    "title": "Pósteres",
+    "description": "Contribuições em formato de pôster apresentadas no WGIC26.",
+    "comingSoon": "A lista de pósteres (títulos e autores) será publicada aqui quando a classificação final for confirmada.",
+    "printTitle": "Impressão do pôster",
+    "printText": "Cada autor deve imprimir o seu próprio pôster e levá-lo ao congresso. A organização não se encarregará de imprimi-los.",
+    "authors": "Autores",
+    "templatesTitle": "Modelos",
+    "templatesIntro": "Modelos oficiais para apresentações orais e pósteres.",
+    "oralName": "Modelo de apresentação oral",
+    "oralDesc": "PowerPoint, formato 16:9.",
+    "posterName": "Modelo de pôster",
+    "posterDesc": "PowerPoint, DIN A0 vertical (84,1 × 118,9 cm).",
+    "download": "Descarregar (PPTX)",
+    "search": "Pesquisar por título ou autor",
+    "noResults": "Nenhum pôster corresponde à sua pesquisa.",
+    "count": "Pósteres"
   }
 }

@@ -34,6 +34,9 @@ const keynoteSpeakerSlots = [
   { id: "speaker20", image: "/img/speakers/peck.png" },
   { id: "speaker21", image: "/img/speakers/CamilleTallon.png" },
   { id: "speaker22", image: "/img/speakers/aba.png" },
+  { id: "speaker25", image: "/img/speakers/velazquez_linda.jpg" },
+  { id: "speaker26", image: "/img/speakers/ajanguiz_jon.jpg" },
+  { id: "speaker27", image: "/img/speakers/belmans_bert.jpg" },
 ] as const;
 
 // Extrae la primera frase sin cortar en iniciales tipo "Wendy Y. Chen".
@@ -551,6 +554,27 @@ export default function HomeClient() {
                 </div>
               ))}
             </div>
+            {sponsorTiers[3].soloLogos && (
+              <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 mt-5">
+                {sponsorTiers[3].soloLogos.map((logo) => (
+                  <a
+                    key={logo.href}
+                    href={logo.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center ${logo.homeBoxClassName ?? homeSponsorTierBox.goldPartners}`}
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={logo.width}
+                      height={logo.height}
+                      className="max-h-full max-w-full w-auto h-auto object-contain"
+                    />
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* GARDEN BIG EXHIBITORS */}

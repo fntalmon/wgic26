@@ -157,7 +157,7 @@ export function KeynoteSpeakersCarousel({
       </div>
 
       <div className="flex items-center justify-between">
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2 min-w-0">
           {scrollSnaps.map((_, index) => (
             <button
               key={index}
@@ -170,7 +170,7 @@ export function KeynoteSpeakersCarousel({
           ))}
         </div>
 
-        <div className="flex gap-3">
+        <div className="flex gap-3 shrink-0">
           <button
             onClick={scrollPrev}
             disabled={!canScrollPrev}

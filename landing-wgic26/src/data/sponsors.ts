@@ -7,6 +7,8 @@ export interface SponsorLogo {
   className: string;
   // Tamaño de la caja en la home (reemplaza al fijo del tier para logos que necesitan más espacio).
   homeBoxClassName?: string;
+  // Tamaño de la caja en las tarjetas de /sponsors (reemplaza al del tier para logos muy anchos).
+  cardBoxClassName?: string;
   // Completar a medida que marketing consiga el material de cada sponsor.
   description?: string;
   stand?: string;
@@ -18,6 +20,8 @@ export interface SponsorTier {
   // Etiqueta opcional bajo el título: los logos del tier se muestran unidos como un solo grupo.
   subtitleKey?: string;
   logos: SponsorLogo[];
+  // Logos del tier que no forman parte del grupo de co-partners (se muestran debajo, sin separadores).
+  soloLogos?: SponsorLogo[];
 }
 
 // Logos de la sección de sponsors (home y /sponsors).
@@ -111,6 +115,16 @@ export const sponsorTiers: SponsorTier[] = [
         className: "h-16 md:h-20 w-auto object-contain",
         homeBoxClassName: "h-[5.5rem] w-40 md:h-[6.5rem] md:w-44",
       },
+      {
+        href: "http://www.amb.cat/",
+        src: "/img/logos/amb logo.webp",
+        alt: "Àrea Metropolitana de Barcelona (AMB)",
+        width: 960,
+        height: 140,
+        className: "h-16 md:h-20 w-auto object-contain",
+        homeBoxClassName: "h-[5.5rem] w-48 md:h-[6.5rem] md:w-60",
+        cardBoxClassName: "h-[5.5rem] w-full",
+      },
     ],
   },
   {
@@ -135,6 +149,17 @@ export const sponsorTiers: SponsorTier[] = [
         height: 1011,
         className: "h-12 md:h-14 w-auto object-contain",
         homeBoxClassName: "h-14 w-14 md:h-[4.5rem] md:w-[4.5rem]",
+      },
+    ],
+    // Verdtical pasó de Garden Medium a Gold Partner (pedido de Marina, 13-14/10/2026).
+    soloLogos: [
+      {
+        href: "https://verdtical.com/",
+        src: "/img/logos/verdtical.webp",
+        alt: "Verdtical",
+        width: 151,
+        height: 200,
+        className: "h-12 md:h-14 w-auto object-contain",
       },
     ],
   },
@@ -164,14 +189,6 @@ export const sponsorTiers: SponsorTier[] = [
     key: "gardenMediumExhibitors",
     titleKey: "gardenMediumExhibitors",
     logos: [
-      {
-        href: "https://verdtical.com/",
-        src: "/img/logos/verdtical.webp",
-        alt: "Verdtical",
-        width: 151,
-        height: 200,
-        className: "h-12 md:h-14 w-auto object-contain",
-      },
       {
         href: "https://www.hunterirrigation.com/",
         src: "/img/logos/Hunter.svg",

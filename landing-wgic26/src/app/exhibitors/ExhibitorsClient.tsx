@@ -45,6 +45,7 @@ const copy = {
     organizedBy: "Organized by",
     sponsorsPartners: "Partners and Sponsors",
     elitePartners: "Emerald Partners",
+    goldPartners: "Gold Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -308,6 +309,7 @@ const copy = {
     venueTitle: "La sede",
     organizedBy: "Organized by",
     elitePartners: "Emerald Partners",
+    goldPartners: "Gold Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -570,6 +572,7 @@ const copy = {
     venueTitle: "La seu",
     organizedBy: "Organized by",
     elitePartners: "Emerald Partners",
+    goldPartners: "Gold Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -832,6 +835,7 @@ const copy = {
     venueTitle: "Le lieu",
     organizedBy: "Organized by",
     elitePartners: "Emerald Partners",
+    goldPartners: "Gold Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -1094,6 +1098,7 @@ const copy = {
     venueTitle: "O local",
     organizedBy: "Organized by",
     elitePartners: "Emerald Partners",
+    goldPartners: "Gold Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -1338,8 +1343,8 @@ const ExhibitorsClient = () => {
             : copy.en;
   const pptHref =
     locale === "es"
-      ? "/docs/WGIC26_SponsorshipBrochure_v0.8Spanish.pptx"
-      : "/docs/WGIC26_SponsorshipBrochure_v0.8.pptx";
+      ? "/docs/WGIC26_SponsorshipBrochure_v1.2Spanish.pptx"
+      : "/docs/WGIC26_SponsorshipBrochure_v1.2.pptx";
   // Download form state (reserved for future use)
   // const [downloadStep, setDownloadStep] = useState<
   //   "initial" | "form" | "success"
@@ -2429,6 +2434,28 @@ const ExhibitorsClient = () => {
                     <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24"></div>
                   </div>*/}
 
+            {/* GOLD PARTNERS */}
+            <div className="w-full">
+              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
+                {t.goldPartners}
+              </h3>
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                <a
+                  href="https://verdtical.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/img/logos/verdtical.webp"
+                    alt="Verdtical"
+                    width={150}
+                    height={100}
+                    className="h-12 w-auto object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
             <div className="w-full">
               <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
                 {t.gardenBigExhibitors}
@@ -2483,22 +2510,6 @@ const ExhibitorsClient = () => {
                 {t.gardenMediumExhibitors}
               </h3>
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px]">
-                <a
-                  href="https://verdtical.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-shrink-0 flex items-center justify-center bg-white rounded-md px-4 py-2"
-                >
-                  <Image
-                    src="/img/logos/verdtical.webp"
-                    alt="Verdtical"
-                    width={150}
-                    height={100}
-                    loading="eager"
-                    className="h-8 w-auto object-contain"
-                  />
-                </a>
-
                 <a
                   href="https://www.hunterirrigation.com/"
                   target="_blank"
