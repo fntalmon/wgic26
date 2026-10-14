@@ -5,7 +5,7 @@ import { KeynoteSpeakersCarousel } from "@/components/KeynoteSpeakersCarousel";
 import { SocialProof } from "@/components/SocialProof";
 import { SupportersCarousel } from "@/components/SupportersCarousel";
 import { supporters } from "@/data/supporters";
-import { sponsorTiers } from "@/data/sponsors";
+import { sponsorTiers, sponsorTierBox as homeSponsorTierBox } from "@/data/sponsors";
 import { MapPin, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -53,18 +53,6 @@ const firstSentence = (text: string) => {
   }
   return sentence;
 };
-
-// Contenedores de tamaño fijo por tier: evita que la resolución/ratio de cada logo desbalancee el tamaño visual.
-// Escala descendente con salto marcado entre tiers, según su nivel/importancia.
-const homeSponsorTierBox = {
-  organizedBy: "h-24 w-48 md:h-28 md:w-56",
-  platinumPartners: "h-[5.5rem] w-44 md:h-[6.5rem] md:w-52",
-  elitePartners: "h-20 w-40 md:h-24 md:w-48",
-  goldPartners: "h-20 w-44 md:h-24 md:w-56",
-  gardenBigExhibitors: "h-16 w-32 md:h-20 md:w-40",
-  gardenMediumExhibitors: "h-12 w-24 md:h-16 md:w-32",
-  mediaPartners: "h-9 w-20 md:h-12 md:w-24",
-} as const;
 
 export default function HomeClient() {
   const t = useTranslations("home");

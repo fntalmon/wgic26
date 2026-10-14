@@ -5,7 +5,7 @@ import Carousel from "@/components/Carousel";
 import { RegisterCTA } from "@/components/RegisterCTA";
 import { SupportersCarousel } from "@/components/SupportersCarousel";
 import { supporters } from "@/data/supporters";
-import { sponsorTiers } from "@/data/sponsors";
+import { sponsorTiers, sponsorTierBox } from "@/data/sponsors";
 import Image from "next/image";
 import { Fragment, useState } from "react";
 import { FileText, Loader2, Presentation, CheckCircle } from "lucide-react";
@@ -2322,52 +2322,54 @@ const ExhibitorsClient = () => {
 
         <div className="bg-white text-black py-16 px-6 rounded-md border border-gray-200">
           <div className="flex flex-col gap-12 items-center">
-            {/* Sponsor tiers: same data as /sponsors and the home page (src/data/sponsors.ts) */}
-            {sponsorTiers.map((tier) => (
-              <div key={tier.key} className="w-full">
-                <h3 className="text-center text-xl font-bold text-gray-800 uppercase tracking-wider">
-                  {home(tier.titleKey)}
-                </h3>
-                {tier.subtitleKey && (
-                  <p className="text-center text-xs text-gray-500 uppercase tracking-[0.2em] mt-1">
-                    {home(tier.subtitleKey)}
-                  </p>
-                )}
-                <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-6">
-                  {tier.logos.map((logo, i) => (
-                    <Fragment key={logo.href}>
-                      {tier.subtitleKey && i > 0 && (
-                        <span aria-hidden className="hidden sm:block h-12 w-px bg-gray-300" />
-                      )}
-                      <a href={logo.href} target="_blank" rel="noopener noreferrer">
-                        <Image
-                          src={logo.src}
-                          alt={logo.alt}
-                          width={logo.width}
-                          height={logo.height}
-                          className={logo.className}
-                        />
-                      </a>
-                    </Fragment>
-                  ))}
-                </div>
-                {tier.soloLogos && (
-                  <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-6">
-                    {tier.soloLogos.map((logo) => (
-                      <a key={logo.href} href={logo.href} target="_blank" rel="noopener noreferrer">
-                        <Image
-                          src={logo.src}
-                          alt={logo.alt}
-                          width={logo.width}
-                          height={logo.height}
-                          className={logo.className}
-                        />
-                      </a>
+            {/* Sponsor tiers: same data and logo sizes as the home page (src/data/sponsors.ts) */}
+            {sponsorTiers.map((tier) => {
+              const box = sponsorTierBox[tier.key as keyof typeof sponsorTierBox];
+              const renderLogo = (logo: (typeof tier.logos)[number]) => (
+                <a
+                  key={logo.href}
+                  href={logo.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center justify-center ${logo.homeBoxClassName ?? box}`}
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    className="max-h-full max-w-full w-auto h-auto object-contain"
+                  />
+                </a>
+              );
+              return (
+                <div key={tier.key} className="w-full">
+                  <h3 className="text-center text-xl font-bold text-gray-800 uppercase tracking-wider">
+                    {home(tier.titleKey)}
+                  </h3>
+                  {tier.subtitleKey && (
+                    <p className="text-center text-xs text-gray-500 uppercase tracking-[0.2em] mt-1">
+                      {home(tier.subtitleKey)}
+                    </p>
+                  )}
+                  <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 md:gap-x-10 mt-6">
+                    {tier.logos.map((logo, i) => (
+                      <Fragment key={logo.href}>
+                        {tier.subtitleKey && i > 0 && (
+                          <span aria-hidden className="hidden sm:block h-12 w-px bg-gray-300" />
+                        )}
+                        {renderLogo(logo)}
+                      </Fragment>
                     ))}
                   </div>
-                )}
-              </div>
-            ))}
+                  {tier.soloLogos && (
+                    <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 mt-5">
+                      {tier.soloLogos.map(renderLogo)}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
 
             {/* WITH THE SUPPORT OF */}
             <div className="w-full">
