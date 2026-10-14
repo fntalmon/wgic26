@@ -5,8 +5,9 @@ import Carousel from "@/components/Carousel";
 import { RegisterCTA } from "@/components/RegisterCTA";
 import { SupportersCarousel } from "@/components/SupportersCarousel";
 import { supporters } from "@/data/supporters";
+import { sponsorTiers } from "@/data/sponsors";
 import Image from "next/image";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { FileText, Loader2, Presentation, CheckCircle } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -45,7 +46,6 @@ const copy = {
     organizedBy: "Organized by",
     sponsorsPartners: "Partners and Sponsors",
     elitePartners: "Emerald Partners",
-    goldPartners: "Gold Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -309,7 +309,6 @@ const copy = {
     venueTitle: "La sede",
     organizedBy: "Organized by",
     elitePartners: "Emerald Partners",
-    goldPartners: "Gold Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -572,7 +571,6 @@ const copy = {
     venueTitle: "La seu",
     organizedBy: "Organized by",
     elitePartners: "Emerald Partners",
-    goldPartners: "Gold Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -835,7 +833,6 @@ const copy = {
     venueTitle: "Le lieu",
     organizedBy: "Organized by",
     elitePartners: "Emerald Partners",
-    goldPartners: "Gold Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -1098,7 +1095,6 @@ const copy = {
     venueTitle: "O local",
     organizedBy: "Organized by",
     elitePartners: "Emerald Partners",
-    goldPartners: "Gold Partners",
     gardenBigExhibitors: "Large Garden Exhibitors",
     gardenMediumExhibitors: "Medium Garden Exhibitors",
     flowerExhibitors: "Flower Exhibitors",
@@ -2326,272 +2322,52 @@ const ExhibitorsClient = () => {
 
         <div className="bg-white text-black py-16 px-6 rounded-md border border-gray-200">
           <div className="flex flex-col gap-12 items-center">
-            {/* ORGANISED */}
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                {t.organizedBy}
-              </h3>
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                <a
-                  href="https://worldgreeninfrastructurenetwork.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/WGIN-logo.png"
-                    alt="WGI Network"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="http://udl.cat"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/Logo-de-la-Universitat-de-Lleida.png"
-                    alt="Universitat de Lleida"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://cinea.ec.europa.eu/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/logo-life.jpg"
-                    alt="LIFE - European Climate, Infrastructure and Environment Executive Agency"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://it4s.cat/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/it4s.png"
-                    alt="it4s – Innovative Technologies for Sustainability"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="http://big4life.eu"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/Footer_logo_BIG4LIFE_144.png"
-                    alt="BIG4LIFE"
-                    width={300}
-                    height={220}
-                    className="h-28 w-auto object-contain"
-                  />
-                </a>
-              </div>
-            </div>
-
-            {/* ELITE PARTNERS */}
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                {t.elitePartners}
-              </h3>
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
-                <a
-                  href="https://www.sempergreen.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos-color/sempergreen_urban-grey_green_22112023164728.jpg"
-                    alt="Semper Green"
-                    width={400}
-                    height={300}
-                    className="h-30 w-auto object-contain"
-                  />
-                </a>
-              </div>
-            </div>
-
-            {/* EVENT PARTNERS 
-                  <div className="w-full">
-                    <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                      Event Partners
-                    </h3>
-                    <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24"></div>
-                  </div>*/}
-
-            {/* GOLD PARTNERS */}
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                {t.goldPartners}
-              </h3>
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                <a
-                  href="https://verdtical.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/verdtical.webp"
-                    alt="Verdtical"
-                    width={150}
-                    height={100}
-                    className="h-12 w-auto object-contain"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                {t.gardenBigExhibitors}
-              </h3>
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px] text-gray-500">
-                <a
-                  href="https://www.jardinmovil.com/es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/jardinMovil.png"
-                    alt="JardinMovil"
-                    width={330}
-                    height={230}
-                    className="h-20 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://eixverd.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/eixverd.svg"
-                    alt="Eixverd"
-                    width={550}
-                    height={195}
-                    className="h-20 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://zinco-cubiertas-ecologicas.es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/zinco.svg"
-                    alt="Zinco"
-                    width={400}
-                    height={300}
-                    className="h-22 w-auto object-contain"
-                  />
-                </a>
-              </div>
-            </div>
-
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                {t.gardenMediumExhibitors}
-              </h3>
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 min-h-[100px]">
-                <a
-                  href="https://www.hunterirrigation.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-shrink-0 flex items-center justify-center bg-white rounded-md px-4 py-2"
-                >
-                  <Image
-                    src="/img/logos/Hunter.svg"
-                    alt="Hunter"
-                    width={300}
-                    height={200}
-                    loading="eager"
-                    className="h-8 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://www.projar.es/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-shrink-0 flex items-center justify-center bg-white rounded-md px-4 py-2"
-                >
-                  <Image
-                    src="/img/logos/projar.jpg"
-                    alt="Projar"
-                    width={330}
-                    height={230}
-                    loading="eager"
-                    className="h-30 w-auto object-contain"
-                  />
-                </a>
-
-                <a
-                  href="https://leprieure1840.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-shrink-0 flex items-center justify-center bg-white rounded-md px-4 py-2"
-                >
-                  <Image
-                    src="/img/logos/LePrieure.jpg"
-                    alt="Le Prieuré"
-                    width={200}
-                    height={200}
-                    loading="eager"
-                    className="h-24 w-auto object-contain"
-                  />
-                </a>
-              </div>
-            </div>
-
-            {/* FLOWER EXHIBITORS - hidden until logos are added
-                  <div className="w-full">
-                    <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                      {t.flowerExhibitors}
-                    </h3>
-                    <div className="flex justify-center items-center min-h-[100px] text-gray-500">
-                      <p className="italic">{t.comingSoon}</p>
-                    </div>
+            {/* Sponsor tiers: same data as /sponsors and the home page (src/data/sponsors.ts) */}
+            {sponsorTiers.map((tier) => (
+              <div key={tier.key} className="w-full">
+                <h3 className="text-center text-xl font-bold text-gray-800 uppercase tracking-wider">
+                  {home(tier.titleKey)}
+                </h3>
+                {tier.subtitleKey && (
+                  <p className="text-center text-xs text-gray-500 uppercase tracking-[0.2em] mt-1">
+                    {home(tier.subtitleKey)}
+                  </p>
+                )}
+                <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-6">
+                  {tier.logos.map((logo, i) => (
+                    <Fragment key={logo.href}>
+                      {tier.subtitleKey && i > 0 && (
+                        <span aria-hidden className="hidden sm:block h-12 w-px bg-gray-300" />
+                      )}
+                      <a href={logo.href} target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src={logo.src}
+                          alt={logo.alt}
+                          width={logo.width}
+                          height={logo.height}
+                          className={logo.className}
+                        />
+                      </a>
+                    </Fragment>
+                  ))}
+                </div>
+                {tier.soloLogos && (
+                  <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-6">
+                    {tier.soloLogos.map((logo) => (
+                      <a key={logo.href} href={logo.href} target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src={logo.src}
+                          alt={logo.alt}
+                          width={logo.width}
+                          height={logo.height}
+                          className={logo.className}
+                        />
+                      </a>
+                    ))}
                   </div>
-                  */}
-
-            {/* MEDIA PARTNERS */}
-            <div className="w-full">
-              <h3 className="text-center text-xl font-bold mb-6 text-gray-800 uppercase tracking-wider">
-                {t.mediaPartners}
-              </h3>
-              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                <a
-                  href="https://greenroofs.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/img/logos/greenroofsnuevo.png"
-                    alt="Greenroofs.com"
-                    width={280}
-                    height={200}
-                    className="h-17 w-auto object-contain"
-                  />
-                </a>
+                )}
               </div>
-            </div>
+            ))}
 
             {/* WITH THE SUPPORT OF */}
             <div className="w-full">
