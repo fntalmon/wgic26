@@ -7,7 +7,7 @@ Calendly's design system is a quiet, professional canvas built on white surfaces
 
 ## Tokens — Colors
 
-| Name | Value | Token | Role |
+| Name | Value | Token | Role |ss
 |------|-------|-------|------|
 | Midnight Navy | `#0b3558` | `--color-midnight-navy` | Headlines, primary brand text, logo wordmark, dark headings — the signature voice of the brand |
 | Signal Blue | `#006bff` | `--color-signal-blue` | Violet supporting accent for decorative details and low-frequency emphasis. Do not promote it to the primary CTA color |
