@@ -23,7 +23,7 @@ The project's premise is simple and slightly unsettling: green roofs clearly del
 
 BIG4LIFE didn't just monitor its pilot cases. It instrumented them: weather stations, air-quality sensors, biotrapping cameras to track wildlife, soil moisture sensors, rain gauges. Eight pilot sites across Lleida, Barcelona and El Prat de Llobregat are now generating the kind of long-term performance data the sector has always lacked — the difference between "green roofs are good for cities" and knowing exactly how good, and at what cost.
 
-The results are already tangible. The project has refurbished the green roofs of the Parc Agrobiotech, the Ronda Mercè nursery school and a residential building in Lleida city centre, all in Lleida, and the green roof of the Auditori l'Artesà in El Prat de Llobregat — each one rebuilt not just to look green on opening day, but still to be functioning in fifteen years.
+The results are already tangible. The project has refurbished the green roofs of the Parc Agrobiotech Lleida, the Ronda Mercè nursery school and a residential building in Lleida city centre, all in Lleida, and the green roof of the Auditori l'Artesà in El Prat de Llobregat — each one rebuilt not just to look green on opening day, but still to be functioning in fifteen years.
 
 ## The part that doesn't show up on a spec sheet
 

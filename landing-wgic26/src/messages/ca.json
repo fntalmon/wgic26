@@ -18,7 +18,6 @@
     "innovationDay": "Innovation Day",
     "wginAwards": "Premis WGIN",
     "keyNoteSpeakers": "Oradors",
-    "newsletters": "Butlletins",
     "blog": "Blog",
     "speakers": "Oradors",
     "registration": "Registre",
@@ -393,7 +392,7 @@
         "num": "30",
         "weekday": "Divendres",
         "month": "Octubre",
-        "place": "Parc Agrobiotech, Lleida",
+        "place": "Parc Agrobiotech Lleida",
         "hours": "10:00–18:00",
         "text": "Innovation Day: dos tallers, dinar i visites guiades."
       }
@@ -408,11 +407,11 @@
     "visitsName": "Visites tècniques",
     "visitsText": "Quan es formin els grups de participants inscrits, t'enviarem un correu amb l'hora de sortida i el punt de trobada.",
     "agroDate": "Divendres 30 oct",
-    "agroName": "Parc Agrobiotech",
+    "agroName": "Parc Agrobiotech Lleida",
     "agroAddress": "Plaça de les Ciències, Edifici CeDiCo, 1a planta, 25003 Lleida",
     "agroHours": "10:00–18:00",
     "agroText": "El transport de Barcelona a Lleida està inclòs en la teva inscripció.",
-    "agroMapTitle": "Mapa del Parc Agrobiotech, Lleida",
+    "agroMapTitle": "Mapa del Parc Agrobiotech Lleida",
     "gettingTitle": "Com arribar al CCIB",
     "gettingSubtitle": "Metro o tramvia. Cinc minuts a peu.",
     "transport": [
@@ -448,7 +447,7 @@
     "included": "Inclòs",
     "notIncluded": "No inclòs",
     "lunchTitle": "Dinar",
-    "lunchText": "Cada participant inscrit té dinar els dies 27 i 28 d'octubre al CCIB, i el 30 d'octubre al Parc Agrobiotech de Lleida.",
+    "lunchText": "Cada participant inscrit té dinar els dies 27 i 28 d'octubre al CCIB, i el 30 d'octubre al Parc Agrobiotech Lleida.",
     "breakfastTitle": "Esmorzar",
     "breakfastText": "A les pauses cafè se serveix cafè i te.",
     "breakfastPlaces": "Pots prendre alguna cosa en algun dels locals dels voltants del CCIB:",
@@ -948,6 +947,14 @@
     "closing": "Aquest primer grup d'oradors subratlla l'ambició, profunditat i visió multidisciplinar de WGIC 2026, posicionant-lo com un fòrum clau per al debat urbà global."
   },
   "technicalVisitsPage": {
+    "independentVisit": {
+      "label": "Visita per lliure",
+      "note": "Projecte independent, fora dels itineraris organitzats A, B i C.",
+      "name": "Vall d’Hebron Research Institute",
+      "title": "Una coberta de 4.000 m² plantada amb 20.000 plantes autòctones",
+      "description": "La coberta plana invertida de 4.000 m² de l’institut de recerca està plantada amb més de 20.000 plantes autòctones i resistents a la sequera. La seva composició combina impermeabilització amb poliurea, 14 cm d’aïllament, capes de drenatge ZinCo, 40 cm de substrat reciclat (upcycling) i un sistema de degoteig autocompensant, coronat amb 10 cm de mulch de triturat de poda compostat.",
+      "imageAlt": "Vall d’Hebron Research Institute"
+    },
     "title": "Visites tècniques - 29 d'octubre",
     "intro1": "Visita les cobertes verdes i les façanes vegetals més icòniques de Barcelona. Exploraràs cobertes verdes úniques que normalment no estan obertes al públic. Un coordinador acompanyarà el grup durant tot l'itinerari, mentre que un guia especialitzat oferirà explicacions detallades a cada lloc.",
     "intro2": "Els grups estaran limitats a un màxim de 10 participants, amb fins a 5 grups per itinerari. L'horari serà de 9:00 a 16:00, i els desplaçaments es faran íntegrament a peu i en metro.",
@@ -1061,7 +1068,7 @@
   },
   "innovationDayPage": {
     "title": "Innovation Day - 30 d'octubre",
-    "intro1": "Passa un dia en un dels emplaçaments reals d'un projecte de recerca europeu de tres anys —no un escenari muntat per a l'ocasió, sinó la coberta verda i els sistemes de monitoratge que <link>BIG4LIFE</link> fa tres anys que instal·la i monitora al Parc Agrobiotech de la Universitat de Lleida.",
+    "intro1": "Passa un dia en un dels emplaçaments reals d'un projecte de recerca europeu de tres anys —no un escenari muntat per a l'ocasió, sinó la coberta verda i els sistemes de monitoratge que <link>BIG4LIFE</link> fa tres anys que instal·la i monitora al Parc Agrobiotech Lleida.",
     "intro2": "Les persones participants podran triar entre dos tallers pràctics sobre diferents facetes de la infraestructura verda urbana, seguits d'un dinar al parc i d'una tarda guiada pel nucli històric de Lleida.",
     "workshop1Title": "Taller 1: Bestioles, ciutats i cobertes verdes",
     "workshop1Languages": "Anglès - Espanyol",
@@ -1070,7 +1077,7 @@
     "workshop2Languages": "Espanyol - Anglès",
     "workshop2Description": "Aprèn de manera pràctica de la mà de sis empreses que instal·len i mantenen aquests sistemes cada dia —no estudis de cas, sinó les persones que realment fan la feina. Descobreix què fa que un projecte d'infraestructura verda tingui èxit i perduri en el temps: mètodes constructius provats, materials innovadors i els errors a evitar, explicats per qui els han viscut a l'obra.",
     "culturalVisitsTitle": "Visites culturals",
-    "culturalVisit1Name": "Parc Agrobiotech",
+    "culturalVisit1Name": "Parc Agrobiotech Lleida",
     "culturalVisit1Description": "L'emplaçament real d'un dels projectes de BIG4LIFE, amb la coberta verda que veuràs durant els tallers.",
     "culturalVisit2Name": "La Seu Vella",
     "culturalVisit2Description": "El monument històric més emblemàtic de Lleida, amb vistes des del campanar sobre la ciutat i la plana.",
@@ -1111,7 +1118,7 @@
     "technicalVisitsDayLabel": "Dia 3 · Barcelona",
     "technicalVisitsDescription": "Itineraris guiats per cobertes i façanes verdes emblemàtiques de Barcelona.",
     "innovationDayDayLabel": "Dia 4 · Lleida",
-    "innovationDayDescription": "Tallers pràctics sobre innovació i recerca en infraestructura verda al Parc Agrobiotech de Lleida.",
+    "innovationDayDescription": "Tallers pràctics sobre innovació i recerca en infraestructura verda al Parc Agrobiotech Lleida.",
     "viewDetails": "Veure detalls",
     "moreInfoTitle": "Més informació"
   },
@@ -1623,64 +1630,6 @@
     "ccibP2": "El CCIB inclou dos edificis de gran valor arquitectònic: el Centre de Convencions i l'Auditori Fòrum CCIB, connectats per una passarel·la subterrània. En conjunt ofereixen uns 100.000 m2 i capacitat per a fins a 15.000 assistents.",
     "ccibP3": "El CCIB està ubicat a 500 metres de la platja, a 6 km del centre històric i a 22 km de l'aeroport, amb excel·lents connexions per transport públic i carretera.",
     "mapTitle": "Mapa de Barcelona"
-  },
-  "newslettersPage": {
-    "title": "Butlletins",
-    "description": "Mantén-te actualitzat amb els nostres últims butlletins.",
-    "readOnline": "Llegir en línia",
-    "latest": "Més recent",
-    "downloadPdf": "Descarregar PDF",
-    "languages": {
-      "en": "Anglès",
-      "es": "Castellà",
-      "it": "Italià",
-      "el": "Grec",
-      "fr": "Francès",
-      "pt": "Portuguès",
-      "ar": "Àrab"
-    },
-    "items": {
-      "march2026": {
-        "title": "Butlletí de Febrer",
-        "date": "Febrer"
-      },
-      "march2026Newsletter2": {
-        "title": "Butlletí de Març",
-        "date": "Març"
-      },
-      "april2026Newsletter3": {
-        "title": "Butlletí d'Abril",
-        "date": "Abril"
-      },
-      "june2026Newsletter7": {
-        "title": "Butlletí de Juny #2",
-        "date": "Juny 2026"
-      },
-      "july2026Newsletter10": {
-        "title": "Butlletí de Juliol #3",
-        "date": "Juliol 2026"
-      },
-      "july2026Newsletter9": {
-        "title": "Butlletí de Juliol #2",
-        "date": "Juliol 2026"
-      },
-      "july2026Newsletter8": {
-        "title": "Butlletí de Juliol",
-        "date": "Juliol 2026"
-      },
-      "june2026Newsletter6": {
-        "title": "Butlletí de Juny",
-        "date": "Juny 2026"
-      },
-      "may2026Newsletter5": {
-        "title": "Butlletí de Maig #2",
-        "date": "Maig 2026"
-      },
-      "may2026Newsletter4": {
-        "title": "Butlletí de Maig",
-        "date": "Maig"
-      }
-    }
   },
   "oldNewslettersPage": {
     "title": "Butlletins",

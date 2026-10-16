@@ -23,7 +23,7 @@ La premisa del proyecto es simple y ligeramente incómoda: las cubiertas verdes 
 
 BIG4LIFE no se limitó a monitorizar sus casos piloto. Los instrumentó: estaciones meteorológicas, sensores de calidad del aire, cámaras de biotrampaje para seguir la fauna, sondas de humedad del suelo, pluviómetros. Ocho emplazamientos piloto repartidos entre Lleida, Barcelona y El Prat de Llobregat ya están generando el tipo de datos de comportamiento a largo plazo que siempre ha faltado al sector — la diferencia entre decir «las cubiertas verdes son buenas para las ciudades» y saber exactamente cuánto de buenas son, y a qué coste.
 
-Los resultados ya son tangibles. El proyecto ha renovado las cubiertas verdes del Parc Agrobiotech, la escuela infantil de Ronda Mercè y un edificio residencial en el centro de Lleida, todos ellos en Lleida, así como la cubierta verde del Auditori l'Artesà en El Prat de Llobregat — cada una reconstruida no solo para parecer verde el día de la inauguración, sino para seguir funcionando dentro de quince años.
+Los resultados ya son tangibles. El proyecto ha renovado las cubiertas verdes del Parc Agrobiotech Lleida, la escuela infantil de Ronda Mercè y un edificio residencial en el centro de Lleida, todos ellos en Lleida, así como la cubierta verde del Auditori l'Artesà en El Prat de Llobregat — cada una reconstruida no solo para parecer verde el día de la inauguración, sino para seguir funcionando dentro de quince años.
 
 ## La parte que no aparece en la hoja de especificaciones
 

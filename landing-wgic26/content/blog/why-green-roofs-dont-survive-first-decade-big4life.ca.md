@@ -23,7 +23,7 @@ La premissa del projecte és senzilla i lleugerament inquietant: les cobertes ve
 
 BIG4LIFE no es va limitar a monitorar els seus casos pilot. Els va instrumentar: estacions meteorològiques, sensors de qualitat de l'aire, càmeres de biotrampatge per seguir la fauna, sensors d'humitat del sòl i pluviòmetres. Vuit emplaçaments pilots repartits entre Lleida, Barcelona i El Prat de Llobregat generen ara el tipus de dades de comportament a llarg termini que al sector sempre li han faltat — la diferència entre "les cobertes verdes són bones per a les ciutats" i saber exactament quant de bones són, i a quin cost.
 
-Els resultats ja són tangibles. El projecte ha rehabilitat les cobertes verdes del Parc Agrobiotech, de l'escola bressol Ronda Mercè i d'un edifici residencial al centre de la ciutat de Lleida, tots a Lleida, així com la coberta verda de l'Auditori l'Artesà a El Prat de Llobregat — cadascuna reconstruïda no només per semblar verda el dia de la inauguració, sinó per seguir funcionant d'aquí a quinze anys.
+Els resultats ja són tangibles. El projecte ha rehabilitat les cobertes verdes del Parc Agrobiotech Lleida, de l'escola bressol Ronda Mercè i d'un edifici residencial al centre de la ciutat de Lleida, tots a Lleida, així com la coberta verda de l'Auditori l'Artesà a El Prat de Llobregat — cadascuna reconstruïda no només per semblar verda el dia de la inauguració, sinó per seguir funcionant d'aquí a quinze anys.
 
 ## La part que no surt a la fita tècnica
 

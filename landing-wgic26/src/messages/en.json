@@ -18,7 +18,6 @@
     "innovationDay": "Innovation Day",
     "wginAwards": "WGIN Awards",
     "keyNoteSpeakers": "Keynote Speakers",
-    "newsletters": "Newsletters",
     "blog": "Blog",
     "speakers": "Speakers",
     "registration": "Registration",
@@ -393,7 +392,7 @@
         "num": "30",
         "weekday": "Friday",
         "month": "October",
-        "place": "Agrobiotech Park, Lleida",
+        "place": "Parc Agrobiotech Lleida",
         "hours": "10:00–18:00",
         "text": "Innovation Day: two workshops, lunch and guided visits."
       }
@@ -408,11 +407,11 @@
     "visitsName": "Technical visits",
     "visitsText": "When the groups of registered participants are formed, we will send you an email with the departure time and the meeting point.",
     "agroDate": "Friday 30 Oct",
-    "agroName": "Agrobiotech Park",
+    "agroName": "Parc Agrobiotech Lleida",
     "agroAddress": "Plaça de les Ciències, Edifici CeDiCo, 1a planta, 25003 Lleida",
     "agroHours": "10:00–18:00",
     "agroText": "Transport from Barcelona to Lleida is included in your registration.",
-    "agroMapTitle": "Map of the Agrobiotech Park, Lleida",
+    "agroMapTitle": "Map of Parc Agrobiotech Lleida",
     "gettingTitle": "Getting to the CCIB",
     "gettingSubtitle": "Metro or tram. Five minutes on foot.",
     "transport": [
@@ -448,7 +447,7 @@
     "included": "Included",
     "notIncluded": "Not included",
     "lunchTitle": "Lunch",
-    "lunchText": "Every registered participant gets lunch on 27 and 28 October at the CCIB, and on 30 October at the Parc Agrobiotech in Lleida.",
+    "lunchText": "Every registered participant gets lunch on 27 and 28 October at the CCIB, and on 30 October at Parc Agrobiotech Lleida.",
     "breakfastTitle": "Breakfast",
     "breakfastText": "The coffee breaks serve coffee and tea.",
     "breakfastPlaces": "You can grab a bite at one of the places around the CCIB:",
@@ -948,6 +947,14 @@
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."
   },
   "technicalVisitsPage": {
+    "independentVisit": {
+      "label": "Self-guided visit",
+      "note": "Independent project, outside the organised itineraries A, B and C.",
+      "name": "Vall d’Hebron Research Institute",
+      "title": "A 4,000 m² roof planted with 20,000 native plants",
+      "description": "The research institute’s 4,000 m² inverted flat roof is planted with more than 20,000 native, drought-resistant plants. Its build-up combines polyurea waterproofing, 14 cm of insulation, ZinCo drainage layers, 40 cm of upcycled substrate and a self-compensating drip system, topped with 10 cm of composted pruning mulch.",
+      "imageAlt": "Vall d’Hebron Research Institute"
+    },
     "title": "Technical Visits - 29 October",
     "intro1": "Visit the most iconic green roofs and green façades of Barcelona. You will explore unique green roofs that are not normally open to the public. A coordinator will accompany the group throughout the itinerary, while a specialized guide will provide detailed explanations at each location.",
     "intro2": "Groups will be limited to a maximum of 10 participants, with up to 5 groups per itinerary. The schedule will run from 9:00 to 16:00, and travel is entirely on foot and by metro.",
@@ -1061,7 +1068,7 @@
   },
   "innovationDayPage": {
     "title": "Innovation Day - 30 October",
-    "intro1": "Spend a day inside one of the real sites of a three-year, EU-funded research project — not a set-up staged for the occasion, but the actual green roof and monitoring systems <link>BIG4LIFE</link> has spent three years installing and monitoring at the Universitat de Lleida's Agrobiotech Park.",
+    "intro1": "Spend a day inside one of the real sites of a three-year, EU-funded research project — not a set-up staged for the occasion, but the actual green roof and monitoring systems <link>BIG4LIFE</link> has spent three years installing and monitoring at the Universitat de Lleida's Parc Agrobiotech Lleida.",
     "intro2": "Participants can choose between two hands-on workshops covering different facets of urban green infrastructure, followed by lunch at the park and a guided afternoon through Lleida's historic quarter.",
     "workshop1Title": "Workshop 1: Bugs, Cities and Green Roofs",
     "workshop1Languages": "English - Spanish",
@@ -1070,7 +1077,7 @@
     "workshop2Languages": "Spanish - English",
     "workshop2Description": "Learn hands-on from six companies that install and maintain these systems every day — not case studies, but the people who actually do the work. Discover what makes a green infrastructure project succeed and last: proven construction methods, innovative materials, and the mistakes to avoid, explained by those who've gone through them on site.",
     "culturalVisitsTitle": "Cultural Visits",
-    "culturalVisit1Name": "Agrobiotech Park",
+    "culturalVisit1Name": "Parc Agrobiotech Lleida",
     "culturalVisit1Description": "The real-world site of one of BIG4LIFE's projects, with the green roof you saw during the workshops.",
     "culturalVisit2Name": "La Seu Vella",
     "culturalVisit2Description": "Lleida's most iconic historic monument, with views from the bell tower over the city and the plain below.",
@@ -1623,64 +1630,6 @@
     "ccibP2": "The CCIB includes two buildings of great architectural value: the Convention Centre and the CCIB Forum Auditorium, connected by an underground walkway. Together they offer about 100,000 m2 and capacity for up to 15,000 attendees.",
     "ccibP3": "The CCIB is located 500 meters from the beach, 6 km from the historic center, and 22 km from the airport, with excellent public transport and road connections.",
     "mapTitle": "Barcelona Map"
-  },
-  "newslettersPage": {
-    "title": "Newsletters",
-    "description": "Stay up to date with our latest newsletters.",
-    "readOnline": "Read online",
-    "latest": "Latest",
-    "downloadPdf": "Download PDF",
-    "languages": {
-      "en": "English",
-      "es": "Spanish",
-      "it": "Italian",
-      "el": "Greek",
-      "fr": "French",
-      "pt": "Portuguese",
-      "ar": "Arabic"
-    },
-    "items": {
-      "march2026": {
-        "title": "February Newsletter",
-        "date": "February "
-      },
-      "march2026Newsletter2": {
-        "title": "March Newsletter",
-        "date": "March "
-      },
-      "april2026Newsletter3": {
-        "title": "April Newsletter",
-        "date": "April "
-      },
-      "june2026Newsletter7": {
-        "title": "June Newsletter #2",
-        "date": "June 2026"
-      },
-      "july2026Newsletter10": {
-        "title": "July Newsletter #3",
-        "date": "July 2026"
-      },
-      "july2026Newsletter9": {
-        "title": "July Newsletter #2",
-        "date": "July 2026"
-      },
-      "july2026Newsletter8": {
-        "title": "July Newsletter",
-        "date": "July 2026"
-      },
-      "june2026Newsletter6": {
-        "title": "June Newsletter",
-        "date": "June 2026"
-      },
-      "may2026Newsletter5": {
-        "title": "May Newsletter #2",
-        "date": "May 2026"
-      },
-      "may2026Newsletter4": {
-        "title": "May Newsletter",
-        "date": "May "
-      }
-    }
   },
   "sponsorsPage": {
     "title": "Sponsors & Partners",

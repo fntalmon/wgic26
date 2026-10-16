@@ -18,7 +18,6 @@
     "innovationDay": "Innovation Day",
     "wginAwards": "Premios WGIN",
     "keyNoteSpeakers": "Ponentes",
-    "newsletters": "Boletines",
     "blog": "Blog",
     "speakers": "Ponentes",
     "registration": "Registro",
@@ -393,7 +392,7 @@
         "num": "30",
         "weekday": "Viernes",
         "month": "Octubre",
-        "place": "Parc Agrobiotech, Lleida",
+        "place": "Parc Agrobiotech Lleida",
         "hours": "10:00–18:00",
         "text": "Innovation Day: dos talleres, almuerzo y visitas guiadas."
       }
@@ -408,11 +407,11 @@
     "visitsName": "Visitas técnicas",
     "visitsText": "Cuando se formen los grupos de participantes inscritos, te enviaremos un correo con la hora de salida y el punto de encuentro.",
     "agroDate": "Viernes 30 oct",
-    "agroName": "Parc Agrobiotech",
+    "agroName": "Parc Agrobiotech Lleida",
     "agroAddress": "Plaça de les Ciències, Edifici CeDiCo, 1a planta, 25003 Lleida",
     "agroHours": "10:00–18:00",
     "agroText": "El transporte de Barcelona a Lleida está incluido en tu inscripción.",
-    "agroMapTitle": "Mapa del Parc Agrobiotech, Lleida",
+    "agroMapTitle": "Mapa del Parc Agrobiotech Lleida",
     "gettingTitle": "Cómo llegar al CCIB",
     "gettingSubtitle": "Metro o tranvía. Cinco minutos a pie.",
     "transport": [
@@ -448,7 +447,7 @@
     "included": "Incluido",
     "notIncluded": "No incluido",
     "lunchTitle": "Almuerzo",
-    "lunchText": "Cada participante inscrito tiene almuerzo los días 27 y 28 de octubre en el CCIB, y el 30 de octubre en el Parc Agrobiotech de Lleida.",
+    "lunchText": "Cada participante inscrito tiene almuerzo los días 27 y 28 de octubre en el CCIB, y el 30 de octubre en el Parc Agrobiotech Lleida.",
     "breakfastTitle": "Desayuno",
     "breakfastText": "En las pausas café se sirve café y té.",
     "breakfastPlaces": "Puedes tomar algo en alguno de los locales de los alrededores del CCIB:",
@@ -948,6 +947,14 @@
     "closing": "Este primer grupo de ponentes subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."
   },
   "technicalVisitsPage": {
+    "independentVisit": {
+      "label": "Visita por libre",
+      "note": "Proyecto independiente, fuera de los itinerarios organizados A, B y C.",
+      "name": "Vall d’Hebron Research Institute",
+      "title": "Una cubierta de 4.000 m² plantada con 20.000 plantas autóctonas",
+      "description": "La cubierta plana invertida de 4.000 m² del instituto de investigación está plantada con más de 20.000 plantas autóctonas y resistentes a la sequía. Su composición combina impermeabilización con poliurea, 14 cm de aislamiento, capas de drenaje ZinCo, 40 cm de sustrato reciclado (upcycling) y un sistema de goteo autocompensante, rematado con 10 cm de mulch de triturado de poda compostado.",
+      "imageAlt": "Vall d’Hebron Research Institute"
+    },
     "title": "Visitas técnicas - 29 de octubre",
     "intro1": "Visita las cubiertas verdes y fachadas vegetales más icónicas de Barcelona. Explorarás cubiertas verdes únicas que normalmente no están abiertas al público. Un coordinador acompañará al grupo durante todo el itinerario, mientras que un guía especializado ofrecerá explicaciones detalladas en cada lugar.",
     "intro2": "Los grupos estarán limitados a un máximo de 10 participantes, con hasta 5 grupos por itinerario. El horario será de 9:00 a 16:00, y los desplazamientos se realizarán íntegramente a pie y en metro.",
@@ -1061,7 +1068,7 @@
   },
   "innovationDayPage": {
     "title": "Innovation Day - 30 de octubre",
-    "intro1": "Pasa un día en uno de los emplazamientos reales de un proyecto de investigación europeo de tres años —no un escenario montado para la ocasión, sino la cubierta verde y los sistemas de monitorización que <link>BIG4LIFE</link> lleva tres años instalando y monitorizando en el Parc Agrobiotech de la Universitat de Lleida.",
+    "intro1": "Pasa un día en uno de los emplazamientos reales de un proyecto de investigación europeo de tres años —no un escenario montado para la ocasión, sino la cubierta verde y los sistemas de monitorización que <link>BIG4LIFE</link> lleva tres años instalando y monitorizando en el Parc Agrobiotech Lleida.",
     "intro2": "Las personas participantes podrán elegir entre dos talleres prácticos sobre distintas facetas de la infraestructura verde urbana, seguidos de un almuerzo en el parque y una tarde guiada por el casco histórico de Lleida.",
     "workshop1Title": "Taller 1: Bichos, ciudades y cubiertas verdes",
     "workshop1Languages": "Inglés - Español",
@@ -1070,7 +1077,7 @@
     "workshop2Languages": "Español - Inglés",
     "workshop2Description": "Aprende de forma práctica de la mano de seis empresas que instalan y mantienen estos sistemas cada día —no estudios de caso, sino las personas que realmente hacen el trabajo. Descubre qué hace que un proyecto de infraestructura verde tenga éxito y perdure: métodos constructivos probados, materiales innovadores y los errores a evitar, explicados por quienes los han vivido en obra.",
     "culturalVisitsTitle": "Visitas culturales",
-    "culturalVisit1Name": "Parc Agrobiotech",
+    "culturalVisit1Name": "Parc Agrobiotech Lleida",
     "culturalVisit1Description": "El emplazamiento real de uno de los proyectos de BIG4LIFE, con la cubierta verde que verás durante los talleres.",
     "culturalVisit2Name": "La Seu Vella",
     "culturalVisit2Description": "El monumento histórico más emblemático de Lleida, con vistas desde el campanario sobre la ciudad y la planicie.",
@@ -1111,7 +1118,7 @@
     "technicalVisitsDayLabel": "Dia 3 · Barcelona",
     "technicalVisitsDescription": "Itinerarios guiados por cubiertas y fachadas verdes emblematicas de Barcelona.",
     "innovationDayDayLabel": "Dia 4 · Lleida",
-    "innovationDayDescription": "Talleres practicos sobre innovacion e investigacion en infraestructura verde en el Parc Agrobiotech de Lleida.",
+    "innovationDayDescription": "Talleres practicos sobre innovacion e investigacion en infraestructura verde en el Parc Agrobiotech Lleida.",
     "viewDetails": "Ver detalles",
     "moreInfoTitle": "Mas informacion"
   },
@@ -1623,64 +1630,6 @@
     "ccibP2": "El CCIB incluye dos edificios de gran valor arquitectonico: el Centro de Convenciones y el Auditorio Forum CCIB, conectados por una pasarela subterranea. En conjunto ofrecen unos 100.000 m2 y capacidad para hasta 15.000 asistentes.",
     "ccibP3": "El CCIB esta ubicado a 500 metros de la playa, a 6 km del centro historico y a 22 km del aeropuerto, con excelentes conexiones por transporte publico y carretera.",
     "mapTitle": "Mapa de Barcelona"
-  },
-  "newslettersPage": {
-    "title": "Boletines",
-    "description": "Mantente actualizado con nuestros últimos boletines.",
-    "readOnline": "Leer en línea",
-    "latest": "Mas reciente",
-    "downloadPdf": "Descargar PDF",
-    "languages": {
-      "en": "Inglés",
-      "es": "Español",
-      "it": "Italiano",
-      "el": "Griego",
-      "fr": "Francés",
-      "pt": "Portugués",
-      "ar": "Árabe"
-    },
-    "items": {
-      "march2026": {
-        "title": "Boletín Febrero ",
-        "date": "Febrero "
-      },
-      "march2026Newsletter2": {
-        "title": "Boletín de Marzo",
-        "date": "Marzo "
-      },
-      "april2026Newsletter3": {
-        "title": "Boletín de Abril",
-        "date": "Abril "
-      },
-      "june2026Newsletter7": {
-        "title": "Boletín de Junio #2",
-        "date": "Junio 2026"
-      },
-      "july2026Newsletter10": {
-        "title": "Boletín de Julio #3",
-        "date": "Julio 2026"
-      },
-      "july2026Newsletter9": {
-        "title": "Boletín de Julio #2",
-        "date": "Julio 2026"
-      },
-      "july2026Newsletter8": {
-        "title": "Boletín de Julio",
-        "date": "Julio 2026"
-      },
-      "june2026Newsletter6": {
-        "title": "Boletín de Junio",
-        "date": "Junio 2026"
-      },
-      "may2026Newsletter5": {
-        "title": "Boletín de Mayo #2",
-        "date": "Mayo 2026"
-      },
-      "may2026Newsletter4": {
-        "title": "Boletín de Mayo",
-        "date": "Mayo "
-      }
-    }
   },
   "oldNewslettersPage": {
     "title": "Boletines",

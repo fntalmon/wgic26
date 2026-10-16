@@ -18,7 +18,6 @@
     "innovationDay": "Innovation Day",
     "wginAwards": "Prix WGIN",
     "keyNoteSpeakers": "Conférenciers",
-    "newsletters": "Newsletters",
     "blog": "Blog",
     "speakers": "Intervenants",
     "registration": "Inscription",
@@ -393,7 +392,7 @@
         "num": "30",
         "weekday": "Vendredi",
         "month": "Octobre",
-        "place": "Parc Agrobiotech, Lleida",
+        "place": "Parc Agrobiotech Lleida",
         "hours": "10:00–18:00",
         "text": "Innovation Day : deux ateliers, déjeuner et visites guidées."
       }
@@ -408,11 +407,11 @@
     "visitsName": "Visites techniques",
     "visitsText": "Lorsque les groupes de participants inscrits seront constitués, nous vous enverrons un e-mail avec l'heure de départ et le point de rendez-vous.",
     "agroDate": "Vendredi 30 oct.",
-    "agroName": "Parc Agrobiotech",
+    "agroName": "Parc Agrobiotech Lleida",
     "agroAddress": "Plaça de les Ciències, Edifici CeDiCo, 1a planta, 25003 Lleida",
     "agroHours": "10:00–18:00",
     "agroText": "Le transport de Barcelone à Lleida est inclus dans votre inscription.",
-    "agroMapTitle": "Plan du Parc Agrobiotech, Lleida",
+    "agroMapTitle": "Plan du Parc Agrobiotech Lleida",
     "gettingTitle": "Se rendre au CCIB",
     "gettingSubtitle": "Métro ou tramway. Cinq minutes à pied.",
     "transport": [
@@ -448,7 +447,7 @@
     "included": "Inclus",
     "notIncluded": "Non inclus",
     "lunchTitle": "Déjeuner",
-    "lunchText": "Chaque participant inscrit a le déjeuner les 27 et 28 octobre au CCIB, et le 30 octobre au Parc Agrobiotech à Lleida.",
+    "lunchText": "Chaque participant inscrit a le déjeuner les 27 et 28 octobre au CCIB, et le 30 octobre au Parc Agrobiotech Lleida.",
     "breakfastTitle": "Petit-déjeuner",
     "breakfastText": "Les pauses-café proposent du café et du thé.",
     "breakfastPlaces": "Vous pouvez prendre quelque chose dans l'un des établissements autour du CCIB :",
@@ -948,6 +947,14 @@
     "closing": "Ce premier groupe d'intervenants souligne l'ambition, la profondeur et la vision multidisciplinaire du WGIC 2026, le positionnant comme un forum clé du débat urbain mondial."
   },
   "technicalVisitsPage": {
+    "independentVisit": {
+      "label": "Visite libre",
+      "note": "Projet indépendant, en dehors des itinéraires organisés A, B et C.",
+      "name": "Vall d’Hebron Research Institute",
+      "title": "Une toiture de 4 000 m² plantée de 20 000 plantes indigènes",
+      "description": "La toiture-terrasse inversée de 4 000 m² de l’institut de recherche est plantée de plus de 20 000 plantes indigènes résistantes à la sécheresse. Sa composition associe une étanchéité en polyurée, 14 cm d’isolation, des couches de drainage ZinCo, 40 cm de substrat recyclé (upcycling) et un système de goutte-à-goutte autocompensant, recouvert de 10 cm de mulch de broyat de taille composté.",
+      "imageAlt": "Vall d’Hebron Research Institute"
+    },
     "title": "Visites techniques - 29 octobre",
     "intro1": "Visitez les toits verts et les façades vertes les plus emblématiques de Barcelone. Vous explorerez des toits verts uniques qui ne sont normalement pas ouverts au public. Un coordinateur accompagnera le groupe tout au long de l'itinéraire, tandis qu'un guide spécialisé fournira des explications détaillées à chaque endroit.",
     "intro2": "Les groupes seront limités à un maximum de 10 participants, avec un maximum de 5 groupes par itinéraire. L'horaire se déroulera de 9h00 à 16h00 et les déplacements se feront entièrement à pied et en métro.",
@@ -1061,7 +1068,7 @@
   },
   "innovationDayPage": {
     "title": "Innovation Day - 30 octobre",
-    "intro1": "Passez une journée sur l'un des sites réels d'un projet de recherche européen de trois ans — pas un décor monté pour l'occasion, mais la toiture verte et les systèmes de monitoring que <link>BIG4LIFE</link> installe et suit depuis trois ans au Parc Agrobiotech de l'Université de Lleida.",
+    "intro1": "Passez une journée sur l'un des sites réels d'un projet de recherche européen de trois ans — pas un décor monté pour l'occasion, mais la toiture verte et les systèmes de monitoring que <link>BIG4LIFE</link> installe et suit depuis trois ans au Parc Agrobiotech Lleida de l'Université de Lleida.",
     "intro2": "Les participants pourront choisir entre deux ateliers pratiques sur différentes facettes de l'infrastructure verte urbaine, suivis d'un déjeuner au parc et d'une après-midi guidée dans le quartier historique de Lleida.",
     "workshop1Title": "Atelier 1 : Insectes, villes et toits verts",
     "workshop1Languages": "Anglais - Espagnol",
@@ -1070,7 +1077,7 @@
     "workshop2Languages": "Espagnol - Anglais",
     "workshop2Description": "Apprenez en pratique aux côtés de six entreprises qui installent et entretiennent ces systèmes au quotidien — pas des études de cas, mais les personnes qui font réellement le travail. Découvrez ce qui fait le succès et la durabilité d'un projet d'infrastructure verte : méthodes de construction éprouvées, matériaux innovants et erreurs à éviter, expliquées par celles et ceux qui les ont vécues sur le terrain.",
     "culturalVisitsTitle": "Visites culturelles",
-    "culturalVisit1Name": "Parc Agrobiotech",
+    "culturalVisit1Name": "Parc Agrobiotech Lleida",
     "culturalVisit1Description": "Le site réel de l'un des projets de BIG4LIFE, avec la toiture verte que vous avez vue pendant les ateliers.",
     "culturalVisit2Name": "La Seu Vella",
     "culturalVisit2Description": "Le monument historique le plus emblématique de Lleida, avec des vues depuis le clocher sur la ville et la plaine.",
@@ -1111,7 +1118,7 @@
     "technicalVisitsDayLabel": "Jour 3 · Barcelone",
     "technicalVisitsDescription": "Itinéraires guidés à travers les toits et façades végétalisés emblématiques de Barcelone.",
     "innovationDayDayLabel": "Jour 4 · Lleida",
-    "innovationDayDescription": "Ateliers pratiques sur l'innovation et la recherche en infrastructure verte au Parc Agrobiotech de Lleida.",
+    "innovationDayDescription": "Ateliers pratiques sur l'innovation et la recherche en infrastructure verte au Parc Agrobiotech Lleida.",
     "viewDetails": "Voir les détails",
     "moreInfoTitle": "Plus d'informations"
   },
@@ -1623,64 +1630,6 @@
     "ccibP2": "Le CCIB comprend deux bâtiments d'une grande valeur architecturale : le Palais des Congrès et l'Auditorium Forum CCIB, reliés par une passerelle souterraine. Ensemble, ils offrent environ 100 000 m2 et peuvent accueillir jusqu'à 15 000 participants.",
     "ccibP3": "Le CCIB est situé à 500 mètres de la plage, à 6 km du centre historique et à 22 km de l'aéroport, avec d'excellentes liaisons de transports en commun et routières.",
     "mapTitle": "Carte de Barcelone"
-  },
-  "newslettersPage": {
-    "title": "Lettres d'information",
-    "description": "Restez informé de nos dernières newsletters.",
-    "readOnline": "Lire en ligne",
-    "latest": "Dernier",
-    "downloadPdf": "Télécharger le PDF",
-    "languages": {
-      "en": "Anglais",
-      "es": "Espagnol",
-      "it": "italien",
-      "el": "grec",
-      "fr": "Français",
-      "pt": "portugais",
-      "ar": "arabe"
-    },
-    "items": {
-      "march2026": {
-        "title": "Bulletin de février",
-        "date": "Février"
-      },
-      "march2026Newsletter2": {
-        "title": "Bulletin de mars",
-        "date": "Mars"
-      },
-      "april2026Newsletter3": {
-        "title": "Bulletin d'avril",
-        "date": "Avril"
-      },
-      "june2026Newsletter7": {
-        "title": "Bulletin de juin #2",
-        "date": "juin 2026"
-      },
-      "july2026Newsletter10": {
-        "title": "Bulletin de juillet #3",
-        "date": "juillet 2026"
-      },
-      "july2026Newsletter9": {
-        "title": "Bulletin de juillet #2",
-        "date": "juillet 2026"
-      },
-      "july2026Newsletter8": {
-        "title": "Bulletin de juillet",
-        "date": "juillet 2026"
-      },
-      "june2026Newsletter6": {
-        "title": "Bulletin de juin",
-        "date": "juin 2026"
-      },
-      "may2026Newsletter5": {
-        "title": "Bulletin de mai #2",
-        "date": "mai 2026"
-      },
-      "may2026Newsletter4": {
-        "title": "Bulletin de mai",
-        "date": "Peut"
-      }
-    }
   },
   "sponsorsPage": {
     "title": "Sponsors et Partenaires",

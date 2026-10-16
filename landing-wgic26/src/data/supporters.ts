@@ -76,6 +76,12 @@ export const supporters: Supporter[] = [
     alt: "Diputació de Barcelona",
   },
   {
+    href: "https://www.barcelona.cat/parcsijardins",
+    src: "/img/logos/barcelona - parcs i jardins.png",
+    alt: "Barcelona – Parcs i Jardins",
+    imageClassName: "scale-200",
+  },
+  {
     href: "https://www.ibb.csic.es/es/",
     src: "/img/logos/ibb.png",
     alt: "Institut Botànic de Barcelona (IBB)",

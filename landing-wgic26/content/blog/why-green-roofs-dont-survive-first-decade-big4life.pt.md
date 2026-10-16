@@ -23,7 +23,7 @@ A premissa do projeto é simples e ligeiramente inquietante: os telhados verdes 
 
 O BIG4LIFE não se limitou a monitorizar os seus casos-piloto. Instrumentou-os: estações meteorológicas, sensores de qualidade do ar, câmaras de biotrapagem para seguir a fauna, sensores de humidade do solo, pluviómetros. Oito locais-piloto em Lleida, Barcelona e El Prat de Llobregat estão agora a gerar o tipo de dados de desempenho a longo prazo que o setor sempre careceu — a diferença entre "os telhados verdes são bons para as cidades" e saber exatamente quanto bons, e a que custo.
 
-Os resultados já são tangíveis. O projeto renovou os telhados verdes do Parc Agrobiotech, da creche Ronda Mercè e de um edifício residencial no centro de Lleida, todos em Lleida, e o telhado verde do Auditori l'Artesà em El Prat de Llobregat — cada um reconstruído não apenas para parecer verde no dia da inauguração, mas para continuar a funcionar daqui a quinze anos.
+Os resultados já são tangíveis. O projeto renovou os telhados verdes do Parc Agrobiotech Lleida, da creche Ronda Mercè e de um edifício residencial no centro de Lleida, todos em Lleida, e o telhado verde do Auditori l'Artesà em El Prat de Llobregat — cada um reconstruído não apenas para parecer verde no dia da inauguração, mas para continuar a funcionar daqui a quinze anos.
 
 ## A parte que não aparece numa folha de especificações
 

@@ -30,6 +30,9 @@ export const technicalVisitsCollaborators: CollaboratorLogo[] = [
   logo("COAC", "coac.png", 1400, 657),
   logo("Le Prieuré", "le-prieure.png", 884, 900),
   logo("Hotel Sofitel Barcelona Skipper", "sofitel.png", 640, 110),
+  logo("Vall d’Hebron Institut de Recerca", "vhir.png", 1495, 474),
+  logo("Massoni", "massoni.jpg", 487, 482),
+  logo("abpaisatgistes", "abpaisatgistes.jpg", 2188, 507),
 ];
 
 // Day 4 — Innovation Day (30 October): participating companies per workshop.

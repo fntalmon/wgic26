@@ -95,6 +95,36 @@ const TechnicalVisits = async () => {
                     ))}
 
                     <div className="space-y-5">
+                        <div>
+                            <h2 className="text-2xl font-semibold uppercase text-white tracking-wide">
+                                {t("independentVisit.label")}
+                            </h2>
+                            <p className="text-white/50 text-sm mt-1">{t("independentVisit.note")}</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-lg">
+                                <Image
+                                    src="/img/visits/Vall d'Hebron Research Institute-Roof.jpg"
+                                    alt={t("independentVisit.imageAlt")}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="flex flex-col gap-3">
+                                <div>
+                                    <p className="text-white/50 text-sm">{t("independentVisit.name")}</p>
+                                    <h3 className="text-lg font-semibold uppercase text-white tracking-wide mt-1">
+                                        {t("independentVisit.title")}
+                                    </h3>
+                                </div>
+                                <p className="text-white/70 text-sm leading-relaxed">
+                                    {t("independentVisit.description")}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="space-y-5">
                         <h2 className="text-2xl font-semibold uppercase text-white tracking-wide">
                             {t("collaboratorsTitle")}
                         </h2>

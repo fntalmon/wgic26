@@ -23,7 +23,7 @@ La prémisse du projet est simple et légèrement dérangeante : les toitures ve
 
 BIG4LIFE ne s'est pas contenté de suivre ses sites pilotes. Il les a instrumentés : stations météo, capteurs de qualité de l'air, caméras biotrapage pour suivre la faune, sondes d'humidité du sol, pluviomètres. Huit sites pilotes à Lleida, Barcelone et El Prat de Llobregat produisent aujourd'hui le type de données de performance à long terme dont le secteur a toujours manqué — la différence entre « les toitures vertes sont bonnes pour les villes » et savoir exactement à quel point, et à quel coût.
 
-Les résultats sont déjà tangibles. Le projet a rénové les toitures vertes du Parc Agrobiotech, de la crèche Ronda Mercè et d'un immeuble résidentiel en centre-ville de Lleida, toutes situées à Lleida, ainsi que la toiture verte de l'Auditori l'Artesà à El Prat de Llobregat — chacune reconstruite non pas pour paraître verte le jour de l'inauguration, mais pour fonctionner encore dans quinze ans.
+Les résultats sont déjà tangibles. Le projet a rénové les toitures vertes du Parc Agrobiotech Lleida, de la crèche Ronda Mercè et d'un immeuble résidentiel en centre-ville de Lleida, toutes situées à Lleida, ainsi que la toiture verte de l'Auditori l'Artesà à El Prat de Llobregat — chacune reconstruite non pas pour paraître verte le jour de l'inauguration, mais pour fonctionner encore dans quinze ans.
 
 ## La partie qui n'apparaît pas sur une fiche technique
 

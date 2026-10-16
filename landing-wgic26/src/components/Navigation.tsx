@@ -185,24 +185,6 @@ const Navigation = () => {
           icon: <ArrowRight />,
         },
         {
-          title: t("speakers"),
-          url: "/program/speakers",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: t("posters"),
-          url: "/program/posters",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: t("mainTopics"),
-          url: "/program/topics",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
           title: `${t("workshops")} · 27-28 ${month}`,
           url: "/program/workshops",
           description: "...",
@@ -226,27 +208,22 @@ const Navigation = () => {
           description: "...",
           icon: <ArrowRight />,
         },
+        {
+          title: t("posters"),
+          url: "/program/posters",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
+          title: t("mainTopics"),
+          url: "/program/topics",
+          description: "...",
+          icon: <ArrowRight />,
+        },
       ],
     },
     { title: t("keyNoteSpeakers"), url: "/key-note-speakers" },
-    {
-      title: t("news"),
-      url: "/blog",
-      items: [
-        {
-          title: t("blog"),
-          url: "/blog",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
-          title: t("newsletters"),
-          url: "/newsletters",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-      ],
-    },
+    { title: t("news"), url: "/blog" },
     // { title: t("speakers"), url: "/speakers" },
     // { title: t("registration"), url: "/registration", disabled: true },
     {
