@@ -73,7 +73,6 @@ export default async function SpeakersPage() {
       <PageHeader
         title={t("title")}
         description={t("description")}
-        section="program"
       />
       <SpeakersClient speakers={speakers} translations={translations} />
     </div>

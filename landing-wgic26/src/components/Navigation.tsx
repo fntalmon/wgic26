@@ -185,12 +185,6 @@ const Navigation = () => {
           icon: <ArrowRight />,
         },
         {
-          title: t("speakers"),
-          url: "/program/speakers",
-          description: "...",
-          icon: <ArrowRight />,
-        },
-        {
           title: `${t("workshops")} · 27-28 ${month}`,
           url: "/program/workshops",
           description: "...",
@@ -228,7 +222,7 @@ const Navigation = () => {
         },
       ],
     },
-    { title: t("keyNoteSpeakers"), url: "/key-note-speakers" },
+    { title: t("speakers"), url: "/program/speakers" },
     { title: t("news"), url: "/blog" },
     // { title: t("speakers"), url: "/speakers" },
     // { title: t("registration"), url: "/registration", disabled: true },

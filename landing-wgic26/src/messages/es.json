@@ -19,7 +19,7 @@
     "wginAwards": "Premios WGIN",
     "keyNoteSpeakers": "Ponentes",
     "blog": "Blog",
-    "speakers": "Ponentes",
+    "speakers": "Speakers",
     "registration": "Registro",
     "partnersExhibitors": "Expositores",
     "sponsors": "Patrocinadores",
@@ -143,7 +143,7 @@
     "introBlockP2": "WGIC26 reúne a quienes escriben esas reglas y a quienes entregan los resultados: responsables políticos, investigadores, arquitectos, ingenieros, contratistas y técnicos municipales, durante cuatro días en Barcelona y Lleida.",
     "featuredSpeakersEyebrow": "Ponentes destacados",
     "featuredSpeakersTitle": "Voces internacionales que redefinen cómo las ciudades conviven con la naturaleza",
-    "seeAllSpeakers": "Ver todos los ponentes",
+    "seeAllSpeakers": "Ver todos los speakers",
     "whereEyebrow": "Dónde sucede",
     "whereTitle": "Cuatro días, dos ciudades, tres formas de participar",
     "whereCongressDate": "27–28 de octubre",
@@ -774,15 +774,15 @@
     "p2": "Los detalles de sesiones, formatos y pautas de participacion se publicaran cuando se confirme el programa final."
   },
   "programSpeakersPage": {
-    "title": "Ponentes",
+    "title": "Speakers",
     "description": "Conoce a los expertos que participarán en WGIC26.",
-    "noSpeakers": "Aún no hay ponentes disponibles.",
+    "noSpeakers": "Aún no hay speakers disponibles.",
     "moreInfo": "Más info",
     "lessInfo": "Menos info",
     "linkedin": "LinkedIn",
-    "speakersCount": "Ponentes",
-    "search": "Buscar ponentes",
-    "noResults": "Ningún ponente coincide con tu búsqueda."
+    "speakersCount": "Speakers",
+    "search": "Buscar speakers",
+    "noResults": "Ningún speaker coincide con tu búsqueda."
   },
   "programAgendaPage": {
     "title": "Agenda",
