@@ -33,6 +33,7 @@ export const sponsorTierBox = {
   goldPartners: "h-20 w-44 md:h-24 md:w-56",
   gardenBigExhibitors: "h-16 w-32 md:h-20 md:w-40",
   gardenMediumExhibitors: "h-12 w-24 md:h-16 md:w-32",
+  flowerExhibitors: "h-11 w-36 md:h-14 md:w-44",
   mediaPartners: "h-9 w-20 md:h-12 md:w-24",
 } as const;
 
@@ -226,6 +227,21 @@ export const sponsorTiers: SponsorTier[] = [
         height: 1778,
         className: "h-16 md:h-20 w-auto object-contain",
         homeBoxClassName: "h-16 w-20 md:h-20 md:w-24",
+      },
+    ],
+  },
+  {
+    key: "flowerExhibitors",
+    titleKey: "flowerExhibitors",
+    logos: [
+      {
+        // Centre de Ciència i Tecnologia Forestal de Catalunya (CTFC). Pedido de Marina Deusedas.
+        href: "https://www.ctfc.cat/en/",
+        src: "/img/logos/CTFC_logo_color.png",
+        alt: "Centre de Ciència i Tecnologia Forestal de Catalunya (CTFC)",
+        width: 2948,
+        height: 815,
+        className: "h-12 md:h-14 w-auto object-contain",
       },
     ],
   },

@@ -14,6 +14,7 @@ import {
   Gem,
   Trees,
   Leaf,
+  Flower2,
   Newspaper,
   HeartHandshake,
   ArrowRight,
@@ -32,6 +33,7 @@ const tierIcons: Record<string, React.ComponentType<{ className?: string; size?:
   elitePartners: Gem,
   gardenBigExhibitors: Trees,
   gardenMediumExhibitors: Leaf,
+  flowerExhibitors: Flower2,
   mediaPartners: Newspaper,
 };
 
@@ -43,6 +45,7 @@ const tierLogoBox: Record<string, string> = {
   elitePartners: "h-20 w-36",
   gardenBigExhibitors: "h-16 w-32",
   gardenMediumExhibitors: "h-12 w-28",
+  flowerExhibitors: "h-12 w-40",
   mediaPartners: "h-9 w-24",
 };
 

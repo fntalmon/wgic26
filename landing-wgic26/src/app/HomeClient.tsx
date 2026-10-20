@@ -592,13 +592,39 @@ export default function HomeClient() {
             </div>
           </div>
 
+          {/* FLOWER EXHIBITORS */}
+          <div className="bg-white rounded-3xl border border-white/10 p-6 md:p-8">
+            <h3 className="text-center text-base font-bold mb-5 text-gray-800 uppercase tracking-wider">
+              {t("flowerExhibitors")}
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 min-h-[60px]">
+              {sponsorTiers[6].logos.map((logo) => (
+                <a
+                  key={logo.href}
+                  href={logo.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center justify-center ${logo.homeBoxClassName ?? homeSponsorTierBox.flowerExhibitors}`}
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    className="max-h-full max-w-full w-auto h-auto object-contain"
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+
           {/* MEDIA PARTNERS */}
           <div className="bg-white rounded-3xl border border-white/10 p-6 md:p-8">
             <h3 className="text-center text-base font-bold mb-5 text-gray-800 uppercase tracking-wider">
               {t("mediaPartners")}
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
-              {sponsorTiers[6].logos.map((logo) => (
+              {sponsorTiers[7].logos.map((logo) => (
                 <a
                   key={logo.href}
                   href={logo.href}
