@@ -7,7 +7,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 interface Speaker {
   id: string;
-  image: string;
+  image?: string;
   name: string;
   bio?: string;
 }

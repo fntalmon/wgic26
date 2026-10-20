@@ -467,6 +467,10 @@
         "a": "If you need an invoice or a proof of payment, write to wgic2026.economics@udl.cat."
       },
       {
+        "q": "Can I get a refund of my registration fee?",
+        "a": "Registration fees can be refunded for cancellations received before 15 October 2026. From 15 October onwards, refunds are no longer available.\n\nIf you can’t attend, your registration can’t be refunded after that date. Questions about your registration? Write to us at registration@wgic26.org."
+      },
+      {
         "q": "Are the technical visits included in my congress registration?",
         "a": "No. They have their own registration and cost 80 €. You choose one of three itineraries, and the groups are small. When the groups are formed, we will send you an email with the departure time and the meeting point."
       },
@@ -942,6 +946,10 @@
       "speaker27": {
         "name": "Bert Belmans",
         "bio": "Bert Belmans is an engineer-architect with over 15 years of experience in climate-adaptive architecture and nature-based solutions (NbS). As Global President of the World Green Infrastructure Network's Emerging Professionals Chapter, he gives a voice to emerging leaders and bridges the Global North and South. As a professor at Vrije Universiteit Brussel and lecturer and research coordinator at Universiteit Antwerpen, he specializes in building physics and energy performance, advancing passive design strategies that optimize material and energy flows for people and planet."
+      },
+      "speaker28": {
+        "name": "David Martínez",
+        "bio": "David Martínez is Urban Planning Manager at Barcelona City Council. In this role, he contributes to the coordination and promotion of initiatives related to urban planning and city transformation, supporting an integrated vision of urban development and public space."
       }
     },
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."

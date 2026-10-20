@@ -467,6 +467,10 @@
         "a": "Si necesitas una factura o un justificante de pago, escribe a wgic2026.economics@udl.cat."
       },
       {
+        "q": "¿Puedo recibir un reembolso de mi cuota de inscripción?",
+        "a": "Las cuotas de inscripción pueden reembolsarse en caso de cancelaciones recibidas antes del 15 de octubre de 2026. A partir del 15 de octubre ya no es posible solicitar reembolsos.\n\nSi no puedes asistir, tu inscripción no podrá reembolsarse después de esa fecha. ¿Tienes dudas sobre tu inscripción? Escríbenos a registration@wgic26.org."
+      },
+      {
         "q": "¿Las visitas técnicas están incluidas en mi inscripción al congreso?",
         "a": "No. Tienen su propia inscripción y cuestan 80 €. Eliges uno de los tres itinerarios y los grupos son reducidos. Cuando se formen los grupos, te enviaremos un correo con la hora de salida y el punto de encuentro."
       },
@@ -942,6 +946,10 @@
       "speaker27": {
         "name": "Bert Belmans",
         "bio": "Bert Belmans es ingeniero-arquitecto con más de 15 años de experiencia en arquitectura adaptada al clima y soluciones basadas en la naturaleza (NbS). Como presidente global del Capítulo de Profesionales Emergentes de la World Green Infrastructure Network, da voz a los líderes emergentes y tiende puentes entre el Norte y el Sur Global. Profesor en la Vrije Universiteit Brussel y docente y coordinador de investigación en la Universiteit Antwerpen, se especializa en física de la edificación y rendimiento energético, impulsando estrategias de diseño pasivo que optimizan los flujos de materiales y energía para las personas y el planeta."
+      },
+      "speaker28": {
+        "name": "David Martínez",
+        "bio": "David Martínez es gerente de Urbanismo del Ajuntament de Barcelona. En este cargo, contribuye a la coordinación y el impulso de iniciativas relacionadas con el urbanismo y la transformación de la ciudad, apoyando una visión integrada del desarrollo urbano y del espacio público."
       }
     },
     "closing": "Este primer grupo de ponentes subraya la ambicion, profundidad y vision multidisciplinar de WGIC 2026, posicionandolo como un foro clave para el debate urbano global."

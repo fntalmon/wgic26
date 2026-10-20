@@ -185,6 +185,12 @@ const Navigation = () => {
           icon: <ArrowRight />,
         },
         {
+          title: t("speakers"),
+          url: "/program/speakers",
+          description: "...",
+          icon: <ArrowRight />,
+        },
+        {
           title: `${t("workshops")} · 27-28 ${month}`,
           url: "/program/workshops",
           description: "...",

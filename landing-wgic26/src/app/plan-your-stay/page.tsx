@@ -3,6 +3,12 @@ import PageHeader from "@/components/PageHeader";
 import { RegisterCTA } from "@/components/RegisterCTA";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion";
 import { MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -13,6 +19,7 @@ export const metadata: Metadata = {
 
 type Day = { num: string; weekday: string; month: string; place: string; hours: string; text: string };
 type Transport = { title: string; text: string };
+type Faq = { q: string; a: string };
 
 const EMAIL_PATTERN = /([\w.+-]+@[\w-]+(?:\.[\w-]+)+)/g;
 
@@ -40,6 +47,7 @@ const PlanYourStay = async () => {
     const days = t.raw("days") as Day[];
     const transport = t.raw("transport") as Transport[];
     const places = t.raw("places") as string[];
+    const faq = t.raw("faq") as Faq[];
 
     return (
         <div>
@@ -215,6 +223,29 @@ const PlanYourStay = async () => {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* FAQ */}
+            <section className="container mx-auto py-16 px-4">
+                <div className="max-w-4xl mx-auto">
+                    <h2 className="text-3xl font-bold text-white mb-8">{t("faqTitle")}</h2>
+                    <Accordion type="single" collapsible className="w-full flex flex-col gap-3">
+                        {faq.map((item, index) => (
+                            <AccordionItem
+                                key={item.q}
+                                value={`faq-${index}`}
+                                className="bg-white/5 border border-white/10 rounded-xl overflow-hidden data-[state=open]:bg-white/[0.07]"
+                            >
+                                <AccordionTrigger className="text-white hover:no-underline px-4 py-4 sm:px-6 sm:py-5 group text-base">
+                                    {item.q}
+                                </AccordionTrigger>
+                                <AccordionContent className="text-white/70 text-sm leading-relaxed pb-5 px-4 sm:px-6 whitespace-pre-line">
+                                    {withMailLinks(item.a)}
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                    </Accordion>
                 </div>
             </section>
 

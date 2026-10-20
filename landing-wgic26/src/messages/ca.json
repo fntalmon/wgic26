@@ -467,6 +467,10 @@
         "a": "Si necessites una factura o un justificant de pagament, escriu a wgic2026.economics@udl.cat."
       },
       {
+        "q": "Puc rebre un reemborsament de la meva quota d'inscripció?",
+        "a": "Les quotes d'inscripció es poden reemborsar en cas de cancel·lacions rebudes abans del 15 d'octubre de 2026. A partir del 15 d'octubre ja no és possible sol·licitar reemborsaments.\n\nSi no pots assistir-hi, la teva inscripció no es podrà reemborsar després d'aquesta data. Tens dubtes sobre la teva inscripció? Escriu-nos a registration@wgic26.org."
+      },
+      {
         "q": "Les visites tècniques estan incloses en la meva inscripció al congrés?",
         "a": "No. Tenen la seva pròpia inscripció i costen 80 €. Tries un dels tres itineraris i els grups són reduïts. Quan es formin els grups, t'enviarem un correu amb l'hora de sortida i el punt de trobada."
       },
@@ -942,6 +946,10 @@
       "speaker27": {
         "name": "Bert Belmans",
         "bio": "Bert Belmans és enginyer-arquitecte amb més de 15 anys d'experiència en arquitectura adaptada al clima i solucions basades en la natura (NbS). Com a president global del Capítol de Professionals Emergents de la World Green Infrastructure Network, dona veu als líders emergents i fa de pont entre el Nord i el Sud Global. Professor a la Vrije Universiteit Brussel i docent i coordinador de recerca a la Universiteit Antwerpen, s'especialitza en física de l'edificació i rendiment energètic, i impulsa estratègies de disseny passiu que optimitzen els fluxos de materials i energia per a les persones i el planeta."
+      },
+      "speaker28": {
+        "name": "David Martínez",
+        "bio": "David Martínez és gerent d'Urbanisme de l'Ajuntament de Barcelona. En aquest càrrec, contribueix a la coordinació i la promoció d'iniciatives relacionades amb l'urbanisme i la transformació de la ciutat, donant suport a una visió integrada del desenvolupament urbà i de l'espai públic."
       }
     },
     "closing": "Aquest primer grup d'oradors subratlla l'ambició, profunditat i visió multidisciplinar de WGIC 2026, posicionant-lo com un fòrum clau per al debat urbà global."

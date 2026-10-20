@@ -467,6 +467,10 @@
         "a": "Si vous avez besoin d'une facture ou d'un justificatif de paiement, écrivez à wgic2026.economics@udl.cat."
       },
       {
+        "q": "Puis-je obtenir le remboursement de mes frais d'inscription ?",
+        "a": "Les frais d'inscription peuvent être remboursés pour les annulations reçues avant le 15 octobre 2026. À partir du 15 octobre, les remboursements ne sont plus possibles.\n\nSi vous ne pouvez pas participer, votre inscription ne pourra pas être remboursée après cette date. Des questions sur votre inscription ? Écrivez-nous à registration@wgic26.org."
+      },
+      {
         "q": "Les visites techniques sont-elles incluses dans mon inscription au congrès ?",
         "a": "Non. Elles ont leur propre inscription et coûtent 80 €. Vous choisissez l'un des trois itinéraires, et les groupes sont petits. Lorsque les groupes seront constitués, nous vous enverrons un e-mail avec l'heure de départ et le point de rendez-vous."
       },
@@ -942,6 +946,10 @@
       "speaker27": {
         "name": "Bert Belmans",
         "bio": "Bert Belmans est ingénieur-architecte et compte plus de 15 ans d'expérience en architecture adaptée au climat et en solutions fondées sur la nature (NbS). En tant que président mondial du Chapitre des professionnels émergents du World Green Infrastructure Network, il donne la parole aux leaders émergents et relie le Nord et le Sud globaux. Professeur à la Vrije Universiteit Brussel, chargé de cours et coordinateur de recherche à l'Universiteit Antwerpen, il est spécialisé en physique du bâtiment et en performance énergétique, et promeut des stratégies de conception passive qui optimisent les flux de matières et d'énergie pour les personnes et la planète."
+      },
+      "speaker28": {
+        "name": "David Martínez",
+        "bio": "David Martínez est responsable de l'Urbanisme de la Mairie de Barcelone. À ce titre, il contribue à la coordination et à la promotion d'initiatives liées à l'urbanisme et à la transformation de la ville, en soutenant une vision intégrée du développement urbain et de l'espace public."
       }
     },
     "closing": "Ce premier groupe d'intervenants souligne l'ambition, la profondeur et la vision multidisciplinaire du WGIC 2026, le positionnant comme un forum clé du débat urbain mondial."

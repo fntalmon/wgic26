@@ -5,6 +5,7 @@ import { KeynoteSpeakersCarousel } from "@/components/KeynoteSpeakersCarousel";
 import { SocialProof } from "@/components/SocialProof";
 import { SupportersCarousel } from "@/components/SupportersCarousel";
 import { supporters } from "@/data/supporters";
+import { featuredSpeakers } from "@/data/featured-speakers";
 import { sponsorTiers, sponsorTierBox as homeSponsorTierBox } from "@/data/sponsors";
 import { MapPin, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -12,32 +13,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
-
-const keynoteSpeakerSlots = [
-  { id: "speaker1", image: "/img/speakers/marcosros.jpg" },
-  { id: "speaker6", image: "/img/speakers/wendyy.chen.jpg" },
-  { id: "speaker2", image: "/img/speakers/salvadorrueda.jpg" },
-  { id: "speaker4", image: "/img/speakers/albertoestevez.jpg" },
-  { id: "speaker5", image: "/img/speakers/enricbatlle.jpg" },
-  { id: "speaker9", image: "/img/speakers/JesusPerez.jpeg" },
-  { id: "speaker10", image: "/img/speakers/Balsells.png" },
-  { id: "speaker12", image: "/img/speakers/martinez.jpeg" },
-  { id: "speaker13", image: "/img/speakers/VictoriaPerez.png" },
-  { id: "speaker14", image: "/img/speakers/scuto.png" },
-  { id: "speaker15", image: "/img/speakers/JobMwangi.png" },
-  { id: "speaker16", image: "/img/speakers/Carratala.png" },
-  { id: "speaker17", image: "/img/speakers/petito.png" },
-  { id: "speaker23", image: "/img/speakers/Farinea.png" },
-  { id: "speaker24", image: "/img/speakers/Vernon_David.png" },
-
-  { id: "speaker19", image: "/img/speakers/GabrielPerez.png" },
-  { id: "speaker20", image: "/img/speakers/peck.png" },
-  { id: "speaker21", image: "/img/speakers/CamilleTallon.png" },
-  { id: "speaker22", image: "/img/speakers/aba.png" },
-  { id: "speaker25", image: "/img/speakers/velazquez_linda.jpg" },
-  { id: "speaker26", image: "/img/speakers/ajanguiz_jon.jpg" },
-  { id: "speaker27", image: "/img/speakers/belmans_bert.jpg" },
-] as const;
 
 // Extrae la primera frase sin cortar en iniciales tipo "Wendy Y. Chen".
 const firstSentence = (text: string) => {
@@ -237,7 +212,7 @@ export default function HomeClient() {
           </div>
 
           <KeynoteSpeakersCarousel
-            speakers={keynoteSpeakerSlots.map((speaker) => ({
+            speakers={featuredSpeakers.map((speaker) => ({
               id: speaker.id,
               image: speaker.image,
               name: tKeynoteSpeakers(`speakers.${speaker.id}.name`),
@@ -246,7 +221,7 @@ export default function HomeClient() {
           />
 
           <div className="flex flex-col sm:flex-row gap-4 self-start">
-            <Link href="/key-note-speakers">
+            <Link href="/program/speakers">
               <Button variant="default" size="lg">
                 {t("seeAllSpeakers")}
               </Button>
