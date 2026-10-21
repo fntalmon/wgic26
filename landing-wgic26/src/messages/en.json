@@ -955,14 +955,6 @@
     "closing": "This first group of speakers underscores the ambition, depth, and multidisciplinary vision of WGIC 2026, positioning it as a key forum for global urban debate."
   },
   "technicalVisitsPage": {
-    "independentVisit": {
-      "label": "Self-guided visit",
-      "note": "Independent project, outside the organised itineraries A, B and C.",
-      "name": "Vall d’Hebron Research Institute",
-      "title": "A 4,000 m² roof planted with 20,000 native plants",
-      "description": "The research institute’s 4,000 m² inverted flat roof is planted with more than 20,000 native, drought-resistant plants. Its build-up combines polyurea waterproofing, 14 cm of insulation, ZinCo drainage layers, 40 cm of upcycled substrate and a self-compensating drip system, topped with 10 cm of composted pruning mulch.",
-      "imageAlt": "Vall d’Hebron Research Institute"
-    },
     "title": "Technical Visits - 29 October",
     "intro1": "Visit the most iconic green roofs and green façades of Barcelona. You will explore unique green roofs that are not normally open to the public. A coordinator will accompany the group throughout the itinerary, while a specialized guide will provide detailed explanations at each location.",
     "intro2": "Groups will be limited to a maximum of 10 participants, with up to 5 groups per itinerary. The schedule will run from 9:00 to 16:00, and travel is entirely on foot and by metro.",
@@ -1072,7 +1064,29 @@
     "collaboratorsTitle": "With the collaboration of",
     "registerCtaTitle": "Registration now open",
     "registerCtaSubtitle": "Places are limited to 10 participants per group — book your spot early.",
-    "registerCtaButton": "Register for technical visits"
+    "registerCtaButton": "Register for technical visits",
+    "additionalVisits": {
+      "label": "Additional Technical Visits",
+      "note": "These projects are outside the organised itineraries A, B and C. An installer may be on site to explain them; this is still to be confirmed.",
+      "when": "29 October 2026, from 16:00",
+      "mapLink": "View location on Google Maps",
+      "partnerLabel": "Partner",
+      "items": {
+        "vhir": {
+          "name": "Vall d’Hebron Research Institute",
+          "title": "A 4,000 m² roof planted with 20,000 native plants",
+          "description": "The research institute’s 4,000 m² inverted flat roof is planted with more than 20,000 native, drought-resistant plants. Its build-up combines polyurea waterproofing, 14 cm of insulation, ZinCo drainage layers, 40 cm of upcycled substrate and a self-compensating drip system, topped with 10 cm of composted pruning mulch.",
+          "imageAlt": "Vall d’Hebron Research Institute"
+        },
+        "lopeDeVega": {
+          "name": "Jardí Vertical Lope de Vega",
+          "title": "A vertical garden that doubles as a structural buttress",
+          "description": "This project involves the design and construction of a sustainable vertical garden that also serves as a structural buttress, reinforcing an existing movement. It incorporates a lightweight rock-wool hydroponic panel with high water-retention capacity, combined with irrigation mats to ensure even water distribution and effective drainage. Plant species have been selected to provide a variety of textures, colours and fragrances, creating a rich visual and sensory experience. The project demonstrates how nature and technology can work together to deliver an innovative, sustainable landscape solution with a structural function.",
+          "imageAlt": "Jardí Vertical Lope de Vega",
+          "partner": "Jardineria Artística Babilon"
+        }
+      }
+    }
   },
   "innovationDayPage": {
     "title": "Innovation Day - 30 October",

@@ -955,14 +955,6 @@
     "closing": "Ce premier groupe d'intervenants souligne l'ambition, la profondeur et la vision multidisciplinaire du WGIC 2026, le positionnant comme un forum clé du débat urbain mondial."
   },
   "technicalVisitsPage": {
-    "independentVisit": {
-      "label": "Visite libre",
-      "note": "Projet indépendant, en dehors des itinéraires organisés A, B et C.",
-      "name": "Vall d’Hebron Research Institute",
-      "title": "Une toiture de 4 000 m² plantée de 20 000 plantes indigènes",
-      "description": "La toiture-terrasse inversée de 4 000 m² de l’institut de recherche est plantée de plus de 20 000 plantes indigènes résistantes à la sécheresse. Sa composition associe une étanchéité en polyurée, 14 cm d’isolation, des couches de drainage ZinCo, 40 cm de substrat recyclé (upcycling) et un système de goutte-à-goutte autocompensant, recouvert de 10 cm de mulch de broyat de taille composté.",
-      "imageAlt": "Vall d’Hebron Research Institute"
-    },
     "title": "Visites techniques - 29 octobre",
     "intro1": "Visitez les toits verts et les façades vertes les plus emblématiques de Barcelone. Vous explorerez des toits verts uniques qui ne sont normalement pas ouverts au public. Un coordinateur accompagnera le groupe tout au long de l'itinéraire, tandis qu'un guide spécialisé fournira des explications détaillées à chaque endroit.",
     "intro2": "Les groupes seront limités à un maximum de 10 participants, avec un maximum de 5 groupes par itinéraire. L'horaire se déroulera de 9h00 à 16h00 et les déplacements se feront entièrement à pied et en métro.",
@@ -1072,7 +1064,29 @@
     "collaboratorsTitle": "Avec la collaboration de",
     "registerCtaTitle": "Inscriptions ouvertes",
     "registerCtaSubtitle": "Places limitées à 10 participants par groupe — réservez à l'avance.",
-    "registerCtaButton": "S'inscrire aux visites techniques"
+    "registerCtaButton": "S'inscrire aux visites techniques",
+    "additionalVisits": {
+      "label": "Visites techniques supplémentaires",
+      "note": "Ces projets sont en dehors des itinéraires A, B et C. Un installateur pourrait être sur place pour les présenter ; cela reste à confirmer.",
+      "when": "29 octobre 2026, à partir de 16 h 00",
+      "mapLink": "Voir l'emplacement sur Google Maps",
+      "partnerLabel": "Partenaire",
+      "items": {
+        "vhir": {
+          "name": "Vall d’Hebron Research Institute",
+          "title": "Une toiture de 4 000 m² plantée de 20 000 plantes indigènes",
+          "description": "La toiture-terrasse inversée de 4 000 m² de l’institut de recherche est plantée de plus de 20 000 plantes indigènes résistantes à la sécheresse. Sa composition associe une étanchéité en polyurée, 14 cm d’isolation, des couches de drainage ZinCo, 40 cm de substrat recyclé (upcycling) et un système de goutte-à-goutte autocompensant, recouvert de 10 cm de mulch de broyat de taille composté.",
+          "imageAlt": "Vall d’Hebron Research Institute"
+        },
+        "lopeDeVega": {
+          "name": "Jardí Vertical Lope de Vega",
+          "title": "Un jardin vertical qui fait aussi office de contrefort structurel",
+          "description": "Ce projet porte sur la conception et la réalisation d'un jardin vertical durable qui fait également office de contrefort structurel, en renforçant un mouvement existant. Il intègre un panneau hydroponique léger en laine de roche à forte capacité de rétention d'eau, associé à des nappes d'irrigation qui assurent une distribution uniforme de l'eau et un drainage efficace. Les espèces végétales ont été choisies pour offrir une variété de textures, de couleurs et de parfums, créant une expérience visuelle et sensorielle riche. Le projet montre comment la nature et la technologie peuvent s'associer pour offrir une solution paysagère innovante et durable, dotée d'une fonction structurale.",
+          "imageAlt": "Jardí Vertical Lope de Vega",
+          "partner": "Jardineria Artística Babilon"
+        }
+      }
+    }
   },
   "innovationDayPage": {
     "title": "Innovation Day - 30 octobre",

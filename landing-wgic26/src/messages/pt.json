@@ -955,14 +955,6 @@
     "closing": "Este primeiro grupo de oradores sublinha a ambição, profundidade e visão multidisciplinar do WGIC 2026, posicionando-o como um fórum chave para o debate urbano global."
   },
   "technicalVisitsPage": {
-    "independentVisit": {
-      "label": "Visita livre",
-      "note": "Projeto independente, fora dos itinerários organizados A, B e C.",
-      "name": "Vall d’Hebron Research Institute",
-      "title": "Uma cobertura de 4.000 m² plantada com 20.000 plantas autóctones",
-      "description": "A cobertura plana invertida de 4.000 m² do instituto de investigação está plantada com mais de 20.000 plantas autóctones e resistentes à seca. A sua composição combina impermeabilização com poliureia, 14 cm de isolamento, camadas de drenagem ZinCo, 40 cm de substrato reciclado (upcycling) e um sistema de rega gota a gota autocompensante, rematado com 10 cm de mulch de trituração de poda compostada.",
-      "imageAlt": "Vall d’Hebron Research Institute"
-    },
     "title": "Visitas Técnicas - 29 de outubro",
     "intro1": "Visite os telhados verdes e fachadas verdes mais emblemáticos de Barcelona. Você explorará telhados verdes exclusivos que normalmente não são abertos ao público. Um coordenador acompanhará o grupo durante todo o roteiro, enquanto um guia especializado dará explicações detalhadas em cada local.",
     "intro2": "Os grupos serão limitados a um máximo de 10 participantes, com até 5 grupos por itinerário. O horário funcionará das 9h00 às 16h00, e os deslocamentos serão feitos inteiramente a pé e de metrô.",
@@ -1072,7 +1064,29 @@
     "collaboratorsTitle": "Com a colaboração de",
     "registerCtaTitle": "Inscrições abertas",
     "registerCtaSubtitle": "Vagas limitadas a 10 participantes por grupo — reserve com antecedência.",
-    "registerCtaButton": "Inscreva-se nas visitas técnicas"
+    "registerCtaButton": "Inscreva-se nas visitas técnicas",
+    "additionalVisits": {
+      "label": "Visitas técnicas adicionais",
+      "note": "Estes projetos ficam fora dos itinerários A, B e C. Poderá estar presente um instalador para os explicar; ainda por confirmar.",
+      "when": "29 de outubro de 2026, a partir das 16:00",
+      "mapLink": "Ver localização no Google Maps",
+      "partnerLabel": "Parceiro",
+      "items": {
+        "vhir": {
+          "name": "Vall d’Hebron Research Institute",
+          "title": "Uma cobertura de 4.000 m² plantada com 20.000 plantas autóctones",
+          "description": "A cobertura plana invertida de 4.000 m² do instituto de investigação está plantada com mais de 20.000 plantas autóctones e resistentes à seca. A sua composição combina impermeabilização com poliureia, 14 cm de isolamento, camadas de drenagem ZinCo, 40 cm de substrato reciclado (upcycling) e um sistema de rega gota a gota autocompensante, rematado com 10 cm de mulch de trituração de poda compostada.",
+          "imageAlt": "Vall d’Hebron Research Institute"
+        },
+        "lopeDeVega": {
+          "name": "Jardí Vertical Lope de Vega",
+          "title": "Um jardim vertical que também é contraforte estrutural",
+          "description": "Este projeto consiste no desenho e na construção de um jardim vertical sustentável que funciona também como contraforte estrutural, reforçando um movimento existente. Incorpora um painel hidropónico leve de lã de rocha com elevada capacidade de retenção de água, combinado com mantas de rega que garantem uma distribuição uniforme da água e uma drenagem eficaz. As espécies vegetais foram selecionadas para oferecer variedade de texturas, cores e fragrâncias, criando uma experiência visual e sensorial rica. O projeto demonstra como a natureza e a tecnologia podem trabalhar em conjunto para oferecer uma solução paisagística inovadora e sustentável com função estrutural.",
+          "imageAlt": "Jardí Vertical Lope de Vega",
+          "partner": "Jardineria Artística Babilon"
+        }
+      }
+    }
   },
   "innovationDayPage": {
     "title": "Innovation Day - 30 de outubro",
