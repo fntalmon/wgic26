@@ -6,6 +6,15 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { getProgrammePdfUrl } from "@/lib/programme-pdf";
 import { fetchProgram } from "@/lib/program-api";
 import AgendaClient from "./AgendaClient";
+import { ArrowRight, CalendarDays, MapPin } from "lucide-react";
+
+// Gala Dinner & Awards (27/10/2026). Textos traducidos en programPage.galaDinner.
+// La entrada se compra desde el formulario de inscripción de Hélice.
+// El enlace corto de Maps recibido (maps.app.goo.gl/yMyYQ21TepFv9C8z5) da 404; se usa una búsqueda por dirección.
+const GALA_DINNER_ADDRESS = "Carrer de Casanova, 133, 08036 Barcelona";
+const GALA_DINNER_MAP_URL =
+  "https://www.google.com/maps/search/?api=1&query=Tierra%20Brava%20Restaurant%2C%20Carrer%20de%20Casanova%2C%20133%2C%2008036%20Barcelona";
+const GALA_DINNER_REGISTRATION_URL = "https://panel.helice.app/w/wgic26/214760/registration";
 
 export const metadata: Metadata = {
   title: "Congress Program | WGIC26 Barcelona-Lleida",
@@ -114,6 +123,77 @@ export default async function CongressPage() {
             tracks={tracks}
             translations={translations}
           />
+
+          {/* No está cargada en la API de Barter (solo existe "WGIN - AWARDS ceremony", 27/10 14:30). */}
+          <section
+            aria-labelledby="gala-dinner-title"
+            className="mt-16 mb-16 pt-10 border-t border-white/10"
+          >
+            <h2
+              id="gala-dinner-title"
+              className="text-2xl font-semibold uppercase text-white tracking-wide"
+            >
+              {t("galaDinner.title")}
+            </h2>
+
+            <div className="mt-8 grid grid-cols-1 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-8 md:gap-12">
+              <ul className="flex flex-col gap-6 text-white/80">
+                <li className="flex items-start gap-3">
+                  <CalendarDays size={18} className="text-potus shrink-0 mt-1" aria-hidden />
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-white/50">
+                      {t("galaDinner.dateLabel")}
+                    </p>
+                    <p className="mt-1 text-lg text-white">{t("galaDinner.date")}</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <MapPin size={18} className="text-potus shrink-0 mt-1" aria-hidden />
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-white/50">
+                      {t("galaDinner.locationLabel")}
+                    </p>
+                    <p className="mt-1 text-lg text-white">{t("galaDinner.venue")}</p>
+                    <p className="text-sm text-white/70">{GALA_DINNER_ADDRESS}</p>
+                    <a
+                      href={GALA_DINNER_MAP_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-block text-sm text-potus underline underline-offset-2 hover:text-potus/80"
+                    >
+                      {t("galaDinner.mapLink")}
+                    </a>
+                  </div>
+                </li>
+              </ul>
+
+              <div className="space-y-6 text-white/80 leading-relaxed">
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+                    {t("galaDinner.programLabel")}
+                  </h3>
+                  <p className="mt-2">{t("galaDinner.program")}</p>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
+                    {t("galaDinner.accessLabel")}
+                  </h3>
+                  <p className="mt-2">{t("galaDinner.access")}</p>
+                </div>
+                <div className="pt-2">
+                  <a
+                    href={GALA_DINNER_REGISTRATION_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-potus text-monstera rounded-md text-sm uppercase tracking-wider font-medium hover:bg-potus/90 transition-colors"
+                  >
+                    {t("galaDinner.cta")}
+                    <ArrowRight size={14} aria-hidden />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <div className="mb-12 space-y-8 text-white/80">
             <TextImage imageSrc="/img/Tibidabo 1.jpg" imageAlt={t("img1Alt")} imagePosition="right">

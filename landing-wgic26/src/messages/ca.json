@@ -1129,7 +1129,20 @@
     },
     "learnMore": "Més informació",
     "detailsSoon": "Es proporcionarà informació detallada pròximament.",
-    "footerNote": "La informació detallada sobre els tallers d'innovació i recerca a Lleida i el procés d'inscripció es publicarà pròximament."
+    "footerNote": "La informació detallada sobre els tallers d'innovació i recerca a Lleida i el procés d'inscripció es publicarà pròximament.",
+    "galaDinner": {
+      "title": "Sopar de Gala i Premis",
+      "dateLabel": "Data i hora",
+      "date": "27 d'octubre de 2026 — 19:00 h",
+      "locationLabel": "Lloc",
+      "venue": "Restaurant Tierra Brava",
+      "mapLink": "Veure a Google Maps",
+      "programLabel": "Programa",
+      "program": "La vetllada començarà amb el lliurament dels Premis, seguit del sopar.",
+      "accessLabel": "Accés",
+      "cta": "Inscriure's al Sopar de Gala",
+      "access": "A causa de les restriccions d'aforament de l'espai, l'assistència està estrictament reservada als convidats confirmats. Les invitacions no inclouen acompanyant. A l'entrada es farà una breu verificació de la llista de convidats."
+    }
   },
   "programOverviewPage": {
     "description": "Un mapa ràpid dels quatre dies del congrés: què passa cada dia, on i de quin tipus d'activitat es tracta.",

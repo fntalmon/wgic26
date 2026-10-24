@@ -1129,7 +1129,20 @@
     },
     "learnMore": "Learn more",
     "detailsSoon": "Detailed information will be provided soon.",
-    "footerNote": "Detailed information about the innovation and research workshops in Lleida and the registration process will be published soon."
+    "footerNote": "Detailed information about the innovation and research workshops in Lleida and the registration process will be published soon.",
+    "galaDinner": {
+      "title": "Gala Dinner & Awards",
+      "dateLabel": "Date & time",
+      "date": "October 27, 2026 — 7:00 PM",
+      "locationLabel": "Location",
+      "venue": "Tierra Brava Restaurant",
+      "mapLink": "View on Google Maps",
+      "programLabel": "Program",
+      "program": "The evening will begin with the presentation of the Awards, followed by dinner.",
+      "accessLabel": "Access",
+      "cta": "Register for Gala Dinner",
+      "access": "Due to venue capacity restrictions, attendance is strictly reserved for confirmed guests. Invitations do not include a guest or plus-one. A quick guest list verification will be conducted at the entrance."
+    }
   },
   "programOverviewPage": {
     "description": "A quick map of the four congress days: what happens each day, where, and what kind of activity it is.",

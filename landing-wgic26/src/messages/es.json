@@ -1129,7 +1129,20 @@
     },
     "learnMore": "Más información",
     "detailsSoon": "Se proporcionara informacion detallada proximamente.",
-    "footerNote": "La informacion detallada sobre los talleres de innovacion e investigacion en Lleida y el proceso de inscripcion se publicara proximamente."
+    "footerNote": "La informacion detallada sobre los talleres de innovacion e investigacion en Lleida y el proceso de inscripcion se publicara proximamente.",
+    "galaDinner": {
+      "title": "Cena de Gala y Premios",
+      "dateLabel": "Fecha y hora",
+      "date": "27 de octubre de 2026 — 19:00 h",
+      "locationLabel": "Lugar",
+      "venue": "Restaurante Tierra Brava",
+      "mapLink": "Ver en Google Maps",
+      "programLabel": "Programa",
+      "program": "La velada comenzará con la entrega de los Premios, seguida de la cena.",
+      "accessLabel": "Acceso",
+      "cta": "Inscribirse a la Cena de Gala",
+      "access": "Debido a las restricciones de aforo del espacio, la asistencia está estrictamente reservada a los invitados confirmados. Las invitaciones no incluyen acompañante. A la entrada se realizará una breve verificación de la lista de invitados."
+    }
   },
   "programOverviewPage": {
     "description": "Un mapa rapido de los cuatro dias del congreso: que ocurre cada dia, donde y de que tipo de actividad se trata.",
