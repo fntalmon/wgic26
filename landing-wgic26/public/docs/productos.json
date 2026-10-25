@@ -1,0 +1,10 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"infopp_pablo"},
+{"type":"table","name":"productos","database":"infopp_pablo","data":
+[
+{"id_productos":"112220","configuracion_personalizacion":"{\"tipoPersonalizacion\": \"compra-ia\", \"insumos\": {\"rosa\": {\"precio_base\": 1.50, \"costo_base\": 0.75}, \"lily\": {\"precio_base\": 2.00, \"costo_base\": 1.00}, \"gerbera\": {\"precio_base\": 1.00, \"costo_base\": 0.50}, \"girasol\": {\"precio_base\": 1.50, \"costo_base\": 0.75}}, \"adicionales\": {\"follaje\": {\"precio_base\": 0, \"costo_base\": 0}, \"cinta\": {\"precio_base\": 0, \"costo_base\": 0}, \"oso_clasico\": {\"precio_base\": 18.99, \"costo_base\": 9.00}, \"oso_corazon\": {\"precio_base\": 17.99, \"costo_base\": 9.00}, \"globos_cumpleanos\": {\"precio_base\": 12.99, \"costo_base\": 6.00}, \"globos_nacimiento\": {\"precio_base\": 9.99, \"costo_base\": 5.00}, \"globos_toda_ocasion\": {\"precio_base\": 14.99, \"costo_base\": 7.00}, \"ferrero_rocher_x8\": {\"precio_base\": 13.99, \"costo_base\": 6.50}}, \"presentacion\": {\"ramo\": {\"precio_base\": 0, \"costo_base\": 0}, \"jarron\": {\"precio_base\": 3.00, \"costo_base\": 1.50}}}"},
+{"id_productos":"100000007","configuracion_personalizacion":"{\"tipoPersonalizacion\": \"compra-ia\", \"insumos\": {\"rosa\": {\"precio_base\": 1.50, \"costo_base\": 0.75}, \"lily\": {\"precio_base\": 2.00, \"costo_base\": 1.00}, \"gerbera\": {\"precio_base\": 1.00, \"costo_base\": 0.50}, \"girasol\": {\"precio_base\": 1.50, \"costo_base\": 0.75}}, \"adicionales\": {\"follaje\": {\"precio_base\": 0, \"costo_base\": 0}, \"cinta\": {\"precio_base\": 0, \"costo_base\": 0}}, \"presentacion\": {\"ramo\": {\"precio_base\": 0, \"costo_base\": 0}, \"jarron\": {\"precio_base\": 3.00, \"costo_base\": 1.50}}}"}
+]
+}
+]

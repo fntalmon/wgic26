@@ -1,0 +1,11 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"infopp_pablo"},
+{"type":"table","name":"productos_fotos","database":"infopp_pablo","data":
+[
+{"id":"1576","producto":"109155","tamano":"1","foto":"274b7e020b3c4ab9cb8ed0cf0146d2d6.jpg","imagen":null,"tipo_imagen":"PRINCIPAL","activo":"1","orden":null},
+{"id":"1577","producto":"109155","tamano":"2","foto":"b_274b7e020b3c4ab9cb8ed0cf0146d2d6.jpg","imagen":null,"tipo_imagen":"PRINCIPAL","activo":"1","orden":null},
+{"id":"1578","producto":"109155","tamano":"3","foto":"bs_274b7e020b3c4ab9cb8ed0cf0146d2d6.jpg","imagen":null,"tipo_imagen":"PRINCIPAL","activo":"1","orden":null}
+]
+}
+]

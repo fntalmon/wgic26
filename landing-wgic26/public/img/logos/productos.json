@@ -1,0 +1,9 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"infopp_pablo"},
+{"type":"table","name":"productos","database":"infopp_pablo","data":
+[
+{"id_productos":"109155","nombre":"Alegra su Vida","descri_ch":"Regular","descri_m":"Deluxe","descri_g":"Premium","nota_florista":"Esta presentación incluye Rosas (minimo 3), Gerberas (minimo 3), 2 varas de Lilies y Clavelinas u otra flor, todo en colores amarillo, naranja y rosado acompañadas de follaje y dispuestas en jarrón de vidrio según foto adjunta. ","nota_florista_2":"Esta presentación incluye Rosas (minimo 5), Gerberas (minimo 4), 3 varas de Lilies y Clavelinas u otra flor, todo en colores amarillo, naranja y rosado acompañadas de follaje y dispuestas en jarrón de vidrio, según foto adjunta. ","nota_florista_3":"Esta presentación incluye Rosas (minimo 8), Gerberas (minimo 8), 3 varas de Lilies y Clavelinas u otra flor, todo en colores amarillo, naranja y rosado acompañadas de follaje y dispuestas en jarrón de vidrio según foto adjunta. ","foto_chica":"ch_337c1669e6961d45606da7e6744748d5.jpg","foto_media":"m_337c1669e6961d45606da7e6744748d5.jpg","foto_grande":"337c1669e6961d45606da7e6744748d5.jpg","muestro_foto_al_florista":"S"}
+]
+}
+]
