@@ -281,6 +281,14 @@ export const sponsorTiers: SponsorTier[] = [
         height: 200,
         className: "h-12 md:h-14 w-auto object-contain",
       },
+      {
+        href: "https://www.revistaarquitectura.com",
+        src: "/img/logos/Arquitectura.jpeg",
+        alt: "Arquitectura - El Futuro Madrid",
+        width: 725,
+        height: 133,
+        className: "h-12 md:h-14 w-auto object-contain",
+      },
     ],
   },
 ];

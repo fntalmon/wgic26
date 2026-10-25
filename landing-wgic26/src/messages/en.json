@@ -37,7 +37,8 @@
     "theOrganisers": "The Organisers",
     "fullProgramme": "Program",
     "news": "News",
-    "posters": "Posters"
+    "posters": "Posters",
+    "oralPresentations": "Oral presentations"
   },
   "countdown": {
     "startingIn": "Starting in:"
@@ -813,6 +814,11 @@
     "daysCount": "Days",
     "roomsCount": "Rooms",
     "tracksCount": "Tracks"
+  },
+  "oralPresentationsPage": {
+    "title": "Oral presentations",
+    "description": "Download the official PowerPoint template for oral presentations at WGIC26.",
+    "templateTitle": "Presentation template"
   },
   "programSpecialIssuesPage": {
     "title": "Special Issues",

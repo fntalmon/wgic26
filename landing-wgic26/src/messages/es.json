@@ -37,7 +37,8 @@
     "theOrganisers": "Los organizadores",
     "fullProgramme": "Programa",
     "news": "Noticias",
-    "posters": "Pósteres"
+    "posters": "Pósteres",
+    "oralPresentations": "Presentaciones orales"
   },
   "countdown": {
     "startingIn": "Comienza en:"
@@ -813,6 +814,11 @@
     "daysCount": "Dias",
     "roomsCount": "Salas",
     "tracksCount": "Tracks"
+  },
+  "oralPresentationsPage": {
+    "title": "Presentaciones orales",
+    "description": "Descarga la plantilla oficial de PowerPoint para las presentaciones orales del WGIC26.",
+    "templateTitle": "Plantilla de presentación"
   },
   "programSpecialIssuesPage": {
     "title": "Ediciones especiales",

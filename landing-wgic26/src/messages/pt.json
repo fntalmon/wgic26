@@ -37,7 +37,8 @@
     "theOrganisers": "Os organizadores",
     "fullProgramme": "Programa",
     "news": "Notícias",
-    "posters": "Pósteres"
+    "posters": "Pósteres",
+    "oralPresentations": "Apresentações orais"
   },
   "countdown": {
     "startingIn": "Começando em:"
@@ -813,6 +814,11 @@
     "daysCount": "Dias",
     "roomsCount": "Quartos",
     "tracksCount": "Faixas"
+  },
+  "oralPresentationsPage": {
+    "title": "Apresentações orais",
+    "description": "Baixe o modelo oficial de PowerPoint para as apresentações orais do WGIC26.",
+    "templateTitle": "Modelo de apresentação"
   },
   "programSpecialIssuesPage": {
     "title": "Edições Especiais",

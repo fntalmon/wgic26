@@ -6,6 +6,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { getProgrammePdfUrl } from "@/lib/programme-pdf";
 import { fetchProgram } from "@/lib/program-api";
 import AgendaClient from "./AgendaClient";
+import Link from "next/link";
 import { ArrowRight, CalendarDays, MapPin } from "lucide-react";
 
 // Gala Dinner & Awards (27/10/2026). Textos traducidos en programPage.galaDinner.
@@ -38,6 +39,14 @@ async function getSessionSpeakers(idsession: string, locale: string) {
   }
 }
 
+// Correcciones de títulos que Barter tiene mal en un idioma, por ID de sesión.
+// 39382: TopSec (28/10 12:00); el título oficial (nombre propio del proyecto) es el inglés, igual que en los demás idiomas.
+const SESSION_TITLE_OVERRIDES: Record<string, Partial<Record<string, string>>> = {
+  "39382": {
+    es: "TopSec project: Circularity and Innovation. Greening the city from the Rooftops",
+  },
+};
+
 async function getSessions(locale: string) {
   const params = { items: 50 };
   const firstData = await fetchProgram("sessions.php", locale, { ...params, pag: 1 });
@@ -54,6 +63,7 @@ async function getSessions(locale: string) {
   const sessionsWithSpeakers = await Promise.all(
     allSessions.map(async (session) => ({
       ...session,
+      title: SESSION_TITLE_OVERRIDES[session.idsession]?.[locale] ?? session.title,
       speakers: await getSessionSpeakers(session.idsession, locale),
     }))
   );
@@ -116,6 +126,14 @@ export default async function CongressPage() {
       />
       <section className="container mx-auto py-12 px-4">
         <div className="max-w-7xl mx-auto">
+          <nav className="mb-8 flex flex-wrap gap-x-8 gap-y-2 text-sm uppercase tracking-wider">
+            <Link href="/program/oral-presentations" className="text-potus hover:text-potus/80 inline-flex items-center gap-2">
+              {nav("oralPresentations")} <ArrowRight size={14} aria-hidden />
+            </Link>
+            <Link href="/program/special-issues" className="text-potus hover:text-potus/80 inline-flex items-center gap-2">
+              {nav("specialIssues")} <ArrowRight size={14} aria-hidden />
+            </Link>
+          </nav>
           <AgendaClient
             sessions={sessionsData.sessions || []}
             extras={eventData.extras || []}

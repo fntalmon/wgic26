@@ -20,11 +20,6 @@ const Posters = async () => {
       description: t("posterDesc"),
       href: "/docs/wgic26-poster-template-A0.pptx",
     },
-    {
-      name: t("oralName"),
-      description: t("oralDesc"),
-      href: "/docs/wgic26-oral-presentation-template.pptx",
-    },
   ];
 
   return (
@@ -47,7 +42,7 @@ const Posters = async () => {
               </h2>
               <p className="mt-1 text-white/60 text-sm">{t("templatesIntro")}</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
               {templates.map((template) => (
                 <a
                   key={template.href}
