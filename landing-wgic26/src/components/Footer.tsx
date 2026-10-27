@@ -1,14 +1,10 @@
 
 import Link from "next/link";
 import React from "react";
-import { getLocale, getTranslations } from "next-intl/server";
-import { getProgrammePdfUrl } from "@/lib/programme-pdf";
+import { getTranslations } from "next-intl/server";
 
 const Footer = async () => {
   const t = await getTranslations("footer");
-  const pd = await getTranslations("programmeDownload");
-  const locale = await getLocale();
-  const programmePdfUrl = getProgrammePdfUrl(locale);
 
   const usefulLinks = [
     {
@@ -21,7 +17,6 @@ const Footer = async () => {
     { label: t("workshops"), href: "/program/workshops" },
     { label: t("technicalVisits"), href: "/program/technical-visits" },
     { label: t("blog"), href: "/blog" },
-    { label: pd("footerLabel"), href: programmePdfUrl, download: true },
   ];
 
   const talkLinks = [
@@ -55,9 +50,8 @@ const Footer = async () => {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    target={link.download || link.external ? "_blank" : undefined}
-                    rel={link.download || link.external ? "noopener noreferrer" : undefined}
-                    download={link.download}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
                     className="hover:underline hover:underline-offset-8 hover:decoration-2 hover:decoration-potus"
                   >
                     {link.label}

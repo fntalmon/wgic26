@@ -3,7 +3,6 @@ import PageHeader from "@/components/PageHeader";
 import TextImage from "@/components/TextImage";
 import { RegisterCTA } from "@/components/RegisterCTA";
 import { getLocale, getTranslations } from "next-intl/server";
-import { getProgrammePdfUrl } from "@/lib/programme-pdf";
 import { fetchProgram } from "@/lib/program-api";
 import AgendaClient from "./AgendaClient";
 import Link from "next/link";
@@ -80,9 +79,7 @@ export default async function CongressPage() {
   const ta = await getTranslations("programAgendaPage");
   const home = await getTranslations("home");
   const nav = await getTranslations("navigation");
-  const pd = await getTranslations("programmeDownload");
   const locale = await getLocale();
-  const programmePdfUrl = getProgrammePdfUrl(locale);
 
   const [sessionsData, eventData] = await Promise.all([
     getSessions(locale),
@@ -120,9 +117,6 @@ export default async function CongressPage() {
         title={nav("programCongress")}
         description={t("description")}
         section="program"
-        buttonText={pd("buttonLabel")}
-        buttonUrl={programmePdfUrl}
-        buttonVariant="default"
       />
       <section className="container mx-auto py-12 px-4">
         <div className="max-w-7xl mx-auto">
