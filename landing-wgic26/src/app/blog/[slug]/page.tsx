@@ -10,7 +10,7 @@ import {
   type BlogLocale,
 } from "@/lib/blog";
 import { NewsletterCTA } from "@/components/NewsletterCTA";
-import { Calendar, Clock, ArrowLeft, ArrowRight, User } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, User } from "lucide-react";
 import { getTranslations, getLocale } from "next-intl/server";
 
 const DATE_LOCALES: Record<string, string> = {
