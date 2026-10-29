@@ -505,6 +505,7 @@
     "registerNowButton": "Inscrivez-vous"
   },
   "registrationPage": {
+    "closed": "Les inscriptions sont closes.",
     "title": "Inscription",
     "description": "Rejoignez le Congrès mondial des infrastructures vertes 2026. Inscrivez-vous maintenant pour réserver votre place.",
     "platformTitle": "Plateforme d'inscription",

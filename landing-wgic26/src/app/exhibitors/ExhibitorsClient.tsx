@@ -2,7 +2,6 @@
 
 import PageHeader from "@/components/PageHeader";
 import Carousel from "@/components/Carousel";
-import { RegisterCTA } from "@/components/RegisterCTA";
 import { SupportersCarousel } from "@/components/SupportersCarousel";
 import { supporters } from "@/data/supporters";
 import { sponsorTiers, sponsorTierBox } from "@/data/sponsors";
@@ -2380,12 +2379,6 @@ const ExhibitorsClient = () => {
             </div>
           </div>
         </div>
-
-        <RegisterCTA
-          title={home("ctaJoinTitle")}
-          subtitle={home("ctaJoinSubtitle")}
-          buttonLabel={home("registerNow")}
-        />
       </section>
     </div>
   );

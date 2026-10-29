@@ -1,16 +1,5 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  robots: { index: false, follow: false },
-};
+import { redirect } from "next/navigation";
 
 export default function TestIframePage() {
-  return (
-    <div style={{ width: "100%", height: "100vh" }}>
-      <iframe
-        src="https://panel.helice.app/w/wgic26/214760/registration?preview=1"
-        style={{ width: "100%", height: "100%", border: "0" }}
-      />
-    </div>
-  );
+  redirect("/registration");
 }

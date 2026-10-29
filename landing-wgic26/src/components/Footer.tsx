@@ -6,12 +6,7 @@ import { getTranslations } from "next-intl/server";
 const Footer = async () => {
   const t = await getTranslations("footer");
 
-  const usefulLinks = [
-    {
-      label: t("tickets"),
-      href: "https://panel.helice.app/w/wgic26/214760/registration",
-      external: true,
-    },
+  const usefulLinks: { label: string; href: string; external?: boolean }[] = [
     { label: t("papersProjects"), href: "/speakers" },
     { label: t("program"), href: "/program/congress" },
     { label: t("workshops"), href: "/program/workshops" },

@@ -16,11 +16,16 @@ export const metadata: Metadata = {
     "Innovation Day at Parc Agrobiotech Lleida — hands-on workshops on urban green infrastructure as part of WGIC26.",
 };
 
+// Refresh on every request so the scheduled closure does not require a rebuild.
+export const dynamic = "force-dynamic";
+
 const REGISTRATION_URL =
   "https://publicalt.xeria.es/innovation_workshops_at_the_university_of_lleida/en/register/Registerpage/RegistrationForms";
 
 const InnovationDay = async () => {
     const t = await getTranslations("innovationDayPage");
+    // 30 October 2026, 00:00 in Europe/Madrid (CET).
+    const registrationOpen = Date.now() < Date.parse("2026-10-29T23:00:00Z");
 
     const workshops = [
         {
@@ -80,13 +85,13 @@ const InnovationDay = async () => {
                         <p>{t("intro2")}</p>
                     </div>
 
-                    <RegisterCTA
+                    {registrationOpen && <RegisterCTA
                         title={t("registerCtaTitle")}
                         subtitle={t("registerCtaSubtitle")}
                         buttonLabel={t("registerCtaButton")}
                         href={REGISTRATION_URL}
                         external
-                    />
+                    />}
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {workshops.map((workshop) => (
@@ -145,13 +150,13 @@ const InnovationDay = async () => {
                         </div>
                     </div>
 
-                    <RegisterCTA
+                    {registrationOpen && <RegisterCTA
                         title={t("registrationTitle")}
                         subtitle={t("registrationSubtitle")}
                         buttonLabel={t("registerCtaButton")}
                         href={REGISTRATION_URL}
                         external
-                    />
+                    />}
                 </div>
             </section>
         </div>

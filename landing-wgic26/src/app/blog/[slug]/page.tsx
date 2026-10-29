@@ -246,24 +246,6 @@ export default async function BlogPostPage({ params }: Props) {
           </section>
         )}
 
-        {/* Bottom CTA */}
-        <section className="pt-0 max-w-5xl xl:max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 rounded-lg bg-cactus/30 border border-white/10">
-            <div className="text-center sm:text-left">
-              <div className="text-lg uppercase">{t("joinTitle")}</div>
-              <div className="text-sm text-white/60">
-                {t("joinSubtitle")}
-              </div>
-            </div>
-            <Link
-              href="/registration"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-potus text-monstera rounded-md text-sm uppercase tracking-wider font-medium hover:bg-potus/90 transition-colors"
-            >
-              {t("registerNow")}
-              <ArrowRight size={14} />
-            </Link>
-          </div>
-        </section>
 
         <section className="pt-0 max-w-5xl xl:max-w-6xl mx-auto w-full px-4 sm:px-6 lg:px-8">
           <NewsletterCTA

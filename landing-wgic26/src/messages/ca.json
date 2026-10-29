@@ -505,6 +505,7 @@
     "registerNowButton": "Inscriu-te ara"
   },
   "registrationPage": {
+    "closed": "Les inscripcions estan tancades.",
     "title": "Inscripció",
     "description": "Uneix-te al Congrés Mundial d'Infraestructura Verda 2026. Registra't ara per assegurar la teva plaça.",
     "platformTitle": "Plataforma d'inscripció",

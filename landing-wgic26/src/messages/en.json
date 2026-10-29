@@ -505,6 +505,7 @@
     "registerNowButton": "Register now"
   },
   "registrationPage": {
+    "closed": "Registration is closed.",
     "title": "Registration",
     "description": "Join the World Green Infrastructure Congress 2026. Register now to secure your place.",
     "platformTitle": "Registration platform",

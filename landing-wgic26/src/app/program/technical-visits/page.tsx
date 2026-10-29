@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
-import { RegisterCTA } from "@/components/RegisterCTA";
 import CollaboratorLogos from "@/components/CollaboratorLogos";
 import { technicalVisitsCollaborators } from "@/data/collaborators";
 import Image from "next/image";
@@ -78,14 +77,6 @@ const TechnicalVisits = async () => {
                         <p>{t("intro1")}</p>
                         <p>{t("intro2")}</p>
                     </div>
-
-                    <RegisterCTA
-                        title={t("registerCtaTitle")}
-                        subtitle={t("registerCtaSubtitle")}
-                        buttonLabel={t("registerCtaButton")}
-                        href="https://publicalt.xeria.es/technical_visits_wgic_2026/en/register/Registerpage/RegistrationForms"
-                        external
-                    />
 
                     {itineraries.map((itinerary) => (
                         <div key={itinerary.label} className="space-y-5">

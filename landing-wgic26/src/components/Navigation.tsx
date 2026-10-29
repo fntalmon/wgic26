@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { ArrowRight, Menu, Ticket } from "lucide-react";
+import { ArrowRight, Menu } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -309,18 +309,6 @@ const Navigation = () => {
           </NavigationMenu>
           <div className="flex gap-2 items-center flex-shrink-0">
             <LanguageSwitcher />
-            <div className="flex items-center gap-2">
-              <Button asChild variant="default" size="lg" className="text-xs 2xl:text-sm px-4 2xl:px-5 h-10">
-                <a
-                  href="https://panel.helice.app/w/wgic26/214760/registration"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Ticket size={18} />
-                  <span className="ml-1">{t("tickets")}</span>
-                </a>
-              </Button>
-            </div>
           </div>
         </div>
 
@@ -335,37 +323,6 @@ const Navigation = () => {
             />
           </Link>
           <div className="flex gap-1 sm:gap-1.5">
-            <div className="flex gap-1 sm:gap-2">
-              <Button
-                asChild
-                variant="default"
-                size="lg"
-                className="hidden sm:flex"
-              >
-                <a
-                  href="https://panel.helice.app/w/wgic26/214760/registration"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Ticket size={24} />
-                  {t("tickets")}
-                </a>
-              </Button>
-              <Button
-                asChild
-                className="sm:hidden"
-                variant="default"
-                size="icon"
-              >
-                <a
-                  href="https://panel.helice.app/w/wgic26/214760/registration"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Ticket size={24} />
-                </a>
-              </Button>
-            </div>
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="secondary" size="icon">
@@ -388,16 +345,6 @@ const Navigation = () => {
                   </Accordion>
                   <div className="flex flex-col gap-3 items-center pb-12">
                     <LanguageSwitcher />
-                    <Button asChild variant="default" size="lg">
-                      <a
-                        href="https://panel.helice.app/w/wgic26/214760/registration"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Ticket size={24} />
-                        {t("tickets")}
-                      </a>
-                    </Button>
                   </div>
                 </div>
               </SheetContent>

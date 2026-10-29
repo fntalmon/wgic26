@@ -159,7 +159,7 @@ export default function HomeClient() {
               desktop: `/img/banners/congress-${bannerLocale}-desktop.webp`,
               mobile: `/img/banners/congress-${bannerLocale}-mobile.webp`,
               alt: "World Green Infrastructure Congress 2026 — 27-30 October 2026, Barcelona and Lleida, Spain.",
-              href: "/registration",
+              href: "/program/congress",
             },
             {
               desktop: "/img/banners/banner-impact-desktop.jpg",

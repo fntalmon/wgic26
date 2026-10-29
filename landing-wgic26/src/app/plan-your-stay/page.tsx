@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
-import { RegisterCTA } from "@/components/RegisterCTA";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import {
@@ -39,7 +38,6 @@ const CCIB_MAP_SRC = "https://www.google.com/maps?q=CCIB+Pla%C3%A7a+de+Willy+Bra
 const AGROBIOTECH_MAP_SRC = "https://www.google.com/maps?q=Parc+Agrobiotech+Lleida+Pla%C3%A7a+de+les+Ci%C3%A8ncies,+25003+Lleida&output=embed";
 const HOTEL_MAP_LINK = "https://www.google.com/maps/search/?api=1&query=Best+Front+Mar%C3%ADtim+Passeig+de+Garcia+Faria+69+Barcelona";
 const TMB_URL = "https://www.tmb.cat/es/transporte-barcelona";
-const REGISTRATION_URL = "https://panel.helice.app/w/wgic26/214760/registration";
 
 const PlanYourStay = async () => {
     const t = await getTranslations("planYourStayPage");
@@ -266,13 +264,6 @@ const PlanYourStay = async () => {
                             </li>
                         </ul>
                     </div>
-                    <RegisterCTA
-                        title={t("registerNowTitle")}
-                        subtitle={t("registerNowSubtitle")}
-                        buttonLabel={t("registerNowButton")}
-                        href={REGISTRATION_URL}
-                        external
-                    />
                 </div>
             </section>
         </div>

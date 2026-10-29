@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import TextImage from "@/components/TextImage";
-import { RegisterCTA } from "@/components/RegisterCTA";
 import { getLocale, getTranslations } from "next-intl/server";
 import { fetchProgram } from "@/lib/program-api";
 import AgendaClient from "./AgendaClient";
@@ -14,7 +13,6 @@ import { ArrowRight, CalendarDays, MapPin } from "lucide-react";
 const GALA_DINNER_ADDRESS = "Carrer de Casanova, 133, 08036 Barcelona";
 const GALA_DINNER_MAP_URL =
   "https://www.google.com/maps/search/?api=1&query=Tierra%20Brava%20Restaurant%2C%20Carrer%20de%20Casanova%2C%20133%2C%2008036%20Barcelona";
-const GALA_DINNER_REGISTRATION_URL = "https://panel.helice.app/w/wgic26/214760/registration";
 
 export const metadata: Metadata = {
   title: "Congress Program | WGIC26 Barcelona-Lleida",
@@ -77,7 +75,6 @@ async function getEventConfig(locale: string) {
 export default async function CongressPage() {
   const t = await getTranslations("programPage");
   const ta = await getTranslations("programAgendaPage");
-  const home = await getTranslations("home");
   const nav = await getTranslations("navigation");
   const locale = await getLocale();
 
@@ -192,17 +189,7 @@ export default async function CongressPage() {
                   </h3>
                   <p className="mt-2">{t("galaDinner.access")}</p>
                 </div>
-                <div className="pt-2">
-                  <a
-                    href={GALA_DINNER_REGISTRATION_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-potus text-monstera rounded-md text-sm uppercase tracking-wider font-medium hover:bg-potus/90 transition-colors"
-                  >
-                    {t("galaDinner.cta")}
-                    <ArrowRight size={14} aria-hidden />
-                  </a>
-                </div>
+
               </div>
             </div>
           </section>
@@ -232,11 +219,6 @@ export default async function CongressPage() {
           </div>
 
           <div className="mt-10">
-            <RegisterCTA
-              title={home("ctaJoinTitle")}
-              subtitle={home("ctaJoinSubtitle")}
-              buttonLabel={home("registerNow")}
-            />
           </div>
         </div>
       </section>
